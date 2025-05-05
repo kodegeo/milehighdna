@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
-import { FaFacebookF, FaInstagram, FaShoppingCart } from 'react-icons/fa';
+import FaFacebookF from 'react-icons/fa/FaFacebookF';
+import FaInstagram from 'react-icons/fa/FaInstagram';
+import FaShoppingCart from 'react-icons/fa/FaShoppingCart';
+
 import { Link } from 'react-router-dom';
 
 import emailIcon from '../../assets/images/email.png';
