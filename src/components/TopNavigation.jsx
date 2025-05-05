@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import logo from "../assets/images/milehigh-dna-logo.png";
-import FaFacebookF from 'react-icons/fa/FaFacebookF';
-import FaInstagram from 'react-icons/fa/FaInstagram';
-import FaShoppingCart from 'react-icons/fa/FaShoppingCart';
+import { FaFacebookF } from 'react-icons/fa6';
+import { FaInstagram } from 'react-icons/fa6';
+import { FaShoppingCart } from 'react-icons/fa6';
 
 
 import emailIcon from '../assets/images/email.png';
