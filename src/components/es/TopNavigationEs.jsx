@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import FaFacebookF from 'react-icons/fa/FaFacebookF';
-import FaInstagram from 'react-icons/fa/FaInstagram';
-import FaShoppingCart from 'react-icons/fa/FaShoppingCart';
+import { FaFacebookF } from 'react-icons/fa6';
+import { FaInstagram } from 'react-icons/fa6';
+import { FaShoppingCart } from 'react-icons/fa6';
+
 
 import { Link } from 'react-router-dom';
 
