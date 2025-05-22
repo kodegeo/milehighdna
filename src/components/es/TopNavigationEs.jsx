@@ -32,14 +32,14 @@ const TopNavigationEs = () => {
             <img src={phoneIcon} alt="Teléfono" className="w-4 h-4" />
             (720) 900-9349
           </a>
-          <p className="ml-4">We Speak English Here</p>
+       // <p className="ml-4">We Speak English Here</p>
         </div>
 
         {/* Right: Address, Social, Cart, Language */}
         <div className="flex items-center gap-4">
           <div className="flex items-center gap-2">
             <img src={addressIcon} alt="Dirección" className="w-4 h-4" />
-            <span>975 Lincoln St., Suite C, Denver, CO</span>
+            <span>975 N. Lincoln Street Suite 205 C, Denver, CO</span>
           </div>
           <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400">
             <FaFacebookF className="w-5 h-5" />

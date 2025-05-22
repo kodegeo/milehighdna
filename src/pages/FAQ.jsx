@@ -1,6 +1,8 @@
 import React from 'react';
 import FAQSection from '../components/FAQ/FAQSection';
 import HowToUse from '../components/FAQ/HowToUse';
+import ServingColorado from '../components/common/ServingColorado';
+import CallToAction from '../components/common/CallToAction';
 
 const FAQ = () => {
   return (
@@ -19,6 +21,8 @@ const FAQ = () => {
       </section>
 
       <FAQSection />
+      <ServingColorado />
+      <CallToAction />
     </>
   );
 };

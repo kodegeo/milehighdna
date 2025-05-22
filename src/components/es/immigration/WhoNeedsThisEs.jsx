@@ -11,7 +11,7 @@ const WhoNeedsTest = () => {
     <section className="bg-white py-16 px-6 md:px-16 lg:px-24">
       <div className="max-w-5xl mx-auto text-center">
         <h2 className="text-3xl font-bold text-gray-800 mb-6">
-          ¿Quién Necesita Pruebas de ADN para Inmigración?
+        ¿Por qué elegir Mile High DNA Testing?
         </h2>
         <p className="text-lg text-gray-600 mb-8">
           Las pruebas de ADN para inmigración generalmente se requieren cuando es necesario demostrar una relación biológica para una petición de visa o residencia. Esto se utiliza a menudo cuando los documentos no están disponibles, están incompletos o son cuestionados por las autoridades de inmigración.

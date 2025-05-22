@@ -17,7 +17,7 @@ const tests = [
   },
   {
     title: 'Grandparentage Test',
-    price: 349,
+    price: 399,
     id: 'grandparentage',
     priceId: 'price_1RJf87K2515KuCq24feeajxY',
   },
@@ -37,12 +37,6 @@ const tests = [
     title: 'Immigration Test',
     price: null,
     id: 'immigration',
-    linkOnly: true,
-  },
-  {
-    title: 'Prenatal DNA Test',
-    price: null,
-    id: 'prenatal',
     linkOnly: true,
   },
 ];
@@ -92,7 +86,7 @@ const BookAppointment = () => {
               </div>
               <div className="flex flex-col gap-2">
                 <a
-                  href="https://calendly.com/your-appointment-link" // Replace with actual Calendly link
+                  href="https://calendly.com/milehighdnatesting-info" // Replace with actual Calendly link
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-blue-600 text-white text-center px-4 py-2 rounded hover:bg-blue-700"

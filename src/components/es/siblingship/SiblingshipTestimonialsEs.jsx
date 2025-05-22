@@ -23,7 +23,7 @@ const SiblingshipTestimonials = () => {
     return (
       <section className="bg-white py-16 px-6 md:px-16 lg:px-24">
         <div className="max-w-6xl mx-auto text-center">
-          <h2 className="text-3xl font-bold text-gray-800 mb-10">Historias Reales de Nuestros Clientes</h2>
+          <h2 className="text-3xl font-bold text-gray-800 mb-10">Historias reales de nuestros clientes</h2>
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             {testimonials.map((t, index) => (
               <div

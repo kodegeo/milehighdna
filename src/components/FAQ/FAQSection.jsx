@@ -5,7 +5,7 @@ const faqs = [
   {
     id: 'results',
     question: 'How long does it take to get DNA test results?',
-    answer: 'Most results are available within 2–3 business days after the lab receives your sample.',
+    answer: 'Most results are available within 2–5 business days after the lab receives your sample.',
   },
   {
     id: 'legal',

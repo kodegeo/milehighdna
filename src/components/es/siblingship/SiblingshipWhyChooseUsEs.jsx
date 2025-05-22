@@ -3,32 +3,32 @@ const SiblingshipWhyChooseUs = () => {
       {
         title: 'Laboratorio Acreditado por AABB',
         description:
-          'Todas las pruebas de ADN son realizadas por laboratorios acreditados por AABB para garantizar el más alto nivel de precisión legal y científica.',
+          'Todas nuestras pruebas de ADN se procesan en laboratorios acreditados por la AABB, lo que garantiza el más alto nivel de precisión científica y validez legal.',
       },
       {
         title: 'Opciones Legales y No Legales',
         description:
-          'Ofrecemos pruebas flexibles tanto para propósitos legales oficiales como para tranquilidad personal — con total claridad en el proceso.',
+          'Ofrecemos pruebas flexibles para procesos legales oficiales o simplemente para obtener tranquilidad personal — con total transparencia en cada etapa.',
       },
       {
         title: 'Resultados Rápidos',
         description:
-          'Obtenga sus resultados en solo 2–5 días hábiles. Opciones aceleradas están disponibles si necesita respuestas rápidamente.',
+          'Obtén tus resultados en solo 2 a 5 días hábiles. También contamos con opciones urgentes si necesitas respuestas lo antes posible.',
       },
       {
-        title: 'Personal Experimentado y Comprensivo',
+        title: 'Personal con experiencia y trato humano',
         description:
-          'Nuestro equipo bilingüe comprende la importancia emocional y legal de las pruebas de ADN. Estamos aquí para guiarle con cuidado.',
+          'Nuestro equipo bilingüe comprende la importancia emocional y legal de cada prueba. Te acompañamos con empatía, respeto y profesionalismo.',
       },
       {
-        title: 'Precios Transparentes',
+        title: 'Precios claros y sin sorpresas',
         description:
-          'Sin cargos ocultos — nuestros precios incluyen todo, desde la recolección de muestras hasta el análisis de laboratorio y la entrega de resultados.',
+          'Sin tarifas ocultas — nuestros precios incluyen la recolección de muestras, el análisis en laboratorio y la entrega de resultados.',
       },
       {
-        title: 'Seguro y Confidencial',
+        title: 'Privacidad y confidencialidad garantizadas',
         description:
-          'Respetamos su privacidad. Toda la información se maneja de manera segura y discreta de principio a fin.',
+          'Respetamos tu privacidad. Toda tu información se maneja con seguridad y discreción de principio a fin.',
       },
     ];
   

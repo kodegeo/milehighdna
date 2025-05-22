@@ -1,13 +1,16 @@
-import GrandparentageHero from '../../components/grandparentage/GrandparentageHero';
-import GrandparentagePricing from '../../components/grandparentage/GrandparentagePricing';
-import GrandparentageOverview from '../../components/grandparentage/GrandparentageOverview';
-import GrandparentageWhoNeedsTest from '../../components/grandparentage/GrandparentageWhoNeedsTest';
-import GrandparentageSteps from '../../components/grandparentage/GrandparentageSteps';
-import GrandparentageLegalVsNonLegal from '../../components/grandparentage/GrandparentageLegalVsNonLegal';
-import GrandparentageWhyChooseUs from '../../components/grandparentage/GrandparentageWhyChooseUs';
-import GrandparentageTestimonial from '../../components/grandparentage/GrandparentageTestimonial';
-import GrandparentageContact from '../../components/grandparentage/GrandparentageContact';
-import GrandparentageCompliance from '../../components/grandparentage/GrandparentageCompliance';
+import GrandparentageHero from '../../components/es/grandparentage/GrandparentageHeroEs';
+import GrandparentagePricing from '../../components/es/grandparentage/GrandparentagePricingEs';
+import GrandparentageOverview from '../../components/es/grandparentage/GrandparentageOverviewEs';
+import GrandparentageWhoNeedsTest from '../../components/es/grandparentage/GrandparentageWhoNeedsTestEs';
+import GrandparentageSteps from '../../components/es/grandparentage/GrandparentageStepsEs';
+import GrandparentageLegalVsNonLegal from '../../components/es/grandparentage/GrandparentageLegalVsNonLegalEs';
+import GrandparentageWhyChooseUs from '../../components/es/grandparentage/GrandparentageWhyChooseUsEs';
+import GrandparentageTestimonial from '../../components/es/grandparentage/GrandparentageTestimonialEs';
+import GrandparentageContact from '../../components/es/grandparentage/GrandparentageContactEs';
+import GrandparentageCompliance from '../../components/es/grandparentage/GrandparentageComplianceEs';
+import ServingColoradoEs from '../../components/es/common/ServingColoradoEs';
+import CallToActionEs from '../../components/es/common/CallToActionEs';
+
 import grandparentageHero from '../../assets/images/grandparentage-hero.png';
 
 const GrandparentageTestsEs = () => {
@@ -21,7 +24,8 @@ const GrandparentageTestsEs = () => {
       <GrandparentageLegalVsNonLegal />
       <GrandparentageWhyChooseUs />
       <GrandparentageTestimonial />
-      <GrandparentageContact />
+      <ServingColoradoEs />
+      <CallToActionEs />
       <GrandparentageCompliance />
     </main>
   );

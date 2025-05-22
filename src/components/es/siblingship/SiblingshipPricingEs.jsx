@@ -3,78 +3,74 @@ const SiblingshipPricing = () => {
       <section className="bg-blue-50 py-16 px-6 md:px-16 lg:px-24">
         <div className="max-w-5xl mx-auto text-center">
           <h2 className="text-3xl font-bold text-gray-800 mb-6">
-            Precios Accesibles y Transparentes
+          Precios claros y accesibles
           </h2>
           <p className="text-lg text-gray-600 mb-10">
-            Nuestros precios incluyen análisis de laboratorio, recolección de muestras y entrega de resultados. Elija la opción
-            que mejor se adapte a su relación y necesidades de prueba.
-          </p>
-  
+          Nuestros precios incluyen el análisis en laboratorio, la recolección de muestras y la entrega segura de resultados. Escoge la opción que mejor se ajuste a tu situación familiar y tipo de prueba.          </p>  
           <div className="grid gap-6 md:grid-cols-3">
             {/* Standard Siblingship Test */}
             <div className="bg-white rounded-xl shadow-md border-l-4 border-blue-600 p-6">
-              <h3 className="text-xl font-bold text-gray-800 mb-2">Prueba de Hermanos Estándar</h3>
+              <h3 className="text-xl font-bold text-gray-800 mb-2">Prueba Estándar de Hermandad</h3>
               <p className="text-gray-600 mb-4">
-                Dos personas evaluadas para determinar si son hermanos completos o medios hermanos.
-              </p>
-              <p className="text-2xl font-bold text-blue-700 mb-4">$325</p>
+              Dos personas se analizan para determinar si son hermanos completos o medios hermanos.              </p>
+              <p className="text-2xl font-bold text-blue-700 mb-4">$349</p>
               <ul className="text-left text-gray-700 space-y-2 mb-4">
                 <li>✔ Laboratorio Acreditado por AABB</li>
                 <li>✔ 2 Participantes</li>
                 <li>✔ Resultados en 2–5 Días Hábiles</li>
-                <li>✔ Uso Legal o Personal</li>
+                <li>✔ Válida para uso legal o personal</li>
               </ul>
               <a
                 href="/schedule"
                 className="inline-block bg-blue-600 text-white px-5 py-3 rounded-lg shadow hover:bg-blue-700 transition"
               >
-                Reservar Ahora
+                Reserva Ahora
               </a>
             </div>
   
             {/* With Known Parent */}
             <div className="bg-white rounded-xl shadow-md border-l-4 border-blue-600 p-6">
-              <h3 className="text-xl font-bold text-gray-800 mb-2">Con Padre Conocido</h3>
+              <h3 className="text-xl font-bold text-gray-800 mb-2">Con padre o madre biológica conocida</h3>
               <p className="text-gray-600 mb-4">
-                Incluye un padre biológico conocido para mejorar la precisión y certeza de la relación.
+              Incluye a un padre biológico conocido para mejorar la precisión y la certeza del resultado.
               </p>
-              <p className="text-2xl font-bold text-blue-700 mb-4">$395</p>
+              <p className="text-2xl font-bold text-blue-700 mb-4">$399</p>
               <ul className="text-left text-gray-700 space-y-2 mb-4">
-                <li>✔ Agrega Padre Biológico al Análisis</li>
-                <li>✔ Fortalece la Confianza del Resultado</li>
-                <li>✔ Documentación Legal Disponible</li>
+                <li>✔ Se agrega un padre biológico al análisis</li>
+                <li>✔ Mayor confiabilidad en los resultados</li>
+                <li>✔ Documentación legal disponible</li>
               </ul>
               <a
                 href="/schedule"
                 className="inline-block bg-blue-600 text-white px-5 py-3 rounded-lg shadow hover:bg-blue-700 transition"
               >
-                Reservar Ahora
+                Reserva Ahora
               </a>
             </div>
   
             {/* Add-On Sibling */}
             <div className="bg-white rounded-xl shadow-md border-l-4 border-blue-600 p-6">
-              <h3 className="text-xl font-bold text-gray-800 mb-2">Agregar Hermano Adicional</h3>
+              <h3 className="text-xl font-bold text-gray-800 mb-2">Agregar Hermano o Hermana Adicional</h3>
               <p className="text-gray-600 mb-4">
-                Incluya otro hermano en la prueba para un perfil familiar más completo.
+              Incluye a otro hermano en la prueba para obtener un perfil familiar más completo.
               </p>
               <p className="text-2xl font-bold text-blue-700 mb-4">+$100</p>
               <ul className="text-left text-gray-700 space-y-2 mb-4">
-                <li>✔ Ampliar Grupo de Prueba</li>
-                <li>✔ Útil para Relaciones Complejas</li>
-                <li>✔ Aplica a Pruebas Legales o Personales</li>
+                <li>✔ Amplía el grupo de análisis</li>
+                <li>✔ Útil para relaciones familiares complejas</li>
+                <li>✔ Válido para pruebas legales o personales</li>
               </ul>
               <a
                 href="/contact"
                 className="inline-block bg-blue-600 text-white px-5 py-3 rounded-lg shadow hover:bg-blue-700 transition"
               >
-                Solicitar Cotización Personalizada
+                Solicita una cotización
               </a>
             </div>
           </div>
   
           <p className="text-sm text-gray-500 mt-8">
-            *Los precios pueden variar según la ubicación, necesidades de documentación legal o coordinación internacional.
+          *El precio puede variar según la ubicación, la necesidad de documentación legal o la coordinación internacional.
           </p>
         </div>
       </section>

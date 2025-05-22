@@ -2,27 +2,27 @@ const GrandparentageStepsEs = () => {
     const steps = [
       {
         number: 1,
-        title: 'Programe su Prueba',
+        title: 'Agenda tu prueba',
         description:
-          'Llámenos o reserve en línea para programar una cita de prueba para los abuelos y el niño. Confirmaremos la configuración que mejor se adapte a su situación.',
+          'Llámanos o agenda en línea para programar la cita de prueba entre el menor y el(los) abuelo(s). Te ayudaremos a definir la mejor opción según tu situación.',
       },
       {
         number: 2,
-        title: 'Recolección de Muestras',
+        title: 'Recolección de muestras',
         description:
-          'Recolectamos muestras de mejilla de todos los participantes en una de nuestras ubicaciones certificadas. Se mantiene la cadena de custodia para casos legales.',
+          'Tomamos muestras bucales a todos los participantes en una de nuestras ubicaciones certificadas. En pruebas legales, se mantiene la cadena de custodia.',
       },
       {
         number: 3,
-        title: 'Análisis de Laboratorio',
+        title: 'Análisis en laboratorio',
         description:
-          'Nuestro laboratorio acreditado por AABB compara los perfiles de ADN para determinar la probabilidad de una relación biológica.',
+          'Nuestro laboratorio acreditado por la AABB compara los perfiles genéticos para determinar la probabilidad de una relación biológica.',
       },
       {
         number: 4,
-        title: 'Reciba sus Resultados',
+        title: 'Recibe tus resultados',
         description:
-          'Los resultados están disponibles típicamente en 2–4 días hábiles. Los resultados de pruebas legales incluyen documentos notariados y presentación directa al tribunal si se solicita.',
+          'Los resultados están disponibles en un plazo de 2 a 5 días hábiles. Las pruebas legales incluyen documentos notariados y envío directo a la corte si es necesario.',
       },
     ];
   
@@ -30,7 +30,7 @@ const GrandparentageStepsEs = () => {
       <section className="bg-white py-16 px-6 md:px-16 lg:px-24">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">
-            Cómo Funciona la Prueba de ADN de Abuelos
+          Cómo funciona la prueba de ADN con abuelos
           </h2>
           <div className="grid gap-8 md:grid-cols-2">
             {steps.map((step) => (

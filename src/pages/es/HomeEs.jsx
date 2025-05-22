@@ -15,21 +15,20 @@ const HomeEs = () => {
           className="absolute inset-0 bg-cover bg-center"
           style={{
             backgroundImage: `url(${bannerBg})`,
-            filter: 'brightness(0.7)'
+            filter: 'brightness(0.9)'
           }}
         />
         <div className="relative z-10 container mx-auto px-4 h-full flex items-center">
           <div className="max-w-2xl text-white">
             <h1 className="text-5xl font-bold mb-6">Servicios Profesionales de Pruebas de ADN en Colorado</h1>
             <p className="text-xl mb-8">
-              Servicios de pruebas de ADN precisos, confidenciales y confiables para familias. 
-              Obtenga las respuestas que necesita con nuestro laboratorio acreditado por AABB.
+            Pruebas de ADN claras, seguras y confidenciales. Resultados rápidos y válidos para uso legal o personal. Encuentra las respuestas que necesitas con nuestro laboratorio acreditado por la AABB. Servicios disponibles en español.
             </p>
             <Link
               to="/es/book-appointment"
               className="btn-primary"
             >
-              Reserve Su Prueba Hoy
+              Agenda tu prueba hoy
             </Link>
           </div>
         </div>
@@ -38,7 +37,7 @@ const HomeEs = () => {
       {/* Vista previa de servicios */}
       <div className="section-padding">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12">Nuestros Servicios</h2>
+          <h2 className="text-3xl font-bold text-center mb-12">Servicios</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="card">
               <img 
@@ -48,12 +47,12 @@ const HomeEs = () => {
               />
               <div className="p-6">
                 <h3 className="text-xl font-bold mb-2">Prueba de Paternidad</h3>
-                <p className="text-gray-600 mb-4">Pruebas de paternidad precisas y confidenciales con una precisión del 99.9%.</p>
+                <p className="text-gray-600 mb-4">Pruebas de paternidad confiables, confidenciales y respaldadas por una precisión del 99.9%.</p>
                 <Link
                   to="/es/prueba-de-paternidad-legal"
                   className="text-[#2C6FA6] hover:text-[#7DB9E8] font-semibold transition duration-300"
                 >
-                  Saber Más →
+                  Más información →
                 </Link>
               </div>
             </div>
@@ -65,13 +64,13 @@ const HomeEs = () => {
                 className="w-full h-48 object-cover"
               />
               <div className="p-6">
-                <h3 className="text-xl font-bold mb-2">Prueba de Abuelazgo</h3>
-                <p className="text-gray-600 mb-4">Pruebas legales y no legales para confirmar relaciones biológicas con abuelos.</p>
+                <h3 className="text-xl font-bold mb-2">Prueba de Abuelidad</h3>
+                <p className="text-gray-600 mb-4">Pruebas de ADN legales y privadas para confirmar vínculos biológicos con abuelos, con resultados precisos y confiables.</p>
                 <Link
                   to="/es/prueba-de-abuelidad"
                   className="text-[#2C6FA6] hover:text-[#7DB9E8] font-semibold transition duration-300"
                 >
-                  Saber Más →
+                  Más información →
                 </Link>
               </div>
             </div>
@@ -83,13 +82,13 @@ const HomeEs = () => {
                 className="w-full h-48 object-cover"
               />
               <div className="p-6">
-                <h3 className="text-xl font-bold mb-2">Prueba de Hermanos</h3>
-                <p className="text-gray-600 mb-4">Determine relaciones biológicas entre hermanos.</p>
+                <h3 className="text-xl font-bold mb-2">Prueba de Hermandad</h3>
+                <p className="text-gray-600 mb-4">Confirma vínculos biológicos entre hermanos con resultados precisos y confiables.</p>
                 <Link
                   to="/es/prueba-de-hermanos"
                   className="text-[#2C6FA6] hover:text-[#7DB9E8] font-semibold transition duration-300"
                 >
-                  Saber Más →
+                  Más información →
                 </Link>
               </div>
             </div>

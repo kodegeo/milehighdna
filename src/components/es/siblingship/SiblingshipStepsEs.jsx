@@ -2,27 +2,27 @@ const SiblingshipSteps = () => {
     const steps = [
       {
         number: 1,
-        title: 'Programe su Cita',
+        title: 'Agenda tu cita',
         description:
-          'Llámenos o reserve en línea para programar su prueba. Le guiaremos durante el proceso y responderemos cualquier pregunta sobre su caso.',
+          'Llámanos o agenda en línea para programar tu prueba. Te guiaremos en todo el proceso y responderemos cualquier pregunta sobre tu caso.',
       },
       {
         number: 2,
-        title: 'Recolección de Muestras',
+        title: 'Recolección de muestras',
         description:
-          'Recolectamos muestras de mejilla de todos los participantes en nuestro sitio certificado de recolección. Las pruebas legales siguen estrictos procedimientos de cadena de custodia.',
+          'Tomamos muestras con hisopos bucales de todos los participantes en nuestro centro autorizado. Las pruebas legales siguen protocolos estrictos de cadena de custodia.',
       },
       {
         number: 3,
-        title: 'Análisis de Laboratorio',
+        title: 'Análisis en laboratorio',
         description:
-          'Nuestro laboratorio acreditado por AABB compara los perfiles de ADN para determinar si los individuos son hermanos completos o medios hermanos.',
+          'Nuestro laboratorio acreditado por la AABB compara los perfiles de ADN para determinar si los participantes son hermanos completos o medios hermanos.',
       },
       {
         number: 4,
-        title: 'Reciba los Resultados',
+        title: 'Recibe tus resultados',
         description:
-          'Los resultados están listos en 2–5 días hábiles. Las pruebas legales incluyen documentación notariada apta para uso en tribunales o inmigración.',
+        'Los resultados estarán listos en 2 a 5 días hábiles. Las pruebas legales incluyen documentación notariada válida para procesos judiciales o migratorios.'
       },
     ];
   

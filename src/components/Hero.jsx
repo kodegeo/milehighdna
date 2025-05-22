@@ -8,7 +8,7 @@ const Hero = () => {
       className="relative h-[600px] bg-cover bg-center"
       style={{ backgroundImage: 'url(./assets/images/father_baby.jpg)' }}
     >
-      <div className="absolute inset-0 bg-black/50"></div>
+      <div className="absolute inset-0 bg-black/05"></div>
       <div className="relative max-w-7xl mx-auto px-4 h-full flex items-center">
         <div className="max-w-2xl text-white">
           <h1 className="text-5xl font-bold mb-4 leading-tight">

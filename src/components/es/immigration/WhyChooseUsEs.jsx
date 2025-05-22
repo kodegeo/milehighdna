@@ -16,7 +16,7 @@ const WhyChooseUs = () => {
         'Trabajamos directamente con embajadas de EE.UU. y clínicas en el extranjero para coordinar las pruebas para familiares en el extranjero.',
     },
     {
-      title: 'Soporte Bilingüe (Inglés y Español)',
+      title: 'Atención Bilingüe (inglés y español)',
       description:
         'Nuestro equipo habla su idioma — ofrecemos soporte completo en inglés y español para hacer el proceso sin estrés.',
     },
@@ -25,6 +25,7 @@ const WhyChooseUs = () => {
       description:
         'Desde la programación hasta la recolección de muestras y la entrega de resultados, hacemos que el proceso sea fácil y totalmente compatible con las regulaciones de inmigración.',
     },
+    
   ];
 
   return (

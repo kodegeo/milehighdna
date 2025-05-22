@@ -1,48 +1,56 @@
 import React from "react";
 import HeroSection from "../../components/common/HeroSection";
-import Pricing from "../../components/immigration/Pricing";
-import Overview from "../../components/immigration/Overview";
-import Steps from "../../components/immigration/Steps";
-import WhoNeedsTest from "../../components/immigration/WhoNeedsThis";
-import WhyChooseUs from "../../components/immigration/WhyChooseUs";
-import Testimonials from "../../components/immigration/Testimonials";
-import Contact from "../../components/immigration/Contact";
-import Compliance from "../../components/immigration/Compliance";
+import PricingEs from "../../components/es/immigration/PricingEs";
+import OverviewEs from "../../components/es/immigration/OverviewEs";
+import StepsEs from "../../components/es/immigration/StepsEs";
+import WhoNeedsTestEs from "../../components/es/immigration/WhoNeedsTestEs";
+import WhyChooseUsEs from "../../components/es/immigration/WhyChooseUsEs";
+import TestimonialsEs from "../../components/es/immigration/TestimonialsEs";
+import ServingColoradoEs from "../../components/es/common/ServingColoradoEs";
+import CallToActionEs from "../../components/es/common/CallToActionEs";
+import Compliance from "../../components/es/immigration/Compliance";
 import immigrationHero from "../../assets/images/immigration-hero.png";
 
 const ImmigrationDNATestsEs = () => {
     return (
       <main>
         <HeroSection
-          title="Pruebas de ADN para Inmigración Cumpliendo con USCIS"
-          subtitle="Pruebas de ADN rápidas, precisas y legales para casos de inmigración en EE.UU. Coordinamos con embajadas y proporcionamos entrega directa a las autoridades de inmigración."
+          title="Prueba de ADN para Inmigración (USCIS)"
+          subtitle={
+            <>
+              Pruebas de ADN rápidas, precisas y legalmente válidas para casos de inmigración en EE.UU. Cumplen con los requisitos del USCIS y están respaldadas por un laboratorio acreditado por la AABB.
+              {"\n\n"}
+              Coordinamos directamente con embajadas, consulados, tribunales migratorios y el USCIS para asegurar un proceso ágil y confiable.
+            </>
+          }
           imageUrl={immigrationHero}
-          buttonText="Programe Su Prueba"
+          buttonText="Agenda tu prueba"
           buttonLink="https://calendly.com/cynthia-milehighdnatesting/30min"
           secondaryButtonText="Hable con un Especialista"
           secondaryButtonLink="https://calendly.com/milehighdnatesting-info/30min"
         />
   
         {/* Pricing Section – Moved Up */}
-        <Pricing />
+        <PricingEs />
   
         {/* Overview Section */}
-        <Overview />
+        <OverviewEs />
   
         {/* Step-by-Step Process */}
-        <Steps />
+        <StepsEs />
   
         {/* Who Needs This Test */}
-        <WhoNeedsTest />
+        <WhoNeedsTestEs />
   
         {/* Why Choose Us */}
-        <WhyChooseUs />
+        <WhyChooseUsEs />
   
         {/* Testimonials / Case Studies */}
-        <Testimonials />
+        <TestimonialsEs />
   
         {/* Schedule & Contact */}
-        <Contact />
+        <ServingColoradoEs />
+        <CallToActionEs />
   
         {/* Legal / Compliance Footer Note */}
         <Compliance />

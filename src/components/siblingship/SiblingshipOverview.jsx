@@ -17,7 +17,7 @@ const SiblingshipOverview = () => {
               </p>
             </div>
             <div className="p-6 border rounded-xl shadow-sm hover:shadow-md transition">
-              <h3 className="text-xl font-semibold text-blue-700 mb-2">When a Parent Is Unavailable</h3>
+              <h3 className="text-xl font-semibold text-blue-700 mb-2">Unavailable Parent</h3>
               <p className="text-gray-600">
                 Ideal when a biological parent is deceased, missing, or unwilling to participate in the test.
               </p>

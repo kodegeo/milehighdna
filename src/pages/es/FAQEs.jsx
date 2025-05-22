@@ -1,6 +1,8 @@
 import React from 'react';
-import FAQSection from '../../components/FAQ/FAQSection';
-import HowToUse from '../../components/FAQ/HowToUse';
+import FAQSection from '../../components/es/FAQ/FAQSectionEs';
+import HowToUse from '../../components/es/FAQ/HowToUseEs';
+import ServingColoradoEs from '../../components/es/common/ServingColoradoEs';
+import CallToActionEs from '../../components/es/common/CallToActionEs';
 
 const FAQEs = () => {
   return (
@@ -11,14 +13,15 @@ const FAQEs = () => {
             Preguntas Frecuentes
           </h1>
           <p className="text-lg text-gray-700">
-            ¿Tiene preguntas sobre las pruebas de ADN, las citas o cómo funciona todo?
-            Tenemos respuestas.
+          ¿Tienes preguntas sobre las pruebas de ADN, cómo agendar una cita o cómo funciona todo el proceso? Aquí encontrarás respuestas claras y confiables.
           </p>
           <HowToUse />
         </div>
       </section>
 
       <FAQSection />
+      <ServingColoradoEs />
+      <CallToActionEs />
     </>
   );
 };

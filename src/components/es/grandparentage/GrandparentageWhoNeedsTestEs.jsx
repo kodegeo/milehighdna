@@ -1,21 +1,20 @@
 const GrandparentageWhoNeedsTestEs = () => {
     const scenarios = [
-      'El presunto padre no está disponible, ha fallecido o no está dispuesto a realizar la prueba',
-      'Necesita prueba de relación biológica para fines de inmigración',
-      'Un caso legal requiere evidencia de conexión con los abuelos',
-      'Está buscando custodia, beneficios o verificación de herencia',
-      'Desea tranquilidad sobre su conexión biológica familiar',
+      'El padre o madre presunto está ausente, ha fallecido o no desea participar',
+      'Un caso legal requiere evidencia de la relación con los abuelos',
+      'Buscas tranquilidad sobre tu conexión familiar biológica',
+      'Necesitas comprobar el vínculo biológico para un trámite migratorio',
+      'Estás gestionando custodia, beneficios o herencia',
     ];
   
     return (
       <section className="bg-blue-50 py-16 px-6 md:px-16 lg:px-24">
         <div className="max-w-5xl mx-auto text-center">
           <h2 className="text-3xl font-bold text-gray-800 mb-6">
-            ¿Quién Necesita la Prueba de ADN de Abuelos?
+          ¿Quién necesita una prueba de ADN con abuelos?          
           </h2>
           <p className="text-lg text-gray-600 mb-8">
-            Esta prueba es ideal para situaciones donde un padre biológico no está disponible para la prueba, pero
-            aún necesita establecer una relación genética a través de los abuelos.
+          Esta prueba es ideal cuando un padre biológico no está disponible para realizar la prueba, pero aún necesitas establecer una relación genética a través de los abuelos.          
           </p>
   
           <div className="grid gap-4 md:grid-cols-2 text-left max-w-3xl mx-auto">
