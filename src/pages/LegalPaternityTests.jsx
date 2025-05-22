@@ -18,7 +18,7 @@ const LegalPaternityPage = () => {
         subtitle="Accurate, court-admissible DNA results you can trust. Get clarity and legal support with fast results and compassionate care — serving Denver and the Front Range."
         imageUrl={legalHero}
         buttonText="Schedule Your Test"
-        buttonLink="https://calendly.com/cynthia-milehighdnatesting/30min"
+        buttonLink="https://calendly.com/cynthia-milehighdnatesting/30-minute-dna-test-appointment"
         secondaryButtonText="Talk to a Specialist"
         secondaryButtonLink="https://calendly.com/milehighdnatesting-info/30min"
       />

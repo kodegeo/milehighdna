@@ -22,7 +22,7 @@ const GrandparentagePricing = () => {
                 <li>✔ 2–5 Business Day Turnaround</li>
               </ul>
               <a
-                href="https://calendly.com/milehighdnatesting-info"
+                href="https://calendly.com/cynthia-milehighdnatesting/30-minute-dna-test-appointment"
                 className="inline-block bg-blue-600 text-white px-5 py-3 rounded-lg shadow hover:bg-blue-700 transition"
               >
                 Book This Test
@@ -41,7 +41,7 @@ const GrandparentagePricing = () => {
                 <li>✔ 2–5 Business Day Turnaround</li>
               </ul>
               <a
-                href="https://calendly.com/milehighdnatesting-info"
+                href="https://calendly.com/cynthia-milehighdnatesting/30-minute-dna-test-appointment"
                 className="inline-block bg-blue-600 text-white px-5 py-3 rounded-lg shadow hover:bg-blue-700 transition"
               >
                 Book This Test

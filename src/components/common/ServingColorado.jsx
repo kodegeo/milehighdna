@@ -27,18 +27,6 @@ const ServingColorado = () => {
             </a>
           </p>
           <p>
-            WhatsApp:{" "}
-            <a
-              href="https://wa.me/17209009342"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 hover:underline"
-            >
-              <FaWhatsapp className="text-green-500 w-5 h-5" />
-              720-900-9342
-            </a>
-          </p>
-          <p>
             Email:{" "}
             <a href="mailto:info@milehighdna.com" className="hover:underline">
               info@milehighdna.com

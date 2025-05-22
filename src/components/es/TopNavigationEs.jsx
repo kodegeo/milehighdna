@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { FaFacebookF, FaInstagram } from 'react-icons/fa6';
-import { FaShoppingCart } from 'react-icons/fa'; // from FA5
-
+import { FaShoppingCart, FaWhatsapp } from 'react-icons/fa'; // from FA5
 
 import { Link } from 'react-router-dom';
 
@@ -21,35 +20,40 @@ const TopNavigationEs = () => {
 
   return (
     <div className="bg-[#1A3C59] text-white text-sm py-2 px-4 shadow-md">
-      <div className="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-4">
+      <div className="max-w-7xl mx-auto flex justify-between items-center">
         {/* Left: Contact Info */}
-        <div className="flex flex-col sm:flex-row sm:items-center sm:gap-6 text-center sm:text-left">
-          <a href="mailto:info@milehightesting.com" className="flex items-center gap-2 hover:underline">
+        <div className="flex items-center gap-6">
+          <a href="mailto:info@milehightesting.com" className="flex items-center gap-2 hover:underline whitespace-nowrap">
             <img src={emailIcon} alt="Correo electrónico" className="w-4 h-4" />
             info@milehightesting.com
           </a>
-          <a href="tel:7202074467" className="flex items-center gap-2 hover:underline">
+          <a href="tel:7202074467" className="flex items-center gap-2 hover:underline whitespace-nowrap">
             <img src={phoneIcon} alt="Teléfono" className="w-4 h-4" />
             (720) 900-9349
           </a>
-       // <p className="ml-4">We Speak English Here</p>
         </div>
 
         {/* Right: Address, Social, Cart, Language */}
-        <div className="flex items-center gap-4">
-          <div className="flex items-center gap-2">
+        <div className="flex items-center gap-6">
+          <div className="flex items-center gap-2 whitespace-nowrap">
             <img src={addressIcon} alt="Dirección" className="w-4 h-4" />
             <span>975 N. Lincoln Street Suite 205 C, Denver, CO</span>
           </div>
-          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400">
-            <FaFacebookF className="w-5 h-5" />
-          </a>
-          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-pink-400">
-            <FaInstagram className="w-5 h-5" />
-          </a>
-          <a href="/cart" className="relative group">
-            <FaShoppingCart className="w-6 h-6 hover:text-blue-500 transition" />
-          </a>
+          <div className="flex items-center gap-4">
+            <a href="https://www.facebook.com/profile.php?id=61576000982562" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400">
+              <FaFacebookF className="w-5 h-5" />
+            </a>
+            <a href="https://www.instagram.com/milehighdnatesting/?igsh=OHJ2MHd3bjJwZzFy#" target="_blank" rel="noopener noreferrer" className="hover:text-pink-400">
+              <FaInstagram className="w-5 h-5" />
+            </a>
+            <a href="https://wa.me/17209009342" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-pink-400 whitespace-nowrap">
+              <FaWhatsapp className="w-5 h-5" />
+               
+            </a>
+            <a href="/cart" className="relative group">
+              <FaShoppingCart className="w-6 h-6 hover:text-blue-500 transition" />
+            </a>
+          </div>
 
           {/* Language Switch */}
           <div className="flex items-center gap-2 ml-4 border-l border-gray-700 pl-4">

@@ -23,7 +23,7 @@ const GrandparentageTestimonialEs = () => {
     return (
       <section className="bg-blue-50 py-16 px-6 md:px-16 lg:px-24">
         <div className="max-w-6xl mx-auto text-center">
-          <h2 className="text-3xl font-bold text-gray-800 mb-10">Lo Que Dicen las Familias</h2>
+          <h2 className="text-3xl font-bold text-gray-800 mb-10">Lo que dicen las familias</h2>
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             {testimonials.map((t, index) => (
               <div

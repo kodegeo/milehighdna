@@ -3,23 +3,23 @@ import React from 'react';
 const services = [
   {
     name: 'Paternity Testing',
-    description: 'Confirm biological parenthood for legal or personal reasons.',
-    link: 'https://calendly.com/milehighdnatesting-paternity',
+    description: 'Confirm biological parenthood for legal or personal \n reasons.',
+    link: 'https://calendly.com/cynthia-milehighdnatesting/30-minute-dna-test-appointment',
   },
   {
     name: 'Immigration DNA Testing',
     description: 'Approved testing for USCIS and embassies to support immigration cases.',
-    link: 'https://calendly.com/milehighdnatesting-immigration',
+    link: 'https://calendly.com/cynthia-milehighdnatesting/30-minute-dna-test-appointment',
   },
   {
     name: 'Siblingship Testing',
-    description: 'Establish full or half-sibling biological relationships.',
-    link: 'https://calendly.com/milehighdnatesting-siblingship',
+    description: 'Establish full or half-sibling biological \nrelationships.',
+    link: 'https://calendly.com/cynthia-milehighdnatesting/30-minute-dna-test-appointment',
   },
   {
     name: 'Grandparentage Testing',
     description: 'Test for biological relationships between grandparents and grandchildren.',
-    link: 'https://calendly.com/milehighdnatesting-grandparentage',
+    link: 'https://calendly.com/cynthia-milehighdnatesting/30-minute-dna-test-appointment',
   },
 ];
 
@@ -39,7 +39,7 @@ const ScheduleTestSection = () => {
               <h3 className="text-2xl font-semibold text-gray-800 mb-2">
                 {service.name}
               </h3>
-              <p className="text-gray-600 mb-4">{service.description}</p>
+              <p className="text-gray-600 mb-4 whitespace-pre-line">{service.description}</p>
               <a
                 href={service.link}
                 target="_blank"

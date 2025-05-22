@@ -5,6 +5,8 @@ import bannerBg from '../assets/images/banner_bg_Res.jpg';
 import servicePat from '../assets/images/service_pat.png';
 import servicePre from '../assets/images/grandparantage_1.png';
 import serviceImma from '../assets/images/service_imma.png';
+import ServingColorado from '../components/common/ServingColorado';
+import CallToAction from '../components/common/CallToAction';
 
 const Home = () => {
   return (
@@ -26,7 +28,7 @@ const Home = () => {
               Get the answers you need with our AABB-accredited laboratory.
             </p>
             <Link
-              to="/book-appointment"
+              to="https://calendly.com/cynthia-milehighdnatesting/30-minute-dna-test-appointment"
               className="btn-primary"
             >
               Book Your Test Today
@@ -134,6 +136,8 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <ServingColorado />
+      <CallToAction />
     </div>
   );
 };

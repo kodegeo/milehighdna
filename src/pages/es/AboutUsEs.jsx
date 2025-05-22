@@ -2,7 +2,7 @@ import React from "react";
 import HeroSection from "../../components/common/HeroSection";
 import WhoWeAre from "../../components/about/WhoWeAre";
 import ValuePillars from "../../components/about/ValuePillars";
-import ServingColorado from "../../components/es/about/ServingColoradoEs";
+import ServingColorado from "../../components/es/common/ServingColoradoEs";
 import CallToAction from "../../components/es/about/CallToActionEs";
 import aboutHero from "../../assets/images/about_hero.png";
 import aboutMid from "../../assets/images/about_mid.png";
@@ -52,7 +52,6 @@ Ofrecemos atención profesional en inglés y español, con empatía, precisión 
       />
 
       <ServingColorado />
-
       <CallToAction />
     </main>
   );

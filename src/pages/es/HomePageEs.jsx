@@ -4,8 +4,10 @@ import bannerBg from '../../assets/images/banner_bg_Res.jpg';
 import servicePat from '../../assets/images/service_pat.png';
 import servicePre from '../../assets/images/grandparantage_1.png';
 import serviceImma from '../../assets/images/service_imma.png';
+import ServingColoradoEs from '../../components/es/common/ServingColoradoEs';
+import CallToActionEs from '../../components/es/common/CallToActionEs';
 
-function HomeEs() {
+function HomePageEs() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
@@ -24,7 +26,7 @@ function HomeEs() {
             Pruebas de ADN claras, seguras y confidenciales. Resultados rápidos y válidos para uso legal o personal. Encuentra las respuestas que necesitas con nuestro laboratorio acreditado por la AABB. Servicios disponibles en español.
             </p>
             <Link
-              to="/es/book-appointment"
+              to="https://calendly.com/cynthia-milehighdnatesting/30-minute-dna-test-appointment"
               className="btn-primary"
             >
               Agenda tu prueba hoy
@@ -133,8 +135,11 @@ function HomeEs() {
           </div>
         </div>
       </div>
+
+      <ServingColoradoEs />
+      <CallToActionEs />
     </div>
   );
 }
 
-export default HomeEs; 
+export default HomePageEs; 

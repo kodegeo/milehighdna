@@ -24,7 +24,7 @@ const LegalPaternityTestsEs = () => {
         }
         imageUrl={legalHero}
         buttonText="Agenda tu prueba"
-        buttonLink="https://calendly.com/cynthia-milehighdnatesting/30min"
+        buttonLink="https://calendly.com/cynthia-milehighdnatesting/30-minute-dna-test-appointment"
         secondaryButtonText="Hablar con un Especialista"
         secondaryButtonLink="https://calendly.com/milehighdnatesting-info/30min"
       />
