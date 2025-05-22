@@ -86,7 +86,7 @@ const BookAppointment = () => {
               </div>
               <div className="flex flex-col gap-2">
                 <a
-                  href="https://calendly.com/milehighdnatesting-info" // Replace with actual Calendly link
+                  href="https://calendly.com/cynthia-milehighdnatesting/30-minute-dna-test-appointment" // Replace with actual Calendly link
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-blue-600 text-white text-center px-4 py-2 rounded hover:bg-blue-700"

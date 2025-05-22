@@ -3,7 +3,7 @@ import React from "react";
 const CallToActionEs = () => {
   return (
     <section className="bg-[#2C6FA6] text-white py-16 px-6 md:px-12 text-center">
-      <div className="max-w-3xl mx-auto">
+      <div className="max-w-3xl mx-auto py-16 px-6 md:px-12 text-center">
         <h2 className="text-2xl md:text-4xl font-bold mb-4">
         Agenda tu consulta gratuita hoy mismo
         </h2>

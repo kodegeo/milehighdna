@@ -26,7 +26,6 @@ const ServingColoradoEs = () => {
             </a>
           </p>
           <p>
-            WhatsApp:{" "}
             <a
               href="https://wa.me/17209009342"
               target="_blank"
@@ -34,7 +33,7 @@ const ServingColoradoEs = () => {
               className="inline-flex items-center gap-2 hover:underline"
             >
               <FaWhatsapp className="text-green-500 w-5 h-5" />
-              720-900-9342
+              WhatsApp{" "}
             </a>
           </p>
           <p>

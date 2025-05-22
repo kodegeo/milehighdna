@@ -22,7 +22,7 @@ const HeroSection = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <a
-              href="https://calendly.com/cynthia-milehighdnatesting"
+              href="https://calendly.com/cynthia-milehighdnatesting/30-minute-dna-test-appointment"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-blue-600 text-white px-6 py-3 rounded-xl shadow hover:bg-blue-700 transition"
@@ -30,7 +30,7 @@ const HeroSection = () => {
               Programar Prueba
             </a>
             <a
-              href="https://calendly.com/milehighdnatesting-info"
+              href="https://calendly.com/milehighdnatesting-info/30min"
               target="_blank"
               rel="noopener noreferrer"
               className="text-white font-semibold px-6 py-3 rounded-xl border border-white hover:bg-white/10 transition"

@@ -1,6 +1,6 @@
 import React from "react";
 
-const CallToAction = ({ heading, subtext, buttonText, buttonLink }) => {
+const CallToActionEs = ({ heading, subtext, buttonText, buttonLink }) => {
   return (
     <section className="bg-[#2C6FA6] text-white py-16 px-6 md:px-12 text-center">
       <div className="max-w-3xl mx-auto">
@@ -24,4 +24,4 @@ const CallToAction = ({ heading, subtext, buttonText, buttonLink }) => {
   );
 };
 
-export default CallToAction; 
+export default CallToActionEs; 

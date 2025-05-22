@@ -36,7 +36,7 @@ const Navigation = () => {
           </div>
           {/* Desktop Navigation */}
           <div className="hidden md:flex md:items-center md:space-x-8">
-            <Link to="/about" className="text-gray-700 hover:text-blue-600 transition duration-300">Sobre Nosotros</Link>
+            <Link to="/about" className="text-gray-700 hover:text-blue-600 transition duration-300">Quienes Somos</Link>
             <Link to="/aabb-accreditation" className="text-gray-700 hover:text-blue-600 transition duration-300">Acreditación AABB</Link>
             
             {/* Services Dropdown */}
@@ -93,7 +93,7 @@ const Navigation = () => {
               to="/book-appointment" 
               className="bg-blue-600 text-white px-6 py-2 rounded-lg font-semibold hover:bg-blue-700 transition duration-300"
             >
-              Reservar Ahora
+              Haz tu cita Aqui
             </Link>
           </div>
 

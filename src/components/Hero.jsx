@@ -18,7 +18,7 @@ const Hero = () => {
             Professional, confidential DNA testing services for families across Colorado
           </p>
           <Link
-            to="/book-appointment"
+            to="https://calendly.com/cynthia-milehighdnatesting/30-minute-dna-test-appointment"
             className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-full transition duration-300"
           >
             Book an Appointment

@@ -23,7 +23,7 @@ import BookAppointment from './pages/BookAppointment';
 import AABBAccreditation from './pages/AABBAccreditation';
 
 // Spanish imports
-import HomeEs from './pages/es/HomeEs';
+import HomePageEs from './pages/es/HomePageEs';
 import AboutUsEs from './pages/es/AboutUsEs';
 import LegalPaternityTestsEs from './pages/es/LegalPaternityTestsEs';
 import ImmigrationDNATestsEs from './pages/es/ImmigrationDNATestsEs';
@@ -70,7 +70,7 @@ function AppLayout() {
             <Route path="/aabb-accreditation" element={<AABBAccreditation />} />
 
             {/* Spanish Routes */}
-            <Route path="/es" element={<HomeEs />} />
+            <Route path="/es" element={<HomePageEs />} />
             <Route path="/es/sobre-nosotros" element={<AboutUsEs />} />
             <Route path="/es/prueba-de-paternidad-legal" element={<LegalPaternityTestsEs />} />
             <Route path="/es/prueba-de-inmigracion" element={<ImmigrationDNATestsEs />} />
