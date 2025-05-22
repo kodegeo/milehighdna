@@ -17,7 +17,7 @@ const SiblingshipPricing = () => {
               <p className="text-gray-600 mb-4">
                 Two individuals tested to determine if they are full or half siblings.
               </p>
-              <p className="text-2xl font-bold text-blue-700 mb-4">$349</p>
+              <p className="text-2xl font-bold text-blue-700 mb-4">$329</p>
               <ul className="text-left text-gray-700 space-y-2 mb-4">
                 <li>✔ AABB-Accredited Lab</li>
                 <li>✔ 2 Participants</li>
@@ -38,9 +38,10 @@ const SiblingshipPricing = () => {
               <p className="text-gray-600 mb-4">
                 One known biological parent for accuracy and relationship certainty.
               </p>
-              <p className="text-2xl font-bold text-blue-700 mb-4">$399</p>
+              <p className="text-2xl font-bold text-blue-700 mb-4">$429</p>
               <ul className="text-left text-gray-700 space-y-2 mb-4">
                 <li>✔ Adds Biological Parent to Analysis</li>
+                <li>✔ 3 Participants</li>
                 <li>✔ Strengthens Result Confidence</li>
                 <li>✔ Legal Documentation Available</li>
               </ul>
