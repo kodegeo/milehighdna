@@ -9,6 +9,8 @@ import GrandparentageTestimonial from '../components/grandparentage/Grandparenta
 import GrandparentageContact from '../components/grandparentage/GrandparentageContact';
 import GrandparentageCompliance from '../components/grandparentage/GrandparentageCompliance';
 import grandparentageHero from '../assets/images/grandparentage-hero.png';
+import ServingColorado from '../components/common/ServingColorado';
+import CallToAction from '../components/grandparentage/CallToAction';
 
 const GrandparentagePage = () => {
   return (
@@ -21,7 +23,8 @@ const GrandparentagePage = () => {
       <GrandparentageLegalVsNonLegal />
       <GrandparentageWhyChooseUs />
       <GrandparentageTestimonial />
-      <GrandparentageContact />
+      <ServingColorado />
+      <CallToAction />
       <GrandparentageCompliance />
     </main>
   );

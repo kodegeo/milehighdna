@@ -16,7 +16,7 @@ const ServingColorado = () => {
           We are centrally located at:
         </p>
         <div className="text-[#2C6FA6] text-lg font-semibold">
-          975 Lincoln St., Suite C
+        975 N Lincoln Street, Suite 205C
           <br />
           Denver, CO 80203
         </div>

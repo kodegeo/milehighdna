@@ -6,6 +6,9 @@ import LegalUseCases from "../components/legalPaternity/LegalUseCases";
 import Testimonial from "../components/legalPaternity/Testimonial";
 import CallToAction from "../components/legalPaternity/CallToAction";
 import legalHero from "../assets/images/legal_hero.png";
+import Pricing from "../components/legalPaternity/Pricing";
+import ServingColorado from "../components/common/ServingColorado";
+import Compliance from "../components/legalPaternity/Compliance";
 
 const LegalPaternityPage = () => {
   return (
@@ -19,6 +22,8 @@ const LegalPaternityPage = () => {
         secondaryButtonText="Talk to a Specialist"
         secondaryButtonLink="https://calendly.com/milehighdnatesting-info/30min"
       />
+
+      <Pricing />
 
       <ServiceOverview
         title="What Is Legal DNA Paternity Testing?"
@@ -82,12 +87,17 @@ const LegalPaternityPage = () => {
         role="Mother"
       />
 
+      <ServingColorado />
+    
+
       <CallToAction
         heading="Ready to Get Started?"
         subtext="Schedule your free consultation or book your legal paternity test today."
         buttonText="Book Now"
         buttonLink="https://calendly.com/milehighdnatesting-info/30min"
       />
+
+      <Compliance />
     </main>
   );
 };

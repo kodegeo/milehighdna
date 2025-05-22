@@ -9,6 +9,9 @@ import Testimonials from "../components/immigration/Testimonials";
 import Contact from "../components/immigration/Contact";
 import Compliance from "../components/immigration/Compliance";
 import immigrationHero from "../assets/images/immigration-hero.png";
+import ServingColorado from "../components/common/ServingColorado";
+import CallToAction from "../components/immigration/CallToAction";
+
 
 // or './ImmigrationPricing' if it's in the same folder
 
@@ -44,7 +47,9 @@ const ImmigrationDNA = () => {
         <Testimonials />
   
         {/* Schedule & Contact */}
-        <Contact />
+        <ServingColorado />
+        
+        <CallToAction />
   
         {/* Legal / Compliance Footer Note */}
         <Compliance />

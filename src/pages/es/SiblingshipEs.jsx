@@ -10,6 +10,8 @@ import SiblingshipTestimonials from '../../components/es/siblingship/Siblingship
 import SiblingshipContact from '../../components/es/siblingship/SiblingshipContactEs';
 import SiblingshipLegalNote from '../../components/es/siblingship/SiblingshipLegalNoteEs';
 import siblingshipHero from "../../assets/images/siblingship-hero.png";
+import ServingColoradoEs from "../../components/es/common/ServingColoradoEs";
+import CallToActionEs from "../../components/es/common/CallToActionEs";
 
 const SiblingshipPageEs = () => {
   return (
@@ -23,7 +25,8 @@ const SiblingshipPageEs = () => {
       <SiblingshipLegalVsNonLegal />
       <SiblingshipWhyChooseUs />
       <SiblingshipTestimonials />
-      <SiblingshipContact />
+      <ServingColoradoEs />
+      <CallToActionEs />
       <SiblingshipLegalNote />
     </main>
   );

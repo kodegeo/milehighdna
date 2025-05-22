@@ -17,9 +17,9 @@ const Overview = () => {
               </p>
             </div>
             <div className="p-6 border rounded-xl shadow-sm hover:shadow-md transition">
-              <h3 className="text-xl font-semibold text-blue-700 mb-2">Fast Turnaround</h3>
+              <h3 className="text-xl font-semibold text-blue-700 mb-2">Results Timeline</h3>
               <p className="text-gray-600">
-                We process samples quickly — results are typically ready within 2–5 business days after collection.
+              Immigration testing timelines vary widely based on country, embassy requirements, and shipping. Book an appointment for details.
               </p>
             </div>
             <div className="p-6 border rounded-xl shadow-sm hover:shadow-md transition">

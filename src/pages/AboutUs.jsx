@@ -2,8 +2,8 @@ import React from "react";
 import HeroSection from "../components/common/HeroSection";
 import WhoWeAre from "../components/about/WhoWeAre";
 import ValuePillars from "../components/about/ValuePillars";
-import ServingColorado from "../components/about/ServingColorado";
-import CallToAction from "../components/about/CallToAction";
+import ServingColorado from "../components/common/ServingColorado";
+import CallToAction from "../components/common/CallToAction";
 import aboutHero from "../assets/images/about_hero.png";
 import aboutMid from "../assets/images/about_mid.png";
 

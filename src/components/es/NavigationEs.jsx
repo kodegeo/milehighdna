@@ -55,31 +55,26 @@ const NavigationEs = () => {
                         to="/es/prueba-de-paternidad-legal"
                         className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                     >
-                        Prueba de Paternidad
+                        Prueba de Paternidad (Legal o Informativa)
                     </Link>
                     <Link
                         to="/es/prueba-de-inmigracion"
                         className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                     >
-                        Prueba de ADN para Inmigración
+                        Prueba de ADN para Inmigración (USCIS)
                     </Link>
-                    <Link
-                        to="/es/services/prenatal"
-                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                    >
-                        Prueba Prenatal
-                    </Link>
+
                     <Link
                         to="/es/prueba-de-hermanos"
                         className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                     >
-                        Prueba de Hermanos
+                        Prueba de hermandad
                     </Link>
                     <Link
                         to="/es/prueba-de-abuelidad"
                         className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                     >
-                        Prueba de Abuelos
+                        Prueba de abuelidad
                     </Link>
                     </div>
                 )}

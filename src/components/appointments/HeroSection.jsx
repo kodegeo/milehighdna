@@ -8,7 +8,7 @@ const HeroSection = () => {
         className="absolute inset-0 bg-cover bg-center"
         style={{
           backgroundImage: `url(${bannerBg})`,
-          filter: 'brightness(0.7)'
+          filter: 'brightness(0.9)'
         }}
       />
       <div className="relative z-10 container mx-auto px-4 h-full flex items-center">

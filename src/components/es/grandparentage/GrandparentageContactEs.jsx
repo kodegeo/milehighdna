@@ -5,20 +5,20 @@ const GrandparentageContactEs = () => {
           {/* Left: Call-to-Action */}
           <div>
             <h2 className="text-3xl font-bold text-gray-800 mb-4">
-              ¿Listo para Programar su Prueba de ADN de Abuelos?
+              ¿Listo para Programar su Prueba de ADN de Abuelidad?
             </h2>
             <p className="text-lg text-gray-600 mb-6">
-              Estamos aquí para ayudarle a avanzar, ya sea por razones legales, apoyo para inmigración o tranquilidad. Nuestro equipo está listo para responder preguntas y guiarle en cada paso.
+              Estamos aquí para ayudarlo a avanzar — ya sea por razones legales, apoyo en inmigración o tranquilidad personal. Nuestro equipo está listo para responder preguntas y guiarlo en cada paso.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a
-                href="/schedule"
+                href="/es/schedule"
                 className="bg-blue-600 text-white px-6 py-3 rounded-xl shadow hover:bg-blue-700 transition"
               >
                 Programar su Cita
               </a>
               <a
-                href="/contact"
+                href="/es/contact"
                 className="text-blue-600 font-semibold px-6 py-3 rounded-xl border border-blue-600 hover:bg-blue-50 transition"
               >
                 Contactar a Nuestro Equipo

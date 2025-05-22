@@ -4,28 +4,28 @@ import FAQItemEs from './FAQItemEs';
 const faqs = [
   {
     id: 'results',
-    question: '¿Cuánto tiempo toma obtener los resultados de la prueba de ADN?',
-    answer: 'La mayoría de los resultados están disponibles en 2-3 días hábiles después de que el laboratorio recibe su muestra.',
+    question: '¿Cuánto tiempo tardan los resultados de la prueba de ADN?',
+    answer: 'La mayoría de los resultados están disponibles dentro de 2 a 5 días hábiles después de que el laboratorio recibe las muestras.',
   },
   {
     id: 'legal',
-    question: '¿Son sus pruebas de ADN legalmente admisibles?',
-    answer: 'Sí, nuestras pruebas legales de ADN siguen una cadena de custodia estricta y son aceptadas en los tribunales.',
+    question: '¿Sus pruebas de ADN son legalmente válidas?',
+    answer: 'Sí. Nuestras pruebas legales siguen una cadena de custodia estricta y son aceptadas en la corte.',
   },
   {
     id: 'same-day',
     question: '¿Ofrecen citas el mismo día?',
-    answer: 'Sí, dependiendo de la disponibilidad. Por favor, consulte nuestra página de programación o llame para confirmar.',
+    answer: 'Sí, según disponibilidad. Consulta nuestra página de programación o llámanos para confirmar.',
   },
   {
     id: 'immigration',
-    question: '¿Puedo usar las pruebas de ADN para fines de inmigración?',
-    answer: 'Absolutamente. Proporcionamos pruebas de ADN para inmigración acreditadas por AABB y aprobadas por USCIS y embajadas.',
+    question: '¿Puedo usar una prueba de ADN para trámites de inmigración?',
+    answer: 'Por supuesto. Ofrecemos pruebas de ADN para inmigración acreditadas por la AABB, aprobadas por el USCIS y embajadas',
   },
   {
     id: 'prenatal',
-    question: '¿Es segura la prueba prenatal?',
-    answer: 'Sí, ofrecemos pruebas de paternidad prenatales no invasivas utilizando la sangre de la madre y la muestra del presunto padre.',
+    question: '¿La prueba prenatal es segura?',
+    answer: 'Sí. Ofrecemos pruebas de paternidad prenatal no invasivas, utilizando una muestra de sangre de la madre y una del presunto padre.',
   },
 ];
 

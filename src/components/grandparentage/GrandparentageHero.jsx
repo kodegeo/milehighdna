@@ -10,8 +10,7 @@ const GrandparentageHero = () => {
               Grandparent DNA Testing You Can Trust
             </h1>
             <p className="text-lg text-gray-600 mb-6">
-              Fast, accurate, and legal DNA testing for U.S. immigration cases. We coordinate with
-              embassies and provide direct delivery to immigration authorities.
+              Fast, accurate, and legal DNA testing for personal peace of mind, legal matters, or court-admissible cases. While grandparent testing may also support immigration cases, additional steps and pricing apply for embassy coordination and document delivery.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a href="https://calendly.com/cynthia-milehighdnatesting/30min" className="bg-blue-600 text-white px-6 py-3 rounded-xl shadow hover:bg-blue-700 transition">

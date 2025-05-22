@@ -7,15 +7,13 @@ const GrandparentageHeroEs = () => {
           {/* Text Content */}
           <div className="lg:w-1/2 mb-10 lg:mb-0">
             <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
-              Pruebas de ADN de Abuelos en las que Puede Confiar
+            Prueba de Abuelidad
             </h1>
             <p className="text-lg text-gray-600 mb-6">
-              Pruebas de ADN rápidas, precisas y legales para casos de inmigración en EE.UU. Coordinamos con
-              embajadas y proporcionamos entrega directa a las autoridades de inmigración.
-            </p>
+            Evalúa el vínculo biológico entre abuelos y nietos cuando los padres no pueden hacerse la prueba. Se utiliza en casos legales, migratorios o personales para establecer relaciones familiares con alta confiabilidad.            </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a href="https://calendly.com/cynthia-milehighdnatesting/30min" className="bg-blue-600 text-white px-6 py-3 rounded-xl shadow hover:bg-blue-700 transition">
-                Programar su Prueba
+              Agenda tu prueba
               </a>
               <a href="https://calendly.com/milehighdnatesting-info/30min" className="text-blue-600 font-semibold px-6 py-3 rounded-xl border border-blue-600 hover:bg-blue-50 transition">
                 Hablar con un Especialista

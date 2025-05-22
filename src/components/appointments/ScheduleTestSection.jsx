@@ -12,11 +12,6 @@ const services = [
     link: 'https://calendly.com/milehighdnatesting-immigration',
   },
   {
-    name: 'Prenatal Testing',
-    description: 'Non-invasive testing to determine paternity before birth.',
-    link: 'https://calendly.com/milehighdnatesting-prenatal',
-  },
-  {
     name: 'Siblingship Testing',
     description: 'Establish full or half-sibling biological relationships.',
     link: 'https://calendly.com/milehighdnatesting-siblingship',

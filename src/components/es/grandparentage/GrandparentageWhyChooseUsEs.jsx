@@ -1,41 +1,41 @@
 const GrandparentageWhyChooseUsEs = () => {
     const reasons = [
       {
-        title: 'Laboratorios Acreditados por AABB',
+        title: 'Laboratorios acreditados por la AABB',
         description:
-          'Todas las pruebas se procesan a través de laboratorios acreditados por AABB, garantizando el cumplimiento legal y la precisión líder en la industria.',
+          'Todas nuestras pruebas se procesan en laboratorios acreditados por la AABB, lo que garantiza cumplimiento legal y precisión al más alto nivel de la industria.',
       },
       {
-        title: 'Opciones Legales y de Tranquilidad Personal',
+        title: 'Opciones legales y personales',
         description:
-          'Ya sea que necesite resultados para tribunales o tranquilidad personal, ofrecemos opciones de pruebas certificadas y no certificadas.',
+          'Ya sea que necesites resultados para la corte o simplemente tranquilidad personal, ofrecemos pruebas certificadas y no certificadas, según tu situación.',
       },
       {
-        title: 'Resultados Rápidos',
+        title: 'Resultados rápidos',
         description:
-          'Recibirá resultados precisos en 2–4 días hábiles. También ofrecemos opciones aceleradas si el tiempo es crítico.',
+          'Recibe resultados precisos en solo 2 a 4 días hábiles. También contamos con opciones urgentes si necesitas respuestas rápidamente.',
       },
       {
-        title: 'Apoyo Compasivo',
+        title: 'Atención compasiva',
         description:
-          'Nuestro equipo comprende la importancia emocional y legal de estas pruebas. Estamos aquí para guiarle en cada paso del camino.',
+          'Sabemos que estas pruebas pueden tener una carga emocional y legal. Nuestro equipo está aquí para acompañarte en cada paso con empatía y profesionalismo.',
       },
       {
-        title: 'Precios Claros y Transparentes',
+        title: 'Precios claros y sin sorpresas',
         description:
-          'Sin cargos sorpresa. Somos transparentes sobre lo que está incluido y ofrecemos apoyo con documentación de seguros, legal o de inmigración.',
+          'Sin cargos ocultos. Explicamos con claridad lo que está incluido y ofrecemos apoyo si necesitas documentación para seguros, trámites legales o migratorios.',
       },
       {
-        title: 'Seguro y Confidencial',
+        title: 'Privacidad y confidencialidad garantizadas',
         description:
-          'Su información se mantiene privada y segura durante todo el proceso. La confidencialidad está garantizada.',
+          'Tu información se mantiene protegida y confidencial durante todo el proceso. Nos comprometemos a cuidar tu privacidad.',
       },
     ];
   
     return (
       <section className="bg-white py-16 px-6 md:px-16 lg:px-24">
         <div className="max-w-6xl mx-auto text-center">
-          <h2 className="text-3xl font-bold text-gray-800 mb-10">¿Por Qué Elegir Mile High DNA Testing?</h2>
+          <h2 className="text-3xl font-bold text-gray-800 mb-10">¿Por qué elegir Mile High DNA Testing?</h2>
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 text-left">
             {reasons.map((item, index) => (
               <div
