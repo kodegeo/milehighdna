@@ -4,34 +4,34 @@ console.log('✅ Stripe API URL:', import.meta.env.VITE_API_URL);
 
 const tests = [
   {
-    title: 'Legal Paternity Test',
+    title: 'Legal Paternity DNA Test',
     price: 349,
     id: 'legal-paternity',
-    priceId: 'price_1RJf5QK2515KuCq2ERIuc56P',
+    priceId: 'price_1RRgsK2Lu8Ikop8F71lMFCvp',
   },
   {
-    title: 'Non-Legal Paternity Test',
+    title: 'Non-Legal Paternity DNA Test',
     price: 199,
     id: 'non-legal-paternity',
-    priceId: 'price_1RJf6IK2515KuCq2JBnXBDgO',
+    priceId: 'price_1RRgiw2Lu8Ikop8FJdy6lg8r',
   },
   {
-    title: 'Grandparentage Test',
-    price: 399,
+    title: 'Grandparentage DNA Test',
+    price: 329,
     id: 'grandparentage',
-    priceId: 'price_1RJf87K2515KuCq24feeajxY',
+    priceId: 'price_1RRgxT2Lu8Ikop8F9VstMrLC',
   },
   {
-    title: 'Full Siblingship Test',
-    price: 349,
+    title: 'Full Siblingship DNA Test',
+    price: 329,
     id: 'full-siblingship',
-    priceId: 'price_1RJf98K2515KuCq2kaCCNIXD',
+    priceId: 'price_1RRgvZ2Lu8Ikop8FbAH5PVev',
   },
   {
-    title: 'Half Siblingship Test',
-    price: 349,
+    title: 'Half Siblingship DNA Test',
+    price: 329,
     id: 'half-siblingship',
-    priceId: 'price_1RJfAYK2515KuCq2o3E9ToM5',
+    priceId: 'price_1RRgvZ2Lu8Ikop8FbAH5PVev',
   },
   {
     title: 'Immigration Test',
