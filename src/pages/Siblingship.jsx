@@ -17,7 +17,27 @@ import CallToAction from '../components/siblingship/CallToAction';
 const SiblingshipPage = () => {
   return (
     <main>
-      <SiblingshipHero />
+      <Helmet>
+        <title>Sibling DNA Test | Relationship DNA Testing in Denver, Aurora & Lakewood</title>
+        <meta 
+          name="description" 
+          content="Confirm sibling relationships with AABB-accredited DNA testing. Legal and non-legal sibling DNA tests available in Denver, Aurora, and Lakewood. Fast, confidential results." 
+        />
+
+        {/* Open Graph for Social Sharing */}
+        <meta property="og:title" content="Sibling Relationship DNA Testing in Colorado" />
+        <meta property="og:description" content="Get accurate sibling and relationship DNA tests in Colorado. Legal and non-legal testing for full, half, or no biological relation. AABB-accredited labs." />
+        <meta property="og:image" content="https://milehighdnatesting.com/images/banner-1200.png" />
+        <meta property="og:url" content="https://milehighdnatesting.com/siblingship-dna-tests" />
+        <meta property="og:type" content="article" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:image" content="https://milehighdnatesting.com/images/banner-1200.png" />
+      </Helmet>
+
+      <SiblingshipHero 
+      title="Sibling DNA Test | Relationship DNA Testing in Denver, Aurora & Lakewood"
+      subtitle="AABB-accredited sibling DNA testing in Denver, Aurora, and Lakewood. Legal and non-legal options to confirm biological relationships for family, court, or immigration needs."
+      />
       <SiblingshipPricing />
       <SiblingshipOverview />
       <SiblingshipTypes />

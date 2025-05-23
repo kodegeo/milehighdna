@@ -1,11 +1,29 @@
 import React from 'react';
 import ServingColoradoEs from '../../components/es/common/ServingColoradoEs';
 import CallToActionEs from '../../components/es/common/CallToActionEs';
+import { Helmet } from 'react-helmet-async';
+
 
 const AABBAccreditation = () => {
   return (
     <div>
       <div className="max-w-4xl mx-auto px-4 py-10">
+      <Helmet>
+        <title>Acreditación AABB | Pruebas de ADN Legales y de Inmigración en Colorado</title>
+        <meta 
+          name="description" 
+          content="Descubre por qué la acreditación AABB es esencial para pruebas de ADN legales e inmigratorias. Resultados aceptados por USCIS y tribunales. Atendemos en Denver, Aurora y Lakewood." 
+        />
+
+        <meta property="og:title" content="¿Qué es la acreditación AABB en pruebas de ADN?" />
+        <meta property="og:description" content="Laboratorios acreditados por la AABB garantizan pruebas de ADN confiables, válidas legalmente y aceptadas por USCIS. Servicios disponibles en español en Colorado." />
+        <meta property="og:image" content="https://milehighdnatesting.com/images/banner-1200.png" />
+        <meta property="og:url" content="https://milehighdnatesting.com/es/aabb-accreditation" />
+        <meta property="og:type" content="article" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:image" content="https://milehighdnatesting.com/images/banner-1200.png" />
+      </Helmet>
+
         <h1 className="text-3xl font-bold mb-6">Acreditación AABB</h1>
 
         <p className="mb-4">

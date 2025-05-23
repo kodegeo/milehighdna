@@ -1,4 +1,6 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
+
 
 console.log('✅ Stripe API URL:', import.meta.env.VITE_API_URL);
 
@@ -72,7 +74,23 @@ const BookAppointmentEs = () => {
   return (
     <div className="min-h-screen bg-gray-100 py-10 px-4">
       <div className="max-w-4xl mx-auto">
-        <h1 className="text-2xl font-bold text-gray-800 mb-6">Programe Su Prueba de ADN</h1>
+      <Helmet>
+        <title>Agende Su Prueba de ADN en Español | Mile High DNA Denver</title>
+        <meta 
+          name="description" 
+          content="Programe en línea su prueba de paternidad, inmigración o familiar. Ofrecemos servicios en español en Denver, Aurora y Lakewood. Pague por adelantado si lo desea." 
+        />
+
+        <meta property="og:title" content="Agende Su Cita para Prueba de ADN en Colorado" />
+        <meta property="og:description" content="Programe su cita para pruebas de ADN legales, inmigratorias o familiares. Resultados confidenciales y servicio en español. Sirviendo Denver y Colorado." />
+        <meta property="og:image" content="https://milehighdnatesting.com/images/banner-1200.png" />
+        <meta property="og:url" content="https://milehighdnatesting.com/es/reservar-cita" />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:image" content="https://milehighdnatesting.com/images/banner-1200.png" />
+      </Helmet>
+
+        <h1 className="text-2xl font-bold text-gray-800 mb-6">Agende su Prueba de ADN Legal, de Inmigración o Familiar en Denver</h1>
         <p className="mb-4 text-gray-600">Todas las pruebas requieren una cita. Puede elegir pagar por adelantado si lo desea.</p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

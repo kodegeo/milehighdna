@@ -1,4 +1,6 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
+
 
 console.log('✅ Stripe API URL:', import.meta.env.VITE_API_URL);
 
@@ -7,31 +9,31 @@ const tests = [
     title: 'Legal Paternity DNA Test',
     price: 349,
     id: 'legal-paternity',
-    priceId: 'price_1RRgsK2Lu8Ikop8F71lMFCvp',
+    priceId: 'price_1RS2xORtZv9QBc8oLZijQohU',
   },
   {
     title: 'Non-Legal Paternity DNA Test',
     price: 199,
     id: 'non-legal-paternity',
-    priceId: 'price_1RRgiw2Lu8Ikop8FJdy6lg8r',
+    priceId: 'price_1RS2y0RtZv9QBc8oQ9tSrNo7',
   },
   {
     title: 'Grandparentage DNA Test',
     price: 329,
     id: 'grandparentage',
-    priceId: 'price_1RRgxT2Lu8Ikop8F9VstMrLC',
+    priceId: 'price_1RS2vtRtZv9QBc8o5M8uYaG2',
   },
   {
     title: 'Full Siblingship DNA Test',
     price: 329,
     id: 'full-siblingship',
-    priceId: 'price_1RRgvZ2Lu8Ikop8FbAH5PVev',
+    priceId: 'price_1RS2wmRtZv9QBc8ox5EAyusG',
   },
   {
     title: 'Half Siblingship DNA Test',
     price: 329,
     id: 'half-siblingship',
-    priceId: 'price_1RRgvZ2Lu8Ikop8FbAH5PVev',
+    priceId: 'price_1RS2wmRtZv9QBc8ox5EAyusG',
   },
   {
     title: 'Immigration Test',
@@ -71,9 +73,30 @@ const BookAppointment = () => {
 
   return (
     <div className="min-h-screen bg-gray-100 py-10 px-4">
+
+    <Helmet>
+      <title>Book DNA Test Appointment | Schedule Paternity & Immigration Testing</title>
+      <meta 
+        name="description" 
+        content="Book your legal, paternity, or immigration DNA test in Denver, Aurora, or Lakewood. Schedule online and prepay securely. AABB-accredited results accepted by courts and USCIS." 
+      />
+
+      <meta property="og:title" content="Book Your DNA Test in Denver | Legal & Immigration Testing" />
+      <meta property="og:description" content="Schedule same-day or future DNA testing appointments. Prepay online for legal and AABB-accredited paternity, sibling, or immigration tests." />
+      <meta property="og:image" content="https://milehighdnatesting.com/images/banner-1200.png" />
+      <meta property="og:url" content="https://milehighdnatesting.com/book-appointment" />
+      <meta property="og:type" content="website" />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:image" content="https://milehighdnatesting.com/images/banner-1200.png" />
+    </Helmet>
+
       <div className="max-w-4xl mx-auto">
-        <h1 className="text-2xl font-bold text-gray-800 mb-6">Schedule Your DNA Test</h1>
-        <p className="mb-4 text-gray-600">All tests require an appointment. You may choose to prepay if you'd like.</p>
+      <h1 className="text-2xl font-bold text-gray-800 mb-6">
+        Book Your DNA Testing Appointment in Denver, Aurora, or Lakewood
+        </h1>
+        <p className="mb-4 text-gray-600">
+        Schedule a DNA test appointment online and choose to prepay securely. We offer legal, immigration, paternity, and relationship DNA testing in Denver, Aurora, Lakewood, and surrounding Colorado communities.
+        </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {tests.map((test) => (

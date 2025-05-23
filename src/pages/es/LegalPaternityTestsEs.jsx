@@ -8,12 +8,30 @@ import legalHero from "../../assets/images/legal_hero.png";
 import ServingColoradoEs from "../../components/es/common/ServingColoradoEs";
 import CallToActionEs from "../../components/es/common/CallToActionEs";
 import PricingEs from "../../components/es/legalPaternity/PricingEs";
+import { Helmet } from 'react-helmet-async';
+
 
 const LegalPaternityTestsEs = () => {
   return (
     <main>
+      <Helmet>
+        <title>Prueba de Paternidad Legal en Denver, Aurora y Colorado | Mile High DNA</title>
+        <meta 
+          name="description" 
+          content="Pruebas de paternidad legales y confidenciales con resultados válidos ante la corte e inmigración. Sirviendo Denver, Aurora, Lakewood y todo Colorado. Laboratorio acreditado por AABB." 
+        />
+
+        <meta property="og:title" content="Prueba de Paternidad Legal en Colorado | Resultados Válidos para Corte e Inmigración" />
+        <meta property="og:description" content="Prueba de ADN legal para casos de custodia, manutención infantil, y peticiones migratorias. Acreditado por AABB. Resultados rápidos y admisibles." />
+        <meta property="og:image" content="https://milehighdnatesting.com/images/banner-1200.png" />
+        <meta property="og:url" content="https://milehighdnatesting.com/es/prueba-de-paternidad-legal" />
+        <meta property="og:type" content="article" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:image" content="https://milehighdnatesting.com/images/banner-1200.png" />
+      </Helmet>
+
       <HeroSection
-        title="Prueba de Paternidad Legal o Informativa"
+        title="Prueba de Paternidad Legal Aceptada por la Corte en Denver y Colorado"
         subtitle={
           <>
           Confirma la relación biológica entre un presunto padre y un hijo con resultados precisos y confidenciales.<br /><br /> 
