@@ -25,7 +25,7 @@ const TopNavigationEs = () => {
         <div className="flex items-center gap-6">
           <a href="mailto:info@milehightesting.com" className="flex items-center gap-2 hover:underline whitespace-nowrap">
             <img src={emailIcon} alt="Correo electrónico" className="w-4 h-4" />
-            info@milehightesting.com
+            info@milehighdnatesting.com
           </a>
           <a href="tel:7202074467" className="flex items-center gap-2 hover:underline whitespace-nowrap">
             <img src={phoneIcon} alt="Teléfono" className="w-4 h-4" />
