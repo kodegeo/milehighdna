@@ -2,12 +2,6 @@ import React from 'react';
 
 console.log('✅ Stripe API URL:', import.meta.env.VITE_API_URL);
 
-const paymentsEnabled = import.meta.env.VITE_PAYMENTS_ENABLED === 'true';
-
-return (
-  paymentsEnabled ? <PayNowButton /> : <p>Payments coming soon.</p>
-);
-
 const tests = [
   {
     title: 'Prueba de Paternidad Legal',
@@ -48,6 +42,13 @@ const tests = [
 ];
 
 const BookAppointmentEs = () => {
+
+  const paymentsEnabled = import.meta.env.VITE_PAYMENTS_ENABLED === 'true';
+
+  return (
+    paymentsEnabled ? <PayNowButton /> : <p>Payments coming soon.</p>
+  );
+
   const handleStripeCheckout = async (priceId) => {
     try {
       const response = await fetch(`${import.meta.env.VITE_API_URL}/create-checkout-session`, {
