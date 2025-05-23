@@ -124,10 +124,7 @@ const Navigation = () => {
               </div>
             </details>
 
-            <details className="py-2">
-              <summary className="text-gray-700 hover:text-blue-600 transition duration-300 cursor-pointer" onClick={() => setIsMenuOpen(false)}>Citas</summary>
-            </details>
-
+            <Link to="/appointments" className="text-gray-700 hover:text-blue-600 transition duration-300 block py-2" onClick={() => setIsMenuOpen(false)}>Appointments</Link>
             <Link to="/faq" className="text-gray-700 hover:text-blue-600 transition duration-300 block py-2" onClick={() => setIsMenuOpen(false)}>Preguntas Frecuentes</Link>
             <Link to="/get-results" className="text-gray-700 hover:text-blue-600 transition duration-300 block py-2" onClick={() => setIsMenuOpen(false)}>Obtener Resultados</Link>
 
