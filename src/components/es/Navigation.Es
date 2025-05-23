@@ -45,7 +45,7 @@ const Navigation = () => {
                 onMouseEnter={() => setOpenDropdown("services")}
                 onMouseLeave={() => setOpenDropdown(null)}
                 >
-                <button className="text-gray-700 hover:text-blue-600 transition duration-300">
+                <button className="text-gray-700 hover:text-blue-600 transition duration-300" >
                     Servicios
                 </button>
 
@@ -62,12 +62,6 @@ const Navigation = () => {
                         className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                     >
                         Pruebas de ADN para Inmigración
-                    </Link>
-                    <Link
-                        to="/services/prenatal"
-                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                    >
-                        Pruebas Prenatales
                     </Link>
                     <Link
                         to="/siblingship-dna-tests"
@@ -117,34 +111,30 @@ const Navigation = () => {
         {/* Mobile Menu */}
         {isMenuOpen && (
           <div className="md:hidden px-4 pb-4 max-h-[80vh] overflow-y-auto">
-            <Link to="/about" className="text-gray-700 hover:text-blue-600 transition duration-300 block py-2">Sobre Nosotros</Link>
-            <Link to="/aabb-accreditation" className="text-gray-700 hover:text-blue-600 transition duration-300 block py-2">Acreditación AABB</Link>
+            <Link to="/about" className="text-gray-700 hover:text-blue-600 transition duration-300 block py-2" onClick={() => setIsMenuOpen(false)}>Sobre Nosotros</Link>
+            <Link to="/aabb-accreditation" className="text-gray-700 hover:text-blue-600 transition duration-300 block py-2" onClick={() => setIsMenuOpen(false)}>Acreditación AABB</Link>
 
             <details className="py-2">
               <summary className="text-gray-700 hover:text-blue-600 transition duration-300 cursor-pointer">Servicios</summary>
               <div className="ml-4 space-y-1 mt-1 max-h-[300px] overflow-y-auto">
-                <Link to="/legal-paternity-tests" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Pruebas de Paternidad</Link>
-                <Link to="/services/immigration" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Pruebas de ADN para Inmigración</Link>
-                <Link to="/services/prenatal" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Pruebas Prenatales</Link>
-                <Link to="/services/sibling" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Pruebas de Hermanos</Link>
-                <Link to="/services/grandparentage" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Pruebas de Abuelos</Link>
+                <Link to="/legal-paternity-tests" onClick={() => setIsMenuOpen(false)} className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Pruebas de Paternidad</Link>
+                <Link to="/services/immigration" onClick={() => setIsMenuOpen(false)} className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Pruebas de ADN para Inmigración</Link>
+                <Link to="/services/sibling" onClick={() => setIsMenuOpen(false)} className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Pruebas de Hermanos</Link>
+                <Link to="/services/grandparentage" onClick={() => setIsMenuOpen(false)} className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Pruebas de Abuelos</Link>
               </div>
             </details>
 
             <details className="py-2">
-              <summary className="text-gray-700 hover:text-blue-600 transition duration-300 cursor-pointer">Citas</summary>
-              <div className="ml-4 space-y-1 mt-1">
-                <Link to="/appointments/free-consultation" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Consulta Gratuita</Link>
-                <Link to="/appointments/service" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Cita de Servicio</Link>
-              </div>
+              <summary className="text-gray-700 hover:text-blue-600 transition duration-300 cursor-pointer" onClick={() => setIsMenuOpen(false)}>Citas</summary>
             </details>
 
-            <Link to="/faq" className="text-gray-700 hover:text-blue-600 transition duration-300 block py-2">Preguntas Frecuentes</Link>
-            <Link to="/get-results" className="text-gray-700 hover:text-blue-600 transition duration-300 block py-2">Obtener Resultados</Link>
+            <Link to="/faq" className="text-gray-700 hover:text-blue-600 transition duration-300 block py-2" onClick={() => setIsMenuOpen(false)}>Preguntas Frecuentes</Link>
+            <Link to="/get-results" className="text-gray-700 hover:text-blue-600 transition duration-300 block py-2" onClick={() => setIsMenuOpen(false)}>Obtener Resultados</Link>
 
             <Link 
               to="/book-appointment" 
               className="bg-blue-600 text-white px-6 py-2 rounded-lg font-semibold hover:bg-blue-700 transition duration-300 mt-4 block text-center"
+              onClick={() => setIsMenuOpen(false)}
             >
               Reservar Ahora
             </Link>
