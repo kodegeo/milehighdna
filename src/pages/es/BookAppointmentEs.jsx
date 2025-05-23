@@ -19,7 +19,7 @@ const tests = [
     title: 'Prueba de Abuelidad',
     price: 349,
     id: 'grandparentage',
-    priceId: 'price_1RRhPa2Lu8Ikop8FhD6tgEM7Y',
+    priceId: 'price_1RRhPa2Lu8Ikop8FhD6tgEM7',
   },
   {
     title: 'Prueba de Hermanos Completos',
