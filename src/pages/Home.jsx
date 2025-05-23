@@ -7,10 +7,30 @@ import servicePre from '../assets/images/grandparantage_1.png';
 import serviceImma from '../assets/images/service_imma.png';
 import ServingColorado from '../components/common/ServingColorado';
 import CallToAction from '../components/common/CallToAction';
+import { Helmet } from 'react-helmet-async';
+
 
 const Home = () => {
   return (
     <div className="min-h-screen">
+    <Helmet>
+      <title>DNA Testing Denver | Paternity & Immigration Tests – Mile High DNA</title>
+      <meta 
+        name="description" 
+        content="Need fast, legal DNA testing in Denver? Mile High DNA offers AABB-accredited paternity and immigration DNA tests with same-day appointments. Serving Denver, Aurora, and all of Colorado." 
+      />
+
+      {/* Open Graph for social previews */}
+      <meta property="og:title" content="DNA Testing in Denver – Legal Paternity & Immigration Tests" />
+      <meta property="og:description" content="Get AABB-accredited DNA tests in Denver. Book paternity, immigration, or relationship testing with results you can trust." />
+      <meta property="og:image" content="https://milehighdnatesting.com/images/banner-1200.png" />
+      <meta property="og:url" content="https://milehighdnatesting.com" />
+      <meta property="og:type" content="website" />
+
+      {/* Twitter card */}
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:image" content="https://milehighdnatesting.com/images/banner-1200.png" />
+    </Helmet>
       {/* Hero Section */}
       <div className="relative h-[600px]">
         <div 

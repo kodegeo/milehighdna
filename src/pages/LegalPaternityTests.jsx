@@ -9,56 +9,72 @@ import legalHero from "../assets/images/legal_hero.png";
 import Pricing from "../components/legalPaternity/Pricing";
 import ServingColorado from "../components/common/ServingColorado";
 import Compliance from "../components/legalPaternity/Compliance";
+import { Helmet } from 'react-helmet-async';
+
 
 const LegalPaternityPage = () => {
   return (
     <main>
-      <HeroSection
-        title="Legal DNA Paternity Testing"
-        subtitle="Accurate, court-admissible DNA results you can trust. Get clarity and legal support with fast results and compassionate care — serving Denver and the Front Range."
-        imageUrl={legalHero}
-        buttonText="Schedule Your Test"
-        buttonLink="https://calendly.com/cynthia-milehighdnatesting/30-minute-dna-test-appointment"
-        secondaryButtonText="Talk to a Specialist"
-        secondaryButtonLink="https://calendly.com/milehighdnatesting-info/30min"
+    <Helmet>
+      <title>Legal DNA Paternity Testing in Denver, Aurora & Lakewood | Mile High DNA</title>
+      <meta 
+        name="description" 
+        content="Court-admissible legal DNA paternity testing in Denver, Aurora, Lakewood, and surrounding Colorado communities. AABB-accredited lab results for custody, child support, and immigration cases." 
       />
+      <meta property="og:title" content="Legal DNA Paternity Testing in Colorado | Court-Admissible Results" />
+      <meta property="og:description" content="Get fast, confidential, AABB-accredited legal DNA testing for paternity. Serving Denver, Aurora, Lakewood and surrounding areas for custody and immigration needs." />
+      <meta property="og:image" content="https://milehighdnatesting.com/images/banner-1200.png" />
+      <meta property="og:url" content="https://milehighdnatesting.com/legal-paternity-tests" />
+      <meta property="og:type" content="article" />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:image" content="https://milehighdnatesting.com/images/banner-1200.png" />
+    </Helmet>
+
+    <HeroSection
+      title="Legal DNA Paternity Testing in Denver and Beyond"
+      subtitle="Get accurate, court-approved paternity DNA testing in Denver, Aurora, Lakewood, and surrounding Colorado communities. AABB-accredited. Fast, confidential results."
+      imageUrl={legalHero}
+      buttonText="Schedule Your Test"
+      buttonLink="https://calendly.com/cynthia-milehighdnatesting/30-minute-dna-test-appointment"
+      secondaryButtonText="Talk to a Specialist"
+      secondaryButtonLink="https://calendly.com/milehighdnatesting-info/30min"
+    />
 
       <Pricing />
 
       <ServiceOverview
         title="What Is Legal DNA Paternity Testing?"
         paragraphs={[
-          "Legal DNA paternity testing establishes the biological relationship between a child and an alleged father and is performed under strict chain-of-custody protocols to be valid in court.",
-          "Our tests are processed through AABB-accredited laboratories to ensure reliable, legally admissible results. From scheduling to final delivery, we prioritize accuracy, confidentiality, and compassion.",
-          "Whether you're navigating a custody case, child support order, or immigration paperwork, we're here to guide you every step of the way."
+          "Legal DNA paternity testing is a court-recognized process to determine biological parentage. It’s essential in legal matters such as custody disputes, child support cases, immigration petitions, and birth certificate corrections.",
+          "At Mile High DNA Testing, we provide legal paternity tests in Denver, Aurora, Lakewood, and throughout Colorado using AABB-accredited labs. Our strict chain-of-custody procedures ensure that your results are valid in court and accepted by government agencies.",
+          "Whether you're preparing for a legal case or seeking peace of mind, our team offers fast results, professional guidance, and complete confidentiality — every step of the way."
         ]}
       />
-
       <LegalUseCases
         title="When Is Legal Paternity Testing Required?"
         useCases={[
           {
             title: "Child Custody Disputes",
             description:
-              "Confirm paternity to support legal custody arrangements or modifications.",
+              "Establish legal paternity to support custody cases in Denver, Aurora, Lakewood, or anywhere in Colorado.",
           },
           {
             title: "Child Support Court Orders",
             description:
-              "Provide legal proof of paternity for court-mandated child support obligations.",
+              "Provide AABB-accredited DNA proof of paternity for child support enforcement or court filings.",
           },
           {
             title: "Birth Certificate Updates",
             description:
-              "Establish paternity to add or correct a father's name on a birth certificate.",
+              "Use legal DNA test results to amend or add the father's name to a child’s birth certificate in Colorado.",
           },
           {
             title: "Immigration Cases",
             description:
-              "Verify biological relationships for immigration applications and petitions.",
+              "Submit legally valid DNA results for USCIS and other immigration-related applications.",
           },
-        ]}
-      />
+        ]}      
+        />
 
       <HowItWorks
         title="How Legal Paternity Testing Works"

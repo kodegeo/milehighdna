@@ -13,20 +13,20 @@ const Overview = () => {
             <div className="p-6 border rounded-xl shadow-sm hover:shadow-md transition">
               <h3 className="text-xl font-semibold text-blue-700 mb-2">USCIS-Compliant</h3>
               <p className="text-gray-600">
-                All tests are conducted by AABB-accredited labs, approved by USCIS and U.S. embassies worldwide.
+              All immigration DNA tests are processed by AABB-accredited laboratories and fully compliant with USCIS and U.S. embassy requirements for visa, green card, and family-based petitions.
               </p>
             </div>
             <div className="p-6 border rounded-xl shadow-sm hover:shadow-md transition">
               <h3 className="text-xl font-semibold text-blue-700 mb-2">Results Timeline</h3>
               <p className="text-gray-600">
-              Immigration testing timelines vary widely based on country, embassy requirements, and shipping. Book an appointment for details.
-              </p>
+              Immigration DNA testing timelines vary depending on the destination country, specific U.S. embassy requirements, and international shipping logistics. Schedule your appointment today to get accurate timelines for your case.
+            </p>
             </div>
             <div className="p-6 border rounded-xl shadow-sm hover:shadow-md transition">
               <h3 className="text-xl font-semibold text-blue-700 mb-2">International Coordination</h3>
               <p className="text-gray-600">
-                We coordinate with embassies and clinics abroad to ensure timely collection for family members outside the U.S.
-              </p>
+              We coordinate directly with U.S. embassies and overseas collection clinics to ensure timely and secure DNA sample collection for family members outside the United States.
+</p>
             </div>
           </div>
         </div>

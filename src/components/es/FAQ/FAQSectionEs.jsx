@@ -4,28 +4,28 @@ import FAQItemEs from './FAQItemEs';
 const faqs = [
   {
     id: 'results',
-    question: '¿Cuánto tiempo tardan los resultados de la prueba de ADN?',
-    answer: 'La mayoría de los resultados están disponibles dentro de 2 a 5 días hábiles después de que el laboratorio recibe las muestras.',
+    question: '¿Cuánto tardan los resultados de una prueba de ADN?',
+    answer: 'La mayoría de los resultados están listos entre 2 y 5 días hábiles después de que el laboratorio acreditado por la AABB recibe las muestras. Las pruebas para inmigración pueden tardar más por motivos de envío o embajadas.',
   },
   {
     id: 'legal',
-    question: '¿Sus pruebas de ADN son legalmente válidas?',
-    answer: 'Sí. Nuestras pruebas legales siguen una cadena de custodia estricta y son aceptadas en la corte.',
+    question: '¿Las pruebas de ADN son válidas legalmente?',
+    answer: 'Sí. Nuestras pruebas legales siguen una cadena de custodia rigurosa y son aceptadas por tribunales, jueces, y agencias del gobierno como el USCIS.',
   },
   {
     id: 'same-day',
-    question: '¿Ofrecen citas el mismo día?',
-    answer: 'Sí, según disponibilidad. Consulta nuestra página de programación o llámanos para confirmar.',
+    question: '¿Puedo hacerme una prueba de ADN el mismo día?',
+    answer: 'Sí, ofrecemos citas el mismo día según disponibilidad. Agenda en línea o llámanos para verificar horarios en Denver, Aurora o Lakewood.',
   },
   {
     id: 'immigration',
-    question: '¿Puedo usar una prueba de ADN para trámites de inmigración?',
-    answer: 'Por supuesto. Ofrecemos pruebas de ADN para inmigración acreditadas por la AABB, aprobadas por el USCIS y embajadas',
+    question: '¿La prueba de ADN se puede usar para trámites migratorios?',
+    answer: 'Claro que sí. Nuestras pruebas para inmigración están acreditadas por la AABB y aprobadas por USCIS, consulados y embajadas estadounidenses en todo el mundo.',
   },
   {
-    id: 'prenatal',
-    question: '¿La prueba prenatal es segura?',
-    answer: 'Sí. Ofrecemos pruebas de paternidad prenatal no invasivas, utilizando una muestra de sangre de la madre y una del presunto padre.',
+    id: 'cost',
+    question: '¿Cuánto cuesta una prueba de ADN?',
+    answer: 'El costo varía según el tipo de prueba. Las pruebas de paternidad legales comienzan desde $300. Para precios exactos, contáctanos o agenda una consulta gratuita.',
   },
 ];
 

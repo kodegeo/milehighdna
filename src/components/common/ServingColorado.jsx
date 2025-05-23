@@ -9,8 +9,7 @@ const ServingColorado = () => {
           Proudly Serving Denver and the Front Range
         </h2>
         <p className="text-lg text-gray-700 mb-4">
-          Mile High DNA Testing provides trusted and confidential DNA testing
-          throughout Denver, including Lakewood, Aurora, Westminster, and the Front Range.
+          Mile High DNA Testing proudly serves families and legal professionals in Denver, Aurora, Lakewood, Westminster, Thornton, and surrounding Colorado communities.
         </p>
         <p className="text-gray-700 mb-2 font-medium">Visit us at:</p>
         <address className="text-[#2C6FA6] text-lg font-semibold not-italic mb-6">

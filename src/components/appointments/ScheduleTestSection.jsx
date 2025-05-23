@@ -28,7 +28,7 @@ const ScheduleTestSection = () => {
     <section className="bg-gray-50 py-16 px-6 md:px-12 lg:px-24">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-semibold text-gray-800 text-center mb-10">
-          Schedule a DNA Test Appointment
+        Book a DNA Test Appointment in Denver, Aurora, or Lakewood
         </h2>
         <div className="grid md:grid-cols-2 gap-8">
           {services.map((service) => (

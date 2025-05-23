@@ -9,6 +9,22 @@ const FAQEs = () => {
     <>
       <section className="bg-blue-50 py-16 px-6 md:px-12 lg:px-24 text-center">
         <div className="max-w-3xl mx-auto">
+        <Helmet>
+          <title>Preguntas Frecuentes | Pruebas de ADN en Español en Colorado</title>
+          <meta 
+            name="description" 
+            content="Respuestas a las preguntas más comunes sobre pruebas de ADN en español. Información sobre costos, tiempos, validez legal, inmigración, paternidad, y más." 
+          />
+
+          <meta property="og:title" content="Preguntas Frecuentes sobre Pruebas de ADN en Español" />
+          <meta property="og:description" content="Conozca los detalles sobre pruebas de paternidad, inmigración y ADN legales. Servicios disponibles en Denver, Aurora y todo Colorado." />
+          <meta property="og:image" content="https://milehighdnatesting.com/images/banner-1200.png" />
+          <meta property="og:url" content="https://milehighdnatesting.com/es/faq" />
+          <meta property="og:type" content="article" />
+          <meta name="twitter:card" content="summary_large_image" />
+          <meta name="twitter:image" content="https://milehighdnatesting.com/images/banner-1200.png" />
+        </Helmet>
+
           <h1 className="text-4xl md:text-5xl font-bold text-blue-700 mb-4">
             Preguntas Frecuentes
           </h1>
