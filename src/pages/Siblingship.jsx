@@ -14,8 +14,7 @@ import ServingColorado from '../components/common/ServingColorado';
 import CallToAction from '../components/siblingship/CallToAction';
 import { Helmet } from 'react-helmet';
 
-
-const SiblingshipPage = () => {
+const Siblingship = () => {
   return (
     <main>
       <Helmet>
@@ -36,8 +35,8 @@ const SiblingshipPage = () => {
       </Helmet>
 
       <SiblingshipHero 
-      title="Sibling DNA Test | Relationship DNA Testing in Denver, Aurora & Lakewood"
-      subtitle="AABB-accredited sibling DNA testing in Denver, Aurora, and Lakewood. Legal and non-legal options to confirm biological relationships for family, court, or immigration needs."
+        title="Sibling DNA Test | Relationship DNA Testing in Denver, Aurora & Lakewood"
+        subtitle="AABB-accredited sibling DNA testing in Denver, Aurora, and Lakewood. Legal and non-legal options to confirm biological relationships for family, court, or immigration needs."
       />
       <SiblingshipPricing />
       <SiblingshipOverview />
@@ -54,4 +53,4 @@ const SiblingshipPage = () => {
   );
 };
 
-export default SiblingshipPage;
+export default Siblingship;
