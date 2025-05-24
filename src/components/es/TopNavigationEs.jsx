@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import { useLocation, useNavigate } from "react-router-dom";
-import emailIcon from '../assets/images/email.png';
-import phoneIcon from '../assets/images/phone.png';
-import addressIcon from '../assets/images/address.png';
-import usaFlag from '../assets/images/usa.png';
-import mexicoFlag from '../assets/images/mexico.png';
+import emailIcon from '../../assets/images/email.png';
+import phoneIcon from '../../assets/images/phone.png';
+import addressIcon from '../../assets/images/address.png';
+import usaFlag from '../../assets/images/usa.png';
+import mexicoFlag from '../../assets/images/mexico.png';
+
 import { FaFacebookF, FaInstagram } from 'react-icons/fa6';
 import { FaShoppingCart } from 'react-icons/fa';
 
