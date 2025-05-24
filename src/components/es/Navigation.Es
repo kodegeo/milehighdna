@@ -118,9 +118,9 @@ const Navigation = () => {
               <summary className="text-gray-700 hover:text-blue-600 transition duration-300 cursor-pointer">Servicios</summary>
               <div className="ml-4 space-y-1 mt-1 max-h-[300px] overflow-y-auto">
                 <Link to="/legal-paternity-tests" onClick={() => setIsMenuOpen(false)} className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Pruebas de Paternidad</Link>
-                <Link to="/services/immigration" onClick={() => setIsMenuOpen(false)} className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Pruebas de ADN para Inmigración</Link>
-                <Link to="/services/sibling" onClick={() => setIsMenuOpen(false)} className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Pruebas de Hermanos</Link>
-                <Link to="/services/grandparentage" onClick={() => setIsMenuOpen(false)} className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Pruebas de Abuelos</Link>
+                <Link to="/immigration-dna-tests" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={() => setIsMenuOpen(false)}>Immigration DNA Testing</Link>
+                <Link to="/siblingship-dna-tests" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={() => setIsMenuOpen(false)}>Sibling Testing</Link>
+                <Link to="/grandparentage-dna-tests" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={() => setIsMenuOpen(false)}>Grandparentage Testing</Link>
               </div>
             </details>
 
