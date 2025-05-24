@@ -58,6 +58,7 @@ function AppLayout() {
             <Route path="/immigration-dna-tests" element={<ImmigrationDNATests />} />
             <Route path="/grandparentage-dna-tests" element={<GrandparentagePage />} />
             <Route path="/siblingship-dna-tests" element={<SiblingshipPage />} />
+      
             <Route path="/appointments" element={<Appointments />} />
             <Route path="/faq" element={<FAQ />} />
             <Route path="/get-results" element={<GetResults />} />

@@ -21,14 +21,14 @@ const ServingColorado = () => {
         <div className="text-[#2C6FA6] text-lg font-semibold space-y-2">
           <p>
             Phone:{" "}
-            <a href="tel:+17209009342" className="hover:underline">
-              (720) 900-9342
+            <a href="tel:+17209009349" className="hover:underline">
+              (720) 900-9349
             </a>
           </p>
           <p>
             Email:{" "}
             <a href="mailto:info@milehighdna.com" className="hover:underline">
-              info@milehighdna.com
+              info@milehighdnatesting.com
             </a>
           </p>
           <p>Hours: Mon–Fri: 9am–5pm | Sat: By Appointment</p>
