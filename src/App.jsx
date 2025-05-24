@@ -10,7 +10,7 @@ import AboutUs from './pages/AboutUs';
 import LegalPaternityTests from './pages/LegalPaternityTests';
 import ImmigrationDNATests from './pages/ImmigrationDNATests';
 import GrandparentagePage from './pages/GrandparentageTests';
-import SiblingshipPage from './pages/Siblingship';
+import Siblingship from './pages/Siblingship';
 import Appointments from './pages/Appointments';
 import FAQ from './pages/FAQ';
 import GetResults from './pages/GetResults';
@@ -57,7 +57,7 @@ function AppLayout() {
             <Route path="/legal-paternity-tests" element={<LegalPaternityTests />} />
             <Route path="/immigration-dna-tests" element={<ImmigrationDNATests />} />
             <Route path="/grandparentage-dna-tests" element={<GrandparentagePage />} />
-            <Route path="/siblingship-dna-tests" element={<SiblingshipPage />} />
+            <Route path="/siblingship-dna-tests" element={<Siblingship />} />
       
             <Route path="/appointments" element={<Appointments />} />
             <Route path="/faq" element={<FAQ />} />

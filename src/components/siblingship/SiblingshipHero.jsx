@@ -1,17 +1,16 @@
 import siblingshipHero from '../../assets/images/siblingship-hero.png';
 
-const SiblingshipHero = () => {
+const SiblingshipHero = ({ title, subtitle }) => {
     return (
       <section className="bg-gradient-to-r from-white to-blue-50 py-12 px-6 md:px-16 lg:px-24">
         <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center">
           {/* Text Content */}
           <div className="lg:w-1/2 mb-10 lg:mb-0">
             <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
-              Siblingship DNA Testing with Legal Confidence
+              {title}
             </h1>
             <p className="text-lg text-gray-600 mb-6">
-              Whether you're confirming a full or half sibling relationship — for immigration, legal
-              purposes, or personal peace of mind — we make the process fast, confidential, and accurate.
+              {subtitle}
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a href="https://calendly.com/cynthia-milehighdnatesting/30min" className="bg-blue-600 text-white px-6 py-3 rounded-xl shadow hover:bg-blue-700 transition">
