@@ -43,9 +43,9 @@ const TopNavigation = () => {
             <img src={emailIcon} alt="Email" className="w-4 h-4" />
             info@milehighdnatesting.com
           </a>
-          <a href="tel:7209009349" className="flex items-center gap-2 hover:underline whitespace-nowrap">
+          <a href="tel:7209009342" className="flex items-center gap-2 hover:underline whitespace-nowrap">
             <img src={phoneIcon} alt="Phone" className="w-4 h-4" />
-            (720) 900-9349
+            (720) 900-9342
           </a>
           <p className="whitespace-nowrap">Se Habla Español</p>
         </div>
@@ -101,7 +101,7 @@ const TopNavigation = () => {
           <a href="mailto:info@milehighdnatesting.com" aria-label="Email">
             <img src={emailIcon} alt="Email" className="w-5 h-5" />
           </a>
-          <a href="tel:7209009349" aria-label="Phone">
+          <a href="tel:7209009342" aria-label="Phone">
             <img src={phoneIcon} alt="Phone" className="w-5 h-5" />
           </a>
         </div>

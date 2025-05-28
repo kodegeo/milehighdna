@@ -21,8 +21,8 @@ const ServingColoradoEs = () => {
         <div className="text-[#2C6FA6] text-lg font-semibold space-y-2">
           <p>
             Teléfono:{" "}
-            <a href="tel:+17209009349" className="hover:underline">
-              (720) 900-9349
+            <a href="tel:+17209009342" className="hover:underline">
+              (720) 900-9342
             </a>
           </p>
           <p>
