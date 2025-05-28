@@ -1,5 +1,8 @@
 // src/App.jsx
-import React from 'react';
+import React, { useEffect } from 'react';
+import ReactGA from 'react-ga4';
+import './styles/global.css';
+
 import { BrowserRouter as Router, Routes, Route, Navigate, useLocation } from 'react-router-dom';
 import Navigation from './components/Navigation';
 import TopNavigation from './components/TopNavigation';
@@ -39,11 +42,15 @@ import MyResultsPageEs from './pages/es/MyResultsPageEs';
 import BookAppointmentEs from './pages/es/BookAppointmentEs';
 import AABBAccreditationEs from './pages/es/AABBAccreditationEs';
 
-import './styles/global.css';
+ReactGA.initialize('G-Q3MQFDMEL2'); 
 
 function AppLayout() {
   const location = useLocation();
   const isSpanish = location.pathname.startsWith('/es');
+
+  useEffect(() => {
+    ReactGA.send({ hitType: "pageview", page: location.pathname });
+  }, [location]);
 
   return (
     <div className="min-h-screen flex flex-col">
