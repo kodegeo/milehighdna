@@ -41,6 +41,8 @@ import MyResultsEs from './pages/es/MyResultsEs';
 import MyResultsPageEs from './pages/es/MyResultsPageEs';
 import BookAppointmentEs from './pages/es/BookAppointmentEs';
 import AABBAccreditationEs from './pages/es/AABBAccreditationEs';
+import Cancel from './pages/Cancel';
+import Success from './pages/Success';
 
 ReactGA.initialize('G-Q3MQFDMEL2'); 
 
@@ -76,7 +78,8 @@ function AppLayout() {
             <Route path="/my-results-page" element={<MyResultsPage />} />
             <Route path="/book-appointment" element={<BookAppointment />} />
             <Route path="/aabb-accreditation" element={<AABBAccreditation />} />
-
+            <Route path="/cancel" element={<Cancel />} />
+            <Route path="/success" element={<Success />} />
             {/* Spanish Routes */}
             <Route path="/es" element={<HomePageEs />} />
             <Route path="/es/sobre-nosotros" element={<AboutUsEs />} />
