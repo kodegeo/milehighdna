@@ -1,6 +1,7 @@
 // src/App.jsx
 import React, { useEffect } from 'react';
 import ReactGA from 'react-ga4';
+import { Helmet } from 'react-helmet-async'; // Already have HelmetProvider in main.jsx
 import './styles/global.css';
 
 import { BrowserRouter as Router, Routes, Route, Navigate, useLocation } from 'react-router-dom';
@@ -55,6 +56,26 @@ function AppLayout() {
   }, [location]);
 
   return (
+    <>
+    <Helmet>
+      {/* Google Tag Manager */}
+      <script>
+        {`
+          (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+          new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+          'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+          })(window,document,'script','dataLayer','GTM-PHRBWK96');
+        `}
+      </script>
+    </Helmet>
+
+    {/* Fallback noscript for <body> */}
+    <noscript>
+      <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PHRBWK96"
+      height="0" width="0" style={{ display: 'none', visibility: 'hidden' }} />
+    </noscript>
+    
     <div className="min-h-screen flex flex-col">
       {isSpanish ? <TopNavigationEs /> : <TopNavigation />}
       {isSpanish ? <NavigationEs /> : <Navigation />}
@@ -101,6 +122,7 @@ function AppLayout() {
 
       </main>
     </div>
+    </>
   );
 }
 
@@ -109,6 +131,7 @@ function App() {
     <Router future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
       <AppLayout />
     </Router>
+    
   );
 }
 
