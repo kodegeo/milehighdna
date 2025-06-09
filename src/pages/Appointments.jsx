@@ -19,7 +19,7 @@ const Appointments = () => {
 
         <meta property="og:title" content="Schedule a DNA Test or Get in Touch | Mile High DNA" />
         <meta property="og:description" content="Book your appointment for paternity, immigration, siblingship, or grandparentage DNA testing. Contact our team for help with documentation or scheduling." />
-        <meta property="og:image" content="https://milehighdnatesting.com/images/banner-1200.png" />
+        <meta property="og:image" content="https://milehighdnatesting.com/images/baner_sch_1.png" />
         <meta property="og:url" content="https://milehighdnatesting.com/appointments" />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
