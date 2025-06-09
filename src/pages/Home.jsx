@@ -1,7 +1,7 @@
 // src/pages/Home.jsx
 import React from 'react';
 import { Link } from 'react-router-dom';
-import bannerBg from '../assets/images/banner_bg_Res.jpg';
+import bannerBg from '../assets/images/banner_bg_Res_3.png';
 import servicePat from '../assets/images/service_pat.png';
 import servicePre from '../assets/images/grandparantage_1.png';
 import serviceImma from '../assets/images/service_imma.png';
