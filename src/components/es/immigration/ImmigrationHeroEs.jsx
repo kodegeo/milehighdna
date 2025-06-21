@@ -12,7 +12,7 @@ const Hero = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <a
-              href="https://calendly.com/cynthia-milehighdnatesting/30-minute-dna-test-appointment"
+              href="https://calendly.com/milehighdnatesting/30-minute-dna-test-appointment"
               className="bg-blue-600 text-white px-6 py-3 rounded-xl shadow hover:bg-blue-700 transition"
             >
               Programar su Prueba

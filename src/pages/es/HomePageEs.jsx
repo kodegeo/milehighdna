@@ -44,7 +44,7 @@ function HomePageEs() {
             Pruebas de ADN claras, seguras y confidenciales. Resultados rápidos y válidos para uso legal o personal. Encuentra las respuestas que necesitas con nuestro laboratorio acreditado por la AABB. Servicios disponibles en español.
             </p>
             <Link
-              to="https://calendly.com/cynthia-milehighdnatesting/30-minute-dna-test-appointment"
+              to="https://calendly.com/milehighdnatesting/30-minute-dna-test-appointment"
               className="btn-primary"
             >
               Agenda tu prueba hoy

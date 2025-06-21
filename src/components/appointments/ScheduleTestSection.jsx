@@ -4,22 +4,22 @@ const services = [
   {
     name: 'Paternity Testing',
     description: 'Confirm biological parenthood for legal or personal \n reasons.',
-    link: 'https://calendly.com/cynthia-milehighdnatesting/30-minute-dna-test-appointment',
+    link: 'https://calendly.com/milehighdnatesting/30-minute-dna-test-appointment',
   },
   {
     name: 'Immigration DNA Testing',
     description: 'Approved testing for USCIS and embassies to support immigration cases.',
-    link: 'https://calendly.com/cynthia-milehighdnatesting/30-minute-dna-test-appointment',
+    link: 'https://calendly.com/milehighdnatesting/30-minute-dna-test-appointment',
   },
   {
     name: 'Siblingship Testing',
     description: 'Establish full or half-sibling biological \nrelationships.',
-    link: 'https://calendly.com/cynthia-milehighdnatesting/30-minute-dna-test-appointment',
+    link: 'https://calendly.com/milehighdnatesting/30-minute-dna-test-appointment',
   },
   {
     name: 'Grandparentage Testing',
     description: 'Test for biological relationships between grandparents and grandchildren.',
-    link: 'https://calendly.com/cynthia-milehighdnatesting/30-minute-dna-test-appointment',
+    link: 'https://calendly.com/milehighdnatesting/30-minute-dna-test-appointment',
   },
 ];
 

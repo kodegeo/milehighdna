@@ -23,7 +23,7 @@ const GrandparentagePricingEs = () => {
               </ul>
               <br></br>
               <a
-                href="https://calendly.com/cynthia-milehighdnatesting/30-minute-dna-test-appointment"
+                href="https://calendly.com/milehighdnatesting/30-minute-dna-test-appointment"
                 className="inline-block bg-blue-600 text-white px-5 py-3 rounded-lg shadow hover:bg-blue-700 transition"
               >
                 Reserva esta prueba
@@ -42,7 +42,7 @@ const GrandparentagePricingEs = () => {
                 <li>✔ Resultados en 2 a 5 días hábiles</li>
               </ul>
               <a
-                href="https://calendly.com/cynthia-milehighdnatesting/30-minute-dna-test-appointment"
+                href="https://calendly.com/milehighdnatesting/30-minute-dna-test-appointment"
                 className="inline-block bg-blue-600 text-white px-5 py-3 rounded-lg shadow hover:bg-blue-700 transition"
               >
                 Reserva esta prueba

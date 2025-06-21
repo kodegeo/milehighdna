@@ -23,7 +23,7 @@ const SiblingshipPricing = () => {
               </ul>
               <br ></br>
               <a
-                href="https://calendly.com/cynthia-milehighdnatesting/30-minute-dna-test-appointment"
+                href="https://calendly.com/milehighdnatesting/30-minute-dna-test-appointment"
                 className="inline-block bg-blue-600 text-white px-5 py-3 rounded-lg shadow hover:bg-blue-700 transition"
               >
                 Reserva Ahora
@@ -44,7 +44,7 @@ const SiblingshipPricing = () => {
                 <li>✔ Documentación legal disponible</li>
               </ul>
               <a
-                href="https://calendly.com/cynthia-milehighdnatesting/30-minute-dna-test-appointment"
+                href="https://calendly.com/milehighdnatesting/30-minute-dna-test-appointment"
                 className="inline-block bg-blue-600 text-white px-5 py-3 rounded-lg shadow hover:bg-blue-700 transition"
               >
                 Reserva Ahora
@@ -64,7 +64,7 @@ const SiblingshipPricing = () => {
                 <li>✔ Válido para pruebas legales o personales</li>
               </ul>
               <a
-                href="https://calendly.com/cynthia-milehighdnatesting/30-minute-dna-test-appointment"
+                href="https://calendly.com/milehighdnatesting/30-minute-dna-test-appointment"
                 className="inline-block bg-blue-600 text-white px-5 py-3 rounded-lg shadow hover:bg-blue-700 transition"
               >
                 Solicita una cotización
