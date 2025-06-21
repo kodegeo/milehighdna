@@ -13,10 +13,12 @@
     "test": "NODE_ENV=test jest --detectOpenHandles"
   },
   "dependencies": {
-    "@supabase/supabase-js": "^2.49.4",
+    "@supabase/supabase-js": "^2.50.0",
     "autoprefixer": "^10.4.17",
+    "axios": "^1.10.0",
     "cors": "^2.8.5",
     "express": "^4.18.2",
+    "googleapis": "^150.0.1",
     "i18next": "^25.0.2",
     "lucide-react": "^0.507.0",
     "postcss": "^8.4.35",
