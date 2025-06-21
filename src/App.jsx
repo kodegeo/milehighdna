@@ -25,6 +25,9 @@ import MyResults from './pages/MyResults';
 import MyResultsPage from './pages/MyResultsPage';
 import BookAppointment from './pages/BookAppointment';
 import AABBAccreditation from './pages/AABBAccreditation';
+import AppointmentFormPage from './pages/AppointmentFormPage';
+import AppointmentWizard from './pages/AppointmentWizard';
+
 
 // Spanish imports
 import HomePageEs from './pages/es/HomePageEs';
@@ -101,6 +104,10 @@ function AppLayout() {
             <Route path="/aabb-accreditation" element={<AABBAccreditation />} />
             <Route path="/cancel" element={<Cancel />} />
             <Route path="/success" element={<Success />} />
+            <Route path="/appointment-form" element={<AppointmentFormPage />} />
+            <Route path="/appointment-wizard" element={<AppointmentWizard />} />
+
+
             {/* Spanish Routes */}
             <Route path="/es" element={<HomePageEs />} />
             <Route path="/es/sobre-nosotros" element={<AboutUsEs />} />
