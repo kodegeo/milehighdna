@@ -42,7 +42,7 @@ const ServingColoradoEs = () => {
               info@milehighdnatesting.com
             </a>
           </p>
-          <p>Horas de operación: Mon–Fri: 9am–5pm | Sat: Con cita previa</p>
+          <p>Horas de operación: Mon–Fri: 9am–5pm | Sat & Sun: Con cita previa</p>
         </div>
       </div>
     </section>
