@@ -30,7 +30,7 @@ const Contact = () => {
           <div className="bg-blue-50 p-6 rounded-xl shadow-md">
             <h3 className="text-xl font-semibold text-gray-800 mb-4">Contact Us</h3>
             <p className="text-gray-700 mb-2">
-              📍 <strong>Address:</strong> 123 Main St, Denver, CO 80204
+              📍 <strong>Address:</strong> 975 N. Lincoln Street Suite 205 C, Denver, CO
             </p>
             <p className="text-gray-700 mb-2">
               📞 <strong>Phone:</strong> <a href="tel:+13035550123" className="text-blue-600 hover:underline">(303) 555-0123</a>
@@ -39,7 +39,7 @@ const Contact = () => {
               ✉️ <strong>Email:</strong> <a href="mailto:info@milehighdna.com" className="text-blue-600 hover:underline">info@milehighdna.com</a>
             </p>
             <p className="text-gray-700">
-              🕒 <strong>Hours:</strong> Mon–Fri: 9am–5pm | Sat & Sun: By Appointment
+              🕒 <strong>Hours:</strong> Hours: Mon-Fri: 9am–6pm | Sat & Sun: 9am-5pm | All hours by appointment only
             </p>
           </div>
         </div>
