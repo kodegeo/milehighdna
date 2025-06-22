@@ -31,7 +31,7 @@ const ServingColorado = () => {
               info@milehighdnatesting.com
             </a>
           </p>
-          <p>Hours: Mon–Fri: 9am–5pm | Sat: By Appointment</p>
+          <p>Hours: Mon–Fri: 9am–5pm | Sat & Sun: By Appointment</p>
         </div>
       </div>
     </section>

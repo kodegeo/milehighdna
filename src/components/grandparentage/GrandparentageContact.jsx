@@ -39,7 +39,7 @@ const GrandparentageContact = () => {
               ✉️ <strong>Email:</strong> <a href="mailto:info@milehighdna.com" className="text-blue-600 hover:underline">info@milehighdna.com</a>
             </p>
             <p className="text-gray-700">
-              🕒 <strong>Hours:</strong> Mon–Fri: 9am–5pm | Sat: By Appointment
+              🕒 <strong>Hours:</strong> Mon–Fri: 9am–5pm | Sat & Sun: By Appointment
             </p>
           </div>
         </div>
