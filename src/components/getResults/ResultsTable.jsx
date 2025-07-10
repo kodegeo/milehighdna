@@ -6,6 +6,7 @@ const ResultsTable = () => {
   const [filteredRecords, setFilteredRecords] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
   const [loading, setLoading] = useState(true);
+  const [searchType, setSearchType] = useState('all'); // 'all', 'name', 'code'
 
   useEffect(() => {
     const fetchData = async () => {
@@ -19,7 +20,7 @@ const ResultsTable = () => {
           email,
           phone,
           test_type,
-          participants,
+          participant_count,
           resultsdb (
             id,
             file_path,
@@ -41,14 +42,33 @@ const ResultsTable = () => {
   }, []);
 
   useEffect(() => {
+    if (!searchTerm.trim()) {
+      setFilteredRecords(records);
+      return;
+    }
+
     const lower = searchTerm.toLowerCase();
-    const filtered = records.filter((rec) =>
-      rec.customer_code?.toLowerCase().includes(lower) ||
-      rec.first_name?.toLowerCase().includes(lower) ||
-      rec.last_name?.toLowerCase().includes(lower)
-    );
+    const filtered = records.filter((rec) => {
+      switch (searchType) {
+        case 'name':
+          return (
+            rec.first_name?.toLowerCase().includes(lower) ||
+            rec.last_name?.toLowerCase().includes(lower) ||
+            `${rec.first_name} ${rec.last_name}`.toLowerCase().includes(lower)
+          );
+        case 'code':
+          return rec.customer_code?.toLowerCase().includes(lower);
+        default:
+          return (
+            rec.customer_code?.toLowerCase().includes(lower) ||
+            rec.first_name?.toLowerCase().includes(lower) ||
+            rec.last_name?.toLowerCase().includes(lower) ||
+            rec.email?.toLowerCase().includes(lower)
+          );
+      }
+    });
     setFilteredRecords(filtered);
-  }, [searchTerm, records]);
+  }, [searchTerm, searchType, records]);
 
   const getPublicUrl = (path) => {
     const { publicUrl } = supabase.storage.from('results').getPublicUrl(path);
@@ -61,15 +81,57 @@ const ResultsTable = () => {
     <div className="mt-10">
       <h2 className="text-xl font-semibold text-gray-700 mb-4">Customer Results Overview</h2>
 
-      {/* 🔍 Search input */}
-      <div className="mb-4">
-        <input
-          type="text"
-          placeholder="Search by name or customer code..."
-          value={searchTerm}
-          onChange={(e) => setSearchTerm(e.target.value)}
-          className="w-full p-2 border border-gray-300 rounded"
-        />
+      {/* Enhanced Search Section */}
+      <div className="bg-white p-4 rounded-lg shadow mb-6">
+        <div className="flex flex-col md:flex-row gap-4 items-end">
+          <div className="flex-1">
+            <label className="block text-sm font-medium text-gray-700 mb-1">
+              Search Customers
+            </label>
+            <input
+              type="text"
+              placeholder="Search by name, customer code, or email..."
+              value={searchTerm}
+              onChange={(e) => setSearchTerm(e.target.value)}
+              className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+            />
+          </div>
+          
+          <div>
+            <label className="block text-sm font-medium text-gray-700 mb-1">
+              Search Type
+            </label>
+            <select
+              value={searchType}
+              onChange={(e) => setSearchType(e.target.value)}
+              className="p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+            >
+              <option value="all">All Fields</option>
+              <option value="name">Name Only</option>
+              <option value="code">Customer Code Only</option>
+            </select>
+          </div>
+
+          <button
+            onClick={() => {
+              setSearchTerm('');
+              setSearchType('all');
+            }}
+            className="px-4 py-3 bg-gray-500 text-white rounded-lg hover:bg-gray-600"
+          >
+            Clear
+          </button>
+        </div>
+
+        {/* Search Results Summary */}
+        <div className="mt-3 text-sm text-gray-600">
+          Showing {filteredRecords.length} of {records.length} customers
+          {searchTerm && (
+            <span className="ml-2 text-blue-600">
+              for "{searchTerm}"
+            </span>
+          )}
+        </div>
       </div>
 
       <div className="overflow-x-auto">
@@ -92,13 +154,13 @@ const ResultsTable = () => {
               const hasResult = !!result?.file_path;
 
               return (
-                <tr key={c.id} className="border-t">
-                  <td className="p-2">{c.customer_code}</td>
+                <tr key={c.id} className="border-t hover:bg-gray-50">
+                  <td className="p-2 font-medium">{c.customer_code}</td>
                   <td className="p-2">{c.first_name} {c.last_name}</td>
                   <td className="p-2">{c.email}</td>
                   <td className="p-2">{c.phone}</td>
                   <td className="p-2">{c.test_type}</td>
-                  <td className="p-2">{c.participants}</td>
+                  <td className="p-2">{c.participant_count}</td>
                   <td className="p-2">
                     {hasResult
                       ? new Date(result.created_at).toLocaleDateString()
@@ -110,7 +172,7 @@ const ResultsTable = () => {
                         href={getPublicUrl(result.file_path)}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-blue-600 underline"
+                        className="text-blue-600 underline hover:text-blue-800"
                       >
                         View PDF
                       </a>
@@ -125,7 +187,14 @@ const ResultsTable = () => {
         </table>
 
         {filteredRecords.length === 0 && (
-          <p className="text-gray-500 p-4">No records found.</p>
+          <div className="text-center py-8">
+            <p className="text-gray-500 text-lg">No records found.</p>
+            {searchTerm && (
+              <p className="text-gray-400 text-sm mt-2">
+                Try adjusting your search terms or search type.
+              </p>
+            )}
+          </div>
         )}
       </div>
     </div>
