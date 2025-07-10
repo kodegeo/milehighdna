@@ -47,6 +47,7 @@ import BookAppointmentEs from './pages/es/BookAppointmentEs';
 import AABBAccreditationEs from './pages/es/AABBAccreditationEs';
 import Cancel from './pages/Cancel';
 import Success from './pages/Success';
+import TestAdmin from './pages/TestAdmin';
 
 ReactGA.initialize('G-Q3MQFDMEL2'); 
 
@@ -106,6 +107,7 @@ function AppLayout() {
             <Route path="/success" element={<Success />} />
             <Route path="/appointment-form" element={<AppointmentFormPage />} />
             <Route path="/appointment-wizard" element={<AppointmentWizard />} />
+            <Route path="/test-admin" element={<TestAdmin />} />
 
 
             {/* Spanish Routes */}

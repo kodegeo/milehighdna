@@ -48,7 +48,7 @@ const Home = () => {
               Get the answers you need with our AABB-accredited laboratory.
             </p>
             <Link
-              to="https://calendly.com/milehighdnatesting/30-minute-dna-test-appointment"
+              to="/book-appointment"
               className="btn-primary"
             >
               Book Your Test Today

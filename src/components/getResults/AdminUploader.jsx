@@ -3,12 +3,15 @@ import { supabase } from '../../infrastructure/supabaseClient';
 
 const AdminUploader = () => {
   const [customers, setCustomers] = useState([]);
+  const [filteredCustomers, setFilteredCustomers] = useState([]);
   const [selectedCustomerId, setSelectedCustomerId] = useState('');
   const [customer, setCustomer] = useState(null);
   const [file, setFile] = useState(null);
   const [status, setStatus] = useState('');
   const [publicUrl, setPublicUrl] = useState('');
   const [uploading, setUploading] = useState(false);
+  const [searchTerm, setSearchTerm] = useState('');
+  const [showDropdown, setShowDropdown] = useState(false);
 
   useEffect(() => {
     const fetchCustomers = async () => {
@@ -22,6 +25,7 @@ const AdminUploader = () => {
       }
 
       setCustomers(data);
+      setFilteredCustomers(data);
     };
 
     fetchCustomers();
@@ -34,6 +38,30 @@ const AdminUploader = () => {
     setStatus('');
     setPublicUrl('');
   }, [selectedCustomerId, customers]);
+
+  useEffect(() => {
+    if (!searchTerm.trim()) {
+      setFilteredCustomers(customers);
+      return;
+    }
+
+    const filtered = customers.filter((c) => {
+      const searchLower = searchTerm.toLowerCase();
+      return (
+        c.first_name?.toLowerCase().includes(searchLower) ||
+        c.last_name?.toLowerCase().includes(searchLower) ||
+        c.customer_code?.toLowerCase().includes(searchLower) ||
+        `${c.first_name} ${c.last_name}`.toLowerCase().includes(searchLower)
+      );
+    });
+    setFilteredCustomers(filtered);
+  }, [searchTerm, customers]);
+
+  const handleCustomerSelect = (customerId) => {
+    setSelectedCustomerId(customerId);
+    setSearchTerm('');
+    setShowDropdown(false);
+  };
 
   const handleUpload = async () => {
     if (!customer || !file) {
@@ -99,28 +127,55 @@ const AdminUploader = () => {
 
   return (
     <div className="space-y-6">
-      <div>
-        <label className="block text-sm font-medium text-gray-700 mb-1">Select Customer</label>
-        <select
-          value={selectedCustomerId}
-          onChange={(e) => setSelectedCustomerId(e.target.value)}
-          className="border px-4 py-2 rounded w-full"
-        >
-          <option value="">-- Choose a customer --</option>
-          {customers.map((c) => (
-            <option key={c.id} value={c.id}>
-              {c.first_name} {c.last_name} ({c.customer_code})
-            </option>
-          ))}
-        </select>
+      <div className="relative">
+        <label className="block text-sm font-medium text-gray-700 mb-1">Search and Select Customer</label>
+        <div className="relative">
+          <input
+            type="text"
+            value={searchTerm}
+            onChange={(e) => {
+              setSearchTerm(e.target.value);
+              setShowDropdown(true);
+            }}
+            onFocus={() => setShowDropdown(true)}
+            placeholder="Start typing customer name or code..."
+            className="w-full border border-gray-300 rounded px-4 py-2 pr-10"
+          />
+          {showDropdown && (
+            <div className="absolute z-10 w-full mt-1 bg-white border border-gray-300 rounded-md shadow-lg max-h-60 overflow-auto">
+              {filteredCustomers.length > 0 ? (
+                filteredCustomers.map((c) => (
+                  <button
+                    key={c.id}
+                    onClick={() => handleCustomerSelect(c.id)}
+                    className="w-full text-left px-4 py-2 hover:bg-gray-100 focus:bg-gray-100 focus:outline-none"
+                  >
+                    <div className="font-medium">{c.first_name} {c.last_name}</div>
+                    <div className="text-sm text-gray-600">Code: {c.customer_code} | Test: {c.test_type}</div>
+                  </button>
+                ))
+              ) : (
+                <div className="px-4 py-2 text-gray-500">No customers found</div>
+              )}
+            </div>
+          )}
+        </div>
+        
+        {/* Selected customer display */}
+        {customer && (
+          <div className="mt-2 p-3 bg-green-50 border border-green-200 rounded">
+            <div className="font-medium text-green-800">
+              Selected: {customer.first_name} {customer.last_name}
+            </div>
+            <div className="text-sm text-green-600">
+              Code: {customer.customer_code} | Test Type: {customer.test_type}
+            </div>
+          </div>
+        )}
       </div>
 
       {customer && (
         <div className="space-y-4">
-          <div className="text-green-700 font-medium">
-            Uploading for: {customer.first_name} {customer.last_name} — Test Type: {customer.test_type || 'N/A'}
-          </div>
-
           <div>
             <label className="block mb-1 text-sm font-medium text-gray-700">Select PDF File</label>
             <input
@@ -133,7 +188,7 @@ const AdminUploader = () => {
           <button
             onClick={handleUpload}
             disabled={uploading}
-            className="bg-green-600 text-white px-6 py-2 rounded hover:bg-green-700"
+            className="bg-green-600 text-white px-6 py-2 rounded hover:bg-green-700 disabled:opacity-50"
           >
             {uploading ? 'Uploading...' : 'Upload PDF'}
           </button>
