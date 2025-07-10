@@ -73,6 +73,32 @@ const BookAppointment = () => {
     }
   };
 
+  export default function BookingPage() {
+    const goToCheckout = async (e) => {
+      e.preventDefault(); // Prevents form submission behavior
+  
+      try {
+        const res = await fetch('/create-checkout-session', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            priceId: 'price_1RjLAbK2515KuCq2Yctrpsbq', // Grandparentage test
+          }),
+        });
+  
+        if (!res.ok) {
+          const { error } = await res.json();
+          throw new Error(error || 'Checkout session creation failed');
+        }
+  
+        const { url } = await res.json();
+        window.location.href = url; // Redirect to Stripe-hosted checkout
+      } catch (err) {
+        console.error('Checkout error:', err);
+        alert(`Error: ${err.message}`);
+      }
+    };
+      
   return (
     <div className="min-h-screen bg-gray-100 py-10 px-4">
 
