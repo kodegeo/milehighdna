@@ -10,39 +10,39 @@ const GrandparentagePricingEs = () => {
           </p>
   
           <div className="grid gap-6 md:grid-cols-2">
-            {/* Single Grandparent */}
+            {/* Non Legal Single Grandparent */}
             <div className="bg-white rounded-xl shadow-md border-l-4 border-blue-600 p-6">
-              <h3 className="text-xl font-bold text-gray-800 mb-2">Un abuelo(a) + menor</h3>
-              <p className="text-gray-600 mb-4">Incluye prueba de ADN entre un abuelo o abuela y un menor. Ideal cuando el padre presunto no está disponible.</p>
+              <h3 className="text-xl font-bold text-gray-800 mb-2">Prueba para Tranquilidad Un abuelo(a) + menor</h3>
+              <p className="text-gray-600 mb-4">Recomendadas para confirmar vínculos familiares de manera privada. Los resultados no son válidos en la corte.</p>
               <p className="text-2xl font-bold text-blue-700 mb-4">$329</p>
               <ul className="text-left text-gray-700 space-y-2 mb-4">
                 <li>✔ Análisis en laboratorio acreditado por la AABB</li>
                 <li>✔ Recolección de muestras</li>
-                <li>✔ Opción legal o para tranquilidad personal</li>
+                <li>✔ Tranquilidad personal</li>
                 <li>✔ Resultados en 2 a 5 días hábiles</li>
               </ul>
               <br></br>
               <a
-                href="https://calendly.com/milehighdnatesting/30-minute-dna-test-appointment"
+                href="https://calendly.com/milehighdnatesting/prueba-abuelidad"
                 className="inline-block bg-blue-600 text-white px-5 py-3 rounded-lg shadow hover:bg-blue-700 transition"
               >
                 Reserva esta prueba
               </a>
             </div>
   
-            {/* Both Grandparents */}
+            {/* Legal Grandparents */}
             <div className="bg-white rounded-xl shadow-md border-l-4 border-blue-600 p-6">
-              <h3 className="text-xl font-bold text-gray-800 mb-2">Ambos abuelos + menor</h3>
-              <p className="text-gray-600 mb-4">Mejora la precisión y la confianza en los resultados. Recomendado para obtener resultados concluyentes.</p>
+              <h3 className="text-xl font-bold text-gray-800 mb-2">Pruebas Legal Un abuelo + niño</h3>
+              <p className="text-gray-600 mb-4">Incluye cadena de custodia completa. Apta para casos judiciales, inmigración, beneficios gubernamentales, etc.</p>
               <p className="text-2xl font-bold text-blue-700 mb-4">$429</p>
               <ul className="text-left text-gray-700 space-y-2 mb-4">
                 <li>✔ Análisis en laboratorio acreditado por la AABB</li>
                 <li>✔ Recolección de muestras para todos los participantes</li>
-                <li>✔ Documentación legal (si se requiere)</li>
+                <li>✔ Documentación legal</li>
                 <li>✔ Resultados en 2 a 5 días hábiles</li>
               </ul>
               <a
-                href="https://calendly.com/milehighdnatesting/30-minute-dna-test-appointment"
+                href="https://calendly.com/milehighdnatesting/prueba-abuelidad"
                 className="inline-block bg-blue-600 text-white px-5 py-3 rounded-lg shadow hover:bg-blue-700 transition"
               >
                 Reserva esta prueba

@@ -13,19 +13,19 @@ const SiblingshipPricing = () => {
           <div className="grid gap-6 md:grid-cols-3">
             {/* Standard Siblingship Test */}
             <div className="bg-white rounded-xl shadow-md border-l-4 border-blue-600 p-6">
-              <h3 className="text-xl font-bold text-gray-800 mb-2">Standard Siblingship</h3>
+              <h3 className="text-xl font-bold text-gray-800 mb-2">Non Legal Siblingship</h3>
               <p className="text-gray-600 mb-4">
-                Two individuals tested to determine if they are full or half siblings.
+              For private understanding, emotional closure, or family confirmation. Results are for personal use only and not court-admissible.
               </p>
-              <p className="text-2xl font-bold text-blue-700 mb-4">$329</p>
+              <p className="text-2xl font-bold text-blue-700 mb-4">$349 and up</p>
               <ul className="text-left text-gray-700 space-y-2 mb-4">
                 <li>✔ AABB-Accredited Lab</li>
                 <li>✔ 2 Participants</li>
                 <li>✔ 2–5 Business Day Turnaround</li>
-                <li>✔ Legal or Peace-of-Mind Use</li>
+                <li>✔ Peace-of-Mind Use</li>
               </ul>
               <a
-                href="https://calendly.com/milehighdnatesting/30-minute-dna-test-appointment"
+                href="https://calendly.com/milehighdnatesting/full-siblingship-dna-test"
                 className="inline-block bg-blue-600 text-white px-5 py-3 rounded-lg shadow hover:bg-blue-700 transition"
               >
                 Book Now
@@ -34,19 +34,19 @@ const SiblingshipPricing = () => {
   
             {/* With Known Parent */}
             <div className="bg-white rounded-xl shadow-md border-l-4 border-blue-600 p-6">
-              <h3 className="text-xl font-bold text-gray-800 mb-2">With Known Parent</h3>
+              <h3 className="text-xl font-bold text-gray-800 mb-2">Legal Siblingship</h3>
               <p className="text-gray-600 mb-4">
-                One known biological parent for accuracy and relationship certainty.
+              Follows strict chain-of-custody procedures. Required for court use, immigration, inheritance, or other legal matters.
               </p>
               <p className="text-2xl font-bold text-blue-700 mb-4">$429</p>
               <ul className="text-left text-gray-700 space-y-2 mb-4">
                 <li>✔ Adds Biological Parent to Analysis</li>
-                <li>✔ 3 Participants</li>
+                <li>✔ 2 Participants</li>
                 <li>✔ Strengthens Result Confidence</li>
-                <li>✔ Legal Documentation Available</li>
+                <li>✔ Legal Documentation</li>
               </ul>
               <a
-                href="https://calendly.com/milehighdnatesting/30-minute-dna-test-appointment"
+                href="https://calendly.com/milehighdnatesting/full-siblingship-dna-test"
                 className="inline-block bg-blue-600 text-white px-5 py-3 rounded-lg shadow hover:bg-blue-700 transition"
               >
                 Book Now
@@ -66,7 +66,7 @@ const SiblingshipPricing = () => {
                 <li>✔ Applies to Legal or Personal Tests</li>
               </ul>
               <a
-                href="https://calendly.com/milehighdnatesting/30-minute-dna-test-appointment"
+                href="https://calendly.com/milehighdnatesting/full-siblingship-dna-test"
                 className="inline-block bg-blue-600 text-white px-5 py-3 rounded-lg shadow hover:bg-blue-700 transition"
               >
                 Book Now

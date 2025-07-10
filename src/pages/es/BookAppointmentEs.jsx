@@ -6,34 +6,40 @@ console.log('✅ Stripe API URL:', import.meta.env.VITE_API_URL);
 
 const tests = [
   {
-    title: 'Prueba de Paternidad Legal',
+    title: 'Prueba de ADN de Paternidad uso Legal',
     price: 349,
     id: 'legal-paternity',
-    priceId: 'price_1RRhLg2Lu8Ikop8FtSTAhWb2',
+    priceId: 'price_1RJf5QK2515KuCq2ERIuc56P',
   },
   {
-    title: 'Prueba de Paternidad No Legal',
+    title: 'Prueba de ADN de Paternidad uso Personal',
     price: 199,
     id: 'non-legal-paternity',
-    priceId: 'price_1RRhNo2Lu8Ikop8FqNPep5FO',
+    priceId: 'price_1RJf6IK2515KuCq2JBnXBDgO',
   },
   {
-    title: 'Prueba de Abuelidad',
+    title: 'Prueba de ADN de Abuelidad uso Legal',
+    price: 479,
+    id: 'grandparentage',
+    priceId: 'price_1RjLAbK2515KuCq2Yctrpsbq',
+  },
+  {
+    title: 'Prueba de ADN de Abuelidad uso Personal',
     price: 349,
     id: 'grandparentage',
-    priceId: 'price_1RRhPa2Lu8Ikop8FhD6tgEM7',
+    priceId: 'price_1RJf87K2515KuCq24feeajxY',
   },
   {
-    title: 'Prueba de Hermanos Completos',
-    price: 329,
-    id: 'full-siblingship',
-    priceId: 'price_1RRhQk2Lu8Ikop8FPInX76mE',
+    title: 'Prueba de ADN de Hermanos uso legal',
+    price: 479,
+    id: 'legal-siblingship',
+    priceId: 'price_1RJf98K2515KuCq2kaCCNIXD',
   },
   {
-    title: 'Prueba de Hermanos Medio',
+    title: 'Prueba de ADN de Hermandad para uso Personal',
     price: 329,
     id: 'half-siblingship',
-    priceId: 'price_1RRhQk2Lu8Ikop8FPInX76mE',
+    priceId: 'price_1RJfAYK2515KuCq2o3E9ToM5',
   },
   {
     title: 'Prueba de Inmigración',
