@@ -10,7 +10,7 @@ const SiblingshipPricing = () => {
           <div className="grid gap-6 md:grid-cols-3">
             {/* Standard Siblingship Test */}
             <div className="bg-white rounded-xl shadow-md border-l-4 border-blue-600 p-6">
-              <h3 className="text-xl font-bold text-gray-800 mb-2">Prueba Estándar de Hermandad</h3>
+              <h3 className="text-xl font-bold text-gray-800 mb-2">Prueba de ADN de Hermandad para uso Personal</h3>
               <p className="text-gray-600 mb-4">
               Dos personas se analizan para determinar si son hermanos completos o medios hermanos.              </p>
               <p className="text-2xl font-bold text-blue-700 mb-4">$329</p>
@@ -18,12 +18,12 @@ const SiblingshipPricing = () => {
                 <li>✔ Laboratorio Acreditado por AABB</li>
                 <li>✔ 2 Participantes</li>
                 <li>✔ Resultados en 2–5 Días Hábiles</li>
-                <li>✔ Válida para uso legal o personal</li>
+                <li>✔ Válida para uso personal</li>
               
               </ul>
               <br ></br>
               <a
-                href="https://calendly.com/milehighdnatesting/30-minute-dna-test-appointment"
+                href="https://calendly.com/milehighdnatesting/prueba-hermandad"
                 className="inline-block bg-blue-600 text-white px-5 py-3 rounded-lg shadow hover:bg-blue-700 transition"
               >
                 Reserva Ahora
@@ -32,19 +32,19 @@ const SiblingshipPricing = () => {
   
             {/* With Known Parent */}
             <div className="bg-white rounded-xl shadow-md border-l-4 border-blue-600 p-6">
-              <h3 className="text-xl font-bold text-gray-800 mb-2">Con padre o madre biológica conocida</h3>
+              <h3 className="text-xl font-bold text-gray-800 mb-2">Prueba Legal Estándar de Hermandad</h3>
               <p className="text-gray-600 mb-4">
-              Incluye a un padre biológico conocido para mejorar la precisión y la certeza del resultado.
+              Sigue cadena de custodia completa. Requerida para casos legales como inmigración, herencia, o procedimientos judiciales.
               </p>
               <p className="text-2xl font-bold text-blue-700 mb-4">$429</p>
               <ul className="text-left text-gray-700 space-y-2 mb-4">
                 <li>✔ Se agrega un padre biológico al análisis</li>
-                <li>✔ 3 Participantes</li>
+                <li>✔ 2 Participantes</li>
                 <li>✔ Mayor confiabilidad en los resultados</li>
                 <li>✔ Documentación legal disponible</li>
               </ul>
               <a
-                href="https://calendly.com/milehighdnatesting/30-minute-dna-test-appointment"
+                href="https://calendly.com/milehighdnatesting/prueba-hermandad"
                 className="inline-block bg-blue-600 text-white px-5 py-3 rounded-lg shadow hover:bg-blue-700 transition"
               >
                 Reserva Ahora
