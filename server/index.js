@@ -21,6 +21,9 @@ app.get('/', (req, res) => {
 app.post('/create-checkout-session', async (req, res) => {
   const { priceId } = req.body;
 
+  console.log('🔐 Stripe key prefix:', process.env.STRIPE_SECRET_KEY?.slice(0,5));
+  console.log('📦 Price ID sent:', priceId);
+
   try {
     const session = await stripe.checkout.sessions.create({
       mode: 'payment',
