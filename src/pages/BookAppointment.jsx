@@ -55,16 +55,20 @@ const BookAppointment = () => {
 
   const handleStripeCheckout = async (priceId) => {
     try {
-      const response = await fetch(`${import.meta.env.VITE_API_URL}/create-checkout-session`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ priceId }),
-      });
-
+      const response = await fetch(
+        `${import.meta.env.VITE_API_URL}/create-checkout-session`,
+        {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ priceId }),
+        }
+      );
+  
       const data = await response.json();
       if (data.url) {
         window.location.href = data.url;
       } else {
+        console.error('Payment redirect failed:', data);
         alert('Failed to redirect to payment.');
       }
     } catch (err) {
@@ -72,7 +76,7 @@ const BookAppointment = () => {
       alert('Something went wrong during payment.');
     }
   };
-
+  
   return (
     <div className="min-h-screen bg-gray-100 py-10 px-4">
 
