@@ -8,7 +8,7 @@ const Services = () => {
       description: 'Our paternity testing services provide accurate and confidential results to establish biological relationships between fathers and children. We offer both legal and peace-of-mind testing options.',
       features: [
         '99.9% accuracy rate',
-        'Results in 1-3 business days',
+        'Results in 2-5 business days',
         'AABB accredited laboratory',
         'Court-admissible results available',
         'Confidential and secure process'
@@ -89,7 +89,7 @@ const Services = () => {
             <div>
               <h3 className="text-xl font-semibold mb-4">Fast Results</h3>
               <p className="text-gray-600 mb-4">
-                We provide quick turnaround times without compromising accuracy, with most results available within 1-3 business days.
+                We provide quick turnaround times without compromising accuracy, with most results available within 2-5 business days.
               </p>
             </div>
             <div>

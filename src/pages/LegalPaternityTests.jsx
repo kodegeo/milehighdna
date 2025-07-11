@@ -92,7 +92,7 @@ const LegalPaternityPage = () => {
           {
             title: "Get Your Results",
             description:
-              "Receive your court-admissible results within 1-3 business days.",
+              "Receive your court-admissible results within 2-5 business days.",
           },
         ]}
       />

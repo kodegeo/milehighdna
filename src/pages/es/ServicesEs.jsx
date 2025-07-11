@@ -8,7 +8,7 @@ const ServicesEs = () => {
       description: 'Nuestros servicios de pruebas de paternidad proporcionan resultados precisos y confidenciales para establecer relaciones biológicas entre padres e hijos. Ofrecemos opciones tanto legales como para tranquilidad personal.',
       features: [
         '99.9% de precisión',
-        'Resultados en 1-3 días hábiles',
+        'Resultados en 2-5 días hábiles',
         'Laboratorio acreditado por AABB',
         'Resultados admisibles en tribunales',
         'Proceso confidencial y seguro'
@@ -20,7 +20,7 @@ const ServicesEs = () => {
       description: 'Las pruebas de maternidad ayudan a establecer la relación biológica entre una madre y su hijo. Este servicio se utiliza a menudo en casos de adopción, inmigración o para tranquilidad personal.',
       features: [
         'Métodos de prueba no invasivos',
-        'Resultados precisos en 2-3 días hábiles',
+        'Resultados precisos en 2-5 días hábiles',
         'Laboratorio acreditado por AABB',
         'Documentación legal disponible',
         'Recolección profesional de muestras'
@@ -89,7 +89,7 @@ const ServicesEs = () => {
             <div>
               <h3 className="text-xl font-semibold mb-4">Resultados Rápidos</h3>
               <p className="text-gray-600 mb-4">
-                Proporcionamos tiempos de respuesta rápidos sin comprometer la precisión, con la mayoría de los resultados disponibles en 1-3 días hábiles.
+                Proporcionamos tiempos de respuesta rápidos sin comprometer la precisión, con la mayoría de los resultados disponibles en 2-5 días hábiles.
               </p>
             </div>
             <div>
