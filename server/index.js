@@ -21,7 +21,7 @@ app.get('/', (req, res) => {
 app.post('/create-checkout-session', async (req, res) => {
   const { priceId } = req.body;
 
-  console.log('🔐 Stripe key prefix:', process.env.STRIPE_SECRET_KEY?.slice(0,5));
+  console.log('🔐 Stripe key prefix:', process.env.STRIPE_SECRET_KEY?.slice(0, 8));
   console.log('📦 Price ID sent:', priceId);
 
   try {
@@ -34,8 +34,8 @@ app.post('/create-checkout-session', async (req, res) => {
 
     res.status(200).json({ url: session.url });
   } catch (error) {
-    console.error('Stripe Error:', error);
-    res.status(500).json({ error: 'Failed to create checkout session' });
+    console.error('Stripe Error:', error.message, error.stack);  // ✅ debug Stripe issue
+    res.status(500).json({ error: error.message });              // ✅ send real error back
   }
 });
 
