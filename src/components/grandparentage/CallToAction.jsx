@@ -11,7 +11,7 @@ const CallToAction = () => {
         We’re here to help you move forward — whether for legal reasons, immigration support, or peace of mind. Our team is ready to answer questions and guide you through every step.
         </p>
         <a
-          href="https://calendly.com/milehighdnatesting-info/30min"
+          href="https://calendly.com/milehighdnatesting/grandparentage-dna-test"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-block bg-white text-[#2C6FA6] font-semibold px-6 py-3 rounded-md hover:bg-[#7DB9E8] hover:text-white transition"
