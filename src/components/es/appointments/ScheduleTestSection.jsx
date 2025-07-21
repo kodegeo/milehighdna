@@ -4,22 +4,22 @@ const services = [
   {
     name: '🧬 Prueba de Paternidad Legal o Informativa',
     description: 'Confirma la paternidad con resultados confidenciales y válidos para uso personal o legal.',
-    link: 'https://calendly.com/milehighdnatesting/30-minute-dna-test-appointment',
+    link: 'https://calendly.com/milehighdnatesting/prueba-legal-paternidad-spanish',
   },
   {
     name: '🌍 Prueba de ADN para Inmigración (USCIS)',
     description: 'Pruebas aprobadas por el USCIS y embajadas para respaldar casos de inmigración.',
-    link: 'https://calendly.com/milehighdnatesting/30-minute-dna-test-appointment',
+    link: 'https://calendly.com/milehighdnatesting/consulta-gratuita',
   },
   {
     name: '👨‍👩‍👧 Prueba de Hermandad',
     description: 'Aclara si dos personas comparten uno o ambos padres. Establece relaciones biológicas entre hermanos completos o medios hermanos. Ideal cuando no se puede probar paternidad directa.',
-    link: 'https://calendly.com/milehighdnatesting/30-minute-dna-test-appointment',
+    link: 'https://calendly.com/milehighdnatesting/prueba-hermandad',
   },
   {
     name: '👵👶 Prueba de Abuelidad',
     description: 'Establece vínculos biológicos entre abuelos y nietos con fines legales o personales.',
-    link: 'https://calendly.com/milehighdnatesting/30-minute-dna-test-appointment',
+    link: 'https://calendly.com/milehighdnatesting/prueba-abuelidad',
   },
 ];
 
