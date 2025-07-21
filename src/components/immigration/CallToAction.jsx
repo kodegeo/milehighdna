@@ -11,7 +11,7 @@ const CallToAction = () => {
         Schedule your immigration DNA test today. We're here to guide you through every step — from embassy coordination to result delivery. Book an appointment with us today.
         </p>
         <a
-          href="https://calendly.com/milehighdnatesting-info/30min"
+          href="https://calendly.com/milehighdnatesting/consulta-gratuita"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-block bg-white text-[#2C6FA6] font-semibold px-6 py-3 rounded-md hover:bg-[#7DB9E8] hover:text-white transition"

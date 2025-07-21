@@ -41,9 +41,9 @@ const ImmigrationDNA = () => {
           subtitle="AABB-accredited immigration DNA testing in Denver for USCIS, embassies, and visa cases. We coordinate directly with immigration authorities for secure delivery of results."
           imageUrl={immigrationHero}
           buttonText="Schedule Your Test"
-          buttonLink="https://calendly.com/milehighdnatesting/30-minute-dna-test-appointment"
+          buttonLink="https://calendly.com/milehighdnatesting/freeconsultation"
           secondaryButtonText="Talk to a Specialist"
-          secondaryButtonLink="https://calendly.com/milehighdnatesting-info/30min"
+          secondaryButtonLink="https://calendly.com/milehighdnatesting/freeconsultation"
         />
   
         {/* Pricing Section – Moved Up */}

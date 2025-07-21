@@ -34,9 +34,9 @@ const AboutUsPage = () => {
 Ofrecemos atención profesional en inglés y español, con empatía, precisión y total discreción."
         imageUrl={aboutHero}
         buttonText="Agenda tu consulta gratuita"
-        buttonLink="https://calendly.com/milehighdnatesting/30-minute-dna-test-appointment"
+        buttonLink="https://calendly.com/milehighdnatesting/consulta-gratuita"
         secondaryButtonText="Contáctanos"
-        secondaryButtonLink="https://calendly.com/milehighdnatesting-info/30min"
+        secondaryButtonLink="https://calendly.com/milehighdnatesting/consulta-gratuita"
       />
 
       <WhoWeAre

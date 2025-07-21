@@ -13,10 +13,10 @@ const SiblingshipHeroEs = () => {
             Confirma si dos personas comparten uno o ambos padres biológicos. Ideal cuando el presunto padre no está disponible para la prueba. Resultados precisos para aclarar relaciones familiares con respaldo legal si se requiere.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <a href="https://calendly.com/milehighdnatesting/30-minute-dna-test-appointment" className="bg-blue-600 text-white px-6 py-3 rounded-xl shadow hover:bg-blue-700 transition">
+              <a href="https://calendly.com/milehighdnatesting/prueba-hermandad" className="bg-blue-600 text-white px-6 py-3 rounded-xl shadow hover:bg-blue-700 transition">
               Agenda tu prueba
               </a>
-              <a href="https://calendly.com/milehighdnatesting-info/30min" className="text-blue-600 font-semibold px-6 py-3 rounded-xl border border-blue-600 hover:bg-blue-50 transition">
+              <a href="https://calendly.com/milehighdnatesting/consulta-gratuita" className="text-blue-600 font-semibold px-6 py-3 rounded-xl border border-blue-600 hover:bg-blue-50 transition">
               Habla con un especialista              
               </a>
             </div>

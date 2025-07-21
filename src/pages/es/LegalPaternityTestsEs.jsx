@@ -42,9 +42,9 @@ const LegalPaternityTestsEs = () => {
         }
         imageUrl={legalHero}
         buttonText="Agenda tu prueba"
-        buttonLink="https://calendly.com/milehighdnatesting/30-minute-dna-test-appointment"
+        buttonLink="https://calendly.com/milehighdnatesting/prueba-legal-paternidad-spanish"
         secondaryButtonText="Hablar con un Especialista"
-        secondaryButtonLink="https://calendly.com/milehighdnatesting-info/30min"
+        secondaryButtonLink="https://calendly.com/milehighdnatesting/consulta-gratuita"
       />
 
       <PricingEs />

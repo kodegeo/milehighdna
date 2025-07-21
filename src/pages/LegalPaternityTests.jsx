@@ -35,9 +35,9 @@ const LegalPaternityPage = () => {
       subtitle="Get accurate, court-approved paternity DNA testing in Denver, Aurora, Lakewood, and surrounding Colorado communities. AABB-accredited. Fast, confidential results."
       imageUrl={legalHero}
       buttonText="Schedule Your Test"
-      buttonLink="https://calendly.com/milehighdnatesting/30-minute-dna-test-appointment"
+      buttonLink="https://calendly.com/milehighdnatesting/legal-paternity-test"
       secondaryButtonText="Talk to a Specialist"
-      secondaryButtonLink="https://calendly.com/milehighdnatesting-info/30min"
+      secondaryButtonLink="https://calendly.com/milehighdnatesting/freeconsultation"
     />
 
       <Pricing />
@@ -110,7 +110,7 @@ const LegalPaternityPage = () => {
         heading="Ready to Get Started?"
         subtext="Schedule your free consultation or book your legal paternity test today."
         buttonText="Book Now"
-        buttonLink="https://calendly.com/milehighdnatesting-info/30min"
+        buttonLink="https://calendly.com/milehighdnatesting/freeconsultation"
       />
 
       <Compliance />

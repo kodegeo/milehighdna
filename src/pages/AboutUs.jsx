@@ -37,7 +37,7 @@ const AboutUsPage = () => {
         buttonText="Schedule a Consultation"
         buttonLink="https://calendly.com/milehighdnatesting/30-minute-dna-test-appointment"
         secondaryButtonText="Contact Us"
-        secondaryButtonLink="https://calendly.com/milehighdnatesting-info/30min"
+        secondaryButtonLink="https://calendly.com/milehighdnatesting/freeconsultation"
       />
 
       <WhoWeAre

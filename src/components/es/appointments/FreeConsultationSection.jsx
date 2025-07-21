@@ -14,7 +14,7 @@ const FreeConsultationSection = () => {
         Ya sea por motivos legales, migratorios o personales, nuestro equipo te guiará paso a paso sobre el proceso, los requisitos y los tiempos de entrega.        
         </p>
         <a
-          href="https://calendly.com/milehighdnatesting-info/30min"
+          href="https://calendly.com/milehighdnatesting/freeconsultation"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-block bg-blue-600 text-white px-8 py-4 rounded-xl font-semibold text-lg hover:bg-blue-700 transition shadow-md"
