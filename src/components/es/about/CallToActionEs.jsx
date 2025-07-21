@@ -12,7 +12,7 @@ const CallToActionEs = () => {
         Nuestras consultas de 30 minutos son gratuitas y confidenciales.
         </p>
         <a
-          href="https://calendly.com/milehighdnatesting-info/30min"
+          href="https://calendly.com/milehighdnatesting/consulta-gratuita"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-block bg-white text-[#2C6FA6] font-semibold px-6 py-3 rounded-md hover:bg-[#7DB9E8] hover:text-white transition"

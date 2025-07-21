@@ -16,7 +16,7 @@ const GrandparentageHero = () => {
               <a href="https://calendly.com/milehighdnatesting/grandparentage-dna-test" className="bg-blue-600 text-white px-6 py-3 rounded-xl shadow hover:bg-blue-700 transition">
                 Schedule Your Test
               </a>
-              <a href="https://calendly.com/milehighdnatesting-info/30min" className="text-blue-600 font-semibold px-6 py-3 rounded-xl border border-blue-600 hover:bg-blue-50 transition">
+              <a href="https://calendly.com/milehighdnatesting/freeconsultation" className="text-blue-600 font-semibold px-6 py-3 rounded-xl border border-blue-600 hover:bg-blue-50 transition">
                 Talk to a Specialist
               </a>
             </div>

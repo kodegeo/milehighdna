@@ -12,7 +12,7 @@ const HeroSection = ({ title, subtitle, imageUrl }) => {
           <p className="mt-4 text-lg text-gray-700">{subtitle}</p>
           <div className="mt-6">
             <a
-              href="https://calendly.com/milehighdnatesting-info/30min"
+              href="https://calendly.com/milehighdnatesting/freeconsultation"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-[#2C6FA6] text-white px-6 py-3 rounded-md hover:bg-[#7DB9E8] transition"
