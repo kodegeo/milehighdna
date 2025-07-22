@@ -12,7 +12,7 @@ const CallToAction = ({ heading, subtext, buttonText, buttonLink }) => {
             "Speak with a specialist to learn more about our DNA testing services, timelines, and legal options. Our 30-minute consultations are free and confidential."}
         </p>
         <a
-          href={buttonLink || "https://calendly.com/milehighdnatesting/freeconsultation"}
+          href={buttonLink || "https://calendly.com/milehighdnatesting/legal-paternity-test"}
           target="_blank"
           rel="noopener noreferrer"
           className="inline-block bg-white text-[#2C6FA6] font-semibold px-6 py-3 rounded-md hover:bg-[#7DB9E8] hover:text-white transition"

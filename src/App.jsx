@@ -27,6 +27,7 @@ import BookAppointment from './pages/BookAppointment';
 import AABBAccreditation from './pages/AABBAccreditation';
 import AppointmentFormPage from './pages/AppointmentFormPage';
 import AppointmentWizard from './pages/AppointmentWizard';
+import Prenatal from './pages/Prenatal';
 
 
 // Spanish imports
@@ -92,6 +93,8 @@ function AppLayout() {
             <Route path="/immigration-dna-tests" element={<ImmigrationDNATests />} />
             <Route path="/grandparentage-dna-tests" element={<GrandparentagePage />} />
             <Route path="/siblingship-dna-tests" element={<Siblingship />} />
+            <Route path="/prenatal-dna-test" element={<Prenatal />} />
+
       
             <Route path="/appointments" element={<Appointments />} />
             <Route path="/faq" element={<FAQ />} />

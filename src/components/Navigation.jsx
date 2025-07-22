@@ -59,10 +59,10 @@ const Navigation = () => {
                         Paternity Testing
                     </Link>
                     <Link
-                        to="/immigration-dna-tests"
+                        to="/grandparentage-dna-tests"
                         className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                     >
-                        Immigration DNA Testing
+                        Grandparentage Testing
                     </Link>
                     <Link
                         to="/siblingship-dna-tests"
@@ -71,10 +71,16 @@ const Navigation = () => {
                         Sibling DNA Testing
                     </Link>
                     <Link
-                        to="/grandparentage-dna-tests"
+                        to="/prenatal-dna-test"
                         className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                     >
-                        Grandparentage Testing
+                        Prenatal DNA Testing
+                    </Link> 
+                    <Link
+                        to="/immigration-dna-tests"
+                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                    >
+                        Immigration DNA Testing
                     </Link>
                     </div>
                 )}
