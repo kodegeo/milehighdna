@@ -1,0 +1,15 @@
+User-agent: *
+
+# ❌ Block admin and private tools
+Disallow: /get-results
+Disallow: /admin-dashboard
+Disallow: /admin-uploader
+Disallow: /reset-password
+Disallow: /my-results
+Disallow: /my-results-page
+
+# ✅ Allow everything else to be crawled
+Allow: /
+
+# 🗺️ Provide link to the sitemap
+Sitemap: https://milehighdnatesting.com/sitemap.xml
