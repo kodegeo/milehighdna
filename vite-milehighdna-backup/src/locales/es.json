@@ -1,0 +1,24 @@
+{
+    "nav": {
+      "home": "Inicio",
+      "services": "Servicios",
+      "aabb": "Acreditación AABB",
+      "book": "Reservar Cita",
+      "results": "Obtener Resultados",
+      "language": "English"
+    },
+    "hero": {
+      "title": "Bienvenido a Mile High DNA Testing",
+      "subtitle": "Preciso. Asequible. Acreditado por AABB."
+    },
+    "book": {
+      "title": "Agenda tu Cita",
+      "legal": "Paternidad Legal (Prueba entre 2 personas)",
+      "grandparent": "Prueba de Abuelos (Prueba entre 2 personas)",
+      "sibling": "Prueba de Hermanos (Prueba entre 2 personas)",
+      "immigration": "Prueba de Inmigración",
+      "prenatal": "Paternidad Prenatal",
+      "schedule_call": "Por favor programa una llamada para más detalles"
+    }
+  }
+  
