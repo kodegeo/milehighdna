@@ -28,6 +28,7 @@ import AABBAccreditation from './pages/AABBAccreditation';
 import AppointmentFormPage from './pages/AppointmentFormPage';
 import AppointmentWizard from './pages/AppointmentWizard';
 import Prenatal from './pages/Prenatal';
+import DNATestingDenverPage from './pages/DNATestingDenverPage';
 
 
 // Spanish imports
@@ -111,6 +112,7 @@ function AppLayout() {
             <Route path="/appointment-form" element={<AppointmentFormPage />} />
             <Route path="/appointment-wizard" element={<AppointmentWizard />} />
             <Route path="/test-admin" element={<TestAdmin />} />
+            <Route path="/dna-testing-denver" element={<DNATestingDenverPage />} />
 
 
             {/* Spanish Routes */}
