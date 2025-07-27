@@ -30,12 +30,10 @@ const HeroSection = () => {
               Schedule Test
             </a>
             <a
-              href="https://calendly.com/milehighdnatesting-info"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="tel:7209009342"
               className="text-brand-primary font-semibold px-6 py-3 rounded-xl border border-brand-primary hover:bg-brand-hover/10 transition"
             >
-              Talk to a Specialist
+                              Call Now
             </a>
           </div>
         </div>

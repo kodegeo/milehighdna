@@ -18,10 +18,10 @@ const Hero = () => {
                 Schedule Your Test
               </a>
               <a
-                href="/contact"
+                href="tel:7209009342"
                 className="text-blue-600 font-semibold px-6 py-3 rounded-xl border border-blue-600 hover:bg-blue-50 transition"
               >
-                Talk to a Specialist
+                Call Now
               </a>
             </div>
           </div>

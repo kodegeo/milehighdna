@@ -8,17 +8,17 @@ return (
         {/* Text Content */}
         <div className="lg:w-1/2 mb-10 lg:mb-0">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
-          Prenatal Paternity DNA Test
+          Prueba de ADN de Paternidad Prenatal
           </h1>
           <p className="text-lg text-gray-600 mb-6">
-          Confirm paternity before birth with our non-invasive prenatal DNA test. Safe for both mother and baby, our AABB-accredited lab provides fast, confidential, and court-admissible results for families in Denver, Aurora, Lakewood, and across Colorado.
+          Confirme la paternidad antes del nacimiento con nuestra prueba de ADN prenatal no invasiva. Segura para la madre y el bebé, nuestro laboratorio acreditado por la AABB ofrece resultados rápidos, confidenciales y admisibles en los tribunales para familias en Denver, Aurora, Lakewood y en todo Colorado.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <a href="https://calendly.com/milehighdnatesting/noninvasive-prenatal-paternity" className="bg-blue-600 text-white px-6 py-3 rounded-xl shadow hover:bg-blue-700 transition">
-              Schedule Your Test
+            Programar Su Prueba
             </a>
             <a href="tel:7209009342" className="text-blue-600 font-semibold px-6 py-3 rounded-xl border border-blue-600 hover:bg-blue-50 transition">
-              Call Now
+            Llame Hoy
             </a>
           </div>
         </div>

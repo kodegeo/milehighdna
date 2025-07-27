@@ -119,6 +119,7 @@ const Navigation = () => {
               <summary className="text-gray-700 hover:text-blue-600 transition duration-300 cursor-pointer">Services</summary>
               <div className="ml-4 space-y-1 mt-1 max-h-[300px] overflow-y-auto">
                 <Link to="/legal-paternity-tests" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={() => setIsMenuOpen(false)}>Paternity Testing</Link>
+                <Link to="/prenatal-dna-test" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={() => setIsMenuOpen(false)}>Prenatal Testing</Link>
                 <Link to="/immigration-dna-tests" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={() => setIsMenuOpen(false)}>Immigration DNA Testing</Link>
                 <Link to="/siblingship-dna-tests" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={() => setIsMenuOpen(false)}>Sibling Testing</Link>
                 <Link to="/grandparentage-dna-tests" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={() => setIsMenuOpen(false)}>Grandparentage Testing</Link>

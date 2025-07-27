@@ -42,8 +42,8 @@ const ImmigrationDNA = () => {
           imageUrl={immigrationHero}
           buttonText="Schedule Your Test"
           buttonLink="https://calendly.com/milehighdnatesting/freeconsultation"
-          secondaryButtonText="Talk to a Specialist"
-          secondaryButtonLink="https://calendly.com/milehighdnatesting/freeconsultation"
+          secondaryButtonText="Call Now"
+          secondaryButtonLink="tel:7209009342"
         />
   
         {/* Pricing Section – Moved Up */}

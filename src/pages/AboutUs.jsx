@@ -36,8 +36,8 @@ const AboutUsPage = () => {
         imageUrl={aboutHero}
         buttonText="Schedule a Consultation"
         buttonLink="https://calendly.com/milehighdnatesting/legal-paternity-test"
-        secondaryButtonText="Contact Us"
-        secondaryButtonLink="https://calendly.com/milehighdnatesting/freeconsultation"
+        secondaryButtonText="Call Now"
+        secondaryButtonLink="tel:7209009342"
       />
 
       <WhoWeAre
