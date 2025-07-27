@@ -27,7 +27,7 @@ const AABBAccreditation = () => {
         <h1 className="text-3xl font-bold mb-6">Acreditación AABB</h1>
 
         <p className="mb-4">
-          En Mile High DNA Testing, nos enorgullece trabajar en alianza con <a href="https://www.ufclab.com/lab-services" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">Universal Forensics Corporation</a>, un laboratorio confiable y acreditado por la AABB.
+        En Mile High DNA Testing, nos enorgullece trabajar con múltiples laboratorios de reconocido prestigio nacional, acreditados por la AABB, para ofrecer pruebas de ADN precisas, admisibles en tribunales y compatibles con los requisitos de USCIS.
         </p>
 
         <p className="mb-4">

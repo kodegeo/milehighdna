@@ -3,7 +3,7 @@ import HeroSection from "../../components/common/HeroSection";
 import WhoWeAre from "../../components/about/WhoWeAre";
 import ValuePillars from "../../components/about/ValuePillars";
 import ServingColorado from "../../components/es/common/ServingColoradoEs";
-import CallToAction from "../../components/es/about/CallToActionEs";
+import CallToAction from "../../components/es/common/CallToActionEs";
 import aboutHero from "../../assets/images/about_hero.png";
 import aboutMid from "../../assets/images/about_mid.png";
 import { Helmet } from 'react-helmet-async';
@@ -35,8 +35,8 @@ Ofrecemos atención profesional en inglés y español, con empatía, precisión 
         imageUrl={aboutHero}
         buttonText="Agenda tu consulta gratuita"
         buttonLink="https://calendly.com/milehighdnatesting/consulta-gratuita"
-        secondaryButtonText="Contáctanos"
-        secondaryButtonLink="https://calendly.com/milehighdnatesting/consulta-gratuita"
+        secondaryButtonText="Llama Hoy"
+        secondaryButtonLink="tel:7209009342"
       />
 
       <WhoWeAre

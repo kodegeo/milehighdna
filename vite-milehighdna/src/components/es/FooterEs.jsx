@@ -35,7 +35,7 @@ const FooterEs = () => {
         <div>
           <h5 className="font-semibold mb-3">Contacto</h5>
           <p className="text-gray-600 mb-2">Denver, CO</p>
-          <p className="text-gray-600 mb-2">Teléfono: (555) 123-4567</p>
+          <p className="text-gray-600 mb-2">Teléfono: (720) 900-9342</p>
           <p className="text-gray-600">Correo: support@milehighdna.com</p>
         </div>
       </div>

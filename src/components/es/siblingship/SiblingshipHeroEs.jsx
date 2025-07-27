@@ -16,9 +16,10 @@ const SiblingshipHeroEs = () => {
               <a href="https://calendly.com/milehighdnatesting/prueba-hermandad" className="bg-blue-600 text-white px-6 py-3 rounded-xl shadow hover:bg-blue-700 transition">
               Agenda tu prueba
               </a>
-              <a href="https://calendly.com/milehighdnatesting/consulta-gratuita" className="text-blue-600 font-semibold px-6 py-3 rounded-xl border border-blue-600 hover:bg-blue-50 transition">
-              Habla con un especialista              
-              </a>
+              <a href="tel:7209009342" className="text-blue-600 font-semibold px-6 py-3 rounded-xl border border-blue-600 hover:bg-blue-50 transition">
+            Llama Hoy
+            </a>
+
             </div>
           </div>
           <div className="lg:w-1/2">

@@ -17,7 +17,7 @@ const HeroSection = () => {
           <h1 className="text-4xl md:text-5xl font-bold mb-6">
             Programe su Prueba de ADN
           </h1>
-          <p className="text-xl mb-8">
+          <p className="text-xl mb-8 text-white">
             Reserve su cita en línea o hable con uno de nuestros especialistas en ADN.<br />
             Ofrecemos horarios flexibles y citas el mismo día cuando están disponibles.
           </p>
@@ -31,12 +31,11 @@ const HeroSection = () => {
               Programar Prueba
             </a>
             <a
-              href="https://calendly.com/milehighdnatesting/consulta-gratuita"
+              href="tel:7209009342"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-brand-primary font-semibold px-6 py-3 rounded-xl border border-brand-primary hover:bg-brand-hover/10 transition"
-            >
-              Hablar con un Especialista
+              className="bg-white text-brand-primary font-semibold px-6 py-3 rounded-xl border border-brand-primary hover:bg-gray-50 transition">
+              📞 Llama Hoy
             </a>
           </div>
         </div>

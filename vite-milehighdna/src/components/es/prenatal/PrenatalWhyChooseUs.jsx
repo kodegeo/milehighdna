@@ -4,34 +4,34 @@ const PrenatalWhyChooseUs = () => {
 
   const reasons = [
     {
-      title: 'Safe & Non-Invasive',
+      title: 'Seguro y no invasivo',
       description:
-        'Prenatal testing only requires a simple blood draw from the mother and a cheek swab from the alleged father—no risk to the pregnancy.',
+        'La prueba prenatal solo requiere un simple dibujo de sangre de la madre y un hisopo bucal del presunto padre—sin riesgo para el embarazo.',
     },
     {
-      title: 'AABB-Accredited Labs',
+      title: 'Laboratorios acreditados por la AABB',
       description:
-        'All tests are processed by AABB-accredited laboratories, ensuring accuracy, reliability, and legal compliance.',
+        'Todas las pruebas son procesadas por laboratorios acreditados por la AABB, garantizando precisión, confiabilidad y cumplimiento legal.',
     },
     {
-      title: 'Legal & Peace-of-Mind Options',
+      title: 'Opciones legales y de tranquilidad',
       description:
-        'Choose certified results for court, immigration, or custody needs, or select a non-legal test for personal reassurance.',
+        'Elija resultados certificados para necesidades legales, inmigración o custodia, o seleccione una prueba no legal para tranquilidad personal.',
     },
     {
-      title: 'Accurate, Court-Admissible Results',
+      title: 'Resultados precisos y admisibles en tribunales',
       description:
-        'Results are over 99.9% conclusive and include notarized documentation if required for legal use.',
+        'Los resultados son más del 99.9% concluyentes y incluyen documentación notarial si es necesario para uso legal.',
     },
     {
-      title: 'Confidential & Supportive',
+      title: 'Confidencial y de apoyo',
       description:
-        'We handle every case with the utmost privacy and compassion, guiding you through each step of the process.',
+        'Manejamos cada caso con la máxima privacidad y compasión, guiándote a través de cada paso del proceso.',
     },
     {
-      title: 'Transparent Pricing',
+      title: 'Precios transparentes',
       description:
-        'No hidden fees. Our pricing includes lab analysis, sample collection, and optional legal documentation.',
+        'Sin cargos ocultos. Nuestros precios incluyen análisis de laboratorio, recolección de muestras y documentación legal opcional.',
     },
   ];
 
@@ -39,7 +39,7 @@ const PrenatalWhyChooseUs = () => {
     <section className="bg-blue-50 py-16 px-6 md:px-16 lg:px-24">
 
       <div className="max-w-6xl mx-auto text-center">
-        <h2 className="text-3xl font-bold text-gray-800 mb-10">Why Choose Mile High DNA for Prenatal Testing?</h2>
+        <h2 className="text-3xl font-bold text-gray-800 mb-10">¿Por qué elegir Mile High DNA para pruebas prenatales?</h2>
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 text-left">
           {reasons.map((item, index) => (
             <div

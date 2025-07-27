@@ -35,9 +35,9 @@ Ofrecemos atención profesional en inglés y español, con empatía, precisión 
         imageUrl={aboutHero}
         buttonText="Agenda tu consulta gratuita"
         buttonLink="https://calendly.com/milehighdnatesting/prueba-legal-paternidad-spanish"
-        secondaryButtonText="Contáctanos"
-        secondaryButtonLink="https://calendly.com/milehighdnatesting/consulta-gratuita"
-      />
+        secondaryButtonText="Llama Hoy"
+        secondaryButtonLink="tel:7209009342"
+        />
 
       <WhoWeAre
         title="Quiénes Somos"

@@ -1,5 +1,5 @@
 import React from 'react';
-import prenatalHero from '../../assets/images/service_pre.png';
+import prenatalHero from '../../../assets/images/service_pre.png';
 
 const PrenatalHero = () => {
 return (
@@ -18,7 +18,7 @@ return (
             Programar Su Prueba
             </a>
             <a href="tel:7209009342" className="text-blue-600 font-semibold px-6 py-3 rounded-xl border border-blue-600 hover:bg-blue-50 transition">
-            Llame Hoy
+            Llama Hoy
             </a>
           </div>
         </div>

@@ -22,6 +22,7 @@ const HeroEs = () => {
           >
             Reservar una Cita
           </Link>
+          
         </div>
       </div>
     </section>

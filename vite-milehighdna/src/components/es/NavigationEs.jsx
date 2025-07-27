@@ -58,6 +58,12 @@ const NavigationEs = () => {
                         Prueba de Paternidad (Legal o Informativa)
                     </Link>
                     <Link
+                        to="/es/prueba-de-paternidad-prenatal"
+                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                    >
+                        Prueba de Paternidad Prenatal
+                    </Link>
+                    <Link
                         to="/es/prueba-de-inmigracion"
                         className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                     >
@@ -121,14 +127,17 @@ const NavigationEs = () => {
                 <Link to="/es/prueba-de-paternidad-legal" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={() => setIsMenuOpen(false)}>
                     Prueba de Paternidad
                 </Link>
-                <Link to="/es/prueba-de-inmigracion" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={() => setIsMenuOpen(false)}>
-                    Prueba de ADN para Inmigración
+                <Link to="/es/prueba-de-paternidad-prenatal" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={() => setIsMenuOpen(false)}>
+                    Prueba de Paternidad Prenatal
                 </Link>
                 <Link to="/es/prueba-de-hermanos" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={() => setIsMenuOpen(false)}>
                     Prueba de Hermanos
                 </Link>
                 <Link to="/es/prueba-de-abuelidad" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={() => setIsMenuOpen(false)}>
                     Prueba de Abuelos
+                </Link>
+                <Link to="/es/prueba-de-inmigracion" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={() => setIsMenuOpen(false)}>
+                    Prueba de ADN para Inmigración
                 </Link>
               </div>
             </details>

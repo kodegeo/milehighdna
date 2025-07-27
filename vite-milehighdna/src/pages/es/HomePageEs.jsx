@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import bannerBg from '../../assets/images/banner_bg_Res_3.png';
+import bannerBgMobile from '../../assets/images/banner_bg_Res_3_mobi.jpg';
 import servicePat from '../../assets/images/service_pat.png';
 import servicePre from '../../assets/images/grandparantage_1.png';
 import serviceImma from '../../assets/images/service_imma.png';
@@ -29,7 +30,7 @@ function HomePageEs() {
       </Helmet>
 
       {/* Hero Section */}
-      <div className="relative h-[600px]">
+      <div className="relative h-[600px] mb-8">
         <div 
           className="absolute inset-0 bg-cover bg-center"
           style={{
@@ -37,18 +38,31 @@ function HomePageEs() {
             filter: 'brightness(0.9)'
           }}
         />
+        <div 
+          className="absolute inset-0 bg-cover bg-center md:hidden"
+          style={{
+            backgroundImage: `url(${bannerBgMobile})`,
+            filter: 'brightness(0.9)'
+          }}
+        />
         <div className="relative z-10 container mx-auto px-4 h-full flex items-center">
           <div className="max-w-2xl text-white">
-            <h1 className="text-5xl font-bold mb-6">Servicios Profesionales de Pruebas de ADN en Colorado</h1>
-            <p className="text-xl mb-8">
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">Servicios Profesionales de Pruebas de ADN en Colorado</h1>
+            <p className="text-lg md:text-xl mb-8">
             Pruebas de ADN claras, seguras y confidenciales. Resultados rápidos y válidos para uso legal o personal. Encuentra las respuestas que necesitas con nuestro laboratorio acreditado por la AABB. Servicios disponibles en español.
             </p>
-            <Link
-              to="https://calendly.com/milehighdnatesting/30-minute-dna-test-appointment"
-              className="btn-primary"
-            >
-              Agenda tu prueba hoy
-            </Link>
+            <div className="flex flex-col sm:flex-row gap-4">
+              <Link
+                to="https://calendly.com/milehighdnatesting/30-minute-dna-test-appointment"
+                className="btn-primary text-center"
+              >
+                Agenda tu prueba hoy
+              </Link>
+              <a href="tel:7209009342" className="bg-white text-[#2C6FA6] font-semibold px-6 py-3 rounded-xl border border-[#2C6FA6] hover:bg-gray-50 hover:border-[#1a5a8a] transition text-center shadow-md">
+                📞 Llama Hoy
+              </a>
+            </div>
+
           </div>
         </div>
       </div>

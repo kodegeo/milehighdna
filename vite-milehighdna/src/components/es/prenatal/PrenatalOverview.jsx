@@ -5,39 +5,40 @@ return (
   <section className="bg-white py-16 px-6 md:px-16 lg:px-24">
     <div className="max-w-5xl mx-auto text-center">
       <h2 className="text-3xl font-bold text-gray-800 mb-6">
-      How Prenatal Paternity Testing Works      </h2>
+      Cómo funciona la prueba de paternidad prenatal</h2>
       <p className="text-lg text-gray-600 mb-8">
-      Prenatal paternity testing uses a simple blood sample from the mother and a cheek swab from the alleged father to safely determine paternity before the baby is born. This non-invasive test poses no risk to the pregnancy and provides accurate, court-admissible results for personal, legal, or immigration purposes.      
+      La prueba de paternidad prenatal utiliza una simple muestra de sangre de la madre y un hisopo bucal del presunto padre para determinar de manera segura la paternidad antes de que nazca el bebé. Esta prueba no invasiva no representa ningún riesgo para el embarazo y ofrece resultados precisos, admisibles en tribunales, para fines personales, legales o de inmigración.
       </p>
 
       <div className="grid gap-8 md:grid-cols-3 text-left">
         <div className="p-6 border rounded-xl shadow-sm hover:shadow-md transition">
           <h3 className="text-xl font-semibold text-blue-700 mb-2">Non-invasive</h3>
           <p className="text-gray-600">
-          Only a blood sample from the mother and a cheek swab from the alleged father are required.
+          Solo se requiere una muestra de sangre de la madre y un hisopo bucal del presunto padre.
           </p>
         </div>
         <div className="p-6 border rounded-xl shadow-sm hover:shadow-md transition">
           <h3 className="text-xl font-semibold text-blue-700 mb-2">Safe</h3>
           <p className="text-gray-600">
-          No risk to the pregnancy—no amniocentesis or CVS needed.
+          Sin riesgo para el embarazo: no se necesita amniocentesis ni biopsia de vellosidades coriónicas (CVS).
           </p>
         </div>
         <div className="p-6 border rounded-xl shadow-sm hover:shadow-md transition">
           <h3 className="text-xl font-semibold text-blue-700 mb-2">Accurate</h3>
           <p className="text-gray-600">
-          Results are 99.9%+ conclusive and AABB-accredited.          </p>
+          Los resultados son más del 99.9% concluyentes y están acreditados por la AABB.
+          </p>
         </div>
         <div className="p-6 border rounded-xl shadow-sm hover:shadow-md transition">
           <h3 className="text-xl font-semibold text-blue-700 mb-2">Fast</h3>
           <p className="text-gray-600">
-          Results typically available in 7-10 business days.          
+          Los resultados están normalmente disponibles en 7 a 10 días hábiles.          
           </p>
         </div>
         <div className="p-6 border rounded-xl shadow-sm hover:shadow-md transition">
           <h3 className="text-xl font-semibold text-blue-700 mb-2">Confidential</h3>
           <p className="text-gray-600">
-          All testing and results are handled with the utmost privacy.         
+          Todas las pruebas y resultados se manejan con la máxima privacidad.
           </p>
         </div>
 

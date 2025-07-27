@@ -31,7 +31,6 @@ import Prenatal from './pages/Prenatal';
 import DNATestingDenverPage from './pages/DNATestingDenverPage';
 import Services from './pages/Services';
 
-
 // Spanish imports
 import HomePageEs from './pages/es/HomePageEs';
 import AboutUsEs from './pages/es/AboutUsEs';
@@ -51,6 +50,7 @@ import AABBAccreditationEs from './pages/es/AABBAccreditationEs';
 import Cancel from './pages/Cancel';
 import Success from './pages/Success';
 import TestAdmin from './pages/TestAdmin';
+import PrenatalEs from './pages/es/PrenatalEs';
 
 ReactGA.initialize('G-Q3MQFDMEL2'); 
 
@@ -134,6 +134,7 @@ function AppLayout() {
             <Route path="/es/reservar-cita" element={<BookAppointmentEs />} />
             <Route path="/es/aabb-accreditation" element={<AABBAccreditationEs />} />  {/* unchanged */}            {/* Spanish Fallback Route */}
             <Route path="/es/*" element={<Navigate to="/es" replace />} />
+            <Route path="/es/prueba-de-paternidad-prenatal" element={<PrenatalEs />} />
           </Routes>
 
       </main>

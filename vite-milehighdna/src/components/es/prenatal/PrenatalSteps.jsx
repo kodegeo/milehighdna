@@ -2,27 +2,27 @@ const PrenatalSteps = () => {
   const steps = [
     {
       number: 1,
-      title: 'Schedule Your Appointment',
+      title: 'Programar Su Cita',
       description:
-        'Call us or book online to schedule your prenatal DNA test. We’ll explain the process, answer questions, and coordinate the collection for both parents.',
+        'Llama a nosotros o reserve en línea para programar su prueba de ADN prenatal. Explicaremos el proceso, responderemos preguntas y coordinaremos la recolección para ambos padres.',
     },
     {
       number: 2,
-      title: 'Sample Collection',
+      title: 'Recolección de muestras',
       description:
-        'The expectant mother will have a safe, non-invasive blood draw at a certified collection site. The alleged father will provide a simple cheek swab sample at our office.',
+        'La madre embarazada tendrá un simple dibujo de sangre en un sitio de recolección certificado. El presunto padre proporcionará un simple hisopo bucal en nuestra oficina.',
     },
     {
       number: 3,
-      title: 'Lab Analysis',
+      title: 'Análisis de laboratorio',
       description:
-        'Our AABB-accredited lab extracts and compares fetal DNA from the mother’s blood with the alleged father’s DNA profile to determine paternity with over 99.9% accuracy.',
+        'Nuestro laboratorio acreditado por la AABB extrae y compara el ADN fetal de la sangre de la madre con el perfil de ADN del presunto padre para determinar la paternidad con más del 99.9% de precisión.',
     },
     {
       number: 4,
-      title: 'Receive Results',
+      title: 'Recibir Resultados',
       description:
-        'Results are typically available in 7–10 business days. Legal tests include notarized documentation suitable for court, immigration, or personal use.',
+        'Los resultados están normalmente disponibles en 7 a 10 días hábiles. Las pruebas legales incluyen documentación notarial adecuada para el tribunal, inmigración o uso personal.',
     },
   ];
   
@@ -31,7 +31,7 @@ const PrenatalSteps = () => {
       <section className="bg-white py-16 px-6 md:px-16 lg:px-24">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">
-            How Prenatal DNA Testing Works
+          Cómo funciona la prueba de ADN prenatal
           </h2>
           <div className="grid gap-8 md:grid-cols-2">
             {steps.map((step) => (

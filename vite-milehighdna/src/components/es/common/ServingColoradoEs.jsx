@@ -42,7 +42,8 @@ const ServingColoradoEs = () => {
               info@milehighdnatesting.com
             </a>
           </p>
-          <p>Horas de operación: Lunes–Viernes: 9am–6pm | Sábado & Domingo: 9am–5pm | Con cita previa</p>
+          <p>Horas de operación: Lunes–Viernes: 9am–6pm | Sábado & Domingo: 9am–5pm <br />
+           Todas las horas de operación con cita previa</p>
         </div>
       </div>
     </section>

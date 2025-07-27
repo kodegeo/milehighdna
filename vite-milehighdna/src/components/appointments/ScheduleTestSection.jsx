@@ -2,14 +2,24 @@ import React from 'react';
 
 const services = [
   {
-    name: 'Paternity Testing',
-    description: 'Confirm biological parenthood for legal or personal \n reasons.',
+    name: 'Legal Paternity Testing',
+    description: 'Confirm biological parenthood for legal \n reasons.',
     link: 'https://calendly.com/milehighdnatesting/legal-paternity-test',
   },
   {
-    name: 'Immigration DNA Testing',
-    description: 'Approved testing for USCIS and embassies to support immigration cases.',
-    link: 'https://calendly.com/milehighdnatesting/freeconsultation',
+    name: 'Non Legal Paternity Testing',
+    description: 'Confirm biological parenthood for personal \n reasons.',
+    link: 'https://calendly.com/milehighdnatesting/legal-paternity-test',
+  },
+  {
+    name: 'Legal Prenatal Paternity Testing',
+    description: 'Verify parenthood early in pregnancy for legal purposes.',
+    link: 'https://calendly.com/milehighdnatesting/noninvasive-prenatal-paternity',
+  },
+  {
+    name: 'Non Legal Prenatal Paternity Testing',
+    description: 'Verify parenthood early in pregnancy for peace of mind.',
+    link: 'https://calendly.com/milehighdnatesting/noninvasive-prenatal-paternity',
   },
   {
     name: 'Siblingship Testing',

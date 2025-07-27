@@ -1,20 +1,20 @@
 const PrenatalWhoNeedsTest = () => {
   const scenarios = [
-    'You want to confirm paternity before the baby is born for peace of mind',
-    'A legal case or custody matter requires proof of paternity during pregnancy',
-    'You need documentation for immigration or benefits before the child’s birth',
-    'The alleged father is unavailable, and early answers are important for family planning',
+    'Quiere confirmar la paternidad antes de que nazca el bebé para tranquilidad personal',
+    'Un caso legal o de custodia requiere prueba de paternidad durante el embarazo',
+    'Necesita documentación para inmigración o beneficios antes del nacimiento del niño',
+    'El presunto padre no está disponible, y las respuestas tempranas son importantes para la planificación familiar',
   ];
 
     return (
       <section className="bg-blue-50 py-16 px-6 md:px-16 lg:px-24">
         <div className="max-w-5xl mx-auto text-center">
           <h2 className="text-3xl font-bold text-gray-800 mb-6">
-          Who Should Consider Prenatal DNA Testing?
+          ¿Quién debería considerar la prueba de ADN prenatal?
           </h2>
           <p className="text-lg text-gray-600 mb-8">
-          Expectant mothers and families seeking to confirm paternity before the baby is born for peace of mind, legal, or immigration reasons.
-          </p>
+            Madres embarazadas y familias que desean confirmar la paternidad antes de que nazca el bebé por razones de tranquilidad personal, legales o de inmigración.
+            </p>
   
           <div className="grid gap-4 md:grid-cols-2 text-left max-w-3xl mx-auto">
             {scenarios.map((item, index) => (

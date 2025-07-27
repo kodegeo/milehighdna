@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 import FAQSection from '../../components/es/FAQ/FAQSectionEs';
 import HowToUse from '../../components/es/FAQ/HowToUseEs';
 import ServingColoradoEs from '../../components/es/common/ServingColoradoEs';
