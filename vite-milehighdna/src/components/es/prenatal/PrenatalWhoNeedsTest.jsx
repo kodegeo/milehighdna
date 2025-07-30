@@ -1,9 +1,9 @@
 const PrenatalWhoNeedsTest = () => {
   const scenarios = [
-    'Quiere confirmar la paternidad antes de que nazca el bebé para tranquilidad personal',
-    'Un caso legal o de custodia requiere prueba de paternidad durante el embarazo',
-    'Necesita documentación para inmigración o beneficios antes del nacimiento del niño',
-    'El presunto padre no está disponible, y las respuestas tempranas son importantes para la planificación familiar',
+    'Desea confirmar la paternidad antes de que nazca el bebé para su tranquilidad.',
+    'Un caso legal o asunto de custodia requiere prueba de paternidad durante el embarazo.',
+    'Necesita documentación para inmigración o beneficios antes del nacimiento del bebé.',
+    'Desea obtener respuestas tempranas para planificar su familia y prepararse para la llegada del bebé.',
   ];
 
     return (
@@ -13,7 +13,7 @@ const PrenatalWhoNeedsTest = () => {
           ¿Quién debería considerar la prueba de ADN prenatal?
           </h2>
           <p className="text-lg text-gray-600 mb-8">
-            Madres embarazadas y familias que desean confirmar la paternidad antes de que nazca el bebé por razones de tranquilidad personal, legales o de inmigración.
+            Madres embarazadas y familias que desean confirmar la paternidad antes de que nazca el bebé por razones de tranquilidad personal o legales.            
             </p>
   
           <div className="grid gap-4 md:grid-cols-2 text-left max-w-3xl mx-auto">

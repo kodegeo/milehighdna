@@ -12,31 +12,31 @@ return (
 
       <div className="grid gap-8 md:grid-cols-3 text-left">
         <div className="p-6 border rounded-xl shadow-sm hover:shadow-md transition">
-          <h3 className="text-xl font-semibold text-blue-700 mb-2">Non-invasive</h3>
+          <h3 className="text-xl font-semibold text-blue-700 mb-2">No invasivo</h3>
           <p className="text-gray-600">
           Solo se requiere una muestra de sangre de la madre y un hisopo bucal del presunto padre.
           </p>
         </div>
         <div className="p-6 border rounded-xl shadow-sm hover:shadow-md transition">
-          <h3 className="text-xl font-semibold text-blue-700 mb-2">Safe</h3>
+          <h3 className="text-xl font-semibold text-blue-700 mb-2">Seguro</h3>
           <p className="text-gray-600">
           Sin riesgo para el embarazo: no se necesita amniocentesis ni biopsia de vellosidades coriónicas (CVS).
           </p>
         </div>
         <div className="p-6 border rounded-xl shadow-sm hover:shadow-md transition">
-          <h3 className="text-xl font-semibold text-blue-700 mb-2">Accurate</h3>
+          <h3 className="text-xl font-semibold text-blue-700 mb-2">Preciso</h3>
           <p className="text-gray-600">
           Los resultados son más del 99.9% concluyentes y están acreditados por la AABB.
           </p>
         </div>
         <div className="p-6 border rounded-xl shadow-sm hover:shadow-md transition">
-          <h3 className="text-xl font-semibold text-blue-700 mb-2">Fast</h3>
+          <h3 className="text-xl font-semibold text-blue-700 mb-2">Rápido</h3>
           <p className="text-gray-600">
           Los resultados están normalmente disponibles en 7 a 10 días hábiles.          
           </p>
         </div>
         <div className="p-6 border rounded-xl shadow-sm hover:shadow-md transition">
-          <h3 className="text-xl font-semibold text-blue-700 mb-2">Confidential</h3>
+          <h3 className="text-xl font-semibold text-blue-700 mb-2">Confidencial</h3>
           <p className="text-gray-600">
           Todas las pruebas y resultados se manejan con la máxima privacidad.
           </p>

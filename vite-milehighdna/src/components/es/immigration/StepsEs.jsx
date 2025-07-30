@@ -22,7 +22,7 @@ const StepsEs = () => {
       number: 4,
       title: 'Análisis en laboratorio',
       description:
-        'Nuestro laboratorio acreditado por la AABB realiza el análisis con precisión. La mayoría de los resultados están disponibles en 2 a 5 días hábiles.',
+        'Nuestro laboratorio acreditado por la AABB realiza el análisis con precisión.',
     },
     {
       number: 5,

@@ -22,7 +22,7 @@ const Steps = () => {
         number: 4,
         title: 'Lab Testing and Analysis',
         description:
-          'Our AABB-accredited lab conducts the DNA analysis with precision. Most results are available in 2–5 business days.',
+          'Our AABB-accredited lab conducts the DNA analysis with precision.',
       },
       {
         number: 5,

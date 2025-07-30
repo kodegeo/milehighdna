@@ -1,9 +1,9 @@
 const PrenatalWhoNeedsTest = () => {
   const scenarios = [
-    'You want to confirm paternity before the baby is born for peace of mind',
-    'A legal case or custody matter requires proof of paternity during pregnancy',
-    'You need documentation for immigration or benefits before the child’s birth',
-    'The alleged father is unavailable, and early answers are important for family planning',
+    'You want to confirm paternity before the baby is born for peace of mind.',
+    'A legal case or custody matter requires proof of paternity during pregnancy.',
+    'You need documentation for immigration or benefits before the child’s birth.',
+    'You want early answers to plan for your family and prepare for the baby.',
   ];
 
     return (
@@ -13,7 +13,7 @@ const PrenatalWhoNeedsTest = () => {
           Who Should Consider Prenatal DNA Testing?
           </h2>
           <p className="text-lg text-gray-600 mb-8">
-          Expectant mothers and families seeking to confirm paternity before the baby is born for peace of mind, legal, or immigration reasons.
+          Expectant mothers and families seeking to confirm paternity before the baby is born for peace of mind or legal reasons.
           </p>
   
           <div className="grid gap-4 md:grid-cols-2 text-left max-w-3xl mx-auto">
