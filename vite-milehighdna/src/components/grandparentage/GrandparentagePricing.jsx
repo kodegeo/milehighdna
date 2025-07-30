@@ -33,7 +33,7 @@ const GrandparentagePricing = () => {
             <div className="bg-white rounded-xl shadow-md border-l-4 border-blue-600 p-6">
               <h3 className="text-xl font-bold text-gray-800 mb-2">Legal Single Grandparent + Child</h3>
               <p className="text-gray-600 mb-4">Includes a Legal DNA test for one grandparent and one child. Recommended for cases where court verification is required.</p>
-              <p className="text-2xl font-bold text-blue-700 mb-4">$449 and up</p>
+              <p className="text-2xl font-bold text-blue-700 mb-4">$479 and up</p>
               <ul className="text-left text-gray-700 space-y-2 mb-4">
                 <li>✔ AABB Lab Analysis</li>
                 <li>✔ Sample Collection for All Participants</li>

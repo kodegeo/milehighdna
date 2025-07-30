@@ -13,7 +13,7 @@ const SiblingshipPricing = () => {
               <h3 className="text-xl font-bold text-gray-800 mb-2">Prueba de ADN de Hermandad para uso Personal</h3>
               <p className="text-gray-600 mb-4">
               Dos personas se analizan para determinar si son hermanos completos o medios hermanos.              </p>
-              <p className="text-2xl font-bold text-blue-700 mb-4">$329</p>
+              <p className="text-2xl font-bold text-blue-700 mb-4">$349</p>
               <ul className="text-left text-gray-700 space-y-2 mb-4">
                 <li>✔ Laboratorio Acreditado por AABB</li>
                 <li>✔ 2 Participantes</li>
@@ -36,7 +36,7 @@ const SiblingshipPricing = () => {
               <p className="text-gray-600 mb-4">
               Sigue cadena de custodia completa. Requerida para casos legales como inmigración, herencia, o procedimientos judiciales.
               </p>
-              <p className="text-2xl font-bold text-blue-700 mb-4">$429</p>
+              <p className="text-2xl font-bold text-blue-700 mb-4">$479</p>
               <ul className="text-left text-gray-700 space-y-2 mb-4">
                 <li>✔ Se agrega un padre biológico al análisis</li>
                 <li>✔ 2 Participantes</li>

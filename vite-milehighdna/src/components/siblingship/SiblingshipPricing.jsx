@@ -36,9 +36,9 @@ const SiblingshipPricing = () => {
             <div className="bg-white rounded-xl shadow-md border-l-4 border-blue-600 p-6">
               <h3 className="text-xl font-bold text-gray-800 mb-2">Legal Siblingship</h3>
               <p className="text-gray-600 mb-4">
-              Follows strict chain-of-custody procedures. Required for court use, immigration, inheritance, or other legal matters.
+              Follows strict chain-of-custody procedures. Required for court use, immigration, inheritance, or other legal matters. <br/>
               </p>
-              <p className="text-2xl font-bold text-blue-700 mb-4">$429</p>
+              <p className="text-2xl font-bold text-blue-700 mb-4">$479 and up</p>
               <ul className="text-left text-gray-700 space-y-2 mb-4">
                 <li>✔ Adds Biological Parent to Analysis</li>
                 <li>✔ 2 Participants</li>
@@ -57,9 +57,9 @@ const SiblingshipPricing = () => {
             <div className="bg-white rounded-xl shadow-md border-l-4 border-blue-600 p-6">
               <h3 className="text-xl font-bold text-gray-800 mb-2">Add Additional Sibling</h3>
               <p className="text-gray-600 mb-4">
-                Include another sibling in the test for a more complete family profile.
+                Include another sibling in the test for a more complete family profile. <br/><br />
               </p>
-              <p className="text-2xl font-bold text-blue-700 mb-4">+$100</p>
+              <p className="text-2xl font-bold text-blue-700 mb-4">+$150</p>
               <ul className="text-left text-gray-700 space-y-2 mb-4">
                 <li>✔ Expand Testing Group</li>
                 <li>✔ Useful for Complex Relationships</li>

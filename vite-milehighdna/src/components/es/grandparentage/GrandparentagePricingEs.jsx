@@ -14,7 +14,7 @@ const GrandparentagePricingEs = () => {
             <div className="bg-white rounded-xl shadow-md border-l-4 border-blue-600 p-6">
               <h3 className="text-xl font-bold text-gray-800 mb-2">Prueba para Tranquilidad Un abuelo(a) + menor</h3>
               <p className="text-gray-600 mb-4">Recomendadas para confirmar vínculos familiares de manera privada. Los resultados no son válidos en la corte.</p>
-              <p className="text-2xl font-bold text-blue-700 mb-4">$329</p>
+              <p className="text-2xl font-bold text-blue-700 mb-4">$349</p>
               <ul className="text-left text-gray-700 space-y-2 mb-4">
                 <li>✔ Análisis en laboratorio acreditado por la AABB</li>
                 <li>✔ Recolección de muestras</li>
@@ -34,7 +34,7 @@ const GrandparentagePricingEs = () => {
             <div className="bg-white rounded-xl shadow-md border-l-4 border-blue-600 p-6">
               <h3 className="text-xl font-bold text-gray-800 mb-2">Pruebas Legal Un abuelo + niño</h3>
               <p className="text-gray-600 mb-4">Incluye cadena de custodia completa. Apta para casos judiciales, inmigración, beneficios gubernamentales, etc.</p>
-              <p className="text-2xl font-bold text-blue-700 mb-4">$429</p>
+              <p className="text-2xl font-bold text-blue-700 mb-4">$479</p>
               <ul className="text-left text-gray-700 space-y-2 mb-4">
                 <li>✔ Análisis en laboratorio acreditado por la AABB</li>
                 <li>✔ Recolección de muestras para todos los participantes</li>
