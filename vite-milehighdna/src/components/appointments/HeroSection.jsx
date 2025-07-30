@@ -8,7 +8,7 @@ const HeroSection = () => {
         className="absolute inset-0 bg-cover bg-center"
         style={{
           backgroundImage: `url(${bannerBg})`,
-          filter: 'brightness(0.9)'
+          filter: 'brightness(0.7)'
         }}
       />
       <div className="relative z-10 container mx-auto px-4 h-full flex items-center">
@@ -16,7 +16,7 @@ const HeroSection = () => {
           <h1 className="text-4xl md:text-5xl font-bold mb-6">
             Schedule Your DNA Test
           </h1>
-          <p className="text-xl mb-8">
+          <p className="text-xl mb-8 text-white">
             Book your appointment online or speak with one of our DNA specialists.<br /> 
             We offer flexible scheduling and same-day appointments when available.
           </p>
@@ -30,12 +30,12 @@ const HeroSection = () => {
               Schedule Test
             </a>
             <a
-              href="tel:7209009342"
-              className="text-brand-primary font-semibold px-6 py-3 rounded-xl border border-brand-primary hover:bg-brand-hover/10 transition"
-            >
-                              Call Now
-            </a>
-          </div>
+                href="tel:+17209009342"
+                className="btn-secondary bg-white text-blue-700 font-bold py-3 px-6 rounded shadow hover:bg-gray-100"
+              >
+                Call Now
+              </a>
+           </div>
         </div>
       </div>
     </section>
