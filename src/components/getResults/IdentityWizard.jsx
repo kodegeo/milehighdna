@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import SignaturePad from 'react-signature-canvas';
 import logoImage from '../../assets/images/milehigh-dna-logo.png'; // Adjust path if needed
+import heic2any from 'heic2any';
 
 
 const formatFileName = (customerCode, firstName, lastName, date = new Date()) => {
@@ -22,6 +23,11 @@ const IdentityWizard = ({ customerData, onComplete }) => {
     dob: customerData?.date_of_birth || '',
     signatureMethod: 'after',
     signatureData: ''
+  });
+  const [collector, setCollector] = useState({
+    name: '',
+    signatureData: '',
+    signatureMethod: 'after'
   });
   const [participants, setParticipants] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -93,33 +99,103 @@ const IdentityWizard = ({ customerData, onComplete }) => {
     return Object.keys(newErrors).length === 0;
   };
 
-  const handlePhotoUpload = (e, type = 'customer') => {
+  // Helper function to convert HEIC to JPEG
+  const convertHeicToJpeg = async (file) => {
+    console.log('Processing file:', file.name, 'Type:', file.type);
+    
+    // Check if it's a HEIC file by multiple methods
+    const isHeic = file.type === 'image/heic' || 
+                   file.type === 'image/heif' || 
+                   file.name.toLowerCase().endsWith('.heic') ||
+                   file.name.toLowerCase().endsWith('.heif');
+    
+    if (isHeic) {
+      console.log('Converting HEIC file to JPEG...');
+      try {
+        const convertedBlob = await heic2any({
+          blob: file,
+          toType: 'image/jpeg',
+          quality: 0.8
+        });
+        const convertedFile = new File([convertedBlob], file.name.replace(/\.(heic|heif)$/i, '.jpg'), {
+          type: 'image/jpeg'
+        });
+        console.log('HEIC conversion successful:', convertedFile.name);
+        return convertedFile;
+      } catch (error) {
+        console.error('Error converting HEIC file:', error);
+        throw new Error('Failed to convert HEIC file. Please try a different image format.');
+      }
+    }
+    console.log('File does not need conversion');
+    return file;
+  };
+
+  const handlePhotoUpload = async (e, type = 'customer') => {
     const file = e.target.files[0];
     if (!file) return;
-    const preview = URL.createObjectURL(file);
-    const fileName = formatFileName(
-      customer.customer_code,
-      type === 'customer' ? customer.fullName.split(' ')[0] : participants[currentIndex].fullName.split(' ')[0],
-      type === 'customer' ? customer.fullName.split(' ')[1] : participants[currentIndex].fullName.split(' ')[1]
-    );
-    const updatedFile = new File([file], fileName, { type: file.type });
+    
+    console.log('Uploading photo for:', type, 'File:', file.name, 'Type:', file.type);
+    
+    try {
+      // Convert HEIC to JPEG if needed
+      const processedFile = await convertHeicToJpeg(file);
+      const preview = URL.createObjectURL(processedFile);
+      
+      // Generate filename safely
+      let firstName = '';
+      let lastName = '';
+      
+      if (type === 'customer') {
+        const nameParts = customer.fullName.split(' ');
+        firstName = nameParts[0] || '';
+        lastName = nameParts[1] || '';
+      } else {
+        if (currentIndex === undefined || currentIndex >= participants.length) {
+          console.error('Invalid currentIndex:', currentIndex, 'participants.length:', participants.length);
+          setErrors(prev => ({ ...prev, participantPhoto: 'Invalid participant index. Please try again.' }));
+          return;
+        }
+        const nameParts = participants[currentIndex]?.fullName?.split(' ') || [];
+        firstName = nameParts[0] || '';
+        lastName = nameParts[1] || '';
+      }
+      
+      const fileName = formatFileName(customer.customer_code, firstName, lastName);
+      const updatedFile = new File([processedFile], fileName, { type: processedFile.type });
 
-    if (type === 'customer') {
-      setCustomer(prev => ({ ...prev, photo: updatedFile, photoPreview: preview }));
-      setErrors(prev => ({ ...prev, customerPhoto: undefined }));
-    } else {
-      const updated = [...participants];
-      updated[currentIndex].photo = updatedFile;
-      updated[currentIndex].photoPreview = preview;
-      setParticipants(updated);
-      setErrors(prev => ({ ...prev, participantPhoto: undefined }));
+      console.log('File processed successfully:', updatedFile.name);
+
+      if (type === 'customer') {
+        setCustomer(prev => ({ ...prev, photo: updatedFile, photoPreview: preview }));
+        setErrors(prev => ({ ...prev, customerPhoto: undefined }));
+        console.log('Customer photo uploaded successfully');
+      } else {
+        const updated = [...participants];
+        updated[currentIndex].photo = updatedFile;
+        updated[currentIndex].photoPreview = preview;
+        setParticipants(updated);
+        setErrors(prev => ({ ...prev, participantPhoto: undefined }));
+        console.log('Participant photo uploaded successfully for index:', currentIndex);
+      }
+    } catch (error) {
+      console.error('Error in handlePhotoUpload:', error);
+      // Show error to user
+      if (type === 'customer') {
+        setErrors(prev => ({ ...prev, customerPhoto: error.message }));
+      } else {
+        setErrors(prev => ({ ...prev, participantPhoto: error.message }));
+      }
     }
   };
 
-  const handleSignatureCapture = () => {
+  const handleSignatureCapture = (type = 'customer') => {
     const dataUrl = sigPad?.getTrimmedCanvas().toDataURL();
-    if (step === 0) setCustomer(prev => ({ ...prev, signatureData: dataUrl }));
-    else {
+    if (type === 'customer') {
+      setCustomer(prev => ({ ...prev, signatureData: dataUrl }));
+    } else if (type === 'collector') {
+      setCollector(prev => ({ ...prev, signatureData: dataUrl }));
+    } else {
       const updated = [...participants];
       updated[currentIndex].guardianSignatureData = dataUrl;
       setParticipants(updated);
@@ -328,6 +404,21 @@ const IdentityWizard = ({ customerData, onComplete }) => {
               </div>
             </div>
           `).join('')}
+          
+          <!-- Collector Section -->
+          <div class="section participant-section">
+            <div class="section-title">Sample Collection</div>
+            <div class="identity-row">
+              <div class="info-table">
+                <div><span class="info-label">Collector Name:</span> <span class="info-value">${collector.name || 'Not provided'}</span></div>
+                <div class="signature-block">
+                  <span class="signature-label">Collector Signature</span>
+                  <span class="signature-line">${collector.signatureData ? `<img src="${collector.signatureData}" alt="Collector Signature" style="height:32px;" />` : '________________________'}</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
           <div class="footer">
             Report generated by Mile High DNA Testing &mdash; ${new Date().toLocaleString()}<br/>
             <a href="https://milehighdnatesting.com" style="color: #2c6fa6; text-decoration: underline;">milehighdnatesting.com</a>
@@ -400,15 +491,15 @@ const IdentityWizard = ({ customerData, onComplete }) => {
         <option value="now">Sign now</option>
       </select>
 
-      {(isGuardian ? participants[currentIndex].signatureMethod : customer.signatureMethod) === 'now' && (
-        <div className="mt-2">
-          <SignaturePad
-            ref={ref => setSigPad(ref)}
-            canvasProps={{ width: 400, height: 150, className: 'border rounded' }}
-          />
-          <button onClick={handleSignatureCapture} className="mt-2 px-4 py-1 bg-blue-600 text-white rounded">Save Signature</button>
-        </div>
-      )}
+                {(isGuardian ? participants[currentIndex].signatureMethod : customer.signatureMethod) === 'now' && (
+            <div className="mt-2">
+              <SignaturePad
+                ref={ref => setSigPad(ref)}
+                canvasProps={{ width: 400, height: 150, className: 'border rounded' }}
+              />
+              <button onClick={() => handleSignatureCapture(isGuardian ? 'participant' : 'customer')} className="mt-2 px-4 py-1 bg-blue-600 text-white rounded">Save Signature</button>
+            </div>
+          )}
     </div>
   );
 
@@ -446,9 +537,10 @@ const IdentityWizard = ({ customerData, onComplete }) => {
             <input 
               type="file" 
               onChange={handlePhotoUpload} 
-              accept="image/*" 
+              accept="image/*,.heic,.heif" 
               className={errors.customerPhoto ? 'border-red-500' : ''}
             />
+            <p className="text-sm text-gray-600 mt-1">Supports: JPG, PNG, HEIC (iPhone photos will be automatically converted)</p>
             {errors.customerPhoto && (
               <p className="text-red-500 text-sm mt-1">{errors.customerPhoto}</p>
             )}
@@ -530,9 +622,10 @@ const IdentityWizard = ({ customerData, onComplete }) => {
             <input 
               type="file" 
               onChange={(e) => handlePhotoUpload(e, 'participant')} 
-              accept="image/*" 
+              accept="image/*,.heic,.heif" 
               className={errors.participantPhoto ? 'border-red-500' : ''}
             />
+            <p className="text-sm text-gray-600 mt-1">Supports: JPG, PNG, HEIC (iPhone photos will be automatically converted)</p>
             {errors.participantPhoto && (
               <p className="text-red-500 text-sm mt-1">{errors.participantPhoto}</p>
             )}
@@ -668,6 +761,59 @@ const IdentityWizard = ({ customerData, onComplete }) => {
               ))}
             </div>
           )}
+
+          {/* Collector Information */}
+          <div className="mt-6 p-4 bg-blue-50 rounded">
+            <h3 className="font-semibold text-blue-800 mb-4">Collector Information</h3>
+            
+            <div className="mb-4">
+              <label className="block text-sm font-medium text-gray-700 mb-1">
+                Collector Name <span className="text-red-500">*</span>
+              </label>
+              <input
+                type="text"
+                placeholder="Enter collector's full name"
+                className="w-full border mt-2 p-2 rounded"
+                value={collector.name}
+                onChange={(e) => setCollector(prev => ({ ...prev, name: e.target.value }))}
+              />
+            </div>
+
+            <div className="mb-4">
+              <label className="block text-sm font-medium text-gray-700 mb-1">Signature Method</label>
+              <select
+                value={collector.signatureMethod}
+                onChange={(e) => setCollector(prev => ({ ...prev, signatureMethod: e.target.value }))}
+                className="border rounded px-3 py-2"
+              >
+                <option value="after">Sign after printout</option>
+                <option value="now">Sign now</option>
+              </select>
+            </div>
+
+            {collector.signatureMethod === 'now' && (
+              <div className="mb-4">
+                <label className="block text-sm font-medium text-gray-700 mb-1">Collector Signature</label>
+                <SignaturePad
+                  ref={ref => setSigPad(ref)}
+                  canvasProps={{ width: 400, height: 150, className: 'border rounded' }}
+                />
+                <button 
+                  onClick={() => handleSignatureCapture('collector')} 
+                  className="mt-2 px-4 py-1 bg-blue-600 text-white rounded"
+                >
+                  Save Signature
+                </button>
+              </div>
+            )}
+
+            {collector.signatureData && (
+              <div className="mt-2">
+                <p className="text-sm text-gray-600">Signature captured</p>
+                <img src={collector.signatureData} alt="Collector Signature" className="h-8 mt-1" />
+              </div>
+            )}
+          </div>
 
           <div className="flex gap-4 mt-6">
             <button
