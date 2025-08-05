@@ -12,6 +12,7 @@ import NavigationEs from './components/es/NavigationEs';
 import Home from './pages/Home';
 import AboutUs from './pages/AboutUs';
 import LegalPaternityTests from './pages/LegalPaternityTests';
+import PeaceOfMindPaternityTests from './pages/PeaceOfMindPaternityTests';
 import ImmigrationDNATests from './pages/ImmigrationDNATests';
 import GrandparentagePage from './pages/GrandparentageTests';
 import Siblingship from './pages/Siblingship';
@@ -30,11 +31,14 @@ import AppointmentWizard from './pages/AppointmentWizard';
 import Prenatal from './pages/Prenatal';
 import DNATestingDenverPage from './pages/DNATestingDenverPage';
 import Services from './pages/Services';
+import CheckoutDomestic from './pages/CheckoutDomestic';
+import CheckoutInternational from './pages/CheckoutInternational';
 
 // Spanish imports
 import HomePageEs from './pages/es/HomePageEs';
 import AboutUsEs from './pages/es/AboutUsEs';
 import LegalPaternityTestsEs from './pages/es/LegalPaternityTestsEs';
+import PeaceOfMindPaternityTestsEs from './pages/es/PeaceOfMindPaternityTestsEs';
 import ImmigrationDNATestsEs from './pages/es/ImmigrationDNATestsEs';
 import GrandparentageTestsEs from './pages/es/GrandparentageTestsEs';
 import SiblingshipEs from './pages/es/SiblingshipEs';
@@ -92,6 +96,7 @@ function AppLayout() {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<AboutUs />} />
             <Route path="/legal-paternity-tests" element={<LegalPaternityTests />} />
+            <Route path="/peace-of-mind-paternity-tests" element={<PeaceOfMindPaternityTests />} />
             <Route path="/immigration-dna-tests" element={<ImmigrationDNATests />} />
             <Route path="/grandparentage-dna-tests" element={<GrandparentagePage />} />
             <Route path="/siblingship-dna-tests" element={<Siblingship />} />
@@ -115,12 +120,15 @@ function AppLayout() {
             <Route path="/test-admin" element={<TestAdmin />} />
             <Route path="/dna-testing-denver" element={<DNATestingDenverPage />} />
             <Route path="/services" element={<Services />} />
+            <Route path="/checkout-domestic" element={<CheckoutDomestic />} />
+            <Route path="/checkout-international" element={<CheckoutInternational />} />
 
 
             {/* Spanish Routes */}
             <Route path="/es" element={<HomePageEs />} />
             <Route path="/es/sobre-nosotros" element={<AboutUsEs />} />
             <Route path="/es/prueba-de-paternidad-legal" element={<LegalPaternityTestsEs />} />
+            <Route path="/es/prueba-paternidad-tranquilidad" element={<PeaceOfMindPaternityTestsEs />} />
             <Route path="/es/prueba-de-inmigracion" element={<ImmigrationDNATestsEs />} />
             <Route path="/es/prueba-de-abuelidad" element={<GrandparentageTestsEs />} />
             <Route path="/es/prueba-de-hermanos" element={<SiblingshipEs />} />

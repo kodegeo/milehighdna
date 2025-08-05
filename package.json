@@ -13,6 +13,7 @@
     "test": "NODE_ENV=test jest --detectOpenHandles"
   },
   "dependencies": {
+    "@sendgrid/mail": "^8.1.5",
     "@supabase/supabase-js": "^2.50.0",
     "autoprefixer": "^10.4.17",
     "axios": "^1.10.0",

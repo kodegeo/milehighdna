@@ -10,15 +10,15 @@ const GetResults = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setError('');
-  
+
     const accessCode = code.trim().toLowerCase();
     console.log('[DEBUG] Fetching result with access code:', accessCode);
-  
+
     if (!accessCode) {
       setError('Please enter your access code.');
       return;
     }
-  
+
     // ✅ Admin shortcut
     if (accessCode === 'admin01') {
       console.log('[DEBUG] Admin access granted');
@@ -28,20 +28,44 @@ const GetResults = () => {
 
     try {
       console.log('[DEBUG] Querying Supabase with access code:', accessCode);
+
+      // ✅ Join customerdb with resultsdb to get file_path
       const { data, error: fetchError } = await supabase
-        .from('resultsdb')
-        .select('*')
-        .eq('customer_code', accessCode)
+        .from('customerdb')
+        .select(`
+          customer_code,
+          first_name,
+          last_name,
+          resultsdb (
+            file_path,
+            created_at
+          )
+        `)
+        .ilike('customer_code', accessCode)
         .limit(1);
 
-        if (fetchError || !data || data.length === 0) {
+      if (fetchError || !data || data.length === 0) {
         console.warn('[WARNING] No result found for code:', accessCode);
         setError('Invalid access code or no result found.');
         return;
       }
 
-      console.log('[SUCCESS] Result fetched:', data[0]);
-      navigate('/my-results-page', { state: { result: data[0], accessCode } });
+      const customer = data[0];
+      const resultFile = customer.resultsdb?.[0] || null;
+
+      if (!resultFile?.file_path) {
+        console.warn('[WARNING] Found customer but no uploaded result file.');
+        setError('Result found but no file uploaded yet.');
+        return;
+      }
+
+      console.log('[SUCCESS] Result fetched:', resultFile);
+
+      // ✅ Pass the file object to MyResultsPage for ResultsViewer
+      navigate('/my-results-page', { 
+        state: { result: resultFile, accessCode } 
+      });
+
     } catch (err) {
       console.error('[Catch Error]', err);
       setError('An unexpected error occurred. Please try again.');

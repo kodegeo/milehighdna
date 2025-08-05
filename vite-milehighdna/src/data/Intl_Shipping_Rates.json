@@ -1,0 +1,776 @@
+[
+  {
+    "country_name": "Andorra",
+    "iso_code": "AD",
+    "region": "Europe",
+    "estimated_shipping_days": "3-5",
+    "estimated_shipping_cost_usd": 40.0,
+    "prepaid_return_available": true,
+    "restricted": false
+  },
+  {
+    "country_name": "Albania",
+    "iso_code": "AL",
+    "region": "Europe",
+    "estimated_shipping_days": "3-5",
+    "estimated_shipping_cost_usd": 40.0,
+    "prepaid_return_available": true,
+    "restricted": false
+  },
+  {
+    "country_name": "Argentina",
+    "iso_code": "AR",
+    "region": "South America",
+    "estimated_shipping_days": "5-7",
+    "estimated_shipping_cost_usd": 50.0,
+    "prepaid_return_available": true,
+    "restricted": false
+  },
+  {
+    "country_name": "Austria",
+    "iso_code": "AT",
+    "region": "Europe",
+    "estimated_shipping_days": "3-5",
+    "estimated_shipping_cost_usd": 40.0,
+    "prepaid_return_available": true,
+    "restricted": false
+  },
+  {
+    "country_name": "French South Antarctic Territory",
+    "iso_code": "ATF",
+    "region": "Europe",
+    "estimated_shipping_days": "3-5",
+    "estimated_shipping_cost_usd": 40.0,
+    "prepaid_return_available": true,
+    "restricted": false
+  },
+  {
+    "country_name": "Australia",
+    "iso_code": "AU",
+    "region": "Oceania",
+    "estimated_shipping_days": "6-10",
+    "estimated_shipping_cost_usd": 55.0,
+    "prepaid_return_available": true,
+    "restricted": false
+  },
+  {
+    "country_name": "Belgium",
+    "iso_code": "BE",
+    "region": "Other",
+    "estimated_shipping_days": "7-10",
+    "estimated_shipping_cost_usd": 60.0,
+    "prepaid_return_available": true,
+    "restricted": false
+  },
+  {
+    "country_name": "Bulgaria",
+    "iso_code": "BG",
+    "region": "Other",
+    "estimated_shipping_days": "7-10",
+    "estimated_shipping_cost_usd": 60.0,
+    "prepaid_return_available": true,
+    "restricted": false
+  },
+  {
+    "country_name": "Brazil",
+    "iso_code": "BR",
+    "region": "Other",
+    "estimated_shipping_days": "7-10",
+    "estimated_shipping_cost_usd": 60.0,
+    "prepaid_return_available": true,
+    "restricted": false
+  },
+  {
+    "country_name": "Canada",
+    "iso_code": "CA",
+    "region": "North America",
+    "estimated_shipping_days": "3-5",
+    "estimated_shipping_cost_usd": 25.0,
+    "prepaid_return_available": true,
+    "restricted": false
+  },
+  {
+    "country_name": "Switzerland",
+    "iso_code": "CH",
+    "region": "Other",
+    "estimated_shipping_days": "7-10",
+    "estimated_shipping_cost_usd": 60.0,
+    "prepaid_return_available": true,
+    "restricted": false
+  },
+  {
+    "country_name": "Chile",
+    "iso_code": "CL",
+    "region": "Other",
+    "estimated_shipping_days": "7-10",
+    "estimated_shipping_cost_usd": 60.0,
+    "prepaid_return_available": true,
+    "restricted": false
+  },
+  {
+    "country_name": "Colombia",
+    "iso_code": "CO",
+    "region": "Other",
+    "estimated_shipping_days": "7-10",
+    "estimated_shipping_cost_usd": 60.0,
+    "prepaid_return_available": true,
+    "restricted": false
+  },
+  {
+    "country_name": "Costa Rica",
+    "iso_code": "CR",
+    "region": "Other",
+    "estimated_shipping_days": "7-10",
+    "estimated_shipping_cost_usd": 60.0,
+    "prepaid_return_available": true,
+    "restricted": false
+  },
+  {
+    "country_name": "Czech Republic",
+    "iso_code": "CZ",
+    "region": "Other",
+    "estimated_shipping_days": "7-10",
+    "estimated_shipping_cost_usd": 60.0,
+    "prepaid_return_available": true,
+    "restricted": false
+  },
+  {
+    "country_name": "Germany",
+    "iso_code": "DE",
+    "region": "Other",
+    "estimated_shipping_days": "7-10",
+    "estimated_shipping_cost_usd": 60.0,
+    "prepaid_return_available": true,
+    "restricted": false
+  },
+  {
+    "country_name": "Denmark",
+    "iso_code": "DK",
+    "region": "Other",
+    "estimated_shipping_days": "7-10",
+    "estimated_shipping_cost_usd": 60.0,
+    "prepaid_return_available": true,
+    "restricted": false
+  },
+  {
+    "country_name": "Estonia",
+    "iso_code": "EE",
+    "region": "Other",
+    "estimated_shipping_days": "7-10",
+    "estimated_shipping_cost_usd": 60.0,
+    "prepaid_return_available": true,
+    "restricted": false
+  },
+  {
+    "country_name": "Eritrea",
+    "iso_code": "ERI",
+    "region": "Other",
+    "estimated_shipping_days": "7-10",
+    "estimated_shipping_cost_usd": 60.0,
+    "prepaid_return_available": true,
+    "restricted": false
+  },
+  {
+    "country_name": "Spain",
+    "iso_code": "ES",
+    "region": "Other",
+    "estimated_shipping_days": "7-10",
+    "estimated_shipping_cost_usd": 60.0,
+    "prepaid_return_available": true,
+    "restricted": false
+  },
+  {
+    "country_name": "Ethiopia",
+    "iso_code": "ETH",
+    "region": "Other",
+    "estimated_shipping_days": "7-10",
+    "estimated_shipping_cost_usd": 60.0,
+    "prepaid_return_available": true,
+    "restricted": false
+  },
+  {
+    "country_name": "Finland",
+    "iso_code": "FI",
+    "region": "Other",
+    "estimated_shipping_days": "7-10",
+    "estimated_shipping_cost_usd": 60.0,
+    "prepaid_return_available": true,
+    "restricted": false
+  },
+  {
+    "country_name": "Fiji",
+    "iso_code": "FJI",
+    "region": "Other",
+    "estimated_shipping_days": "7-10",
+    "estimated_shipping_cost_usd": 60.0,
+    "prepaid_return_available": true,
+    "restricted": false
+  },
+  {
+    "country_name": "Falkland Islands",
+    "iso_code": "FLK",
+    "region": "Other",
+    "estimated_shipping_days": "7-10",
+    "estimated_shipping_cost_usd": 60.0,
+    "prepaid_return_available": true,
+    "restricted": false
+  },
+  {
+    "country_name": "France",
+    "iso_code": "FR",
+    "region": "Other",
+    "estimated_shipping_days": "7-10",
+    "estimated_shipping_cost_usd": 60.0,
+    "prepaid_return_available": true,
+    "restricted": false
+  },
+  {
+    "country_name": "Faroe Islands",
+    "iso_code": "FRO",
+    "region": "Other",
+    "estimated_shipping_days": "7-10",
+    "estimated_shipping_cost_usd": 60.0,
+    "prepaid_return_available": true,
+    "restricted": false
+  },
+  {
+    "country_name": "United Kingdom (Great Britain)",
+    "iso_code": "GB",
+    "region": "Other",
+    "estimated_shipping_days": "7-10",
+    "estimated_shipping_cost_usd": 60.0,
+    "prepaid_return_available": true,
+    "restricted": false
+  },
+  {
+    "country_name": "Georgia",
+    "iso_code": "GEO",
+    "region": "Other",
+    "estimated_shipping_days": "7-10",
+    "estimated_shipping_cost_usd": 60.0,
+    "prepaid_return_available": true,
+    "restricted": false
+  },
+  {
+    "country_name": "Gibraltar",
+    "iso_code": "GI",
+    "region": "Other",
+    "estimated_shipping_days": "7-10",
+    "estimated_shipping_cost_usd": 60.0,
+    "prepaid_return_available": true,
+    "restricted": false
+  },
+  {
+    "country_name": "Gibraltar",
+    "iso_code": "GIB",
+    "region": "Other",
+    "estimated_shipping_days": "7-10",
+    "estimated_shipping_cost_usd": 60.0,
+    "prepaid_return_available": true,
+    "restricted": false
+  },
+  {
+    "country_name": "Guinea",
+    "iso_code": "GIN",
+    "region": "Other",
+    "estimated_shipping_days": "7-10",
+    "estimated_shipping_cost_usd": 60.0,
+    "prepaid_return_available": true,
+    "restricted": false
+  },
+  {
+    "country_name": "Guadeloupe",
+    "iso_code": "GLP",
+    "region": "Other",
+    "estimated_shipping_days": "7-10",
+    "estimated_shipping_cost_usd": 60.0,
+    "prepaid_return_available": true,
+    "restricted": false
+  },
+  {
+    "country_name": "Greece",
+    "iso_code": "GR",
+    "region": "Other",
+    "estimated_shipping_days": "7-10",
+    "estimated_shipping_cost_usd": 60.0,
+    "prepaid_return_available": true,
+    "restricted": false
+  },
+  {
+    "country_name": "Grenada",
+    "iso_code": "GRD",
+    "region": "Other",
+    "estimated_shipping_days": "7-10",
+    "estimated_shipping_cost_usd": 60.0,
+    "prepaid_return_available": true,
+    "restricted": false
+  },
+  {
+    "country_name": "Greenland",
+    "iso_code": "GRL",
+    "region": "Other",
+    "estimated_shipping_days": "7-10",
+    "estimated_shipping_cost_usd": 60.0,
+    "prepaid_return_available": true,
+    "restricted": false
+  },
+  {
+    "country_name": "French Guiana",
+    "iso_code": "GUF",
+    "region": "Other",
+    "estimated_shipping_days": "7-10",
+    "estimated_shipping_cost_usd": 60.0,
+    "prepaid_return_available": true,
+    "restricted": false
+  },
+  {
+    "country_name": "Guyana",
+    "iso_code": "GUY",
+    "region": "Other",
+    "estimated_shipping_days": "7-10",
+    "estimated_shipping_cost_usd": 60.0,
+    "prepaid_return_available": true,
+    "restricted": false
+  },
+  {
+    "country_name": "Hong Kong",
+    "iso_code": "HKG",
+    "region": "Other",
+    "estimated_shipping_days": "7-10",
+    "estimated_shipping_cost_usd": 60.0,
+    "prepaid_return_available": true,
+    "restricted": false
+  },
+  {
+    "country_name": "Croatia",
+    "iso_code": "HR",
+    "region": "Other",
+    "estimated_shipping_days": "7-10",
+    "estimated_shipping_cost_usd": 60.0,
+    "prepaid_return_available": true,
+    "restricted": false
+  },
+  {
+    "country_name": "Haiti",
+    "iso_code": "HTI",
+    "region": "Other",
+    "estimated_shipping_days": "7-10",
+    "estimated_shipping_cost_usd": 60.0,
+    "prepaid_return_available": true,
+    "restricted": false
+  },
+  {
+    "country_name": "Hungary",
+    "iso_code": "HU",
+    "region": "Other",
+    "estimated_shipping_days": "7-10",
+    "estimated_shipping_cost_usd": 60.0,
+    "prepaid_return_available": true,
+    "restricted": false
+  },
+  {
+    "country_name": "Ireland",
+    "iso_code": "IE",
+    "region": "Other",
+    "estimated_shipping_days": "7-10",
+    "estimated_shipping_cost_usd": 60.0,
+    "prepaid_return_available": true,
+    "restricted": false
+  },
+  {
+    "country_name": "Israel",
+    "iso_code": "IL",
+    "region": "Other",
+    "estimated_shipping_days": "7-10",
+    "estimated_shipping_cost_usd": 60.0,
+    "prepaid_return_available": true,
+    "restricted": false
+  },
+  {
+    "country_name": "India",
+    "iso_code": "IND",
+    "region": "Asia",
+    "estimated_shipping_days": "5-7",
+    "estimated_shipping_cost_usd": 45.0,
+    "prepaid_return_available": true,
+    "restricted": false
+  },
+  {
+    "country_name": "Ireland (Republic of)",
+    "iso_code": "IRL",
+    "region": "Other",
+    "estimated_shipping_days": "7-10",
+    "estimated_shipping_cost_usd": 60.0,
+    "prepaid_return_available": true,
+    "restricted": false
+  },
+  {
+    "country_name": "Iran (Islamic Republic of)",
+    "iso_code": "IRN",
+    "region": "Other",
+    "estimated_shipping_days": "7-10",
+    "estimated_shipping_cost_usd": 60.0,
+    "prepaid_return_available": true,
+    "restricted": false
+  },
+  {
+    "country_name": "Iceland",
+    "iso_code": "IS",
+    "region": "Other",
+    "estimated_shipping_days": "7-10",
+    "estimated_shipping_cost_usd": 60.0,
+    "prepaid_return_available": true,
+    "restricted": false
+  },
+  {
+    "country_name": "Iceland",
+    "iso_code": "ISL",
+    "region": "Other",
+    "estimated_shipping_days": "7-10",
+    "estimated_shipping_cost_usd": 60.0,
+    "prepaid_return_available": true,
+    "restricted": false
+  },
+  {
+    "country_name": "Italy",
+    "iso_code": "IT",
+    "region": "Other",
+    "estimated_shipping_days": "7-10",
+    "estimated_shipping_cost_usd": 60.0,
+    "prepaid_return_available": true,
+    "restricted": false
+  },
+  {
+    "country_name": "Jamaica",
+    "iso_code": "JAM",
+    "region": "Other",
+    "estimated_shipping_days": "7-10",
+    "estimated_shipping_cost_usd": 60.0,
+    "prepaid_return_available": true,
+    "restricted": false
+  },
+  {
+    "country_name": "Japan",
+    "iso_code": "JP",
+    "region": "Asia",
+    "estimated_shipping_days": "5-7",
+    "estimated_shipping_cost_usd": 45.0,
+    "prepaid_return_available": true,
+    "restricted": false
+  },
+  {
+    "country_name": "Japan",
+    "iso_code": "JPN",
+    "region": "Asia",
+    "estimated_shipping_days": "5-7",
+    "estimated_shipping_cost_usd": 45.0,
+    "prepaid_return_available": true,
+    "restricted": false
+  },
+  {
+    "country_name": "Kiribati",
+    "iso_code": "KIR",
+    "region": "Other",
+    "estimated_shipping_days": "7-10",
+    "estimated_shipping_cost_usd": 60.0,
+    "prepaid_return_available": true,
+    "restricted": false
+  },
+  {
+    "country_name": "Kosovo",
+    "iso_code": "KOV",
+    "region": "Other",
+    "estimated_shipping_days": "7-10",
+    "estimated_shipping_cost_usd": 60.0,
+    "prepaid_return_available": true,
+    "restricted": false
+  },
+  {
+    "country_name": "South Korea",
+    "iso_code": "KR",
+    "region": "Other",
+    "estimated_shipping_days": "7-10",
+    "estimated_shipping_cost_usd": 60.0,
+    "prepaid_return_available": true,
+    "restricted": false
+  },
+  {
+    "country_name": "Laos (People\u2019s Democratic Republic of)",
+    "iso_code": "LAO",
+    "region": "Other",
+    "estimated_shipping_days": "7-10",
+    "estimated_shipping_cost_usd": 60.0,
+    "prepaid_return_available": true,
+    "restricted": false
+  },
+  {
+    "country_name": "Liechtenstein",
+    "iso_code": "LI",
+    "region": "Other",
+    "estimated_shipping_days": "7-10",
+    "estimated_shipping_cost_usd": 60.0,
+    "prepaid_return_available": true,
+    "restricted": false
+  },
+  {
+    "country_name": "Liechtenstein",
+    "iso_code": "LIE",
+    "region": "Other",
+    "estimated_shipping_days": "7-10",
+    "estimated_shipping_cost_usd": 60.0,
+    "prepaid_return_available": true,
+    "restricted": false
+  },
+  {
+    "country_name": "Lesotho",
+    "iso_code": "LSO",
+    "region": "Other",
+    "estimated_shipping_days": "7-10",
+    "estimated_shipping_cost_usd": 60.0,
+    "prepaid_return_available": true,
+    "restricted": false
+  },
+  {
+    "country_name": "Lithuania",
+    "iso_code": "LT",
+    "region": "Other",
+    "estimated_shipping_days": "7-10",
+    "estimated_shipping_cost_usd": 60.0,
+    "prepaid_return_available": true,
+    "restricted": false
+  },
+  {
+    "country_name": "Luxembourg",
+    "iso_code": "LU",
+    "region": "Other",
+    "estimated_shipping_days": "7-10",
+    "estimated_shipping_cost_usd": 60.0,
+    "prepaid_return_available": true,
+    "restricted": false
+  },
+  {
+    "country_name": "Latvia",
+    "iso_code": "LV",
+    "region": "Other",
+    "estimated_shipping_days": "7-10",
+    "estimated_shipping_cost_usd": 60.0,
+    "prepaid_return_available": true,
+    "restricted": false
+  },
+  {
+    "country_name": "Macao",
+    "iso_code": "MAC",
+    "region": "Other",
+    "estimated_shipping_days": "7-10",
+    "estimated_shipping_cost_usd": 60.0,
+    "prepaid_return_available": true,
+    "restricted": false
+  },
+  {
+    "country_name": "Monaco",
+    "iso_code": "MC",
+    "region": "Other",
+    "estimated_shipping_days": "7-10",
+    "estimated_shipping_cost_usd": 60.0,
+    "prepaid_return_available": true,
+    "restricted": false
+  },
+  {
+    "country_name": "Montenegro",
+    "iso_code": "ME",
+    "region": "Other",
+    "estimated_shipping_days": "7-10",
+    "estimated_shipping_cost_usd": 60.0,
+    "prepaid_return_available": true,
+    "restricted": false
+  },
+  {
+    "country_name": "North Macedonia",
+    "iso_code": "MK",
+    "region": "Other",
+    "estimated_shipping_days": "7-10",
+    "estimated_shipping_cost_usd": 60.0,
+    "prepaid_return_available": true,
+    "restricted": false
+  },
+  {
+    "country_name": "Macedonia",
+    "iso_code": "MKD",
+    "region": "Other",
+    "estimated_shipping_days": "7-10",
+    "estimated_shipping_cost_usd": 60.0,
+    "prepaid_return_available": true,
+    "restricted": false
+  },
+  {
+    "country_name": "Malta",
+    "iso_code": "MT",
+    "region": "Other",
+    "estimated_shipping_days": "7-10",
+    "estimated_shipping_cost_usd": 60.0,
+    "prepaid_return_available": true,
+    "restricted": false
+  },
+  {
+    "country_name": "Mexico",
+    "iso_code": "MX",
+    "region": "North America",
+    "estimated_shipping_days": "3-5",
+    "estimated_shipping_cost_usd": 25.0,
+    "prepaid_return_available": true,
+    "restricted": false
+  },
+  {
+    "country_name": "Mahore (also known as Mayotte)",
+    "iso_code": "MYT",
+    "region": "Other",
+    "estimated_shipping_days": "7-10",
+    "estimated_shipping_cost_usd": 60.0,
+    "prepaid_return_available": true,
+    "restricted": false
+  },
+  {
+    "country_name": "Netherlands",
+    "iso_code": "NL",
+    "region": "Other",
+    "estimated_shipping_days": "7-10",
+    "estimated_shipping_cost_usd": 60.0,
+    "prepaid_return_available": true,
+    "restricted": false
+  },
+  {
+    "country_name": "Norway",
+    "iso_code": "NO",
+    "region": "Other",
+    "estimated_shipping_days": "7-10",
+    "estimated_shipping_cost_usd": 60.0,
+    "prepaid_return_available": true,
+    "restricted": false
+  },
+  {
+    "country_name": "New Zealand",
+    "iso_code": "NZ",
+    "region": "Oceania",
+    "estimated_shipping_days": "6-10",
+    "estimated_shipping_cost_usd": 55.0,
+    "prepaid_return_available": true,
+    "restricted": false
+  },
+  {
+    "country_name": "Poland",
+    "iso_code": "PL",
+    "region": "Other",
+    "estimated_shipping_days": "7-10",
+    "estimated_shipping_cost_usd": 60.0,
+    "prepaid_return_available": true,
+    "restricted": false
+  },
+  {
+    "country_name": "Puerto Rico",
+    "iso_code": "PR",
+    "region": "Other",
+    "estimated_shipping_days": "7-10",
+    "estimated_shipping_cost_usd": 60.0,
+    "prepaid_return_available": true,
+    "restricted": false
+  },
+  {
+    "country_name": "Portugal",
+    "iso_code": "PT",
+    "region": "Other",
+    "estimated_shipping_days": "7-10",
+    "estimated_shipping_cost_usd": 60.0,
+    "prepaid_return_available": true,
+    "restricted": false
+  },
+  {
+    "country_name": "French Polynesia",
+    "iso_code": "PYF",
+    "region": "Other",
+    "estimated_shipping_days": "7-10",
+    "estimated_shipping_cost_usd": 60.0,
+    "prepaid_return_available": true,
+    "restricted": false
+  },
+  {
+    "country_name": "Romania",
+    "iso_code": "RO",
+    "region": "Other",
+    "estimated_shipping_days": "7-10",
+    "estimated_shipping_cost_usd": 60.0,
+    "prepaid_return_available": true,
+    "restricted": false
+  },
+  {
+    "country_name": "Sweden",
+    "iso_code": "SE",
+    "region": "Other",
+    "estimated_shipping_days": "7-10",
+    "estimated_shipping_cost_usd": 60.0,
+    "prepaid_return_available": true,
+    "restricted": false
+  },
+  {
+    "country_name": "Singapore",
+    "iso_code": "SG",
+    "region": "Asia",
+    "estimated_shipping_days": "5-7",
+    "estimated_shipping_cost_usd": 45.0,
+    "prepaid_return_available": true,
+    "restricted": false
+  },
+  {
+    "country_name": "Slovenia",
+    "iso_code": "SI",
+    "region": "Other",
+    "estimated_shipping_days": "7-10",
+    "estimated_shipping_cost_usd": 60.0,
+    "prepaid_return_available": true,
+    "restricted": false
+  },
+  {
+    "country_name": "Slovakia",
+    "iso_code": "SK",
+    "region": "Other",
+    "estimated_shipping_days": "7-10",
+    "estimated_shipping_cost_usd": 60.0,
+    "prepaid_return_available": true,
+    "restricted": false
+  },
+  {
+    "country_name": "San Marino",
+    "iso_code": "SM",
+    "region": "Other",
+    "estimated_shipping_days": "7-10",
+    "estimated_shipping_cost_usd": 60.0,
+    "prepaid_return_available": true,
+    "restricted": false
+  },
+  {
+    "country_name": "United States",
+    "iso_code": "US",
+    "region": "North America",
+    "estimated_shipping_days": "3-5",
+    "estimated_shipping_cost_usd": 25.0,
+    "prepaid_return_available": true,
+    "restricted": false
+  },
+  {
+    "country_name": "Virgin Islands, U.S.",
+    "iso_code": "VI",
+    "region": "Other",
+    "estimated_shipping_days": "7-10",
+    "estimated_shipping_cost_usd": 60.0,
+    "prepaid_return_available": true,
+    "restricted": false
+  },
+  {
+    "country_name": "South Africa",
+    "iso_code": "ZA",
+    "region": "Africa",
+    "estimated_shipping_days": "6-10",
+    "estimated_shipping_cost_usd": 55.0,
+    "prepaid_return_available": true,
+    "restricted": false
+  }
+]
