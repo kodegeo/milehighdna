@@ -18,6 +18,7 @@ const Home = () => {
           name="description" 
           content="Fast, confidential, AABB-accredited DNA testing in Denver. Same-day appointments for paternity, legal, and family relationship tests. Serving Denver, Aurora, Lakewood, and all of Colorado." 
         />
+        <meta name="msvalidate.01" content="5905CEB57CBF0561C0CECACC8EB705D6" />
 
         {/* Open Graph for social previews */}
         <meta property="og:title" content="Fast & Confidential DNA Testing in Denver – Mile High DNA" />

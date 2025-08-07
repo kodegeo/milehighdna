@@ -36,7 +36,7 @@ const CheckoutDomestic = () => {
     try {
       // 1. Insert customer into CustomerDb
       const { data: customerData, error: customerError } = await supabase
-        .from("CustomerDb")
+        .from("customerdb")
         .insert([
           {
             first_name: form.firstName,

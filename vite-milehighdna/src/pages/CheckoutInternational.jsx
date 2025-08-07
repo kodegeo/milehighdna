@@ -43,7 +43,7 @@ const CheckoutInternational = () => {
     try {
       // 1. Insert into CustomerDb
       const { data: customerData, error: customerError } = await supabase
-        .from("CustomerDb")
+        .from("customerdb")
         .insert([
           {
             first_name: form.firstName,
