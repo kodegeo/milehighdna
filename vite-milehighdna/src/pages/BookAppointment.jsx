@@ -18,6 +18,18 @@ const tests = [
     priceId: 'price_1RJf6IK2515KuCq2JBnXBDgO',
   },
   {
+    title: 'Legal Prenatal DNA Test',
+    price: 1800,
+    id: 'legal-prenatal',
+    priceId: 'price_1RnfPtK2515KuCq2jxu7SPku',
+  },
+  {
+    title: 'Non-Legal Prenatal DNA Test',
+    price: 1599,
+    id: 'non-legal-prenatal',
+    priceId: 'price_1RnfRCK2515KuCq2Un6d69UF',
+  },
+  {
     title: 'Non Legal Grandparentage DNA Test',
     price: 329,
     id: 'grandparentage',

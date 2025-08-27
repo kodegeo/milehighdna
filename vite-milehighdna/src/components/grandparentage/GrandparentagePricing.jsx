@@ -19,7 +19,7 @@ const GrandparentagePricing = () => {
                 <li>✔ AABB Lab Analysis</li>
                 <li>✔ Sample Collection</li>
                 <li>✔ Peace of Mind</li>
-                <li>✔ 2–5 Business Day Turnaround</li>
+                <li>✔ 7–10 Business Day Turnaround</li>
               </ul>
               <a
                 href="https://calendly.com/milehighdnatesting/grandparentage-dna-test"
@@ -38,7 +38,7 @@ const GrandparentagePricing = () => {
                 <li>✔ AABB Lab Analysis</li>
                 <li>✔ Sample Collection for All Participants</li>
                 <li>✔ Legal Documentation</li>
-                <li>✔ 2–5 Business Day Turnaround</li>
+                <li>✔ 7–10 Business Day Turnaround</li>
               </ul>
               <a
                 href="https://calendly.com/milehighdnatesting/grandparentage-dna-test"

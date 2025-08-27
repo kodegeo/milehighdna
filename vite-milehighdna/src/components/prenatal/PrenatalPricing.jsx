@@ -13,7 +13,7 @@ const PrenatalPricing = () => {
             <div className="bg-white rounded-xl shadow-md border-l-4 border-blue-600 p-6">
               <h3 className="text-xl font-bold text-gray-800 mb-2">Non Legal Single Father + Pregnate Mother</h3>
               <p className="text-gray-600 mb-4">Includes a Non Legal DNA test for one father and one pregnant mother. Ideal for peace of mind.</p>
-              <p className="text-2xl font-bold text-blue-700 mb-4">$1,500.00</p>
+              <p className="text-2xl font-bold text-blue-700 mb-4">$1,599.00</p>
               <ul className="text-left text-gray-700 space-y-2 mb-4">
                 <li>✔ AABB Lab Analysis</li>
                 <li>✔ Sample Collection</li>

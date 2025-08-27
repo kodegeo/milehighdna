@@ -30,10 +30,10 @@ const GrandparentageContactEs = () => {
           <div className="bg-blue-50 p-6 rounded-xl shadow-md">
             <h3 className="text-xl font-semibold text-gray-800 mb-4">Información de Contacto</h3>
             <p className="text-gray-700 mb-2">
-              📍 <strong>Dirección:</strong> 123 Main St, Denver, CO 80204
+              📍 <strong>Dirección:</strong> 975 N. Lincoln Street Suite 205 C, Denver, CO
             </p>
             <p className="text-gray-700 mb-2">
-              📞 <strong>Teléfono:</strong> <a href="tel:+13035550123" className="text-blue-600 hover:underline">(303) 555-0123</a>
+              📞 <strong>Teléfono:</strong> <a href="tel:+17209009342" className="text-blue-600 hover:underline">(303) 555-0123</a>
             </p>
             <p className="text-gray-700 mb-2">
               ✉️ <strong>Correo:</strong> <a href="mailto:info@milehighdna.com" className="text-blue-600 hover:underline">info@milehighdna.com</a>

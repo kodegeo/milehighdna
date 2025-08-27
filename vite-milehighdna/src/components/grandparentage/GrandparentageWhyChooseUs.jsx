@@ -13,7 +13,7 @@ const GrandparentageWhyChooseUs = () => {
       {
         title: 'Fast Results',
         description:
-          'You’ll receive accurate results within 2–4 business days. We also offer expedited options if time is critical.',
+          'You’ll receive accurate results within 7–10 business days. We also offer expedited options if time is critical.',
       },
       {
         title: 'Compassionate Support',

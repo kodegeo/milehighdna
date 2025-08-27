@@ -13,7 +13,7 @@ const GrandparentageWhyChooseUsEs = () => {
       {
         title: 'Resultados rápidos',
         description:
-          'Recibe resultados precisos en solo 2 a 4 días hábiles. También contamos con opciones urgentes si necesitas respuestas rápidamente.',
+          'Recibe resultados precisos en solo 7 a 10 días hábiles. También contamos con opciones urgentes si necesitas respuestas rápidamente.',
       },
       {
         title: 'Atención compasiva',

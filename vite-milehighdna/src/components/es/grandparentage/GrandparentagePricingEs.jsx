@@ -19,7 +19,7 @@ const GrandparentagePricingEs = () => {
                 <li>✔ Análisis en laboratorio acreditado por la AABB</li>
                 <li>✔ Recolección de muestras</li>
                 <li>✔ Tranquilidad personal</li>
-                <li>✔ Resultados en 2 a 5 días hábiles</li>
+                <li>✔ Resultados en 7 a 10 días hábiles</li>
               </ul>
               <br></br>
               <a
@@ -39,7 +39,7 @@ const GrandparentagePricingEs = () => {
                 <li>✔ Análisis en laboratorio acreditado por la AABB</li>
                 <li>✔ Recolección de muestras para todos los participantes</li>
                 <li>✔ Documentación legal</li>
-                <li>✔ Resultados en 2 a 5 días hábiles</li>
+                <li>✔ Resultados en 7 a 10 días hábiles</li>
               </ul>
               <a
                 href="https://calendly.com/milehighdnatesting/prueba-abuelidad"

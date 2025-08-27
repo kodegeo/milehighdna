@@ -22,7 +22,7 @@ const GrandparentageStepsEs = () => {
         number: 4,
         title: 'Recibe tus resultados',
         description:
-          'Los resultados están disponibles en un plazo de 2 a 5 días hábiles. Las pruebas legales incluyen documentos notariados y envío directo a la corte si es necesario.',
+          'Los resultados están disponibles en un plazo de 7 a 10 días hábiles. Las pruebas legales incluyen documentos notariados y envío directo a la corte si es necesario.',
       },
     ];
   
