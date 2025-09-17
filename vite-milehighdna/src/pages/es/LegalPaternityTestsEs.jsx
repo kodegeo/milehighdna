@@ -8,36 +8,120 @@ import legalHero from "../../assets/images/legal_hero.png";
 import ServingColoradoEs from "../../components/es/common/ServingColoradoEs";
 import CallToActionEs from "../../components/es/common/CallToActionEs";
 import PricingEs from "../../components/es/legalPaternity/PricingEs";
-import { Helmet } from 'react-helmet-async';
-
+import { Helmet } from "react-helmet-async";
 
 const LegalPaternityTestsEs = () => {
   return (
     <main>
       <Helmet>
-        <title>Prueba de Paternidad Legal en Denver, Aurora y Colorado | Mile High DNA</title>
-        <meta 
-          name="description" 
-          content="Pruebas de paternidad legales y confidenciales con resultados válidos ante la corte e inmigración. Sirviendo Denver, Aurora, Lakewood y todo Colorado. Laboratorio acreditado por AABB." 
+        <html lang="es" />
+        <title>
+          Prueba de Paternidad Legal en Denver | ADN Aceptado por la Corte en
+          Colorado
+        </title>
+        <meta
+          name="description"
+          content="Prueba de paternidad legal en Denver, Aurora, Lakewood, Westminster y Thornton. Resultados acreditados por AABB, válidos en la corte y en inmigración. Citas el mismo día y resultados rápidos."
+        />
+        <link
+          rel="canonical"
+          href="https://milehighdnatesting.com/es/prueba-de-paternidad-legal"
+        />
+        <link
+          rel="alternate"
+          hreflang="en"
+          href="https://milehighdnatesting.com/legal-paternity-tests"
+        />
+        <link
+          rel="alternate"
+          hreflang="es"
+          href="https://milehighdnatesting.com/es/prueba-de-paternidad-legal"
         />
 
-        <meta property="og:title" content="Prueba de Paternidad Legal en Colorado | Resultados Válidos para Corte e Inmigración" />
-        <meta property="og:description" content="Prueba de ADN legal para casos de custodia, manutención infantil, y peticiones migratorias. Acreditado por AABB. Resultados rápidos y admisibles." />
-        <meta property="og:image" content="https://milehighdnatesting.com/images/banner-1200.png" />
-        <meta property="og:url" content="https://milehighdnatesting.com/es/prueba-de-paternidad-legal" />
+        <meta
+          property="og:title"
+          content="Prueba de Paternidad Legal en Colorado | Resultados Válidos para Corte e Inmigración"
+        />
+        <meta
+          property="og:description"
+          content="Prueba de ADN legal para casos de custodia, manutención infantil y procesos migratorios. Acreditado por AABB. Resultados rápidos y admisibles."
+        />
+        <meta
+          property="og:image"
+          content="https://milehighdnatesting.com/images/banner-1200.png"
+        />
+        <meta
+          property="og:url"
+          content="https://milehighdnatesting.com/es/prueba-de-paternidad-legal"
+        />
         <meta property="og:type" content="article" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:image" content="https://milehighdnatesting.com/images/banner-1200.png" />
+        <meta
+          name="twitter:image"
+          content="https://milehighdnatesting.com/images/banner-1200.png"
+        />
+
+        {/* FAQ Schema for Local SEO */}
+        <script type="application/ld+json">{`
+          {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "¿Dónde puedo hacerme una prueba de paternidad legal en Denver?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "En Mile High DNA Testing en Denver. Ofrecemos resultados válidos en la corte en 2–5 días hábiles."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "¿Ofrecen pruebas de paternidad en Aurora, Colorado?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Sí. Atendemos familias en Aurora desde nuestra oficina en Denver, con resultados acreditados por AABB."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "¿Puedo hacer una prueba de paternidad legal si vivo en Lakewood?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Claro. Muchos clientes de Lakewood utilizan nuestra oficina en Denver para obtener resultados admisibles en la corte."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "¿Atienden a familias en Westminster y Thornton?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Sí, regularmente servimos a clientes en Westminster y Thornton. Los resultados son válidos en todo Colorado."
+                }
+              }
+            ]
+          }
+        `}</script>
       </Helmet>
 
+      {/* HERO */}
       <HeroSection
         title="Prueba de Paternidad Legal Aceptada por la Corte en Denver y Colorado"
         subtitle={
           <>
-          Confirma la relación biológica entre un presunto padre y un hijo con resultados precisos y confidenciales.<br /><br /> 
-          Ofrecemos tanto pruebas legales, válidas en la corte con cadena de custodia, como pruebas informativas para uso personal.<br /><br /> 
-          Obtenga claridad, respaldo legal y atención compasiva con resultados rápidos en los que puede confiar.<br /><br /> 
-          Sirviendo con orgullo a Denver y las comunidades del Front Range.
+            Confirma la relación biológica entre un presunto padre y un hijo con
+            resultados precisos y confidenciales.
+            <br />
+            <br />
+            Ofrecemos tanto pruebas legales, válidas en la corte con cadena de
+            custodia, como pruebas informativas para uso personal.
+            <br />
+            <br />
+            Obtenga claridad, respaldo legal y atención compasiva con resultados
+            rápidos en los que puede confiar.
+            <br />
+            <br />
+            Sirviendo con orgullo a Denver y las comunidades del Front Range.
           </>
         }
         imageUrl={legalHero}
@@ -45,10 +129,12 @@ const LegalPaternityTestsEs = () => {
         buttonLink="https://calendly.com/milehighdnatesting/prueba-legal-paternidad-spanish"
         secondaryButtonText="Llama Hoy"
         secondaryButtonLink="tel:7209009342"
-        />
+      />
 
+      {/* PRICING */}
       <PricingEs />
 
+      {/* OVERVIEW */}
       <ServiceOverview
         title="¿Qué Es una Prueba Legal de Paternidad por ADN?"
         paragraphs={[
@@ -58,53 +144,56 @@ const LegalPaternityTestsEs = () => {
         ]}
       />
 
+      {/* USE CASES */}
       <LegalUseCases
         title="¿Cuándo Se Requiere una Prueba Legal de Paternidad?"
         useCases={[
           {
             title: "Disputas por la Custodia de Menores",
             description:
-              "Confirma la paternidad para respaldar acuerdos legales de custodia o solicitudes de modificación.",
+              "Confirma la paternidad para respaldar acuerdos legales de custodia o solicitudes de modificación."
           },
           {
             title: "Órdenes de Manutención Infantil",
             description:
-              "Proporciona prueba legal de paternidad para respaldar obligaciones de manutención ordenadas por la corte.",
+              "Proporciona prueba legal de paternidad para respaldar obligaciones de manutención ordenadas por la corte."
           },
           {
             title: "Actualización de Certificados de Nacimiento",
             description:
-              "Establece la paternidad para agregar o corregir el nombre del padre en un certificado de nacimiento.",
+              "Establece la paternidad para agregar o corregir el nombre del padre en un certificado de nacimiento."
           },
           {
             title: "Casos de Inmigración",
             description:
-              "Verifica vínculos biológicos para solicitudes y peticiones migratorias.",
-          },
+              "Verifica vínculos biológicos para solicitudes y peticiones migratorias."
+          }
         ]}
       />
 
+      {/* HOW IT WORKS */}
       <HowItWorksEs
         title="Cómo Funciona la Prueba Legal de Paternidad"
         steps={[
           {
             title: "Reserva tu consulta gratuita o tu cita",
             description:
-              "Reserva tu consulta gratuita o agenda directamente tu cita para la prueba de paternidad legal.",
+              "Reserva tu consulta gratuita o agenda directamente tu cita para la prueba de paternidad legal."
           },
           {
             title: "Cita",
             description:
-              "Visítanos en nuestra ubicación en Denver para una recolección de muestra rápida y profesional.",
+              "Visítanos en nuestra ubicación en Denver para una recolección de muestra rápida y profesional."
           },
           {
             title: "Obtenga Sus Resultados",
             description:
-              "Reciba sus resultados admisibles en la corte dentro de 2-5 días hábiles.",
-          },
+              "Reciba sus resultados admisibles en la corte dentro de 2-5 días hábiles."
+          }
         ]}
       />
 
+      {/* TESTIMONIAL */}
       <Testimonial
         quote="El proceso fue sencillo y profesional. Los resultados se entregaron rápidamente y el personal fue muy comprensivo durante todo el proceso."
         author="Sara Johnson"
@@ -112,8 +201,30 @@ const LegalPaternityTestsEs = () => {
       />
 
       <ServingColoradoEs />
+
+      {/* INTERNAL LINKS: OTHER SERVICES */}
+      <section className="py-10 px-6 text-center">
+        <h2 className="text-xl font-bold text-blue-900 mb-4">Otros Servicios</h2>
+        <p className="text-gray-700 mb-6">
+          También ofrecemos{" "}
+          <a
+            href="/es/prueba-de-paternidad-informativa"
+            className="text-blue-600 underline"
+          >
+            Prueba de Paternidad Informativa
+          </a>{" "}
+          y{" "}
+          <a
+            href="/es/prueba-de-adn-inmigracion"
+            className="text-blue-600 underline"
+          >
+            Prueba de ADN para Inmigración
+          </a>
+          .
+        </p>
+      </section>
+
       <CallToActionEs />
-      
     </main>
   );
 };

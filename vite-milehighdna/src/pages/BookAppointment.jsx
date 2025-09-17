@@ -6,7 +6,7 @@ console.log('✅ Stripe API URL:', import.meta.env.VITE_API_URL);
 
 const tests = [
   {
-    title: 'Legal Paternity DNA Test',
+    title: 'Legal Paternity DNA Test (Court-Required)',
     price: 349,
     id: 'legal-paternity',
     priceId: 'price_1RJf5QK2515KuCq2ERIuc56P',
@@ -92,21 +92,53 @@ const BookAppointment = () => {
   return (
     <div className="min-h-screen bg-gray-100 py-10 px-4">
 
-    <Helmet>
-      <title>Book DNA Test Appointment | Schedule Paternity & Immigration Testing</title>
-      <meta 
-        name="description" 
-        content="Book your legal, paternity, or immigration DNA test in Denver, Aurora, or Lakewood. Schedule online and prepay securely. AABB-accredited results accepted by courts and USCIS." 
-      />
+      <Helmet>
+        <html lang="en" />
+        <title>Book Paternity DNA Test Appointment in Denver | Court-Admissible Results</title>
+        <meta 
+          name="description" 
+          content="Book your legal paternity or prenatal DNA test in Denver, Aurora, or Lakewood. Schedule online and prepay securely. Results processed by AABB-accredited labs and valid for court." 
+        />
+        <link rel="canonical" href="https://milehighdnatesting.com/book-appointment" />
+        <link rel="alternate" hreflang="es" href="https://milehighdnatesting.com/es/reservar-cita" />
+        <link rel="alternate" hreflang="en" href="https://milehighdnatesting.com/book-appointment" />
 
-      <meta property="og:title" content="Book Your DNA Test in Denver | Legal & Immigration Testing" />
-      <meta property="og:description" content="Schedule same-day or future DNA testing appointments. Prepay online for legal and AABB-accredited paternity, sibling, or immigration tests." />
-      <meta property="og:image" content="https://milehighdnatesting.com/images/banner-1200.png" />
-      <meta property="og:url" content="https://milehighdnatesting.com/book-appointment" />
-      <meta property="og:type" content="website" />
-      <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:image" content="https://milehighdnatesting.com/images/banner-1200.png" />
-    </Helmet>
+        {/* FAQ Schema */}
+        <script type="application/ld+json">{`
+          {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Can I book a same-day paternity DNA test in Denver?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. Same-day appointments are available for legal paternity DNA testing in Denver, Aurora, and Lakewood."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Do you offer prenatal DNA testing?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. We provide both legal and non-legal prenatal DNA testing, with results processed by AABB-accredited labs."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Are results valid in court?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. All legal paternity and prenatal DNA tests follow strict chain-of-custody procedures and are admissible in court."
+                }
+              }
+            ]
+          }
+        `}</script>
+      </Helmet>
+
+    
 
       <div className="max-w-4xl mx-auto">
       <h1 className="text-2xl font-bold text-gray-800 mb-6">

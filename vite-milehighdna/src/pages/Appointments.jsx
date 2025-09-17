@@ -11,19 +11,15 @@ const Appointments = () => {
   return (
     <main>
       <Helmet>
-        <title>Book a DNA Test or Contact Us | Mile High DNA | Denver, Aurora, Lakewood</title>
+        <html lang="en" />
+        <title> Schedule Paternity DNA Test in Denver | Mile High DNA Testing</title>
         <meta 
           name="description" 
-          content="Schedule your DNA test or contact Mile High DNA for a free consultation. We offer legal, immigration, and family relationship testing in Denver, Aurora, and Lakewood." 
+          content="Schedule a legal paternity or prenatal DNA test in Denver, Aurora, or Lakewood. Same-day appointments, AABB-accredited labs, and results valid for court cases." 
         />
-
-        <meta property="og:title" content="Schedule a DNA Test or Get in Touch | Mile High DNA" />
-        <meta property="og:description" content="Book your appointment for paternity, immigration, siblingship, or grandparentage DNA testing. Contact our team for help with documentation or scheduling." />
-        <meta property="og:image" content="https://milehighdnatesting.com/images/baner_sch_1.png" />
-        <meta property="og:url" content="https://milehighdnatesting.com/appointments" />
-        <meta property="og:type" content="website" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:image" content="https://milehighdnatesting.com/images/banner-1200.png" />
+        <link rel="canonical" href="https://milehighdnatesting.com/appointments" />
+        <link rel="alternate" hreflang="es" href="https://milehighdnatesting.com/es/citas" />
+        <link rel="alternate" hreflang="en" href="https://milehighdnatesting.com/appointments" />
       </Helmet>
 
       <HeroSection
