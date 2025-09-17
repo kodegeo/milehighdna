@@ -3,6 +3,8 @@ import { Helmet } from "react-helmet-async";
 import { loadStripe } from "@stripe/stripe-js";
 import { createClient } from "@supabase/supabase-js";
 import peaceOfMindKitImage from "../assets/images/peace-of-mind-kit.jpg";
+import { getShippingFee } from "../utils/shipping";
+
 
 // Stripe
 const stripePromise = loadStripe(import.meta.env.VITE_STRIPE_PUBLISHABLE_KEY);
@@ -37,6 +39,8 @@ const PeaceOfMindDNAKit = () => {
   const createCheckout = async (type, countryCode = "US") => {
     try {
       setLoading(true);
+  
+      const shippingFee = await getShippingFee(type, countryCode);
   
       // Validate inputs
       if (!firstName.trim() || !lastName.trim() || !customerEmail.trim()) {
@@ -74,7 +78,6 @@ const PeaceOfMindDNAKit = () => {
       const customerId = customer.id;
   
       // Step 2: Insert order
-      const shippingFee = type === "domestic" ? 15 : 0;
       const orderTotal = 199 + shippingFee;
   
       const { data: order, error: orderErr } = await supabase
@@ -97,7 +100,7 @@ const PeaceOfMindDNAKit = () => {
       const orderId = order.id;
   
       // Step 3: Insert order items
-      const { error: itemsErr } = await supabase.from("orderitems" /* 👈 use your actual table name */).insert([
+      const { error: itemsErr } = await supabase.from("orderitems").insert([
         {
           order_id: orderId,
           product_name: "Peace of Mind Paternity Kit",
@@ -119,14 +122,15 @@ const PeaceOfMindDNAKit = () => {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           orderId,
-          customerCode,
+          customerCode: `CUST-${customerId}`,
           firstName,
           lastName,
-          email,
-          productName,
-          subtotalUsd,
-          orderSource,
-          country,
+          email: customerEmail,
+          productName: "Peace of Mind Paternity Kit",
+          subtotalUsd: 199,
+          shippingUsd: shippingFee,
+          orderSource: type === "domestic" ? "online_domestic" : "online_international",
+          country: countryCode,
         }),
       });
   
@@ -146,7 +150,7 @@ const PeaceOfMindDNAKit = () => {
       setLoading(false);
     }
   };
-
+  
   
   return (
     <div className="min-h-screen bg-gray-50">

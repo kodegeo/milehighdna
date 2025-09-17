@@ -7,6 +7,7 @@ import Stripe from "stripe";
 import { paymentsRouter } from "./src/routes/payments.js";
 import { webhookRouter } from "./src/routes/webhook.js";
 import { sendConfirmationRoute } from "./src/routes/sendConfirmationRoute.js";
+import { shippingRoutes } from "./routes/shipping.js";
 
 
 dotenv.config();
@@ -43,6 +44,8 @@ app.use(express.json());
 app.use("/api/payments", paymentsRouter);
 app.use("/api/payments", webhookRouter);
 app.use("/api/send-confirmation-email", sendConfirmationRoute);
+app.use("/api/shipping", shippingRoutes);
+
 
 
 // ✅ Health check

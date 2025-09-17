@@ -71,7 +71,7 @@ const PeaceOfMindDNAKit = () => {
       const customerId = customer.id;
 
       // Step 2: Insert order
-      const shippingFee = type === "domestic" ? 15 : 0;
+      const shippingFee = await getShippingFee(type, countryCode);
       const orderTotal = 199 + shippingFee;
 
       const { data: order, error: orderErr } = await supabase
