@@ -114,19 +114,19 @@ const PeaceOfMindDNAKit = () => {
       if (itemsErr) throw itemsErr;
   
       // Step 4: Call backend to create Stripe Checkout
-      const resp = await fetch("/api/payments/create-session", {
+      const resp = await fetch(`${import.meta.env.VITE_API_URL}/api/payments/create-session`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           orderId,
-          customerCode: `DNA-${orderId.slice(0, 8)}`,
+          customerCode,
           firstName,
           lastName,
-          email: customerEmail.trim().toLowerCase(),
-          productName: "Peace of Mind Paternity Kit",
-          subtotalUsd: 199,
-          orderSource: type === "domestic" ? "online_domestic" : "online_international",
-          country: countryCode,
+          email,
+          productName,
+          subtotalUsd,
+          orderSource,
+          country,
         }),
       });
   
