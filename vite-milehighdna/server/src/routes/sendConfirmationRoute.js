@@ -1,7 +1,7 @@
-const express = require("express");
-const router = express.Router();
-const { handleSendConfirmation } = require("../controllers/sendConfirmationController");
+// server/src/routes/sendConfirmationRoute.js
+import express from "express";
+import { handleSendConfirmation } from "../controllers/sendConfirmationController.js";
 
-router.post("/", handleSendConfirmation);
+export const sendConfirmationRoute = express.Router();
 
-module.exports = router;
+sendConfirmationRoute.post("/", handleSendConfirmation);

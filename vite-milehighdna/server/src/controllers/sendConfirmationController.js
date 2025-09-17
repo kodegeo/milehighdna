@@ -1,9 +1,10 @@
-const sgMail = require("@sendgrid/mail");
-const { buildCustomerEmail, buildAdminEmail } = require("../utils/emailTemplates");
+// server/src/controllers/sendConfirmationController.js
+import sgMail from "@sendgrid/mail";
+import { buildCustomerEmail, buildAdminEmail } from "../utils/emailTemplates.js";
 
 sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
-exports.handleSendConfirmation = async (req, res) => {
+export const handleSendConfirmation = async (req, res) => {
   const { toCustomer, toAdmin, from, subject, orderDetails } = req.body;
 
   const customerMsg = {
@@ -19,6 +20,7 @@ exports.handleSendConfirmation = async (req, res) => {
     from,
     subject: `New Order: ${orderDetails.orderNumber}`,
     text: `New order received:\n\n${JSON.stringify(orderDetails, null, 2)}`,
+    html: buildAdminEmail(orderDetails),
   };
 
   try {

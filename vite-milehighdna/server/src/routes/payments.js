@@ -1,60 +1,90 @@
-// server/routes/payments.js
+// server/src/routes/payments.js
 import express from "express";
 import Stripe from "stripe";
 import { createClient } from "@supabase/supabase-js";
+import fs from "fs";
+import path from "path";
+import { fileURLToPath } from "url";
 
 export const paymentsRouter = express.Router();
 
+// ✅ Fix JSON import (works in all Node.js ESM)
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+const shippingRatesPath = path.resolve(__dirname, "../../config/shippingRates.json");
+const shippingRates = JSON.parse(fs.readFileSync(shippingRatesPath, "utf-8"));
+
+// ✅ Initialize Stripe
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY, {
   apiVersion: "2024-06-20",
 });
 
+// ✅ Initialize Supabase
 const supabase = createClient(
   process.env.SUPABASE_URL,
-  process.env.SUPABASE_SERVICE_KEY // service role key (server-side ONLY)
+  process.env.SUPABASE_SERVICE_KEY
 );
 
-// POST /api/payments/create-session
 paymentsRouter.post("/create-session", async (req, res) => {
   try {
+    console.log("➡️ Request body:", req.body);
+
     const {
-      // customer/order info from your checkout
-      orderId,              // <- the orders.id you created in Supabase
-      customerCode,         // your human-friendly order code
+      orderId,
+      customerCode,
       firstName,
       lastName,
       email,
-      subtotalUsd,          // e.g., 99
-      shippingUsd,          // e.g., 12 (domestic) or rate from JSON (intl)
-      orderSource           // "online_domestic" | "online_international"
+      productName,
+      subtotalUsd,
+      orderSource,
+      country,
     } = req.body;
 
-    if (!orderId || !email || subtotalUsd == null || shippingUsd == null) {
-      return res.status(400).json({ error: "Missing required fields" });
+    // Validate
+    if (!orderId || !email || subtotalUsd == null || !orderSource) {
+      return res.status(400).json({
+        error: "Missing required fields: orderId, email, subtotalUsd, orderSource",
+      });
     }
 
-    const total = Number(subtotalUsd) + Number(shippingUsd);
+    // Shipping logic
+    let shippingUsd = 0;
+    if (orderSource === "online_domestic") {
+      shippingUsd = 15;
+    } else if (orderSource === "online_international") {
+      if (!country) {
+        return res.status(400).json({ error: "Country required for international orders" });
+      }
+      if (!shippingRates[country]) {
+        return res.status(400).json({
+          error: `We do not ship to ${country}. Contact info@milehighdnatesting.com`,
+        });
+      }
+      shippingUsd = shippingRates[country];
+    }
 
-    // Optional: create/find Stripe customer
+    // Create Stripe customer
     const customer = await stripe.customers.create({
       email,
       name: `${firstName || ""} ${lastName || ""}`.trim(),
       metadata: { customerCode, orderSource },
     });
 
+    // Create Stripe checkout session
     const session = await stripe.checkout.sessions.create({
       mode: "payment",
       customer: customer.id,
-      success_url: `${process.env.PUBLIC_BASE_URL}/checkout/success?code=${encodeURIComponent(
-        customerCode || ""
+      success_url: `${process.env.FRONTEND_URL}/checkout-success?order=${encodeURIComponent(
+        orderId
       )}`,
-      cancel_url: `${process.env.PUBLIC_BASE_URL}/checkout/cancel`,
+      cancel_url: `${process.env.FRONTEND_URL}/checkout-cancel`,
       line_items: [
         {
           quantity: 1,
           price_data: {
             currency: "usd",
-            product_data: { name: "At-Home Paternity DNA Kit" },
+            product_data: { name: productName || "DNA Test Kit" },
             unit_amount: Math.round(Number(subtotalUsd) * 100),
           },
         },
@@ -68,27 +98,19 @@ paymentsRouter.post("/create-session", async (req, res) => {
         },
       ],
       metadata: {
-        orderId: String(orderId),
-        customerCode: customerCode || "",
-        orderSource: orderSource || "",
+        orderId,
+        customerCode,
+        orderSource,
+        country,
         subtotalUsd: String(subtotalUsd),
         shippingUsd: String(shippingUsd),
-        totalUsd: String(total),
       },
     });
 
-    // Store Stripe session id on the order for traceability
-    await supabase
-      .from("orders")
-      .update({
-        stripe_session_id: session.id,
-        order_status: "Pending",
-      })
-      .eq("id", orderId);
-
+    console.log("✅ Stripe session created:", session.id);
     return res.status(200).json({ url: session.url });
   } catch (err) {
-    console.error("create-session error:", err);
-    return res.status(400).json({ error: err?.message || "Unknown error" });
+    console.error("❌ create-session error:", err);
+    return res.status(500).json({ error: err.message || "Unknown error" });
   }
 });

@@ -1,7 +1,8 @@
-// src/routes/send-confirmation-email.js
-const express = require("express");
-const router = express.Router();
-const sgMail = require("@sendgrid/mail");
+// server/src/routes/send-confirmation-email.js
+import express from "express";
+import sgMail from "@sendgrid/mail";
+
+export const sendConfirmationEmailRouter = express.Router();
 
 sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
@@ -53,7 +54,7 @@ const buildCustomerEmail = (orderDetails) => {
 };
 
 // Route handler
-router.post('/send-confirmation-email', async (req, res) => {
+sendConfirmationEmailRouter.post("/", async (req, res) => {
   const { toCustomer, toAdmin, from, subject, orderDetails } = req.body;
   
   const customerMsg = {
@@ -86,11 +87,9 @@ router.post('/send-confirmation-email', async (req, res) => {
   try {
     await sgMail.send(customerMsg);
     await sgMail.send(adminMsg);
-    res.status(200).json({ success: true, message: 'Emails sent successfully' });
+    res.status(200).json({ success: true, message: "Emails sent successfully" });
   } catch (err) {
     console.error("SendGrid Error:", err.response?.body || err);
     res.status(500).json({ error: "Failed to send emails", details: err.message });
   }
 });
-
-module.exports = router;

@@ -1,230 +1,333 @@
 import React, { useState } from "react";
-import { supabase } from "../infrastructure/supabaseClient";
+import { Helmet } from "react-helmet-async";
+import { createClient } from "@supabase/supabase-js";
+import peaceOfMindKitImage from "../assets/images/peace-of-mind-kit.jpg";
 
-function generateCustomerCode() {
-  const prefix = "MH";
-  const randomNum = Math.floor(10000 + Math.random() * 90000);
-  return `${prefix}${randomNum}`;
-}
+// Supabase client
+const supabase = createClient(
+  import.meta.env.VITE_SUPABASE_URL,
+  import.meta.env.VITE_SUPABASE_ANON_KEY
+);
 
-const CheckoutDomestic = () => {
-  const [form, setForm] = useState({
-    firstName: "",
-    lastName: "",
-    email: "",
-    phone: "",
-    address: "",
-    city: "",
-    state: "",
-    zip: "",
-  });
+const PeaceOfMindDNAKit = () => {
+  const [showUSModal, setShowUSModal] = useState(false);
   const [loading, setLoading] = useState(false);
-  const [successMessage, setSuccessMessage] = useState("");
 
-  const handleChange = (e) => {
-    setForm({ ...form, [e.target.name]: e.target.value });
-  };
+  // Form state
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [customerEmail, setCustomerEmail] = useState("");
+  const [country, setCountry] = useState("US");
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setLoading(true);
+  const benefits = [
+    "Fast results in 3-5 business days",
+    "99.9% accuracy guarantee",
+    "Completely confidential and private",
+    "Easy-to-use home collection kit",
+    "Professional laboratory testing",
+    "Detailed results report included",
+    "No court appearance required",
+    "Affordable pricing with no hidden fees",
+  ];
 
-    const customerCode = generateCustomerCode();
-    const orderTotal = 199.0;                 // items subtotal
-    const DOMESTIC_FLAT_RATE = 12.00; // New flat-rate shipping
-    const shippingCost = DOMESTIC_FLAT_RATE;
-
+  const createCheckout = async (type, countryCode = "US") => {
     try {
-      // 1) Customer
-      const { data: customerData, error: customerError } = await supabase
-        .from("customerdb")
-        .insert([
-          {
-            first_name: form.firstName,
-            last_name: form.lastName,
-            email: form.email,
-            phone: form.phone,
-            customer_code: customerCode,
-            use_case: "at_home_kit", // online orders = at-home kits (non-legal)
-            test_type: "paternity",  // at-home kits are paternity
-          },
-        ])
-        .select()
-        .single();
-      if (customerError) throw customerError;
+      setLoading(true);
 
-      // 2) Order
-      const { data: orderData, error: orderError } = await supabase
+      // ✅ Validate input
+      if (!firstName.trim() || !lastName.trim() || !customerEmail.trim()) {
+        alert("Please enter your first name, last name, and email before checkout.");
+        setLoading(false);
+        return;
+      }
+
+      // Step 1: Find or insert customer
+      let { data: customer, error: custErr } = await supabase
+        .from("customerdb")
+        .select("id")
+        .eq("email", customerEmail.trim().toLowerCase())
+        .maybeSingle();
+
+      if (custErr) throw custErr;
+
+      if (!customer) {
+        const { data: newCustomer, error: newCustErr } = await supabase
+          .from("customerdb")
+          .insert([
+            {
+              first_name: firstName.trim(),
+              last_name: lastName.trim(),
+              email: customerEmail.trim().toLowerCase(),
+              test_type: "Online Paternity",
+            },
+          ])
+          .select()
+          .single();
+
+        if (newCustErr) throw newCustErr;
+        customer = newCustomer;
+      }
+
+      const customerId = customer.id;
+
+      // Step 2: Insert order
+      const shippingFee = type === "domestic" ? 15 : 0;
+      const orderTotal = 199 + shippingFee;
+
+      const { data: order, error: orderErr } = await supabase
         .from("orders")
         .insert([
           {
-            customer_id: customerData.id,
-            order_source: "online_domestic",
-            order_type: "at_home_kit",         // add to match international flow
-            order_status: "Pending",
+            customer_id: customerId,
+            order_status: "Initiated",
+            order_source: type === "domestic" ? "online_domestic" : "online_international",
             order_total_usd: orderTotal,
-            shipping_cost_usd: shippingCost,
-            address: form.address,
-            city: form.city,
-            state_or_region: form.state,
-            postal_code: form.zip,
-            country: "United States",
+            shipping_cost_usd: shippingFee,
+            country: countryCode,
+            currency: "USD",
           },
         ])
         .select()
         .single();
-      if (orderError) throw orderError;
 
-      // 3) Order item
-      const { error: itemError } = await supabase.from("orderitems").insert([
+      if (orderErr) throw orderErr;
+      const orderId = order.id;
+
+      // Step 3: Insert order items
+      const { error: itemsErr } = await supabase.from("orderitems").insert([
         {
-          order_id: orderData.id,
-          product_name: "At-Home Paternity Test Kit",
+          order_id: orderId,
+          product_name: "Peace of Mind Paternity Kit",
           quantity: 1,
-          unit_price_usd: orderTotal,
+          unit_price_usd: 199,
+        },
+        {
+          order_id: orderId,
+          product_name: "Shipping",
+          quantity: 1,
+          unit_price_usd: shippingFee,
         },
       ]);
-      if (itemError) throw itemError;
+      if (itemsErr) throw itemsErr;
 
-      // 4) Confirmation email
-      await fetch("/api/send-confirmation-email", {
+      // Step 4: Call backend to create Stripe Checkout
+      const resp = await fetch("/api/payments/create-session", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          toCustomer: form.email,
-          toAdmin: "cynthia@milehighdnatesting.com",
-          from: "info@milehighdnatesting.com",
-          subject: "Order Confirmation – At-Home DNA Kit",
-          orderDetails: {
-            customerName: `${form.firstName} ${form.lastName}`,
-            orderNumber: customerCode,
-            productName: "At-Home Paternity DNA Kit",
-            price: orderTotal.toFixed(2),
-            shipping: shippingCost.toFixed(2), // 12.00
-            total: (orderTotal + shippingCost).toFixed(2), // 111.00
-            orderType: "domestic",
-          },
+          orderId,
+          customerCode: `DNA-${orderId.slice(0, 8)}`,
+          firstName,
+          lastName,
+          email: customerEmail.trim().toLowerCase(),
+          productName: "Peace of Mind Paternity Kit",
+          subtotalUsd: 199,
+          orderSource: type === "domestic" ? "online_domestic" : "online_international",
+          country: countryCode,
         }),
       });
 
-      // Success UI
-      setSuccessMessage(
-        `Order submitted! Code: ${customerCode}. Total: $${(orderTotal + shippingCost).toFixed(2)} (Items $${orderTotal.toFixed(2)} + Shipping $${shippingCost.toFixed(2)})`
-      );
-      setForm({
-        firstName: "",
-        lastName: "",
-        email: "",
-        phone: "",
-        address: "",
-        city: "",
-        state: "",
-        zip: "",
-      });
-    } catch (error) {
-      console.error("Error submitting order:", error?.message || error);
-      alert("There was an issue submitting your order. Please try again.");
+      let result;
+      try {
+        result = await resp.json();
+      } catch {
+        throw new Error("Server returned an invalid response (not JSON). Check backend logs.");
+      }
+
+      if (!resp.ok) {
+        throw new Error(result.error || "Server error occurred");
+      }
+
+      if (result.error) {
+        throw new Error(result.error);
+      }
+
+      if (result.url) {
+        window.location.href = result.url;
+      }
+    } catch (err) {
+      console.error("Checkout error:", err);
+      alert(`Checkout failed: ${err.message}`);
     } finally {
       setLoading(false);
     }
   };
 
   return (
-    <div className="min-h-screen bg-gray-50 flex justify-center items-center">
-      <form
-        onSubmit={handleSubmit}
-        className="bg-white p-8 rounded-xl shadow-md max-w-lg w-full space-y-4"
-      >
-        <h2 className="text-2xl font-bold text-gray-800 mb-2">Domestic Checkout</h2>
-        <p className="text-gray-600 mb-4">At-Home Paternity Test Kit</p>
+    <div className="min-h-screen bg-gray-50">
+      <Helmet>
+        <title>Peace of Mind DNA Test Kit | Mile High DNA</title>
+        <meta
+          name="description"
+          content="Confidential, accurate paternity test results for personal knowledge only. Fast, discreet home collection kit with 99%+ accuracy. Not for legal use."
+        />
+      </Helmet>
 
-        <div className="grid grid-cols-2 gap-4">
-          <input
-            className="border p-2 rounded"
-            name="firstName"
-            placeholder="First Name"
-            value={form.firstName}
-            onChange={handleChange}
-            required
-          />
-          <input
-            className="border p-2 rounded"
-            name="lastName"
-            placeholder="Last Name"
-            value={form.lastName}
-            onChange={handleChange}
-            required
-          />
+      {/* Hero Section */}
+      <div className="bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            {/* Product Image */}
+            <div className="order-2 lg:order-1">
+              <div className="relative">
+                <img
+                  src={peaceOfMindKitImage}
+                  alt="Peace of Mind Paternity Test Kit"
+                  className="w-full h-auto rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
+                />
+                <div className="absolute top-4 left-4 bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                  $199 + Shipping
+                </div>
+              </div>
+            </div>
+
+            {/* Product Info */}
+            <div className="order-1 lg:order-2">
+              <div className="space-y-6">
+                <div>
+                  <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+                    Peace of Mind
+                    <span className="block text-blue-600">Paternity Test Kit</span>
+                  </h1>
+                  <p className="text-xl text-gray-600 leading-relaxed">
+                    Get the answers you need with our fast, accurate, and completely confidential paternity test. Perfect for personal peace of mind without the legal requirements.
+                  </p>
+                </div>
+
+                {/* Customer Info Form */}
+                <div className="space-y-3">
+                  <input
+                    type="text"
+                    placeholder="First Name"
+                    value={firstName}
+                    onChange={(e) => setFirstName(e.target.value)}
+                    className="w-full border rounded-lg px-4 py-2"
+                  />
+                  <input
+                    type="text"
+                    placeholder="Last Name"
+                    value={lastName}
+                    onChange={(e) => setLastName(e.target.value)}
+                    className="w-full border rounded-lg px-4 py-2"
+                  />
+                  <input
+                    type="email"
+                    placeholder="Email"
+                    value={customerEmail}
+                    onChange={(e) => setCustomerEmail(e.target.value)}
+                    className="w-full border rounded-lg px-4 py-2"
+                  />
+
+                  {/* Country select (for international orders) */}
+                  <select
+                    value={country}
+                    onChange={(e) => setCountry(e.target.value)}
+                    className="w-full border rounded-lg px-4 py-2"
+                  >
+                    <option value="US">United States</option>
+                    <option value="CA">Canada</option>
+                    <option value="MX">Mexico</option>
+                    <option value="GB">United Kingdom</option>
+                    <option value="DE">Germany</option>
+                    <option value="IN">India</option>
+                    <option value="AU">Australia</option>
+                    <option value="BR">Brazil</option>
+                    <option value="ZA">South Africa</option>
+                  </select>
+                </div>
+
+                {/* Benefits */}
+                <div className="space-y-3">
+                  <h3 className="text-lg font-semibold text-gray-900">What's Included:</h3>
+                  <ul className="space-y-2">
+                    {benefits.map((benefit, index) => (
+                      <li key={index} className="flex items-start">
+                        <svg
+                          className="w-5 h-5 text-green-500 mt-0.5 mr-3 flex-shrink-0"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            fillRule="evenodd"
+                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                            clipRule="evenodd"
+                          />
+                        </svg>
+                        <span className="text-gray-700">{benefit}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                {/* CTA Buttons */}
+                <div className="space-y-4 pt-6">
+                  <button
+                    onClick={() => setShowUSModal(true)}
+                    className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-4 px-8 rounded-lg transition-all duration-300 transform hover:scale-105 hover:shadow-lg focus:outline-none focus:ring-4 focus:ring-blue-300"
+                  >
+                    Order Within the U.S.
+                  </button>
+
+                  <button
+                    onClick={() => createCheckout("international", country)}
+                    disabled={loading}
+                    className="w-full bg-green-600 hover:bg-green-700 text-white font-semibold py-4 px-8 rounded-lg transition-all duration-300 transform hover:scale-105 hover:shadow-lg focus:outline-none focus:ring-4 focus:ring-green-300 disabled:opacity-50"
+                  >
+                    {loading ? "Processing..." : "Order Internationally"}
+                  </button>
+                </div>
+                <p className="text-xs text-gray-500 text-center">Secure checkout powered by Stripe</p>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
 
-        <input
-          className="border p-2 rounded w-full"
-          name="email"
-          type="email"
-          placeholder="Email"
-          value={form.email}
-          onChange={handleChange}
-          required
-        />
-        <input
-          className="border p-2 rounded w-full"
-          name="phone"
-          type="tel"
-          placeholder="Phone"
-          value={form.phone}
-          onChange={handleChange}
-          required
-        />
+      {/* U.S. Order Modal */}
+      {showUSModal && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50">
+          <div className="bg-white rounded-lg max-w-md w-full p-6">
+            <div className="flex justify-between items-center mb-4">
+              <h2 className="text-xl font-semibold text-gray-900">Choose Your Order Method</h2>
+              <button
+                onClick={() => setShowUSModal(false)}
+                className="text-gray-400 hover:text-gray-600 transition-colors"
+              >
+                ✕
+              </button>
+            </div>
 
-        <input
-          className="border p-2 rounded w-full"
-          name="address"
-          placeholder="Street Address"
-          value={form.address}
-          onChange={handleChange}
-          required
-        />
-        <div className="grid grid-cols-3 gap-2">
-          <input
-            className="border p-2 rounded"
-            name="city"
-            placeholder="City"
-            value={form.city}
-            onChange={handleChange}
-            required
-          />
-          <input
-            className="border p-2 rounded"
-            name="state"
-            placeholder="State"
-            value={form.state}
-            onChange={handleChange}
-            required
-          />
-          <input
-            className="border p-2 rounded"
-            name="zip"
-            placeholder="ZIP Code"
-            value={form.zip}
-            onChange={handleChange}
-            required
-          />
+            <div className="space-y-4">
+              <button
+                onClick={() => {
+                  window.open(
+                    "https://calendly.com/milehighdnatesting/non-legal-paternity-test",
+                    "_blank"
+                  );
+                  setShowUSModal(false);
+                }}
+                className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-4 focus:ring-blue-300"
+              >
+                Schedule In-Office Appointment
+              </button>
+
+              <button
+                onClick={() => createCheckout("domestic", "US")}
+                disabled={loading}
+                className="w-full bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-4 focus:ring-green-300 disabled:opacity-50"
+              >
+                {loading ? "Processing..." : "Ship to My Address"}
+              </button>
+            </div>
+
+            <p className="text-sm text-gray-500 mt-4 text-center">
+              Both options include the same comprehensive test kit and results.
+            </p>
+          </div>
         </div>
-
-        {successMessage && (
-          <div className="bg-green-100 text-green-800 p-4 rounded">{successMessage}</div>
-        )}
-
-        <button
-          className="bg-blue-600 text-white py-3 rounded-lg w-full hover:bg-blue-700 font-semibold"
-          type="submit"
-          disabled={loading}
-        >
-          {loading ? "Processing..." : "Submit Order"}
-        </button>
-      </form>
+      )}
     </div>
   );
 };
 
-export default CheckoutDomestic;
+export default PeaceOfMindDNAKit;

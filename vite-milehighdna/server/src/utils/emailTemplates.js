@@ -1,4 +1,5 @@
-exports.buildCustomerEmail = (orderDetails) => `
+// server/src/utils/emailTemplates.js
+export const buildCustomerEmail = (orderDetails) => `
   <p>Hi ${orderDetails.customerName},</p>
   <p>Thanks for your order (${orderDetails.orderNumber}). Your ${
     orderDetails.orderType === "domestic" ? "domestic order" : "international shipment"
@@ -7,7 +8,7 @@ exports.buildCustomerEmail = (orderDetails) => `
   <p>Best regards,<br>Mile High DNA Testing</p>
 `;
 
-exports.buildAdminEmail = (orderDetails) => `
+export const buildAdminEmail = (orderDetails) => `
   <p>New DNA kit order received:</p>
   <pre>${JSON.stringify(orderDetails, null, 2)}</pre>
 `;
