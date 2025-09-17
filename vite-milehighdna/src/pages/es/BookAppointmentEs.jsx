@@ -56,7 +56,7 @@ const tests = [
   },
   {
     title: 'Prueba Prenatal No Invasiva de Paternidad para uso Personal',
-    price: 1500,
+    price: 1599,
     id: 'non-legal-prenatal',
     href: 'https://calendly.com/milehighdnatesting/prueba-hermandad',
     priceId: 'price_1RnfRCK2515KuCq2Un6d69UF',

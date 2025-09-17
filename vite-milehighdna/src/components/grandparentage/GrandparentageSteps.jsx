@@ -22,7 +22,7 @@ const GrandparentageSteps = () => {
         number: 4,
         title: 'Receive Your Results',
         description:
-          'Results are typically available within 2–4 business days. Legal test results include notarized documents and direct court submission if requested.',
+          'Results are typically available within 7–10 business days. Legal test results include notarized documents and direct court submission if requested.',
       },
     ];
   

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { supabase } from "../infrastructure/supabaseClient";
-import shippingRates from "../data/Intl_Shipping_Rates.json";
+import shippingRates from "../data/shipping_rates.json";
 
 function generateCustomerCode() {
   const prefix = "MH";
@@ -26,19 +26,18 @@ const CheckoutInternational = () => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
-  const selectedRate = shippingRates.find(
-    (rate) => rate.country_name === form.country
-  );
-
+  const norm = (s) => String(s || "").trim().toLowerCase();
+    const selectedRate = form.country 
+    ? shippingRates.find((rate) => 
+    norm(rate.country) === norm(form.country) || norm(rate.iso) === norm(form.country)) : null;
+  
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
 
     const customerCode = generateCustomerCode();
-    const orderTotal = 99.0; // Base kit price, can adjust for international
-    const shippingCost = selectedRate
-      ? selectedRate.estimated_shipping_cost_usd
-      : 0.0;
+    const orderTotal = 199.0; // Base kit price, can adjust for international
+    const shippingCost = selectedRate ? Number(selectedRate.finalrate) : 0;
 
     try {
       // 1. Insert into CustomerDb
@@ -51,6 +50,8 @@ const CheckoutInternational = () => {
             email: form.email,
             phone: form.phone,
             customer_code: customerCode,
+            use_case: "at_home_kit",  // online orders = at-home kits (non-legal)
+            test_type: "paternity",   // at-home kits are paternity
           },
         ])
         .select()
@@ -66,18 +67,23 @@ const CheckoutInternational = () => {
           {
             customer_id: customerId,
             order_source: "online_international",
+            order_type: "at_home_kit",          // add for consistent reporting
             order_status: "Pending",
-            order_total_usd: orderTotal + shippingCost,
+            order_total_usd: orderTotal,        // items subtotal ONLY (align w/ domestic)
             shipping_cost_usd: shippingCost,
+            shipping_zone: selectedRate ? selectedRate.zone : null,
+            shipping_export_usd: selectedRate ? Number(selectedRate.export) : null,
+            shipping_import_usd: selectedRate ? Number(selectedRate.import) : null,
+            shipping_roundtrip_usd: selectedRate ? Number(selectedRate.roundtrip) : null,
             shipping_days: selectedRate
               ? selectedRate.estimated_shipping_days
               : null,
-            prepaid_return: true,
-            address: form.address,
+              address: form.address,
             city: form.city,
             state_or_region: null,
             postal_code: form.postalCode,
             country: form.country,
+
           },
         ])
         .select()
@@ -90,7 +96,7 @@ const CheckoutInternational = () => {
       const { error: itemError } = await supabase.from("orderitems").insert([
         {
           order_id: orderId,
-          product_name: "Peace of Mind Paternity Test Kit",
+          product_name: "At-Home Paternity Test Kit",
           quantity: 1,
           unit_price_usd: orderTotal,
         },
@@ -130,10 +136,7 @@ const CheckoutInternational = () => {
         <h2 className="text-2xl font-bold text-gray-800 mb-2">
           International Checkout
         </h2>
-        <p className="text-gray-600 mb-4">
-          Peace of Mind Paternity Test Kit
-        </p>
-
+        <p className="text-gray-600 mb-4">At-Home Paternity Test Kit</p>
         <div className="grid grid-cols-2 gap-4">
           <input
             className="border p-2 rounded"
@@ -208,8 +211,8 @@ const CheckoutInternational = () => {
         >
           <option value="">-- Select Country --</option>
           {shippingRates.map((rate) => (
-            <option key={rate.iso_code} value={rate.country_name}>
-              {rate.country_name}
+            <option key={rate.iso} value={rate.country}>
+              {rate.country}
             </option>
           ))}
         </select>
@@ -217,12 +220,10 @@ const CheckoutInternational = () => {
         {selectedRate && (
           <div className="bg-gray-100 p-4 rounded font-semibold space-y-1">
             <p>
-              Estimated Shipping: {selectedRate.estimated_shipping_days} business
-              days
+              Shipping Cost (includes round-trip): ${selectedRate.finalrate.toFixed(2)} USD
             </p>
-            <p>
-              Shipping Cost: $
-              {selectedRate.estimated_shipping_cost_usd.toFixed(2)} USD
+            <p className="text-sm text-gray-500">
+              Based on round-trip DHL rates to/from {selectedRate.zone}
             </p>
             {selectedRate.prepaid_return_available && (
               <p>✅ Prepaid return included</p>

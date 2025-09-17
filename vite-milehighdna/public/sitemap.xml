@@ -2,66 +2,84 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
+  <!-- Home -->
   <url>
     <loc>https://milehighdnatesting.com/</loc>
     <xhtml:link rel="alternate" hreflang="en-us" href="https://milehighdnatesting.com/" />
     <xhtml:link rel="alternate" hreflang="es-us" href="https://milehighdnatesting.com/es" />
   </url>
 
+  <!-- About -->
   <url>
     <loc>https://milehighdnatesting.com/about</loc>
     <xhtml:link rel="alternate" hreflang="en-us" href="https://milehighdnatesting.com/about" />
     <xhtml:link rel="alternate" hreflang="es-us" href="https://milehighdnatesting.com/es/sobre-nosotros" />
   </url>
 
+  <!-- Prenatal DNA Test -->
+  <url>
+    <loc>https://milehighdnatesting.com/prenatal-dna-test</loc>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://milehighdnatesting.com/prenatal-dna-test" />
+    <xhtml:link rel="alternate" hreflang="es-us" href="https://milehighdnatesting.com/es/prueba-prenatal" />
+  </url>
+
+  <!-- Legal Paternity -->
   <url>
     <loc>https://milehighdnatesting.com/legal-paternity-tests</loc>
     <xhtml:link rel="alternate" hreflang="en-us" href="https://milehighdnatesting.com/legal-paternity-tests" />
     <xhtml:link rel="alternate" hreflang="es-us" href="https://milehighdnatesting.com/es/prueba-de-paternidad-legal" />
   </url>
 
+  <!-- Immigration -->
   <url>
     <loc>https://milehighdnatesting.com/immigration-dna-tests</loc>
     <xhtml:link rel="alternate" hreflang="en-us" href="https://milehighdnatesting.com/immigration-dna-tests" />
     <xhtml:link rel="alternate" hreflang="es-us" href="https://milehighdnatesting.com/es/prueba-de-inmigracion" />
   </url>
 
+  <!-- Grandparentage -->
   <url>
     <loc>https://milehighdnatesting.com/grandparentage-dna-tests</loc>
     <xhtml:link rel="alternate" hreflang="en-us" href="https://milehighdnatesting.com/grandparentage-dna-tests" />
     <xhtml:link rel="alternate" hreflang="es-us" href="https://milehighdnatesting.com/es/prueba-de-abuelidad" />
   </url>
 
+  <!-- Siblingship -->
   <url>
     <loc>https://milehighdnatesting.com/siblingship-dna-tests</loc>
     <xhtml:link rel="alternate" hreflang="en-us" href="https://milehighdnatesting.com/siblingship-dna-tests" />
     <xhtml:link rel="alternate" hreflang="es-us" href="https://milehighdnatesting.com/es/prueba-de-hermanos" />
   </url>
 
+  <!-- Appointments -->
   <url>
     <loc>https://milehighdnatesting.com/appointments</loc>
     <xhtml:link rel="alternate" hreflang="en-us" href="https://milehighdnatesting.com/appointments" />
     <xhtml:link rel="alternate" hreflang="es-us" href="https://milehighdnatesting.com/es/programar-cita" />
   </url>
 
-  <url>
-    <loc>https://milehighdnatesting.com/faq</loc>
-    <xhtml:link rel="alternate" hreflang="en-us" href="https://milehighdnatesting.com/faq" />
-    <xhtml:link rel="alternate" hreflang="es-us" href="https://milehighdnatesting.com/es/preguntas-frecuentes" />
-  </url>
-
-  <url>
-    <loc>https://milehighdnatesting.com/get-results</loc>
-    <xhtml:link rel="alternate" hreflang="en-us" href="https://milehighdnatesting.com/get-results" />
-    <xhtml:link rel="alternate" hreflang="es-us" href="https://milehighdnatesting.com/es/consultar-resultados" />
-  </url>
-
+  <!-- Book Appointment -->
   <url>
     <loc>https://milehighdnatesting.com/book-appointment</loc>
     <xhtml:link rel="alternate" hreflang="en-us" href="https://milehighdnatesting.com/book-appointment" />
     <xhtml:link rel="alternate" hreflang="es-us" href="https://milehighdnatesting.com/es/reservar-cita" />
   </url>
 
+  <!-- FAQ -->
+  <url>
+    <loc>https://milehighdnatesting.com/faq</loc>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://milehighdnatesting.com/faq" />
+    <xhtml:link rel="alternate" hreflang="es-us" href="https://milehighdnatesting.com/es/preguntas-frecuentes" />
+  </url>
+
+  <!-- Results -->
+  <url>
+    <loc>https://milehighdnatesting.com/get-results</loc>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://milehighdnatesting.com/get-results" />
+    <xhtml:link rel="alternate" hreflang="es-us" href="https://milehighdnatesting.com/es/consultar-resultados" />
+  </url>
+
+  <!-- AABB Accreditation -->
   <url>
     <loc>https://milehighdnatesting.com/aabb-accreditation</loc>
     <xhtml:link rel="alternate" hreflang="en-us" href="https://milehighdnatesting.com/aabb-accreditation" />

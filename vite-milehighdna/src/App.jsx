@@ -33,6 +33,8 @@ import DNATestingDenverPage from './pages/DNATestingDenverPage';
 import Services from './pages/Services';
 import CheckoutDomestic from './pages/CheckoutDomestic';
 import CheckoutInternational from './pages/CheckoutInternational';
+import PeaceOfMindDNAKit from './pages/PeaceOfMindDNAKit';
+import Confirmation from './pages/Confirmation';
 
 
 // Spanish imports
@@ -123,7 +125,11 @@ function AppLayout() {
             <Route path="/services" element={<Services />} />
             <Route path="/checkout-domestic" element={<CheckoutDomestic />} />
             <Route path="/checkout-international" element={<CheckoutInternational />} />
+            <Route path="/products/peace-of-mind-dna-kit" element={<PeaceOfMindDNAKit />} />
+            <Route path="/confirmation" element={<Confirmation />} />
 
+            {/* English Fallback Route - must be last */}
+            <Route path="*" element={<Navigate to="/" replace />} />
 
             {/* Spanish Routes */}
             <Route path="/es" element={<HomePageEs />} />
@@ -141,9 +147,10 @@ function AppLayout() {
             <Route path="/es/mis-resultados" element={<MyResultsEs />} />
             <Route path="/es/pagina-de-resultados" element={<MyResultsPageEs />} />
             <Route path="/es/reservar-cita" element={<BookAppointmentEs />} />
-            <Route path="/es/aabb-accreditation" element={<AABBAccreditationEs />} />  {/* unchanged */}            {/* Spanish Fallback Route */}
-            <Route path="/es/*" element={<Navigate to="/es" replace />} />
+            <Route path="/es/aabb-accreditation" element={<AABBAccreditationEs />} />  {/* unchanged */}
             <Route path="/es/prueba-de-paternidad-prenatal" element={<PrenatalEs />} />
+            {/* Spanish Fallback Route - must be last */}
+            <Route path="/es/*" element={<Navigate to="/es" replace />} />
           </Routes>
 
       </main>

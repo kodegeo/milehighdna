@@ -30,11 +30,12 @@ const CheckoutDomestic = () => {
     setLoading(true);
 
     const customerCode = generateCustomerCode();
-    const orderTotal = 99.0; // Base price for the kit
-    const shippingCost = 0.0; // Domestic free shipping for now
+    const orderTotal = 199.0;                 // items subtotal
+    const DOMESTIC_FLAT_RATE = 12.00; // New flat-rate shipping
+    const shippingCost = DOMESTIC_FLAT_RATE;
 
     try {
-      // 1. Insert customer into CustomerDb
+      // 1) Customer
       const { data: customerData, error: customerError } = await supabase
         .from("customerdb")
         .insert([
@@ -44,26 +45,25 @@ const CheckoutDomestic = () => {
             email: form.email,
             phone: form.phone,
             customer_code: customerCode,
+            use_case: "at_home_kit", // online orders = at-home kits (non-legal)
+            test_type: "paternity",  // at-home kits are paternity
           },
         ])
         .select()
         .single();
-
       if (customerError) throw customerError;
 
-      const customerId = customerData.id;
-
-      // 2. Insert order into Orders table
+      // 2) Order
       const { data: orderData, error: orderError } = await supabase
         .from("orders")
         .insert([
           {
-            customer_id: customerId,
+            customer_id: customerData.id,
             order_source: "online_domestic",
+            order_type: "at_home_kit",         // add to match international flow
             order_status: "Pending",
             order_total_usd: orderTotal,
             shipping_cost_usd: shippingCost,
-            prepaid_return: true,
             address: form.address,
             city: form.city,
             state_or_region: form.state,
@@ -73,24 +73,44 @@ const CheckoutDomestic = () => {
         ])
         .select()
         .single();
-
       if (orderError) throw orderError;
 
-      const orderId = orderData.id;
-
-      // 3. Insert order item into OrderItems table
+      // 3) Order item
       const { error: itemError } = await supabase.from("orderitems").insert([
         {
-          order_id: orderId,
-          product_name: "Peace of Mind Paternity Test Kit",
+          order_id: orderData.id,
+          product_name: "At-Home Paternity Test Kit",
           quantity: 1,
           unit_price_usd: orderTotal,
         },
       ]);
-
       if (itemError) throw itemError;
 
-      setSuccessMessage(`Order submitted successfully! Your Customer Code is ${customerCode}`);
+      // 4) Confirmation email
+      await fetch("/api/send-confirmation-email", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          toCustomer: form.email,
+          toAdmin: "cynthia@milehighdnatesting.com",
+          from: "info@milehighdnatesting.com",
+          subject: "Order Confirmation – At-Home DNA Kit",
+          orderDetails: {
+            customerName: `${form.firstName} ${form.lastName}`,
+            orderNumber: customerCode,
+            productName: "At-Home Paternity DNA Kit",
+            price: orderTotal.toFixed(2),
+            shipping: shippingCost.toFixed(2), // 12.00
+            total: (orderTotal + shippingCost).toFixed(2), // 111.00
+            orderType: "domestic",
+          },
+        }),
+      });
+
+      // Success UI
+      setSuccessMessage(
+        `Order submitted! Code: ${customerCode}. Total: $${(orderTotal + shippingCost).toFixed(2)} (Items $${orderTotal.toFixed(2)} + Shipping $${shippingCost.toFixed(2)})`
+      );
       setForm({
         firstName: "",
         lastName: "",
@@ -102,7 +122,7 @@ const CheckoutDomestic = () => {
         zip: "",
       });
     } catch (error) {
-      console.error("Error submitting order:", error.message);
+      console.error("Error submitting order:", error?.message || error);
       alert("There was an issue submitting your order. Please try again.");
     } finally {
       setLoading(false);
@@ -116,7 +136,7 @@ const CheckoutDomestic = () => {
         className="bg-white p-8 rounded-xl shadow-md max-w-lg w-full space-y-4"
       >
         <h2 className="text-2xl font-bold text-gray-800 mb-2">Domestic Checkout</h2>
-        <p className="text-gray-600 mb-4">Peace of Mind Paternity Test Kit</p>
+        <p className="text-gray-600 mb-4">At-Home Paternity Test Kit</p>
 
         <div className="grid grid-cols-2 gap-4">
           <input

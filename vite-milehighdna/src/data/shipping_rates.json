@@ -1,0 +1,2018 @@
+[
+  {
+    "country":"Afghanistan ",
+    "iso":" AF",
+    "zone":"E",
+    "export":170.64,
+    "import":214.8,
+    "roundtrip":385.44,
+    "finalrate":481.8
+  },
+  {
+    "country":"Albania ",
+    "iso":" AL",
+    "zone":"E",
+    "export":170.64,
+    "import":214.8,
+    "roundtrip":385.44,
+    "finalrate":481.8
+  },
+  {
+    "country":"Algeria ",
+    "iso":" DZ",
+    "zone":"N",
+    "export":203.72,
+    "import":257.01,
+    "roundtrip":460.73,
+    "finalrate":575.91
+  },
+  {
+    "country":"Andorra ",
+    "iso":" AD",
+    "zone":"D",
+    "export":85.32,
+    "import":212.54,
+    "roundtrip":297.86,
+    "finalrate":372.33
+  },
+  {
+    "country":"Angola ",
+    "iso":" AO",
+    "zone":"N",
+    "export":203.72,
+    "import":257.01,
+    "roundtrip":460.73,
+    "finalrate":575.91
+  },
+  {
+    "country":"Anguilla ",
+    "iso":" AI",
+    "zone":"K",
+    "export":68.37,
+    "import":137.11,
+    "roundtrip":205.48,
+    "finalrate":256.85
+  },
+  {
+    "country":"Antigua ",
+    "iso":" AG",
+    "zone":"K",
+    "export":68.37,
+    "import":137.11,
+    "roundtrip":205.48,
+    "finalrate":256.85
+  },
+  {
+    "country":"Argentina ",
+    "iso":" AR",
+    "zone":"L",
+    "export":133.24,
+    "import":158.63,
+    "roundtrip":291.87,
+    "finalrate":364.84
+  },
+  {
+    "country":"Armenia ",
+    "iso":" AM",
+    "zone":"M",
+    "export":104.27,
+    "import":241.99,
+    "roundtrip":346.26,
+    "finalrate":432.82
+  },
+  {
+    "country":"Aruba ",
+    "iso":" AW",
+    "zone":"K",
+    "export":68.37,
+    "import":137.11,
+    "roundtrip":205.48,
+    "finalrate":256.85
+  },
+  {
+    "country":"Australia ",
+    "iso":" AU",
+    "zone":"I",
+    "export":101.47,
+    "import":175.79,
+    "roundtrip":277.26,
+    "finalrate":346.58
+  },
+  {
+    "country":"Austria ",
+    "iso":" AT",
+    "zone":"D",
+    "export":85.32,
+    "import":212.54,
+    "roundtrip":297.86,
+    "finalrate":372.33
+  },
+  {
+    "country":"Azerbaijan ",
+    "iso":" AZ",
+    "zone":"E",
+    "export":170.64,
+    "import":214.8,
+    "roundtrip":385.44,
+    "finalrate":481.8
+  },
+  {
+    "country":"Bahamas ",
+    "iso":" BS",
+    "zone":"K",
+    "export":68.37,
+    "import":137.11,
+    "roundtrip":205.48,
+    "finalrate":256.85
+  },
+  {
+    "country":"Bahrain ",
+    "iso":" BH",
+    "zone":"M",
+    "export":104.27,
+    "import":241.99,
+    "roundtrip":346.26,
+    "finalrate":432.82
+  },
+  {
+    "country":"Bangladesh ",
+    "iso":" BD",
+    "zone":"I",
+    "export":101.47,
+    "import":175.79,
+    "roundtrip":277.26,
+    "finalrate":346.58
+  },
+  {
+    "country":"Barbados ",
+    "iso":" BB",
+    "zone":"K",
+    "export":68.37,
+    "import":137.11,
+    "roundtrip":205.48,
+    "finalrate":256.85
+  },
+  {
+    "country":"Belarus ",
+    "iso":" BY",
+    "zone":"E",
+    "export":170.64,
+    "import":214.8,
+    "roundtrip":385.44,
+    "finalrate":481.8
+  },
+  {
+    "country":"Belgium ",
+    "iso":" BE",
+    "zone":"C",
+    "export":79.03,
+    "import":194.54,
+    "roundtrip":273.57,
+    "finalrate":341.96
+  },
+  {
+    "country":"Belize ",
+    "iso":" BZ",
+    "zone":"L",
+    "export":133.24,
+    "import":158.63,
+    "roundtrip":291.87,
+    "finalrate":364.84
+  },
+  {
+    "country":"Benin ",
+    "iso":" BJ",
+    "zone":"N",
+    "export":203.72,
+    "import":257.01,
+    "roundtrip":460.73,
+    "finalrate":575.91
+  },
+  {
+    "country":"Bermuda ",
+    "iso":" BM",
+    "zone":"K",
+    "export":68.37,
+    "import":137.11,
+    "roundtrip":205.48,
+    "finalrate":256.85
+  },
+  {
+    "country":"Bhutan ",
+    "iso":" BT",
+    "zone":"J",
+    "export":192.29,
+    "import":184.41,
+    "roundtrip":376.7,
+    "finalrate":470.88
+  },
+  {
+    "country":"Bolivia ",
+    "iso":" BO",
+    "zone":"L",
+    "export":133.24,
+    "import":158.63,
+    "roundtrip":291.87,
+    "finalrate":364.84
+  },
+  {
+    "country":"Bonaire ",
+    "iso":" XB",
+    "zone":"K",
+    "export":68.37,
+    "import":137.11,
+    "roundtrip":205.48,
+    "finalrate":256.85
+  },
+  {
+    "country":"Bosnia & Herzegovina",
+    "iso":" BA",
+    "zone":"E",
+    "export":170.64,
+    "import":214.8,
+    "roundtrip":385.44,
+    "finalrate":481.8
+  },
+  {
+    "country":"Botswana ",
+    "iso":" BW",
+    "zone":"N",
+    "export":203.72,
+    "import":257.01,
+    "roundtrip":460.73,
+    "finalrate":575.91
+  },
+  {
+    "country":"Brazil ",
+    "iso":" BR",
+    "zone":"L",
+    "export":133.24,
+    "import":158.63,
+    "roundtrip":291.87,
+    "finalrate":364.84
+  },
+  {
+    "country":"Brunei ",
+    "iso":" BN",
+    "zone":"J",
+    "export":192.29,
+    "import":184.41,
+    "roundtrip":376.7,
+    "finalrate":470.88
+  },
+  {
+    "country":"Bulgaria ",
+    "iso":" BG",
+    "zone":"E",
+    "export":170.64,
+    "import":214.8,
+    "roundtrip":385.44,
+    "finalrate":481.8
+  },
+  {
+    "country":"Burkina Faso ",
+    "iso":" BF",
+    "zone":"N",
+    "export":203.72,
+    "import":257.01,
+    "roundtrip":460.73,
+    "finalrate":575.91
+  },
+  {
+    "country":"Burundi ",
+    "iso":" BI",
+    "zone":"N",
+    "export":203.72,
+    "import":257.01,
+    "roundtrip":460.73,
+    "finalrate":575.91
+  },
+  {
+    "country":"Cambodia ",
+    "iso":" KH",
+    "zone":"J",
+    "export":192.29,
+    "import":184.41,
+    "roundtrip":376.7,
+    "finalrate":470.88
+  },
+  {
+    "country":"Cameroon ",
+    "iso":" CM",
+    "zone":"N",
+    "export":203.72,
+    "import":257.01,
+    "roundtrip":460.73,
+    "finalrate":575.91
+  },
+  {
+    "country":"Canada ",
+    "iso":" CA",
+    "zone":"A",
+    "export":58.45,
+    "import":96.2,
+    "roundtrip":154.65,
+    "finalrate":193.31
+  },
+  {
+    "country":"Canary Islands",
+    "iso":" IC",
+    "zone":"D",
+    "export":85.32,
+    "import":212.54,
+    "roundtrip":297.86,
+    "finalrate":372.33
+  },
+  {
+    "country":"Cape Verde ",
+    "iso":" CV",
+    "zone":"N",
+    "export":203.72,
+    "import":257.01,
+    "roundtrip":460.73,
+    "finalrate":575.91
+  },
+  {
+    "country":"Cayman Islands ",
+    "iso":" KY",
+    "zone":"K",
+    "export":68.37,
+    "import":137.11,
+    "roundtrip":205.48,
+    "finalrate":256.85
+  },
+  {
+    "country":"Central African Rep",
+    "iso":" CF",
+    "zone":"N",
+    "export":203.72,
+    "import":257.01,
+    "roundtrip":460.73,
+    "finalrate":575.91
+  },
+  {
+    "country":"Chad ",
+    "iso":" TD",
+    "zone":"N",
+    "export":203.72,
+    "import":257.01,
+    "roundtrip":460.73,
+    "finalrate":575.91
+  },
+  {
+    "country":"Chile ",
+    "iso":" CL",
+    "zone":"L",
+    "export":133.24,
+    "import":158.63,
+    "roundtrip":291.87,
+    "finalrate":364.84
+  },
+  {
+    "country":"China ",
+    "iso":" CN",
+    "zone":"G",
+    "export":89.8,
+    "import":159.85,
+    "roundtrip":249.65,
+    "finalrate":312.06
+  },
+  {
+    "country":"Colombia ",
+    "iso":" CO",
+    "zone":"L",
+    "export":133.24,
+    "import":158.63,
+    "roundtrip":291.87,
+    "finalrate":364.84
+  },
+  {
+    "country":"Comoros ",
+    "iso":" KM",
+    "zone":"N",
+    "export":203.72,
+    "import":257.01,
+    "roundtrip":460.73,
+    "finalrate":575.91
+  },
+  {
+    "country":"Congo ",
+    "iso":" CG",
+    "zone":"N",
+    "export":203.72,
+    "import":257.01,
+    "roundtrip":460.73,
+    "finalrate":575.91
+  },
+  {
+    "country":"Congo",
+    "iso":" CD",
+    "zone":"N",
+    "export":203.72,
+    "import":257.01,
+    "roundtrip":460.73,
+    "finalrate":575.91
+  },
+  {
+    "country":"Cook Islands ",
+    "iso":" CK",
+    "zone":"J",
+    "export":192.29,
+    "import":184.41,
+    "roundtrip":376.7,
+    "finalrate":470.88
+  },
+  {
+    "country":"Costa Rica ",
+    "iso":" CR",
+    "zone":"L",
+    "export":133.24,
+    "import":158.63,
+    "roundtrip":291.87,
+    "finalrate":364.84
+  },
+  {
+    "country":"Cote D Ivoire ",
+    "iso":" CI",
+    "zone":"N",
+    "export":203.72,
+    "import":257.01,
+    "roundtrip":460.73,
+    "finalrate":575.91
+  },
+  {
+    "country":"Croatia ",
+    "iso":" HR",
+    "zone":"E",
+    "export":170.64,
+    "import":214.8,
+    "roundtrip":385.44,
+    "finalrate":481.8
+  },
+  {
+    "country":"Cuba ",
+    "iso":" CU",
+    "zone":"K",
+    "export":68.37,
+    "import":137.11,
+    "roundtrip":205.48,
+    "finalrate":256.85
+  },
+  {
+    "country":"Curacao ",
+    "iso":" XC",
+    "zone":"K",
+    "export":68.37,
+    "import":137.11,
+    "roundtrip":205.48,
+    "finalrate":256.85
+  },
+  {
+    "country":"Cyprus ",
+    "iso":" CY",
+    "zone":"D",
+    "export":85.32,
+    "import":212.54,
+    "roundtrip":297.86,
+    "finalrate":372.33
+  },
+  {
+    "country":"Czech Rep.",
+    "iso":" CZ",
+    "zone":"E",
+    "export":170.64,
+    "import":214.8,
+    "roundtrip":385.44,
+    "finalrate":481.8
+  },
+  {
+    "country":"Denmark ",
+    "iso":" DK",
+    "zone":"D",
+    "export":85.32,
+    "import":212.54,
+    "roundtrip":297.86,
+    "finalrate":372.33
+  },
+  {
+    "country":"Djibouti ",
+    "iso":" DJ",
+    "zone":"N",
+    "export":203.72,
+    "import":257.01,
+    "roundtrip":460.73,
+    "finalrate":575.91
+  },
+  {
+    "country":"Dominica ",
+    "iso":" DM",
+    "zone":"K",
+    "export":68.37,
+    "import":137.11,
+    "roundtrip":205.48,
+    "finalrate":256.85
+  },
+  {
+    "country":"Dominican Rep. ",
+    "iso":" DO",
+    "zone":"K",
+    "export":68.37,
+    "import":137.11,
+    "roundtrip":205.48,
+    "finalrate":256.85
+  },
+  {
+    "country":"Ecuador ",
+    "iso":" EC",
+    "zone":"L",
+    "export":133.24,
+    "import":158.63,
+    "roundtrip":291.87,
+    "finalrate":364.84
+  },
+  {
+    "country":"Egypt ",
+    "iso":" EG",
+    "zone":"M",
+    "export":104.27,
+    "import":241.99,
+    "roundtrip":346.26,
+    "finalrate":432.82
+  },
+  {
+    "country":"El Salvador ",
+    "iso":" SV",
+    "zone":"L",
+    "export":133.24,
+    "import":158.63,
+    "roundtrip":291.87,
+    "finalrate":364.84
+  },
+  {
+    "country":"Eritrea ",
+    "iso":" ER",
+    "zone":"N",
+    "export":203.72,
+    "import":257.01,
+    "roundtrip":460.73,
+    "finalrate":575.91
+  },
+  {
+    "country":"Estonia ",
+    "iso":" EE",
+    "zone":"E",
+    "export":170.64,
+    "import":214.8,
+    "roundtrip":385.44,
+    "finalrate":481.8
+  },
+  {
+    "country":"Eswatini ",
+    "iso":" SZ",
+    "zone":"N",
+    "export":203.72,
+    "import":257.01,
+    "roundtrip":460.73,
+    "finalrate":575.91
+  },
+  {
+    "country":"Ethiopia ",
+    "iso":" ET",
+    "zone":"N",
+    "export":203.72,
+    "import":257.01,
+    "roundtrip":460.73,
+    "finalrate":575.91
+  },
+  {
+    "country":"Falkland Islands ",
+    "iso":" FK",
+    "zone":"L",
+    "export":133.24,
+    "import":158.63,
+    "roundtrip":291.87,
+    "finalrate":364.84
+  },
+  {
+    "country":"Faroe Islands ",
+    "iso":" FO",
+    "zone":"D",
+    "export":85.32,
+    "import":212.54,
+    "roundtrip":297.86,
+    "finalrate":372.33
+  },
+  {
+    "country":"Fiji ",
+    "iso":" FJ",
+    "zone":"J",
+    "export":192.29,
+    "import":184.41,
+    "roundtrip":376.7,
+    "finalrate":470.88
+  },
+  {
+    "country":"Finland ",
+    "iso":" FI",
+    "zone":"D",
+    "export":85.32,
+    "import":212.54,
+    "roundtrip":297.86,
+    "finalrate":372.33
+  },
+  {
+    "country":"France ",
+    "iso":" FR",
+    "zone":"C",
+    "export":79.03,
+    "import":194.54,
+    "roundtrip":273.57,
+    "finalrate":341.96
+  },
+  {
+    "country":"French Guyana ",
+    "iso":" GF",
+    "zone":"L",
+    "export":133.24,
+    "import":158.63,
+    "roundtrip":291.87,
+    "finalrate":364.84
+  },
+  {
+    "country":"Gabon ",
+    "iso":" GA",
+    "zone":"N",
+    "export":203.72,
+    "import":257.01,
+    "roundtrip":460.73,
+    "finalrate":575.91
+  },
+  {
+    "country":"Gambia ",
+    "iso":" GM",
+    "zone":"N",
+    "export":203.72,
+    "import":257.01,
+    "roundtrip":460.73,
+    "finalrate":575.91
+  },
+  {
+    "country":"Georgia ",
+    "iso":" GE",
+    "zone":"E",
+    "export":170.64,
+    "import":214.8,
+    "roundtrip":385.44,
+    "finalrate":481.8
+  },
+  {
+    "country":"Germany ",
+    "iso":" DE",
+    "zone":"C",
+    "export":79.03,
+    "import":194.54,
+    "roundtrip":273.57,
+    "finalrate":341.96
+  },
+  {
+    "country":"Ghana ",
+    "iso":" GH",
+    "zone":"N",
+    "export":203.72,
+    "import":257.01,
+    "roundtrip":460.73,
+    "finalrate":575.91
+  },
+  {
+    "country":"Gibraltar ",
+    "iso":" GI",
+    "zone":"E",
+    "export":170.64,
+    "import":214.8,
+    "roundtrip":385.44,
+    "finalrate":481.8
+  },
+  {
+    "country":"Greece ",
+    "iso":" GR",
+    "zone":"D",
+    "export":85.32,
+    "import":212.54,
+    "roundtrip":297.86,
+    "finalrate":372.33
+  },
+  {
+    "country":"Greenland ",
+    "iso":" GL",
+    "zone":"D",
+    "export":85.32,
+    "import":212.54,
+    "roundtrip":297.86,
+    "finalrate":372.33
+  },
+  {
+    "country":"Grenada ",
+    "iso":" GD",
+    "zone":"K",
+    "export":68.37,
+    "import":137.11,
+    "roundtrip":205.48,
+    "finalrate":256.85
+  },
+  {
+    "country":"Guadeloupe ",
+    "iso":" GP",
+    "zone":"K",
+    "export":68.37,
+    "import":137.11,
+    "roundtrip":205.48,
+    "finalrate":256.85
+  },
+  {
+    "country":"Guatemala ",
+    "iso":" GT",
+    "zone":"L",
+    "export":133.24,
+    "import":158.63,
+    "roundtrip":291.87,
+    "finalrate":364.84
+  },
+  {
+    "country":"Guernsey ",
+    "iso":" GG",
+    "zone":"D",
+    "export":85.32,
+    "import":212.54,
+    "roundtrip":297.86,
+    "finalrate":372.33
+  },
+  {
+    "country":"Guinea Rep. ",
+    "iso":" GN",
+    "zone":"N",
+    "export":203.72,
+    "import":257.01,
+    "roundtrip":460.73,
+    "finalrate":575.91
+  },
+  {
+    "country":"Guinea-Bissau ",
+    "iso":" GW",
+    "zone":"N",
+    "export":203.72,
+    "import":257.01,
+    "roundtrip":460.73,
+    "finalrate":575.91
+  },
+  {
+    "country":"Guinea-Equatorial ",
+    "iso":" GQ",
+    "zone":"N",
+    "export":203.72,
+    "import":257.01,
+    "roundtrip":460.73,
+    "finalrate":575.91
+  },
+  {
+    "country":"Guyana (British) ",
+    "iso":" GY",
+    "zone":"L",
+    "export":133.24,
+    "import":158.63,
+    "roundtrip":291.87,
+    "finalrate":364.84
+  },
+  {
+    "country":"Haiti ",
+    "iso":" HT",
+    "zone":"K",
+    "export":68.37,
+    "import":137.11,
+    "roundtrip":205.48,
+    "finalrate":256.85
+  },
+  {
+    "country":"Honduras ",
+    "iso":" HN",
+    "zone":"L",
+    "export":133.24,
+    "import":158.63,
+    "roundtrip":291.87,
+    "finalrate":364.84
+  },
+  {
+    "country":"Hong Kong SAR China ",
+    "iso":" HK",
+    "zone":"H",
+    "export":81.27,
+    "import":167.43,
+    "roundtrip":248.7,
+    "finalrate":310.88
+  },
+  {
+    "country":"Hungary ",
+    "iso":" HU",
+    "zone":"E",
+    "export":170.64,
+    "import":214.8,
+    "roundtrip":385.44,
+    "finalrate":481.8
+  },
+  {
+    "country":"Iceland ",
+    "iso":" IS",
+    "zone":"D",
+    "export":85.32,
+    "import":212.54,
+    "roundtrip":297.86,
+    "finalrate":372.33
+  },
+  {
+    "country":"India ",
+    "iso":" IN",
+    "zone":"I",
+    "export":101.47,
+    "import":175.79,
+    "roundtrip":277.26,
+    "finalrate":346.58
+  },
+  {
+    "country":"Indonesia ",
+    "iso":" ID",
+    "zone":"I",
+    "export":101.47,
+    "import":175.79,
+    "roundtrip":277.26,
+    "finalrate":346.58
+  },
+  {
+    "country":"Iran ",
+    "iso":" IR",
+    "zone":"E",
+    "export":170.64,
+    "import":214.8,
+    "roundtrip":385.44,
+    "finalrate":481.8
+  },
+  {
+    "country":"Iraq ",
+    "iso":" IQ",
+    "zone":"E",
+    "export":170.64,
+    "import":214.8,
+    "roundtrip":385.44,
+    "finalrate":481.8
+  },
+  {
+    "country":"Ireland",
+    "iso":" IE",
+    "zone":"C",
+    "export":79.03,
+    "import":194.54,
+    "roundtrip":273.57,
+    "finalrate":341.96
+  },
+  {
+    "country":"Israel ",
+    "iso":" IL",
+    "zone":"M",
+    "export":104.27,
+    "import":241.99,
+    "roundtrip":346.26,
+    "finalrate":432.82
+  },
+  {
+    "country":"Italy ",
+    "iso":" IT",
+    "zone":"C",
+    "export":79.03,
+    "import":194.54,
+    "roundtrip":273.57,
+    "finalrate":341.96
+  },
+  {
+    "country":"Jamaica ",
+    "iso":" JM",
+    "zone":"K",
+    "export":68.37,
+    "import":137.11,
+    "roundtrip":205.48,
+    "finalrate":256.85
+  },
+  {
+    "country":"Japan ",
+    "iso":" JP",
+    "zone":"F",
+    "export":79.61,
+    "import":209.8,
+    "roundtrip":289.41,
+    "finalrate":361.76
+  },
+  {
+    "country":"Jersey ",
+    "iso":" JE",
+    "zone":"D",
+    "export":85.32,
+    "import":212.54,
+    "roundtrip":297.86,
+    "finalrate":372.33
+  },
+  {
+    "country":"Jordan ",
+    "iso":" JO",
+    "zone":"M",
+    "export":104.27,
+    "import":241.99,
+    "roundtrip":346.26,
+    "finalrate":432.82
+  },
+  {
+    "country":"Kazakhstan ",
+    "iso":" KZ",
+    "zone":"E",
+    "export":170.64,
+    "import":214.8,
+    "roundtrip":385.44,
+    "finalrate":481.8
+  },
+  {
+    "country":"Kenya ",
+    "iso":" KE",
+    "zone":"N",
+    "export":203.72,
+    "import":257.01,
+    "roundtrip":460.73,
+    "finalrate":575.91
+  },
+  {
+    "country":"Kiribati ",
+    "iso":" KI",
+    "zone":"J",
+    "export":192.29,
+    "import":184.41,
+    "roundtrip":376.7,
+    "finalrate":470.88
+  },
+  {
+    "country":"Korea  Rep. Of ",
+    "iso":" KR",
+    "zone":"F",
+    "export":79.61,
+    "import":209.8,
+    "roundtrip":289.41,
+    "finalrate":361.76
+  },
+  {
+    "country":"Korea  \u00a0D.P.R Of ",
+    "iso":" KP",
+    "zone":"J",
+    "export":192.29,
+    "import":184.41,
+    "roundtrip":376.7,
+    "finalrate":470.88
+  },
+  {
+    "country":"Kosovo ",
+    "iso":" KV",
+    "zone":"E",
+    "export":170.64,
+    "import":214.8,
+    "roundtrip":385.44,
+    "finalrate":481.8
+  },
+  {
+    "country":"Kuwait ",
+    "iso":" KW",
+    "zone":"M",
+    "export":104.27,
+    "import":241.99,
+    "roundtrip":346.26,
+    "finalrate":432.82
+  },
+  {
+    "country":"Kyrgyzstan ",
+    "iso":" KG",
+    "zone":"E",
+    "export":170.64,
+    "import":214.8,
+    "roundtrip":385.44,
+    "finalrate":481.8
+  },
+  {
+    "country":"Laos ",
+    "iso":" LA",
+    "zone":"J",
+    "export":192.29,
+    "import":184.41,
+    "roundtrip":376.7,
+    "finalrate":470.88
+  },
+  {
+    "country":"Latvia ",
+    "iso":" LV",
+    "zone":"E",
+    "export":170.64,
+    "import":214.8,
+    "roundtrip":385.44,
+    "finalrate":481.8
+  },
+  {
+    "country":"Lebanon ",
+    "iso":" LB",
+    "zone":"M",
+    "export":104.27,
+    "import":241.99,
+    "roundtrip":346.26,
+    "finalrate":432.82
+  },
+  {
+    "country":"Lesotho ",
+    "iso":" LS",
+    "zone":"N",
+    "export":203.72,
+    "import":257.01,
+    "roundtrip":460.73,
+    "finalrate":575.91
+  },
+  {
+    "country":"Liberia ",
+    "iso":" LR",
+    "zone":"N",
+    "export":203.72,
+    "import":257.01,
+    "roundtrip":460.73,
+    "finalrate":575.91
+  },
+  {
+    "country":"Libya ",
+    "iso":" LY",
+    "zone":"N",
+    "export":203.72,
+    "import":257.01,
+    "roundtrip":460.73,
+    "finalrate":575.91
+  },
+  {
+    "country":"Liechtenstein ",
+    "iso":" LI",
+    "zone":"D",
+    "export":85.32,
+    "import":212.54,
+    "roundtrip":297.86,
+    "finalrate":372.33
+  },
+  {
+    "country":"Lithuania ",
+    "iso":" LT",
+    "zone":"E",
+    "export":170.64,
+    "import":214.8,
+    "roundtrip":385.44,
+    "finalrate":481.8
+  },
+  {
+    "country":"Luxembourg ",
+    "iso":" LU",
+    "zone":"C",
+    "export":79.03,
+    "import":194.54,
+    "roundtrip":273.57,
+    "finalrate":341.96
+  },
+  {
+    "country":"Macau SAR China ",
+    "iso":" MO",
+    "zone":"I",
+    "export":101.47,
+    "import":175.79,
+    "roundtrip":277.26,
+    "finalrate":346.58
+  },
+  {
+    "country":"Madagascar ",
+    "iso":" MG",
+    "zone":"N",
+    "export":203.72,
+    "import":257.01,
+    "roundtrip":460.73,
+    "finalrate":575.91
+  },
+  {
+    "country":"Malawi ",
+    "iso":" MW",
+    "zone":"N",
+    "export":203.72,
+    "import":257.01,
+    "roundtrip":460.73,
+    "finalrate":575.91
+  },
+  {
+    "country":"Malaysia ",
+    "iso":" MY",
+    "zone":"I",
+    "export":101.47,
+    "import":175.79,
+    "roundtrip":277.26,
+    "finalrate":346.58
+  },
+  {
+    "country":"Maldives ",
+    "iso":" MV",
+    "zone":"J",
+    "export":192.29,
+    "import":184.41,
+    "roundtrip":376.7,
+    "finalrate":470.88
+  },
+  {
+    "country":"Mali ",
+    "iso":" ML",
+    "zone":"N",
+    "export":203.72,
+    "import":257.01,
+    "roundtrip":460.73,
+    "finalrate":575.91
+  },
+  {
+    "country":"Malta ",
+    "iso":" MT",
+    "zone":"D",
+    "export":85.32,
+    "import":212.54,
+    "roundtrip":297.86,
+    "finalrate":372.33
+  },
+  {
+    "country":"Martinique ",
+    "iso":" MQ",
+    "zone":"K",
+    "export":68.37,
+    "import":137.11,
+    "roundtrip":205.48,
+    "finalrate":256.85
+  },
+  {
+    "country":"Mauritania ",
+    "iso":" MR",
+    "zone":"N",
+    "export":203.72,
+    "import":257.01,
+    "roundtrip":460.73,
+    "finalrate":575.91
+  },
+  {
+    "country":"Mauritius ",
+    "iso":" MU",
+    "zone":"N",
+    "export":203.72,
+    "import":257.01,
+    "roundtrip":460.73,
+    "finalrate":575.91
+  },
+  {
+    "country":"Mayotte ",
+    "iso":" YT",
+    "zone":"N",
+    "export":203.72,
+    "import":257.01,
+    "roundtrip":460.73,
+    "finalrate":575.91
+  },
+  {
+    "country":"Mexico ",
+    "iso":" MX",
+    "zone":"B",
+    "export":66.81,
+    "import":78.03,
+    "roundtrip":144.84,
+    "finalrate":181.05
+  },
+  {
+    "country":"Moldova  Rep. Of ",
+    "iso":" MD",
+    "zone":"E",
+    "export":170.64,
+    "import":214.8,
+    "roundtrip":385.44,
+    "finalrate":481.8
+  },
+  {
+    "country":"Monaco ",
+    "iso":" MC",
+    "zone":"C",
+    "export":79.03,
+    "import":194.54,
+    "roundtrip":273.57,
+    "finalrate":341.96
+  },
+  {
+    "country":"Mongolia ",
+    "iso":" MN",
+    "zone":"J",
+    "export":192.29,
+    "import":184.41,
+    "roundtrip":376.7,
+    "finalrate":470.88
+  },
+  {
+    "country":"Montenegro  Rep Of ",
+    "iso":" ME",
+    "zone":"E",
+    "export":170.64,
+    "import":214.8,
+    "roundtrip":385.44,
+    "finalrate":481.8
+  },
+  {
+    "country":"Montserrat ",
+    "iso":" MS",
+    "zone":"K",
+    "export":68.37,
+    "import":137.11,
+    "roundtrip":205.48,
+    "finalrate":256.85
+  },
+  {
+    "country":"Morocco ",
+    "iso":" MA",
+    "zone":"N",
+    "export":203.72,
+    "import":257.01,
+    "roundtrip":460.73,
+    "finalrate":575.91
+  },
+  {
+    "country":"Mozambique ",
+    "iso":" MZ",
+    "zone":"N",
+    "export":203.72,
+    "import":257.01,
+    "roundtrip":460.73,
+    "finalrate":575.91
+  },
+  {
+    "country":"Myanmar ",
+    "iso":" MM",
+    "zone":"J",
+    "export":192.29,
+    "import":184.41,
+    "roundtrip":376.7,
+    "finalrate":470.88
+  },
+  {
+    "country":"Namibia ",
+    "iso":" NA",
+    "zone":"N",
+    "export":203.72,
+    "import":257.01,
+    "roundtrip":460.73,
+    "finalrate":575.91
+  },
+  {
+    "country":"Nauru  Rep. Of",
+    "iso":" NR",
+    "zone":"J",
+    "export":192.29,
+    "import":184.41,
+    "roundtrip":376.7,
+    "finalrate":470.88
+  },
+  {
+    "country":"Nepal ",
+    "iso":" NP",
+    "zone":"J",
+    "export":192.29,
+    "import":184.41,
+    "roundtrip":376.7,
+    "finalrate":470.88
+  },
+  {
+    "country":"Netherlands",
+    "iso":" NL",
+    "zone":"C",
+    "export":79.03,
+    "import":194.54,
+    "roundtrip":273.57,
+    "finalrate":341.96
+  },
+  {
+    "country":"Nevis ",
+    "iso":" XN",
+    "zone":"K",
+    "export":68.37,
+    "import":137.11,
+    "roundtrip":205.48,
+    "finalrate":256.85
+  },
+  {
+    "country":"New Caledonia ",
+    "iso":" NC",
+    "zone":"J",
+    "export":192.29,
+    "import":184.41,
+    "roundtrip":376.7,
+    "finalrate":470.88
+  },
+  {
+    "country":"New Zealand ",
+    "iso":" NZ",
+    "zone":"I",
+    "export":101.47,
+    "import":175.79,
+    "roundtrip":277.26,
+    "finalrate":346.58
+  },
+  {
+    "country":"Nicaragua ",
+    "iso":" NI",
+    "zone":"L",
+    "export":133.24,
+    "import":158.63,
+    "roundtrip":291.87,
+    "finalrate":364.84
+  },
+  {
+    "country":"Niger ",
+    "iso":" NE",
+    "zone":"N",
+    "export":203.72,
+    "import":257.01,
+    "roundtrip":460.73,
+    "finalrate":575.91
+  },
+  {
+    "country":"Nigeria ",
+    "iso":" NG",
+    "zone":"N",
+    "export":203.72,
+    "import":257.01,
+    "roundtrip":460.73,
+    "finalrate":575.91
+  },
+  {
+    "country":"Niue ",
+    "iso":" NU",
+    "zone":"J",
+    "export":192.29,
+    "import":184.41,
+    "roundtrip":376.7,
+    "finalrate":470.88
+  },
+  {
+    "country":"North Macedonia ",
+    "iso":" MK",
+    "zone":"E",
+    "export":170.64,
+    "import":214.8,
+    "roundtrip":385.44,
+    "finalrate":481.8
+  },
+  {
+    "country":"Norway ",
+    "iso":" NO",
+    "zone":"D",
+    "export":85.32,
+    "import":212.54,
+    "roundtrip":297.86,
+    "finalrate":372.33
+  },
+  {
+    "country":"Oman ",
+    "iso":" OM",
+    "zone":"M",
+    "export":104.27,
+    "import":241.99,
+    "roundtrip":346.26,
+    "finalrate":432.82
+  },
+  {
+    "country":"Pakistan ",
+    "iso":" PK",
+    "zone":"I",
+    "export":101.47,
+    "import":175.79,
+    "roundtrip":277.26,
+    "finalrate":346.58
+  },
+  {
+    "country":"Panama ",
+    "iso":" PA",
+    "zone":"L",
+    "export":133.24,
+    "import":158.63,
+    "roundtrip":291.87,
+    "finalrate":364.84
+  },
+  {
+    "country":"Papua New Guinea ",
+    "iso":" PG",
+    "zone":"J",
+    "export":192.29,
+    "import":184.41,
+    "roundtrip":376.7,
+    "finalrate":470.88
+  },
+  {
+    "country":"Paraguay ",
+    "iso":" PY",
+    "zone":"L",
+    "export":133.24,
+    "import":158.63,
+    "roundtrip":291.87,
+    "finalrate":364.84
+  },
+  {
+    "country":"Peru ",
+    "iso":" PE",
+    "zone":"L",
+    "export":133.24,
+    "import":158.63,
+    "roundtrip":291.87,
+    "finalrate":364.84
+  },
+  {
+    "country":"Philippines  The ",
+    "iso":" PH",
+    "zone":"I",
+    "export":101.47,
+    "import":175.79,
+    "roundtrip":277.26,
+    "finalrate":346.58
+  },
+  {
+    "country":"Poland ",
+    "iso":" PL",
+    "zone":"E",
+    "export":170.64,
+    "import":214.8,
+    "roundtrip":385.44,
+    "finalrate":481.8
+  },
+  {
+    "country":"Portugal ",
+    "iso":" PT",
+    "zone":"C",
+    "export":79.03,
+    "import":194.54,
+    "roundtrip":273.57,
+    "finalrate":341.96
+  },
+  {
+    "country":"Qatar ",
+    "iso":" QA",
+    "zone":"M",
+    "export":104.27,
+    "import":241.99,
+    "roundtrip":346.26,
+    "finalrate":432.82
+  },
+  {
+    "country":"Reunion  Island Of ",
+    "iso":" RE",
+    "zone":"N",
+    "export":203.72,
+    "import":257.01,
+    "roundtrip":460.73,
+    "finalrate":575.91
+  },
+  {
+    "country":"Romania ",
+    "iso":" RO",
+    "zone":"E",
+    "export":170.64,
+    "import":214.8,
+    "roundtrip":385.44,
+    "finalrate":481.8
+  },
+  {
+    "country":"Russian Federation ",
+    "iso":" RU",
+    "zone":"N",
+    "export":203.72,
+    "import":257.01,
+    "roundtrip":460.73,
+    "finalrate":575.91
+  },
+  {
+    "country":"Rwanda ",
+    "iso":" RW",
+    "zone":"N",
+    "export":203.72,
+    "import":257.01,
+    "roundtrip":460.73,
+    "finalrate":575.91
+  },
+  {
+    "country":"Saint Helena ",
+    "iso":" SH",
+    "zone":"N",
+    "export":203.72,
+    "import":257.01,
+    "roundtrip":460.73,
+    "finalrate":575.91
+  },
+  {
+    "country":"Samoa ",
+    "iso":" WS",
+    "zone":"J",
+    "export":192.29,
+    "import":184.41,
+    "roundtrip":376.7,
+    "finalrate":470.88
+  },
+  {
+    "country":"Sao Tome And Principe ",
+    "iso":" ST",
+    "zone":"N",
+    "export":203.72,
+    "import":257.01,
+    "roundtrip":460.73,
+    "finalrate":575.91
+  },
+  {
+    "country":"Saudi Arabia ",
+    "iso":" SA",
+    "zone":"M",
+    "export":104.27,
+    "import":241.99,
+    "roundtrip":346.26,
+    "finalrate":432.82
+  },
+  {
+    "country":"Senegal ",
+    "iso":" SN",
+    "zone":"N",
+    "export":203.72,
+    "import":257.01,
+    "roundtrip":460.73,
+    "finalrate":575.91
+  },
+  {
+    "country":"Serbia  Rep. Of ",
+    "iso":" RS",
+    "zone":"E",
+    "export":170.64,
+    "import":214.8,
+    "roundtrip":385.44,
+    "finalrate":481.8
+  },
+  {
+    "country":"Seychelles ",
+    "iso":" SC",
+    "zone":"N",
+    "export":203.72,
+    "import":257.01,
+    "roundtrip":460.73,
+    "finalrate":575.91
+  },
+  {
+    "country":"Sierra Leone ",
+    "iso":" SL",
+    "zone":"N",
+    "export":203.72,
+    "import":257.01,
+    "roundtrip":460.73,
+    "finalrate":575.91
+  },
+  {
+    "country":"Singapore ",
+    "iso":" SG",
+    "zone":"H",
+    "export":81.27,
+    "import":167.43,
+    "roundtrip":248.7,
+    "finalrate":310.88
+  },
+  {
+    "country":"Slovakia ",
+    "iso":" SK",
+    "zone":"E",
+    "export":170.64,
+    "import":214.8,
+    "roundtrip":385.44,
+    "finalrate":481.8
+  },
+  {
+    "country":"Slovenia ",
+    "iso":" SI",
+    "zone":"E",
+    "export":170.64,
+    "import":214.8,
+    "roundtrip":385.44,
+    "finalrate":481.8
+  },
+  {
+    "country":"Solomon Islands ",
+    "iso":" SB",
+    "zone":"J",
+    "export":192.29,
+    "import":184.41,
+    "roundtrip":376.7,
+    "finalrate":470.88
+  },
+  {
+    "country":"Somalia Hargeisa ",
+    "iso":" XS",
+    "zone":"N",
+    "export":203.72,
+    "import":257.01,
+    "roundtrip":460.73,
+    "finalrate":575.91
+  },
+  {
+    "country":"Somalia Mogadishu ",
+    "iso":" SO",
+    "zone":"N",
+    "export":203.72,
+    "import":257.01,
+    "roundtrip":460.73,
+    "finalrate":575.91
+  },
+  {
+    "country":"South Africa ",
+    "iso":" ZA",
+    "zone":"N",
+    "export":203.72,
+    "import":257.01,
+    "roundtrip":460.73,
+    "finalrate":575.91
+  },
+  {
+    "country":"South Sudan ",
+    "iso":" SS",
+    "zone":"N",
+    "export":203.72,
+    "import":257.01,
+    "roundtrip":460.73,
+    "finalrate":575.91
+  },
+  {
+    "country":"Spain ",
+    "iso":" ES",
+    "zone":"C",
+    "export":79.03,
+    "import":194.54,
+    "roundtrip":273.57,
+    "finalrate":341.96
+  },
+  {
+    "country":"Sri Lanka ",
+    "iso":" LK",
+    "zone":"I",
+    "export":101.47,
+    "import":175.79,
+    "roundtrip":277.26,
+    "finalrate":346.58
+  },
+  {
+    "country":"St. Barthelemy ",
+    "iso":" XY",
+    "zone":"K",
+    "export":68.37,
+    "import":137.11,
+    "roundtrip":205.48,
+    "finalrate":256.85
+  },
+  {
+    "country":"St. Eustatius ",
+    "iso":" XE",
+    "zone":"K",
+    "export":68.37,
+    "import":137.11,
+    "roundtrip":205.48,
+    "finalrate":256.85
+  },
+  {
+    "country":"St. Kitts ",
+    "iso":" KN",
+    "zone":"K",
+    "export":68.37,
+    "import":137.11,
+    "roundtrip":205.48,
+    "finalrate":256.85
+  },
+  {
+    "country":"St. Lucia ",
+    "iso":" LC",
+    "zone":"K",
+    "export":68.37,
+    "import":137.11,
+    "roundtrip":205.48,
+    "finalrate":256.85
+  },
+  {
+    "country":"St. Maarten ",
+    "iso":" XM",
+    "zone":"K",
+    "export":68.37,
+    "import":137.11,
+    "roundtrip":205.48,
+    "finalrate":256.85
+  },
+  {
+    "country":"St. Vincent ",
+    "iso":" VC",
+    "zone":"K",
+    "export":68.37,
+    "import":137.11,
+    "roundtrip":205.48,
+    "finalrate":256.85
+  },
+  {
+    "country":"Sudan ",
+    "iso":" SD",
+    "zone":"N",
+    "export":203.72,
+    "import":257.01,
+    "roundtrip":460.73,
+    "finalrate":575.91
+  },
+  {
+    "country":"Suriname ",
+    "iso":" SR",
+    "zone":"L",
+    "export":133.24,
+    "import":158.63,
+    "roundtrip":291.87,
+    "finalrate":364.84
+  },
+  {
+    "country":"Sweden ",
+    "iso":" SE",
+    "zone":"D",
+    "export":85.32,
+    "import":212.54,
+    "roundtrip":297.86,
+    "finalrate":372.33
+  },
+  {
+    "country":"Switzerland ",
+    "iso":" CH",
+    "zone":"D",
+    "export":85.32,
+    "import":212.54,
+    "roundtrip":297.86,
+    "finalrate":372.33
+  },
+  {
+    "country":"Syria ",
+    "iso":" SY",
+    "zone":"M",
+    "export":104.27,
+    "import":241.99,
+    "roundtrip":346.26,
+    "finalrate":432.82
+  },
+  {
+    "country":"Tahiti ",
+    "iso":" PF",
+    "zone":"J",
+    "export":192.29,
+    "import":184.41,
+    "roundtrip":376.7,
+    "finalrate":470.88
+  },
+  {
+    "country":"Taiwan ",
+    "iso":" TW",
+    "zone":"H",
+    "export":81.27,
+    "import":167.43,
+    "roundtrip":248.7,
+    "finalrate":310.88
+  },
+  {
+    "country":"Tajikistan ",
+    "iso":" TJ",
+    "zone":"E",
+    "export":170.64,
+    "import":214.8,
+    "roundtrip":385.44,
+    "finalrate":481.8
+  },
+  {
+    "country":"Tanzania ",
+    "iso":" TZ",
+    "zone":"N",
+    "export":203.72,
+    "import":257.01,
+    "roundtrip":460.73,
+    "finalrate":575.91
+  },
+  {
+    "country":"Thailand ",
+    "iso":" TH",
+    "zone":"I",
+    "export":101.47,
+    "import":175.79,
+    "roundtrip":277.26,
+    "finalrate":346.58
+  },
+  {
+    "country":"Timor-Leste ",
+    "iso":" TL",
+    "zone":"J",
+    "export":192.29,
+    "import":184.41,
+    "roundtrip":376.7,
+    "finalrate":470.88
+  },
+  {
+    "country":"Togo ",
+    "iso":" TG",
+    "zone":"N",
+    "export":203.72,
+    "import":257.01,
+    "roundtrip":460.73,
+    "finalrate":575.91
+  },
+  {
+    "country":"Tonga ",
+    "iso":" TO",
+    "zone":"J",
+    "export":192.29,
+    "import":184.41,
+    "roundtrip":376.7,
+    "finalrate":470.88
+  },
+  {
+    "country":"Trinidad And Tobago ",
+    "iso":" TT",
+    "zone":"K",
+    "export":68.37,
+    "import":137.11,
+    "roundtrip":205.48,
+    "finalrate":256.85
+  },
+  {
+    "country":"Tunisia ",
+    "iso":" TN",
+    "zone":"N",
+    "export":203.72,
+    "import":257.01,
+    "roundtrip":460.73,
+    "finalrate":575.91
+  },
+  {
+    "country":"Turkey ",
+    "iso":" TR",
+    "zone":"M",
+    "export":104.27,
+    "import":241.99,
+    "roundtrip":346.26,
+    "finalrate":432.82
+  },
+  {
+    "country":"Turkmenistan ",
+    "iso":" TM",
+    "zone":"E",
+    "export":170.64,
+    "import":214.8,
+    "roundtrip":385.44,
+    "finalrate":481.8
+  },
+  {
+    "country":"Turks & Caicos ",
+    "iso":" TC",
+    "zone":"K",
+    "export":68.37,
+    "import":137.11,
+    "roundtrip":205.48,
+    "finalrate":256.85
+  },
+  {
+    "country":"Tuvalu ",
+    "iso":" TV",
+    "zone":"J",
+    "export":192.29,
+    "import":184.41,
+    "roundtrip":376.7,
+    "finalrate":470.88
+  },
+  {
+    "country":"Uganda ",
+    "iso":" UG",
+    "zone":"N",
+    "export":203.72,
+    "import":257.01,
+    "roundtrip":460.73,
+    "finalrate":575.91
+  },
+  {
+    "country":"Ukraine ",
+    "iso":" UA",
+    "zone":"E",
+    "export":170.64,
+    "import":214.8,
+    "roundtrip":385.44,
+    "finalrate":481.8
+  },
+  {
+    "country":"United Arab Emirates ",
+    "iso":" AE",
+    "zone":"M",
+    "export":104.27,
+    "import":241.99,
+    "roundtrip":346.26,
+    "finalrate":432.82
+  },
+  {
+    "country":"United Kingdom ",
+    "iso":" GB",
+    "zone":"C",
+    "export":79.03,
+    "import":194.54,
+    "roundtrip":273.57,
+    "finalrate":341.96
+  },
+  {
+    "country":"Uruguay ",
+    "iso":" UY",
+    "zone":"L",
+    "export":133.24,
+    "import":158.63,
+    "roundtrip":291.87,
+    "finalrate":364.84
+  },
+  {
+    "country":"Uzbekistan ",
+    "iso":" UZ",
+    "zone":"E",
+    "export":170.64,
+    "import":214.8,
+    "roundtrip":385.44,
+    "finalrate":481.8
+  },
+  {
+    "country":"Vanuatu ",
+    "iso":" VU",
+    "zone":"J",
+    "export":192.29,
+    "import":184.41,
+    "roundtrip":376.7,
+    "finalrate":470.88
+  },
+  {
+    "country":"Vatican City ",
+    "iso":" VA",
+    "zone":"C",
+    "export":79.03,
+    "import":194.54,
+    "roundtrip":273.57,
+    "finalrate":341.96
+  },
+  {
+    "country":"Venezuela ",
+    "iso":" VE",
+    "zone":"L",
+    "export":133.24,
+    "import":158.63,
+    "roundtrip":291.87,
+    "finalrate":364.84
+  },
+  {
+    "country":"Vietnam ",
+    "iso":" VN",
+    "zone":"I",
+    "export":101.47,
+    "import":175.79,
+    "roundtrip":277.26,
+    "finalrate":346.58
+  },
+  {
+    "country":"Virgin Islands-British ",
+    "iso":" VG",
+    "zone":"K",
+    "export":68.37,
+    "import":137.11,
+    "roundtrip":205.48,
+    "finalrate":256.85
+  },
+  {
+    "country":"Yemen  Rep. Of ",
+    "iso":" YE",
+    "zone":"M",
+    "export":104.27,
+    "import":241.99,
+    "roundtrip":346.26,
+    "finalrate":432.82
+  },
+  {
+    "country":"Zambia ",
+    "iso":" ZM",
+    "zone":"N",
+    "export":203.72,
+    "import":257.01,
+    "roundtrip":460.73,
+    "finalrate":575.91
+  },
+  {
+    "country":"Zimbabwe ",
+    "iso":" ZW",
+    "zone":"N",
+    "export":203.72,
+    "import":257.01,
+    "roundtrip":460.73,
+    "finalrate":575.91
+  }
+]
