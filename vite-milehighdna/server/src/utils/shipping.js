@@ -11,4 +11,3 @@ export async function getShippingFee(type, countryCode) {
       return type === "domestic" ? 15 : 50; // fallback defaults
     }
   }
-  

@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import { Helmet } from "react-helmet-async";
 import { createClient } from "@supabase/supabase-js";
 import peaceOfMindKitImage from "../assets/images/peace-of-mind-kit.jpg";
+import { getShippingFee } from "../utils/shipping";
+
+
 
 // Supabase client
 const supabase = createClient(
@@ -33,6 +36,9 @@ const PeaceOfMindDNAKit = () => {
   const createCheckout = async (type, countryCode = "US") => {
     try {
       setLoading(true);
+
+      const getshippingFee = await getShippingFee(type, countryCode);
+
 
       // ✅ Validate input
       if (!firstName.trim() || !lastName.trim() || !customerEmail.trim()) {
