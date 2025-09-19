@@ -8,11 +8,6 @@
         "source": "/denver-non-invasive-prenatal-paternity-test",
         "destination": "/prenatal-dna-test",
         "permanent": true
-      },
-      {
-        "source": "/appointments",
-        "destination": "/prenatal-dna-test",
-        "permanent": true
       }
     ]
   }

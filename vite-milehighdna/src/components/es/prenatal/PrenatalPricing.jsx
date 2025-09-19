@@ -33,7 +33,7 @@ const PrenatalPricing = () => {
             <div className="bg-white rounded-xl shadow-md border-l-4 border-blue-600 p-6">
               <h3 className="text-xl font-bold text-gray-800 mb-2">Prueba legal: Padre presunto + madre embarazada</h3>
               <p className="text-gray-600 mb-4">Incluye una prueba de ADN legal para un presunto padre y una madre embarazada. Recomendado para casos donde se requiere verificación judicial.</p>
-              <p className="text-2xl font-bold text-blue-700 mb-4">$1,800.00</p>
+              <p className="text-2xl font-bold text-blue-700 mb-4">$1,799.00</p>
               <ul className="text-left text-gray-700 space-y-2 mb-4">
                 <li>✔ Análisis de laboratorio acreditado por la AABB</li>
                 <li>✔ Recolección de muestras</li>

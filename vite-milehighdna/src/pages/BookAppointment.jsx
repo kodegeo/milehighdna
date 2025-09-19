@@ -19,7 +19,7 @@ const tests = [
   },
   {
     title: 'Legal Prenatal DNA Test',
-    price: 1800,
+    price: 1799,
     id: 'legal-prenatal',
     priceId: 'price_1RnfPtK2515KuCq2jxu7SPku',
   },

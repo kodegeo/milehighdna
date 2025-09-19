@@ -40,7 +40,7 @@ const PrenatalPricing = () => {
             <p className="text-gray-600 mb-4">
               A legal test with notarized documentation. Recommended for court, custody, or immigration cases.
             </p>
-            <p className="text-2xl font-bold text-blue-700 mb-4">$1,800.00</p>
+            <p className="text-2xl font-bold text-blue-700 mb-4">$1,799.00</p>
             <ul className="text-left text-gray-700 space-y-2 mb-4">
               <li>✔ AABB Lab Analysis</li>
               <li>✔ Full Sample Collection</li>
