@@ -3,9 +3,11 @@ import fs from "fs";
 import path from "path";
 
 const router = express.Router();
-const ratesPath = path.join(process.cwd(), "server/config/shippingRates.json");
 
-// Load once at startup (or read on each request if you expect edits during runtime)
+// Correct path: go up into config
+const ratesPath = path.join(process.cwd(), "config/shippingRates.json");
+
+// Load once at startup
 const shippingRates = JSON.parse(fs.readFileSync(ratesPath, "utf8"));
 
 router.get("/rate", (req, res) => {
