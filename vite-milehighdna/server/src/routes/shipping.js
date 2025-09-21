@@ -12,18 +12,17 @@ const shippingRates = JSON.parse(fs.readFileSync(ratesPath, "utf8"));
 
 router.get("/rate", (req, res) => {
   const { country } = req.query;
-
   let rate;
 
-  // Domestic rule
   if (country === "US") {
     rate = shippingRates.DOMESTIC.US;
+  } else if (shippingRates.INTERNATIONAL[country]) {
+    rate = shippingRates.INTERNATIONAL[country];
   } else {
-    // International rules
-    rate =
-      shippingRates.INTERNATIONAL[country] ??
-      shippingRates.INTERNATIONAL.DEFAULT ??
-      50;
+    return res.status(400).json({
+      error: "We do not ship to this country. Please contact us for details.",
+      contact: "info@milehighdnatesting.com"
+    });
   }
 
   res.json({ shipping: rate });
