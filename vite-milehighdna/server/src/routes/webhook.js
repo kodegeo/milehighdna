@@ -1,12 +1,12 @@
-// server/routes/webhook.js
+// server/src/routes/webhook.js
 import express from "express";
 import Stripe from "stripe";
 import { createClient } from "@supabase/supabase-js";
 
-export const webhookRouter = express.Router();
+const router = express.Router();
 
 // IMPORTANT: raw body parser for Stripe verification
-webhookRouter.use("/webhook", express.raw({ type: "application/json" }));
+router.use("/webhook", express.raw({ type: "application/json" }));
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY, {
   apiVersion: "2024-06-20",
@@ -18,7 +18,7 @@ const supabase = createClient(
 );
 
 // POST /api/payments/webhook
-webhookRouter.post("/webhook", async (req, res) => {
+router.post("/webhook", async (req, res) => {
   const sig = req.headers["stripe-signature"];
 
   let event;
@@ -54,7 +54,6 @@ webhookRouter.post("/webhook", async (req, res) => {
         break;
       }
 
-
       case "checkout.session.expired":
       case "payment_intent.payment_failed": {
         const session = event.data.object;
@@ -78,7 +77,6 @@ webhookRouter.post("/webhook", async (req, res) => {
       }
 
       default:
-        // other events can be handled as needed
         break;
     }
 
@@ -88,3 +86,5 @@ webhookRouter.post("/webhook", async (req, res) => {
     return res.status(500).send("Server error");
   }
 });
+
+export default router;

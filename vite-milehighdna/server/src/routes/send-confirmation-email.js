@@ -2,7 +2,7 @@
 import express from "express";
 import sgMail from "@sendgrid/mail";
 
-export const sendConfirmationEmailRouter = express.Router();
+const router = express.Router();
 
 sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
@@ -54,7 +54,7 @@ const buildCustomerEmail = (orderDetails) => {
 };
 
 // Route handler
-sendConfirmationEmailRouter.post("/", async (req, res) => {
+router.post("/", async (req, res) => {
   const { toCustomer, toAdmin, from, subject, orderDetails } = req.body;
   
   const customerMsg = {
@@ -93,3 +93,5 @@ sendConfirmationEmailRouter.post("/", async (req, res) => {
     res.status(500).json({ error: "Failed to send emails", details: err.message });
   }
 });
+
+export default router;

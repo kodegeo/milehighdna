@@ -2,6 +2,9 @@
 import express from "express";
 import { handleSendConfirmation } from "../controllers/sendConfirmationController.js";
 
-export const sendConfirmationRoute = express.Router();
+const router = express.Router();
 
-sendConfirmationRoute.post("/", handleSendConfirmation);
+// POST /api/send-confirmation-email
+router.post("/", handleSendConfirmation);
+
+export default router;
