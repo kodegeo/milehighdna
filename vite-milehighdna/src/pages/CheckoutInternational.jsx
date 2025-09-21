@@ -1,250 +1,150 @@
 import React, { useState } from "react";
-import { supabase } from "../infrastructure/supabaseClient";
-import shippingRates from "../data/shipping_rates.json";
-
-function generateCustomerCode() {
-  const prefix = "MH";
-  const randomNum = Math.floor(10000 + Math.random() * 90000);
-  return `${prefix}${randomNum}`;
-}
+import { Helmet } from "react-helmet-async";
+import { useLocation } from "react-router-dom";
+import { getShippingFee } from "../utils/shipping";
+import { processCheckout } from "../utils/checkoutUtils";
 
 const CheckoutInternational = () => {
-  const [form, setForm] = useState({
-    firstName: "",
-    lastName: "",
-    email: "",
-    phone: "",
-    address: "",
-    city: "",
-    postalCode: "",
-    country: "",
-  });
-  const [loading, setLoading] = useState(false);
-  const [successMessage, setSuccessMessage] = useState("");
+  const location = useLocation();
+  const prefill = location.state || {};
 
-  const handleChange = (e) => {
-    setForm({ ...form, [e.target.name]: e.target.value });
+  const [firstName, setFirstName] = useState(prefill.firstName || "");
+  const [lastName, setLastName] = useState(prefill.lastName || "");
+  const [customerEmail, setCustomerEmail] = useState(prefill.customerEmail || "");
+  const [productName] = useState(prefill.productName || "Peace of Mind Paternity Kit");
+  const [unitPrice] = useState(prefill.price || 199);
+  const [quantity] = useState(prefill.quantity || 1);
+
+  const [country, setCountry] = useState(prefill.country || "CA"); // default Canada
+  const [shippingFee, setShippingFee] = useState(null);
+  const [errorMessage, setErrorMessage] = useState(null);
+  const [loading, setLoading] = useState(false);
+
+  const handleCountryChange = async (selectedCountry) => {
+    setCountry(selectedCountry);
+    setErrorMessage(null);
+    setShippingFee(null);
+
+    const result = await getShippingFee("international", selectedCountry);
+    if (result.error) {
+      setErrorMessage(`${result.error} Contact: ${result.contact}`);
+    } else {
+      setShippingFee(result.shipping);
+    }
   };
 
-  const norm = (s) => String(s || "").trim().toLowerCase();
-    const selectedRate = form.country 
-    ? shippingRates.find((rate) => 
-    norm(rate.country) === norm(form.country) || norm(rate.iso) === norm(form.country)) : null;
-  
-  const handleSubmit = async (e) => {
-    e.preventDefault();
+  const createCheckout = async () => {
     setLoading(true);
-
-    const customerCode = generateCustomerCode();
-    const orderTotal = 199.0; // Base kit price, can adjust for international
-    const shippingCost = selectedRate ? Number(selectedRate.finalrate) : 0;
-
     try {
-      // 1. Insert into CustomerDb
-      const { data: customerData, error: customerError } = await supabase
-        .from("customerdb")
-        .insert([
-          {
-            first_name: form.firstName,
-            last_name: form.lastName,
-            email: form.email,
-            phone: form.phone,
-            customer_code: customerCode,
-            use_case: "at_home_kit",  // online orders = at-home kits (non-legal)
-            test_type: "paternity",   // at-home kits are paternity
-          },
-        ])
-        .select()
-        .single();
+      if (!firstName.trim() || !lastName.trim() || !customerEmail.trim()) {
+        alert("Please enter your first name, last name, and email.");
+        return;
+      }
+      if (errorMessage) {
+        alert(errorMessage);
+        return;
+      }
+      if (!shippingFee) {
+        alert("Please select a valid shipping country.");
+        return;
+      }
 
-      if (customerError) throw customerError;
-      const customerId = customerData.id;
-
-      // 2. Insert into Orders
-      const { data: orderData, error: orderError } = await supabase
-        .from("orders")
-        .insert([
-          {
-            customer_id: customerId,
-            order_source: "online_international",
-            order_type: "at_home_kit",          // add for consistent reporting
-            order_status: "Pending",
-            order_total_usd: orderTotal,        // items subtotal ONLY (align w/ domestic)
-            shipping_cost_usd: shippingCost,
-            shipping_zone: selectedRate ? selectedRate.zone : null,
-            shipping_export_usd: selectedRate ? Number(selectedRate.export) : null,
-            shipping_import_usd: selectedRate ? Number(selectedRate.import) : null,
-            shipping_roundtrip_usd: selectedRate ? Number(selectedRate.roundtrip) : null,
-            shipping_days: selectedRate
-              ? selectedRate.estimated_shipping_days
-              : null,
-              address: form.address,
-            city: form.city,
-            state_or_region: null,
-            postal_code: form.postalCode,
-            country: form.country,
-
-          },
-        ])
-        .select()
-        .single();
-
-      if (orderError) throw orderError;
-      const orderId = orderData.id;
-
-      // 3. Insert into OrderItems
-      const { error: itemError } = await supabase.from("orderitems").insert([
-        {
-          order_id: orderId,
-          product_name: "At-Home Paternity Test Kit",
-          quantity: 1,
-          unit_price_usd: orderTotal,
-        },
-      ]);
-
-      if (itemError) throw itemError;
-
-      setSuccessMessage(
-        `Order submitted successfully! Your Customer Code is ${customerCode}`
-      );
-
-      // Reset form
-      setForm({
-        firstName: "",
-        lastName: "",
-        email: "",
-        phone: "",
-        address: "",
-        city: "",
-        postalCode: "",
-        country: "",
+      const result = await processCheckout({
+        firstName,
+        lastName,
+        customerEmail,
+        productName,
+        unitPrice,
+        quantity,
+        shippingFee,
+        country,
+        orderSource: "online_international",
       });
-    } catch (error) {
-      console.error("Error submitting international order:", error.message);
-      alert("There was an issue submitting your order. Please try again.");
+
+      if (result.url) {
+        window.location.href = result.url;
+      }
+    } catch (err) {
+      console.error("Checkout error:", err);
+      alert("There was an issue creating your checkout session.");
     } finally {
       setLoading(false);
     }
   };
 
   return (
-    <div className="min-h-screen bg-gray-50 flex justify-center items-center">
-      <form
-        onSubmit={handleSubmit}
-        className="bg-white p-8 rounded-xl shadow-md max-w-lg w-full space-y-4"
-      >
-        <h2 className="text-2xl font-bold text-gray-800 mb-2">
+    <div className="min-h-screen bg-gray-50">
+      <Helmet>
+        <title>International Checkout | Mile High DNA</title>
+        <meta
+          name="description"
+          content="Checkout for international orders with Mile High DNA Testing. Country-based shipping rates included."
+        />
+      </Helmet>
+
+      <div className="max-w-2xl mx-auto py-12 px-4 sm:px-6 lg:px-8 bg-white shadow rounded-lg">
+        <h1 className="text-3xl font-bold text-gray-900 mb-6">
           International Checkout
-        </h2>
-        <p className="text-gray-600 mb-4">At-Home Paternity Test Kit</p>
-        <div className="grid grid-cols-2 gap-4">
+        </h1>
+
+        <div className="space-y-4">
           <input
-            className="border p-2 rounded"
-            name="firstName"
+            type="text"
             placeholder="First Name"
-            value={form.firstName}
-            onChange={handleChange}
-            required
+            value={firstName}
+            onChange={(e) => setFirstName(e.target.value)}
+            className="w-full border rounded-lg px-4 py-2"
           />
           <input
-            className="border p-2 rounded"
-            name="lastName"
+            type="text"
             placeholder="Last Name"
-            value={form.lastName}
-            onChange={handleChange}
-            required
-          />
-        </div>
-
-        <input
-          className="border p-2 rounded w-full"
-          name="email"
-          type="email"
-          placeholder="Email"
-          value={form.email}
-          onChange={handleChange}
-          required
-        />
-        <input
-          className="border p-2 rounded w-full"
-          name="phone"
-          type="tel"
-          placeholder="Phone"
-          value={form.phone}
-          onChange={handleChange}
-          required
-        />
-
-        <input
-          className="border p-2 rounded w-full"
-          name="address"
-          placeholder="Street Address"
-          value={form.address}
-          onChange={handleChange}
-          required
-        />
-        <div className="grid grid-cols-2 gap-2">
-          <input
-            className="border p-2 rounded"
-            name="city"
-            placeholder="City"
-            value={form.city}
-            onChange={handleChange}
-            required
+            value={lastName}
+            onChange={(e) => setLastName(e.target.value)}
+            className="w-full border rounded-lg px-4 py-2"
           />
           <input
-            className="border p-2 rounded"
-            name="postalCode"
-            placeholder="Postal Code"
-            value={form.postalCode}
-            onChange={handleChange}
-            required
+            type="email"
+            placeholder="Email"
+            value={customerEmail}
+            onChange={(e) => setCustomerEmail(e.target.value)}
+            className="w-full border rounded-lg px-4 py-2"
           />
+
+          <select
+            value={country}
+            onChange={(e) => handleCountryChange(e.target.value)}
+            className="w-full border rounded-lg px-4 py-2"
+          >
+            <option value="CA">Canada</option>
+            <option value="MX">Mexico</option>
+            <option value="GB">United Kingdom</option>
+            <option value="DE">Germany</option>
+            <option value="IN">India</option>
+            <option value="AU">Australia</option>
+            <option value="BR">Brazil</option>
+            <option value="ZA">South Africa</option>
+          </select>
         </div>
 
-        <select
-          className="border p-2 rounded w-full"
-          name="country"
-          value={form.country}
-          onChange={handleChange}
-          required
-        >
-          <option value="">-- Select Country --</option>
-          {shippingRates.map((rate) => (
-            <option key={rate.iso} value={rate.country}>
-              {rate.country}
-            </option>
-          ))}
-        </select>
-
-        {selectedRate && (
-          <div className="bg-gray-100 p-4 rounded font-semibold space-y-1">
-            <p>
-              Shipping Cost (includes round-trip): ${selectedRate.finalrate.toFixed(2)} USD
-            </p>
-            <p className="text-sm text-gray-500">
-              Based on round-trip DHL rates to/from {selectedRate.zone}
-            </p>
-            {selectedRate.prepaid_return_available && (
-              <p>✅ Prepaid return included</p>
-            )}
-          </div>
+        {shippingFee && (
+          <p className="mt-4 text-gray-700">
+            Shipping Fee: <strong>${shippingFee}</strong>
+          </p>
+        )}
+        {errorMessage && (
+          <p className="mt-4 text-red-600 font-semibold">{errorMessage}</p>
         )}
 
-        {successMessage && (
-          <div className="bg-green-100 text-green-800 p-4 rounded">
-            {successMessage}
-          </div>
-        )}
-
-        <button
-          className="bg-blue-600 text-white py-3 rounded-lg w-full hover:bg-blue-700 font-semibold"
-          type="submit"
-          disabled={loading}
-        >
-          {loading ? "Processing..." : "Submit Order"}
-        </button>
-      </form>
+        <div className="mt-6">
+          <button
+            onClick={createCheckout}
+            disabled={loading}
+            className="w-full bg-green-600 hover:bg-green-700 text-white font-semibold py-4 px-8 rounded-lg transition-all duration-300 disabled:opacity-50"
+          >
+            {loading ? "Processing..." : "Complete Checkout"}
+          </button>
+        </div>
+      </div>
     </div>
   );
 };
