@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import { Helmet } from "react-helmet-async";
 import { useLocation } from "react-router-dom";
-import { getShippingFee } from "../utils/shipping";
-import { processCheckout } from "../utils/checkoutUtils";
+
 
 const CheckoutInternational = () => {
   const location = useLocation();
@@ -25,7 +24,7 @@ const CheckoutInternational = () => {
     setErrorMessage(null);
     setShippingFee(null);
 
-    const result = await getShippingFee("international", selectedCountry);
+    const result = await fetchShippingFee("international", selectedCountry);
     if (result.error) {
       setErrorMessage(`${result.error} Contact: ${result.contact}`);
     } else {
@@ -49,7 +48,7 @@ const CheckoutInternational = () => {
         return;
       }
 
-      const result = await processCheckout({
+      const result = await createCheckoutSession({
         firstName,
         lastName,
         customerEmail,
@@ -71,6 +70,23 @@ const CheckoutInternational = () => {
       setLoading(false);
     }
   };
+
+    // Fetch shipping fee
+    const fetchShippingFee = async (type, country) => {
+      const res = await fetch(`/api/shipping/${type}/${country}`);
+      return res.json();
+    };
+
+    // Create checkout
+    const createCheckoutSession = async (checkoutData) => {
+      const res = await fetch("/api/create-checkout", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(checkoutData),
+      });
+      return res.json();
+    };
+
 
   return (
     <div className="min-h-screen bg-gray-50">

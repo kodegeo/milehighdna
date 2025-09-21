@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Helmet } from "react-helmet-async";
 import { useLocation } from "react-router-dom";
-import { getShippingFee } from "../utils/shipping";
-import { processCheckout } from "../utils/checkoutUtils";
+
 
 const CheckoutDomestic = () => {
   const location = useLocation();
@@ -23,7 +22,7 @@ const CheckoutDomestic = () => {
   // Load domestic shipping fee
   useEffect(() => {
     const fetchShipping = async () => {
-      const result = await getShippingFee("domestic", countryCode);
+      const result = await fetchShippingFee("domestic", countryCode);
       if (result.error) {
         alert(`${result.error} Contact: ${result.contact}`);
       } else {
@@ -45,7 +44,7 @@ const CheckoutDomestic = () => {
         return;
       }
 
-      const result = await processCheckout({
+      const result = await createCheckoutSession({
         firstName,
         lastName,
         customerEmail,
@@ -67,6 +66,22 @@ const CheckoutDomestic = () => {
       setLoading(false);
     }
   };
+
+  // Fetch shipping fee
+    const fetchShippingFee = async (type, country) => {
+      const res = await fetch(`/api/shipping/${type}/${country}`);
+      return res.json();
+    };
+
+    // Create checkout
+    const createCheckoutSession = async (checkoutData) => {
+      const res = await fetch("/api/create-checkout", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(checkoutData),
+      });
+      return res.json();
+    };
 
   return (
     <div className="min-h-screen bg-gray-50">

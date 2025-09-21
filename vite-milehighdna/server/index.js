@@ -2,6 +2,8 @@
 import express from "express";
 import cors from "cors";
 import dotenv from "dotenv";
+import checkoutRoutes from "./src/routes/checkoutRoutes.js";
+
 
 // ✅ Load env first
 dotenv.config();
@@ -33,6 +35,8 @@ app.use("/api/payments", paymentsRouter);
 app.use("/api/payments", webhookRouter);
 app.use("/api/send-confirmation-email", sendConfirmationRoute);
 app.use("/api/shipping", shippingRoutes);
+app.use("/api", checkoutRoutes);
+
 
 // ✅ Health check
 app.get("/", (req, res) => {
