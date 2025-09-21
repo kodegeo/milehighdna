@@ -12,7 +12,20 @@ const shippingRates = JSON.parse(fs.readFileSync(ratesPath, "utf8"));
 
 router.get("/rate", (req, res) => {
   const { country } = req.query;
-  const rate = shippingRates[country] ?? shippingRates["DEFAULT"] ?? 50;
+
+  let rate;
+
+  // Domestic rule
+  if (country === "US") {
+    rate = shippingRates.DOMESTIC.US;
+  } else {
+    // International rules
+    rate =
+      shippingRates.INTERNATIONAL[country] ??
+      shippingRates.INTERNATIONAL.DEFAULT ??
+      50;
+  }
+
   res.json({ shipping: rate });
 });
 
