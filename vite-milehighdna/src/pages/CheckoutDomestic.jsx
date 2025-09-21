@@ -1,18 +1,11 @@
 import React, { useState } from "react";
 import { Helmet } from "react-helmet-async";
-import { createClient } from "@supabase/supabase-js";
+import { supabase } from '../infrastructure/supabaseClient'
 import peaceOfMindKitImage from "../assets/images/peace-of-mind-kit.jpg";
 import { getShippingFee } from "../utils/shipping";
 
 
-
-// Supabase client
-const supabase = createClient(
-  import.meta.env.VITE_SUPABASE_URL,
-  import.meta.env.VITE_SUPABASE_ANON_KEY
-);
-
-const PeaceOfMindDNAKit = () => {
+const CheckoutDomestic = () => {
   const [showUSModal, setShowUSModal] = useState(false);
   const [loading, setLoading] = useState(false);
 
@@ -336,4 +329,4 @@ const PeaceOfMindDNAKit = () => {
   );
 };
 
-export default PeaceOfMindDNAKit;
+export default CheckoutDomestic;
