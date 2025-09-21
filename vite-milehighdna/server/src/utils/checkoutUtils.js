@@ -1,4 +1,4 @@
-import { supabase } from "../infrastructure/supabaseClient";
+import supabase from "../infrastructure/supabaseClient.js";
 
 export async function processCheckout({
   firstName,
@@ -82,7 +82,7 @@ export async function processCheckout({
 
   // Step 4: Stripe session
   const resp = await fetch(
-    `${import.meta.env.VITE_API_URL}/api/payments/create-session`,
+    `${process.env.API_URL}/api/payments/create-session`, // 🔑 use process.env in backend
     {
       method: "POST",
       headers: { "Content-Type": "application/json" },
