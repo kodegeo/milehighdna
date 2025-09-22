@@ -1,13 +1,19 @@
+// server/src/utils/shipping.js
+import rates from "../config/shippingRates.json" assert { type: "json" };
+
 export async function getShippingFee(type, countryCode) {
-    try {
-      const resp = await fetch(
-        `${import.meta.env.VITE_API_URL}/api/shipping/rate?country=${countryCode}`
-      );
-      if (!resp.ok) throw new Error("Failed to fetch shipping rate");
-      const { shipping } = await resp.json();
-      return shipping;
-    } catch (err) {
-      console.error("Shipping API error:", err);
-      return type === "domestic" ? 15 : 50; // fallback defaults
+  try {
+    if (type === "domestic") {
+      return { shipping: rates.domestic[countryCode] || rates.domestic["DEFAULT"] };
     }
+
+    if (type === "international") {
+      return { shipping: rates.international[countryCode] || rates.international["DEFAULT"] };
+    }
+
+    return { error: "Unsupported shipping type", contact: "info@milehighdnatesting.com" };
+  } catch (err) {
+    console.error("Shipping error:", err);
+    return { error: "Unable to calculate shipping", contact: "info@milehighdnatesting.com" };
   }
+}
