@@ -9,7 +9,7 @@ import { fileURLToPath } from "url";
 // Resolve file path
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
-const ratesPath = path.join(__dirname, "../config/shippingRates.json");
+const ratesPath = path.resolve(__dirname, "../../config/shippingRates.json");
 const rates = JSON.parse(fs.readFileSync(ratesPath, "utf-8"));
 
 const router = express.Router();
