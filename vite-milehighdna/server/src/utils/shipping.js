@@ -6,8 +6,8 @@ import { fileURLToPath } from "url";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-// Go up from utils/ into config/
-const ratesPath = path.resolve(__dirname, "../config/shippingRates.json");
+// ✅ point to /server/config instead of /server/src/config
+const ratesPath = path.resolve(__dirname, "../../config/shippingRates.json");
 const rates = JSON.parse(fs.readFileSync(ratesPath, "utf-8"));
 
 export async function getShippingFee(type, countryCode) {
