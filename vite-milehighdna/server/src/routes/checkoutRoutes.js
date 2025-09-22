@@ -1,7 +1,16 @@
+// server/src/routes/checkoutRoutes.js
 import express from "express";
 import { processCheckout } from "../utils/checkoutUtils.js";
 import { getShippingFee } from "../utils/shipping.js";
-import rates from "../config/shippingRates.json" assert { type: "json" };
+import fs from "fs";
+import path from "path";
+import { fileURLToPath } from "url";
+
+// Resolve file path
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+const ratesPath = path.join(__dirname, "../config/shippingRates.json");
+const rates = JSON.parse(fs.readFileSync(ratesPath, "utf-8"));
 
 const router = express.Router();
 
@@ -21,7 +30,7 @@ router.get("/shipping/:type/:country", async (req, res) => {
   try {
     const { type, country } = req.params;
 
-    // validate shipping type
+    // validate type
     if (!["domestic", "international"].includes(type)) {
       return res.status(400).json({
         error: `Unsupported shipping type: ${type}`,
@@ -29,7 +38,7 @@ router.get("/shipping/:type/:country", async (req, res) => {
       });
     }
 
-    // validate country exists in config
+    // validate country
     const validCountries = Object.keys(rates[type]);
     if (!validCountries.includes(country) && !rates[type]["DEFAULT"]) {
       return res.status(400).json({
