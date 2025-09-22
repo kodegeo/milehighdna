@@ -6,7 +6,6 @@ import fs from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
 
-// Resolve file path
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const ratesPath = path.resolve(__dirname, "../../config/shippingRates.json");
@@ -38,9 +37,9 @@ router.get("/shipping/:type/:country", async (req, res) => {
       });
     }
 
-    // validate country
-    const validCountries = Object.keys(rates[type]);
-    if (!validCountries.includes(country) && !rates[type]["DEFAULT"]) {
+    // validate country using uppercase keys
+    const validCountries = Object.keys(rates[type.toUpperCase()]);
+    if (!validCountries.includes(country) && !rates[type.toUpperCase()]["DEFAULT"]) {
       return res.status(400).json({
         error: `No shipping rate found for ${country}`,
         contact: "info@milehighdnatesting.com",

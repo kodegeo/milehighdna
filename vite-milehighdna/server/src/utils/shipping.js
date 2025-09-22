@@ -6,18 +6,17 @@ import { fileURLToPath } from "url";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-// ✅ point to /server/config instead of /server/src/config
 const ratesPath = path.resolve(__dirname, "../../config/shippingRates.json");
 const rates = JSON.parse(fs.readFileSync(ratesPath, "utf-8"));
 
 export async function getShippingFee(type, countryCode) {
   try {
     if (type === "domestic") {
-      return { shipping: rates.domestic[countryCode] || rates.domestic["DEFAULT"] };
+      return { shipping: rates.DOMESTIC[countryCode] || rates.DOMESTIC["DEFAULT"] };
     }
 
     if (type === "international") {
-      return { shipping: rates.international[countryCode] || rates.international["DEFAULT"] };
+      return { shipping: rates.INTERNATIONAL[countryCode] || rates.INTERNATIONAL["DEFAULT"] };
     }
 
     return { error: "Unsupported shipping type", contact: "info@milehighdnatesting.com" };
