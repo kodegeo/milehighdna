@@ -1,34 +1,35 @@
-// server/src/controllers/sendConfirmationController.js
-import sgMail from "@sendgrid/mail";
-import { buildCustomerEmail, buildAdminEmail } from "../utils/emailTemplates.js";
+import { sendOrderConfirmation } from "../utils/sendConfirmation.js";
 
-sgMail.setApiKey(process.env.SENDGRID_API_KEY);
-
+/**
+ * Controller for sending order confirmation emails.
+ *
+ * Expects req.body:
+ * {
+ *   toCustomer: string,
+ *   toAdmin: string,
+ *   from: string,
+ *   subject: string,
+ *   orderDetails: {
+ *     orderId: string,
+ *     productName: string,
+ *     shippingMethod?: string,
+ *     locations?: number,
+ *     customerName?: string,
+ *     email?: string
+ *   }
+ * }
+ */
 export const handleSendConfirmation = async (req, res) => {
-  const { toCustomer, toAdmin, from, subject, orderDetails } = req.body;
-
-  const customerMsg = {
-    to: toCustomer,
-    from,
-    subject,
-    html: buildCustomerEmail(orderDetails),
-    text: `Hi ${orderDetails.customerName}, your order ${orderDetails.orderNumber} is confirmed.`,
-  };
-
-  const adminMsg = {
-    to: toAdmin,
-    from,
-    subject: `New Order: ${orderDetails.orderNumber}`,
-    text: `New order received:\n\n${JSON.stringify(orderDetails, null, 2)}`,
-    html: buildAdminEmail(orderDetails),
-  };
-
   try {
-    await sgMail.send(customerMsg);
-    await sgMail.send(adminMsg);
-    res.status(200).json({ success: true });
+    await sendOrderConfirmation(req.body);
+    return res
+      .status(200)
+      .json({ success: true, message: "Confirmation emails sent" });
   } catch (err) {
-    console.error("SendGrid Error:", err.response?.body || err);
-    res.status(500).json({ error: "Failed to send confirmation emails" });
+    console.error("SendConfirmationController error:", err);
+    return res.status(500).json({
+      success: false,
+      error: "Failed to send confirmation emails",
+    });
   }
 };

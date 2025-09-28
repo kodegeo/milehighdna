@@ -1,4 +1,7 @@
+import Stripe from "stripe";
 import supabase from "../infrastructure/supabaseClient.js";
+
+const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
 
 export async function processCheckout({
   firstName,
@@ -6,102 +9,114 @@ export async function processCheckout({
   customerEmail,
   productName,
   unitPrice,
-  quantity,
   shippingFee,
+  orderSource,
   country,
-  orderSource = "online_domestic",
+  shippingMethod,
+  locations,
+  primaryAddress,     // stays in customerdb
+  secondaryAddress,   // stored in orders if present
 }) {
-  // Step 1: Upsert customer
-  let { data: customer, error: custErr } = await supabase
-    .from("customerdb")
-    .select("id")
-    .eq("email", customerEmail.trim().toLowerCase())
-    .maybeSingle();
-  if (custErr) throw custErr;
-
-  if (!customer) {
-    const { data: newCustomer, error: newCustErr } = await supabase
+  try {
+    // 1. Upsert customer in customerdb
+    const { data: customer, error: customerErr } = await supabase
       .from("customerdb")
+      .upsert(
+        [
+          {
+            first_name: firstName,
+            last_name: lastName,
+            email: customerEmail,
+            address: primaryAddress || null, // primary lives here
+          },
+        ],
+        { onConflict: ["email"] }
+      )
+      .select()
+      .single();
+
+    if (customerErr) throw customerErr;
+    const customerId = customer.id;
+
+    // 2. Insert order into orders with new fields
+    const orderTotal = unitPrice + shippingFee;
+    const { data: order, error: orderErr } = await supabase
+      .from("orders")
       .insert([
         {
-          first_name: firstName.trim(),
-          last_name: lastName.trim(),
-          email: customerEmail.trim().toLowerCase(),
-          test_type: "Online Order",
+          customer_id: customerId,
+          order_status: "Initiated",
+          order_source: orderSource,
+          order_total_usd: orderTotal,
+          shipping_cost_usd: shippingFee,
+          country,
+          currency: "USD",
+          shipping_method: shippingMethod,
+          shipping_locations: locations,
+          secondary_address: secondaryAddress || null,
         },
       ])
       .select()
       .single();
-    if (newCustErr) throw newCustErr;
-    customer = newCustomer;
-  }
-  const customerId = customer.id;
 
-  // Step 2: Insert order
-  const subtotal = unitPrice * quantity;
-  const orderTotal = subtotal + shippingFee;
+    if (orderErr) throw orderErr;
+    const orderId = order.id;
 
-  const { data: order, error: orderErr } = await supabase
-    .from("orders")
-    .insert([
+    // 3. Insert order items
+    const { error: itemErr } = await supabase.from("orderitems").insert([
       {
-        customer_id: customerId,
-        order_status: "Initiated",
-        order_source: orderSource,
-        order_total_usd: orderTotal,
-        shipping_cost_usd: shippingFee,
-        country,
-        currency: "USD",
+        order_id: orderId,
+        product_name: productName,
+        unit_price: unitPrice,
+        quantity: 1,
+        line_total: unitPrice,
       },
-    ])
-    .select()
-    .single();
-  if (orderErr) throw orderErr;
-  const orderId = order.id;
+      {
+        order_id: orderId,
+        product_name: "Shipping",
+        unit_price: shippingFee,
+        quantity: 1,
+        line_total: shippingFee,
+      },
+    ]);
+    if (itemErr) throw itemErr;
 
-  // Step 3: Insert order items
-  const itemsToInsert = [
-    {
-      order_id: orderId,
-      product_name: productName,
-      quantity,
-      unit_price_usd: unitPrice,
-    },
-  ];
-  if (shippingFee > 0) {
-    itemsToInsert.push({
-      order_id: orderId,
-      product_name: "Shipping",
-      quantity: 1,
-      unit_price_usd: shippingFee,
-    });
-  }
-
-  const { error: itemsErr } = await supabase.from("orderitems").insert(itemsToInsert);
-  if (itemsErr) throw itemsErr;
-
-  // Step 4: Stripe session
-  const resp = await fetch(
-    `${process.env.API_URL}/api/payments/create-session`, // 🔑 use process.env in backend
-    {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
+    // 4. Create Stripe checkout session with metadata
+    const session = await stripe.checkout.sessions.create({
+      payment_method_types: ["card"],
+      line_items: [
+        {
+          price_data: {
+            currency: "usd",
+            product_data: { name: productName },
+            unit_amount: Math.round(unitPrice * 100),
+          },
+          quantity: 1,
+        },
+        {
+          price_data: {
+            currency: "usd",
+            product_data: { name: "Shipping" },
+            unit_amount: Math.round(shippingFee * 100),
+          },
+          quantity: 1,
+        },
+      ],
+      mode: "payment",
+      success_url: `${process.env.FRONTEND_URL}/success`,
+      cancel_url: `${process.env.FRONTEND_URL}/cancel`,
+      metadata: {
         orderId,
-        customerCode: `CUST-${customerId}`,
-        firstName,
-        lastName,
-        email: customerEmail,
-        productName,
-        subtotalUsd: subtotal,
-        shippingUsd: shippingFee,
-        orderSource,
-        country,
-      }),
-    }
-  );
+        customerId,
+        shippingMethod,
+        shippingLocations: locations,
+        secondaryAddress: secondaryAddress || "",
+      },
+    });
 
-  const result = await resp.json();
-  if (result.error) throw new Error(result.error);
-  return result;
+    return { url: session.url };
+  } catch (err) {
+    console.error("Checkout error:", err);
+    return { error: err.message };
+  }
 }
