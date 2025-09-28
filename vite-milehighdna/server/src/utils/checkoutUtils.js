@@ -2,6 +2,8 @@ import Stripe from "stripe";
 import supabase from "../infrastructure/supabaseClient.js";
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
+const priceId = process.env.STRIPE_TEST_PRICE_ID || "your_real_price_id";
+
 
 export async function processCheckout({
   firstName,
@@ -85,6 +87,13 @@ export async function processCheckout({
     const session = await stripe.checkout.sessions.create({
       payment_method_types: ["card"],
       line_items: [
+        process.env.STRIPE_TEST_PRICE_ID
+        ? {
+            // Use Stripe dashboard $1 test product
+            price: process.env.STRIPE_TEST_PRICE_ID,
+            quantity: 1,
+          }
+        :         
         {
           price_data: {
             currency: "usd",
