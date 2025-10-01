@@ -38,7 +38,8 @@ app.use("/api/payments", webhookRouter);
 app.use("/api/send-confirmation-email", sendConfirmationRoute);
 app.use("/api/shipping", shippingRoutes);
 app.use("/api", checkoutRoutes);
-app.use("/api", healthRoutes);
+app.use("/health", healthRoutes);
+
 
 
 // ✅ Health check
