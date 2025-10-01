@@ -31,20 +31,19 @@ export async function processCheckout(payload) {
 
   try {
     // 1. Upsert customer in customerdb (no address here)
-    const { data: customer, error: customerErr } = await supabase
-      .from("customerdb")
-      .upsert(
-        [
-          {
-            first_name: firstName,
-            last_name: lastName,
-            email: customerEmail,
-          },
-        ],
-        { onConflict: ["email"] }
-      )
-      .select()
-      .single();
+    const { data: customer } = await supabase
+    .from("customerdb")
+    .upsert(
+      {
+        first_name,
+        last_name,
+        email,
+        test_type: testType || "peace_of_mind", // ✅ ensure non-null
+      },
+      { onConflict: ["email"], returning: "representation" }
+    )
+    .select()
+    .single();
 
     if (customerErr) throw customerErr;
     const customerId = customer.id;
