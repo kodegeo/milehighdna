@@ -1,3 +1,5 @@
+import React, { useState, useEffect } from "react";
+
 import React, { useState } from "react";
 import { Helmet } from "react-helmet-async";
 import { useLocation } from "react-router-dom";
@@ -19,6 +21,27 @@ const CheckoutInternational = () => {
   const [errorMessage, setErrorMessage] = useState(null);
   const [loading, setLoading] = useState(false);
 
+  const [availableCountries, setAvailableCountries] = useState([]);
+
+  useEffect(() => {
+    // fetch shipping for initial country
+    handleCountryChange(country);
+  }, []);
+
+  useEffect(() => {
+    const fetchCountries = async () => {
+      try {
+        const res = await fetch(`${import.meta.env.VITE_API_URL}/api/shipping/countries`);
+        const result = await res.json();
+        setAvailableCountries(result.countries); // backend should return { countries: ["CA", "MX", ...] }
+      } catch (err) {
+        console.error("Failed to fetch country list", err);
+        setAvailableCountries(["CA","MX","GB","DE","IN","AU","BR","ZA"]); // fallback
+      }
+    };
+    fetchCountries();
+  }, []);
+
   // Fetch shipping fee dynamically if country changes
   const handleCountryChange = async (selectedCountry) => {
     setCountry(selectedCountry);
@@ -32,12 +55,14 @@ const CheckoutInternational = () => {
       const result = await res.json();
       if (result.error) {
         setErrorMessage(`${result.error} Contact: ${result.contact}`);
+        setDynamicShipping(50); // fallback
       } else {
         setDynamicShipping(result.shipping);
       }
     } catch (err) {
       console.error("Shipping fetch error:", err);
       setErrorMessage("Failed to load shipping rate.");
+      setDynamicShipping(50); // fallback
     }
   };
 
@@ -135,22 +160,16 @@ const CheckoutInternational = () => {
                 
                 <div className="border-t pt-3 mt-3">
                   <label className="block font-semibold mb-2">Shipping Country:</label>
-                  <select
-                    value={country}
-                    onChange={(e) => handleCountryChange(e.target.value)}
-                    className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                  >
-                    <option value="CA">Canada</option>
-                    <option value="MX">Mexico</option>
-                    <option value="GB">United Kingdom</option>
-                    <option value="DE">Germany</option>
-                    <option value="IN">India</option>
-                    <option value="AU">Australia</option>
-                    <option value="BR">Brazil</option>
-                    <option value="ZA">South Africa</option>
-                  </select>
-                </div>
-
+                    <select
+                      value={country}
+                      onChange={(e) => handleCountryChange(e.target.value)}
+                      className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    >
+                      {availableCountries.map((c) => (
+                        <option key={c} value={c}>{c}</option>
+                      ))}
+                    </select>
+                      </div>
                 {dynamicShipping && (
                   <div className="flex justify-between">
                     <span className="font-semibold">Shipping:</span>

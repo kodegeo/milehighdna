@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Helmet } from "react-helmet-async";
 import { useLocation } from "react-router-dom";
 
@@ -13,27 +13,50 @@ const CheckoutDomestic = () => {
     country = "US",
   } = location.state || {};
 
-  // New state for domestic shipping functionality
+  // Shipping state
   const [shippingMethod, setShippingMethod] = useState("regular"); // "regular" | "overnight"
   const [locations, setLocations] = useState(1); // 1 | 2
+  const [shippingRate, setShippingRate] = useState(0);
+
   const [primaryAddress, setPrimaryAddress] = useState({
     street: "",
     city: "",
     state: "",
     zipCode: ""
   });
+
   const [secondaryAddress, setSecondaryAddress] = useState({
     street: "",
     city: "",
     state: "",
     zipCode: ""
   });
+
   const [loading, setLoading] = useState(false);
 
-  // Calculate shipping + total
-  const shippingRate = shippingMethod === "regular" ? 20 : 50;
+  // ✅ Fetch shipping dynamically from backend instead of hardcoded
+  useEffect(() => {
+    const fetchShipping = async () => {
+      try {
+        const res = await fetch(
+          `${import.meta.env.VITE_API_URL}/api/shipping/domestic/${country}?method=${shippingMethod}`
+        );
+        if (!res.ok) throw new Error("Failed to fetch shipping rate");
+        const { shipping } = await res.json();
+        setShippingRate(shipping);
+      } catch (err) {
+        console.error("Shipping fetch error:", err);
+        // fallback defaults
+        setShippingRate(shippingMethod === "regular" ? 20 : 50);
+      }
+    };
+    fetchShipping();
+  }, [country, shippingMethod]);
+
+  // Totals
   const shippingTotal = shippingRate * locations;
   const total = (unitPrice + shippingTotal).toFixed(2);
+
 
   const createCheckout = async () => {
     if (!primaryAddress.street || !primaryAddress.city || !primaryAddress.state || !primaryAddress.zipCode) {
