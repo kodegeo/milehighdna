@@ -84,14 +84,14 @@ export async function processCheckout(payload) {
       {
         order_id: orderId,
         product_name: productName,
-        unit_price: unitPrice,
+        unit_price_usd: unitPrice,
         quantity: 1,
-        line_total: unitPrice,
+        line_total: unitPrice * 1,
       },
       {
         order_id: orderId,
         product_name: "Shipping",
-        unit_price: shippingFee,
+        unit_price_usd: shippingFee,
         quantity: 1,
         line_total: shippingFee,
       },
