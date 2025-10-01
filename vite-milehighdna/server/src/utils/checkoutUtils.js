@@ -35,13 +35,12 @@ export async function processCheckout(payload) {
     .from("customerdb")
     .upsert(
       {
-        first_name,
-        last_name,
-        email,
-        test_type: testType || "peace_of_mind", // ✅ ensure non-null
+        first_name: firstName,
+        last_name: lastName,
+        email: customerEmail,
+        test_type: "peace_of_mind", // default for now, can be dynamic
       },
-      { onConflict: ["email"], returning: "representation" }
-    )
+      { onConflict: ["email"], returning: "representation" }    )
     .select()
     .single();
 
