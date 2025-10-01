@@ -3,6 +3,8 @@ import express from "express";
 import cors from "cors";
 import dotenv from "dotenv";
 import checkoutRoutes from "./src/routes/checkoutRoutes.js";
+import bodyParser from "body-parser";
+
 
 
 // ✅ Load env first
