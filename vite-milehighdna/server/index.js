@@ -22,6 +22,8 @@ import paymentsRouter from "./src/routes/payments.js";
 import webhookRouter from "./src/routes/webhook.js";
 import sendConfirmationRoute from "./src/routes/sendConfirmationRoute.js";
 import shippingRoutes from "./src/routes/shipping.js";
+import healthRoutes from "./src/routes/health.js";
+
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -36,6 +38,7 @@ app.use("/api/payments", webhookRouter);
 app.use("/api/send-confirmation-email", sendConfirmationRoute);
 app.use("/api/shipping", shippingRoutes);
 app.use("/api", checkoutRoutes);
+app.use("/api", healthRoutes);
 
 
 // ✅ Health check
