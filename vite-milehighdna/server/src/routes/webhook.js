@@ -28,6 +28,9 @@ router.post(
       return res.status(400).send(`Webhook Error: ${err.message}`);
     }
 
+      // handle event.type here
+    res.json({ received: true });
+
     try {
       switch (event.type) {
         case "checkout.session.completed": {

@@ -28,13 +28,19 @@ import healthRoutes from "./src/routes/health.js";
 const app = express();
 const PORT = process.env.PORT || 3000;
 
+// Stripe webhook (must use raw body)
+app.use(
+  "/webhook",
+  bodyParser.raw({ type: "application/json" }),
+  webhookRouter
+);
+
 // ✅ Middleware
 app.use(cors());
 app.use(express.json());
 
 // ✅ Mount routers
 app.use("/api/payments", paymentsRouter);
-app.use("/api/payments", webhookRouter);
 app.use("/api/send-confirmation-email", sendConfirmationRoute);
 app.use("/api/shipping", shippingRoutes);
 app.use("/api", checkoutRoutes);
