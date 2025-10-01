@@ -31,7 +31,7 @@ export async function processCheckout(payload) {
 
   try {
     // 1. Upsert customer in customerdb (no address here)
-    const { data: customer } = await supabase
+    const { data: customer, error: customerErr } = await supabase
     .from("customerdb")
     .upsert(
       {
