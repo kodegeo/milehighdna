@@ -69,16 +69,18 @@ app.listen(PORT, () => {
   console.log(`✅ Server listening on port ${PORT}`);
   console.log("📦 Environment Variables:");
   console.log(
-    `   - STRIPE_SECRET_KEY: ${
-      process.env.STRIPE_SECRET_KEY ? "✅ Set" : "❌ Missing"
-    }`
+    `   - STRIPE_SECRET_KEY: ${process.env.STRIPE_SECRET_KEY ? "✅ Set" : "❌ Missing"}`
   );
   console.log(
     `   - FRONTEND_URL: ${process.env.FRONTEND_URL ? "✅ Set" : "❌ Missing"}`
   );
   console.log(
-    `   - SENDGRID_API_KEY: ${
-      process.env.SENDGRID_API_KEY ? "✅ Set" : "❌ Missing"
-    }`
+    `   - SENDGRID_API_KEY: ${process.env.SENDGRID_API_KEY ? "✅ Set" : "❌ Missing"}`
+  );
+  console.log(
+    `   - MAILGUN_DOMAIN: ${process.env.MAILGUN_DOMAIN || "❌ Missing"}`
+  );
+  console.log(
+    `   - MAILGUN_API_KEY: ${process.env.MAILGUN_API_KEY ? "✅ Set" : "❌ Missing"}`
   );
 });
