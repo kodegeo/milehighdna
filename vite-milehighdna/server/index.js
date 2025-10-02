@@ -43,7 +43,8 @@ app.use(express.json());
 
 // ✅ Mount routers
 app.use("/api/payments", paymentsRouter);
-app.use("/api/send-confirmation-email", sendConfirmationRoute);
+app.use("/api", sendConfirmationRoute);
+
 app.use("/api/shipping", shippingRoutes);
 app.use("/api", checkoutRoutes);
 app.use("/health", healthRoutes);
