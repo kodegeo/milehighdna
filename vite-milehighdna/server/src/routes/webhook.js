@@ -1,7 +1,7 @@
 import express from "express";
 import Stripe from "stripe";
 import axios from "axios";
-import { supabase } from "../utils/supabaseClient.js";
+import { supabase } from "../infrastructure/supabaseClient.js";
 
 const router = express.Router();
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY, {
