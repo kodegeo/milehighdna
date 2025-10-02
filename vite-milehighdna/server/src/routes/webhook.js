@@ -2,7 +2,6 @@
 import express from "express";
 import Stripe from "stripe";
 import supabase from "../infrastructure/supabaseClient.js";
-import { sendOrderConfirmation } from "../utils/sendConfirmation.js";
 
 const router = express.Router();
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY, {
