@@ -1,16 +1,16 @@
-// server/src/routes/webhook.js
 import express from "express";
 import Stripe from "stripe";
-import supabase from "../infrastructure/supabaseClient.js";
+import axios from "axios";
+import { supabase } from "../utils/supabaseClient.js";
 
 const router = express.Router();
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY, {
-  apiVersion: "2024-06-20", // lock to stable version
+  apiVersion: "2024-06-20",
 });
 
-// Stripe requires raw body for signature verification
+// Stripe webhook endpoint
 router.post(
-  "/webhook",
+  "/",
   express.raw({ type: "application/json" }),
   async (req, res) => {
     const sig = req.headers["stripe-signature"];
@@ -23,26 +23,19 @@ router.post(
         process.env.STRIPE_WEBHOOK_SECRET
       );
     } catch (err) {
-      console.error("⚠️ Webhook signature verification failed:", err.message);
+      console.error("❌ Webhook signature verification failed:", err.message);
       return res.status(400).send(`Webhook Error: ${err.message}`);
     }
 
-      // handle event.type here
-    res.json({ received: true });
-
     try {
-      switch (event.type) {
-        case "checkout.session.completed": {
-          const session = event.data.object;
-          const orderId = session?.metadata?.orderId;
+      // Handle the event
+      if (event.type === "checkout.session.completed") {
+        const session = event.data.object;
 
-          if (!orderId) {
-            console.error("⚠️ No orderId in session metadata");
-            break;
-          }
-
-          // 1. Update order in Supabase
-          const { error: orderErr } = await supabase
+        const orderId = session.metadata?.orderId;
+        if (orderId) {
+          // ✅ Update order in Supabase
+          await supabase
             .from("orders")
             .update({
               order_status: "Paid",
@@ -51,65 +44,49 @@ router.post(
             })
             .eq("id", orderId);
 
-          if (orderErr) {
-            console.error("Supabase order update error:", orderErr);
-          } else {
-            console.log(`✅ Order ${orderId} marked as Paid`);
-          }
+          // ✅ Trigger confirmation email via backend route
+          await axios.post(`${process.env.BACKEND_URL}/api/send-confirmation-email`, {
+            toCustomer: session.customer_email,
+            toAdmin: "cynthia@milehighdnatesting.com",
+            from: "info@milehighdnatesting.com",
+            subject: "Order Confirmed - Mile High DNA Testing",
+            orderDetails: {
+              orderId,
+              productName: session.metadata.productName,
+              shippingMethod: session.metadata.shippingMethod,
+              locations: session.metadata.shippingLocations,
+              customerName: `${session.metadata.firstName || ""} ${session.metadata.lastName || ""}`.trim(),
+              email: session.customer_email,
+            },
+          });
 
-          // 2. Trigger confirmation emails
-          try {
-            await sendOrderConfirmation({
-              toCustomer: session.customer_email,
-              toAdmin: "info@milehighdnatesting.com",
-              from: "info@milehighdnatesting.com",
-              subject: "Order Confirmed - Mile High DNA Testing",
-              orderDetails: {
-                orderId,
-                productName: session.metadata.productName,
-                shippingMethod: session.metadata.shippingMethod,
-                locations: session.metadata.shippingLocations,
-                customerName: `${session.metadata.firstName || ""} ${
-                  session.metadata.lastName || ""
-                }`.trim(),
-                email: session.customer_email,
-              },
-            });
-            console.log(`📧 Confirmation emails sent for order ${orderId}`);
-          } catch (mailErr) {
-            console.error("Email send error:", mailErr);
-          }
-          break;
+          console.log("✅ Order updated and confirmation email sent");
         }
-
-        case "checkout.session.expired":
-        case "checkout.session.async_payment_failed": {
-          const session = event.data.object;
-          const orderId = session?.metadata?.orderId;
-
-          if (orderId) {
-            const { error: cancelErr } = await supabase
-              .from("orders")
-              .update({ order_status: "Canceled" })
-              .eq("id", orderId);
-
-            if (cancelErr) {
-              console.error("Supabase cancel update error:", cancelErr);
-            } else {
-              console.log(`⚠️ Order ${orderId} marked as Canceled`);
-            }
-          }
-          break;
-        }
-
-        default:
-          console.log(`Unhandled event type: ${event.type}`);
       }
 
-      return res.json({ received: true });
+      if (
+        event.type === "checkout.session.expired" ||
+        event.type === "checkout.session.async_payment_failed"
+      ) {
+        const session = event.data.object;
+        const orderId = session.metadata?.orderId;
+
+        if (orderId) {
+          // ❌ Mark order canceled
+          await supabase
+            .from("orders")
+            .update({ order_status: "Canceled" })
+            .eq("id", orderId);
+
+          console.log("⚠️ Order marked as canceled");
+        }
+      }
+
+      // ✅ Only one final response
+      res.json({ received: true });
     } catch (err) {
-      console.error("Webhook handler error:", err);
-      return res.status(500).json({ error: "Webhook processing failed" });
+      console.error("❌ Webhook handler error:", err.message);
+      res.status(500).send(`Webhook handler failed: ${err.message}`);
     }
   }
 );
