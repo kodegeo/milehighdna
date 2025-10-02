@@ -1,57 +1,40 @@
-// server/src/routes/checkoutRoutes.js
 import express from "express";
 import { processCheckout } from "../utils/checkoutUtils.js";
-import { getShippingFee } from "../utils/shipping.js";
-import fs from "fs";
-import path from "path";
-import { fileURLToPath } from "url";
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-const ratesPath = path.resolve(__dirname, "../../config/shippingRates.json");
-const rates = JSON.parse(fs.readFileSync(ratesPath, "utf-8"));
+import axios from "axios";
 
 const router = express.Router();
 
-// Checkout endpoint
+// Create checkout session
 router.post("/create-checkout", async (req, res) => {
   try {
     const result = await processCheckout(req.body);
+
+    // If checkout session created, trigger confirmation email
+    if (result.url) {
+      try {
+        await axios.post(`${process.env.BACKEND_URL}/api/send-confirmation-email`, {
+          toCustomer: req.body.customerEmail, // must be sent from frontend form
+          toAdmin: "cynthia@milehighdnatesting.com",
+          from: "info@milehighdnatesting.com",
+          subject: "Order Confirmed",
+          orderDetails: {
+            customerName: `${req.body.firstName || ""} ${req.body.lastName || ""}`.trim(),
+            orderNumber: result.orderId || "N/A",
+            productName: req.body.productName || "DNA Test",
+            price: req.body.unitPrice,
+            orderType: req.body.country === "US" ? "domestic" : "international"
+          }
+        });
+        console.log("✅ Confirmation email triggered via Mailgun");
+      } catch (emailErr) {
+        console.error("❌ Error sending confirmation email:", emailErr.response?.data || emailErr.message);
+      }
+    }
+
     res.json(result);
   } catch (err) {
-    console.error("Checkout error:", err);
+    console.error("❌ Checkout error:", err);
     res.status(500).json({ error: "Error creating checkout session" });
-  }
-});
-
-// Shipping fee endpoint with validation
-router.get("/shipping/:type/:country", async (req, res) => {
-  try {
-    const { type, country } = req.params;
-
-    // validate type
-    if (!["domestic", "international"].includes(type)) {
-      return res.status(400).json({
-        error: `Unsupported shipping type: ${type}`,
-        contact: "info@milehighdnatesting.com",
-      });
-    }
-
-    // validate country using uppercase keys
-    const validCountries = Object.keys(rates[type.toUpperCase()]);
-    if (!validCountries.includes(country) && !rates[type.toUpperCase()]["DEFAULT"]) {
-      return res.status(400).json({
-        error: `No shipping rate found for ${country}`,
-        contact: "info@milehighdnatesting.com",
-      });
-    }
-
-    // call utility function
-    const result = await getShippingFee(type, country);
-    res.json(result);
-  } catch (err) {
-    console.error("Shipping error:", err);
-    res.status(500).json({ error: "Error calculating shipping fee" });
   }
 });
 
