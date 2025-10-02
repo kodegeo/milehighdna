@@ -1,11 +1,14 @@
 // server/src/infrastructure/supabaseClient.js
 import { createClient } from "@supabase/supabase-js";
 
-// Use environment variables (configure these in Render)
 const supabaseUrl = process.env.SUPABASE_URL;
-const supabaseServiceKey = process.env.SUPABASE_SERVICE_KEY;
+const supabaseKey =
+  process.env.SUPABASE_SERVICE_ROLE_KEY || process.env.SUPABASE_ANON_KEY;
 
-// Create the Supabase client with the service role key
-const supabase = createClient(supabaseUrl, supabaseServiceKey);
+if (!supabaseUrl || !supabaseKey) {
+  console.error("❌ Missing Supabase environment variables");
+  process.exit(1);
+}
 
-export default supabase;
+// ✅ Export supabase as a named export
+export const supabase = createClient(supabaseUrl, supabaseKey);
