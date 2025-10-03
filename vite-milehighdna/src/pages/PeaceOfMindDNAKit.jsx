@@ -20,13 +20,13 @@ const PeaceOfMindDNAKit = () => {
     // Domestic (US)
     fetch(`${import.meta.env.VITE_API_URL}/api/shipping/rate?country=US`)
       .then((res) => res.json())
-      .then((data) => setDomesticShipping(data.shipping))
+      .then((data) => setDomesticShipping(data.shipping.regular))
       .catch((err) => console.error("Domestic shipping fetch error:", err));
   
     // International (default Canada preview)
     fetch(`${import.meta.env.VITE_API_URL}/api/shipping/rate?country=CA`)
       .then((res) => res.json())
-      .then((data) => setInternationalShipping(data.shipping))
+      .then((data) => setInternationalShipping(data.shipping.regular))
       .catch((err) => console.error("International shipping fetch error:", err));
   }, []);
   
