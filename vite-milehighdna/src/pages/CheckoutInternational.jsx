@@ -48,8 +48,9 @@ const CheckoutInternational = () => {
 
     try {
       const res = await fetch(
-        `${import.meta.env.VITE_API_URL}/api/shipping/international/${selectedCountry}`
+        `${import.meta.env.VITE_API_URL}/api/shipping/rate?country=${selectedCountry}`
       );
+
       const result = await res.json();
       if (result.error) {
         setErrorMessage(`${result.error} Contact: ${result.contact}`);

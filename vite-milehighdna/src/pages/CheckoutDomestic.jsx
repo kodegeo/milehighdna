@@ -39,8 +39,9 @@ const CheckoutDomestic = () => {
     const fetchShipping = async () => {
       try {
         const res = await fetch(
-          `${import.meta.env.VITE_API_URL}/api/shipping/domestic/${country}?method=${shippingMethod}`
+          `${import.meta.env.VITE_API_URL}/api/shipping/rate?country=${country}&method=${shippingMethod}`
         );
+
         if (!res.ok) throw new Error("Failed to fetch shipping rate");
         const { shipping } = await res.json();
         setShippingRate(shipping);
