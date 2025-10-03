@@ -1,5 +1,4 @@
 // /vite-milehighdna/server/src/routes/shipping.js
-
 import express from "express";
 import fs from "fs";
 import path from "path";
@@ -12,6 +11,17 @@ const ratesPath = path.join(process.cwd(), "config/shippingRates.json");
 // Load once at startup
 const shippingRates = JSON.parse(fs.readFileSync(ratesPath, "utf8"));
 
+// Domestic route
+router.get("/domestic", (req, res) => {
+  res.json(shippingRates.DOMESTIC);
+});
+
+// International route
+router.get("/international", (req, res) => {
+  res.json(shippingRates.INTERNATIONAL);
+});
+
+// Fallback: single rate by country
 router.get("/rate", (req, res) => {
   const { country } = req.query;
   let rate;
