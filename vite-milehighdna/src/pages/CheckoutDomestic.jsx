@@ -44,7 +44,8 @@ const CheckoutDomestic = () => {
 
         if (!res.ok) throw new Error("Failed to fetch shipping rate");
         const { shipping } = await res.json();
-        setShippingRate(shipping);
+        setShippingRate(Number(shipping[shippingMethod]) || 0);
+
       } catch (err) {
         console.error("Shipping fetch error:", err);
         // fallback defaults
