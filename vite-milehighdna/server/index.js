@@ -23,6 +23,8 @@ import sendConfirmationRoute from "./src/routes/sendConfirmationRoute.js";
 import shippingRoutes from "./src/routes/shipping.js";
 import checkoutRoutes from "./src/routes/checkoutRoutes.js";
 import healthRoutes from "./src/routes/health.js";
+import sendTestEmailRoute from "./src/routes/sendTestEmailRoute.js";
+
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -44,6 +46,8 @@ app.use("/api", sendConfirmationRoute); // confirmation emails
 app.use("/api/shipping", shippingRoutes);
 app.use("/api", checkoutRoutes);
 app.use("/health", healthRoutes);
+app.use("/api/test-email", sendTestEmailRoute);
+
 
 // ✅ Health check
 app.get("/", (req, res) => {
