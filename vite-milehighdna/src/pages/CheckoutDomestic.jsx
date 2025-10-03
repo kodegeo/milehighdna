@@ -55,9 +55,8 @@ const CheckoutDomestic = () => {
   }, [country, shippingMethod]);
 
   // Totals
-  const shippingTotal = shippingRate * locations;
-  const total = (unitPrice + shippingTotal).toFixed(2);
-
+  const shippingTotal = Number(shippingRate) * Number(locations);
+  const total = (Number(unitPrice) + Number(shippingTotal)).toFixed(2);
 
   const createCheckout = async () => {
     if (!primaryAddress.street || !primaryAddress.city || !primaryAddress.state || !primaryAddress.zipCode) {
@@ -135,7 +134,7 @@ const CheckoutDomestic = () => {
             <strong>Product:</strong> {productName}
           </p>
           <p>
-            <strong>Price:</strong> ${unitPrice.toFixed(2)}
+            <strong>Price:</strong> ${Number(unitPrice).toFixed(2)}
           </p>
 
           {/* Shipping Method */}
@@ -412,7 +411,7 @@ const CheckoutDomestic = () => {
 
           {/* Totals */}
           <p>
-            <strong>Shipping:</strong> ${shippingTotal.toFixed(2)}
+            <strong>Shipping:</strong> ${Number(shippingTotal).toFixed(2)}
           </p>
           <p className="text-lg font-semibold">Total: ${total}</p>
         </div>

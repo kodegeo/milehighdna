@@ -106,7 +106,7 @@ const CheckoutInternational = () => {
     }
   };
 
-  const total = (unitPrice + (dynamicShipping || 0)).toFixed(2);
+  const total = (Number(unitPrice) + Number(dynamicShipping || 0)).toFixed(2);
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -154,7 +154,7 @@ const CheckoutInternational = () => {
                 </div>
                 <div className="flex justify-between">
                   <span className="font-semibold">Price:</span>
-                  <span>${unitPrice.toFixed(2)}</span>
+                  <span>${Number(unitPrice).toFixed(2)}</span>
                 </div>
                 
                 <div className="border-t pt-3 mt-3">
@@ -172,7 +172,7 @@ const CheckoutInternational = () => {
                 {dynamicShipping && (
                   <div className="flex justify-between">
                     <span className="font-semibold">Shipping:</span>
-                    <span>${dynamicShipping.toFixed(2)}</span>
+                    <span>${Number(dynamicShipping).toFixed(2)}</span>
                   </div>
                 )}
                 
