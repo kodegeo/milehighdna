@@ -17,17 +17,19 @@ const PeaceOfMindDNAKit = () => {
 
   // Fetch shipping rates from backend
   useEffect(() => {
-    fetch(`${import.meta.env.VITE_API_URL}/api/shipping/domestic/US`)
+    // Domestic (US)
+    fetch(`${import.meta.env.VITE_API_URL}/api/shipping/rate?country=US`)
       .then((res) => res.json())
       .then((data) => setDomesticShipping(data.shipping))
       .catch((err) => console.error("Domestic shipping fetch error:", err));
-
-    fetch(`${import.meta.env.VITE_API_URL}/api/shipping/international/CA`) // default to Canada preview
+  
+    // International (default Canada preview)
+    fetch(`${import.meta.env.VITE_API_URL}/api/shipping/rate?country=CA`)
       .then((res) => res.json())
       .then((data) => setInternationalShipping(data.shipping))
       .catch((err) => console.error("International shipping fetch error:", err));
   }, []);
-
+  
   const goToDomestic = () => {
     if (!firstName || !lastName || !customerEmail) {
       alert("Please fill in your details before continuing.");
