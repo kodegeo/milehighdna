@@ -116,7 +116,7 @@ const PeaceOfMindDNAKit = () => {
                   At Home DNA Testing Kit
                 </h1>
                 <div className="flex items-center space-x-4 mb-4">
-                  <span className="text-3xl font-bold text-green-600">${price.toFixed(2)}</span>
+                  <span className="text-3xl font-bold text-green-600">${Number(price).toFixed(2)}</span>
                   <span className="text-sm text-gray-500">+ shipping & handling</span>
                 </div>
               </div>
@@ -187,7 +187,7 @@ const PeaceOfMindDNAKit = () => {
                   >
                     <span className="text-lg">
                       {domesticShipping
-                        ? `Order Within U.S. — $${(price + domesticShipping).toFixed(2)}`
+                        ? `Order Within U.S. — $${(Number(price) + Number(domesticShipping)).toFixed(2)}`
                         : "Loading Domestic..."}
                     </span>
                   </button>
@@ -198,7 +198,7 @@ const PeaceOfMindDNAKit = () => {
                   >
                     <span className="text-lg">
                       {internationalShipping
-                        ? `Order Internationally — $${(price + internationalShipping).toFixed(2)}`
+                        ? `Order Internationally — $${(Number(price) + Number(internationalShipping)).toFixed(2)}`
                         : "Loading International..."}
                     </span>
                   </button>
