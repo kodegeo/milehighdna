@@ -26,7 +26,7 @@ const PeaceOfMindDNAKit = () => {
     // International (default Canada preview)
     fetch(`${import.meta.env.VITE_API_URL}/api/shipping/rate?country=CA`)
       .then((res) => res.json())
-      .then((data) => setInternationalShipping(data.shipping.regular))
+      .then((data) => setInternationalShipping(Number(data.shipping?.regular ?? 0)))
       .catch((err) => console.error("International shipping fetch error:", err));
   }, []);
   
@@ -193,11 +193,11 @@ const PeaceOfMindDNAKit = () => {
                   </button>
                   <button
                     onClick={goToInternational}
-                    disabled={!internationalShipping}
+                    disabled={internationalShipping == null}
                     className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-4 px-6 rounded-lg transition-all duration-300 disabled:bg-gray-400 disabled:cursor-not-allowed flex items-center justify-center space-x-2"
                   >
                     <span className="text-lg">
-                      {internationalShipping
+                      {internationalShipping != null
                         ? `Order Internationally — $${(Number(price) + Number(internationalShipping)).toFixed(2)}`
                         : "Loading International..."}
                     </span>
