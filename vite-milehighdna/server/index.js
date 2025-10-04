@@ -26,6 +26,7 @@ import healthRoutes from "./src/routes/health.js";
 import sendTestEmailRoute from "./src/routes/sendTestEmailRoute.js";
 
 
+
 const app = express();
 const PORT = process.env.PORT || 3000;
 
@@ -47,6 +48,7 @@ app.use("/api/shipping", shippingRoutes);
 app.use("/api", checkoutRoutes);
 app.use("/health", healthRoutes);
 app.use("/api/test-email", sendTestEmailRoute);
+app.use("/api/send-confirmation", sendConfirmationRoute);
 
 
 // ✅ Health check

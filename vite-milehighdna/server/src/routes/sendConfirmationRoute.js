@@ -1,9 +1,11 @@
 import express from "express";
 import axios from "axios";
+import { sendConfirmationEmail } from "../controllers/sendConfirmationController.js";
+
 
 const router = express.Router();
 
-router.post("/send-confirmation-email", async (req, res) => {
+router.post("/", async (req, res) => {
   const { toCustomer, toAdmin, from, subject, orderDetails } = req.body;
 
   const mailgunDomain = process.env.MAILGUN_DOMAIN;
