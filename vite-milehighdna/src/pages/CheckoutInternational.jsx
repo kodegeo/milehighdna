@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Helmet } from "react-helmet-async";
 import { useLocation } from "react-router-dom";
+import Select from "react-select";
+import { countries } from "country-region-data";
 
 const CheckoutInternational = () => {
   const location = useLocation();
@@ -10,70 +12,117 @@ const CheckoutInternational = () => {
     customerEmail,
     productName = "Peace of Mind DNA Kit",
     unitPrice = 199,
-    shippingFee,
     country: initialCountry = "CA",
   } = location.state || {};
 
-  const [country, setCountry] = useState(initialCountry);
-  const [dynamicShipping, setDynamicShipping] = useState(shippingFee || null);
-  const [errorMessage, setErrorMessage] = useState(null);
   const [loading, setLoading] = useState(false);
+  const [locations, setLocations] = useState(1);
 
-  const [availableCountries, setAvailableCountries] = useState([]);
+  // Primary
+  const [country1, setCountry1] = useState(initialCountry);
+  const [regions1, setRegions1] = useState([]);
+  const [shipping1, setShipping1] = useState(0);
+  const [primaryAddress, setPrimaryAddress] = useState({
+    street: "",
+    city: "",
+    region: "",
+    postalCode: "",
+  });
+
+  // Secondary
+  const [country2, setCountry2] = useState("US");
+  const [regions2, setRegions2] = useState([]);
+  const [shipping2, setShipping2] = useState(0);
+  const [secondaryAddress, setSecondaryAddress] = useState({
+    street: "",
+    city: "",
+    region: "",
+    postalCode: "",
+  });
+
+  // Field labels
+  const fieldLabels = {
+    US: { region: "State", postal: "ZIP Code" },
+    CA: { region: "Province", postal: "Postal Code" },
+    GB: { region: "County", postal: "Postcode" },
+    AU: { region: "State / Territory", postal: "Postcode" },
+    DE: { region: "Region", postal: "Postal Code" },
+    IN: { region: "State", postal: "PIN Code" },
+  };
+  const getLabels = (c) =>
+    fieldLabels[c] || { region: "State / Region", postal: "Postal Code" };
+
+  const countryOptions = countries.map((c) => ({
+    value: c.countryShortCode,
+    label: c.countryName,
+  }));
+
+  // Load region lists
+  useEffect(() => {
+    const selected = countries.find((c) => c.countryShortCode === country1);
+    setRegions1(
+      selected && selected.regions.length
+        ? selected.regions.map((r) => ({ value: r.shortCode, label: r.name }))
+        : []
+    );
+  }, [country1]);
 
   useEffect(() => {
-    // fetch shipping for initial country
-    handleCountryChange(country);
-  }, []);
+    const selected = countries.find((c) => c.countryShortCode === country2);
+    setRegions2(
+      selected && selected.regions.length
+        ? selected.regions.map((r) => ({ value: r.shortCode, label: r.name }))
+        : []
+    );
+  }, [country2]);
 
-  useEffect(() => {
-    const fetchCountries = async () => {
-      try {
-        const res = await fetch(`${import.meta.env.VITE_API_URL}/api/shipping/countries`);
-        const result = await res.json();
-        setAvailableCountries(result.countries); // backend should return { countries: ["CA", "MX", ...] }
-      } catch (err) {
-        console.error("Failed to fetch country list", err);
-        setAvailableCountries(["CA","MX","GB","DE","IN","AU","BR","ZA"]); // fallback
-      }
-    };
-    fetchCountries();
-  }, []);
-
-  // Fetch shipping fee dynamically if country changes
-  const handleCountryChange = async (selectedCountry) => {
-    setCountry(selectedCountry);
-    setErrorMessage(null);
-    setDynamicShipping(null);
-
+  // Fetch shipping
+  const fetchShipping = async (country, setFn) => {
     try {
       const res = await fetch(
-        `${import.meta.env.VITE_API_URL}/api/shipping/rate?country=${selectedCountry}`
+        `${import.meta.env.VITE_API_URL}/api/shipping/rate?country=${country}`
       );
-
-      const result = await res.json();
-      if (result.error) {
-        setErrorMessage(`${result.error} Contact: ${result.contact}`);
-        setDynamicShipping(50); // fallback
-      } else {
-        setDynamicShipping(result.shipping);
-      }
+      const data = await res.json();
+      const rate =
+        typeof data.shipping === "object"
+          ? Object.values(data.shipping)[0]
+          : Number(data.shipping);
+      setFn(rate || 50);
     } catch (err) {
       console.error("Shipping fetch error:", err);
-      setErrorMessage("Failed to load shipping rate.");
-      setDynamicShipping(50); // fallback
+      setFn(50);
     }
   };
 
-  // Create checkout session
+  useEffect(() => {
+    fetchShipping(country1, setShipping1);
+  }, [country1]);
+
+  useEffect(() => {
+    if (locations === 2) fetchShipping(country2, setShipping2);
+  }, [country2, locations]);
+
+  // Totals
+  const totalShipping =
+    Number(shipping1) + (locations === 2 ? Number(shipping2) : 0);
+  const total = (Number(unitPrice) + Number(totalShipping)).toFixed(2);
+
+  // Validation helper
+  const isComplete = (a) =>
+    a.street && a.city && a.region && a.postalCode;
+
   const createCheckout = async () => {
+    if (!isComplete(primaryAddress)) {
+      alert("Please complete all required fields for the primary address.");
+      return;
+    }
+    if (locations === 2 && !isComplete(secondaryAddress)) {
+      alert("Please complete all required fields for the secondary address.");
+      return;
+    }
+
     setLoading(true);
     try {
-      if (!dynamicShipping) {
-        alert("Please select a valid shipping country.");
-        return;
-      }
-
       const res = await fetch(
         `${import.meta.env.VITE_API_URL}/api/create-checkout`,
         {
@@ -85,16 +134,18 @@ const CheckoutInternational = () => {
             customerEmail,
             productName,
             unitPrice,
-            shippingFee: dynamicShipping,
-            country,
+            shippingFee: totalShipping,
+            country: country1,
             orderSource: "online_international",
+            locations,
+            primaryAddress,
+            secondaryAddress: locations === 2 ? secondaryAddress : null,
           }),
         }
       );
-
       const result = await res.json();
       if (result.url) {
-        window.location.href = result.url; // Stripe redirect
+        window.location.href = result.url;
       } else {
         alert("Checkout failed. Please try again.");
       }
@@ -106,105 +157,169 @@ const CheckoutInternational = () => {
     }
   };
 
-  const total = (Number(unitPrice) + Number(dynamicShipping || 0)).toFixed(2);
-
   return (
     <div className="min-h-screen bg-gray-50">
       <Helmet>
         <title>International Checkout | Mile High DNA</title>
         <meta
           name="description"
-          content="Checkout for international orders with Mile High DNA Testing. Country-based shipping rates included."
+          content="International checkout for Mile High DNA Testing with support for one or two shipping locations."
         />
       </Helmet>
 
-      <div className="max-w-3xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
-        {/* Breadcrumb */}
-        <nav className="mb-8">
-          <ol className="flex items-center space-x-2 text-sm text-gray-500">
-            <li><a href="/" className="hover:text-gray-700">Home</a></li>
-            <li>/</li>
-            <li><a href="/peace-of-mind-kit" className="hover:text-gray-700">Checkout</a></li>
-            <li>/</li>
-            <li><span className="text-gray-900">International</span></li>
-          </ol>
-        </nav>
+      <div className="max-w-3xl mx-auto py-12 px-6 bg-white shadow-lg rounded-xl">
+        <h1 className="text-3xl font-bold text-gray-900 mb-6">
+          International Checkout
+        </h1>
 
-        <div className="bg-white shadow-lg rounded-xl overflow-hidden">
-          <div className="p-8">
-            <h1 className="text-3xl font-bold text-gray-900 mb-6">
-              International Checkout
-            </h1>
+        {/* Summary */}
+        <div className="bg-gray-50 p-6 rounded-lg mb-6 space-y-4">
+          <p><strong>Name:</strong> {firstName} {lastName}</p>
+          <p><strong>Email:</strong> {customerEmail}</p>
+          <p><strong>Product:</strong> {productName}</p>
+          <p><strong>Price:</strong> ${Number(unitPrice).toFixed(2)}</p>
 
-            {/* Order Summary */}
-            <div className="bg-gray-50 p-6 rounded-lg mb-8">
-              <h2 className="text-xl font-semibold text-gray-900 mb-4">Order Summary</h2>
-              <div className="space-y-3 text-gray-700">
-                <div className="flex justify-between">
-                  <span className="font-semibold">Name:</span>
-                  <span>{firstName} {lastName}</span>
-                </div>
-                <div className="flex justify-between">
-                  <span className="font-semibold">Email:</span>
-                  <span>{customerEmail}</span>
-                </div>
-                <div className="flex justify-between">
-                  <span className="font-semibold">Product:</span>
-                  <span>{productName}</span>
-                </div>
-                <div className="flex justify-between">
-                  <span className="font-semibold">Price:</span>
-                  <span>${Number(unitPrice).toFixed(2)}</span>
-                </div>
-                
-                <div className="border-t pt-3 mt-3">
-                  <label className="block font-semibold mb-2">Shipping Country:</label>
-                    <select
-                      value={country}
-                      onChange={(e) => handleCountryChange(e.target.value)}
-                      className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                    >
-                      {availableCountries.map((c) => (
-                        <option key={c} value={c}>{c}</option>
-                      ))}
-                    </select>
-                      </div>
-                {dynamicShipping && (
-                  <div className="flex justify-between">
-                    <span className="font-semibold">Shipping:</span>
-                    <span>${Number(dynamicShipping).toFixed(2)}</span>
-                  </div>
-                )}
-                
-                {errorMessage && (
-                  <div className="bg-red-50 border border-red-200 rounded-lg p-3">
-                    <p className="text-red-600 font-semibold text-sm">{errorMessage}</p>
-                  </div>
-                )}
-
-                <div className="border-t pt-3 mt-3">
-                  <div className="flex justify-between text-lg font-semibold text-gray-900">
-                    <span>Total:</span>
-                    <span>${total}</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="mt-6">
-              <button
-                onClick={createCheckout}
-                disabled={loading || !dynamicShipping}
-                className="w-full bg-green-600 hover:bg-green-700 text-white font-semibold py-4 px-8 rounded-lg transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
-              >
-                {loading ? "Processing..." : "Complete Checkout"}
-              </button>
-            </div>
+          {/* Multi-location toggle */}
+          <div>
+            <label className="flex items-center">
+              <input
+                type="checkbox"
+                checked={locations === 2}
+                onChange={() => setLocations(locations === 1 ? 2 : 1)}
+                className="mr-2"
+              />
+              Ship to two locations
+            </label>
           </div>
+
+          {/* Primary */}
+          <h3 className="text-lg font-semibold text-gray-900 mt-6 mb-4">
+            Primary Shipping Address
+          </h3>
+          <AddressForm
+            address={primaryAddress}
+            setAddress={setPrimaryAddress}
+            country={country1}
+            setCountry={setCountry1}
+            regions={regions1}
+            labels={getLabels(country1)}
+            countryOptions={countryOptions}
+          />
+
+          {/* Secondary */}
+          {locations === 2 && (
+            <>
+              <h3 className="text-lg font-semibold text-gray-900 mt-6 mb-4">
+                Secondary Shipping Address
+              </h3>
+              <AddressForm
+                address={secondaryAddress}
+                setAddress={setSecondaryAddress}
+                country={country2}
+                setCountry={setCountry2}
+                regions={regions2}
+                labels={getLabels(country2)}
+                countryOptions={countryOptions}
+              />
+            </>
+          )}
+
+          <p><strong>Shipping:</strong> ${Number(totalShipping).toFixed(2)}</p>
+          <p className="text-lg font-semibold">Total: ${total}</p>
         </div>
+
+        <button
+          onClick={createCheckout}
+          disabled={loading}
+          className="w-full bg-green-600 hover:bg-green-700 text-white font-semibold py-4 px-8 rounded-lg transition-all duration-300 disabled:opacity-50"
+        >
+          {loading ? "Processing..." : "Complete Checkout"}
+        </button>
       </div>
     </div>
   );
 };
+
+// ✅ Address component
+const AddressForm = ({
+  address,
+  setAddress,
+  country,
+  setCountry,
+  regions,
+  labels,
+  countryOptions,
+}) => (
+  <div className="space-y-3">
+    <div>
+      <label className="block text-sm font-medium text-gray-700 mb-1">
+        Country *
+      </label>
+      <Select
+        options={countryOptions}
+        value={countryOptions.find((opt) => opt.value === country)}
+        onChange={(val) => setCountry(val.value)}
+      />
+    </div>
+    <div>
+      <label className="block text-sm font-medium text-gray-700 mb-1">
+        Street Address *
+      </label>
+      <input
+        type="text"
+        value={address.street}
+        onChange={(e) =>
+          setAddress({ ...address, street: e.target.value })
+        }
+        className="w-full border border-gray-300 rounded-lg px-4 py-2"
+        required
+      />
+    </div>
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
+      <div>
+        <label className="block text-sm font-medium text-gray-700 mb-1">
+          City *
+        </label>
+        <input
+          type="text"
+          value={address.city}
+          onChange={(e) =>
+            setAddress({ ...address, city: e.target.value })
+          }
+          className="w-full border border-gray-300 rounded-lg px-4 py-2"
+          required
+        />
+      </div>
+      <div>
+        <label className="block text-sm font-medium text-gray-700 mb-1">
+          {labels.region} *
+        </label>
+        <Select
+          options={regions}
+          value={regions.find((r) => r.value === address.region)}
+          onChange={(val) =>
+            setAddress({ ...address, region: val?.value || "" })
+          }
+          isClearable
+          placeholder="Select region"
+        />
+      </div>
+      <div>
+        <label className="block text-sm font-medium text-gray-700 mb-1">
+          {labels.postal} *
+        </label>
+        <input
+          type="text"
+          value={address.postalCode}
+          onChange={(e) =>
+            setAddress({ ...address, postalCode: e.target.value })
+          }
+          className="w-full border border-gray-300 rounded-lg px-4 py-2"
+          required
+        />
+      </div>
+    </div>
+  </div>
+);
 
 export default CheckoutInternational;
