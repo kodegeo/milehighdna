@@ -1,4 +1,4 @@
-import { sendOrderConfirmation } from "../utils/sendConfirmation.js";
+import axios from "axios";
 
 /**
  * Controller for sending order confirmation emails.
