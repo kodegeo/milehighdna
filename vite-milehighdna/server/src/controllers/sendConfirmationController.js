@@ -30,7 +30,7 @@ export const handleSendConfirmation = async (req, res) => {
   const mailgunDomain = process.env.MAILGUN_DOMAIN;
   const mailgunApiKey = process.env.MAILGUN_API_KEY;
 
-  const logoUrl = "https://milehighdnatesting.com/images/milehigh-dna-logo.png";
+  const logoUrl = "https://milehighdnatesting.com/images/milehigh-dna-logo-white.png";
 
   // 🧾 Plain text fallback
   const plainText = `
