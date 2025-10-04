@@ -7,14 +7,16 @@ import * as countryRegionData from "country-region-data";
 
 const CheckoutInternational = () => {
   const location = useLocation();
-  const countries =
-  Array.isArray(countryRegionData)
-    ? countryRegionData
-    : Array.isArray(countryRegionData.default)
-    ? countryRegionData.default
-    : Array.isArray(countryRegionData.data)
-    ? countryRegionData.data
-    : [];
+  let countries = [];
+  
+      if (Array.isArray(countryRegionData)) {
+        countries = countryRegionData;
+      } else if (Array.isArray(countryRegionData.default)) {
+        countries = countryRegionData.default;
+      } else if (countryRegionData && typeof countryRegionData === "object") {
+        const values = Object.values(countryRegionData);
+        countries = Array.isArray(values[0]) ? values[0] : [];
+      }
 
   const {
     firstName,
