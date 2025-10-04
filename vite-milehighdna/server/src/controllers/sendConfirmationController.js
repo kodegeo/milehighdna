@@ -1,7 +1,7 @@
 import axios from "axios";
 
 /**
- * Controller for sending order confirmation emails.
+ * Controller for sending detailed order confirmation emails.
  *
  * Expects req.body:
  * {
@@ -10,12 +10,17 @@ import axios from "axios";
  *   from: string,
  *   subject: string,
  *   orderDetails: {
- *     orderId: string,
+ *     orderNumber: string,
+ *     customerName: string,
  *     productName: string,
- *     shippingMethod?: string,
- *     locations?: number,
- *     customerName?: string,
- *     email?: string
+ *     price: string,
+ *     shippingFee: string,
+ *     total: string,
+ *     orderType: string,
+ *     shippingMethod: string,
+ *     locations: number,
+ *     primaryAddress: { street, city, state, zip },
+ *     secondaryAddress?: { street, city, state, zip }
  *   }
  * }
  */
@@ -27,16 +32,32 @@ export const handleSendConfirmation = async (req, res) => {
 
   const logoUrl = "https://milehighdnatesting.com/images/milehigh-dna-logo.png";
 
+  // 🧾 Plain text fallback
   const plainText = `
 Order Confirmation
------------------
+-------------------------
 Customer: ${orderDetails.customerName}
-Order #: ${orderDetails.orderNumber}
+Order #: ${orderDetails.orderNumber || "N/A"}
 Product: ${orderDetails.productName}
 Price: $${orderDetails.price}
+Shipping Fee: $${orderDetails.shippingFee}
+Total: $${orderDetails.total}
 Type: ${orderDetails.orderType}
+Shipping Method: ${orderDetails.shippingMethod}
+Locations: ${orderDetails.locations}
+
+Primary Shipping Address:
+${orderDetails.primaryAddress.street || ""}
+${orderDetails.primaryAddress.city || ""}, ${orderDetails.primaryAddress.state || ""} ${orderDetails.primaryAddress.zip || ""}
+
+${
+  orderDetails.secondaryAddress
+    ? `Secondary Shipping Address:\n${orderDetails.secondaryAddress.street || ""}\n${orderDetails.secondaryAddress.city || ""}, ${orderDetails.secondaryAddress.state || ""} ${orderDetails.secondaryAddress.zip || ""}`
+    : ""
+}
   `;
 
+  // 💌 HTML version (nicely formatted for email)
   const htmlBody = `
   <div style="font-family: Arial, sans-serif; max-width: 600px; margin: auto; border: 1px solid #ddd; border-radius: 8px; overflow: hidden;">
     <div style="background-color: #244669; color: #fff; text-align: center; padding: 20px;">
@@ -44,14 +65,31 @@ Type: ${orderDetails.orderType}
     </div>
     <div style="padding: 20px;">
       <h2 style="color: #244669; margin-top: 0;">Order Confirmation</h2>
-      <p>Thank you for your order. Here are your details:</p>
+      <p>Thank you for your order, <strong>${orderDetails.customerName}</strong>!</p>
+      <p>Below are your order details:</p>
       <table style="width: 100%; border-collapse: collapse; margin-top: 10px;">
-        <tr><td><strong>Customer</strong></td><td>${orderDetails.customerName}</td></tr>
-        <tr><td><strong>Order #</strong></td><td>${orderDetails.orderNumber}</td></tr>
+        <tr><td><strong>Order #</strong></td><td>${orderDetails.orderNumber || "N/A"}</td></tr>
         <tr><td><strong>Product</strong></td><td>${orderDetails.productName}</td></tr>
         <tr><td><strong>Price</strong></td><td>$${orderDetails.price}</td></tr>
+        <tr><td><strong>Shipping Fee</strong></td><td>$${orderDetails.shippingFee}</td></tr>
+        <tr><td><strong>Total</strong></td><td><strong>$${orderDetails.total}</strong></td></tr>
         <tr><td><strong>Type</strong></td><td>${orderDetails.orderType}</td></tr>
+        <tr><td><strong>Shipping Method</strong></td><td>${orderDetails.shippingMethod}</td></tr>
+        <tr><td><strong>Locations</strong></td><td>${orderDetails.locations}</td></tr>
       </table>
+
+      <h3 style="margin-top: 20px; color: #244669;">Primary Shipping Address</h3>
+      <p>${orderDetails.primaryAddress.street || ""}<br/>
+      ${orderDetails.primaryAddress.city || ""}, ${orderDetails.primaryAddress.state || ""} ${orderDetails.primaryAddress.zip || ""}</p>
+
+      ${
+        orderDetails.secondaryAddress
+          ? `<h3 style="margin-top: 20px; color: #244669;">Secondary Shipping Address</h3>
+             <p>${orderDetails.secondaryAddress.street || ""}<br/>
+             ${orderDetails.secondaryAddress.city || ""}, ${orderDetails.secondaryAddress.state || ""} ${orderDetails.secondaryAddress.zip || ""}</p>`
+          : ""
+      }
+
       <p style="margin-top: 20px;">We’ll contact you soon with next steps. If you have any questions, please reply to this email.</p>
       <p style="color: #244669; font-weight: bold;">Thank you for choosing Mile High DNA Testing.</p>
     </div>
@@ -69,10 +107,11 @@ Type: ${orderDetails.orderType}
         to: `${toCustomer}, ${toAdmin}`,
         subject,
         text: plainText,
-        html: htmlBody
+        html: htmlBody,
+        "h:Reply-To": "info@milehighdnatesting.com",
       }),
       {
-        auth: { username: "api", password: mailgunApiKey }
+        auth: { username: "api", password: mailgunApiKey },
       }
     );
 
