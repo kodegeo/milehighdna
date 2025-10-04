@@ -15,13 +15,14 @@ const CheckoutInternational = () => {
     country: initialCountry = "CA",
   } = location.state || {};
 
-  const [loading, setLoading] = useState(false);
-  const [locations, setLocations] = useState(1);
+  // Shipping state
+  const [shippingMethod, setShippingMethod] = useState("regular"); // "regular" | "overnight"
+  const [locations, setLocations] = useState(1); // 1 | 2
+  const [shippingRate, setShippingRate] = useState(0);
 
-  // Primary
+  // Primary Address (International)
   const [country1, setCountry1] = useState(initialCountry);
   const [regions1, setRegions1] = useState([]);
-  const [shipping1, setShipping1] = useState(0);
   const [primaryAddress, setPrimaryAddress] = useState({
     street: "",
     city: "",
@@ -29,18 +30,19 @@ const CheckoutInternational = () => {
     postalCode: "",
   });
 
-  // Secondary
+  // Secondary Address (US)
   const [country2, setCountry2] = useState("US");
   const [regions2, setRegions2] = useState([]);
-  const [shipping2, setShipping2] = useState(0);
   const [secondaryAddress, setSecondaryAddress] = useState({
     street: "",
     city: "",
-    region: "",
-    postalCode: "",
+    state: "",
+    zipCode: ""
   });
 
-  // Field labels
+  const [loading, setLoading] = useState(false);
+
+  // Field labels for international addresses
   const fieldLabels = {
     US: { region: "State", postal: "ZIP Code" },
     CA: { region: "Province", postal: "Postal Code" },
@@ -76,48 +78,39 @@ const CheckoutInternational = () => {
     );
   }, [country2]);
 
-  // Fetch shipping
-  const fetchShipping = async (country, setFn) => {
-    try {
-      const res = await fetch(
-        `${import.meta.env.VITE_API_URL}/api/shipping/rate?country=${country}`
-      );
-      const data = await res.json();
-      const rate =
-        typeof data.shipping === "object"
-          ? Object.values(data.shipping)[0]
-          : Number(data.shipping);
-      setFn(rate || 50);
-    } catch (err) {
-      console.error("Shipping fetch error:", err);
-      setFn(50);
-    }
-  };
-
+  // ✅ Fetch shipping dynamically from backend
   useEffect(() => {
-    fetchShipping(country1, setShipping1);
-  }, [country1]);
+    const fetchShipping = async () => {
+      try {
+        const res = await fetch(
+          `${import.meta.env.VITE_API_URL}/api/shipping/rate?country=${country1}&method=${shippingMethod}`
+        );
 
-  useEffect(() => {
-    if (locations === 2) fetchShipping(country2, setShipping2);
-  }, [country2, locations]);
+        if (!res.ok) throw new Error("Failed to fetch shipping rate");
+        const { shipping } = await res.json();
+        setShippingRate(Number(shipping[shippingMethod]) || 0);
+
+      } catch (err) {
+        console.error("Shipping fetch error:", err);
+        // fallback defaults
+        setShippingRate(shippingMethod === "regular" ? 50 : 100);
+      }
+    };
+    fetchShipping();
+  }, [country1, shippingMethod]);
 
   // Totals
-  const totalShipping =
-    Number(shipping1) + (locations === 2 ? Number(shipping2) : 0);
-  const total = (Number(unitPrice) + Number(totalShipping)).toFixed(2);
-
-  // Validation helper
-  const isComplete = (a) =>
-    a.street && a.city && a.region && a.postalCode;
+  const shippingTotal = Number(shippingRate) * Number(locations);
+  const total = (Number(unitPrice) + Number(shippingTotal)).toFixed(2);
 
   const createCheckout = async () => {
-    if (!isComplete(primaryAddress)) {
-      alert("Please complete all required fields for the primary address.");
+    if (!primaryAddress.street || !primaryAddress.city || !primaryAddress.region || !primaryAddress.postalCode) {
+      alert("Please complete all primary shipping address fields.");
       return;
     }
-    if (locations === 2 && !isComplete(secondaryAddress)) {
-      alert("Please complete all required fields for the secondary address.");
+    
+    if (locations === 2 && (!secondaryAddress.street || !secondaryAddress.city || !secondaryAddress.state || !secondaryAddress.zipCode)) {
+      alert("Please complete all secondary shipping address fields.");
       return;
     }
 
@@ -134,18 +127,20 @@ const CheckoutInternational = () => {
             customerEmail,
             productName,
             unitPrice,
-            shippingFee: totalShipping,
+            shippingFee: shippingTotal,
             country: country1,
             orderSource: "online_international",
+            shippingMethod,
             locations,
             primaryAddress,
             secondaryAddress: locations === 2 ? secondaryAddress : null,
           }),
         }
       );
+
       const result = await res.json();
       if (result.url) {
-        window.location.href = result.url;
+        window.location.href = result.url; // Stripe redirect
       } else {
         alert("Checkout failed. Please try again.");
       }
@@ -163,7 +158,7 @@ const CheckoutInternational = () => {
         <title>International Checkout | Mile High DNA</title>
         <meta
           name="description"
-          content="International checkout for Mile High DNA Testing with support for one or two shipping locations."
+          content="International checkout for Mile High DNA Testing. Choose shipping method and location."
         />
       </Helmet>
 
@@ -172,14 +167,40 @@ const CheckoutInternational = () => {
           International Checkout
         </h1>
 
-        {/* Summary */}
+        {/* Order Summary */}
         <div className="bg-gray-50 p-6 rounded-lg mb-6 space-y-4">
-          <p><strong>Name:</strong> {firstName} {lastName}</p>
-          <p><strong>Email:</strong> {customerEmail}</p>
-          <p><strong>Product:</strong> {productName}</p>
-          <p><strong>Price:</strong> ${Number(unitPrice).toFixed(2)}</p>
+          <p>
+            <strong>Name:</strong> {firstName} {lastName}
+          </p>
+          <p>
+            <strong>Email:</strong> {customerEmail}
+          </p>
+          <p>
+            <strong>Product:</strong> {productName}
+          </p>
+          <p>
+            <strong>Price:</strong> ${Number(unitPrice).toFixed(2)}
+          </p>
 
-          {/* Multi-location toggle */}
+          {/* Shipping Method */}
+          <div>
+            <label className="block font-semibold mb-2">Shipping Method:</label>
+            <div className="space-y-2">
+              <label className="flex items-center">
+                <input
+                  type="radio"
+                  name="shippingMethod"
+                  value="regular"
+                  checked={shippingMethod === "regular"}
+                  onChange={(e) => setShippingMethod(e.target.value)}
+                  className="mr-2"
+                />
+                Regular Mail (${shippingRate})
+              </label>
+            </div>
+          </div>
+
+          {/* Multiple Locations */}
           <div>
             <label className="flex items-center">
               <input
@@ -192,39 +213,36 @@ const CheckoutInternational = () => {
             </label>
           </div>
 
-          {/* Primary */}
-          <h3 className="text-lg font-semibold text-gray-900 mt-6 mb-4">
-            Primary Shipping Address
-          </h3>
-          <AddressForm
-            address={primaryAddress}
-            setAddress={setPrimaryAddress}
-            country={country1}
-            setCountry={setCountry1}
-            regions={regions1}
-            labels={getLabels(country1)}
-            countryOptions={countryOptions}
-          />
+           {/* Address Inputs */}
+           <div className="space-y-6">
+             <div>
+               <h3 className="text-lg font-semibold text-gray-900 mb-4">Primary Shipping Address (International)</h3>
+               <InternationalAddressForm
+                 address={primaryAddress}
+                 setAddress={setPrimaryAddress}
+                 country={country1}
+                 setCountry={setCountry1}
+                 regions={regions1}
+                 labels={getLabels(country1)}
+                 countryOptions={countryOptions}
+               />
+             </div>
 
-          {/* Secondary */}
-          {locations === 2 && (
-            <>
-              <h3 className="text-lg font-semibold text-gray-900 mt-6 mb-4">
-                Secondary Shipping Address
-              </h3>
-              <AddressForm
-                address={secondaryAddress}
-                setAddress={setSecondaryAddress}
-                country={country2}
-                setCountry={setCountry2}
-                regions={regions2}
-                labels={getLabels(country2)}
-                countryOptions={countryOptions}
-              />
-            </>
-          )}
+             {locations === 2 && (
+               <div>
+                 <h3 className="text-lg font-semibold text-gray-900 mb-4">Secondary Shipping Address (US)</h3>
+                 <USAddressForm
+                   address={secondaryAddress}
+                   setAddress={setSecondaryAddress}
+                 />
+               </div>
+             )}
+           </div>
 
-          <p><strong>Shipping:</strong> ${Number(totalShipping).toFixed(2)}</p>
+          {/* Totals */}
+          <p>
+            <strong>Shipping:</strong> ${Number(shippingTotal).toFixed(2)}
+          </p>
           <p className="text-lg font-semibold">Total: ${total}</p>
         </div>
 
@@ -240,8 +258,8 @@ const CheckoutInternational = () => {
   );
 };
 
-// ✅ Address component
-const AddressForm = ({
+// ✅ International Address component
+const InternationalAddressForm = ({
   address,
   setAddress,
   country,
@@ -259,6 +277,8 @@ const AddressForm = ({
         options={countryOptions}
         value={countryOptions.find((opt) => opt.value === country)}
         onChange={(val) => setCountry(val.value)}
+        className="react-select-container"
+        classNamePrefix="react-select"
       />
     </div>
     <div>
@@ -271,7 +291,8 @@ const AddressForm = ({
         onChange={(e) =>
           setAddress({ ...address, street: e.target.value })
         }
-        className="w-full border border-gray-300 rounded-lg px-4 py-2"
+        className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+        placeholder="123 Main Street"
         required
       />
     </div>
@@ -286,7 +307,8 @@ const AddressForm = ({
           onChange={(e) =>
             setAddress({ ...address, city: e.target.value })
           }
-          className="w-full border border-gray-300 rounded-lg px-4 py-2"
+          className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+          placeholder="Toronto"
           required
         />
       </div>
@@ -302,6 +324,8 @@ const AddressForm = ({
           }
           isClearable
           placeholder="Select region"
+          className="react-select-container"
+          classNamePrefix="react-select"
         />
       </div>
       <div>
@@ -314,7 +338,119 @@ const AddressForm = ({
           onChange={(e) =>
             setAddress({ ...address, postalCode: e.target.value })
           }
-          className="w-full border border-gray-300 rounded-lg px-4 py-2"
+          className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+          placeholder="M5H 2N2"
+          required
+        />
+      </div>
+    </div>
+  </div>
+);
+
+// ✅ US Address component (matches domestic structure)
+const USAddressForm = ({ address, setAddress }) => (
+  <div className="space-y-3">
+    <div>
+      <label className="block text-sm font-medium text-gray-700 mb-1">
+        Street Address *
+      </label>
+      <input
+        type="text"
+        value={address.street}
+        onChange={(e) => setAddress({...address, street: e.target.value})}
+        className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+        placeholder="123 Main Street"
+        required
+      />
+    </div>
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
+      <div>
+        <label className="block text-sm font-medium text-gray-700 mb-1">
+          City *
+        </label>
+        <input
+          type="text"
+          value={address.city}
+          onChange={(e) => setAddress({...address, city: e.target.value})}
+          className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+          placeholder="Denver"
+          required
+        />
+      </div>
+      <div>
+        <label className="block text-sm font-medium text-gray-700 mb-1">
+          State *
+        </label>
+        <select
+          value={address.state}
+          onChange={(e) => setAddress({...address, state: e.target.value})}
+          className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+          required
+        >
+          <option value="">Select State</option>
+          <option value="AL">Alabama</option>
+          <option value="AK">Alaska</option>
+          <option value="AZ">Arizona</option>
+          <option value="AR">Arkansas</option>
+          <option value="CA">California</option>
+          <option value="CO">Colorado</option>
+          <option value="CT">Connecticut</option>
+          <option value="DE">Delaware</option>
+          <option value="FL">Florida</option>
+          <option value="GA">Georgia</option>
+          <option value="HI">Hawaii</option>
+          <option value="ID">Idaho</option>
+          <option value="IL">Illinois</option>
+          <option value="IN">Indiana</option>
+          <option value="IA">Iowa</option>
+          <option value="KS">Kansas</option>
+          <option value="KY">Kentucky</option>
+          <option value="LA">Louisiana</option>
+          <option value="ME">Maine</option>
+          <option value="MD">Maryland</option>
+          <option value="MA">Massachusetts</option>
+          <option value="MI">Michigan</option>
+          <option value="MN">Minnesota</option>
+          <option value="MS">Mississippi</option>
+          <option value="MO">Missouri</option>
+          <option value="MT">Montana</option>
+          <option value="NE">Nebraska</option>
+          <option value="NV">Nevada</option>
+          <option value="NH">New Hampshire</option>
+          <option value="NJ">New Jersey</option>
+          <option value="NM">New Mexico</option>
+          <option value="NY">New York</option>
+          <option value="NC">North Carolina</option>
+          <option value="ND">North Dakota</option>
+          <option value="OH">Ohio</option>
+          <option value="OK">Oklahoma</option>
+          <option value="OR">Oregon</option>
+          <option value="PA">Pennsylvania</option>
+          <option value="RI">Rhode Island</option>
+          <option value="SC">South Carolina</option>
+          <option value="SD">South Dakota</option>
+          <option value="TN">Tennessee</option>
+          <option value="TX">Texas</option>
+          <option value="UT">Utah</option>
+          <option value="VT">Vermont</option>
+          <option value="VA">Virginia</option>
+          <option value="WA">Washington</option>
+          <option value="WV">West Virginia</option>
+          <option value="WI">Wisconsin</option>
+          <option value="WY">Wyoming</option>
+        </select>
+      </div>
+      <div>
+        <label className="block text-sm font-medium text-gray-700 mb-1">
+          ZIP Code *
+        </label>
+        <input
+          type="text"
+          value={address.zipCode}
+          onChange={(e) => setAddress({...address, zipCode: e.target.value})}
+          className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+          placeholder="80202"
+          pattern="[0-9]{5}(-[0-9]{4})?"
           required
         />
       </div>
