@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Helmet } from "react-helmet-async";
 import { useLocation } from "react-router-dom";
 import Select from "react-select";
-import { countries } from "country-region-data";
+import countryRegionData from "country-region-data";
 
 const CheckoutInternational = () => {
   const location = useLocation();
@@ -54,7 +54,7 @@ const CheckoutInternational = () => {
   const getLabels = (c) =>
     fieldLabels[c] || { region: "State / Region", postal: "Postal Code" };
 
-  const countryOptions = countries.map((c) => ({
+  const countryOptions = countryRegionData.map((c) => ({
     value: c.countryShortCode,
     label: c.countryName,
   }));
