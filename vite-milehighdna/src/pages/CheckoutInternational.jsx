@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Helmet } from "react-helmet-async";
 import { useLocation } from "react-router-dom";
 import Select from "react-select";
-import * as countryRegionData from "country-region-data";
+import countryRegionData from "country-region-data";
 
 
 const CheckoutInternational = () => {
