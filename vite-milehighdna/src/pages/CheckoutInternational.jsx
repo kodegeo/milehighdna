@@ -117,13 +117,15 @@ const CheckoutInternational = () => {
         } else {
           // international structure
           const intlRate = shippingRates?.INTERNATIONAL?.[country1];
-          if (intlRate && Number(intlRate) > 0) {
-            localRate = Number(intlRate);
+          if (typeof intlRate === "number" && intlRate > 0) {
+            localRate = intlRate; // flat rate from file
+          } else if (intlRate && typeof intlRate === "object" && intlRate[shippingMethod]) {
+            // (future-proof) if you later switch to nested structure
+            localRate = Number(intlRate[shippingMethod]);
           } else {
-            // fallback default
             localRate = shippingMethod === "regular" ? 50 : 100;
           }
-        }
+                  }
   
         setShippingRate(localRate);
       } catch (err) {
