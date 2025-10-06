@@ -5,83 +5,160 @@
   <!-- Home -->
   <url>
     <loc>https://milehighdnatesting.com/</loc>
+    <lastmod>2025-01-27T00:00:00Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en-us" href="https://milehighdnatesting.com/" />
     <xhtml:link rel="alternate" hreflang="es-us" href="https://milehighdnatesting.com/es" />
   </url>
 
-  <!-- About -->
+  <!-- Service Pages (Priority 0.8) -->
   <url>
-    <loc>https://milehighdnatesting.com/about</loc>
-    <xhtml:link rel="alternate" hreflang="en-us" href="https://milehighdnatesting.com/about" />
-    <xhtml:link rel="alternate" hreflang="es-us" href="https://milehighdnatesting.com/es/sobre-nosotros" />
+    <loc>https://milehighdnatesting.com/products/peace-of-mind-dna-kit</loc>
+    <lastmod>2025-01-27T00:00:00Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
 
-  <!-- Prenatal DNA Test -->
   <url>
-    <loc>https://milehighdnatesting.com/prenatal-dna-test</loc>
-    <xhtml:link rel="alternate" hreflang="en-us" href="https://milehighdnatesting.com/prenatal-dna-test" />
-    <xhtml:link rel="alternate" hreflang="es-us" href="https://milehighdnatesting.com/es/prueba-prenatal" />
+    <loc>https://milehighdnatesting.com/schedule</loc>
+    <lastmod>2025-01-27T00:00:00Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
 
-  <!-- Legal Paternity -->
   <url>
-    <loc>https://milehighdnatesting.com/legal-paternity-tests</loc>
-    <xhtml:link rel="alternate" hreflang="en-us" href="https://milehighdnatesting.com/legal-paternity-tests" />
-    <xhtml:link rel="alternate" hreflang="es-us" href="https://milehighdnatesting.com/es/prueba-de-paternidad-legal" />
+    <loc>https://milehighdnatesting.com/peace-of-mind-paternity-test</loc>
+    <lastmod>2025-01-27T00:00:00Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
 
-  <!-- Immigration -->
   <url>
-    <loc>https://milehighdnatesting.com/immigration-dna-tests</loc>
-    <xhtml:link rel="alternate" hreflang="en-us" href="https://milehighdnatesting.com/immigration-dna-tests" />
-    <xhtml:link rel="alternate" hreflang="es-us" href="https://milehighdnatesting.com/es/prueba-de-inmigracion" />
+    <loc>https://milehighdnatesting.com/legal-dna-tests</loc>
+    <lastmod>2025-01-27T00:00:00Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
 
-  <!-- Grandparentage -->
+  <url>
+    <loc>https://milehighdnatesting.com/prenatal-dna-tests</loc>
+    <lastmod>2025-01-27T00:00:00Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://milehighdnatesting.com/family-relationship-dna</loc>
+    <lastmod>2025-01-27T00:00:00Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
   <url>
     <loc>https://milehighdnatesting.com/grandparentage-dna-tests</loc>
+    <lastmod>2025-01-27T00:00:00Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-us" href="https://milehighdnatesting.com/grandparentage-dna-tests" />
     <xhtml:link rel="alternate" hreflang="es-us" href="https://milehighdnatesting.com/es/prueba-de-abuelidad" />
   </url>
 
-  <!-- Siblingship -->
   <url>
     <loc>https://milehighdnatesting.com/siblingship-dna-tests</loc>
+    <lastmod>2025-01-27T00:00:00Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-us" href="https://milehighdnatesting.com/siblingship-dna-tests" />
     <xhtml:link rel="alternate" hreflang="es-us" href="https://milehighdnatesting.com/es/prueba-de-hermanos" />
   </url>
 
-  <!-- Appointments -->
-  <url>
-    <loc>https://milehighdnatesting.com/appointments</loc>
-    <xhtml:link rel="alternate" hreflang="en-us" href="https://milehighdnatesting.com/appointments" />
-    <xhtml:link rel="alternate" hreflang="es-us" href="https://milehighdnatesting.com/es/programar-cita" />
-  </url>
-
-  <!-- Book Appointment -->
-  <url>
-    <loc>https://milehighdnatesting.com/book-appointment</loc>
-    <xhtml:link rel="alternate" hreflang="en-us" href="https://milehighdnatesting.com/book-appointment" />
-    <xhtml:link rel="alternate" hreflang="es-us" href="https://milehighdnatesting.com/es/reservar-cita" />
-  </url>
-
-  <!-- FAQ -->
-  <url>
-    <loc>https://milehighdnatesting.com/faq</loc>
-    <xhtml:link rel="alternate" hreflang="en-us" href="https://milehighdnatesting.com/faq" />
-    <xhtml:link rel="alternate" hreflang="es-us" href="https://milehighdnatesting.com/es/preguntas-frecuentes" />
-  </url>
-
-  <!-- Results -->
   <url>
     <loc>https://milehighdnatesting.com/get-results</loc>
+    <lastmod>2025-01-27T00:00:00Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-us" href="https://milehighdnatesting.com/get-results" />
     <xhtml:link rel="alternate" hreflang="es-us" href="https://milehighdnatesting.com/es/consultar-resultados" />
   </url>
 
-  <!-- AABB Accreditation -->
+  <!-- Information Pages (Priority 0.6) -->
+  <url>
+    <loc>https://milehighdnatesting.com/contact</loc>
+    <lastmod>2025-01-27T00:00:00Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://milehighdnatesting.com/faq</loc>
+    <lastmod>2025-01-27T00:00:00Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://milehighdnatesting.com/faq" />
+    <xhtml:link rel="alternate" hreflang="es-us" href="https://milehighdnatesting.com/es/preguntas-frecuentes" />
+  </url>
+
+  <url>
+    <loc>https://milehighdnatesting.com/about</loc>
+    <lastmod>2025-01-27T00:00:00Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://milehighdnatesting.com/about" />
+    <xhtml:link rel="alternate" hreflang="es-us" href="https://milehighdnatesting.com/es/sobre-nosotros" />
+  </url>
+
+  <!-- Additional Service Pages -->
+  <url>
+    <loc>https://milehighdnatesting.com/prenatal-dna-test</loc>
+    <lastmod>2025-01-27T00:00:00Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://milehighdnatesting.com/prenatal-dna-test" />
+    <xhtml:link rel="alternate" hreflang="es-us" href="https://milehighdnatesting.com/es/prueba-prenatal" />
+  </url>
+
+  <url>
+    <loc>https://milehighdnatesting.com/legal-paternity-tests</loc>
+    <lastmod>2025-01-27T00:00:00Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://milehighdnatesting.com/legal-paternity-tests" />
+    <xhtml:link rel="alternate" hreflang="es-us" href="https://milehighdnatesting.com/es/prueba-de-paternidad-legal" />
+  </url>
+
+  <url>
+    <loc>https://milehighdnatesting.com/immigration-dna-tests</loc>
+    <lastmod>2025-01-27T00:00:00Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://milehighdnatesting.com/immigration-dna-tests" />
+    <xhtml:link rel="alternate" hreflang="es-us" href="https://milehighdnatesting.com/es/prueba-de-inmigracion" />
+  </url>
+
+  <url>
+    <loc>https://milehighdnatesting.com/appointments</loc>
+    <lastmod>2025-01-27T00:00:00Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://milehighdnatesting.com/appointments" />
+    <xhtml:link rel="alternate" hreflang="es-us" href="https://milehighdnatesting.com/es/programar-cita" />
+  </url>
+
+  <url>
+    <loc>https://milehighdnatesting.com/book-appointment</loc>
+    <lastmod>2025-01-27T00:00:00Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://milehighdnatesting.com/book-appointment" />
+    <xhtml:link rel="alternate" hreflang="es-us" href="https://milehighdnatesting.com/es/reservar-cita" />
+  </url>
+
   <url>
     <loc>https://milehighdnatesting.com/aabb-accreditation</loc>
+    <lastmod>2025-01-27T00:00:00Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en-us" href="https://milehighdnatesting.com/aabb-accreditation" />
     <xhtml:link rel="alternate" hreflang="es-us" href="https://milehighdnatesting.com/es/aabb-accreditation" />
   </url>

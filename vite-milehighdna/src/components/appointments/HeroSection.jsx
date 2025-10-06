@@ -22,18 +22,10 @@ const HeroSection = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <a
-              href="https://calendly.com/milehighdnatesting/30-minute-dna-test-appointment"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-brand-primary text-white px-6 py-3 rounded-xl shadow hover:bg-brand-hover transition"
-            >
-              Schedule Test
-            </a>
-            <a
                 href="tel:+17209009342"
                 className="btn-secondary bg-white text-blue-700 font-bold py-3 px-6 rounded shadow hover:bg-gray-100"
               >
-                Call Now
+                Call Today
               </a>
            </div>
         </div>

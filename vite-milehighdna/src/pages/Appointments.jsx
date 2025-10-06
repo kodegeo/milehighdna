@@ -26,7 +26,9 @@ const Appointments = () => {
       title="Book a DNA Test or Contact Our Team | Mile High DNA | Denver, Aurora, Lakewood"
       subtitle="Schedule an appointment online or speak with a DNA specialist. We offer paternity, immigration, siblingship, and grandparentage testing — with flexible and same-day availability."
       />
-      <FreeConsultationSection />
+
+
+
       <ScheduleTestSection />
       <ServingColorado />
       <CallToAction />

@@ -9,7 +9,7 @@ const services = [
   {
     name: 'Non Legal Paternity Testing',
     description: 'Confirm biological parenthood for personal \n reasons.',
-    link: 'https://calendly.com/milehighdnatesting/legal-paternity-test',
+    link: 'https://calendly.com/milehighdnatesting/non-legal-paternity-test',
   },
   {
     name: 'Legal Prenatal Paternity Testing',

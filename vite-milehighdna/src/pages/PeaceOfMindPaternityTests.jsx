@@ -34,10 +34,10 @@ const PeaceOfMindPaternityPage = () => {
               Perfect for personal confirmation and family reassurance.
             </p>
             <a
-              href="/products"
+              href="/products/peace-of-mind-dna-kit"
               className="bg-blue-600 text-white px-8 py-4 rounded-xl shadow-lg hover:bg-blue-700 transition font-semibold text-lg inline-block"
             >
-              View Kit Options
+              View Paternity Test Kit
             </a>
           </div>
           <div className="flex-1 flex justify-center">
@@ -103,7 +103,7 @@ const PeaceOfMindPaternityPage = () => {
               <p className="text-3xl font-bold text-green-600 mb-4">$249</p>
               <p className="text-gray-600 mb-4">Schedule an appointment <br />at our testing location</p>
               <a
-                href="/schedule"
+                href="https://calendly.com/milehighdnatesting/non-legal-paternity-test"
                 className="bg-green-600 text-white px-6 py-3 rounded-xl shadow-lg hover:bg-green-700 transition font-semibold text-lg inline-block w-full"
               >
                 Schedule Appointment

@@ -35,7 +35,13 @@ import CheckoutDomestic from './pages/CheckoutDomestic';
 import CheckoutInternational from './pages/CheckoutInternational';
 import PeaceOfMindDNAKit from './pages/PeaceOfMindDNAKit';
 import Confirmation from './pages/Confirmation';
-
+import FamilyRelationshipDNA from './pages/FamilyRelationshipDNA';
+import MileHighDNACorner from './pages/MileHighDNACorner';
+import PrenatalDNACost from './pages/mile-high-dna-corner/PrenatalDNACost';
+import PrenatalDNAGuide from './pages/mile-high-dna-corner/PrenatalDNAGuide';
+import LegalVsNonLegal from './pages/mile-high-dna-corner/LegalVsNonLegal';
+import HomeDNATestAccuracy from './pages/mile-high-dna-corner/HomeDNATestAccuracy';
+import AnswersMatterMost from './pages/mile-high-dna-corner/AnswersMatterMost';
 
 // Spanish imports
 import HomePageEs from './pages/es/HomePageEs';
@@ -127,6 +133,13 @@ function AppLayout() {
             <Route path="/checkout-international" element={<CheckoutInternational />} />
             <Route path="/products/peace-of-mind-dna-kit" element={<PeaceOfMindDNAKit />} />
             <Route path="/confirmation" element={<Confirmation />} />
+            <Route path="/family-relationship-dna" element={<FamilyRelationshipDNA />} />
+            <Route path="/mile-high-dna-corner" element={<MileHighDNACorner />} />
+            <Route path="/mile-high-dna-corner/prenatal-dna-cost-guide" element={<PrenatalDNAGuide />} />
+            <Route path="/mile-high-dna-corner/how-much-does-a-prenatal-dna-test-cost" element={<PrenatalDNACost />} />
+            <Route path="/mile-high-dna-corner/legal-vs-non-legal-dna-testing-guide" element={<LegalVsNonLegal />} />
+            <Route path="/mile-high-dna-corner/how-reliable-and-accurate-are-home-dna-tests" element={<HomeDNATestAccuracy />} />
+            <Route path="/mile-high-dna-corner/family-relationship-dna-testing-denver" element={<AnswersMatterMost />} />
 
             {/* English Fallback Route - must be last */}
             <Route path="*" element={<Navigate to="/" replace />} />

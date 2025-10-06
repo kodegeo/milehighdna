@@ -56,8 +56,22 @@ const Navigation = () => {
                         to="/legal-paternity-tests"
                         className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" 
                     >
-                        Paternity Testing
+                        Legal Paternity DNA Testing
                     </Link>
+                    <Link
+                        to="/peace-of-mind-paternity-tests"
+                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                    >
+                        Non Legal Paternity DNA Testing
+                    </Link> 
+
+                    <Link
+                        to="/prenatal-dna-test"
+                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                    >
+                        Prenatal DNA Testing
+                    </Link> 
+
                     <Link
                         to="/grandparentage-dna-tests"
                         className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
@@ -70,22 +84,11 @@ const Navigation = () => {
                     >
                         Sibling DNA Testing
                     </Link>
-                    <Link
-                        to="/prenatal-dna-test"
-                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                    >
-                        Prenatal DNA Testing
-                    </Link> 
-                    <Link
-                        to="/immigration-dna-tests"
-                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                    >
-                        Immigration DNA Testing
-                    </Link>
                     </div>
                 )}
                 </div>
             <Link to="/appointments" className="text-gray-700 hover:text-blue-600 transition duration-300">Appointments</Link>
+            <Link to="/mile-high-dna-corner" className="text-gray-700 hover:text-blue-600 transition duration-300">Mile High DNA Corner</Link>
 
             <Link to="/faq" className="text-gray-700 hover:text-blue-600 transition duration-300">FAQ</Link>
             <Link to="/get-results" className="text-gray-700 hover:text-blue-600 transition duration-300">Get Results</Link>
@@ -126,9 +129,10 @@ const Navigation = () => {
               <div className="ml-4 space-y-1 mt-1 max-h-[300px] overflow-y-auto">
                 <Link to="/legal-paternity-tests" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={() => setIsMenuOpen(false)}>Paternity Testing</Link>
                 <Link to="/prenatal-dna-test" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={() => setIsMenuOpen(false)}>Prenatal Testing</Link>
-                <Link to="/immigration-dna-tests" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={() => setIsMenuOpen(false)}>Immigration DNA Testing</Link>
+                <Link to="/peace-of-mind-paternity-tests" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={() => setIsMenuOpen(false)}>Peace of Mind Paternity Testing</Link>
                 <Link to="/siblingship-dna-tests" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={() => setIsMenuOpen(false)}>Sibling Testing</Link>
                 <Link to="/grandparentage-dna-tests" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={() => setIsMenuOpen(false)}>Grandparentage Testing</Link>
+                <Link to="/immigration-dna-tests" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={() => setIsMenuOpen(false)}>Immigration DNA Testing</Link>
               </div>
             </details>
 
