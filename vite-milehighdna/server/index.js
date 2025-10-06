@@ -67,6 +67,13 @@ app.use((err, req, res, next) => {
     .json({ error: err.message || "Internal Server Error" });
 });
 
+console.log("✅ Routes registered:");
+app._router.stack.forEach((r) => {
+  if (r.route && r.route.path) {
+    console.log(`   ${Object.keys(r.route.methods).join(",").toUpperCase()} ${r.route.path}`);
+  }
+});
+
 // ✅ Start server with environment logging
 app.listen(PORT, () => {
   console.log(`✅ Server listening on port ${PORT}`);
