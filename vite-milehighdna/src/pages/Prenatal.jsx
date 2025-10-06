@@ -16,10 +16,10 @@ const Prenatal = () => {
   return (
     <main>
       <Helmet>
-        <title>Prenatal DNA Test Denver | Non-Invasive Paternity Testing from 7 Weeks</title>
+        <title>Non-Invasive Prenatal DNA Test in Denver, CO | Safe & Accurate from 7 Weeks – Mile High DNA</title>
         <meta
           name="description"
-          content="Get a safe, non-invasive prenatal DNA test in Denver as early as 7 weeks. Mile High DNA Testing delivers AABB-accredited, court-admissible results in 7–10 days. Serving Denver, Aurora & Lakewood."
+          content="Experience Denver’s trusted, non-invasive prenatal DNA test from 7 weeks. Safe for mother and baby, AABB-accredited, and court-admissible. Serving Denver, Aurora, Thornton & Lakewood. Schedule your test today."
         />
 
         {/* Open Graph for Social Sharing */}

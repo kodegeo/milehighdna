@@ -13,10 +13,10 @@ const Home = () => {
   return (
     <div className="min-h-screen">
       <Helmet>
-        <title>Fast & Confidential DNA Testing in Denver | Mile High DNA</title>
+        <title>Fast & Confidential DNA Testing in Denver, CO | Legal Paternity & Immigration Tests – Mile High DNA</title>
         <meta 
           name="description" 
-          content="Fast, confidential, AABB-accredited DNA testing in Denver. Same-day appointments for paternity, legal, and family relationship tests. Serving Denver, Aurora, Lakewood, and all of Colorado." 
+          content="Fast, confidential, AABB-accredited DNA testing in Denver, Aurora, TThornton &b Lakewood Colorado. We provide legal paternity, prenatal, immigration, and family relationship testing with same-day appointments available throughout Denver and the surrounding areas." 
         />
         <meta name="msvalidate.01" content="5905CEB57CBF0561C0CECACC8EB705D6" />
 
@@ -30,6 +30,37 @@ const Home = () => {
         {/* Twitter card */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:image" content="https://milehighdnatesting.com/images/banner-1200.png" />
+
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            "name": "Mile High DNA Testing",
+            "image": "https://milehighdnatesting.com/images/banner-1200.png",
+            "url": "https://milehighdnatesting.com",
+            "telephone": "+1-720-900-9342",
+            "priceRange": "$$",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "700 N Colorado Blvd Suite 574",
+              "addressLocality": "Denver",
+              "addressRegion": "CO",
+              "postalCode": "80206",
+              "addressCountry": "US"
+            },
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": 39.7312,
+              "longitude": -104.9404
+            },
+            "openingHours": "Mo-Fr 09:00-18:00",
+            "sameAs": [
+              "https://www.facebook.com/milehighdnatesting",
+              "https://www.instagram.com/milehighdnatesting",
+              "https://www.linkedin.com/company/milehighdnatesting"
+            ]
+          })}
+          </script>
       </Helmet>
 
       {/* Hero Section */}

@@ -9,13 +9,85 @@ const FamilyRelationshipDNA = () => {
 
   return (
     <main className="min-h-screen bg-gray-50">
-      <Helmet>
-      <title>Family DNA Testing Denver | Grandparent & Sibling DNA Tests | Mile High DNA Testing</title>
-        <meta 
-        name="description" 
-        content="Family relationship DNA testing in Denver. Confirm biological connections through grandparent DNA tests and siblingship DNA tests. Accurate, confidential, and fast results—book your DNA test online today." 
-        />
-      </Helmet>
+<Helmet>
+  <html lang="en" />
+  <title>Family Relationship DNA Testing in Denver, CO | Grandparent & Sibling DNA Tests – Mile High DNA</title>
+  <meta 
+    name="description" 
+    content="Confirm family connections with our accurate, confidential DNA testing in Denver, Aurora, Thornton, & Lakewood Colorado. We offer grandparent and sibling DNA tests with same-day appointments and AABB-accredited results you can trust."
+  />
+  <meta
+    name="keywords"
+    content="family DNA testing Denver, grandparent DNA test Colorado, sibling DNA test Denver, brother and sister DNA test, DNA relationship testing Colorado"
+  />
+  <link rel="canonical" href="https://milehighdnatesting.com/family-relationship-dna-testing" />
+  <link rel="alternate" hreflang="es" href="https://milehighdnatesting.com/es/pruebas-de-adn-de-relacion-familiar" />
+
+  <meta property="og:title" content="Family Relationship DNA Testing in Denver, CO | Grandparent & Sibling DNA Tests" />
+  <meta property="og:description" content="Accurate and confidential family DNA testing in Denver, CO. Legal, grandparent, and sibling DNA tests with same-day appointments available." />
+  <meta property="og:image" content="https://milehighdnatesting.com/images/family-dna-hero.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://milehighdnatesting.com/family-relationship-dna-testing" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Family Relationship DNA Testing in Denver, CO" />
+  <meta name="twitter:description" content="Confirm family connections with our accurate and confidential DNA testing in Denver, CO." />
+  <meta name="twitter:image" content="https://milehighdnatesting.com/images/family-dna-hero.png" />
+
+  {/* Schema for Service */}
+  <script type="application/ld+json">
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "serviceType": "Family Relationship DNA Testing",
+      "provider": {
+        "@type": "LocalBusiness",
+        "name": "Mile High DNA Testing",
+        "url": "https://milehighdnatesting.com/family-relationship-dna-testing",
+        "image": "https://milehighdnatesting.com/images/family-dna-hero.png",
+        "telephone": "+1-720-900-9342",
+        "priceRange": "$$",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "700 N Colorado Blvd Suite 574",
+          "addressLocality": "Denver",
+          "addressRegion": "CO",
+          "postalCode": "80206",
+          "addressCountry": "US"
+        }
+      },
+      "areaServed": ["Denver", "Aurora", "Lakewood", "Colorado Springs"],
+      "offers": {
+        "@type": "Offer",
+        "price": "299.00",
+        "priceCurrency": "USD",
+        "url": "https://milehighdnatesting.com/family-relationship-dna-testing",
+        "availability": "https://schema.org/InStock"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Family DNA Tests",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Grandparent DNA Test",
+              "url": "https://milehighdnatesting.com/grandparentage-dna-tests"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Siblingship DNA Test",
+              "url": "https://milehighdnatesting.com/siblingship-dna-tests"
+            }
+          }
+        ]
+      }
+    })}
+  </script>
+</Helmet>
 
       {/* Hero Section */}
       <section className="relative bg-white">
