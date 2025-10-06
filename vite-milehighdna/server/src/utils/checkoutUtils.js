@@ -102,8 +102,8 @@ export async function processCheckout(payload) {
 
     // 4. Create Stripe Checkout session
     const lineItems = [
-      process.env.STRIPE_TEST_PRICE_ID
-        ? { price: process.env.STRIPE_TEST_PRICE_ID, quantity: 1 }
+      process.env.STRIPE_LIVE_PRICE_ID
+        ? { price: process.env.STRIPE_LIVE_PRICE_ID, quantity: 1 }
         : {
             price_data: {
               currency: "usd",
