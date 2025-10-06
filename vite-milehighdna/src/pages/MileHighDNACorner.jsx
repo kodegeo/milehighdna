@@ -16,30 +16,24 @@ export default function MileHighDNACorner() {
     question: ''
   });
 
-  const handleInputChange = (e) => {
-    const { name, value } = e.target;
-    setFormData(prev => ({
-      ...prev,
-      [name]: value
-    }));
-  };
-
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
 
+    const apiBase = import.meta.env.VITE_API_URL.startsWith("http")
+      ? import.meta.env.VITE_API_URL
+      : `https://${import.meta.env.VITE_API_URL}`;
+
     try {
-      const response = await fetch('/api/send-question', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
+      const response = await fetch(`${apiBase}/api/send-question`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           name: formData.name,
           email: formData.email,
           question: formData.question,
-          subject: "Mile High DNA Corner Question"
-        })
+          subject: "Mile High DNA Corner Question",
+        }),
       });
 
       if (response.ok) {
@@ -48,14 +42,14 @@ export default function MileHighDNACorner() {
         setTimeout(() => {
           setIsModalOpen(false);
           setIsSubmitted(false);
-          setFormData({ name: '', email: '', question: '' });
+          setFormData({ name: "", email: "", question: "" });
         }, 3000);
       } else {
-        throw new Error('Failed to send question');
+        throw new Error("Failed to send question");
       }
     } catch (error) {
-      console.error('Error sending question:', error);
-      alert('Sorry, there was an error sending your question. Please try again.');
+      console.error("Error sending question:", error);
+      alert("Sorry, there was an error sending your question. Please try again.");
     } finally {
       setIsSubmitting(false);
     }
