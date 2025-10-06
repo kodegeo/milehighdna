@@ -4,8 +4,6 @@ import { useLocation } from "react-router-dom";
 import Select from "react-select";
 import countryRegionData from "country-region-data/data.json";
 
-
-
 const CheckoutInternational = () => {
   const location = useLocation();
   const countries = countryRegionData;
@@ -20,13 +18,14 @@ const CheckoutInternational = () => {
   } = location.state || {};
 
   // Shipping state
-  const [shippingMethod, setShippingMethod] = useState("regular"); // "regular" | "overnight"
-  const [locations, setLocations] = useState(1); // 1 | 2
+  const [shippingMethod, setShippingMethod] = useState("regular");
+  const [locations, setLocations] = useState(1);
   const [shippingRate, setShippingRate] = useState(0);
 
   // Primary Address (International)
   const [country1, setCountry1] = useState(initialCountry);
   const [regions1, setRegions1] = useState([]);
+  const [hasRegions, setHasRegions] = useState(false);
   const [primaryAddress, setPrimaryAddress] = useState({
     street: "",
     city: "",
@@ -41,7 +40,7 @@ const CheckoutInternational = () => {
     street: "",
     city: "",
     state: "",
-    zipCode: ""
+    zipCode: "",
   });
 
   const [loading, setLoading] = useState(false);
@@ -63,14 +62,15 @@ const CheckoutInternational = () => {
     label: c.countryName,
   }));
 
-  // Load region lists
+  // Load region lists dynamically
   useEffect(() => {
     const selected = countries.find((c) => c.countryShortCode === country1);
-    setRegions1(
+    const regionList =
       selected && selected.regions.length
         ? selected.regions.map((r) => ({ value: r.shortCode, label: r.name }))
-        : []
-    );
+        : [];
+    setRegions1(regionList);
+    setHasRegions(regionList.length > 0);
   }, [country1]);
 
   useEffect(() => {
@@ -89,14 +89,11 @@ const CheckoutInternational = () => {
         const res = await fetch(
           `${import.meta.env.VITE_API_URL}/api/shipping/rate?country=${country1}&method=${shippingMethod}`
         );
-
         if (!res.ok) throw new Error("Failed to fetch shipping rate");
         const { shipping } = await res.json();
         setShippingRate(Number(shipping[shippingMethod]) || 0);
-
       } catch (err) {
         console.error("Shipping fetch error:", err);
-        // fallback defaults
         setShippingRate(shippingMethod === "regular" ? 50 : 100);
       }
     };
@@ -107,13 +104,25 @@ const CheckoutInternational = () => {
   const shippingTotal = Number(shippingRate) * Number(locations);
   const total = (Number(unitPrice) + Number(shippingTotal)).toFixed(2);
 
+  // ✅ Create Checkout
   const createCheckout = async () => {
-    if (!primaryAddress.street || !primaryAddress.city || !primaryAddress.region || !primaryAddress.postalCode) {
+    if (
+      !primaryAddress.street ||
+      !primaryAddress.city ||
+      !primaryAddress.region ||
+      !primaryAddress.postalCode
+    ) {
       alert("Please complete all primary shipping address fields.");
       return;
     }
-    
-    if (locations === 2 && (!secondaryAddress.street || !secondaryAddress.city || !secondaryAddress.state || !secondaryAddress.zipCode)) {
+
+    if (
+      locations === 2 &&
+      (!secondaryAddress.street ||
+        !secondaryAddress.city ||
+        !secondaryAddress.state ||
+        !secondaryAddress.zipCode)
+    ) {
       alert("Please complete all secondary shipping address fields.");
       return;
     }
@@ -217,31 +226,36 @@ const CheckoutInternational = () => {
             </label>
           </div>
 
-           {/* Address Inputs */}
-           <div className="space-y-6">
-             <div>
-               <h3 className="text-lg font-semibold text-gray-900 mb-4">Primary Shipping Address (International)</h3>
-               <InternationalAddressForm
-                 address={primaryAddress}
-                 setAddress={setPrimaryAddress}
-                 country={country1}
-                 setCountry={setCountry1}
-                 regions={regions1}
-                 labels={getLabels(country1)}
-                 countryOptions={countryOptions}
-               />
-             </div>
+          {/* Address Inputs */}
+          <div className="space-y-6">
+            <div>
+              <h3 className="text-lg font-semibold text-gray-900 mb-4">
+                Primary Shipping Address (International)
+              </h3>
+              <InternationalAddressForm
+                address={primaryAddress}
+                setAddress={setPrimaryAddress}
+                country={country1}
+                setCountry={setCountry1}
+                regions={regions1}
+                labels={getLabels(country1)}
+                countryOptions={countryOptions}
+                hasRegions={hasRegions}
+              />
+            </div>
 
-             {locations === 2 && (
-               <div>
-                 <h3 className="text-lg font-semibold text-gray-900 mb-4">Secondary Shipping Address (US)</h3>
-                 <USAddressForm
-                   address={secondaryAddress}
-                   setAddress={setSecondaryAddress}
-                 />
-               </div>
-             )}
-           </div>
+            {locations === 2 && (
+              <div>
+                <h3 className="text-lg font-semibold text-gray-900 mb-4">
+                  Secondary Shipping Address (US)
+                </h3>
+                <USAddressForm
+                  address={secondaryAddress}
+                  setAddress={setSecondaryAddress}
+                />
+              </div>
+            )}
+          </div>
 
           {/* Totals */}
           <p>
@@ -271,6 +285,7 @@ const InternationalAddressForm = ({
   regions,
   labels,
   countryOptions,
+  hasRegions,
 }) => (
   <div className="space-y-3">
     <div>
@@ -285,6 +300,7 @@ const InternationalAddressForm = ({
         classNamePrefix="react-select"
       />
     </div>
+
     <div>
       <label className="block text-sm font-medium text-gray-700 mb-1">
         Street Address *
@@ -292,14 +308,13 @@ const InternationalAddressForm = ({
       <input
         type="text"
         value={address.street}
-        onChange={(e) =>
-          setAddress({ ...address, street: e.target.value })
-        }
+        onChange={(e) => setAddress({ ...address, street: e.target.value })}
         className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500 focus:border-transparent"
         placeholder="123 Main Street"
         required
       />
     </div>
+
     <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
       <div>
         <label className="block text-sm font-medium text-gray-700 mb-1">
@@ -308,30 +323,43 @@ const InternationalAddressForm = ({
         <input
           type="text"
           value={address.city}
-          onChange={(e) =>
-            setAddress({ ...address, city: e.target.value })
-          }
+          onChange={(e) => setAddress({ ...address, city: e.target.value })}
           className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500 focus:border-transparent"
           placeholder="Toronto"
           required
         />
       </div>
+
       <div>
         <label className="block text-sm font-medium text-gray-700 mb-1">
           {labels.region} *
         </label>
-        <Select
-          options={regions}
-          value={regions.find((r) => r.value === address.region)}
-          onChange={(val) =>
-            setAddress({ ...address, region: val?.value || "" })
-          }
-          isClearable
-          placeholder="Select region"
-          className="react-select-container"
-          classNamePrefix="react-select"
-        />
+        {hasRegions ? (
+          <Select
+            options={regions}
+            value={regions.find((r) => r.value === address.region)}
+            onChange={(val) =>
+              setAddress({ ...address, region: val?.value || "" })
+            }
+            isClearable
+            placeholder={`Select ${labels.region}`}
+            className="react-select-container"
+            classNamePrefix="react-select"
+          />
+        ) : (
+          <input
+            type="text"
+            value={address.region}
+            onChange={(e) =>
+              setAddress({ ...address, region: e.target.value })
+            }
+            className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+            placeholder={labels.region}
+            required
+          />
+        )}
       </div>
+
       <div>
         <label className="block text-sm font-medium text-gray-700 mb-1">
           {labels.postal} *
@@ -351,7 +379,7 @@ const InternationalAddressForm = ({
   </div>
 );
 
-// ✅ US Address component (matches domestic structure)
+// ✅ US Address component (unchanged)
 const USAddressForm = ({ address, setAddress }) => (
   <div className="space-y-3">
     <div>
@@ -361,7 +389,7 @@ const USAddressForm = ({ address, setAddress }) => (
       <input
         type="text"
         value={address.street}
-        onChange={(e) => setAddress({...address, street: e.target.value})}
+        onChange={(e) => setAddress({ ...address, street: e.target.value })}
         className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500 focus:border-transparent"
         placeholder="123 Main Street"
         required
@@ -375,7 +403,7 @@ const USAddressForm = ({ address, setAddress }) => (
         <input
           type="text"
           value={address.city}
-          onChange={(e) => setAddress({...address, city: e.target.value})}
+          onChange={(e) => setAddress({ ...address, city: e.target.value })}
           className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500 focus:border-transparent"
           placeholder="Denver"
           required
@@ -387,61 +415,19 @@ const USAddressForm = ({ address, setAddress }) => (
         </label>
         <select
           value={address.state}
-          onChange={(e) => setAddress({...address, state: e.target.value})}
+          onChange={(e) => setAddress({ ...address, state: e.target.value })}
           className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500 focus:border-transparent"
           required
         >
           <option value="">Select State</option>
-          <option value="AL">Alabama</option>
-          <option value="AK">Alaska</option>
-          <option value="AZ">Arizona</option>
-          <option value="AR">Arkansas</option>
-          <option value="CA">California</option>
-          <option value="CO">Colorado</option>
-          <option value="CT">Connecticut</option>
-          <option value="DE">Delaware</option>
-          <option value="FL">Florida</option>
-          <option value="GA">Georgia</option>
-          <option value="HI">Hawaii</option>
-          <option value="ID">Idaho</option>
-          <option value="IL">Illinois</option>
-          <option value="IN">Indiana</option>
-          <option value="IA">Iowa</option>
-          <option value="KS">Kansas</option>
-          <option value="KY">Kentucky</option>
-          <option value="LA">Louisiana</option>
-          <option value="ME">Maine</option>
-          <option value="MD">Maryland</option>
-          <option value="MA">Massachusetts</option>
-          <option value="MI">Michigan</option>
-          <option value="MN">Minnesota</option>
-          <option value="MS">Mississippi</option>
-          <option value="MO">Missouri</option>
-          <option value="MT">Montana</option>
-          <option value="NE">Nebraska</option>
-          <option value="NV">Nevada</option>
-          <option value="NH">New Hampshire</option>
-          <option value="NJ">New Jersey</option>
-          <option value="NM">New Mexico</option>
-          <option value="NY">New York</option>
-          <option value="NC">North Carolina</option>
-          <option value="ND">North Dakota</option>
-          <option value="OH">Ohio</option>
-          <option value="OK">Oklahoma</option>
-          <option value="OR">Oregon</option>
-          <option value="PA">Pennsylvania</option>
-          <option value="RI">Rhode Island</option>
-          <option value="SC">South Carolina</option>
-          <option value="SD">South Dakota</option>
-          <option value="TN">Tennessee</option>
-          <option value="TX">Texas</option>
-          <option value="UT">Utah</option>
-          <option value="VT">Vermont</option>
-          <option value="VA">Virginia</option>
-          <option value="WA">Washington</option>
-          <option value="WV">West Virginia</option>
-          <option value="WI">Wisconsin</option>
-          <option value="WY">Wyoming</option>
+          {[
+            "AL","AK","AZ","AR","CA","CO","CT","DE","FL","GA","HI","ID","IL","IN","IA","KS",
+            "KY","LA","ME","MD","MA","MI","MN","MS","MO","MT","NE","NV","NH","NJ","NM","NY",
+            "NC","ND","OH","OK","OR","PA","RI","SC","SD","TN","TX","UT","VT","VA","WA","WV",
+            "WI","WY",
+          ].map((s) => (
+            <option key={s} value={s}>{s}</option>
+          ))}
         </select>
       </div>
       <div>
@@ -451,7 +437,7 @@ const USAddressForm = ({ address, setAddress }) => (
         <input
           type="text"
           value={address.zipCode}
-          onChange={(e) => setAddress({...address, zipCode: e.target.value})}
+          onChange={(e) => setAddress({ ...address, zipCode: e.target.value })}
           className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500 focus:border-transparent"
           placeholder="80202"
           pattern="[0-9]{5}(-[0-9]{4})?"
