@@ -187,7 +187,7 @@ const PeaceOfMindDNAKit = () => {
                   >
                     <span className="text-lg">
                       {domesticShipping
-                        ? `Order Within U.S. — $${(Number(price) + Number(domesticShipping)).toFixed(2)}`
+                        ? `Order Within U.S. — $${Number(price).toFixed(2)} plus shipping`
                         : "Loading Domestic..."}
                     </span>
                   </button>
@@ -198,7 +198,7 @@ const PeaceOfMindDNAKit = () => {
                   >
                     <span className="text-lg">
                       {internationalShipping != null
-                        ? `Order Internationally — $${(Number(price) + Number(internationalShipping)).toFixed(2)}`
+                        ? `Order Internationally — $${Number(price).toFixed(2)} plus shipping`
                         : "Loading International..."}
                     </span>
                   </button>
