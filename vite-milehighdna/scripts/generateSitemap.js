@@ -28,22 +28,17 @@ const urls = [
     changefreq: 'weekly'
   },
   {
-    loc: 'https://milehighdnatesting.com/schedule',
+    loc: 'https://milehighdnatesting.com/peace-of-mind-paternity-tests',
     priority: '0.8',
     changefreq: 'weekly'
   },
   {
-    loc: 'https://milehighdnatesting.com/peace-of-mind-paternity-test',
+    loc: 'https://milehighdnatesting.com/legal-paternity-tests',
     priority: '0.8',
     changefreq: 'weekly'
   },
   {
-    loc: 'https://milehighdnatesting.com/legal-dna-tests',
-    priority: '0.8',
-    changefreq: 'weekly'
-  },
-  {
-    loc: 'https://milehighdnatesting.com/prenatal-dna-tests',
+    loc: 'https://milehighdnatesting.com/prenatal-dna-test',
     priority: '0.8',
     changefreq: 'weekly'
   },
@@ -81,11 +76,6 @@ const urls = [
   },
   
   // Information Pages (Priority 0.6)
-  {
-    loc: 'https://milehighdnatesting.com/contact',
-    priority: '0.6',
-    changefreq: 'weekly'
-  },
   {
     loc: 'https://milehighdnatesting.com/faq',
     priority: '0.6',
@@ -159,7 +149,33 @@ const urls = [
       'en-us': 'https://milehighdnatesting.com/aabb-accreditation',
       'es-us': 'https://milehighdnatesting.com/es/aabb-accreditation'
     }
-  }
+  },
+  // Mile High DNA Corner Articles (Priority 0.7)
+{
+  loc: 'https://milehighdnatesting.com/mile-high-dna-corner',
+  priority: '0.7',
+  changefreq: 'weekly',
+},
+{
+  loc: 'https://milehighdnatesting.com/mile-high-dna-corner/legal-vs-non-legal-dna-testing-guide',
+  priority: '0.7',
+  changefreq: 'weekly',
+},
+{
+  loc: 'https://milehighdnatesting.com/mile-high-dna-corner/how-reliable-and-accurate-are-home-dna-tests',
+  priority: '0.7',
+  changefreq: 'weekly',
+},
+{
+  loc: 'https://milehighdnatesting.com/mile-high-dna-corner/how-much-does-a-prenatal-dna-test-cost',
+  priority: '0.7',
+  changefreq: 'weekly',
+},
+{
+  loc: 'https://milehighdnatesting.com/mile-high-dna-corner/family-relationship-dna-testing-denver',
+  priority: '0.7',
+  changefreq: 'weekly',
+}
 ];
 
 /**
