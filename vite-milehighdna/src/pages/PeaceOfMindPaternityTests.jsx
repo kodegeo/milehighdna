@@ -10,13 +10,77 @@ const PeaceOfMindPaternityPage = () => {
 
   return (
     <main className="min-h-screen bg-gray-50">
-      <Helmet>
-        <title>Peace of Mind DNA Testing | Confidential & Non-Legal Paternity Testing</title>
-        <meta 
-          name="description" 
-          content="Order your Peace of Mind Paternity Test online or schedule an appointment for in-person testing. Fast, accurate, and confidential results for personal reassurance." 
-        />
-      </Helmet>
+<Helmet>
+  <html lang="en" />
+  <title>Peace of Mind Paternity Test in Denver, CO | Fast, Accurate & Confidential DNA Testing – Mile High DNA</title>
+  <meta
+    name="description"
+    content="Order a Peace of Mind Paternity Test in Denver, Aurora, Thornton or Lakewood Colorado. Fast, accurate, and confidential DNA testing for personal reassurance. Choose home collection or same-day in-person testing."
+  />
+  <meta
+    name="keywords"
+    content="peace of mind paternity test Denver, non legal DNA test Colorado, at home paternity test kit Denver, AABB DNA testing, confidential DNA test Colorado"
+  />
+  <link rel="canonical" href="https://milehighdnatesting.com/peace-of-mind-paternity-tests" />
+  <link rel="alternate" hreflang="es" href="https://milehighdnatesting.com/es/pruebas-de-paternidad-para-tranquilidad" />
+
+  {/* OG / Twitter */}
+  <meta property="og:title" content="Peace of Mind Paternity Test in Denver, CO | Fast, Accurate & Confidential DNA Testing" />
+  <meta property="og:description" content="Fast, accurate, and confidential Peace of Mind Paternity Testing in Denver, CO. Order your home kit or schedule same-day in-person testing." />
+  <meta property="og:image" content="https://milehighdnatesting.com/images/banner-1200.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://milehighdnatesting.com/peace-of-mind-paternity-tests" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Peace of Mind Paternity Test in Denver, CO" />
+  <meta name="twitter:description" content="Fast, accurate, and confidential non-legal paternity testing available online or in person across Denver, CO." />
+  <meta name="twitter:image" content="https://milehighdnatesting.com/images/banner-1200.png" />
+
+  {/* Structured Data */}
+  <script type="application/ld+json">
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "serviceType": "Peace of Mind Paternity Test",
+      "provider": {
+        "@type": "LocalBusiness",
+        "name": "Mile High DNA Testing",
+        "url": "https://milehighdnatesting.com/peace-of-mind-paternity-tests",
+        "image": "https://milehighdnatesting.com/images/banner-1200.png",
+        "telephone": "+1-720-900-9342",
+        "priceRange": "$$",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "700 N Colorado Blvd Suite 574",
+          "addressLocality": "Denver",
+          "addressRegion": "CO",
+          "postalCode": "80206",
+          "addressCountry": "US"
+        }
+      },
+      "areaServed": ["Denver", "Aurora", "Lakewood", "Colorado Springs"],
+      "offers": [
+        {
+          "@type": "Offer",
+          "name": "At-Home Peace of Mind DNA Test Kit",
+          "price": "199.00",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://milehighdnatesting.com/products/peace-of-mind-dna-kit"
+        },
+        {
+          "@type": "Offer",
+          "name": "In-Person Peace of Mind Paternity Test",
+          "price": "249.00",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://calendly.com/milehighdnatesting/non-legal-paternity-test"
+        }
+      ],
+      "additionalType": "https://schema.org/MedicalTest",
+      "description": "Fast, accurate, and confidential Peace of Mind Paternity Testing in Denver, CO. Non-legal DNA test available as home kit or same-day in-person testing."
+    })}
+  </script>
+</Helmet>
 
       {/* Hero Section */}
       <section className="relative bg-white">
