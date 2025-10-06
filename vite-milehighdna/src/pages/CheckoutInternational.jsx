@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet-async";
 import { useLocation } from "react-router-dom";
 import Select from "react-select";
 import countryRegionData from "country-region-data/data.json";
-import shippingRates from "../data/shippingRates.json";
+import { getShippingRate } from "../utils/getShippingRate";
 
 
 
@@ -85,62 +85,10 @@ const CheckoutInternational = () => {
     );
   }, [country2]);
 
-  // ✅ Fetch shipping dynamically from backend
+  // ✅ Compute shipping via helper
   useEffect(() => {
-    const fetchShipping = async () => {
-      try {
-        const res = await fetch(
-          `${import.meta.env.VITE_API_URL}/api/shipping/rate?country=${country1}&method=${shippingMethod}`
-        );
-  
-        if (res.ok) {
-          const data = await res.json();
-          const rate =
-            Number(data?.shipping?.[shippingMethod]) ||
-            Number(data?.rate) ||
-            Number(data?.shippingRate);
-  
-          if (rate && rate > 0) {
-            setShippingRate(rate);
-            return;
-          }
-        }
-  
-        // ✅ Handle JSON structure manually
-        let localRate = null;
-  
-        if (country1 === "US") {
-          // domestic structure
-          localRate =
-            shippingRates?.DOMESTIC?.US?.[shippingMethod] ||
-            (shippingMethod === "regular" ? 20 : 50);
-        } else {
-          // international structure
-          const intlRate = shippingRates?.INTERNATIONAL?.[country1];
-          if (typeof intlRate === "number" && intlRate > 0) {
-            localRate = intlRate; // flat rate from file
-          } else if (intlRate && typeof intlRate === "object" && intlRate[shippingMethod]) {
-            // (future-proof) if you later switch to nested structure
-            localRate = Number(intlRate[shippingMethod]);
-          } else {
-            localRate = shippingMethod === "regular" ? 50 : 100;
-          }
-                  }
-  
-        setShippingRate(localRate);
-      } catch (err) {
-        console.error("Shipping rate error:", err);
-  
-        const fallback =
-          country1 === "US"
-            ? shippingRates?.DOMESTIC?.US?.[shippingMethod] || 20
-            : shippingRates?.INTERNATIONAL?.[country1] || 50;
-  
-        setShippingRate(Number(fallback));
-      }
-    };
-  
-    fetchShipping();
+    const rate = getShippingRate(country1, shippingMethod);
+    setShippingRate(rate);
   }, [country1, shippingMethod]);
      
 
