@@ -2,21 +2,13 @@ import React, { useState, useEffect } from "react";
 import { Helmet } from "react-helmet-async";
 import { useLocation } from "react-router-dom";
 import Select from "react-select";
-import * as countryRegionData from "country-region-data";
+import countryRegionData from "country-region-data/data.json";
+
 
 
 const CheckoutInternational = () => {
   const location = useLocation();
-  let countries = [];
-  
-      if (Array.isArray(countryRegionData)) {
-        countries = countryRegionData;
-      } else if (Array.isArray(countryRegionData.default)) {
-        countries = countryRegionData.default;
-      } else if (countryRegionData && typeof countryRegionData === "object") {
-        const values = Object.values(countryRegionData);
-        countries = Array.isArray(values[0]) ? values[0] : [];
-      }
+  const countries = countryRegionData;
 
   const {
     firstName,
