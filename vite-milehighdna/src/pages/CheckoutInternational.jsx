@@ -3,6 +3,8 @@ import { Helmet } from "react-helmet-async";
 import { useLocation } from "react-router-dom";
 import Select from "react-select";
 import countryRegionData from "country-region-data/data.json";
+import shippingRates from "../../server/src/data/shippingRates.json";
+
 
 const CheckoutInternational = () => {
   const location = useLocation();
@@ -89,16 +91,37 @@ const CheckoutInternational = () => {
         const res = await fetch(
           `${import.meta.env.VITE_API_URL}/api/shipping/rate?country=${country1}&method=${shippingMethod}`
         );
-        if (!res.ok) throw new Error("Failed to fetch shipping rate");
-        const { shipping } = await res.json();
-        setShippingRate(Number(shipping[shippingMethod]) || 0);
+  
+        if (res.ok) {
+          const data = await res.json();
+          const rate =
+            Number(data?.shipping?.[shippingMethod]) ||
+            Number(data?.rate) ||
+            Number(data?.shippingRate);
+  
+          if (rate && rate > 0) {
+            setShippingRate(rate);
+            return;
+          }
+        }
+  
+        // if API fails or returns nothing → fallback to local JSON
+        const localRate =
+          shippingRates?.[country1]?.[shippingMethod] ||
+          (shippingMethod === "regular" ? 50 : 100);
+        setShippingRate(localRate);
       } catch (err) {
-        console.error("Shipping fetch error:", err);
-        setShippingRate(shippingMethod === "regular" ? 50 : 100);
+        console.error("Shipping rate error:", err);
+        const fallback =
+          shippingRates?.[country1]?.[shippingMethod] ||
+          (shippingMethod === "regular" ? 50 : 100);
+        setShippingRate(fallback);
       }
     };
+  
     fetchShipping();
   }, [country1, shippingMethod]);
+   
 
   // Totals
   const shippingTotal = Number(shippingRate) * Number(locations);
