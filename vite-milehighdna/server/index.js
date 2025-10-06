@@ -24,6 +24,8 @@ import shippingRoutes from "./src/routes/shipping.js";
 import checkoutRoutes from "./src/routes/checkoutRoutes.js";
 import healthRoutes from "./src/routes/health.js";
 import sendTestEmailRoute from "./src/routes/sendTestEmailRoute.js";
+import sendQuestionRoute from "./src/routes/sendQuestionRoute.js";
+
 
 
 
@@ -49,6 +51,7 @@ app.use("/api", checkoutRoutes);
 app.use("/health", healthRoutes);
 app.use("/api/test-email", sendTestEmailRoute);
 app.use("/api/send-confirmation", sendConfirmationRoute);
+app.use("/api/send-question", sendQuestionRoute);
 
 
 // ✅ Health check
