@@ -3,7 +3,8 @@ import { Helmet } from "react-helmet-async";
 import { useLocation } from "react-router-dom";
 import Select from "react-select";
 import countryRegionData from "country-region-data/data.json";
-import shippingRates from "../../server/src/data/shippingRates.json";
+import shippingRates from "../data/shippingRates.json";
+
 
 
 const CheckoutInternational = () => {
