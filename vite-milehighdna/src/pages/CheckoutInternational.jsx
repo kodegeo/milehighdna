@@ -106,23 +106,41 @@ const CheckoutInternational = () => {
           }
         }
   
-        // if API fails or returns nothing → fallback to local JSON
-        const localRate =
-          shippingRates?.[country1]?.[shippingMethod] ||
-          (shippingMethod === "regular" ? 50 : 100);
+        // ✅ Handle JSON structure manually
+        let localRate = null;
+  
+        if (country1 === "US") {
+          // domestic structure
+          localRate =
+            shippingRates?.DOMESTIC?.US?.[shippingMethod] ||
+            (shippingMethod === "regular" ? 20 : 50);
+        } else {
+          // international structure
+          const intlRate = shippingRates?.INTERNATIONAL?.[country1];
+          if (intlRate && Number(intlRate) > 0) {
+            localRate = Number(intlRate);
+          } else {
+            // fallback default
+            localRate = shippingMethod === "regular" ? 50 : 100;
+          }
+        }
+  
         setShippingRate(localRate);
       } catch (err) {
         console.error("Shipping rate error:", err);
+  
         const fallback =
-          shippingRates?.[country1]?.[shippingMethod] ||
-          (shippingMethod === "regular" ? 50 : 100);
-        setShippingRate(fallback);
+          country1 === "US"
+            ? shippingRates?.DOMESTIC?.US?.[shippingMethod] || 20
+            : shippingRates?.INTERNATIONAL?.[country1] || 50;
+  
+        setShippingRate(Number(fallback));
       }
     };
   
     fetchShipping();
   }, [country1, shippingMethod]);
-   
+     
 
   // Totals
   const shippingTotal = Number(shippingRate) * Number(locations);
