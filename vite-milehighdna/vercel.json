@@ -8,13 +8,13 @@
       "has": [
         { "type": "host", "value": "www.milehighdnatesting.com" }
       ],
-      "destination": "https://milehighdnatesting.com/:1",
+      "destination": "https://milehighdnatesting.com/$1",
       "permanent": true
     },
     {
       "source": "/(.*)",
-      "destination": "https://milehighdnatesting.com/:1",
-      "statusCode": 308
+      "destination": "https://milehighdnatesting.com/$1",
+      "permanent": true
     }
   ],
   "rewrites": [
