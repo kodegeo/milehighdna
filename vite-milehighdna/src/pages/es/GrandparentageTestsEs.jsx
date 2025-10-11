@@ -18,21 +18,28 @@ import grandparentageHero from '../../assets/images/grandparentage-hero.png';
 const GrandparentageTestsEs = () => {
   return (
     <main>
-      <Helmet>
-        <title>Prueba de ADN de Abuelos en Denver, Aurora y Colorado | Mile High DNA</title>
-        <meta 
-          name="description" 
-          content="Prueba de abuelidad con resultados legales y confidenciales. Sirviendo Denver, Aurora, Lakewood y otras comunidades de Colorado. Resultados válidos para inmigración y corte." 
-        />
+<Helmet>
+  <title>Prueba de ADN de Abuelos en Denver, Aurora y Colorado | Mile High DNA</title>
+  <meta 
+    name="description" 
+    content="Prueba de abuelidad con resultados legales y confidenciales. Sirviendo Denver, Aurora, Lakewood y otras comunidades de Colorado. Resultados válidos para inmigración y corte." 
+  />
 
-        <meta property="og:title" content="Prueba de Parentesco por ADN con Abuelos en Colorado" />
-        <meta property="og:description" content="Confirme relaciones familiares con pruebas de ADN de abuelidad. Resultados válidos para inmigración, corte y uso personal. Laboratorio acreditado por AABB." />
-        <meta property="og:image" content="https://milehighdnatesting.com/images/banner-1200.png" />
-        <meta property="og:url" content="https://milehighdnatesting.com/es/prueba-de-abuelidad" />
-        <meta property="og:type" content="article" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:image" content="https://milehighdnatesting.com/images/banner-1200.png" />
-      </Helmet>
+  {/* Canonical and hreflang */}
+  <link rel="canonical" href="https://milehighdnatesting.com/es/prueba-de-abuelidad" />
+  <link rel="alternate" hreflang="es-us" href="https://milehighdnatesting.com/es/prueba-de-abuelidad" />
+  <link rel="alternate" hreflang="en-us" href="https://milehighdnatesting.com/grandparentage-dna-test" />
+  <link rel="alternate" hreflang="x-default" href="https://milehighdnatesting.com/" />
+
+  {/* OG & Twitter */}
+  <meta property="og:title" content="Prueba de Parentesco por ADN con Abuelos en Colorado" />
+  <meta property="og:description" content="Confirme relaciones familiares con pruebas de ADN de abuelidad. Resultados válidos para inmigración, corte y uso personal. Laboratorio acreditado por AABB." />
+  <meta property="og:image" content="https://milehighdnatesting.com/images/banner-1200.png" />
+  <meta property="og:url" content="https://milehighdnatesting.com/es/prueba-de-abuelidad" />
+  <meta property="og:type" content="article" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://milehighdnatesting.com/images/banner-1200.png" />
+</Helmet>
 
       <GrandparentageHero
       title="Prueba de ADN de Abuelos en Denver, Aurora y Colorado | Mile High DNA"

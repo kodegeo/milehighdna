@@ -14,6 +14,14 @@ import immigrationHero from "../../assets/images/immigration-hero.png";
 const ImmigrationDNATestsEs = () => {
     return (
       <main>
+        <Helmet>
+        <link rel="canonical" href="https://milehighdnatesting.com/es/prueba-de-inmigracion" />
+<link rel="alternate" hreflang="es-us" href="https://milehighdnatesting.com/es/prueba-de-inmigracion" />
+<link rel="alternate" hreflang="en-us" href="https://milehighdnatesting.com/immigration-dna-test" />
+<link rel="alternate" hreflang="x-default" href="https://milehighdnatesting.com/" />
+
+
+        </Helmet>
         <HeroSection
           title="Prueba de ADN para Inmigración (USCIS)"
           subtitle={
