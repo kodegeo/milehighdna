@@ -1,6 +1,6 @@
 import React from "react";
 import { Helmet } from 'react-helmet-async';
-import HeroImage from "../assets/images/father_baby.jpg"; // Adjust path as needed
+import HeroImage from "../assets/images/father-baby-3.png"; // Adjust path as needed
 import ServingColorado from '../components/common/ServingColorado';
 import CallToAction from '../components/common/CallToAction';
 
