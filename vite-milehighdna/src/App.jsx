@@ -144,7 +144,7 @@ function AppLayout() {
             <Route path="/mile-high-dna-corner/prenatal-dna-cost-guide" element={<PrenatalDNAGuide />} />
             <Route path="/mile-high-dna-corner/how-much-does-a-prenatal-dna-test-cost" element={<PrenatalDNACost />} />
             <Route path="/dna-testing-types" element={<DNATestingTypes />} />
-            <Route path="/legal-vs-non-legal-dna-test" element={<LegalVsNonLegal />} />
+            <Route path="/mile-high-dna-corner/legal-vs-non-legal-dna-test" element={<LegalVsNonLegal />} />
             <Route path="/mile-high-dna-corner/how-reliable-and-accurate-are-home-dna-tests" element={<HomeDNATestAccuracy />} />
             <Route path="/mile-high-dna-corner/family-relationship-dna-testing-denver" element={<AnswersMatterMost />} />
             <Route path="/mile-high-dna-corner/what-to-expect-non-invasive-prenatal-dna-test-denver" element={<WhatToExpectNIPP />} />\

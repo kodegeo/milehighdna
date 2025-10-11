@@ -131,7 +131,7 @@ const LegalVsNonLegal = () => {
               
               <div className="flex justify-center space-x-4">
                 <a 
-                  href="https://www.facebook.com/sharer/sharer.php?u=https://milehighdnatesting.com/legal-vs-non-legal-dna-test" 
+                  href="https://www.facebook.com/sharer/sharer.php?u=https://milehighdnatesting.com/mile-high-dna-corner/legal-vs-non-legal-dna-test" 
                   className="flex items-center space-x-2 bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-all duration-300 shadow-md hover:shadow-lg"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -143,7 +143,7 @@ const LegalVsNonLegal = () => {
                 </a>
                 
                 <a 
-                  href="https://twitter.com/intent/tweet?url=https://milehighdnatesting.com/legal-vs-non-legal-dna-test&text=Legal%20vs.%20Non-Legal%20DNA%20Testing%3A%20What%E2%80%99s%20the%20Difference?" 
+                  href="https://twitter.com/intent/tweet?url=https://milehighdnatesting.com/mile-high-dna-corner/legal-vs-non-legal-dna-test&text=Legal%20vs.%20Non-Legal%20DNA%20Testing%3A%20What%E2%80%99s%20the%20Difference?" 
                   className="flex items-center space-x-2 bg-gray-900 text-white px-4 py-2 rounded-lg hover:bg-gray-800 transition-all duration-300 shadow-md hover:shadow-lg"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -155,7 +155,7 @@ const LegalVsNonLegal = () => {
                 </a>
 
                 <a 
-                  href="mailto:?subject=Legal%20vs.%20Non-Legal%20DNA%20Testing%3A%20What%E2%80%99s%20the%20Difference%3F%20-%20Mile%20High%20DNA%20Testing&body=Check%20out%20this%20article%20about%20legal%20vs.%20non-legal%20DNA%20testing:%0A%0Ahttps://milehighdnatesting.com/legal-vs-non-legal-dna-test%0A%0AThis%20article%20explains%20the%20key%20differences%20between%20legal%20and%20non-legal%20DNA%20tests%2C%20including%20costs%2C%20requirements%2C%20and%20when%20to%20use%20each%20type." 
+                  href="mailto:?subject=Legal%20vs.%20Non-Legal%20DNA%20Testing%3A%20What%E2%80%99s%20the%20Difference%3F%20-%20Mile%20High%20DNA%20Testing&body=Check%20out%20this%20article%20about%20legal%20vs.%20non-legal%20DNA%20testing:%0A%0Ahttps://milehighdnatesting.com/mile-high-dna-corner/legal-vs-non-legal-dna-test%0A%0AThis%20article%20explains%20the%20key%20differences%20between%20legal%20and%20non-legal%20DNA%20tests%2C%20including%20costs%2C%20requirements%2C%20and%20when%20to%20use%20each%20type." 
                   className="flex items-center space-x-2 bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-700 transition-all duration-300 shadow-md hover:shadow-lg"
                 >
                   <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">

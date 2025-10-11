@@ -43,6 +43,11 @@ const urls = [
     changefreq: 'weekly'
   },
   {
+    loc: 'https://milehighdnatesting.com/dna-testing-types',
+    priority: '0.8',
+    changefreq: 'weekly'
+  },
+  {
     loc: 'https://milehighdnatesting.com/family-relationship-dna',
     priority: '0.8',
     changefreq: 'weekly'
@@ -157,7 +162,7 @@ const urls = [
   changefreq: 'weekly',
 },
 {
-  loc: 'https://milehighdnatesting.com/mile-high-dna-corner/legal-vs-non-legal-dna-testing-guide',
+  loc: 'https://milehighdnatesting.com/mile-high-dna-corner/legal-vs-non-legal-dna-test',
   priority: '0.7',
   changefreq: 'weekly',
 },
@@ -175,7 +180,33 @@ const urls = [
   loc: 'https://milehighdnatesting.com/mile-high-dna-corner/family-relationship-dna-testing-denver',
   priority: '0.7',
   changefreq: 'weekly',
+},
+{
+  loc: 'https://milehighdnatesting.com/mile-high-dna-corner/best-at-home-paternity-dna-kit-denver',
+  priority: '0.7',
+  changefreq: 'weekly',
+},
+{
+  loc: 'https://milehighdnatesting.com/mile-high-dna-corner/what-to-expect-non-invasive-prenatal-dna-test-denver',
+  priority: '0.7',
+  changefreq: 'weekly',
+},
+{
+  loc: 'https://milehighdnatesting.com/mile-high-dna-corner/non-legal-dna-cost-guide',
+  priority: '0.7',
+  changefreq: 'weekly',
+},
+{
+  loc: 'https://milehighdnatesting.com/mile-high-dna-corner/legal-dna-cost-guide',
+  priority: '0.7',
+  changefreq: 'weekly',
+},
+{
+  loc: 'https://milehighdnatesting.com/mile-high-dna-corner//prenatal-dna-cost-guide',
+  priority: '0.7',
+  changefreq: 'weekly',
 }
+
 ];
 
 /**

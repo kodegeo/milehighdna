@@ -166,7 +166,7 @@ export default function MileHighDNACorner() {
               <div className="text-sm text-gray-500 mb-4">
                 <span>By Mile High DNA Corner Team</span> • <span>September 2025</span>
               </div>
-              <Link to="/legal-vs-non-legal-dna-test" className="text-blue-600 font-semibold hover:text-blue-800">
+              <Link to="/mile-high-dna-corner/legal-vs-non-legal-dna-test" className="text-blue-600 font-semibold hover:text-blue-800">
                 Read More →
               </Link>
             </div>
