@@ -10,14 +10,10 @@
       ],
       "destination": "https://milehighdnatesting.com/$1",
       "permanent": true
-    },
-    {
-      "source": "/(.*)",
-      "destination": "https://milehighdnatesting.com/$1",
-      "permanent": true
     }
   ],
   "rewrites": [
     { "source": "/(.*)", "destination": "/" }
   ]
 }
+
