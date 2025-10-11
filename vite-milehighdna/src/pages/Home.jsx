@@ -13,10 +13,10 @@ const Home = () => {
   return (
     <div className="min-h-screen">
       <Helmet>
-        <title>Fast & Confidential DNA Testing in Denver, CO | Legal Paternity & Immigration Tests – Mile High DNA</title>
+        <title>Fast & Confidential DNA Testing in Denver, CO | Legal Paternity & Relationship Tests – Mile High DNA</title>
         <meta 
           name="description" 
-          content="Fast, confidential, AABB-accredited DNA testing in Denver, Aurora, TThornton &b Lakewood Colorado. We provide legal paternity, prenatal, immigration, and family relationship testing with same-day appointments available throughout Denver and the surrounding areas." 
+          content="Fast, confidential, AABB-accredited DNA testing in Denver, Aurora, Thornton & Lakewood Colorado. We provide legal paternity, prenatal, immigration, and family relationship testing with same-day appointments available throughout Denver and nearby cities." 
         />
         <meta name="msvalidate.01" content="5905CEB57CBF0561C0CECACC8EB705D6" />
 
@@ -69,6 +69,10 @@ const Home = () => {
       </Helmet>
 
       {/* Hero Section */}
+      <h1 className="sr-only">
+        Fast and Confidential DNA Testing in Denver, Colorado – Legal, Relationship, Immigration, and Prenatal Services
+      </h1>
+
       <div className="relative h-[600px]">
         {/* Desktop image */}
         <div 
@@ -90,7 +94,7 @@ const Home = () => {
         <div className="absolute inset-0 bg-black/50 z-0" />
         <div className="relative z-10 container mx-auto px-4 h-full flex items-center">
           <div className="max-w-2xl text-white">
-            <h1 className="text-5xl text-white font-bold mb-4">Fast & Confidential DNA Testing in Colorado</h1>
+            <h2 className="text-5xl text-white font-bold mb-4">Fast & Confidential DNA Testing in Colorado</h2>
             <p className="text-xl mb-6">
               Same-day appointments • AABB-Accredited Labs • Trusted by Families & Attorneys
             </p>
@@ -119,6 +123,7 @@ const Home = () => {
       <div className="section-padding section-bg-alt">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-6">Why Families Trust Mile High DNA</h2>
+
           <p className="max-w-3xl mx-auto text-gray-700 mb-10">
             From paternity to legal relationship testing, we provide <strong>99.99% accurate results</strong> with <strong>fast turnaround times</strong>. Our team guides you through every step with care and confidentiality.
           </p>
