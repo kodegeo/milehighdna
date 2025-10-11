@@ -25,6 +25,8 @@ import checkoutRoutes from "./src/routes/checkoutRoutes.js";
 import healthRoutes from "./src/routes/health.js";
 import sendTestEmailRoute from "./src/routes/sendTestEmailRoute.js";
 import sendQuestionRoute from "./src/routes/sendQuestionRoute.js";
+import { notifyIndexNow } from "./utils/indexNow.js";
+
 
 
 
@@ -94,4 +96,17 @@ app.listen(PORT, () => {
     `   - MAILGUN_API_KEY: ${process.env.MAILGUN_API_KEY ? "✅ Set" : "❌ Missing"}`
   );
 });
+
+
+if (process.env.NODE_ENV === "production") {
+  notifyIndexNow([
+    "https://milehighdnatesting.com/",
+    "https://milehighdnatesting.com/about",
+    "https://milehighdnatesting.com/book-appointment",
+    "https://milehighdnatesting.com/legal-paternity-tests",
+    "https://milehighdnatesting.com/aabb-accreditation",
+    "https://milehighdnatesting.com/prenatal-dna-test",
+    "https://milehighdnatesting.com/sitemap.xml"
+  ]);
+}
  
