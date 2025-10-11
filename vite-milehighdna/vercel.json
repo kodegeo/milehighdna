@@ -1,14 +1,32 @@
 {
-    "rewrites": [
-      { "source": "/(.*)", "destination": "/" }
-    ],
-    
-    "redirects": [
-      {
-        "source": "/denver-non-invasive-prenatal-paternity-test",
-        "destination": "/prenatal-dna-test",
-        "permanent": true
-      }
-    ]
-  }
-  
+  "buildCommand": "npm install && if [ \"$VERCEL_ENV\" != \"production\" ]; then mv public/robots.vercel.txt public/robots.txt; fi && npm run build",
+  "outputDirectory": "dist",
+  "framework": null,
+  "redirects": [
+    {
+      "source": "/denver-non-invasive-prenatal-paternity-test",
+      "destination": "/prenatal-dna-test",
+      "permanent": true
+    },
+    {
+      "source": "/(.*)",
+      "has": [
+        { "type": "host", "value": "www.milehighdnatesting.com" }
+      ],
+      "destination": "https://milehighdnatesting.com/:1",
+      "permanent": true
+    },
+    {
+      "source": "/(.*)",
+      "has": [
+        { "type": "host", "value": "milehighdnatesting.com" },
+        { "type": "protocol", "value": "http" }
+      ],
+      "destination": "https://milehighdnatesting.com/:1",
+      "permanent": true
+    }
+  ],
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/" }
+  ]
+}
