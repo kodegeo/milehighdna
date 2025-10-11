@@ -109,29 +109,29 @@ const DNATestingTypes = () => {
       </Helmet>
 
       {/* Hero Section */}
-      <section className="relative h-[60vh] min-h-[400px] overflow-hidden bg-gradient-to-r from-blue-50 to-blue-100">
+      <section className="relative min-h-[70vh] md:h-[60vh] overflow-hidden bg-gradient-to-r from-blue-50 to-blue-100">
         <div className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20" 
              style={{ backgroundImage: `url(${landingHero})` }}>
         </div>
-        <div className="relative z-10 h-full flex items-center">
+        <div className="relative z-10 min-h-[70vh] md:h-full flex items-center py-12 md:py-0">
           <div className="max-w-4xl mx-auto px-6 md:px-12 text-center">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800 mb-6 leading-tight">
+            <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-gray-800 mb-4 md:mb-6 leading-tight">
               DNA Testing Types: 
-              <span className="text-blue-600 block">DNA Testing Types in Denver: Legal vs Non-Legal Paternity Test Guide</span>
+              <span className="text-blue-600 block">Legal vs Non-Legal Paternity Test Guide</span>
             </h1>
-            <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-lg md:text-xl lg:text-2xl text-gray-600 mb-6 md:mb-8 max-w-3xl mx-auto leading-relaxed">
               Understand the different types of DNA testing available, compare costs and requirements, and choose the right test for your specific needs.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center">
               <Link 
                 to="/legal-paternity-tests"
-                className="bg-blue-600 text-white px-8 py-4 font-bold uppercase tracking-wide rounded-lg hover:bg-blue-700 transition-all duration-300 shadow-lg"
+                className="bg-blue-600 text-white px-6 md:px-8 py-3 md:py-4 font-bold uppercase tracking-wide rounded-lg hover:bg-blue-700 transition-all duration-300 shadow-lg text-sm md:text-base"
               >
                 Legal DNA Testing
               </Link>
               <Link 
                 to="/peace-of-mind-paternity-tests"
-                className="bg-green-600 text-white px-8 py-4 font-bold uppercase tracking-wide rounded-lg hover:bg-green-700 transition-all duration-300 shadow-lg"
+                className="bg-green-600 text-white px-6 md:px-8 py-3 md:py-4 font-bold uppercase tracking-wide rounded-lg hover:bg-green-700 transition-all duration-300 shadow-lg text-sm md:text-base"
               >
                 Peace of Mind Testing
               </Link>
