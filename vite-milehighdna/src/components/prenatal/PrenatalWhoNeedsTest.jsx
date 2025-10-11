@@ -14,7 +14,7 @@ const PrenatalWhoNeedsTest = () => {
         </h2>
         <p className="text-lg text-gray-600 mb-8">
           Prenatal paternity testing helps expectant mothers and families confirm biological relationships 
-          before birth. Whether for <strong>peace of mind</strong>, <strong>legal documentation</strong>, or immigration, 
+          before birth. Whether for peace of mind or legal documentation, 
           it provides clear answers when you need them most.
         </p>
 
