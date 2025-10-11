@@ -12,11 +12,8 @@ const PeaceOfMindPaternityPage = () => {
     <main className="min-h-screen bg-gray-50">
 <Helmet>
   <html lang="en" />
-  <title>Peace of Mind Paternity Test in Denver, CO | Fast, Accurate & Confidential DNA Testing – Mile High DNA</title>
-  <meta
-    name="description"
-    content="Order a Peace of Mind Paternity Test in Denver, Aurora, Thornton or Lakewood Colorado. Fast, accurate, and confidential DNA testing for personal reassurance. Choose home collection or same-day in-person testing."
-  />
+  <title>Peace of Mind Paternity Test in Denver | Mile High DNA Testing</title>
+  <meta name="description" content="Private, non-legal Peace of Mind Paternity Testing in Denver. Accurate, confidential results in 3–5 days. Book your appointment today." />
   <meta
     name="keywords"
     content="peace of mind paternity test Denver, non legal DNA test Colorado, at home paternity test kit Denver, AABB DNA testing, confidential DNA test Colorado"
@@ -37,82 +34,171 @@ const PeaceOfMindPaternityPage = () => {
 
   {/* Structured Data */}
   <script type="application/ld+json">
-    {JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "Service",
-      "serviceType": "Peace of Mind Paternity Test",
-      "provider": {
-        "@type": "LocalBusiness",
-        "name": "Mile High DNA Testing",
-        "url": "https://milehighdnatesting.com/peace-of-mind-paternity-tests",
-        "image": "https://milehighdnatesting.com/images/banner-1200.png",
-        "telephone": "+1-720-900-9342",
-        "priceRange": "$$",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "700 N Colorado Blvd Suite 574",
-          "addressLocality": "Denver",
-          "addressRegion": "CO",
-          "postalCode": "80206",
-          "addressCountry": "US"
-        }
-      },
-      "areaServed": ["Denver", "Aurora", "Lakewood", "Colorado Springs"],
-      "offers": [
+{JSON.stringify([
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "serviceType": "Non-Legal Peace of Mind Paternity Testing",
+    "name": "Peace of Mind Paternity Test in Denver",
+    "alternateName": "Non-Legal DNA Test in Denver",
+    "provider": {
+      "@type": "Organization",
+      "name": "Mile High DNA Testing",
+      "url": "https://milehighdnatesting.com",
+      "logo": "https://milehighdnatesting.com/logo.png",
+      "telephone": "+1-720-900-9342",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "975 N Lincoln St, Suite 205C",
+        "addressLocality": "Denver",
+        "addressRegion": "CO",
+        "postalCode": "80203",
+        "addressCountry": "US"
+      }
+    },
+    "areaServed": [
+      "Denver",
+      "Aurora",
+      "Lakewood",
+      "Westminster",
+      "Thornton",
+      "Littleton"
+    ],
+    "description": "Mile High DNA Testing provides non-legal Peace of Mind Paternity Testing in Denver. Results are processed by AABB-accredited laboratories and delivered quickly with full confidentiality. Ideal for personal use, reassurance, and family peace of mind.",
+    "offers": {
+      "@type": "Offer",
+      "priceCurrency": "USD",
+      "price": "249.00",
+      "url": "https://milehighdnatesting.com/non-legal-paternity-testing",
+      "availability": "https://schema.org/InStock",
+      "eligibleRegion": "US",
+      "validFrom": "2025-01-01",
+      "category": "Service",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Peace of Mind Paternity Test (Non-Legal)",
+        "description": "Private, non-legal paternity DNA testing service performed in person at Mile High DNA Testing’s Denver office. Includes identity verification, professional sample collection, and results processed by AABB-accredited laboratories."
+      }
+    },
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "DNA Testing Services",
+      "itemListElement": [
         {
           "@type": "Offer",
-          "name": "At-Home Peace of Mind DNA Test Kit",
-          "price": "199.00",
-          "priceCurrency": "USD",
-          "availability": "https://schema.org/InStock",
-          "url": "https://milehighdnatesting.com/products/peace-of-mind-dna-kit"
+          "name": "Legal DNA Test",
+          "url": "https://milehighdnatesting.com/legal-dna-cost-guide"
         },
         {
           "@type": "Offer",
-          "name": "In-Person Peace of Mind Paternity Test",
-          "price": "249.00",
-          "priceCurrency": "USD",
-          "availability": "https://schema.org/InStock",
-          "url": "https://calendly.com/milehighdnatesting/non-legal-paternity-test"
+          "name": "Non-Legal DNA Test",
+          "url": "https://milehighdnatesting.com/non-legal-dna-cost-guide"
+        },
+        {
+          "@type": "Offer",
+          "name": "At-Home Peace of Mind DNA Kit",
+          "url": "https://milehighdnatesting.com/products/peace-of-mind-dna-kit"
         }
-      ],
-      "additionalType": "https://schema.org/MedicalTest",
-      "description": "Fast, accurate, and confidential Peace of Mind Paternity Testing in Denver, CO. Non-legal DNA test available as home kit or same-day in-person testing."
-    })}
-  </script>
+      ]
+    },
+    "inLanguage": "en-US"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is a Peace of Mind Paternity Test?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A Peace of Mind Paternity Test is a non-legal DNA test used for personal knowledge or reassurance. It provides accurate results processed by an AABB-accredited laboratory but cannot be used in court or legal cases."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How much does a non-legal paternity test cost in Denver?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The average cost for a non-legal Peace of Mind Paternity Test in Denver is $249. This includes professional sample collection, lab analysis, and confidential results within 2–3 business days."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Are Peace of Mind Paternity Test results court-admissible?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Peace of Mind Paternity Test results are for personal use only. Court or immigration cases require a legal DNA test with verified chain of custody procedures."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long does it take to get results?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Most Peace of Mind Paternity Test results are available within 2 to 3 business days after all samples have been collected and received by the lab."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is the testing process private and confidential?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. All testing at Mile High DNA Testing is handled with complete confidentiality and professionalism. Results are released securely to authorized clients only."
+        }
+      }
+    ]
+  }
+])}
+</script>
 </Helmet>
 
       {/* Hero Section */}
-      <section className="relative bg-white">
-        <div className="container mx-auto px-6 py-16 flex flex-col lg:flex-row items-center gap-12">
-          <div className="flex-1 text-center lg:text-left">
-            <h1 className="text-4xl font-bold text-gray-800 mb-6">
-              Peace of Mind Paternity Test Kit
-            </h1>
-            <p className="text-xl text-gray-600 mb-6">
-              Clear Answers. Confidential Results.
-            </p>
-            <p className="text-gray-700 mb-8">
-              Get the clarity you deserve with our at-home Peace of Mind Paternity Test Kit.
-              This non-legal DNA test provides fast, accurate, and 100% confidential results for personal knowledge only.
-              Perfect for personal confirmation and family reassurance.
-            </p>
-            <a
-              href="/products/peace-of-mind-dna-kit"
-              className="bg-blue-600 text-white px-8 py-4 rounded-xl shadow-lg hover:bg-blue-700 transition font-semibold text-lg inline-block"
-            >
-              View Paternity Test Kit
-            </a>
-          </div>
-          <div className="flex-1 flex justify-center">
-            <img
-              src={HeroImage}
-              alt="Peace of Mind Paternity Test Kit"
-              className="w-full max-w-md rounded-xl shadow-lg"
-            />
-          </div>
-        </div>
-      </section>
+{/* Hero Section */}
+<section className="relative bg-white">
+  <div className="container mx-auto px-6 py-16 flex flex-col lg:flex-row items-center gap-12">
+    <div className="flex-1 text-center lg:text-left">
+      <h1 className="text-4xl font-bold text-gray-800 mb-6">
+        Non-Legal Peace of Mind Paternity Testing in Denver
+      </h1>
+      <p className="text-xl text-gray-600 mb-6">
+        Fast. Confidential. Reliable Results You Can Trust.
+      </p>
+      <p className="text-gray-700 mb-8 text-lg leading-relaxed">
+        Our Peace of Mind Paternity Test provides private, 
+        non-legal DNA results performed by AABB-accredited laboratories. 
+        This service is ideal for personal knowledge, family reassurance, or resolving 
+        sensitive questions without the need for court involvement.
+      </p>
+      <p className="text-gray-700 mb-8 text-lg leading-relaxed">
+        Same-day in-person testing at our Denver location is available, or 
+        request an at-home kit if preferred. All tests are handled with care, discretion, 
+        and professional support from start to finish.
+      </p>
+      <div className="flex flex-col sm:flex-row gap-4">
+        <a
+          href="https://calendly.com/milehighdnatesting/non-legal-paternity-test"
+          className="bg-green-600 text-white px-8 py-4 rounded-xl shadow-lg hover:bg-green-700 transition font-semibold text-lg inline-block text-center"
+        >
+          Schedule In-Person Test
+        </a>
+        <a
+          href="/products/peace-of-mind-dna-kit"
+          className="bg-blue-600 text-white px-8 py-4 rounded-xl shadow-lg hover:bg-blue-700 transition font-semibold text-lg inline-block text-center"
+        >
+          Order Home Kit
+        </a>
+      </div>
+    </div>
+    <div className="flex-1 flex justify-center">
+      <img
+        src={HeroImage}
+        alt="Peace of Mind Paternity Test in Denver"
+        className="w-full max-w-md rounded-xl shadow-lg"
+      />
+    </div>
+  </div>
+</section>
 
       {/* Why Choose Us */}
       <section className="bg-gray-50 py-16">

@@ -3,6 +3,9 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 import dnaLabHero from "../assets/images/portrait-dna.png";
 import prenatalImg from "../assets/images/prenatal-2.jpg";
+import cornerNIPP1 from "../assets/images/corner-nipp-1.png";
+import cornerKit from "../assets/images/corner-kit-1.png";
+import cornerBilingual1 from "../assets/images/corner-bilingual-1.png";
 import ServingColorado from "../components/common/ServingColorado";
 import CallToAction from "../components/corner/CallToAction";
 
@@ -158,12 +161,12 @@ export default function MileHighDNACorner() {
           <div className="bg-white rounded-xl shadow-lg overflow-hidden">
             <img src="/images/legal-vs-non-legal-scale.png" alt="Legal vs Non-Legal DNA Testing" className="w-full h-48 object-cover" />
             <div className="p-6">
-              <h3 className="text-xl font-bold mb-3 text-gray-800">Legal vs. Non-Legal DNA Testing: What’s the Difference?</h3>
+              <h3 className="text-xl font-bold mb-3 text-gray-800">Legal vs. Non-Legal DNA Testing: What's the Difference?</h3>
               <p className="text-gray-600 mb-4">What's the difference, and which one is right for you?</p>
               <div className="text-sm text-gray-500 mb-4">
                 <span>By Mile High DNA Corner Team</span> • <span>September 2025</span>
               </div>
-              <Link to="/mile-high-dna-corner/legal-vs-non-legal-dna-testing-guide" className="text-blue-600 font-semibold hover:text-blue-800">
+              <Link to="/legal-vs-non-legal-dna-test" className="text-blue-600 font-semibold hover:text-blue-800">
                 Read More →
               </Link>
             </div>
@@ -197,6 +200,54 @@ export default function MileHighDNACorner() {
             </div>
           </div>
         </div>
+
+        {/* Begin Second Row */}
+        <div className="grid md:grid-cols-3 gap-6 max-w-7xl mx-auto mt-6">
+        <div className="bg-white rounded-xl shadow-lg overflow-hidden">
+            <img src={cornerKit} alt="Best At-Home Paternity DNA Kit" className="w-full h-48 object-cover" />
+            <div className="p-6">
+              <h3 className="text-xl font-bold mb-3 text-gray-800">The Best At-Home Paternity DNA Kit in Denver</h3>
+              <p className="text-gray-600 mb-4">Find the most accurate and reliable at-home DNA testing kit with professional support</p>
+              <div className="text-sm text-gray-500 mb-4">
+                <span>By Mile High DNA Corner Team</span> • <span>October 2025</span>
+              </div>
+              <Link to="/mile-high-dna-corner/best-at-home-paternity-dna-kit-denver" className="text-blue-600 font-semibold hover:text-blue-800">
+                Read More →
+              </Link>
+            </div>
+          </div>
+
+          <div className="bg-white rounded-xl shadow-lg overflow-hidden">
+            <img src={cornerNIPP1} alt="Non-Invasive Prenatal DNA Test" className="w-full h-48 object-cover" />
+            <div className="p-6">
+              <h3 className="text-xl font-bold mb-3 text-gray-800">What to Expect During a Non-Invasive Prenatal DNA Test</h3>
+              <p className="text-gray-600 mb-4">Learn about the safe, accurate process of prenatal paternity testing</p>
+              <div className="text-sm text-gray-500 mb-4">
+                <span>By Mile High DNA Corner Team</span> • <span>July 2025</span>
+              </div>
+              <Link to="/mile-high-dna-corner/what-to-expect-non-invasive-prenatal-dna-test-denver" className="text-blue-600 font-semibold hover:text-blue-800">
+                Read More →
+              </Link>
+            </div>
+          </div>
+
+        <div className="bg-white rounded-xl shadow-lg overflow-hidden">
+            <img src={cornerBilingual1} alt="Non-Invasive Prenatal DNA Test" className="w-full h-48 object-cover" />
+            <div className="p-6">
+              <h3 className="text-xl font-bold mb-3 text-gray-800">Why Bilingual DNA Testing Matters: Bridging Language Gaps for Families in Denver</h3>
+              <p className="text-gray-600 mb-4">Learn about the safe, accurate process of prenatal paternity testing</p>
+              <div className="text-sm text-gray-500 mb-4">
+                <span>By Mile High DNA Corner Team</span> • <span>June 2025</span>
+              </div>
+              <Link to="/mile-high-dna-corner/why-bilingual-dna-testing-matters-denver" className="text-blue-600 font-semibold hover:text-blue-800">
+                Read More →
+              </Link>
+            </div>
+          </div>
+          </div>       
+      {/* End Second Row */}
+          
+
       </section>
 
       {/* CTA Footer */}

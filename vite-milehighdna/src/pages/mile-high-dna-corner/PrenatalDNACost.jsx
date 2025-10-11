@@ -28,9 +28,9 @@ const PrenatalDNACost = () => {
         {/* Article Content */}
         <div className="w-full px-4 md:px-0 py-8 bg-white/90 rounded-xl shadow-lg">
           <p className="text-lg leading-relaxed mb-6">
-            As you mentally and physically prepare for a little one, you might be asking a few questions. One of those questions may be, <strong>How much does a prenatal DNA test cost?</strong> 
+            As you mentally and physically prepare for a little one, you might be asking a few questions. One of those questions may be, How much does a prenatal DNA test cost? 
           </p>
-          <p className="mb-6">It's a complicated but fair question. If this is a question for you, then this article may be able to help you in your research. The truth is, there isn't one simple price. The cost of a <strong>prenatal DNA test</strong> depends on several factors: the type of test you choose, how early in pregnancy it's performed, and the laboratory that analyzes the DNA.
+          <p className="mb-6">It's a complicated but fair question. If this is a question for you, then this article may be able to help you in your research. The truth is, there isn't one simple price. The cost of a prenatal DNA test depends on several factors: the type of test you choose, how early in pregnancy it's performed, and the laboratory that analyzes the DNA.
           </p>
 
           <h3 className="text-2xl font-bold mt-10 mb-4 text-gray-800">Denver, Aurora, Thornton, and Lakewood</h3>
@@ -39,10 +39,10 @@ const PrenatalDNACost = () => {
           Non-invasive prenatal paternity testing is <strong>the most accurate and safest method</strong> of establishing paternity before a baby is born. <br /><br /> - <a href="https://americanpregnancy.org/paternity-tests/non-invasive-prenatal-paternity-test/" target="_blank" rel="noopener noreferrer">American Pregnancy Association
           </a>
           </blockquote>
-          <p className="mb-6">For most families, <strong>the Non-Invasive Prenatal Paternity (NIPP) </strong> Test has become the preferred option. It offers accuracy, privacy, and peace of mind — all without any risk to the baby. The NIPP test works by detecting small fragments of fetal DNA, called cell-free fetal DNA (cffDNA), that circulate in the mother's bloodstream. These fragments are compared with the potential father's DNA using advanced lab analysis to confirm paternity with over 99.9% accuracy.</p>
+          <p className="mb-6">For most families, the Non-Invasive Prenatal Paternity (NIPP) Test has become the preferred option. It offers accuracy, privacy, and peace of mind — all without any risk to the baby. The NIPP test works by detecting small fragments of fetal DNA, called cell-free fetal DNA (cffDNA), that circulate in the mother's bloodstream. These fragments are compared with the potential father's DNA using advanced lab analysis to confirm paternity with over 99.9% accuracy.</p>
 
           <h3 className="text-2xl font-bold mt-10 mb-4 text-gray-800">How Much Does a Prenatal DNA Test Cost, Near Me?</h3>
-          <p className="mb-6">The typical cost for a NIPP test ranges between <strong>$1,599 and $1,799</strong>, depending on turnaround time and whether legal documentation is required. While the price can seem high, it reflects the specialized technology and strict accreditation standards behind every test. Choosing a certified lab ensures you're receiving reliable, court-admissible results and professional confidentiality throughout the process.</p>
+          <p className="mb-6">The typical cost for a NIPP test ranges between $1,599 and $1,799, depending on turnaround time and whether legal documentation is required. While the price can seem high, it reflects the specialized technology and strict accreditation standards behind every test. Choosing a certified lab ensures you're receiving reliable, court-admissible results and professional confidentiality throughout the process.</p>
 
           <h3 className="text-2xl font-bold mt-10 mb-4 text-gray-800">Prenatal DNA Test Cost Guide</h3>
           <p className="mb-6">If you're interested in a full breakdown of pricing — including what's included in the fee, how NIPP compares to other prenatal procedures, and what affects the final cost — we've created a detailed cost guide that walks through every part of the process.</p>
@@ -63,6 +63,49 @@ const PrenatalDNACost = () => {
 
           <p className="mb-6">This is <a href="/mile-high-dna-corner" target="_blank" rel="noopener noreferrer"><em>Mile High DNA Corner</em></a>, a safe place to ask questions and get the answers you need. We provide private and confidential service to our clients. Do not hesitate to call or reach out with any questions that you may have. We would be more than happy to answer them and help you through these difficult decisions.
           </p>
+
+          <div className="mt-10 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl p-6 border border-blue-100">
+            <div className="text-center">
+              <h3 className="text-lg font-semibold text-gray-800 mb-4">Share This Article</h3>
+              <p className="text-gray-600 mb-6">Help other families understand prenatal DNA testing costs and options</p>
+              
+              <div className="flex justify-center space-x-4">
+                <a 
+                  href="https://www.facebook.com/sharer/sharer.php?u=https://milehighdnatesting.com/mile-high-dna-corner/how-much-does-a-prenatal-dna-test-cost" 
+                  className="flex items-center space-x-2 bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-all duration-300 shadow-md hover:shadow-lg"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                  </svg>
+                  <span className="font-medium">Facebook</span>
+                </a>
+                
+                <a 
+                  href="https://twitter.com/intent/tweet?url=https://milehighdnatesting.com/mile-high-dna-corner/how-much-does-a-prenatal-dna-test-cost&text=Prenatal%20DNA%20Testing%3A%20What%20You%E2%80%99ll%20Pay%20%E2%80%94%20And%20Why" 
+                  className="flex items-center space-x-2 bg-gray-900 text-white px-4 py-2 rounded-lg hover:bg-gray-800 transition-all duration-300 shadow-md hover:shadow-lg"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                  </svg>
+                  <span className="font-medium">X / Twitter</span>
+                </a>
+
+                <a 
+                  href="mailto:?subject=Prenatal%20DNA%20Testing%3A%20What%20You%E2%80%99ll%20Pay%20%E2%80%94%20And%20Why%20-%20Mile%20High%20DNA%20Testing&body=Check%20out%20this%20article%20about%20prenatal%20DNA%20testing%20costs:%0A%0Ahttps://milehighdnatesting.com/mile-high-dna-corner/how-much-does-a-prenatal-dna-test-cost%0A%0AThis%20article%20explains%20prenatal%20DNA%20test%20pricing%2C%20the%20different%20types%20of%20tests%20available%2C%20and%20why%20costs%20vary%20based%20on%20technology%20and%20accreditation." 
+                  className="flex items-center space-x-2 bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-700 transition-all duration-300 shadow-md hover:shadow-lg"
+                >
+                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                  </svg>
+                  <span className="font-medium">Email</span>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </CornerLayout>
 

@@ -39,9 +39,15 @@ import FamilyRelationshipDNA from './pages/FamilyRelationshipDNA';
 import MileHighDNACorner from './pages/MileHighDNACorner';
 import PrenatalDNACost from './pages/mile-high-dna-corner/PrenatalDNACost';
 import PrenatalDNAGuide from './pages/mile-high-dna-corner/PrenatalDNAGuide';
+import DNATestingTypes from './pages/DNATestingTypes';
 import LegalVsNonLegal from './pages/mile-high-dna-corner/LegalVsNonLegal';
 import HomeDNATestAccuracy from './pages/mile-high-dna-corner/HomeDNATestAccuracy';
 import AnswersMatterMost from './pages/mile-high-dna-corner/AnswersMatterMost';
+import WhatToExpectNIPP from './pages/mile-high-dna-corner/WhatToExpectNIPP';
+import BestAtHomePaternityDNAKit from './pages/mile-high-dna-corner/BestAtHomePaternityDNAKit';
+import BilingualDNATestingDenver from './pages/mile-high-dna-corner/BilingualDNATestingDenver';
+import LegalDNACostGuide from './pages/mile-high-dna-corner/LegalDNACostGuide';
+import NonLegalDNACostGuide from './pages/mile-high-dna-corner/NonLegalDNACostGuide';
 
 // Spanish imports
 import HomePageEs from './pages/es/HomePageEs';
@@ -137,9 +143,15 @@ function AppLayout() {
             <Route path="/mile-high-dna-corner" element={<MileHighDNACorner />} />
             <Route path="/mile-high-dna-corner/prenatal-dna-cost-guide" element={<PrenatalDNAGuide />} />
             <Route path="/mile-high-dna-corner/how-much-does-a-prenatal-dna-test-cost" element={<PrenatalDNACost />} />
-            <Route path="/mile-high-dna-corner/legal-vs-non-legal-dna-testing-guide" element={<LegalVsNonLegal />} />
+            <Route path="/dna-testing-types" element={<DNATestingTypes />} />
+            <Route path="/legal-vs-non-legal-dna-test" element={<LegalVsNonLegal />} />
             <Route path="/mile-high-dna-corner/how-reliable-and-accurate-are-home-dna-tests" element={<HomeDNATestAccuracy />} />
             <Route path="/mile-high-dna-corner/family-relationship-dna-testing-denver" element={<AnswersMatterMost />} />
+            <Route path="/mile-high-dna-corner/what-to-expect-non-invasive-prenatal-dna-test-denver" element={<WhatToExpectNIPP />} />\
+            <Route path="/mile-high-dna-corner/best-at-home-paternity-dna-kit-denver" element={<BestAtHomePaternityDNAKit />} />
+            <Route path="/mile-high-dna-corner/why-bilingual-dna-testing-matters-denver" element={<BilingualDNATestingDenver />} />
+            <Route path="/mile-high-dna-corner/legal-dna-cost-guide" element={<LegalDNACostGuide />} />
+            <Route path="/mile-high-dna-corner/non-legal-dna-cost-guide" element={<NonLegalDNACostGuide />} />
 
             {/* English Fallback Route - must be last */}
             <Route path="*" element={<Navigate to="/" replace />} />
