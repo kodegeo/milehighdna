@@ -125,7 +125,7 @@ const Home = () => {
           <h2 className="text-3xl font-bold mb-6">Why Families Trust Mile High DNA</h2>
 
           <p className="max-w-3xl mx-auto text-gray-700 mb-10">
-            From paternity to legal relationship testing, we provide <strong>99.99% accurate results</strong> with <strong>fast turnaround times</strong>. Our team guides you through every step with care and confidentiality.
+            From paternity dna testing to legal relationship testing, we provide 99.99% accurate results with fast turnaround times. Our team guides you through every step with care and confidentiality.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="card p-6">

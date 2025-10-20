@@ -25,7 +25,7 @@ import checkoutRoutes from "./src/routes/checkoutRoutes.js";
 import healthRoutes from "./src/routes/health.js";
 import sendTestEmailRoute from "./src/routes/sendTestEmailRoute.js";
 import sendQuestionRoute from "./src/routes/sendQuestionRoute.js";
-import { notifyIndexNow } from "./utils/indexNow.js";
+import { notifyIndexNow } from "./src/utils/indexNow.js";
 
 
 

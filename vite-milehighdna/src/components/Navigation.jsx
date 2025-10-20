@@ -65,10 +65,16 @@ const Navigation = () => {
                         Prenatal DNA Testing
                     </Link> 
                     <Link
-                        to="/family-relationship-dna"
+                        to="/grandparentage-dna-tests"
                         className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                     >
-                        Family Relationship Testing
+                        Grandparentage Testing
+                    </Link>
+                    <Link
+                        to="/siblingship-dna-tests"
+                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                    >
+                        Siblingship Testing
                     </Link>
                     <Link
                         to="/products/peace-of-mind-dna-kit"
@@ -121,7 +127,8 @@ const Navigation = () => {
               <div className="ml-4 space-y-1 mt-1 max-h-[300px] overflow-y-auto">
                 <Link to="/dna-testing-types" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={() => setIsMenuOpen(false)}>Paternity DNA Testing</Link>
                 <Link to="/prenatal-dna-test" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={() => setIsMenuOpen(false)}>Prenatal DNA Testing</Link>
-                <Link to="/family-relationship-dna" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={() => setIsMenuOpen(false)}>Family Relationship Testing</Link>
+                <Link to="/grandparentage-dna-tests" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={() => setIsMenuOpen(false)}> Grandparentage Testing </Link>
+                <Link to="/siblingship-dna-tests" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={() => setIsMenuOpen(false)}> Siblingship Testing </Link> 
                 <Link to="/products/peace-of-mind-dna-kit" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={() => setIsMenuOpen(false)}>At Home DNA Test Kits</Link>
               </div>
             </details>

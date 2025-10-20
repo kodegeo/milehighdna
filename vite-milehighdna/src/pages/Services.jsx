@@ -126,7 +126,7 @@ const Services = () => {
         </p>
         <div className="max-w-3xl mx-auto">
           <iframe
-            src="https://calendly.com/milehighdnatesting/freeconsultation"
+            src="https://calendly.com/milehighdnatesting/30-minute-dna-test-appointment"
             width="100%"
             height="500"
             frameBorder="0"

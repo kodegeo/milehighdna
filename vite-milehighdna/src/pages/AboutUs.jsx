@@ -34,10 +34,10 @@ const AboutUsPage = () => {
         title="About Mile High DNA Testing"
         subtitle="Providing reliable paternity and immigration DNA testing in Denver, Aurora, Lakewood, and across Colorado. AABB-accredited and court-admissible results."
         imageUrl={aboutHero}
-        buttonText="Schedule a Consultation"
-        buttonLink="https://calendly.com/milehighdnatesting/legal-paternity-test"
-        secondaryButtonText="Contact Us"
-        secondaryButtonLink="https://calendly.com/milehighdnatesting/freeconsultation"
+        buttonText="Schedule an Appointment"
+        buttonLink="https://calendly.com/milehighdnatesting/30-minute-dna-test-appointment"
+        secondaryButtonText="Contact Us Today"
+        secondaryButtonLink="tel:7209009342"
       />
 
       <WhoWeAre
