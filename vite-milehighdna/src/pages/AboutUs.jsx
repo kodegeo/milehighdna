@@ -50,7 +50,7 @@ const AboutUsPage = () => {
         title="What Makes Us Different"
         pillars={[
           { icon: "🧪", title: "Certified Accuracy", description: "We partner with AABB-accredited labs to ensure legally admissible and highly reliable results." },
-          { icon: "⚡", title: "Fast Turnaround", description: "Get your results within 1–3 business days, with updates every step of the way." },
+          { icon: "⚡", title: "Fast Turnaround", description: "Get your results within 2–5 business days, with updates every step of the way." },
           { icon: "🤝", title: "Compassionate Service", description: "Our team understands the personal nature of testing. We're here to support you throughout the process." },
         ]}
       />

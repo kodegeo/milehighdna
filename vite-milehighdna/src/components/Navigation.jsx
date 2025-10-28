@@ -53,11 +53,18 @@ const Navigation = () => {
                 {openDropdown === "services" && (
                     <div className="absolute top-[100%] bg-white border border-gray-200 shadow-lg rounded-md pt-2 w-64 z-50 max-h-72 overflow-y-auto">
                     <Link
-                        to="/dna-testing-types"
+                        to="/legal-paternity-tests"
                         className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" 
                     >
-                        Paternity DNA Testing
+                        Legal Paternity DNA Testing
                     </Link>
+                    <Link
+                        to="/peace-of-mind-paternity-tests"
+                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" 
+                    >
+                        Non Legal Paternity Testing
+                    </Link>
+
                     <Link
                         to="/prenatal-dna-test"
                         className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
@@ -85,14 +92,13 @@ const Navigation = () => {
                     </div>
                 )}
                 </div>
-            <Link to="/appointments" className="text-gray-700 hover:text-blue-600 transition duration-300">Appointments</Link>
             <Link to="/mile-high-dna-corner" className="text-gray-700 hover:text-blue-600 transition duration-300">Mile High DNA Corner</Link>
 
             <Link to="/faq" className="text-gray-700 hover:text-blue-600 transition duration-300">FAQ</Link>
             <Link to="/get-results" className="text-gray-700 hover:text-blue-600 transition duration-300">Get Results</Link>
 
             <Link 
-              to="/book-appointment" 
+              to="/appointments" 
               className="bg-blue-600 text-white px-6 py-2 rounded-lg font-semibold hover:bg-blue-700 transition duration-300"
             >
               Book Now
@@ -125,7 +131,9 @@ const Navigation = () => {
             <details className="py-2">
               <summary className="text-gray-700 hover:text-blue-600 transition duration-300 cursor-pointer">Services</summary>
               <div className="ml-4 space-y-1 mt-1 max-h-[300px] overflow-y-auto">
-                <Link to="/dna-testing-types" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={() => setIsMenuOpen(false)}>Paternity DNA Testing</Link>
+                <Link to="/legal-paternity-tests" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={() => setIsMenuOpen(false)}>Legal Paternity DNA Testing</Link>
+                <Link to="/peace-of-mind-paternity-tests" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={() => setIsMenuOpen(false)}>Non Legal Paternity DNA Testing</Link>
+
                 <Link to="/prenatal-dna-test" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={() => setIsMenuOpen(false)}>Prenatal DNA Testing</Link>
                 <Link to="/grandparentage-dna-tests" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={() => setIsMenuOpen(false)}> Grandparentage Testing </Link>
                 <Link to="/siblingship-dna-tests" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={() => setIsMenuOpen(false)}> Siblingship Testing </Link> 
@@ -133,13 +141,12 @@ const Navigation = () => {
               </div>
             </details>
 
-            <Link to="/appointments" className="text-gray-700 hover:text-blue-600 transition duration-300 block py-2" onClick={() => setIsMenuOpen(false)}>Appointments</Link>
             <Link to="/mile-high-dna-corner" className="text-gray-700 hover:text-blue-600 transition duration-300 block py-2" onClick={() => setIsMenuOpen(false)}>Mile High DNA Corner</Link>
             <Link to="/faq" className="text-gray-700 hover:text-blue-600 transition duration-300 block py-2" onClick={() => setIsMenuOpen(false)}>FAQ</Link>
             <Link to="/get-results" className="text-gray-700 hover:text-blue-600 transition duration-300 block py-2" onClick={() => setIsMenuOpen(false)}>Get Results</Link>
 
             <Link 
-              to="/book-appointment" 
+              to="/appointments" 
               className="bg-blue-600 text-white px-6 py-2 rounded-lg font-semibold hover:bg-blue-700 transition duration-300 mt-4 block text-center"
               onClick={() => setIsMenuOpen(false)}
             >

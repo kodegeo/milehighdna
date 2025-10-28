@@ -2,6 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import bannerBg from '../assets/images/banner_bg_Res_3.png';
 import bannerBgMobile from '../assets/images/banner_bg_Res_3_mobi.jpg';
+import servicePrenatal from '../assets/images/prenatal-1.png';
+import serviceInOffice from '../assets/images/father_baby.jpg';
+import serviceAtHome from '../assets/images/at-home-test-kit.png';
 import servicePat from '../assets/images/service_pat.png';
 import servicePre from '../assets/images/grandparantage_1.png';
 import serviceImma from '../assets/images/service_imma.png';
@@ -119,36 +122,29 @@ const Home = () => {
         </div>
       </div>
 
-      {/* Why Choose Us */}
-      <div className="section-padding section-bg-alt">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-6">Why Families Trust Mile High DNA</h2>
-
-          <p className="max-w-3xl mx-auto text-gray-700 mb-10">
-            From paternity dna testing to legal relationship testing, we provide 99.99% accurate results with fast turnaround times. Our team guides you through every step with care and confidentiality.
-          </p>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="card p-6">
-              <h3 className="text-xl font-bold mb-2">AABB-Accredited</h3>
-              <p className="text-gray-600">Court-admissible testing trusted by immigration attorneys and legal professionals.</p>
-            </div>
-            <div className="card p-6">
-              <h3 className="text-xl font-bold mb-2">Fast Results</h3>
-              <p className="text-gray-600">Get results in as little as 2–3 business days. Expedited testing available.</p>
-            </div>
-            <div className="card p-6">
-              <h3 className="text-xl font-bold mb-2">100% Confidential</h3>
-              <p className="text-gray-600">Your privacy is our priority—secure handling of all samples and results.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
       {/* Services Preview */}
       <div className="section-padding">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-12">Our Most Requested Services</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="card">
+              <img 
+                src={servicePrenatal} 
+                alt="Prenatal Paternity Testing"
+                className="w-full h-48 object-cover"
+              />
+              <div className="p-6">
+                <h3 className="text-xl font-bold mb-2">Prenatal Paternity Testing</h3>
+                <p className="text-gray-600 mb-4">Non-invasive prenatal paternity testing in Denver with 99.9% accuracy. Get early answers during pregnancy—safe for mother and baby. Trusted DNA testing lab near you for fast, confidential results.</p>
+                <Link
+                  to="/prenatal-dna-test"
+                  className="text-[#2C6FA6] hover:text-[#7DB9E8] font-semibold transition duration-300"
+                >
+                  Learn More →
+                </Link>
+              </div>
+              </div>
+
             <div className="card">
               <img 
                 src={servicePat} 
@@ -157,7 +153,7 @@ const Home = () => {
               />
               <div className="p-6">
                 <h3 className="text-xl font-bold mb-2">Legal Paternity Testing</h3>
-                <p className="text-gray-600 mb-4">Fast, court-recognized paternity tests with 99.99% accuracy. Ideal for custody, child support, or peace of mind.</p>
+                <p className="text-gray-600 mb-4">Court-admissible legal paternity testing in Denver with 99.99% accuracy. Ideal for child support, custody, or immigration cases. Collected by certified professionals and processed in an accredited DNA lab you can trust.</p>
                 <Link
                   to="/legal-paternity-tests"
                   className="text-[#2C6FA6] hover:text-[#7DB9E8] font-semibold transition duration-300"
@@ -169,13 +165,48 @@ const Home = () => {
 
             <div className="card">
               <img 
+                src={serviceInOffice} 
+                alt="In Office NonLegal Paternity Testing"
+                className="w-full h-48 object-cover"
+              />
+              <div className="p-6">
+                <h3 className="text-xl font-bold mb-2">In Office Non Legal Paternity Testing</h3>
+                <p className="text-gray-600 mb-4">Accurate, affordable paternity testing in Denver done in our certified DNA testing center. Perfect for peace of mind—no court order required. Professional collection and same-day appointments available.</p>
+                <Link
+                  to="/peace-of-mind-paternity-tests"
+                  className="text-[#2C6FA6] hover:text-[#7DB9E8] font-semibold transition duration-300"
+                >
+                  Learn More →
+                </Link>
+              </div>
+            </div>
+
+            <div className="card">
+              <img 
+                src={serviceAtHome} 
+                alt="At Home Paternity Kits"
+                className="w-full h-48 object-cover"
+              />
+              <div className="p-6">
+                <h3 className="text-xl font-bold mb-2">At Home Paternity Kits</h3>
+                <p className="text-gray-600 mb-4">Order an at-home paternity DNA test kit for private, convenient testing. Collect samples at home, mail them to our Denver DNA lab, and receive secure, accurate results online. Ideal for families seeking peace of mind.</p>
+                <Link
+                  to="/products/peace-of-mind-dna-kit"
+                  className="text-[#2C6FA6] hover:text-[#7DB9E8] font-semibold transition duration-300"
+                >
+                  Learn More →
+                </Link>
+              </div>
+            </div>
+            <div className="card">
+              <img 
                 src={servicePre} 
                 alt="Grandparentage Testing"
                 className="w-full h-48 object-cover"
               />
               <div className="p-6">
                 <h3 className="text-xl font-bold mb-2">Grandparentage Testing</h3>
-                <p className="text-gray-600 mb-4">Confirm biological grandparent relationships—legal and non-legal options available.</p>
+                <p className="text-gray-600 mb-4">Accurate grandparent DNA testing in Denver to confirm biological relationships when a parent is unavailable. Reliable, confidential results accepted for legal or personal purposes.</p>
                 <Link
                   to="/grandparentage-dna-tests"
                   className="text-[#2C6FA6] hover:text-[#7DB9E8] font-semibold transition duration-300"
@@ -193,7 +224,7 @@ const Home = () => {
               />
               <div className="p-6">
                 <h3 className="text-xl font-bold mb-2">Siblingship Testing</h3>
-                <p className="text-gray-600 mb-4">Determine full or half-sibling relationships with reliable, discreet testing.</p>
+                <p className="text-gray-600 mb-4">Trusted siblingship DNA testing in Denver to determine full or half-sibling relationships. Perfect for personal knowledge or legal documentation. Convenient collection with secure processing.</p>
                 <Link
                   to="/siblingship-dna-tests"
                   className="text-[#2C6FA6] hover:text-[#7DB9E8] font-semibold transition duration-300"
@@ -201,6 +232,31 @@ const Home = () => {
                   Learn More →
                 </Link>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Why Choose Us */}
+      <div className="section-padding section-bg-alt">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-3xl font-bold mb-6">Why Families Trust Mile High DNA</h2>
+
+          <p className="max-w-3xl mx-auto text-gray-700 mb-10">
+            From paternity dna testing to legal relationship testing, we provide 99.99% accurate results with fast turnaround times. Our team guides you through every step with care and confidentiality.
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="card p-6">
+              <h3 className="text-xl font-bold mb-2">AABB-Accredited</h3>
+              <p className="text-gray-600">Court-admissible testing trusted by immigration attorneys and legal professionals.</p>
+            </div>
+            <div className="card p-6">
+              <h3 className="text-xl font-bold mb-2">Fast Results</h3>
+              <p className="text-gray-600">Get results in as little as 2–5 business days. Expedited testing available.</p>
+            </div>
+            <div className="card p-6">
+              <h3 className="text-xl font-bold mb-2">100% Confidential</h3>
+              <p className="text-gray-600">Your privacy is our priority—secure handling of all samples and results.</p>
             </div>
           </div>
         </div>
