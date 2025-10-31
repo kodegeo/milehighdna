@@ -140,7 +140,7 @@ const Home = () => {
                   to="/prenatal-dna-test"
                   className="text-[#2C6FA6] hover:text-[#7DB9E8] font-semibold transition duration-300"
                 >
-                  Learn More →
+                  Learn →
                 </Link>
               </div>
               </div>
