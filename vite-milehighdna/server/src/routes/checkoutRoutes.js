@@ -1,9 +1,3 @@
-import express from "express";
-import { processCheckout } from "../utils/checkoutUtils.js";
-import axios from "axios";
-
-const router = express.Router();
-
 router.post("/create-checkout", async (req, res) => {
   try {
     const {
@@ -20,7 +14,7 @@ router.post("/create-checkout", async (req, res) => {
       secondaryAddress,
     } = req.body;
 
-    // ✅ Build success URL with all order data as query params
+    // Build success URL
     const successUrl = `${process.env.FRONTEND_URL}/confirmation?orderId={CHECKOUT_SESSION_ID}&customerEmail=${encodeURIComponent(
       customerEmail
     )}&customerName=${encodeURIComponent(
@@ -47,11 +41,34 @@ router.post("/create-checkout", async (req, res) => {
         : ""
     }`;
 
-    // ✅ Create checkout session using your utility
-    const result = await processCheckout({ ...req.body, success_url: successUrl });
+    // ✅ Map fields for checkoutUtils.js
+    const mappedPayload = {
+      ...req.body,
+      success_url: successUrl,
+      address: primaryAddress.street,
+      city: primaryAddress.city,
+      stateOrRegion: primaryAddress.state,
+      postalCode: primaryAddress.zipCode,
+      secondaryAddress:
+        locations === 2
+          ? {
+              address: secondaryAddress.street,
+              city: secondaryAddress.city,
+              stateOrRegion: secondaryAddress.state,
+              postalCode: secondaryAddress.zipCode,
+            }
+          : null,
+    };
+
+    // Create checkout session
+    const result = await processCheckout(mappedPayload);
+
+    if (result.error) {
+      console.error("❌ Stripe checkout session error:", result.error);
+      return res.status(400).json({ error: result.error });
+    }
 
     if (result.url) {
-      // Build order details for confirmation email
       const orderDetails = {
         customerName: `${firstName || ""} ${lastName || ""}`.trim(),
         productName: productName || "At Home DNA Test",
@@ -65,9 +82,6 @@ router.post("/create-checkout", async (req, res) => {
         secondaryAddress: locations === 2 ? secondaryAddress : null,
       };
 
-      console.log("📦 Order Details for Confirmation Email:", orderDetails);
-
-      // ✅ Trigger confirmation email
       try {
         await axios.post(
           `${process.env.BACKEND_URL || "https://milehighdna-backend.onrender.com"}/api/send-confirmation`,
@@ -79,7 +93,6 @@ router.post("/create-checkout", async (req, res) => {
             orderDetails,
           }
         );
-        console.log("✅ Confirmation email sent successfully via Mailgun");
       } catch (emailErr) {
         console.error(
           "❌ Error sending confirmation email:",
@@ -94,5 +107,3 @@ router.post("/create-checkout", async (req, res) => {
     res.status(500).json({ error: "Error creating checkout session" });
   }
 });
-
-export default router;

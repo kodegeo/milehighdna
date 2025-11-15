@@ -60,17 +60,29 @@ const CheckoutDomestic = () => {
   const total = (Number(unitPrice) + Number(shippingTotal)).toFixed(2);
 
   const createCheckout = async () => {
-    if (!primaryAddress.street || !primaryAddress.city || !primaryAddress.state || !primaryAddress.zipCode) {
+    if (
+      !primaryAddress.street ||
+      !primaryAddress.city ||
+      !primaryAddress.state ||
+      !primaryAddress.zipCode
+    ) {
       alert("Please complete all primary shipping address fields.");
       return;
     }
-    
-    if (locations === 2 && (!secondaryAddress.street || !secondaryAddress.city || !secondaryAddress.state || !secondaryAddress.zipCode)) {
+  
+    if (
+      locations === 2 &&
+      (!secondaryAddress.street ||
+        !secondaryAddress.city ||
+        !secondaryAddress.state ||
+        !secondaryAddress.zipCode)
+    ) {
       alert("Please complete all secondary shipping address fields.");
       return;
     }
-
+  
     setLoading(true);
+  
     try {
       const res = await fetch(
         `${import.meta.env.VITE_API_URL}/api/create-checkout`,
@@ -93,10 +105,21 @@ const CheckoutDomestic = () => {
           }),
         }
       );
-
+  
       const result = await res.json();
+  
+      // 🚨 NEW: Handle backend errors
+      if (result.error) {
+        console.error("Checkout error:", result.error);
+        alert(
+          "Unable to create checkout session. Please verify your information and try again."
+        );
+        return;
+      }
+  
+      // 🚀 Redirect to Stripe
       if (result.url) {
-        window.location.href = result.url; // Stripe redirect
+        window.location.href = result.url;
       } else {
         alert("Checkout failed. Please try again.");
       }
@@ -107,6 +130,7 @@ const CheckoutDomestic = () => {
       setLoading(false);
     }
   };
+  
 
   return (
     <div className="min-h-screen bg-gray-50">

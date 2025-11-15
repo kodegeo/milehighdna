@@ -1,12 +1,8 @@
 import Stripe from "stripe";
 import { supabase } from "../infrastructure/supabaseClient.js";
 
-
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
 
-/**
- * Create a Stripe Checkout session and persist order + items in Supabase
- */
 export async function processCheckout(payload) {
   const {
     firstName,
@@ -17,38 +13,41 @@ export async function processCheckout(payload) {
     shippingFee,
     orderSource,
     country,
-
-    // shipping options
-    shippingMethod, // "regular" | "overnight"
+    shippingMethod,
     locations = 1,
 
-    // address fields for orders table
+    // Address fields
     address,
     city,
     stateOrRegion,
     postalCode,
     secondaryAddress,
+
+    // Dynamic URLs passed from create-checkout route
+    success_url,
+    cancel_url,
   } = payload;
 
   try {
-    // 1. Upsert customer in customerdb (no address here)
+    // 1. Upsert customer
     const { data: customer, error: customerErr } = await supabase
-    .from("customerdb")
-    .upsert(
-      {
-        first_name: firstName,
-        last_name: lastName,
-        email: customerEmail,
-        test_type: "peace_of_mind", // default for now, can be dynamic
-      },
-      { onConflict: ["email"], returning: "representation" }    )
-    .select()
-    .single();
+      .from("customerdb")
+      .upsert(
+        {
+          first_name: firstName,
+          last_name: lastName,
+          email: customerEmail,
+          test_type: "peace_of_mind",
+        },
+        { onConflict: ["email"], returning: "representation" }
+      )
+      .select()
+      .single();
 
     if (customerErr) throw customerErr;
     const customerId = customer.id;
 
-    // 2. Insert order in orders
+    // 2. Insert order
     const orderTotal = Number(unitPrice) + Number(shippingFee);
 
     const orderRow = {
@@ -80,14 +79,14 @@ export async function processCheckout(payload) {
     if (orderErr) throw orderErr;
     const orderId = order.id;
 
-    // 3. Insert order items (product + shipping)
+    // 3. Insert items
     const { error: itemErr } = await supabase.from("orderitems").insert([
       {
         order_id: orderId,
         product_name: productName,
         unit_price_usd: unitPrice,
         quantity: 1,
-        line_total: unitPrice * 1,
+        line_total: unitPrice,
       },
       {
         order_id: orderId,
@@ -100,7 +99,7 @@ export async function processCheckout(payload) {
 
     if (itemErr) throw itemErr;
 
-    // 4. Create Stripe Checkout session
+    // 4. Define Stripe line items
     const lineItems = [
       process.env.STRIPE_LIVE_PRICE_ID
         ? { price: process.env.STRIPE_LIVE_PRICE_ID, quantity: 1 }
@@ -122,21 +121,26 @@ export async function processCheckout(payload) {
       },
     ];
 
+    // 5. Create Stripe checkout session (fix success_url!)
     const session = await stripe.checkout.sessions.create({
       mode: "payment",
       payment_method_types: ["card"],
       line_items: lineItems,
       customer_email: customerEmail,
-      success_url: `${process.env.FRONTEND_URL}/success`,
-      cancel_url: `${process.env.FRONTEND_URL}/cancel`,
+
+      // ⭐ FIXED: use dynamic success_url & cancel_url
+      success_url: success_url || `${process.env.FRONTEND_URL}/success`,
+      cancel_url: cancel_url || `${process.env.FRONTEND_URL}/cancel`,
+
+      // ⭐ Metadata must be strings
       metadata: {
-        orderId,
-        firstName,
-        lastName,
-        productName,
-        country,
+        orderId: String(orderId),
+        firstName: firstName || "",
+        lastName: lastName || "",
+        productName: productName || "",
+        country: country || "",
         shippingMethod: shippingMethod || "",
-        shippingLocations: String(locations || 1),
+        shippingLocations: String(locations),
       },
     });
 
