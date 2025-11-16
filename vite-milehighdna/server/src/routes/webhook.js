@@ -30,11 +30,16 @@ router.post("/", async (req, res) => {
   }
 
   try {
-    // Handle the event
+    // --------------------------------------------------------------
+    //  checkout.session.completed
+    // --------------------------------------------------------------
     if (event.type === "checkout.session.completed") {
       const session = event.data.object;
 
-      const orderId = session.metadata?.orderId;
+      // ALWAYS safe
+      const metadata = session.metadata || {};
+
+      const orderId = metadata.orderId;
       if (orderId) {
         // Update order in Supabase
         await supabase
@@ -54,12 +59,10 @@ router.post("/", async (req, res) => {
           subject: "Order Confirmed - Mile High DNA Testing",
           orderDetails: {
             orderId,
-            productName: session.metadata.productName,
-            shippingMethod: session.metadata.shippingMethod,
-            locations: session.metadata.shippingLocations,
-            customerName: `${session.metadata.firstName || ""} ${
-              session.metadata.lastName || ""
-            }`.trim(),
+            productName: metadata.productName || "Test Product",
+            shippingMethod: metadata.shippingMethod || "N/A",
+            locations: metadata.shippingLocations || 1,
+            customerName: `${metadata.firstName || "Test"} ${metadata.lastName || "User"}`,
             email: session.customer_email,
           },
         });
@@ -68,12 +71,16 @@ router.post("/", async (req, res) => {
       }
     }
 
+    // --------------------------------------------------------------
+    //  checkout.session.expired / async_payment_failed
+    // --------------------------------------------------------------
     if (
       event.type === "checkout.session.expired" ||
       event.type === "checkout.session.async_payment_failed"
     ) {
       const session = event.data.object;
-      const orderId = session.metadata?.orderId;
+      const metadata = session.metadata || {};
+      const orderId = metadata.orderId;
 
       if (orderId) {
         await supabase
