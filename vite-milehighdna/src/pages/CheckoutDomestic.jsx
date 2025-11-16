@@ -8,11 +8,12 @@ const CheckoutDomestic = () => {
     firstName,
     lastName,
     customerEmail,
+    phoneNumber,           // <-- ADD THIS
     productName = "At Home DNA Testing Kit",
     unitPrice = 199,
     country = "US",
   } = location.state || {};
-
+  
   // Shipping state
   const [shippingMethod, setShippingMethod] = useState("regular"); // "regular" | "overnight"
   const [locations, setLocations] = useState(1); // 1 | 2
@@ -60,6 +61,13 @@ const CheckoutDomestic = () => {
   const total = (Number(unitPrice) + Number(shippingTotal)).toFixed(2);
 
   const createCheckout = async () => {
+
+      // Validate basic customer info
+    if (!firstName || !lastName || !customerEmail || !phoneNumber) {
+      alert("Please fill in your details before continuing.");
+      return;
+    }
+
     if (
       !primaryAddress.street ||
       !primaryAddress.city ||
@@ -93,6 +101,7 @@ const CheckoutDomestic = () => {
             firstName,
             lastName,
             customerEmail,
+            phoneNumber,                     // <-- ADD THIS
             productName,
             unitPrice,
             shippingFee: shippingTotal,
@@ -446,7 +455,7 @@ const CheckoutDomestic = () => {
           disabled={loading}
           className="w-full bg-green-600 hover:bg-green-700 text-white font-semibold py-4 px-8 rounded-lg transition-all duration-300 disabled:opacity-50"
         >
-          {loading ? "Processing..." : "Complete Checkout"}
+          {loading ? "Processing..." : "Payment"}
         </button>
       </div>
     </div>

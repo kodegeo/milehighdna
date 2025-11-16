@@ -55,6 +55,7 @@ router.post("/create-session", async (req, res) => {
         firstName,
         lastName,
         email,
+        phoneNumber: req.body.phoneNumber || "",
         orderSource,
         country,
       },

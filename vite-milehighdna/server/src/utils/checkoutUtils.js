@@ -8,6 +8,7 @@ export async function processCheckout(payload) {
     firstName,
     lastName,
     customerEmail,
+    phoneNumber,      // <-- ADD THIS
     productName,
     unitPrice,
     shippingFee,
@@ -21,12 +22,34 @@ export async function processCheckout(payload) {
     city,
     stateOrRegion,
     postalCode,
+
+    // INTERNATIONAL nested address (optional)
+    primaryAddress,
     secondaryAddress,
 
     // Dynamic URLs passed from create-checkout route
     success_url,
     cancel_url,
   } = payload;
+
+  let finalAddress = address;
+  let finalCity = city;
+  let finalStateOrRegion = stateOrRegion;
+  let finalPostalCode = postalCode;
+
+  // If the frontend sent nested fields
+  if (primaryAddress) {
+    finalAddress = primaryAddress.street || null;
+    finalCity = primaryAddress.city || null;
+    finalStateOrRegion = primaryAddress.region || null;
+    finalPostalCode = primaryAddress.postalCode || null;
+  }
+
+  // If any field is still missing, force null
+  finalAddress = finalAddress || null;
+  finalCity = finalCity || null;
+  finalStateOrRegion = finalStateOrRegion || null;
+  finalPostalCode = finalPostalCode || null;
 
   try {
     // 1. Upsert customer
@@ -37,6 +60,7 @@ export async function processCheckout(payload) {
           first_name: firstName,
           last_name: lastName,
           email: customerEmail,
+          phone: phoneNumber,       // <-- ADD THIS
           test_type: "peace_of_mind",
         },
         { onConflict: ["email"], returning: "representation" }
@@ -60,10 +84,15 @@ export async function processCheckout(payload) {
       currency: "USD",
       shipping_method: shippingMethod,
       shipping_locations: locations,
-      address: address || null,
-      city: city || null,
-      state_or_region: stateOrRegion || null,
-      postal_code: postalCode || null,
+
+      // Normalized address for DB
+      address: finalAddress,
+      city: finalCity,
+      state_or_region: finalStateOrRegion,
+      postal_code: finalPostalCode,
+
+      // Save phone number into order table too
+      phone_number: phoneNumber,
     };
 
     if (secondaryAddress) {
@@ -139,6 +168,7 @@ export async function processCheckout(payload) {
         lastName: lastName || "",
         productName: productName || "",
         country: country || "",
+        phoneNumber,   // ✅ ADDED
         shippingMethod: shippingMethod || "",
         shippingLocations: String(locations),
       },

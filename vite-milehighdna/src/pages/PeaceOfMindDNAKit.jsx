@@ -9,6 +9,7 @@ const PeaceOfMindDNAKit = () => {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [customerEmail, setCustomerEmail] = useState("");
+  const [phoneNumber, setPhoneNumber] = useState("");
   const [domesticShipping, setDomesticShipping] = useState(null);
   const [internationalShipping, setInternationalShipping] = useState(null);
 
@@ -40,12 +41,13 @@ const PeaceOfMindDNAKit = () => {
         firstName,
         lastName,
         customerEmail,
+        phoneNumber,   // <-- ADD THIS
         country: "US",
         productName,
         unitPrice: price,
         shippingFee: domesticShipping,
       },
-    });
+    });    
   };
 
   const goToInternational = () => {
@@ -58,11 +60,12 @@ const PeaceOfMindDNAKit = () => {
         firstName,
         lastName,
         customerEmail,
+        phoneNumber,   // <-- ADD THIS
         productName,
         unitPrice: price,
         shippingFee: internationalShipping,
       },
-    });
+    });    
   };
 
   return (
@@ -170,6 +173,18 @@ const PeaceOfMindDNAKit = () => {
                       placeholder="Enter your email address"
                       value={customerEmail}
                       onChange={(e) => setCustomerEmail(e.target.value)}
+                      className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    />
+                  </div>
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 mb-1">
+                      Phone Number *
+                    </label>
+                    <input
+                      type="tel"
+                      placeholder="Enter your phone number"
+                      value={phoneNumber}
+                      onChange={(e) => setPhoneNumber(e.target.value)}
                       className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                     />
                   </div>

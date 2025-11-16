@@ -14,6 +14,7 @@ import axios from "axios";
  *     customerName: string,
  *     productName: string,
  *     price: string,
+ *     phoneNumber: string,
  *     shippingFee: string,
  *     total: string,
  *     orderType: string,
@@ -32,11 +33,20 @@ export const handleSendConfirmation = async (req, res) => {
 
   const logoUrl = "https://milehighdnatesting.com/images/milehigh-dna-logo-white.png";
 
+  // Normalize for safety
+  const primary = orderDetails.primaryAddress || {};
+  const secondary = orderDetails.secondaryAddress || {};
+
+  // 🆕 Add dynamic region labels (state/province/etc.)
+  const regionLabel = orderDetails.orderType === "International" ? "Region" : "State";
+  const postalLabel = orderDetails.orderType === "International" ? "Postal Code" : "ZIP Code";
+  
   // 🧾 Plain text fallback
   const plainText = `
 Order Confirmation
 -------------------------
 Customer: ${orderDetails.customerName}
+Phone: ${orderDetails.phoneNumber || "N/A"}
 Order #: ${orderDetails.orderNumber || "N/A"}
 Product: ${orderDetails.productName}
 Price: $${orderDetails.price}
@@ -46,16 +56,20 @@ Type: ${orderDetails.orderType}
 Shipping Method: ${orderDetails.shippingMethod}
 Locations: ${orderDetails.locations}
 
+
 Primary Shipping Address:
-${orderDetails.primaryAddress.street || ""}
-${orderDetails.primaryAddress.city || ""}, ${orderDetails.primaryAddress.state || ""} ${orderDetails.primaryAddress.zip || ""}
+${primary.street || ""}
+${primary.city || ""}, ${primary.state || primary.region || ""} ${primary.zip || primary.postalCode || ""}
 
 ${
   orderDetails.secondaryAddress
-    ? `Secondary Shipping Address:\n${orderDetails.secondaryAddress.street || ""}\n${orderDetails.secondaryAddress.city || ""}, ${orderDetails.secondaryAddress.state || ""} ${orderDetails.secondaryAddress.zip || ""}`
+    ? `Secondary Shipping Address:
+${secondary.street || ""}
+${secondary.city || ""}, ${secondary.state || ""} ${secondary.zip || ""}`
     : ""
 }
   `;
+
 
   // 💌 HTML version (nicely formatted for email)
   const htmlBody = `
@@ -68,6 +82,7 @@ ${
       <p>Thank you for your order, <strong>${orderDetails.customerName}</strong>!</p>
       <p>Below are your order details:</p>
       <table style="width: 100%; border-collapse: collapse; margin-top: 10px;">
+        <tr><td><strong>Phone</strong></td><td>${orderDetails.phoneNumber || "N/A"}</td></tr>
         <tr><td><strong>Order #</strong></td><td>${orderDetails.orderNumber || "N/A"}</td></tr>
         <tr><td><strong>Product</strong></td><td>${orderDetails.productName}</td></tr>
         <tr><td><strong>Price</strong></td><td>$${orderDetails.price}</td></tr>
@@ -79,14 +94,22 @@ ${
       </table>
 
       <h3 style="margin-top: 20px; color: #244669;">Primary Shipping Address</h3>
-      <p>${orderDetails.primaryAddress.street || ""}<br/>
-      ${orderDetails.primaryAddress.city || ""}, ${orderDetails.primaryAddress.state || ""} ${orderDetails.primaryAddress.zip || ""}</p>
+
+      <p>
+        ${primary.street || ""}<br/>
+        ${primary.city || ""}, ${primary.state || primary.region || ""} 
+        ${primary.zip || primary.postalCode || ""}
+      </p>
 
       ${
         orderDetails.secondaryAddress
-          ? `<h3 style="margin-top: 20px; color: #244669;">Secondary Shipping Address</h3>
-             <p>${orderDetails.secondaryAddress.street || ""}<br/>
-             ${orderDetails.secondaryAddress.city || ""}, ${orderDetails.secondaryAddress.state || ""} ${orderDetails.secondaryAddress.zip || ""}</p>`
+          ? `
+            <h3 style="margin-top: 20px; color: #244669;">Secondary Shipping Address</h3>
+            <p>
+              ${secondary.street || ""}<br/>
+              ${secondary.city || ""}, ${secondary.state || ""} ${secondary.zip || ""}
+            </p>
+          `
           : ""
       }
 

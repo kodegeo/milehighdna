@@ -15,7 +15,8 @@ const CheckoutInternational = () => {
     firstName,
     lastName,
     customerEmail,
-    productName = "Peace of Mind DNA Kit",
+    phoneNumber,           // <-- ADD THIS
+    productName = "At Home DNA Testing Kit",
     unitPrice = 199,
     country: initialCountry = "CA",
   } = location.state || {};
@@ -98,6 +99,13 @@ const CheckoutInternational = () => {
 
   // ✅ Create Checkout
   const createCheckout = async () => {
+
+    // Validate basic customer info
+    if (!firstName || !lastName || !customerEmail || !phoneNumber) {
+      alert("Please fill in your details before continuing.");
+      return;
+    }
+      
     if (
       !primaryAddress.street ||
       !primaryAddress.city ||
@@ -118,7 +126,7 @@ const CheckoutInternational = () => {
       alert("Please complete all secondary shipping address fields.");
       return;
     }
-  
+      
     setLoading(true);
   
     try {
@@ -131,6 +139,7 @@ const CheckoutInternational = () => {
             firstName,
             lastName,
             customerEmail,
+            phoneNumber,                     // <-- ADD THIS
             productName,
             unitPrice,
             shippingFee: shippingTotal,
@@ -273,7 +282,7 @@ const CheckoutInternational = () => {
           disabled={loading}
           className="w-full bg-green-600 hover:bg-green-700 text-white font-semibold py-4 px-8 rounded-lg transition-all duration-300 disabled:opacity-50"
         >
-          {loading ? "Processing..." : "Complete Checkout"}
+          {loading ? "Processing..." : "Payment"}
         </button>
       </div>
     </div>
