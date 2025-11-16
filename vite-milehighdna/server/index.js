@@ -35,11 +35,13 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 // ✅ Stripe webhook (must use raw body)
-app.post(
+app.use(
   "/api/webhook",
-  bodyParser.raw({ type: "application/json" }),
-  webhookRouter
+  bodyParser.raw({ type: "application/json" })
 );
+
+// Now mount the router for ALL methods (GET + POST)
+app.use("/api/webhook", webhookRouter);
 
 // ✅ Middleware
 app.use(cors());
