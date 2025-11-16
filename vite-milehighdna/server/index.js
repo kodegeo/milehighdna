@@ -36,10 +36,12 @@ const PORT = process.env.PORT || 3000;
 
 // ✅ Stripe webhook (must use raw body)
 app.use(
-  "/webhook",
+  "/api/webhook",
   bodyParser.raw({ type: "application/json" }),
   webhookRouter
 );
+
+
 
 // ✅ Middleware
 app.use(cors());

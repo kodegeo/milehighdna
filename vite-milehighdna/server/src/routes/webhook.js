@@ -9,10 +9,8 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY, {
 });
 
 // Stripe webhook endpoint
-router.post(
-  "/",
-  express.raw({ type: "application/json" }),
-  async (req, res) => {
+router.post("/", async (req, res) => {
+
     const sig = req.headers["stripe-signature"];
     let event;
 
@@ -45,7 +43,7 @@ router.post(
             .eq("id", orderId);
 
           // ✅ Trigger confirmation email via backend route
-          await axios.post(`${process.env.BACKEND_URL}/api/send-confirmation-email`, {
+          await axios.post(`${process.env.BACKEND_URL}/api/send-confirmation`, {
             toCustomer: session.customer_email,
             toAdmin: "cynthia@milehighdnatesting.com",
             from: "info@milehighdnatesting.com",
