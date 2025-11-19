@@ -153,8 +153,6 @@ function AppLayout() {
             <Route path="/mile-high-dna-corner/legal-dna-cost-guide" element={<LegalDNACostGuide />} />
             <Route path="/mile-high-dna-corner/non-legal-dna-cost-guide" element={<NonLegalDNACostGuide />} />
 
-            {/* English Fallback Route - must be last */}
-            <Route path="*" element={<Navigate to="/" replace />} />
 
             {/* Spanish Routes */}
             <Route path="/es" element={<HomePageEs />} />
@@ -174,8 +172,6 @@ function AppLayout() {
             <Route path="/es/reservar-cita" element={<BookAppointmentEs />} />
             <Route path="/es/aabb-accreditation" element={<AABBAccreditationEs />} />  {/* unchanged */}
             <Route path="/es/prueba-de-paternidad-prenatal" element={<PrenatalEs />} />
-            {/* Spanish Fallback Route - must be last */}
-            <Route path="/es/*" element={<Navigate to="/es" replace />} />
           </Routes>
 
       </main>
