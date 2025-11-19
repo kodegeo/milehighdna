@@ -456,6 +456,12 @@ const NonLegalDNACostGuide = () => {
             </Link>
             <a
               href="tel:7209009342"
+              onClick={() => {
+                window.dataLayer?.push({
+                  event: "phone_click",
+                  phone_location: "NonLegalDNACostGuide - Corner Article CTA"
+                });
+              }}
               className="bg-gray-800 text-white px-8 py-4 font-bold uppercase tracking-wide rounded-lg hover:bg-gray-900 transition-all duration-300 shadow-lg"
             >
               Call Today <br /> (720) 900-9342

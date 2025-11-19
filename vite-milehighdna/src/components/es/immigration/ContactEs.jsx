@@ -33,7 +33,15 @@ const ContactEs = () => {
               📍 <strong>Dirección:</strong> 123 Main St, Denver, CO 80204
             </p>
             <p className="text-gray-700 mb-2">
-              📞 <strong>Teléfono:</strong> <a href="tel:+13035550123" className="text-blue-600 hover:underline">(303) 555-0123</a>
+              📞 <strong>Teléfono:</strong> <a 
+                href="tel:+17209009342" 
+                onClick={() => {
+                  window.dataLayer?.push({
+                    event: "phone_click",
+                    phone_location: "ImmigrationContactEs - Contact Component"
+                  });
+                }}
+                className="text-blue-600 hover:underline">(720) 900-9342</a>
             </p>
             <p className="text-gray-700 mb-2">
               ✉️ <strong>Correo:</strong> <a href="mailto:info@milehighdna.com" className="text-blue-600 hover:underline">info@milehighdna.com</a>

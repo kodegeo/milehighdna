@@ -58,7 +58,15 @@ function HomePageEs() {
               >
                 Agenda tu prueba hoy
               </Link>
-              <a href="tel:7209009342" className="bg-white text-[#2C6FA6] font-semibold px-6 py-3 rounded-xl border border-[#2C6FA6] hover:bg-gray-50 hover:border-[#1a5a8a] transition text-center shadow-md">
+              <a 
+                href="tel:7209009342" 
+                onClick={() => {
+                  window.dataLayer?.push({
+                    event: "phone_click",
+                    phone_location: "HomePageEs - Hero CTA"
+                  });
+                }}
+                className="bg-white text-[#2C6FA6] font-semibold px-6 py-3 rounded-xl border border-[#2C6FA6] hover:bg-gray-50 hover:border-[#1a5a8a] transition text-center shadow-md">
                 📞 Llama Hoy
               </a>
             </div>

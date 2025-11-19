@@ -1,6 +1,5 @@
 // src/App.jsx
 import React, { useEffect } from 'react';
-import ReactGA from 'react-ga4';
 import { Helmet } from 'react-helmet-async'; // Already have HelmetProvider in main.jsx
 import './styles/global.css';
 
@@ -48,6 +47,8 @@ import BestAtHomePaternityDNAKit from './pages/mile-high-dna-corner/BestAtHomePa
 import BilingualDNATestingDenver from './pages/mile-high-dna-corner/BilingualDNATestingDenver';
 import LegalDNACostGuide from './pages/mile-high-dna-corner/LegalDNACostGuide';
 import NonLegalDNACostGuide from './pages/mile-high-dna-corner/NonLegalDNACostGuide';
+import NotFound from './pages/NotFound';
+
 
 // Spanish imports
 import HomePageEs from './pages/es/HomePageEs';
@@ -71,15 +72,9 @@ import Success from './pages/Success';
 import TestAdmin from './pages/TestAdmin';
 import PrenatalEs from './pages/es/PrenatalEs';
 
-ReactGA.initialize('G-Q3MQFDMEL2'); 
-
 function AppLayout() {
   const location = useLocation();
   const isSpanish = location.pathname.startsWith('/es');
-
-  useEffect(() => {
-    ReactGA.send({ hitType: "pageview", page: location.pathname });
-  }, [location]);
 
   return (
     <>
@@ -147,12 +142,13 @@ function AppLayout() {
             <Route path="/mile-high-dna-corner/legal-vs-non-legal-dna-test" element={<LegalVsNonLegal />} />
             <Route path="/mile-high-dna-corner/how-reliable-and-accurate-are-home-dna-tests" element={<HomeDNATestAccuracy />} />
             <Route path="/mile-high-dna-corner/family-relationship-dna-testing-denver" element={<AnswersMatterMost />} />
-            <Route path="/mile-high-dna-corner/what-to-expect-non-invasive-prenatal-dna-test-denver" element={<WhatToExpectNIPP />} />\
+            <Route path="/mile-high-dna-corner/what-to-expect-non-invasive-prenatal-dna-test-denver" element={<WhatToExpectNIPP />} />
             <Route path="/mile-high-dna-corner/best-at-home-paternity-dna-kit-denver" element={<BestAtHomePaternityDNAKit />} />
             <Route path="/mile-high-dna-corner/why-bilingual-dna-testing-matters-denver" element={<BilingualDNATestingDenver />} />
             <Route path="/mile-high-dna-corner/legal-dna-cost-guide" element={<LegalDNACostGuide />} />
             <Route path="/mile-high-dna-corner/non-legal-dna-cost-guide" element={<NonLegalDNACostGuide />} />
 
+            <Route path="*" element={<NotFound />} />
 
             {/* Spanish Routes */}
             <Route path="/es" element={<HomePageEs />} />

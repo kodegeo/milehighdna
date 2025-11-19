@@ -21,7 +21,15 @@ const ServingColoradoEs = () => {
         <div className="text-[#2C6FA6] text-lg font-semibold space-y-2">
           <p>
             Teléfono:{" "}
-            <a href="tel:+17209009342" className="hover:underline">
+            <a 
+              href="tel:+17209009342" 
+              onClick={() => {
+                window.dataLayer?.push({
+                  event: "phone_click",
+                  phone_location: "ServingColoradoEs - Common Component"
+                });
+              }}
+              className="hover:underline">
               (720) 900-9342
             </a>
           </p>

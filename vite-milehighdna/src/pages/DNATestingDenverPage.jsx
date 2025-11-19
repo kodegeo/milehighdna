@@ -1,9 +1,35 @@
 import React from "react";
+import { Helmet } from "react-helmet-async";
 import landingBanner from "../assets/images/landing-1.2.jpg";
 
 const DNATestingDenverPage = () => {
   return (
     <div className="bg-white text-gray-800">
+        <Helmet>
+        <title>DNA Testing Denver | Prenatal, Legal, & Peace of Mind</title>
+        <meta
+          name="description"
+          content="Fast, confidential, AABB-accredited DNA testing in Denver, Aurora, Thorton, and Englewood. Legal paternity, prenatal, immigration, and peace-of-mind testing with results in 3–5 business days."
+        />
+        <link
+          rel="canonical"
+          href="https://milehighdnatesting.com/dna-testing-denver"
+        />
+        <meta property="og:title" content="DNA Testing Denver | Mile High DNA Testing" />
+        <meta
+          property="og:description"
+          content="Court-admissible, confidential DNA testing for legal, prenatal, immigration, and peace-of-mind needs. Serving Denver, Aurora, and Englewood."
+        />
+        <meta
+          property="og:url"
+          content="https://milehighdnatesting.com/dna-testing-denver"
+        />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:image"
+          content="https://milehighdnatesting.com/og-images/dna-testing-denver.jpg"
+        />
+      </Helmet>
       {/* HERO SECTION */}
       <section className="relative text-center py-0 px-0 bg-blue-50">
         {/* Banner Image */}
@@ -43,6 +69,12 @@ const DNATestingDenverPage = () => {
               </a>
               <a
                 href="tel:+17204516047"
+                onClick={() => {
+                  window.dataLayer?.push({
+                    event: "phone_click",
+                    phone_location: "DNATestingDenverPage - Hero CTA"
+                  });
+                }}
                 className="bg-green-600 hover:bg-green-700 text-white py-3 px-6 rounded-md text-lg font-semibold shadow"
               >
                 Call Us Now
@@ -135,7 +167,16 @@ const DNATestingDenverPage = () => {
         <h2 className="text-2xl font-bold mb-4">Schedule a DNA Test Today</h2>
         <p className="text-gray-700 mb-4">
           Select a convenient time below. Prefer to call?{" "}
-          <a href="tel:+17209009342" className="text-blue-600 font-semibold">
+          <a 
+            href="tel:+17209009342" 
+            onClick={() => {
+              window.dataLayer?.push({
+                event: "phone_click",
+                phone_location: "DNATestingDenverPage - Booking Section Inline"
+              });
+            }}
+            className="text-blue-600 font-semibold"
+          >
             Call us now
           </a>.
         </p>
@@ -151,6 +192,12 @@ const DNATestingDenverPage = () => {
         <div className="mt-6">
           <a
             href="tel:+17209009342"
+            onClick={() => {
+              window.dataLayer?.push({
+                event: "phone_click",
+                phone_location: "DNATestingDenverPage - Booking Section CTA"
+              });
+            }}
             className="bg-green-600 hover:bg-green-700 text-white py-3 px-6 rounded-md text-lg font-semibold"
           >
             Call Us Now
@@ -200,6 +247,12 @@ const DNATestingDenverPage = () => {
           </a>
           <a
             href="tel:+17209009342"
+            onClick={() => {
+              window.dataLayer?.push({
+                event: "phone_click",
+                phone_location: "DNATestingDenverPage - Final CTA"
+              });
+            }}
             className="bg-green-500 hover:bg-green-600 text-white py-3 px-6 rounded-md text-lg font-semibold"
           >
             Call Us Now

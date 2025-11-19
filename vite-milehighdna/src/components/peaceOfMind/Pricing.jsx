@@ -31,6 +31,12 @@ const Pricing = () => {
             </a>
             <a
               href="tel:7209009342"
+              onClick={() => {
+                window.dataLayer?.push({
+                  event: "phone_click",
+                  phone_location: "PeaceOfMindPricing - Pricing Component"
+                });
+              }}
               className="text-blue-600 font-semibold px-6 py-3 rounded-xl border border-blue-600 hover:bg-blue-50 transition"
             >
               Call Now

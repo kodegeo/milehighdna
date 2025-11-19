@@ -16,6 +16,12 @@ const CallToAction = () => {
         <div className="flex flex-col sm:flex-row justify-center gap-4">
           <a
             href="tel:7209009342"
+            onClick={() => {
+              window.dataLayer?.push({
+                event: "phone_click",
+                phone_location: "PrenatalCallToAction - CTA Component"
+              });
+            }}
             className="bg-white text-[#2C6FA6] px-6 py-3 rounded-lg font-semibold shadow hover:bg-gray-100 transition"
           >
             📞 Call (720) 900-9342

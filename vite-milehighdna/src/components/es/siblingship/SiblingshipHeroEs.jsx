@@ -16,7 +16,15 @@ const SiblingshipHeroEs = () => {
               <a href="https://calendly.com/milehighdnatesting/prueba-hermandad" className="bg-blue-600 text-white px-6 py-3 rounded-xl shadow hover:bg-blue-700 transition">
               Agenda tu prueba
               </a>
-              <a href="tel:7209009342" className="text-blue-600 font-semibold px-6 py-3 rounded-xl border border-blue-600 hover:bg-blue-50 transition">
+              <a 
+                href="tel:7209009342" 
+                onClick={() => {
+                  window.dataLayer?.push({
+                    event: "phone_click",
+                    phone_location: "SiblingshipHeroEs - Hero CTA"
+                  });
+                }}
+                className="text-blue-600 font-semibold px-6 py-3 rounded-xl border border-blue-600 hover:bg-blue-50 transition">
             Llama Hoy
             </a>
 

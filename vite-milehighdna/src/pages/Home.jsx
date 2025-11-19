@@ -113,6 +113,12 @@ const Home = () => {
               </Link>
               <a
                 href="tel:+17209009342"
+                onClick={() => {
+                  window.dataLayer?.push({
+                    event: "phone_click",
+                    phone_location: "Home - Hero CTA"
+                  });
+                }}
                 className="btn-secondary bg-white text-blue-700 font-bold py-3 px-6 rounded shadow hover:bg-gray-100"
               >
                 Call Now

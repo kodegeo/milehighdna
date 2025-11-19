@@ -18,7 +18,17 @@ const HeroSection = ({ title, subtitle, imageUrl, buttonText, buttonLink, second
               </a>
             )}
             {secondaryButtonText && (
-              <a href={secondaryButtonLink} className="text-blue-600 font-semibold px-6 py-3 rounded-xl border border-blue-600 hover:bg-blue-50 transition">
+              <a 
+                href={secondaryButtonLink} 
+                onClick={() => {
+                  if (secondaryButtonLink?.startsWith('tel:')) {
+                    window.dataLayer?.push({
+                      event: "phone_click",
+                      phone_location: "HeroSection - Common Component Secondary CTA"
+                    });
+                  }
+                }}
+                className="text-blue-600 font-semibold px-6 py-3 rounded-xl border border-blue-600 hover:bg-blue-50 transition">
                 {secondaryButtonText}
               </a>
             )}

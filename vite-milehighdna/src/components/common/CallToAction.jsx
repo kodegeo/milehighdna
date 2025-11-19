@@ -11,12 +11,18 @@ const CallToAction = () => {
           Speak with a specialist to learn more about our DNA testing services,
           timelines, and legal options. Our 30-minute consultations are free and confidential.
         </p>
-        <a
-            href="tel:7209009342"
-            className="bg-white text-[#2C6FA6] px-6 py-3 rounded-lg font-semibold shadow hover:bg-gray-100 transition"
-          >
+          <a
+                href="tel:+17209009342"
+                onClick={() => {
+                  window.dataLayer?.push({
+                    event: "phone_click",
+                    phone_location: "CallToAction - Common Component"
+                  });
+                }}
+                className="bg-white text-[#2C6FA6] px-6 py-3 rounded-lg font-semibold shadow hover:bg-gray-100 transition">
             📞 Call (720) 900-9342
-          </a>
+            </a>
+
 
       </div>
     </section>

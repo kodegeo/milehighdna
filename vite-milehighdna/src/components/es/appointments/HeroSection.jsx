@@ -32,8 +32,12 @@ const HeroSection = () => {
             </a>
             <a
               href="tel:7209009342"
-              target="_blank"
-              rel="noopener noreferrer"
+              onClick={() => {
+                window.dataLayer?.push({
+                  event: "phone_click",
+                  phone_location: "AppointmentsHeroSectionEs - Hero CTA"
+                });
+              }}
               className="bg-white text-brand-primary font-semibold px-6 py-3 rounded-xl border border-brand-primary hover:bg-gray-50 transition">
               📞 Llama Hoy
             </a>

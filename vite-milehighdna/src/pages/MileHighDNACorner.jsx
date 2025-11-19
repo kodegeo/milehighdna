@@ -1,6 +1,7 @@
 import HeroSection from "../components/common/HeroSection";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import { Helmet } from "react-helmet-async";
 import dnaLabHero from "../assets/images/portrait-dna.png";
 import prenatalImg from "../assets/images/prenatal-2.jpg";
 import cornerNIPP1 from "../assets/images/corner-nipp-1.png";
@@ -74,6 +75,18 @@ export default function MileHighDNACorner() {
   };
   return (
     <div className="bg-white text-gray-900">
+      <Helmet>
+        <title>Mile High DNA Corner | DNA Testing Guides & Resources</title>
+        <meta
+          name="description"
+          content="Educational articles and guides about DNA testing, legal vs non-legal tests, prenatal testing, and more from Mile High DNA Testing in Denver, Aurora, Thorton, and Englewood."
+        />
+        <link
+          rel="canonical"
+          href="https://milehighdnatesting.com/mile-high-dna-corner"
+        />
+      </Helmet>
+
       {/* Hero Banner - Magazine Style */}
       <section className="relative h-[70vh] min-h-[500px] overflow-hidden">
         {/* Background Image */}

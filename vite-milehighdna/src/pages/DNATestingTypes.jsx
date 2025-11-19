@@ -501,6 +501,12 @@ const DNATestingTypes = () => {
           <div className="flex justify-center">
             <a
               href="tel:7209009342"
+              onClick={() => {
+                window.dataLayer?.push({
+                  event: "phone_click",
+                  phone_location: "DNATestingTypes - CTA"
+                });
+              }}
               className="bg-blue-800 text-white px-8 py-4 font-bold uppercase tracking-wide rounded-lg hover:bg-blue-900 transition-all duration-300 shadow-lg border-2 border-blue-300"
             >
               Call for Guidance <br /> (720) 900-9342

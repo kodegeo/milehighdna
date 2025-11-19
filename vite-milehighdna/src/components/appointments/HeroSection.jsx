@@ -21,12 +21,18 @@ const HeroSection = () => {
             We offer flexible scheduling and same-day appointments when available.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <a
+              <a
                 href="tel:+17209009342"
-                className="btn-secondary bg-white text-blue-700 font-bold py-3 px-6 rounded shadow hover:bg-gray-100"
-              >
-                Call Today
-              </a>
+                onClick={() => {
+                  window.dataLayer?.push({
+                    event: "phone_click",
+                    phone_location: "AppointmentsHeroSection - Hero CTA"
+                  });
+                }}
+                className="btn-secondary bg-white text-blue-700 font-bold py-3 px-6 rounded shadow hover:bg-gray-100">
+                  Call Today
+                  </a>
+
            </div>
         </div>
       </div>

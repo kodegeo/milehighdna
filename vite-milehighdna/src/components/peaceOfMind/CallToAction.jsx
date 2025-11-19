@@ -24,7 +24,15 @@ const CallToAction = ({ heading, subtext, buttonText, buttonLink }) => {
             support@milehighdnatesting.com
           </a>{" "}
           or{" "}
-          <a href="tel:7209009342" className="underline hover:text-white">
+          <a 
+            href="tel:7209009342" 
+            onClick={() => {
+              window.dataLayer?.push({
+                event: "phone_click",
+                phone_location: "PeaceOfMindCallToAction - CTA Component"
+              });
+            }}
+            className="underline hover:text-white">
             (720) 900-9342
           </a>
         </p>

@@ -79,6 +79,12 @@ const Services = () => {
             </Link>
             <a
               href="tel:+17209009342"
+              onClick={() => {
+                window.dataLayer?.push({
+                  event: "phone_click",
+                  phone_location: "Services - Hero CTA"
+                });
+              }}
               className="bg-green-600 hover:bg-green-700 text-white py-3 px-6 rounded-md text-lg font-semibold shadow"
             >
               Call Us Today
@@ -170,6 +176,12 @@ const Services = () => {
           </Link>
           <a
             href="tel:+17209009342"
+            onClick={() => {
+              window.dataLayer?.push({
+                event: "phone_click",
+                phone_location: "Services - Final CTA"
+              });
+            }}
             className="bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded font-semibold text-lg transition"
           >
             Call Us Now
