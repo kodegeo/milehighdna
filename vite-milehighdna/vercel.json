@@ -1,7 +1,7 @@
 {
   "buildCommand": "npm install && if [ \"$VERCEL_ENV\" != \"production\" ]; then mv public/robots.vercel.txt public/robots.txt; fi && npm run build",
   "outputDirectory": "dist",
-  "framework": null,
+
   "redirects": [
     {
       "source": "/(.*)",
@@ -12,8 +12,13 @@
       "permanent": true
     }
   ],
+
   "rewrites": [
-    { "source": "/(.*)", "destination": "/" }
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
   ]
 }
+
 
