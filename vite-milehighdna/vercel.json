@@ -3,6 +3,89 @@
   "outputDirectory": "dist",
 
   "redirects": [
+
+    {
+      "source": "/dna-denver-testing",
+      "destination": "/dna-testing-denver",
+      "permanent": true
+    },
+    {
+      "source": "/denver-dna-testing",
+      "destination": "/dna-testing-denver",
+      "permanent": true
+    },
+    {
+      "source": "/dna-test-denver",
+      "destination": "/dna-testing-denver",
+      "permanent": true
+    },
+    {
+      "source": "/denver-dna-test",
+      "destination": "/dna-testing-denver",
+      "permanent": true
+    },
+
+    {
+      "source": "/peace-of-mind-paternity-test",
+      "destination": "/peace-of-mind-paternity-tests",
+      "permanent": true
+    },
+    {
+      "source": "/peace-of-mind-tests",
+      "destination": "/peace-of-mind-paternity-tests",
+      "permanent": true
+    },
+
+    {
+      "source": "/legal-paternity-test",
+      "destination": "/legal-paternity-tests",
+      "permanent": true
+    },
+    {
+      "source": "/legal-dna-testing",
+      "destination": "/legal-paternity-tests",
+      "permanent": true
+    },
+
+    {
+      "source": "/appointment",
+      "destination": "/book-appointment",
+      "permanent": true
+    },
+    {
+      "source": "/schedule",
+      "destination": "/book-appointment",
+      "permanent": true
+    },
+    {
+      "source": "/schedule-appointment",
+      "destination": "/book-appointment",
+      "permanent": true
+    },
+
+    {
+      "source": "/prenatal-dna-testing",
+      "destination": "/prenatal-dna-test",
+      "permanent": true
+    },
+    {
+      "source": "/nipp",
+      "destination": "/prenatal-dna-test",
+      "permanent": true
+    },
+
+    {
+      "source": "/peace-of-mind-dna-kit",
+      "destination": "/products/peace-of-mind-dna-kit",
+      "permanent": true
+    },
+
+    {
+      "source": "/dna-test-types",
+      "destination": "/dna-testing-types",
+      "permanent": true
+    },
+
     {
       "source": "/(.*)",
       "has": [
