@@ -1,5 +1,5 @@
 {
-  "buildCommand": "npm install && if [ \"$VERCEL_ENV\" != \"production\" ]; then mv public/robots.vercel.txt public/robots.txt; fi && npm run build",
+"buildCommand": "npm install && npm run build",
   "outputDirectory": "dist",
 
   "redirects": [
@@ -101,7 +101,18 @@
       "source": "/(.*)",
       "destination": "/index.html"
     }
-  ]
+  ],
+
+"overrides": {
+  "public/robots.txt": {
+    "path": "robots.txt"
+  },
+  "public/robots.vercel.txt": {
+    "path": "robots.txt",
+    "environment": "preview"
+  }
+}
+
 }
 
 
