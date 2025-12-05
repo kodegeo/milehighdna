@@ -73,7 +73,10 @@ const LegalDNACostGuide = () => {
           content="Discover the true cost of legal DNA testing. Learn about court-admissible DNA tests, chain of custody requirements, and what families in Denver can expect to pay for legal paternity, maternity, and relationship testing." 
         />
         <meta name="keywords" content="legal dna test cost, court admissible dna test, legal paternity test cost, chain of custody dna test, legal dna testing denver, aabb accredited dna test" />
-        
+        <link
+          rel="canonical"
+          href="https://milehighdnatesting.com/mile-high-dna-corner/legal-dna-cost-guide"
+        />
         {/* Open Graph */}
         <meta property="og:title" content="Legal DNA Test Cost | Complete Pricing Guide" />
         <meta property="og:description" content="Get accurate pricing information for legal DNA tests. Compare costs, understand requirements, and find the best option for court-admissible testing." />
@@ -136,6 +139,50 @@ const LegalDNACostGuide = () => {
           }
         }
       ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "@id": "https://milehighdnatesting.com/mile-high-dna-corner/legal-dna-cost-guide#dna-testing-denver",
+      "name": "Mile High DNA Testing",
+      "image": "https://milehighdnatesting.com/logo.png",
+      "url": "https://milehighdnatesting.com/mile-high-dna-corner/legal-dna-cost-guide",
+      "telephone": "+1-720-900-9342",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "975 N Lincoln St Suite 205C",
+        "addressLocality": "Denver",
+        "addressRegion": "CO",
+        "postalCode": "80203",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 39.7323,
+        "longitude": -104.9862
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "09:00",
+          "closes": "18:00"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://milehighdnatesting.com/mile-high-dna-corner/legal-dna-cost-guide#webpage",
+      "url": "https://milehighdnatesting.com/mile-high-dna-corner/legal-dna-cost-guide",
+      "name": "Legal DNA Test Cost in Denver | Court-Admissible & AABB-Accredited Testing",
+      "description": "Discover the true cost of legal DNA testing. Learn about court-admissible DNA tests, chain of custody requirements, and what families in Denver can expect to pay for legal paternity, maternity, and relationship testing.",
+      "isPartOf": {
+        "@type": "WebSite",
+        "name": "Mile High DNA Testing",
+        "url": "https://milehighdnatesting.com"
+      }
     }
   ])}
 </script>

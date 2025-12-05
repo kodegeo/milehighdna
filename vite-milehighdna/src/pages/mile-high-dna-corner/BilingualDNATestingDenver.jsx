@@ -1,5 +1,3 @@
-// File: src/pages/corner/why-bilingual-dna-testing-matters-denver.jsx
-
 import React from "react";
 import { Helmet } from "react-helmet-async";
 import CornerLayout from "../../components/corner/CornerLayout";
@@ -12,132 +10,164 @@ export default function BilingualDNATestingDenver() {
     <>
       {/* SEO Meta Tags */}
       <Helmet>
-        <meta charSet="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>
-          Why Bilingual DNA Testing Matters: Bridging Language Gaps for Families in Denver | Mile High DNA Testing
+          Why Bilingual DNA Testing Matters in Denver | Spanish DNA Testing for Families
         </title>
-        <link
-          rel="canonical"
-          href="https://milehighdnatesting.com/corner/why-bilingual-dna-testing-matters-denver"
-        />
+
         <meta
           name="description"
-          content="Mile High DNA Testing offers bilingual DNA testing in Denver. We provide legal, non-legal, and immigration DNA tests in English and Spanish with full support for Latino families."
+          content="Learn why bilingual DNA testing is essential for Denver families. Mile High DNA Testing offers Spanish and English support for legal, immigration, and peace-of-mind DNA tests."
         />
+
+        {/* Canonical */}
+        <link
+          rel="canonical"
+          href="https://milehighdnatesting.com/mile-high-dna-corner/why-bilingual-dna-testing-matters-denver"
+        />
+
         <meta
           name="keywords"
-          content="bilingual DNA testing Denver, Spanish DNA test, Latino family DNA testing"
+          content="bilingual DNA testing Denver, Spanish DNA testing, Latino families DNA test, immigration DNA Denver, legal DNA Denver Spanish"
         />
 
         {/* Open Graph */}
-        <meta property="og:title" content="Why Bilingual DNA Testing Matters: Bridging Language Gaps for Families in Denver | Mile High DNA Testing" />
-        <meta property="og:description" content="Mile High DNA Testing offers bilingual DNA testing in Denver with full English and Spanish support for Latino families. Legal, non-legal, and immigration testing available." />
+        <meta property="og:title" content="Why Bilingual DNA Testing Matters for Families in Denver" />
+        <meta property="og:description" content="Spanish & English bilingual DNA testing for Denver families. Supporting legal, immigration, and peace-of-mind DNA tests." />
         <meta property="og:image" content="https://milehighdnatesting.com/images/corner-bilingual-1.png" />
-        <meta property="og:url" content="https://milehighdnatesting.com/corner/why-bilingual-dna-testing-matters-denver" />
+        <meta property="og:url" content="https://milehighdnatesting.com/mile-high-dna-corner/why-bilingual-dna-testing-matters-denver" />
         <meta property="og:type" content="article" />
 
         {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Why Bilingual DNA Testing Matters: Bridging Language Gaps for Families in Denver | Mile High DNA Testing" />
-        <meta name="twitter:description" content="Bilingual DNA testing in Denver with full English and Spanish support. Legal, non-legal, and immigration testing for Latino families." />
+        <meta name="twitter:title" content="Why Bilingual DNA Testing Matters | Mile High DNA Testing" />
+        <meta name="twitter:description" content="Full bilingual DNA testing support for Denver families. Spanish + English testing for legal, immigration, and peace-of-mind needs." />
         <meta name="twitter:image" content="https://milehighdnatesting.com/images/corner-bilingual-1.png" />
 
-        {/* Structured Data (Article + FAQ) */}
+        {/* Structured Data */}
         <script type="application/ld+json">{`
-        [
-          {
-            "@context": "https://schema.org",
-            "@type": "Article",
-            "headline": "Why Bilingual DNA Testing Matters: Bridging Language Gaps for Families in Denver",
-            "image": "https://milehighdnatesting.com/images/corner-bilingual-1.png",
-            "author": { "@type": "Organization", "name": "Mile High DNA Testing" },
-            "publisher": {
-              "@type": "Organization",
-              "name": "Mile High DNA Testing",
-              "logo": { "@type": "ImageObject", "url": "https://milehighdnatesting.com/logo.png" }
-            },
-            "mainEntityOfPage": {
-              "@type": "WebPage",
-              "@id": "https://milehighdnatesting.com/corner/why-bilingual-dna-testing-matters-denver"
-            },
-            "datePublished": "2025-10-10",
-            "description": "Mile High DNA Testing offers bilingual DNA testing in Denver. We provide legal, non-legal, and immigration DNA tests in English and Spanish with full support for Latino families."
+        {
+          "@context": "https://schema.org",
+          "@type": "Article",
+          "headline": "Why Bilingual DNA Testing Matters for Families in Denver",
+          "description": "Learn why bilingual DNA testing matters for Denver's diverse community and how Mile High DNA Testing supports Spanish-speaking families.",
+          "image": "https://milehighdnatesting.com/images/corner-bilingual-1.png",
+          "author": {
+            "@type": "Organization",
+            "name": "Mile High DNA Testing"
           },
-          {
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            "mainEntity": [
-              {
-                "@type": "Question",
-                "name": "Where can I find bilingual DNA testing in Denver?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Mile High DNA Testing is Denver’s only full-service bilingual DNA testing center offering English and Spanish support for all types of DNA tests."
-                }
+          "publisher": {
+            "@type": "Organization",
+            "name": "Mile High DNA Testing",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://milehighdnatesting.com/logo.png"
+            }
+          },
+          "mainEntityOfPage": "https://milehighdnatesting.com/mile-high-dna-corner/why-bilingual-dna-testing-matters-denver",
+          "url": "https://milehighdnatesting.com/mile-high-dna-corner/why-bilingual-dna-testing-matters-denver",
+          "datePublished": "2025-01-01",
+          "dateModified": "2025-01-01"
+        }
+        `}</script>
+        <script type="application/ld+json">
+          {JSON.stringify([
+            {
+              "@context": "https://schema.org",
+              "@type": "LocalBusiness",
+              "@id": "https://milehighdnatesting.com/mile-high-dna-corner/why-bilingual-dna-testing-matters-denver#dna-testing-denver",
+              "name": "Mile High DNA Testing",
+              "image": "https://milehighdnatesting.com/logo.png",
+              "url": "https://milehighdnatesting.com/mile-high-dna-corner/why-bilingual-dna-testing-matters-denver",
+              "telephone": "+1-720-900-9342",
+              "priceRange": "$$",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "975 N Lincoln St Suite 205C",
+                "addressLocality": "Denver",
+                "addressRegion": "CO",
+                "postalCode": "80203",
+                "addressCountry": "US"
               },
-              {
-                "@type": "Question",
-                "name": "What types of DNA tests are available in Spanish?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "We offer legal paternity, non-legal peace of mind, immigration, and prenatal non-invasive paternity tests, all available in Spanish."
-                }
+              "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 39.7323,
+                "longitude": -104.9862
               },
-              {
-                "@type": "Question",
-                "name": "How much does a bilingual DNA test cost in Denver?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Non-legal paternity tests start at $249 and legal tests start at $349. Payment plans and express result options are available."
+              "openingHoursSpecification": [
+                {
+                  "@type": "OpeningHoursSpecification",
+                  "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                  "opens": "09:00",
+                  "closes": "18:00"
                 }
-              },
-              {
-                "@type": "Question",
-                "name": "Can I use your bilingual DNA test for immigration or court purposes?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Yes. We coordinate legal testing through an AABB-accredited partner laboratory recognized for court and immigration use."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "Why is it important to choose a bilingual DNA testing center?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Clear communication avoids misunderstandings and ensures families feel confident, supported, and informed throughout the DNA testing process."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "Do you offer at-home DNA kits for Spanish-speaking families?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Yes. Our bilingual peace-of-mind at-home DNA kits can be ordered online, with optional video call guidance."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "How long do DNA results take?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Most results are ready in 2–5 business days after the lab receives all samples. Prenatal tests take 7–10 days."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "Is the process private and confidential?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Yes. Every test is handled with full confidentiality and professionalism."
-                }
+              ]
+            },
+            {
+              "@context": "https://schema.org",
+              "@type": "WebPage",
+              "@id": "https://milehighdnatesting.com/mile-high-dna-corner/why-bilingual-dna-testing-matters-denver#webpage",
+              "url": "https://milehighdnatesting.com/mile-high-dna-corner/why-bilingual-dna-testing-matters-denver",
+              "name": "Why Bilingual DNA Testing Matters in Denver | Spanish DNA Testing for Families",
+              "description": "Learn why bilingual DNA testing is essential for Denver families. Mile High DNA Testing offers Spanish and English support for legal, immigration, and peace-of-mind DNA tests.",
+              "isPartOf": {
+                "@type": "WebSite",
+                "name": "Mile High DNA Testing",
+                "url": "https://milehighdnatesting.com"
               }
-            ]
-          }
-        ]
+            }
+          ])}
+        </script>
+
+        <script type="application/ld+json">{`
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Where can I find bilingual DNA testing in Denver?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Mile High DNA Testing is Denver’s only full-service bilingual DNA testing center offering support in English and Spanish."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What DNA tests are available in Spanish?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "We offer paternity, legal, immigration, and non-invasive prenatal DNA tests in Spanish."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How much does a bilingual DNA test cost?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Non-legal paternity tests start at $249, while legal DNA tests begin at $349."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can bilingual DNA tests be used for immigration?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. We coordinate immigration DNA testing through AABB-accredited partner labs."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Why is choosing a bilingual provider important?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Bilingual testing ensures accurate communication, avoids misunderstandings, and provides confidence during emotional situations."
+              }
+            }
+          ]
+        }
         `}</script>
       </Helmet>
-
+      
       <CornerLayout>
         {/* Hero Section */}
         <div className="relative w-full h-[350px] md:h-[450px] mb-12">
@@ -149,11 +179,8 @@ export default function BilingualDNATestingDenver() {
           <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent rounded-b-2xl" />
           <div className="absolute bottom-8 left-8 text-white">
             <h1 className="text-4xl text-white md:text-6xl font-bold mb-2 drop-shadow-lg">
-              Mile High DNA Corner
-            </h1>
-            <h2 className="text-xl text-white md:text-2xl drop-shadow-lg">
               Why Bilingual DNA Testing Matters: Bridging Language Gaps for Families in Denver
-            </h2>
+            </h1>
           </div>
         </div>
 
@@ -266,7 +293,7 @@ export default function BilingualDNATestingDenver() {
               
               <div className="flex justify-center space-x-4">
                 <a 
-                  href="https://www.facebook.com/sharer/sharer.php?u=https://milehighdnatesting.com/corner/why-bilingual-dna-testing-matters-denver" 
+                  href="https://www.facebook.com/sharer/sharer.php?u=https://milehighdnatesting.com/mile-high-dna-corner/why-bilingual-dna-testing-matters-denver" 
                   className="flex items-center space-x-2 bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-all duration-300 shadow-md hover:shadow-lg"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -278,7 +305,7 @@ export default function BilingualDNATestingDenver() {
                 </a>
                 
                 <a 
-                  href="https://twitter.com/intent/tweet?url=https://milehighdnatesting.com/corner/why-bilingual-dna-testing-matters-denver&text=Why%20Bilingual%20DNA%20Testing%20Matters" 
+                  href="https://twitter.com/intent/tweet?url=https://milehighdnatesting.com/mile-high-dna-corner/why-bilingual-dna-testing-matters-denver&text=Why%20Bilingual%20DNA%20Testing%20Matters" 
                   className="flex items-center space-x-2 bg-gray-900 text-white px-4 py-2 rounded-lg hover:bg-gray-800 transition-all duration-300 shadow-md hover:shadow-lg"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -290,7 +317,7 @@ export default function BilingualDNATestingDenver() {
                 </a>
 
                 <a 
-                  href="mailto:?subject=Why%20Bilingual%20DNA%20Testing%20Matters%20-%20Mile%20High%20DNA%20Testing&body=Check%20out%20this%20article%20about%20bilingual%20DNA%20testing%20in%20Denver:%0A%0Ahttps://milehighdnatesting.com/corner/why-bilingual-dna-testing-matters-denver%0A%0AThis%20article%20explains%20why%20bilingual%20DNA%20testing%20is%20important%20for%20families%20in%20Denver%20and%20how%20it%20bridges%20language%20gaps." 
+                  href="mailto:?subject=Why%20Bilingual%20DNA%20Testing%20Matters%20-%20Mile%20High%20DNA%20Testing&body=Check%20out%20this%20article%20about%20bilingual%20DNA%20testing%20in%20Denver:%0A%0Ahttps://milehighdnatesting.com/mile-high-dna-corner/why-bilingual-dna-testing-matters-denver%0A%0AThis%20article%20explains%20why%20bilingual%20DNA%20testing%20is%20important%20for%20families%20in%20Denver%20and%20how%20it%20bridges%20language%20gaps." 
                   className="flex items-center space-x-2 bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-700 transition-all duration-300 shadow-md hover:shadow-lg"
                 >
                   <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -316,3 +343,4 @@ export default function BilingualDNATestingDenver() {
     </>
   );
 }
+

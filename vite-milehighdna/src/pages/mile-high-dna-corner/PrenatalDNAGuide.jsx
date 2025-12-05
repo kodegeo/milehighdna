@@ -78,16 +78,38 @@ const PrenatalDNACost = () => {
         <meta property="og:title" content="Prenatal DNA Test Cost | Complete Pricing Guide" />
         <meta property="og:description" content="Get accurate pricing information for prenatal DNA tests. Compare costs, understand what drives pricing, and find the best option for your needs." />
         <meta property="og:image" content="https://milehighdnatesting.com/images/banner-1200.png" />
-        <meta property="og:url" content="https://milehighdnatesting.com/mile-high-dna-corner/prenatal-dna-cost" />
+        <link
+          rel="canonical"
+          href="https://milehighdnatesting.com/mile-high-dna-corner/prenatal-dna-cost-guide"
+        />
+        <meta property="og:url" content="https://milehighdnatesting.com/mile-high-dna-corner/prenatal-dna-cost-guide" />
         <meta property="og:type" content="article" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:image" content="https://milehighdnatesting.com/images/banner-1200.png" />
         
-        {/* FAQ Schema */}
+        {/* Structured Data */}
         <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
+          {JSON.stringify([
+            {
+              "@context": "https://schema.org",
+              "@type": "Article",
+              "headline": "Prenatal DNA Test Cost | Non-Invasive Prenatal Paternity (NIPP) Pricing & Guide",
+              "description": "Discover the true cost of prenatal DNA testing. Learn about non-invasive prenatal paternity (NIPP) tests, how they work, what affects cost, and what expecting mothers in Denver can expect to pay.",
+              "image": "https://milehighdnatesting.com/images/banner-1200.png",
+              "author": { "@type": "Organization", "name": "Mile High DNA Testing" },
+              "publisher": {
+                "@type": "Organization",
+                "name": "Mile High DNA Testing",
+                "logo": { "@type": "ImageObject", "url": "https://milehighdnatesting.com/logo.png" }
+              },
+              "url": "https://milehighdnatesting.com/mile-high-dna-corner/prenatal-dna-cost-guide",
+              "mainEntityOfPage": "https://milehighdnatesting.com/mile-high-dna-corner/prenatal-dna-cost-guide",
+              "datePublished": "2025-01-01",
+              "dateModified": "2025-01-01"
+            },
+            {
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
             "mainEntity": [
               {
                 "@type": "Question",
@@ -122,7 +144,52 @@ const PrenatalDNACost = () => {
                 }
               }
             ]
-          })}
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            "@id": "https://milehighdnatesting.com/mile-high-dna-corner/prenatal-dna-cost-guide#dna-testing-denver",
+            "name": "Mile High DNA Testing",
+            "image": "https://milehighdnatesting.com/logo.png",
+            "url": "https://milehighdnatesting.com/mile-high-dna-corner/prenatal-dna-cost-guide",
+            "telephone": "+1-720-900-9342",
+            "priceRange": "$$",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "975 N Lincoln St Suite 205C",
+              "addressLocality": "Denver",
+              "addressRegion": "CO",
+              "postalCode": "80203",
+              "addressCountry": "US"
+            },
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": 39.7323,
+              "longitude": -104.9862
+            },
+            "openingHoursSpecification": [
+              {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                "opens": "09:00",
+                "closes": "18:00"
+              }
+            ]
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "@id": "https://milehighdnatesting.com/mile-high-dna-corner/prenatal-dna-cost-guide#webpage",
+            "url": "https://milehighdnatesting.com/mile-high-dna-corner/prenatal-dna-cost-guide",
+            "name": "Prenatal DNA Test Cost | Non-Invasive Prenatal Paternity (NIPP) Pricing & Guide",
+            "description": "Discover the true cost of prenatal DNA testing. Learn about non-invasive prenatal paternity (NIPP) tests, how they work, what affects cost, and what expecting mothers in Denver can expect to pay.",
+            "isPartOf": {
+              "@type": "WebSite",
+              "name": "Mile High DNA Testing",
+              "url": "https://milehighdnatesting.com"
+            }
+          }
+          ])}
         </script>
       </Helmet>
 

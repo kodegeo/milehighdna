@@ -75,17 +75,97 @@ export default function MileHighDNACorner() {
   };
   return (
     <div className="bg-white text-gray-900">
-      <Helmet>
-        <title>Mile High DNA Corner | DNA Testing Guides & Resources</title>
-        <meta
-          name="description"
-          content="Educational articles and guides about DNA testing, legal vs non-legal tests, prenatal testing, and more from Mile High DNA Testing in Denver, Aurora, Thorton, and Englewood."
-        />
-        <link
-          rel="canonical"
-          href="https://milehighdnatesting.com/mile-high-dna-corner"
-        />
-      </Helmet>
+<Helmet>
+  <title>Mile High DNA Corner | Expert DNA Testing Guides, Costs & Family Insights</title>
+
+  <meta
+    name="description"
+    content="Learn everything about DNA testing in Denver: prenatal DNA tests, legal vs non-legal tests, immigration DNA, at-home kits, and real family stories from Mile High DNA Testing."
+  />
+
+  {/* Canonical */}
+  <link
+    rel="canonical"
+    href="https://milehighdnatesting.com/mile-high-dna-corner"
+  />
+
+  {/* Open Graph */}
+  <meta property="og:title" content="Mile High DNA Corner | DNA Testing Guides & Expert Advice" />
+  <meta
+    property="og:description"
+    content="Get local insight into prenatal DNA tests, legal DNA tests, immigration testing, home kits, family stories, and guidance from Denver’s trusted DNA experts."
+  />
+  <meta property="og:image" content="https://milehighdnatesting.com/images/banner-1200.png" />
+  <meta property="og:url" content="https://milehighdnatesting.com/mile-high-dna-corner" />
+  <meta property="og:type" content="website" />
+
+  {/* Twitter Card */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Mile High DNA Corner | Local DNA Testing Stories & Guides" />
+  <meta
+    name="twitter:description"
+    content="Expert local guidance on DNA testing in Denver including prenatal paternity, legal tests, immigration cases, and family-centered stories."
+  />
+  <meta name="twitter:image" content="https://milehighdnatesting.com/images/banner-1200.png" />
+
+  {/* LocalBusiness Schema for Local SEO */}
+  <script type="application/ld+json">
+    {`
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Mile High DNA Testing",
+      "image": "https://milehighdnatesting.com/logo.png",
+      "@id": "https://milehighdnatesting.com",
+      "url": "https://milehighdnatesting.com/mile-high-dna-corner",
+      "telephone": "+1-720-900-9342",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "975 N Lincoln St, Suite 205C",
+        "addressLocality": "Denver",
+        "addressRegion": "CO",
+        "postalCode": "80203",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 39.7313,
+        "longitude": -104.985
+      },
+      "sameAs": [
+        "https://www.facebook.com/milehighdnatesting",
+        "https://www.instagram.com/milehighdnatesting"
+      ]
+    }
+    `}
+  </script>
+
+  {/* ArticleList Schema – tells Google you're listing articles */}
+  <script type="application/ld+json">
+    {`
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "name": "Mile High DNA Corner",
+      "description": "Educational articles and real-life stories about DNA testing in Denver.",
+      "url": "https://milehighdnatesting.com/mile-high-dna-corner",
+      "isPartOf": {
+        "@type": "WebSite",
+        "name": "Mile High DNA Testing",
+        "url": "https://milehighdnatesting.com"
+      },
+      "about": [
+        { "@type": "Thing", "name": "Prenatal DNA Testing" },
+        { "@type": "Thing", "name": "Legal DNA Testing" },
+        { "@type": "Thing", "name": "Immigration DNA Testing" },
+        { "@type": "Thing", "name": "Home DNA Kits" }
+      ]
+    }
+    `}
+  </script>
+
+</Helmet>
 
       {/* Hero Banner - Magazine Style */}
       <section className="relative h-[70vh] min-h-[500px] overflow-hidden">

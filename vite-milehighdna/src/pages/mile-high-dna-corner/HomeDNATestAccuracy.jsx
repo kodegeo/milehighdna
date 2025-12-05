@@ -2,12 +2,187 @@ import React from 'react';
 import CornerLayout from '../../components/corner/CornerLayout';
 import ServingColorado from "../../components/common/ServingColorado";
 import CallToAction from "../../components/corner/CallToAction";
+import { Helmet } from "react-helmet-async";
+
 
 import atHomeTestKitImg from '../../assets/images/at-home-test-kit.png';
 
 const HomeDNATestAccuracy = () => {
   return (
     <>
+          {/* ✅ FULL SEO BLOCK */}
+      <Helmet>
+        <title>
+          How Reliable and Accurate Are Home DNA Tests? | Mile High DNA Testing Denver
+        </title>
+
+        <meta
+          name="description"
+          content="Learn how accurate home DNA tests really are and how they compare to AABB-accredited laboratory testing. Understand costs, reliability, and legal validity for Denver families."
+        />
+
+        {/* Canonical */}
+        <link
+          rel="canonical"
+          href="https://milehighdnatesting.com/mile-high-dna-corner/how-reliable-and-accurate-are-home-dna-tests"
+        />
+
+        <meta
+          name="keywords"
+          content="home DNA test accuracy, Denver DNA testing, at-home DNA kit reliable, AABB accredited DNA test, legal DNA testing Denver"
+        />
+
+        {/* Open Graph */}
+        <meta
+          property="og:title"
+          content="How Reliable and Accurate Are Home DNA Tests? | Mile High DNA Testing"
+        />
+        <meta
+          property="og:description"
+          content="Explore the accuracy of at-home DNA tests and how they compare to professional AABB-accredited DNA testing."
+        />
+        <meta
+          property="og:image"
+          content="https://milehighdnatesting.com/images/at-home-test-kit.png"
+        />
+        <meta
+          property="og:url"
+          content="https://milehighdnatesting.com/mile-high-dna-corner/how-reliable-and-accurate-are-home-dna-tests"
+        />
+        <meta property="og:type" content="article" />
+
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="How Reliable and Accurate Are Home DNA Tests? | Mile High DNA Testing"
+        />
+        <meta
+          name="twitter:description"
+          content="A clear guide to understanding the accuracy and limitations of at-home DNA kits, especially for Denver families."
+        />
+        <meta
+          name="twitter:image"
+          content="https://milehighdnatesting.com/images/at-home-test-kit.png"
+        />
+
+        {/* Structured Data: Article */}
+        <script type="application/ld+json">{`
+        {
+          "@context": "https://schema.org",
+          "@type": "Article",
+          "headline": "How Reliable and Accurate Are Home DNA Tests?",
+          "description": "A detailed look at the accuracy of at-home DNA tests compared to AABB-accredited laboratory testing.",
+          "image": "https://milehighdnatesting.com/images/at-home-test-kit.png",
+          "author": {
+            "@type": "Organization",
+            "name": "Mile High DNA Testing"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "Mile High DNA Testing",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://milehighdnatesting.com/logo.png"
+            }
+          },
+          "mainEntityOfPage": "https://milehighdnatesting.com/mile-high-dna-corner/how-reliable-and-accurate-are-home-dna-tests",
+          "url": "https://milehighdnatesting.com/mile-high-dna-corner/how-reliable-and-accurate-are-home-dna-tests",
+          "datePublished": "2025-01-01",
+          "dateModified": "2025-01-01"
+        }
+        `}</script>
+        <script type="application/ld+json">
+          {JSON.stringify([
+            {
+              "@context": "https://schema.org",
+              "@type": "LocalBusiness",
+              "@id": "https://milehighdnatesting.com/mile-high-dna-corner/how-reliable-and-accurate-are-home-dna-tests#dna-testing-denver",
+              "name": "Mile High DNA Testing",
+              "image": "https://milehighdnatesting.com/logo.png",
+              "url": "https://milehighdnatesting.com/mile-high-dna-corner/how-reliable-and-accurate-are-home-dna-tests",
+              "telephone": "+1-720-900-9342",
+              "priceRange": "$$",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "975 N Lincoln St Suite 205C",
+                "addressLocality": "Denver",
+                "addressRegion": "CO",
+                "postalCode": "80203",
+                "addressCountry": "US"
+              },
+              "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 39.7323,
+                "longitude": -104.9862
+              },
+              "openingHoursSpecification": [
+                {
+                  "@type": "OpeningHoursSpecification",
+                  "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                  "opens": "09:00",
+                  "closes": "18:00"
+                }
+              ]
+            },
+            {
+              "@context": "https://schema.org",
+              "@type": "WebPage",
+              "@id": "https://milehighdnatesting.com/mile-high-dna-corner/how-reliable-and-accurate-are-home-dna-tests#webpage",
+              "url": "https://milehighdnatesting.com/mile-high-dna-corner/how-reliable-and-accurate-are-home-dna-tests",
+              "name": "How Reliable and Accurate Are Home DNA Tests? | Mile High DNA Testing Denver",
+              "description": "Learn how accurate home DNA tests really are and how they compare to AABB-accredited laboratory testing. Understand costs, reliability, and legal validity for Denver families.",
+              "isPartOf": {
+                "@type": "WebSite",
+                "name": "Mile High DNA Testing",
+                "url": "https://milehighdnatesting.com"
+              }
+            }
+          ])}
+        </script>
+
+        {/* FAQ Structured Data */}
+        <script type="application/ld+json">{`
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Are home DNA tests accurate?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Home DNA tests can be accurate for personal use, but they are not legally valid and may be affected by collection errors."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can home DNA test results be used in court?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No. Only AABB-accredited DNA tests with verified chain of custody are accepted for legal or immigration purposes."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What makes AABB-accredited tests more reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "AABB labs follow strict chain-of-custody, identity verification, and validated scientific procedures, producing legally defensible results."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Why do some DNA kits seem inexpensive?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Many at-home kits charge extra fees later for processing, faster results, return shipping, or unlocking reports—raising the total cost significantly."
+              }
+            }
+          ]
+        }
+        `}</script>
+      </Helmet>
       <CornerLayout>
         {/* Hero Section */}
         <div className="relative w-full h-[350px] md:h-[450px] mb-12">
@@ -18,10 +193,9 @@ const HomeDNATestAccuracy = () => {
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent rounded-b-2xl" />
           <div className="absolute bottom-8 left-8 text-white">
-            <h1 className="text-4xl md:text-6xl font-bold mb-2 text-white drop-shadow-lg">Mile High DNA Corner</h1>
-            <h2 className="text-xl md:text-2xl text-white drop-shadow-lg">
+            <h1 className="text-4xl md:text-6xl font-bold mb-2 text-white drop-shadow-lg">
             How Reliable and Accurate Are Home DNA Tests?
-            </h2>
+            </h1>
           </div>
         </div>
 

@@ -45,12 +45,7 @@ const TopNavigation = () => {
           </a>
           <a
             href="tel:+17209009342"
-            onClick={() => {
-              window.dataLayer?.push({
-                event: "phone_click",
-                phone_location: "TopNavigation - Desktop"
-              });
-            }}
+            onClick={() => { window.dataLayer = window.dataLayer || []; window.dataLayer.push({ event: "phone_click", phone_number: "720-900-9342" }); }}
             className="flex items-center gap-2 hover:underline whitespace-nowrap"
           >
           <img src={phoneIcon} alt="Phone" className="w-4 h-4" />

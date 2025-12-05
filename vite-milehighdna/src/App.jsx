@@ -2,6 +2,7 @@
 import React, { useEffect } from 'react';
 import { Helmet } from 'react-helmet-async'; // Already have HelmetProvider in main.jsx
 import './styles/global.css';
+import GTMPageView from './components/GTMPageView';
 
 import { BrowserRouter as Router, Routes, Route, Navigate, useLocation } from 'react-router-dom';
 import Navigation from './components/Navigation';
@@ -78,30 +79,13 @@ function AppLayout() {
 
   return (
     <>
-    <Helmet>
-      {/* Google Tag Manager */}
-      <script>
-        {`
-          (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-          new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-          'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-          })(window,document,'script','dataLayer','GTM-PHRBWK96');
-        `}
-      </script>
-    </Helmet>
-
-    {/* Fallback noscript for <body> */}
-    <noscript>
-      <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PHRBWK96"
-      height="0" width="0" style={{ display: 'none', visibility: 'hidden' }} />
-    </noscript>
-    
-    <div className="min-h-screen flex flex-col">
-      {isSpanish ? <TopNavigationEs /> : <TopNavigation />}
-      {isSpanish ? <NavigationEs /> : <Navigation />}
-      <main className="flex-grow">
-      <Routes>
+      <div className="min-h-screen flex flex-col">
+        {isSpanish ? <TopNavigationEs /> : <TopNavigation />}
+        {isSpanish ? <NavigationEs /> : <Navigation />}
+  
+        <main className="flex-grow">
+          <GTMPageView />
+          <Routes>
             {/* English Routes */}
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<AboutUs />} />
@@ -111,8 +95,7 @@ function AppLayout() {
             <Route path="/grandparentage-dna-tests" element={<GrandparentagePage />} />
             <Route path="/siblingship-dna-tests" element={<Siblingship />} />
             <Route path="/prenatal-dna-test" element={<Prenatal />} />
-
-      
+  
             <Route path="/appointments" element={<Appointments />} />
             <Route path="/faq" element={<FAQ />} />
             <Route path="/get-results" element={<GetResults />} />
@@ -147,9 +130,10 @@ function AppLayout() {
             <Route path="/mile-high-dna-corner/why-bilingual-dna-testing-matters-denver" element={<BilingualDNATestingDenver />} />
             <Route path="/mile-high-dna-corner/legal-dna-cost-guide" element={<LegalDNACostGuide />} />
             <Route path="/mile-high-dna-corner/non-legal-dna-cost-guide" element={<NonLegalDNACostGuide />} />
-
+  
+            {/* 404 */}
             <Route path="*" element={<NotFound />} />
-
+  
             {/* Spanish Routes */}
             <Route path="/es" element={<HomePageEs />} />
             <Route path="/es/sobre-nosotros" element={<AboutUsEs />} />
@@ -162,18 +146,18 @@ function AppLayout() {
             <Route path="/es/preguntas-frecuentes" element={<FAQEs />} />
             <Route path="/es/consultar-resultados" element={<GetResultsEs />} />
             <Route path="/es/restablecer-contrasena" element={<ResetPasswordEs />} />
-            <Route path="/es/admin-uploader" element={<AdminUploaderPageEs />} />  {/* unchanged */}
+            <Route path="/es/admin-uploader" element={<AdminUploaderPageEs />} />
             <Route path="/es/mis-resultados" element={<MyResultsEs />} />
             <Route path="/es/pagina-de-resultados" element={<MyResultsPageEs />} />
             <Route path="/es/reservar-cita" element={<BookAppointmentEs />} />
-            <Route path="/es/aabb-accreditation" element={<AABBAccreditationEs />} />  {/* unchanged */}
+            <Route path="/es/aabb-accreditation" element={<AABBAccreditationEs />} />
             <Route path="/es/prueba-de-paternidad-prenatal" element={<PrenatalEs />} />
           </Routes>
-
-      </main>
-    </div>
+        </main>
+      </div>
     </>
   );
+  
 }
 
 function App() {

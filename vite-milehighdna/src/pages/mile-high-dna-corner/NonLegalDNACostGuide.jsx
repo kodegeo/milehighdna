@@ -73,7 +73,10 @@ const NonLegalDNACostGuide = () => {
           content="Compare non-legal DNA test costs in Denver. Learn about peace of mind and at-home DNA test pricing, what’s included, and how Mile High DNA Testing provides affordable, accurate results." 
         />
         <meta name="keywords" content="non legal dna test cost, peace of mind dna test, at home dna test cost, personal dna testing denver, non legal paternity test" />
-        
+        <link
+          rel="canonical"
+          href="https://milehighdnatesting.com/mile-high-dna-corner/non-legal-dna-cost-guide"
+        />
         {/* Open Graph */}
         <meta property="og:title" content="Non-Legal DNA Test Cost | Complete Pricing Guide" />
         <meta property="og:description" content="Get accurate pricing information for non-legal DNA tests. Compare costs, understand options, and find the best peace of mind testing solution." />
@@ -83,60 +86,107 @@ const NonLegalDNACostGuide = () => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:image" content="https://milehighdnatesting.com/images/banner-1200.png" />
         
-        {/* FAQ Schema */}
+        {/* Structured Data */}
         <script type="application/ld+json">
-          {JSON.stringify(
-                {
-                    "@context": "https://schema.org",
-                    "@type": "Article",
-                    "headline": "Non-Legal DNA Test Cost in Denver | Peace of Mind & At-Home Testing Prices",
-                    "author": { "@type": "Organization", "name": "Mile High DNA Testing" },
-                    "publisher": { "@type": "Organization", "name": "Mile High DNA Testing" },
-                    "inLanguage": "en-US",
-                    "mainEntityOfPage": {
-                      "@type": "WebPage",
-                      "@id": "https://milehighdnatesting.com/mile-high-dna-corner/non-legal-dna-cost-guide"
-                    },
-                    "description": "Compare non-legal DNA test costs in Denver, including peace of mind, at-home, and relationship DNA testing options. Affordable pricing from Mile High DNA Testing."
-                  },
+          {JSON.stringify([
             {
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            "mainEntity": [
-              {
-                "@type": "Question",
-                "name": "How much does a non-legal DNA test cost?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Non-legal DNA test costs typically range from $199 to $299 depending on the test type and collection method. At-home peace of mind tests start at $199, while in-office collection costs $249-$299."
-                }
+              "@context": "https://schema.org",
+              "@type": "Article",
+              "headline": "Non-Legal DNA Test Cost in Denver | Peace of Mind & At-Home Testing Prices",
+              "author": { "@type": "Organization", "name": "Mile High DNA Testing" },
+              "publisher": { "@type": "Organization", "name": "Mile High DNA Testing" },
+              "inLanguage": "en-US",
+              "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": "https://milehighdnatesting.com/mile-high-dna-corner/non-legal-dna-cost-guide"
               },
-              {
-                "@type": "Question",
-                "name": "What's the difference between legal and non-legal DNA tests?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Non-legal DNA tests are for personal peace of mind and cannot be used in court. They don't require professional collection or chain of custody documentation. Legal tests require professional collection and are court-admissible."
+              "description": "Compare non-legal DNA test costs in Denver, including peace of mind, at-home, and relationship DNA testing options. Affordable pricing from Mile High DNA Testing.",
+              "datePublished": "2025-01-01",
+              "dateModified": "2025-01-01"
+            },
+            {
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "How much does a non-legal DNA test cost?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Non-legal DNA test costs typically range from $199 to $299 depending on the test type and collection method. At-home peace of mind tests start at $199, while in-office collection costs $249-$299."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "What's the difference between legal and non-legal DNA tests?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Non-legal DNA tests are for personal peace of mind and cannot be used in court. They don't require professional collection or chain of custody documentation. Legal tests require professional collection and are court-admissible."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Are non-legal DNA tests accurate?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, non-legal DNA tests provide the same scientific accuracy as legal tests when processed by AABB-accredited laboratories. The difference is in collection method and documentation, not accuracy."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Can I upgrade a non-legal test to legal later?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "No, non-legal tests cannot be upgraded to legal tests because they don't meet chain of custody requirements. If you need legal results, you'll need to take a separate legal DNA test."
+                  }
                 }
+              ]
+            },
+            {
+              "@context": "https://schema.org",
+              "@type": "LocalBusiness",
+              "@id": "https://milehighdnatesting.com/mile-high-dna-corner/non-legal-dna-cost-guide#dna-testing-denver",
+              "name": "Mile High DNA Testing",
+              "image": "https://milehighdnatesting.com/logo.png",
+              "url": "https://milehighdnatesting.com/mile-high-dna-corner/non-legal-dna-cost-guide",
+              "telephone": "+1-720-900-9342",
+              "priceRange": "$$",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "975 N Lincoln St Suite 205C",
+                "addressLocality": "Denver",
+                "addressRegion": "CO",
+                "postalCode": "80203",
+                "addressCountry": "US"
               },
-              {
-                "@type": "Question",
-                "name": "Are non-legal DNA tests accurate?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Yes, non-legal DNA tests provide the same scientific accuracy as legal tests when processed by AABB-accredited laboratories. The difference is in collection method and documentation, not accuracy."
-                }
+              "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 39.7323,
+                "longitude": -104.9862
               },
-              {
-                "@type": "Question",
-                "name": "Can I upgrade a non-legal test to legal later?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "No, non-legal tests cannot be upgraded to legal tests because they don't meet chain of custody requirements. If you need legal results, you'll need to take a separate legal DNA test."
+              "openingHoursSpecification": [
+                {
+                  "@type": "OpeningHoursSpecification",
+                  "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                  "opens": "09:00",
+                  "closes": "18:00"
                 }
+              ]
+            },
+            {
+              "@context": "https://schema.org",
+              "@type": "WebPage",
+              "@id": "https://milehighdnatesting.com/mile-high-dna-corner/non-legal-dna-cost-guide#webpage",
+              "url": "https://milehighdnatesting.com/mile-high-dna-corner/non-legal-dna-cost-guide",
+              "name": "Non-Legal DNA Test Cost in Denver | Peace of Mind & At-Home Testing Prices",
+              "description": "Compare non-legal DNA test costs in Denver. Learn about peace of mind and at-home DNA test pricing, what's included, and how Mile High DNA Testing provides affordable, accurate results.",
+              "isPartOf": {
+                "@type": "WebSite",
+                "name": "Mile High DNA Testing",
+                "url": "https://milehighdnatesting.com"
               }
-            ]
-          })}
+            }
+          ])}
         </script>
       </Helmet>
 

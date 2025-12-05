@@ -13,12 +13,7 @@ const CallToAction = () => {
         </p>
           <a
                 href="tel:+17209009342"
-                onClick={() => {
-                  window.dataLayer?.push({
-                    event: "phone_click",
-                    phone_location: "CallToAction - Common Component"
-                  });
-                }}
+                onClick={() => { window.dataLayer = window.dataLayer || []; window.dataLayer.push({ event: "phone_click", phone_number: "720-900-9342" }); }}
                 className="bg-white text-[#2C6FA6] px-6 py-3 rounded-lg font-semibold shadow hover:bg-gray-100 transition">
             📞 Call (720) 900-9342
             </a>

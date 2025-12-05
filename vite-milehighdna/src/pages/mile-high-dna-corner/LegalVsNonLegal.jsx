@@ -1,4 +1,6 @@
 import React from 'react';
+import { Helmet } from "react-helmet-async";
+
 import CornerLayout from '../../components/corner/CornerLayout';
 import ServingColorado from "../../components/common/ServingColorado";
 import CallToAction from "../../components/corner/CallToAction";
@@ -8,6 +10,122 @@ import prenatalCostImg from '../../assets/images/legal-vs-non-legal-scale.png';
 const LegalVsNonLegal = () => {
   return (
     <>
+          <Helmet>
+        <title>
+          Legal vs Non-Legal DNA Testing in Denver | Mile High DNA Testing
+        </title>
+
+        <meta
+          name="description"
+          content="Learn the difference between legal (court-admissible) and non-legal DNA tests in Denver. Understand costs, requirements, and when to choose each option."
+        />
+
+        <link
+          rel="canonical"
+          href="https://milehighdnatesting.com/mile-high-dna-corner/legal-vs-non-legal-dna-test"
+        />
+
+        {/* Open Graph */}
+        <meta
+          property="og:title"
+          content="Legal vs Non-Legal DNA Testing in Denver | Mile High DNA Testing"
+        />
+        <meta
+          property="og:description"
+          content="A complete guide explaining when you need a legal DNA test vs a non-legal (peace of mind) test."
+        />
+        <meta
+          property="og:image"
+          content="https://milehighdnatesting.com/images/legal-vs-non-legal-scale.png"
+        />
+        <meta
+          property="og:url"
+          content="https://milehighdnatesting.com/mile-high-dna-corner/legal-vs-non-legal-dna-test"
+        />
+        <meta property="og:type" content="article" />
+
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="Legal vs Non-Legal DNA Testing in Denver"
+        />
+        <meta
+          name="twitter:description"
+          content="Understand the key differences between legal and non-legal DNA tests in Colorado."
+        />
+        <meta
+          name="twitter:image"
+          content="https://milehighdnatesting.com/images/legal-vs-non-legal-scale.png"
+        />
+
+        {/* Structured Data */}
+        <script type="application/ld+json">
+          {JSON.stringify([
+            {
+              "@context": "https://schema.org",
+              "@type": "Article",
+              "headline": "Legal vs Non-Legal DNA Testing in Denver",
+              "description": "A guide explaining the differences between legal (court-approved) and non-legal DNA testing for families in Denver.",
+              "image": "https://milehighdnatesting.com/images/legal-vs-non-legal-scale.png",
+              "author": { "@type": "Organization", "name": "Mile High DNA Testing" },
+              "publisher": {
+                "@type": "Organization",
+                "name": "Mile High DNA Testing",
+                "logo": { "@type": "ImageObject", "url": "https://milehighdnatesting.com/logo.png" }
+              },
+              "url": "https://milehighdnatesting.com/mile-high-dna-corner/legal-vs-non-legal-dna-test",
+              "mainEntityOfPage": "https://milehighdnatesting.com/mile-high-dna-corner/legal-vs-non-legal-dna-test",
+              "datePublished": "2025-01-01",
+              "dateModified": "2025-01-01"
+            },
+            {
+              "@context": "https://schema.org",
+              "@type": "LocalBusiness",
+              "@id": "https://milehighdnatesting.com/mile-high-dna-corner/legal-vs-non-legal-dna-test#dna-testing-denver",
+              "name": "Mile High DNA Testing",
+              "image": "https://milehighdnatesting.com/logo.png",
+              "url": "https://milehighdnatesting.com/mile-high-dna-corner/legal-vs-non-legal-dna-test",
+              "telephone": "+1-720-900-9342",
+              "priceRange": "$$",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "975 N Lincoln St Suite 205C",
+                "addressLocality": "Denver",
+                "addressRegion": "CO",
+                "postalCode": "80203",
+                "addressCountry": "US"
+              },
+              "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 39.7323,
+                "longitude": -104.9862
+              },
+              "openingHoursSpecification": [
+                {
+                  "@type": "OpeningHoursSpecification",
+                  "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                  "opens": "09:00",
+                  "closes": "18:00"
+                }
+              ]
+            },
+            {
+              "@context": "https://schema.org",
+              "@type": "WebPage",
+              "@id": "https://milehighdnatesting.com/mile-high-dna-corner/legal-vs-non-legal-dna-test#webpage",
+              "url": "https://milehighdnatesting.com/mile-high-dna-corner/legal-vs-non-legal-dna-test",
+              "name": "Legal vs Non-Legal DNA Testing in Denver | Mile High DNA Testing",
+              "description": "Learn the difference between legal (court-admissible) and non-legal DNA tests in Denver. Understand costs, requirements, and when to choose each option.",
+              "isPartOf": {
+                "@type": "WebSite",
+                "name": "Mile High DNA Testing",
+                "url": "https://milehighdnatesting.com"
+              }
+            }
+          ])}
+        </script>
+      </Helmet>
       <CornerLayout>
         {/* Hero Section */}
         <div className="relative w-full h-[350px] md:h-[450px] mb-12">
@@ -18,10 +136,9 @@ const LegalVsNonLegal = () => {
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent rounded-b-2xl" />
           <div className="absolute bottom-8 left-8 text-white">
-            <h1 className="text-4xl md:text-6xl font-bold mb-2 text-white drop-shadow-lg">Mile High DNA Corner</h1>
-            <h2 className="text-xl md:text-2xl text-white drop-shadow-lg">
-            Legal vs. Non-Legal DNA Testing: What’s the Difference?
-            </h2>
+            <h1 className="text-4xl md:text-6xl font-bold mb-2 text-white drop-shadow-lg">
+            Legal vs. Non-Legal DNA Testing: What's the Difference?
+            </h1>
           </div>
         </div>
         

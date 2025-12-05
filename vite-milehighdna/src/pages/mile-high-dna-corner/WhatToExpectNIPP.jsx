@@ -1,5 +1,5 @@
 import React from "react";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 import CornerLayout from "../../components/corner/CornerLayout";
 import ServingColorado from "../../components/common/ServingColorado";
 import CallToAction from "../../components/corner/CallToAction";
@@ -22,6 +22,38 @@ const WhatToExpectNIPP = () => {
           name="keywords"
           content="non invasive prenatal dna test, prenatal paternity test, dna test while pregnant, prenatal dna test cost, prenatal dna test near me, accurate prenatal dna test, dna testing denver, dna testing aurora, dna testing thornton, dna testing lakewood"
         />
+        <link
+          rel="canonical"
+          href="https://milehighdnatesting.com/mile-high-dna-corner/what-to-expect-non-invasive-prenatal-dna-test-denver"
+        />
+        <meta property="og:title" content="What to Expect During a Non-Invasive Prenatal DNA Test | Mile High DNA Testing" />
+        <meta property="og:description" content="Learn how a non-invasive prenatal DNA test works, what it costs, and what to expect before and during your appointment." />
+        <meta property="og:image" content="https://milehighdnatesting.com/images/banner-1200.png" />
+        <meta property="og:url" content="https://milehighdnatesting.com/mile-high-dna-corner/what-to-expect-non-invasive-prenatal-dna-test-denver" />
+        <meta property="og:type" content="article" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="What to Expect During a Non-Invasive Prenatal DNA Test" />
+        <meta name="twitter:description" content="Learn how a non-invasive prenatal DNA test works and what to expect during your appointment." />
+        <meta name="twitter:image" content="https://milehighdnatesting.com/images/banner-1200.png" />
+        <script type="application/ld+json">{`
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "What to Expect During a Non-Invasive Prenatal DNA Test",
+  "description": "Learn how a non-invasive prenatal DNA test works, what it costs, and what to expect before and during your appointment.",
+  "image": "https://milehighdnatesting.com/images/banner-1200.png",
+  "author": { "@type": "Organization", "name": "Mile High DNA Testing" },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Mile High DNA Testing",
+    "logo": { "@type": "ImageObject", "url": "https://milehighdnatesting.com/logo.png" }
+  },
+  "url": "https://milehighdnatesting.com/mile-high-dna-corner/what-to-expect-non-invasive-prenatal-dna-test-denver",
+  "mainEntityOfPage": "https://milehighdnatesting.com/mile-high-dna-corner/what-to-expect-non-invasive-prenatal-dna-test-denver",
+  "datePublished": "2025-01-01",
+  "dateModified": "2025-01-01"
+}
+`}</script>
         <script type="application/ld+json">{`
 {
   "@context": "https://schema.org",
@@ -54,6 +86,54 @@ const WhatToExpectNIPP = () => {
   ]
 }
 `}</script>
+        <script type="application/ld+json">
+          {JSON.stringify([
+            {
+              "@context": "https://schema.org",
+              "@type": "LocalBusiness",
+              "@id": "https://milehighdnatesting.com/mile-high-dna-corner/what-to-expect-non-invasive-prenatal-dna-test-denver#dna-testing-denver",
+              "name": "Mile High DNA Testing",
+              "image": "https://milehighdnatesting.com/logo.png",
+              "url": "https://milehighdnatesting.com/mile-high-dna-corner/what-to-expect-non-invasive-prenatal-dna-test-denver",
+              "telephone": "+1-720-900-9342",
+              "priceRange": "$$",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "975 N Lincoln St Suite 205C",
+                "addressLocality": "Denver",
+                "addressRegion": "CO",
+                "postalCode": "80203",
+                "addressCountry": "US"
+              },
+              "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 39.7323,
+                "longitude": -104.9862
+              },
+              "openingHoursSpecification": [
+                {
+                  "@type": "OpeningHoursSpecification",
+                  "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                  "opens": "09:00",
+                  "closes": "18:00"
+                }
+              ]
+            },
+            {
+              "@context": "https://schema.org",
+              "@type": "WebPage",
+              "@id": "https://milehighdnatesting.com/mile-high-dna-corner/what-to-expect-non-invasive-prenatal-dna-test-denver#webpage",
+              "url": "https://milehighdnatesting.com/mile-high-dna-corner/what-to-expect-non-invasive-prenatal-dna-test-denver",
+              "name": "What to Expect During a Non-Invasive Prenatal DNA Test | Mile High DNA Testing Denver",
+              "description": "Learn how a non-invasive prenatal DNA test works, what it costs, and what to expect before and during your appointment. Safe, accurate, and confidential DNA testing for Denver, Aurora, Thornton, and Lakewood families.",
+              "isPartOf": {
+                "@type": "WebSite",
+                "name": "Mile High DNA Testing",
+                "url": "https://milehighdnatesting.com"
+              }
+            }
+          ])}
+        </script>
 
       </Helmet>
 
@@ -68,11 +148,8 @@ const WhatToExpectNIPP = () => {
           <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent rounded-b-2xl" />
           <div className="absolute bottom-8 left-8 text-white">
             <h1 className="text-4xl md:text-6xl font-bold mb-2 text-white drop-shadow-lg">
-              Mile High DNA Corner
-            </h1>
-            <h2 className="text-xl md:text-2xl text-white drop-shadow-lg">
               What to Expect During a Non-Invasive Prenatal DNA Test
-            </h2>
+            </h1>
           </div>
         </div>
 

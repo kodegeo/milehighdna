@@ -10,108 +10,155 @@ export default function BestAtHomePaternityDNAKit() {
     <>
       {/* SEO Meta Tags */}
       <Helmet>
-  <meta charSet="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>
-    Best At-Home Paternity DNA Test Kit in Denver | Mile High DNA Testing
-  </title>
-  <link
-    rel="canonical"
-    href="https://milehighdnatesting.com/corner/best-at-home-paternity-dna-kit-denver"
-  />
-  <meta
-    name="description"
-    content="Find the best at-home paternity DNA kit in Denver. Accurate results, nationwide and multi-city shipping, with express delivery and video call support options."
-  />
-  <meta
-    name="keywords"
-    content="best at home paternity DNA kit Denver, at home DNA test Denver, nationwide DNA testing, professional DNA testing Colorado, AABB accredited lab, express DNA shipping, bilingual DNA testing"
-  />
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>
+          Best At-Home Paternity DNA Test Kit in Denver | Mile High DNA Testing
+        </title>
+        <link
+          rel="canonical"
+          href="https://milehighdnatesting.com/mile-high-dna-corner/best-at-home-paternity-dna-kit-denver"
+        />
+        <meta
+          name="description"
+          content="Find the best at-home paternity DNA kit in Denver. Accurate results, nationwide and multi-city shipping, with express delivery and video call support options."
+        />
+        <meta
+          name="keywords"
+          content="best at home paternity DNA kit Denver, at home DNA test Denver, nationwide DNA testing, professional DNA testing Colorado, AABB accredited lab, express DNA shipping, bilingual DNA testing"
+        />
 
-  {/* Open Graph */}
-  <meta property="og:title" content="Best At-Home Paternity DNA Test Kit in Denver | Mile High DNA Testing" />
-  <meta property="og:description" content="Accurate, confidential, and trusted at-home DNA testing in Denver. Fast nationwide shipping and bilingual support." />
-  <meta property="og:image" content="https://milehighdnatesting.com/images/corner-kit-1.png" />
-  <meta property="og:url" content="https://milehighdnatesting.com/corner/best-at-home-paternity-dna-kit-denver" />
-  <meta property="og:type" content="article" />
+        {/* Open Graph */}
+        <meta property="og:title" content="Best At-Home Paternity DNA Test Kit in Denver | Mile High DNA Testing" />
+        <meta property="og:description" content="Accurate, confidential, and trusted at-home DNA testing in Denver. Fast nationwide shipping and bilingual support." />
+        <meta property="og:image" content="https://milehighdnatesting.com/images/corner-kit-1.png" />
+        <meta property="og:url" content="https://milehighdnatesting.com/mile-high-dna-corner/best-at-home-paternity-dna-kit-denver" />
+        <meta property="og:type" content="article" />
 
-  {/* Twitter Card */}
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Best At-Home Paternity DNA Test Kit in Denver | Mile High DNA Testing" />
-  <meta name="twitter:description" content="Accurate, confidential, and trusted at-home DNA testing in Denver. Fast nationwide shipping and bilingual support." />
-  <meta name="twitter:image" content="https://milehighdnatesting.com/images/corner-kit-1.png" />
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Best At-Home Paternity DNA Test Kit in Denver | Mile High DNA Testing" />
+        <meta name="twitter:description" content="Accurate, confidential, and trusted at-home DNA testing in Denver. Fast nationwide shipping and bilingual support." />
+        <meta name="twitter:image" content="https://milehighdnatesting.com/images/corner-kit-1.png" />
 
-  {/* Structured Data */}
-  <script type="application/ld+json">{`
-  [
-    {
-      "@context": "https://schema.org",
-      "@type": "Article",
-      "headline": "Best At-Home Paternity DNA Test Kit in Denver",
-      "image": "https://milehighdnatesting.com/images/corner-kit-1.png",
-      "author": { "@type": "Organization", "name": "Mile High DNA Testing" },
-      "publisher": {
-        "@type": "Organization",
-        "name": "Mile High DNA Testing",
-        "logo": { "@type": "ImageObject", "url": "https://milehighdnatesting.com/logo.png" }
-      },
-      "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "https://milehighdnatesting.com/corner/best-at-home-paternity-dna-kit-denver"
-      },
-      "datePublished": "2025-10-10",
-      "description": "Find the best at-home paternity DNA kit in Denver. Accurate results, nationwide and multi-city shipping, with express delivery and video call support options."
-    },
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "How accurate are at-home paternity DNA test kits?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Professional-grade at-home DNA test kits provide over 99.9% accuracy when processed by AABB-accredited laboratories, ensuring court-level precision for personal use."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can I use an at-home DNA test for legal purposes?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "At-home DNA tests are designed for personal peace of mind and are not valid for legal purposes such as child support or immigration, which require chain-of-custody DNA testing."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How long do at-home DNA test results take?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Most at-home DNA test results are available within 2 to 3 business days after all samples arrive at the lab. Express shipping and expedited testing options are available."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can participants live in different cities or states?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. Nationwide DNA testing with multi-city shipping allows each participant to collect their own sample privately at home, even in different states."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is my DNA information kept private and confidential?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "All DNA testing is performed by AABB-accredited laboratories with strict privacy protections. Your DNA information and test results are always confidential and secure."
-      }
-    }
-  ]
-}  
-  ]
-  `}</script>
-</Helmet>
-
+        {/* Structured Data */}
+        <script type="application/ld+json">
+          {`
+            [
+              {
+                "@context": "https://schema.org",
+                "@type": "Article",
+                "headline": "Best At-Home Paternity DNA Test Kit in Denver",
+                "image": "https://milehighdnatesting.com/images/corner-kit-1.png",
+                "author": { "@type": "Organization", "name": "Mile High DNA Testing" },
+                "publisher": {
+                  "@type": "Organization",
+                  "name": "Mile High DNA Testing",
+                  "logo": { "@type": "ImageObject", "url": "https://milehighdnatesting.com/logo.png" }
+                },
+                "mainEntityOfPage": {
+                  "@type": "WebPage",
+                  "@id": "https://milehighdnatesting.com/mile-high-dna-corner/best-at-home-paternity-dna-kit-denver"
+                },
+                "datePublished": "2025-01-01",
+                "dateModified": "2025-01-01",
+                "description": "Find the best at-home paternity DNA kit in Denver. Accurate results, nationwide and multi-city shipping, with express delivery and video call support options.",
+                "url": "https://milehighdnatesting.com/mile-high-dna-corner/best-at-home-paternity-dna-kit-denver"
+              },
+              {
+                "@context": "https://schema.org",
+                "@type": "FAQPage",
+                "mainEntity": [
+                  {
+                    "@type": "Question",
+                    "name": "How accurate are at-home paternity DNA test kits?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Professional-grade at-home DNA test kits provide over 99.9% accuracy when processed by AABB-accredited laboratories, ensuring court-level precision for personal use."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "Can I use an at-home DNA test for legal purposes?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "At-home DNA tests are for personal peace of mind and not valid for legal purposes such as child support or immigration, which require chain-of-custody testing."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "How long do at-home DNA test results take?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Most results are available in 2–3 business days after samples reach the lab. Expedited options available."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "Can participants live in different cities?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Yes. Multi-city shipping allows all participants to test from separate locations nationwide."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "Is my DNA information kept private?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Yes. All testing is performed by AABB-accredited labs with strict confidentiality protections."
+                    }
+                  }
+                ]
+              },
+              {
+                "@context": "https://schema.org",
+                "@type": "LocalBusiness",
+                "@id": "https://milehighdnatesting.com/mile-high-dna-corner/best-at-home-paternity-dna-kit-denver#dna-testing-denver",
+                "name": "Mile High DNA Testing",
+                "image": "https://milehighdnatesting.com/logo.png",
+                "url": "https://milehighdnatesting.com/mile-high-dna-corner/best-at-home-paternity-dna-kit-denver",
+                "telephone": "+1-720-900-9342",
+                "priceRange": "$$",
+                "address": {
+                  "@type": "PostalAddress",
+                  "streetAddress": "975 N Lincoln St Suite 205C",
+                  "addressLocality": "Denver",
+                  "addressRegion": "CO",
+                  "postalCode": "80203",
+                  "addressCountry": "US"
+                },
+                "geo": {
+                  "@type": "GeoCoordinates",
+                  "latitude": 39.7323,
+                  "longitude": -104.9862
+                },
+                "openingHoursSpecification": [
+                  {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                    "opens": "09:00",
+                    "closes": "18:00"
+                  }
+                ]
+              },
+              {
+                "@context": "https://schema.org",
+                "@type": "WebPage",
+                "@id": "https://milehighdnatesting.com/mile-high-dna-corner/best-at-home-paternity-dna-kit-denver#webpage",
+                "url": "https://milehighdnatesting.com/mile-high-dna-corner/best-at-home-paternity-dna-kit-denver",
+                "name": "Best At-Home Paternity DNA Test Kit in Denver | Mile High DNA Testing",
+                "description": "Find the best at-home paternity DNA kit in Denver. Accurate results, nationwide and multi-city shipping, with express delivery and video call support options.",
+                "isPartOf": {
+                  "@type": "WebSite",
+                  "name": "Mile High DNA Testing",
+                  "url": "https://milehighdnatesting.com"
+                }
+              }
+            ]
+          `}
+        </script>
+      </Helmet>
       <CornerLayout>
         {/* Hero Section */}
         <div className="relative w-full h-[350px] md:h-[450px] mb-12">
@@ -123,11 +170,8 @@ export default function BestAtHomePaternityDNAKit() {
           <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent rounded-b-2xl" />
           <div className="absolute bottom-8 left-8 text-white">
             <h1 className="text-4xl md:text-6xl font-bold mb-2 text-white drop-shadow-lg">
-              Mile High DNA Corner
-            </h1>
-            <h2 className="text-xl md:text-2xl text-white drop-shadow-lg">
               The Best At-Home Paternity DNA Kit in Denver
-            </h2>
+            </h1>
           </div>
         </div>
 
