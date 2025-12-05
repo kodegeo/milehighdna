@@ -101,17 +101,7 @@
       "source": "/(.*)",
       "destination": "/index.html"
     }
-  ],
-
-"overrides": {
-  "public/robots.txt": {
-    "path": "robots.txt"
-  },
-  "public/robots.vercel.txt": {
-    "path": "robots.txt",
-    "environment": "preview"
-  }
-}
+  ]
 
 }
 
