@@ -12,7 +12,7 @@ const CallToAction = () => {
           timelines, and legal options. Our 30-minute consultations are free and confidential.
         </p>
         <a
-          href="https://calendly.com/milehighdnatesting/freeconsultation"
+          href="https://calendly.com/milehighdnatesting/30-minute-dna-test-appointment"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-block bg-white text-[#2C6FA6] font-semibold px-6 py-3 rounded-md hover:bg-[#7DB9E8] hover:text-white transition"

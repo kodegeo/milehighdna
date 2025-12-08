@@ -13,7 +13,7 @@ const SiblingshipWhyChooseUs = () => {
       {
         title: 'Fast Turnaround',
         description:
-          'Get your results in just 2–5 business days. Expedited options are available if you need answers quickly.',
+          'Get your results in just 3–5 business days. Expedited options are available if you need answers quickly.',
       },
       {
         title: 'Experienced, Caring Staff',

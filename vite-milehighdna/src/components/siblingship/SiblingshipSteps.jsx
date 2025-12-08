@@ -22,7 +22,7 @@ const SiblingshipSteps = () => {
         number: 4,
         title: 'Receive Results',
         description:
-          'Results are ready in 2–5 business days. Legal tests include notarized documentation suitable for court or immigration use.',
+          'Results are ready in 3–5 business days. Legal tests include notarized documentation suitable for court or immigration use.',
       },
     ];
   

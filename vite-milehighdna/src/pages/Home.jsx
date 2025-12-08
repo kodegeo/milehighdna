@@ -276,7 +276,7 @@ const Home = () => {
             </div>
             <div className="card p-6">
               <h3 className="text-xl font-bold mb-2">Fast Results</h3>
-              <p className="text-gray-600">Get results in as little as 2–5 business days. Expedited testing available.</p>
+              <p className="text-gray-600">Get results in as little as 3–5 business days. Expedited testing available.</p>
             </div>
             <div className="card p-6">
               <h3 className="text-xl font-bold mb-2">100% Confidential</h3>

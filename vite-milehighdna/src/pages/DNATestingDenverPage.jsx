@@ -107,7 +107,7 @@ const DNATestingDenverPage = () => {
                 ✅ AABB-Accredited & Court-Admissible
               </div>
               <div className="bg-white/90 shadow-md rounded-lg p-3 w-full md:w-56 text-blue-900 font-semibold text-base md:text-lg">
-                ✅ Fast Results in 2–4 Business Days
+                ✅ Fast Results in 3–5 Business Days
               </div>
               <div className="bg-white/90 shadow-md rounded-lg p-3 w-full md:w-56 text-blue-900 font-semibold text-base md:text-lg">
                 ✅ Secure & Confidential Process
@@ -122,7 +122,7 @@ const DNATestingDenverPage = () => {
                 Book Online Now
               </a>
               <a
-                href="tel:+17204516047"
+                href="tel:+17209009342"
                 onClick={() => {
                   window.dataLayer?.push({
                     event: "phone_click",
@@ -172,28 +172,9 @@ const DNATestingDenverPage = () => {
             <div className="bg-white shadow-md rounded-lg p-6 text-center">
               <h3 className="text-xl font-semibold">Prenatal DNA Testing</h3>
               <p className="text-gray-700 mt-2">Non-invasive prenatal paternity testing, safe for mother & baby.</p>
-              <p className="text-blue-700 font-bold mt-4">Starting at $1,500</p>
+              <p className="text-blue-700 font-bold mt-4">Starting at $1,599</p>
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* MID-PAGE BOOKING CTA (for skimmers) */}
-      <section className="py-12 px-6 bg-blue-50 text-center">
-        <h2 className="text-2xl font-bold text-blue-900 mb-4">Ready to Book Your DNA Test?</h2>
-        <p className="text-gray-700 mb-6 max-w-2xl mx-auto">
-        Book a free consultation in just minutes using the scheduler below.
-        </p>
-        <div className="max-w-3xl mx-auto">
-          <iframe
-            src="https://calendly.com/milehighdnatesting/freeconsultation"
-            width="100%"
-            height="500"
-            frameBorder="0"
-            title="Schedule DNA Test Appointment"
-            style={{ minHeight: '500px', borderRadius: '12px', border: '1px solid #e5e7eb' }}
-            allowFullScreen
-          ></iframe>
         </div>
       </section>
 
@@ -211,7 +192,7 @@ const DNATestingDenverPage = () => {
           </div>
           <div className="p-4">
             <h3 className="text-xl font-semibold">3. Get Results</h3>
-            <p className="text-gray-700 mt-2">Receive secure results in just 2–5 business days.</p>
+            <p className="text-gray-700 mt-2">Receive secure results in just 3–5 business days.</p>
           </div>
         </div>
       </section>
@@ -236,7 +217,7 @@ const DNATestingDenverPage = () => {
         </p>
         <div className="max-w-3xl mx-auto">
           <iframe
-            src="https://calendly.com/milehighdnatesting/freeconsultation"
+            src="https://calendly.com/milehighdnatesting/30-minute-dna-test-appointment"
             width="100%"
             height="600"
             frameBorder="0"
@@ -269,7 +250,7 @@ const DNATestingDenverPage = () => {
           </div>
           <div>
             <h3 className="font-semibold">How long does it take to get results?</h3>
-            <p className="text-gray-700">Most results are ready within 2–5 business days, with expedited options available.</p>
+            <p className="text-gray-700">Most results are ready within 3–5 business days, with expedited options available.</p>
           </div>
           <div>
             <h3 className="font-semibold">What do I need to bring?</h3>

@@ -8,7 +8,7 @@ const WhyChooseUs = () => {
       {
         title: 'Fast & Reliable Results',
         description:
-          'Results are typically available within 2–5 business days after collection. Expedited processing available.',
+          'Results are typically available within 3–5 business days after collection. Expedited processing available.',
       },
       {
         title: 'International Coordination',

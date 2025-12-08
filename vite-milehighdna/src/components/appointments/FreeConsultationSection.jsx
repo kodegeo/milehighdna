@@ -18,7 +18,7 @@ const FreeConsultationSection = () => {
         
         <div className="bg-gray-50 rounded-xl p-6 shadow-md">
           <iframe
-            src="https://calendly.com/milehighdnatesting/freeconsultation"
+            src="https://calendly.com/milehighdnatesting/30-minute-dna-test-appointment"
             width="100%"
             height="700"
             frameBorder="0"

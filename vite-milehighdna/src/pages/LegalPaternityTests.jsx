@@ -21,7 +21,7 @@ const LegalPaternityPage = () => {
   </title>
   <meta
     name="description"
-    content="Get a fast, confidential, and AABB-accredited legal paternity test in Denver, Aurora, Thornton, & Lakewood Colorado. Court-admissible results for child custody, child support, and legal documentation — results ready in 2–5 business days."
+    content="Get a fast, confidential, and AABB-accredited legal paternity test in Denver, Aurora, Thornton, & Lakewood Colorado. Court-admissible results for child custody, child support, and legal documentation — results ready in 3–5 business days."
   />
   <meta
     name="keywords"
@@ -83,7 +83,7 @@ const LegalPaternityPage = () => {
         "@id": "https://milehighdnatesting.com/legal-paternity-tests#webpage",
         "url": "https://milehighdnatesting.com/legal-paternity-tests",
         "name": "Court-Admissible Legal Paternity Test in Denver, CO | Fast, AABB-Accredited DNA Results – Mile High DNA",
-        "description": "Get a fast, confidential, and AABB-accredited legal paternity test in Denver, Aurora, Thornton, & Lakewood Colorado. Court-admissible results for child custody, child support, and legal documentation — results ready in 2–5 business days.",
+        "description": "Get a fast, confidential, and AABB-accredited legal paternity test in Denver, Aurora, Thornton, & Lakewood Colorado. Court-admissible results for child custody, child support, and legal documentation — results ready in 3–5 business days.",
         "isPartOf": {
           "@type": "WebSite",
           "name": "Mile High DNA Testing",
@@ -120,7 +120,7 @@ const LegalPaternityPage = () => {
               ✅ Court-Admissible Results Accepted by Colorado Courts
             </div>
             <div className="bg-white rounded-lg shadow p-4">
-              ✅ Fast Turnaround (2–5 Business Days)
+              ✅ Fast Turnaround (3–5 Business Days)
             </div>
             <div className="bg-white rounded-lg shadow p-4">
               ✅ AABB-Accredited Labs with Chain of Custody
@@ -189,7 +189,7 @@ const LegalPaternityPage = () => {
           {
             title: "Receive Court-Ready Results",
             description:
-              "Get your certified results in 2–5 business days, admissible in court."
+              "Get your certified results in 3–5 business days, admissible in court."
           }
         ]}
       />

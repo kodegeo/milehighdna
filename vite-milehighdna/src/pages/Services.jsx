@@ -66,7 +66,7 @@ const Services = () => {
               ✅ Serving Denver, Aurora & Englewood
             </div>
             <div className="bg-white/90 shadow-md rounded-lg p-4 w-full md:w-1/3 text-blue-900 font-semibold text-base md:text-lg">
-              ✅ Results in 2–5 Business Days
+              ✅ Results in 3–5 Business Days
             </div>
           </div>
           {/* Immediate CTAs */}

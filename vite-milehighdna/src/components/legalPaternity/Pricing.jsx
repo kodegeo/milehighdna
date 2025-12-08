@@ -14,7 +14,7 @@ const Pricing = () => {
             <ul className="text-left text-gray-700 space-y-4 mb-6">
               <li>✔ AABB-Accredited Laboratory Testing</li>
               <li>✔ Sample Collection at Our Office</li>
-              <li>✔ Results in 2–5 Business Days</li>
+              <li>✔ Results in 3–5 Business Days</li>
             </ul>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
               <a
