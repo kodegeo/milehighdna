@@ -31,6 +31,8 @@ import AppointmentWizard from './pages/AppointmentWizard';
 import Prenatal from './pages/Prenatal';
 import DNATestingDenverPage from './pages/DNATestingDenverPage';
 import Services from './pages/Services';
+import DiscreetDNATesting from './pages/DiscreetDNATesting';
+import ForensicDNAAnalysis from './pages/ForensicDNAAnalysis';
 import CheckoutDomestic from './pages/CheckoutDomestic';
 import CheckoutInternational from './pages/CheckoutInternational';
 import PeaceOfMindDNAKit from './pages/PeaceOfMindDNAKit';
@@ -132,6 +134,8 @@ function AppLayout() {
             <Route path="/test-admin" element={<TestAdmin />} />
             <Route path="/dna-testing-denver" element={<DNATestingDenverPage />} />
             <Route path="/services" element={<Services />} />
+            <Route path="/discreet-dna-testing" element={<DiscreetDNATesting />} />
+            <Route path="/forensic-dna-analysis" element={<ForensicDNAAnalysis />} />
             <Route path="/checkout-domestic" element={<CheckoutDomestic />} />
             <Route path="/checkout-international" element={<CheckoutInternational />} />
             <Route path="/products/peace-of-mind-dna-kit" element={<PeaceOfMindDNAKit />} />

@@ -1,149 +1,324 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { canonicalUrl } from "../../lib/canonical";
+import Footer from "../../components/Footer";
 
 const Lakewood = () => {
+  const citySlug = "lakewood";
+  const cityName = "Lakewood";
+  const cityImage = `/images/lakewood.jpg`;
+  const photographer = null;
+  const [imageError, setImageError] = useState(false);
+  const metaDescription = "Trusted, AABB-accredited DNA testing in Lakewood, Colorado. Legal paternity, immigration, and peace-of-mind testing with court-admissible results and fast processing.";
+  const canonical = canonicalUrl(citySlug);
+  const neighborhoods = "Belmar, Green Mountain, Bear Creek, Applewood, Kendrick Lake, Solterra, West Colfax, Edgewater, Wheat Ridge, and Morrison";
+
   return (
     <>
       <Helmet>
-        <title>DNA Testing in Lakewood, Colorado | Mile High DNA Testing</title>
-        <meta name="description" content="Trusted, AABB-accredited DNA testing in Lakewood, Colorado. Legal paternity, immigration, and peace-of-mind testing with court-admissible results and fast processing." />
-        <link rel="canonical" href={canonicalUrl("lakewood")} />
+        <title>DNA Testing in {cityName}, Colorado | Mile High DNA Testing</title>
+        <meta name="description" content={metaDescription} />
+        <link rel="canonical" href={canonical} />
+        
+        {/* OG Tags */}
+        <meta property="og:title" content={`DNA Testing in ${cityName}, Colorado | Mile High DNA Testing`} />
+        <meta property="og:description" content={metaDescription} />
+        <meta property="og:image" content={`https://milehighdnatesting.com${cityImage}`} />
+        <meta property="og:url" content={canonical} />
+        <meta property="og:type" content="website" />
+        
+        {/* JSON-LD Schema */}
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
-            "@type": "LocalBusiness",
+            "@type": ["LocalBusiness", "ProfessionalService"],
             "name": "Mile High DNA Testing",
-            "url": canonicalUrl("lakewood"),
+            "url": canonical,
+            "image": `https://milehighdnatesting.com${cityImage}`,
             "serviceArea": {
               "@type": "City",
-              "name": "Lakewood"
+              "name": cityName,
+              "addressRegion": "CO",
+              "addressCountry": "US"
             },
-            "description": "Trusted, AABB-accredited DNA testing in Lakewood, Colorado. Legal paternity, immigration, and peace-of-mind testing with court-admissible results and fast processing."
+            "areaServed": {
+              "@type": "City",
+              "name": cityName
+            },
+            "description": metaDescription,
+            "breadcrumb": {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Home",
+                  "item": "https://milehighdnatesting.com"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Locations",
+                  "item": "https://milehighdnatesting.com/locations"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": `${cityName} DNA Testing`,
+                  "item": canonical
+                }
+              ]
+            }
           })}
         </script>
       </Helmet>
-      <div className="max-w-3xl mx-auto py-10 px-4">
-      <h1 className="text-4xl font-bold mb-6">DNA Testing in Lakewood, Colorado</h1>
-      
-      <p className="text-lg mb-6">
-        Mile High DNA Testing delivers trusted, accurate, and AABB-accredited DNA analysis services to individuals, families, law firms, and immigration offices throughout <strong>Lakewood, Colorado</strong>. Whether seeking legally binding results for court proceedings, personal clarity, or USCIS immigration requirements, our experienced team provides swift, dependable, and confidential testing solutions.
-      </p>
 
-      <hr className="my-8 border-gray-300" />
-
-      <h2 className="text-3xl font-bold mb-4">DNA Testing Services Available in Lakewood</h2>
-      
-      <ul className="list-disc list-inside mb-6 space-y-2">
-        <li><strong>Legal Paternity Testing (Court-Admissible)</strong></li>
-        <li><strong>Non-Legal Paternity Testing (Peace of Mind)</strong></li>
-        <li><strong>Immigration DNA Testing (USCIS, Embassies, Consulates)</strong></li>
-        <li><strong>Prenatal Paternity Testing (Non-Invasive)</strong></li>
-        <li><strong>Siblingship Testing</strong></li>
-        <li><strong>Grandparentage Testing</strong></li>
-        <li><strong>Avuncular (Aunt/Uncle) DNA Testing</strong></li>
-        <li><strong>Forensic and Specialty Analysis (Optional)</strong></li>
-      </ul>
-
-      <p className="mb-6">All tests follow strict chain-of-custody procedures when required.</p>
-
-      <hr className="my-8 border-gray-300" />
-
-      <h2 className="text-3xl font-bold mb-4">Areas We Serve in Lakewood</h2>
-      
-      <p className="mb-4">
-        We proudly support residents across <strong>Lakewood</strong> and nearby neighborhoods, including:
-      </p>
-      
-      <p className="mb-6 font-semibold">
-        Belmar, Green Mountain, Bear Creek, Applewood, Kendrick Lake, Solterra, West Colfax, Edgewater, Wheat Ridge, and Morrison
-      </p>
-
-      <p className="mb-6">
-        If you need a reliable DNA test "near me," our team provides convenient scheduling and flexible appointment options.
-      </p>
-
-      <hr className="my-8 border-gray-300" />
-
-      <h2 className="text-3xl font-bold mb-4">Why Choose Mile High DNA Testing in Lakewood?</h2>
-      
-      <ul className="list-disc list-inside mb-6 space-y-2">
-        <li>AABB-Accredited Laboratory</li>
-        <li>Court-Admissible Results</li>
-        <li>USCIS-Approved Immigration Testing</li>
-        <li>Fast Turnaround Times</li>
-        <li>Local Colorado Team</li>
-        <li>Flexible Scheduling</li>
-        <li>100% Confidential</li>
-      </ul>
-
-      <p className="mb-6">Your privacy and accuracy come first.</p>
-
-      <hr className="my-8 border-gray-300" />
-
-      <h2 className="text-3xl font-bold mb-4">How DNA Testing Works</h2>
-      
-      <ol className="list-decimal list-inside mb-6 space-y-2">
-        <li><strong>Schedule your appointment</strong></li>
-        <li><strong>Provide your sample</strong> (simple cheek swab)</li>
-        <li><strong>Laboratory processing begins immediately</strong></li>
-        <li><strong>Receive your results securely via email</strong></li>
-      </ol>
-
-      <p className="mb-6">We guide you through every step.</p>
-
-      <hr className="my-8 border-gray-300" />
-
-      <h2 className="text-3xl font-bold mb-4">FAQ for Lakewood DNA Testing</h2>
-      
-      <div className="space-y-4 mb-6">
-        <div>
-          <p className="font-semibold mb-2">How fast can I get DNA results in Lakewood?</p>
-          <p>Results typically return within 2–3 business days. Expedited options may be available.</p>
+      {/* Hero Section with City Image */}
+      <section className="relative h-[400px] md:h-[500px] w-full overflow-hidden">
+        {cityImage && !imageError ? (
+          <>
+            <img
+              src={cityImage}
+              alt={`DNA Testing in ${cityName}, Colorado`}
+              className="object-cover w-full h-full"
+              style={{ filter: "brightness(0.7)" }}
+              onError={() => setImageError(true)}
+            />
+            {photographer && (
+              <div className="absolute bottom-4 right-4 z-10">
+                <p className="text-white text-xs drop-shadow-md opacity-80">
+                  Photo by {photographer}
+                </p>
+              </div>
+            )}
+          </>
+        ) : (
+          <div className="w-full h-full bg-gradient-to-br from-blue-600 to-blue-800"></div>
+        )}
+        <div className="absolute inset-0 bg-gradient-to-r from-blue-900/60 to-blue-700/40"></div>
+        <div className="absolute inset-0 flex flex-col items-center justify-center z-10 px-4 text-center">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white drop-shadow-lg mb-4">
+            DNA Testing in {cityName}, Colorado
+          </h1>
+          <p className="text-lg md:text-xl text-white drop-shadow-md max-w-3xl">
+            Professional, confidential, and AABB-certified DNA testing solutions for families, legal professionals, and immigration services
+          </p>
         </div>
-        
-        <div>
-          <p className="font-semibold mb-2">Are your paternity tests legal in Colorado courts?</p>
-          <p>Yes — when you choose a legal test with chain-of-custody documentation.</p>
+      </section>
+
+      <div className="max-w-6xl mx-auto py-12 px-4">
+        {/* Introduction Section */}
+        <div className="text-center mb-12">
+          <p className="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
+            Mile High DNA Testing offers professional, confidential, and AABB-certified DNA testing solutions for families, legal professionals, and immigration services across <strong className="text-blue-600">{cityName}, Colorado</strong>. From court-admissible paternity tests to personal peace-of-mind screenings and USCIS immigration verification, we ensure precise, timely, and reliable outcomes for every client.
+          </p>
         </div>
-        
-        <div>
-          <p className="font-semibold mb-2">Do you offer mobile DNA testing in Lakewood?</p>
-          <p>Yes, mobile appointments are available in most areas.</p>
-        </div>
-        
-        <div>
-          <p className="font-semibold mb-2">Is immigration DNA testing approved for USCIS cases?</p>
-          <p>Yes, all immigration tests follow USCIS, AABB, and embassy requirements.</p>
-        </div>
+
+        {/* Services Grid */}
+        <section className="mb-16">
+          <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center text-gray-800">DNA Testing Services Available in {cityName}</h2>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-6">
+            <div className="bg-white border border-gray-200 rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
+              <h3 className="font-semibold text-lg mb-2 text-blue-600">Legal Paternity Testing</h3>
+              <p className="text-sm text-gray-600">Court-Admissible</p>
+            </div>
+            <div className="bg-white border border-gray-200 rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
+              <h3 className="font-semibold text-lg mb-2 text-blue-600">Peace of Mind Testing</h3>
+              <p className="text-sm text-gray-600">Non-Legal</p>
+            </div>
+            <div className="bg-white border border-gray-200 rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
+              <h3 className="font-semibold text-lg mb-2 text-blue-600">Immigration DNA Testing</h3>
+              <p className="text-sm text-gray-600">USCIS Approved</p>
+            </div>
+            <div className="bg-white border border-gray-200 rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
+              <h3 className="font-semibold text-lg mb-2 text-blue-600">Prenatal Testing</h3>
+              <p className="text-sm text-gray-600">Non-Invasive</p>
+            </div>
+            <div className="bg-white border border-gray-200 rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
+              <h3 className="font-semibold text-lg mb-2 text-blue-600">Siblingship Testing</h3>
+              <p className="text-sm text-gray-600">Relationship Verification</p>
+            </div>
+            <div className="bg-white border border-gray-200 rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
+              <h3 className="font-semibold text-lg mb-2 text-blue-600">Grandparentage Testing</h3>
+              <p className="text-sm text-gray-600">Family Relationships</p>
+            </div>
+            <div className="bg-white border border-gray-200 rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
+              <h3 className="font-semibold text-lg mb-2 text-blue-600">Avuncular Testing</h3>
+              <p className="text-sm text-gray-600">Aunt/Uncle DNA</p>
+            </div>
+            <div className="bg-white border border-gray-200 rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
+              <h3 className="font-semibold text-lg mb-2 text-blue-600">Forensic Analysis</h3>
+              <p className="text-sm text-gray-600">Specialty Testing</p>
+            </div>
+          </div>
+
+          <p className="text-center text-gray-600 italic">All tests follow strict chain-of-custody procedures when required.</p>
+        </section>
+
+        {/* Areas We Serve - Full Width Background */}
+      </div>
+      
+      <section className="bg-blue-50 py-16 mb-16 w-full">
+        <div className="max-w-6xl mx-auto px-4">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-center text-gray-800">Areas We Serve in {cityName}</h2>
+            
+            <p className="text-center text-gray-700 mb-6 text-lg">
+              We proudly support residents across <strong className="text-blue-600">{cityName}</strong> and nearby neighborhoods, including:
+            </p>
+            
+            <div className="bg-white rounded-lg p-6 shadow-sm">
+              <p className="text-gray-700 font-medium text-center leading-relaxed">
+                {neighborhoods}
+              </p>
+            </div>
+
+            <p className="text-center text-gray-600 mt-6">
+              If you need a reliable DNA test "near me," our team provides convenient scheduling and flexible appointment options.
+            </p>
+          </div>
+        </section>
+
+      <div className="max-w-6xl mx-auto px-4">
+        {/* Why Choose Us */}
+        <section className="mb-16">
+          <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center text-gray-800">Why Choose Mile High DNA Testing in {cityName}?</h2>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="bg-gradient-to-br from-blue-50 to-white border border-blue-100 rounded-lg p-6 shadow-sm">
+              <div className="text-3xl mb-3">✅</div>
+              <h3 className="font-semibold text-lg mb-2 text-gray-800">AABB-Accredited Laboratory</h3>
+              <p className="text-gray-600 text-sm">Certified and trusted</p>
+            </div>
+            <div className="bg-gradient-to-br from-blue-50 to-white border border-blue-100 rounded-lg p-6 shadow-sm">
+              <div className="text-3xl mb-3">✅</div>
+              <h3 className="font-semibold text-lg mb-2 text-gray-800">Court-Admissible Results</h3>
+              <p className="text-gray-600 text-sm">Legal documentation ready</p>
+            </div>
+            <div className="bg-gradient-to-br from-blue-50 to-white border border-blue-100 rounded-lg p-6 shadow-sm">
+              <div className="text-3xl mb-3">✅</div>
+              <h3 className="font-semibold text-lg mb-2 text-gray-800">USCIS-Approved</h3>
+              <p className="text-gray-600 text-sm">Immigration testing certified</p>
+            </div>
+            <div className="bg-gradient-to-br from-blue-50 to-white border border-blue-100 rounded-lg p-6 shadow-sm">
+              <div className="text-3xl mb-3">✅</div>
+              <h3 className="font-semibold text-lg mb-2 text-gray-800">Fast Turnaround</h3>
+              <p className="text-gray-600 text-sm">Results in 3-5 business days</p>
+            </div>
+            <div className="bg-gradient-to-br from-blue-50 to-white border border-blue-100 rounded-lg p-6 shadow-sm">
+              <div className="text-3xl mb-3">✅</div>
+              <h3 className="font-semibold text-lg mb-2 text-gray-800">Local Colorado Team</h3>
+              <p className="text-gray-600 text-sm">Experienced professionals</p>
+            </div>
+            <div className="bg-gradient-to-br from-blue-50 to-white border border-blue-100 rounded-lg p-6 shadow-sm">
+              <div className="text-3xl mb-3">✅</div>
+              <h3 className="font-semibold text-lg mb-2 text-gray-800">Flexible Scheduling</h3>
+              <p className="text-gray-600 text-sm">Convenient appointment times</p>
+            </div>
+          </div>
+
+          <p className="text-center text-gray-700 mt-8 text-lg font-medium">Your privacy and accuracy come first.</p>
+        </section>
+
+        {/* How It Works - Full Width Background */}
+      </div>
+      
+      <section className="bg-gray-50 py-16 mb-16 w-full">
+        <div className="max-w-6xl mx-auto px-4">
+            <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center text-gray-800">How DNA Testing Works</h2>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              <div className="bg-white rounded-lg p-6 shadow-md text-center">
+                <div className="w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">1</div>
+                <h3 className="font-semibold text-lg mb-2 text-gray-800">Schedule</h3>
+                <p className="text-gray-600 text-sm">Book your appointment online or by phone</p>
+              </div>
+              <div className="bg-white rounded-lg p-6 shadow-md text-center">
+                <div className="w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">2</div>
+                <h3 className="font-semibold text-lg mb-2 text-gray-800">Sample Collection</h3>
+                <p className="text-gray-600 text-sm">Simple cheek swab in our office</p>
+              </div>
+              <div className="bg-white rounded-lg p-6 shadow-md text-center">
+                <div className="w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">3</div>
+                <h3 className="font-semibold text-lg mb-2 text-gray-800">Processing</h3>
+                <p className="text-gray-600 text-sm">Laboratory analysis begins immediately</p>
+              </div>
+              <div className="bg-white rounded-lg p-6 shadow-md text-center">
+                <div className="w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">4</div>
+                <h3 className="font-semibold text-lg mb-2 text-gray-800">Results</h3>
+                <p className="text-gray-600 text-sm">Receive secure results via email</p>
+              </div>
+            </div>
+
+            <p className="text-center text-gray-700 mt-8 text-lg">We guide you through every step.</p>
+          </div>
+        </section>
+
+      <div className="max-w-6xl mx-auto px-4">
+        {/* FAQ Section */}
+        <section className="mb-16">
+          <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center text-gray-800">FAQ for {cityName} DNA Testing</h2>
+          
+          <div className="space-y-4 max-w-3xl mx-auto">
+            <div className="bg-white border border-gray-200 rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
+              <h3 className="font-semibold text-lg mb-2 text-gray-800">How fast can I get DNA results in {cityName}?</h3>
+              <p className="text-gray-600">Results typically return within 2–3 business days. Expedited options may be available.</p>
+            </div>
+            
+            <div className="bg-white border border-gray-200 rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
+              <h3 className="font-semibold text-lg mb-2 text-gray-800">Are your paternity tests legal in Colorado courts?</h3>
+              <p className="text-gray-600">Yes — when you choose a legal test with chain-of-custody documentation.</p>
+            </div>
+            
+            <div className="bg-white border border-gray-200 rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
+              <h3 className="font-semibold text-lg mb-2 text-gray-800">Do you offer mobile DNA testing in {cityName}?</h3>
+              <p className="text-gray-600">Yes, mobile appointments are available in most areas.</p>
+            </div>
+            
+            <div className="bg-white border border-gray-200 rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
+              <h3 className="font-semibold text-lg mb-2 text-gray-800">Is immigration DNA testing approved for USCIS cases?</h3>
+              <p className="text-gray-600">Yes, all immigration tests follow USCIS, AABB, and embassy requirements.</p>
+            </div>
+          </div>
+        </section>
+
+        {/* CTA Section - Full Width Background */}
+      </div>
+      
+      <section className="bg-gradient-to-r from-blue-600 to-blue-700 py-16 mb-16 w-full">
+        <div className="max-w-6xl mx-auto px-4 text-center text-white">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Schedule Your Appointment in {cityName}</h2>
+            <p className="text-lg mb-8 text-blue-50">Click below to schedule your DNA test:</p>
+            <a href="/appointments" className="bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-blue-50 transition-colors inline-block shadow-lg">
+              Schedule an Appointment
+            </a>
+          </div>
+        </section>
+
+      <div className="max-w-6xl mx-auto px-4">
+        {/* Related Services */}
+        <section className="mb-8">
+          <h2 className="text-2xl font-bold mb-6 text-center text-gray-800">Related Services</h2>
+          
+          <div className="flex flex-wrap justify-center gap-4">
+            <Link to="/legal-paternity-tests" className="bg-white border border-gray-300 rounded-lg px-6 py-3 text-blue-600 hover:bg-blue-50 hover:border-blue-500 transition-colors font-medium shadow-sm">
+              Paternity Testing
+            </Link>
+            <Link to="/immigration-dna-tests" className="bg-white border border-gray-300 rounded-lg px-6 py-3 text-blue-600 hover:bg-blue-50 hover:border-blue-500 transition-colors font-medium shadow-sm">
+              Immigration DNA Testing
+            </Link>
+            <Link to="/locations" className="bg-white border border-gray-300 rounded-lg px-6 py-3 text-blue-600 hover:bg-blue-50 hover:border-blue-500 transition-colors font-medium shadow-sm">
+              All Locations
+            </Link>
+          </div>
+        </section>
       </div>
 
-      <hr className="my-8 border-gray-300" />
-
-      <h2 className="text-3xl font-bold mb-4">Schedule Your Appointment in Lakewood</h2>
-      
-      <p className="mb-6">Click below to schedule your DNA test:</p>
-      
-      <div className="mb-8">
-        <a href="/appointments" className="btn-primary inline-block">
-          Schedule an Appointment
-        </a>
-      </div>
-
-      <hr className="my-8 border-gray-300" />
-
-      <h2 className="text-2xl font-bold mb-4">Related Services</h2>
-      
-      <ul className="list-disc list-inside space-y-2 mb-6">
-        <li><Link to="/legal-paternity-tests" className="text-blue-600 hover:underline">Paternity Testing</Link></li>
-        <li><Link to="/immigration-dna-tests" className="text-blue-600 hover:underline">Immigration DNA Testing</Link></li>
-        <li><Link to="/locations" className="text-blue-600 hover:underline">All Locations</Link></li>
-      </ul>
-      </div>
+      {/* Footer */}
+      <Footer />
     </>
   );
 };
 
 export default Lakewood;
-

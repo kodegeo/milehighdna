@@ -2,11 +2,14 @@ import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import legalHero from '../assets/images/legal_hero.png';
+import peaceOfMindHero from '../assets/images/father-baby-2.png';
 import grandparentageHero from '../assets/images/grandparentage-hero.png';
 import siblingshipHero from '../assets/images/siblingship-hero.png';
 import prenatalHero from '../assets/images/service_pre.png';
 import immigrationHero from '../assets/images/service_imma.png';
 import servicesBanner from '../assets/images/services-1.jpg';
+import discreetHero from '../assets/images/father-baby-3.png';
+import forensicHero from '../assets/images/forensic.png';
 
 const services = [
   {
@@ -14,24 +17,63 @@ const services = [
     description: 'Court-admissible DNA testing for legal matters such as custody, child support, and court orders.',
     image: legalHero,
     link: '/legal-paternity-tests',
+    badge: 'Court-Admissible',
   },
   {
-    title: 'Grandparentage DNA Testing',
-    description: 'Establish biological relationships through grandparentage testing. Legal and non-legal options available.',
-    image: grandparentageHero,
-    link: '/grandparentage-dna-tests',
+    title: 'Peace of Mind DNA Testing',
+    description: 'Non-legal paternity testing for personal knowledge. Fast, confidential results without court documentation.',
+    image: peaceOfMindHero,
+    link: '/peace-of-mind-paternity-tests',
+    badge: 'Non-Legal',
   },
   {
-    title: 'Siblingship DNA Testing',
-    description: 'Determine full, half, or no biological relationship between siblings. Legal and personal use testing available.',
-    image: siblingshipHero,
-    link: '/siblingship-dna-tests',
+    title: 'Discreet DNA Testing',
+    description: 'Completely private DNA testing with unbranded packaging and confidential handling. Perfect for sensitive situations requiring maximum privacy.',
+    image: discreetHero,
+    link: '/discreet-dna-testing',
+    badge: '100% Confidential',
+  },
+  {
+    title: 'Immigration DNA Testing',
+    description: 'USCIS-approved DNA testing for immigration cases. Meets embassy and consulate requirements worldwide.',
+    image: immigrationHero,
+    link: '/immigration-dna-tests',
+    badge: 'USCIS Approved',
   },
   {
     title: 'Prenatal Paternity DNA Testing',
     description: 'Non-invasive prenatal paternity testing for expectant mothers. Safe, accurate, and confidential.',
     image: prenatalHero,
     link: '/prenatal-dna-test',
+    badge: 'Non-Invasive',
+  },
+  {
+    title: 'Siblingship DNA Testing',
+    description: 'Determine full, half, or no biological relationship between siblings. Legal and personal use testing available.',
+    image: siblingshipHero,
+    link: '/siblingship-dna-tests',
+    badge: 'Relationship Verification',
+  },
+  {
+    title: 'Grandparentage DNA Testing',
+    description: 'Establish biological relationships through grandparentage testing. Legal and non-legal options available.',
+    image: grandparentageHero,
+    link: '/grandparentage-dna-tests',
+    badge: 'Family Relationships',
+  },
+  {
+    title: 'Avuncular DNA Testing',
+    description: 'Determine biological relationships through aunt/uncle DNA testing. Useful when direct parent testing is not possible.',
+    image: siblingshipHero,
+    link: '/appointments',
+    badge: 'Aunt/Uncle DNA',
+  },
+  {
+    title: 'Forensic DNA Analysis',
+    description: 'Specialty DNA testing for legal cases, missing persons, and complex relationship verification. Expert analysis available.',
+    image: forensicHero,
+    link: '/forensic-dna-analysis',
+    badge: 'Specialty Testing',
   },
 ];
 
@@ -39,11 +81,12 @@ const Services = () => {
   return (
     <main>
       <Helmet>
-        <title>DNA Testing Services in Denver | Paternity, Prenatal & More</title>
+        <title>All DNA Testing Services | Mile High DNA Testing</title>
         <meta
           name="description"
-          content="Explore all DNA testing services offered by Mile High DNA in Denver, Aurora, and Lakewood. Legal, immigration, prenatal, siblingship, and grandparentage tests available."
+          content="Explore all DNA testing services offered by Mile High DNA Testing in Colorado. Legal paternity, peace of mind, discreet, immigration, prenatal, siblingship, grandparentage, avuncular, and forensic DNA testing available."
         />
+        <link rel="canonical" href="https://milehighdnatesting.com/services" />
       </Helmet>
       {/* HERO SECTION - Full width banner with overlayed text */}
       <section className="relative w-full h-[320px] md:h-[420px] lg:h-[500px] flex items-center justify-center mb-0">
@@ -113,6 +156,11 @@ const Services = () => {
                   </React.Fragment>
                 ))}
               </h2>
+              {service.badge && (
+                <span className="inline-block bg-blue-100 text-blue-700 text-xs font-semibold px-3 py-1 rounded-full mb-3">
+                  {service.badge}
+                </span>
+              )}
               <p className="text-gray-700 mb-4">{service.description}</p>
               <Link
                 to={service.link}
