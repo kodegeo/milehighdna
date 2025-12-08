@@ -31,7 +31,7 @@ The main page component is `src/pages/PeaceOfMindPaternityTests.jsx` which uses 
 - **99%+ Accuracy**: Highlights the accuracy using same technology as legal tests
 - **Discreet Packaging**: Emphasizes privacy and confidentiality
 - **Simple Home Collection**: No medical appointments required
-- **Fast Results**: 2-3 business days turnaround
+- **Fast Results**: 3-5 business days turnaround
 - **Transparent Pricing**: $99-$129 with no hidden fees
 
 ## Routes

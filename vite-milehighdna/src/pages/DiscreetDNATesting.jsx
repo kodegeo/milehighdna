@@ -13,7 +13,7 @@ const DiscreetDNATesting = () => {
         <meta name="description" content="Completely private and discreet DNA testing in Denver with unbranded packaging and confidential handling. Perfect for sensitive situations requiring maximum privacy. AABB-accredited results." />
         <meta
           name="keywords"
-          content="discreet DNA testing Denver, private DNA test Colorado, confidential DNA testing, unbranded DNA test kit, sensitive DNA testing, anonymous DNA test"
+          content="discreet dna testing, private dna testing denver, confidential dna test, anonymous dna testing colorado, unbranded dna kit"
         />
         <link rel="canonical" href="https://milehighdnatesting.com/discreet-dna-testing" />
 
@@ -70,6 +70,76 @@ const DiscreetDNATesting = () => {
             }
           })}
         </script>
+
+        {/* Breadcrumb JSON-LD Schema */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://milehighdnatesting.com"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Services",
+                "item": "https://milehighdnatesting.com/services"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Discreet DNA Testing",
+                "item": "https://milehighdnatesting.com/discreet-dna-testing"
+              }
+            ]
+          })}
+        </script>
+
+        {/* FAQ JSON-LD Schema */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "What makes discreet DNA testing different?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Discreet testing uses unbranded packaging with no company logos or identifying information. All communications and data handling prioritize maximum privacy and confidentiality."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Is the accuracy the same as regular DNA tests?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. Discreet DNA testing uses the same AABB-accredited laboratory technology and provides 99%+ accuracy. Only the packaging and privacy handling differ."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Can discreet test results be used in court?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Discreet testing is typically non-legal (peace of mind). For court-admissible results, you would need a legal DNA test with verified chain of custody, though we can arrange discreet handling for legal tests as well."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How are results delivered?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Results are delivered securely via encrypted email to ensure complete privacy. No physical mail is sent unless specifically requested."
+                }
+              }
+            ]
+          })}
+        </script>
       </Helmet>
 
       {/* Hero Section */}
@@ -92,6 +162,9 @@ const DiscreetDNATesting = () => {
               Whether you need paternity testing, relationship verification, or any other DNA test, 
               we ensure your privacy is protected every step of the way. No identifying information 
               appears on packaging, and all communications are handled with complete discretion.
+            </p>
+            <p className="text-gray-700 mb-8 text-lg leading-relaxed">
+              Mile High DNA Testing provides services throughout Denver, Aurora, Lakewood, Englewood, Thornton, Westminster, and surrounding Colorado communities. We serve clients statewide for both legal and non-legal DNA testing needs.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a
@@ -188,7 +261,7 @@ const DiscreetDNATesting = () => {
       {/* Pricing */}
       <section className="bg-white py-16">
         <div className="container mx-auto px-6 text-center max-w-4xl">
-          <h3 className="text-3xl font-bold text-gray-800 mb-8">Discreet Testing Options</h3>
+          <h2 className="text-3xl font-bold text-gray-800 mb-8">Discreet Testing Options</h2>
           
           <div className="grid md:grid-cols-2 gap-8 mb-8">
             <div className="bg-gray-50 p-6 rounded-xl shadow-lg">
@@ -255,4 +328,5 @@ const DiscreetDNATesting = () => {
 };
 
 export default DiscreetDNATesting;
+
 

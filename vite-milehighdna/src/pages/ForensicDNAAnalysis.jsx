@@ -13,7 +13,7 @@ const ForensicDNAAnalysis = () => {
         <meta name="description" content="Expert forensic DNA analysis in Denver for legal cases, missing persons, and complex relationship verification. AABB-accredited specialty DNA testing with court-admissible results." />
         <meta
           name="keywords"
-          content="forensic DNA analysis Denver, legal DNA testing Colorado, missing persons DNA test, court DNA evidence, expert DNA analysis, specialty DNA testing"
+          content="forensic dna analysis, legal dna testing denver, forensic dna colorado, court dna evidence, missing persons dna, expert dna witness"
         />
         <link rel="canonical" href="https://milehighdnatesting.com/forensic-dna-analysis" />
 
@@ -69,6 +69,84 @@ const ForensicDNAAnalysis = () => {
             }
           })}
         </script>
+
+        {/* Breadcrumb JSON-LD Schema */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://milehighdnatesting.com"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Services",
+                "item": "https://milehighdnatesting.com/services"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Forensic DNA Analysis",
+                "item": "https://milehighdnatesting.com/forensic-dna-analysis"
+              }
+            ]
+          })}
+        </script>
+
+        {/* FAQ JSON-LD Schema */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "What is forensic DNA analysis?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Forensic DNA analysis is specialized DNA testing performed with strict chain-of-custody procedures for legal cases, missing persons investigations, and complex relationship verification requiring court-admissible results."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How long does forensic DNA analysis take?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Standard forensic DNA analysis typically takes 3-5 business days. Complex cases or missing persons investigations may require additional time depending on the specific requirements."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Are forensic DNA test results court-admissible?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. All forensic DNA analysis follows strict chain-of-custody procedures and is performed by AABB-accredited laboratories, ensuring results are court-admissible and suitable for legal proceedings."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Do you provide expert testimony?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. We can arrange expert witness testimony and support for legal cases requiring DNA evidence interpretation and expert analysis."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What types of samples can be tested?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "We can test standard cheek swabs, blood samples, tissue samples, and other specimens. For non-standard samples, please contact us to discuss your specific needs."
+                }
+              }
+            ]
+          })}
+        </script>
       </Helmet>
 
       {/* Hero Section */}
@@ -91,6 +169,9 @@ const ForensicDNAAnalysis = () => {
               Whether you need DNA evidence for a court case, identification for missing persons, 
               or complex relationship analysis, our experienced team provides expert analysis 
               and documentation to support your legal needs.
+            </p>
+            <p className="text-gray-700 mb-8 text-lg leading-relaxed">
+              Mile High DNA Testing provides services throughout Denver, Aurora, Lakewood, Englewood, Thornton, Westminster, and surrounding Colorado communities. We serve clients statewide for both legal and non-legal DNA testing needs.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a
@@ -258,4 +339,5 @@ const ForensicDNAAnalysis = () => {
 };
 
 export default ForensicDNAAnalysis;
+
 

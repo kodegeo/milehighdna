@@ -2,14 +2,11 @@ import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import legalHero from '../assets/images/legal_hero.png';
-import peaceOfMindHero from '../assets/images/father-baby-2.png';
 import grandparentageHero from '../assets/images/grandparentage-hero.png';
 import siblingshipHero from '../assets/images/siblingship-hero.png';
 import prenatalHero from '../assets/images/service_pre.png';
 import immigrationHero from '../assets/images/service_imma.png';
 import servicesBanner from '../assets/images/services-1.jpg';
-import discreetHero from '../assets/images/father-baby-3.png';
-import forensicHero from '../assets/images/forensic.png';
 
 const services = [
   {
@@ -22,14 +19,14 @@ const services = [
   {
     title: 'Peace of Mind DNA Testing',
     description: 'Non-legal paternity testing for personal knowledge. Fast, confidential results without court documentation.',
-    image: peaceOfMindHero,
+    image: legalHero,
     link: '/peace-of-mind-paternity-tests',
     badge: 'Non-Legal',
   },
   {
     title: 'Discreet DNA Testing',
     description: 'Completely private DNA testing with unbranded packaging and confidential handling. Perfect for sensitive situations requiring maximum privacy.',
-    image: discreetHero,
+    image: legalHero,
     link: '/discreet-dna-testing',
     badge: '100% Confidential',
   },
@@ -71,7 +68,7 @@ const services = [
   {
     title: 'Forensic DNA Analysis',
     description: 'Specialty DNA testing for legal cases, missing persons, and complex relationship verification. Expert analysis available.',
-    image: forensicHero,
+    image: legalHero,
     link: '/forensic-dna-analysis',
     badge: 'Specialty Testing',
   },
@@ -86,7 +83,50 @@ const Services = () => {
           name="description"
           content="Explore all DNA testing services offered by Mile High DNA Testing in Colorado. Legal paternity, peace of mind, discreet, immigration, prenatal, siblingship, grandparentage, avuncular, and forensic DNA testing available."
         />
+        <meta
+          name="keywords"
+          content="DNA testing Denver, paternity testing Colorado, legal DNA test, immigration DNA Colorado, discreet DNA testing, forensic DNA, prenatal paternity test"
+        />
         <link rel="canonical" href="https://milehighdnatesting.com/services" />
+        
+        {/* OG / Twitter */}
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="All DNA Testing Services | Mile High DNA Testing" />
+        <meta property="og:description" content="Explore all DNA testing services offered by Mile High DNA Testing in Colorado. Legal paternity, peace of mind, discreet, immigration, prenatal, siblingship, grandparentage, avuncular, and forensic DNA testing available." />
+        <meta property="og:image" content="https://milehighdnatesting.com/images/banner-1200.png" />
+        <meta property="og:url" content="https://milehighdnatesting.com/services" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="All DNA Testing Services | Mile High DNA Testing" />
+        <meta name="twitter:description" content="Explore all DNA testing services offered by Mile High DNA Testing in Colorado." />
+        <meta name="twitter:image" content="https://milehighdnatesting.com/images/banner-1200.png" />
+
+        {/* Breadcrumb JSON-LD Schema */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://milehighdnatesting.com"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Services",
+                "item": "https://milehighdnatesting.com/services"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "All DNA Testing Services",
+                "item": "https://milehighdnatesting.com/services"
+              }
+            ]
+          })}
+        </script>
       </Helmet>
       {/* HERO SECTION - Full width banner with overlayed text */}
       <section className="relative w-full h-[320px] md:h-[420px] lg:h-[500px] flex items-center justify-center mb-0">
@@ -100,6 +140,9 @@ const Services = () => {
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-4 drop-shadow-lg">Our DNA Testing Services</h1>
           <p className="text-lg md:text-2xl text-white max-w-2xl mx-auto drop-shadow-md">
           Mile High DNA offers fast, confidential, and AABB-accredited DNA testing for families, legal cases, and prenatal testing needs in Denver, Aurora, Lakewood, and across Colorado.          </p>
+          <p className="text-base md:text-lg text-white max-w-2xl mx-auto drop-shadow-md mt-4">
+          Mile High DNA Testing provides services throughout Denver, Aurora, Lakewood, Englewood, Thornton, Westminster, and surrounding Colorado communities. We serve clients statewide for both legal and non-legal DNA testing needs.
+          </p>
           {/* Quick trust points */}
           <div className="flex flex-col md:flex-row justify-center gap-4 mt-6 w-full max-w-3xl mx-auto">
             <div className="bg-white/90 shadow-md rounded-lg p-4 w-full md:w-1/3 text-blue-900 font-semibold text-base md:text-lg">
@@ -115,7 +158,7 @@ const Services = () => {
           {/* Immediate CTAs */}
           <div className="mt-8 flex flex-col md:flex-row justify-center gap-4">
             <Link
-              to="/book-appointment"
+              to="/appointments"
               className="bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-md text-lg font-semibold shadow"
             >
               Book Online Now

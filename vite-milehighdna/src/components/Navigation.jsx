@@ -53,6 +53,12 @@ const Navigation = () => {
                 {openDropdown === "services" && (
                     <div className="absolute top-[100%] bg-white border border-gray-200 shadow-lg rounded-md pt-2 w-64 z-50 max-h-72 overflow-y-auto">
                     <Link
+                        to="/services"
+                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" 
+                    >
+                        All DNA Testing Services
+                    </Link>
+                    <Link
                         to="/legal-paternity-tests"
                         className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" 
                     >
