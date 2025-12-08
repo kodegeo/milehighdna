@@ -99,7 +99,7 @@ const DNATestingDenverPage = () => {
               Fast, Confidential, Court-Admissible <br />DNA Testing in Denver
             </h1>
             <p className="mt-2 text-lg md:text-2xl text-white drop-shadow-md max-w-2xl">
-              Serving Denver, Aurora, & Englewood with trusted legal, immigration, and peace-of-mind testing.
+              Serving Denver, Aurora, Thorton, Lakewood, Littleton & Englewood with trusted legal, immigration, and peace-of-mind testing.
             </p>
             {/* Quick Trust Points */}
             <div className="flex flex-col md:flex-row justify-center gap-4 mt-6">
