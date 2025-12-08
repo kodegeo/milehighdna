@@ -94,6 +94,7 @@ const Navigation = () => {
                 </div>
             <Link to="/mile-high-dna-corner" className="text-gray-700 hover:text-blue-600 transition duration-300">Mile High DNA Corner</Link>
 
+            <Link to="/locations" className="text-gray-700 hover:text-blue-600 transition duration-300">Locations</Link>
             <Link to="/faq" className="text-gray-700 hover:text-blue-600 transition duration-300">FAQ</Link>
             <Link to="/get-results" className="text-gray-700 hover:text-blue-600 transition duration-300">Get Results</Link>
 
@@ -142,6 +143,7 @@ const Navigation = () => {
             </details>
 
             <Link to="/mile-high-dna-corner" className="text-gray-700 hover:text-blue-600 transition duration-300 block py-2" onClick={() => setIsMenuOpen(false)}>Mile High DNA Corner</Link>
+            <Link to="/locations" className="text-gray-700 hover:text-blue-600 transition duration-300 block py-2" onClick={() => setIsMenuOpen(false)}>Locations</Link>
             <Link to="/faq" className="text-gray-700 hover:text-blue-600 transition duration-300 block py-2" onClick={() => setIsMenuOpen(false)}>FAQ</Link>
             <Link to="/get-results" className="text-gray-700 hover:text-blue-600 transition duration-300 block py-2" onClick={() => setIsMenuOpen(false)}>Get Results</Link>
 

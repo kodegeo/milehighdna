@@ -50,6 +50,25 @@ import LegalDNACostGuide from './pages/mile-high-dna-corner/LegalDNACostGuide';
 import NonLegalDNACostGuide from './pages/mile-high-dna-corner/NonLegalDNACostGuide';
 import NotFound from './pages/NotFound';
 
+// Location pages
+import LocationsIndex from './pages/locations/index';
+import Denver from './pages/locations/denver';
+import Aurora from './pages/locations/aurora';
+import Lakewood from './pages/locations/lakewood';
+import Littleton from './pages/locations/littleton';
+import Centennial from './pages/locations/centennial';
+import Englewood from './pages/locations/englewood';
+import Arvada from './pages/locations/arvada';
+import Westminster from './pages/locations/westminster';
+import Thornton from './pages/locations/thornton';
+import Boulder from './pages/locations/boulder';
+import Longmont from './pages/locations/longmont';
+import FortCollins from './pages/locations/fort-collins';
+import Loveland from './pages/locations/loveland';
+import Greeley from './pages/locations/greeley';
+import ColoradoSprings from './pages/locations/colorado-springs';
+import Pueblo from './pages/locations/pueblo';
+
 
 // Spanish imports
 import HomePageEs from './pages/es/HomePageEs';
@@ -130,6 +149,25 @@ function AppLayout() {
             <Route path="/mile-high-dna-corner/why-bilingual-dna-testing-matters-denver" element={<BilingualDNATestingDenver />} />
             <Route path="/mile-high-dna-corner/legal-dna-cost-guide" element={<LegalDNACostGuide />} />
             <Route path="/mile-high-dna-corner/non-legal-dna-cost-guide" element={<NonLegalDNACostGuide />} />
+  
+            {/* Location Pages */}
+            <Route path="/locations" element={<LocationsIndex />} />
+            <Route path="/locations/denver" element={<Denver />} />
+            <Route path="/locations/aurora" element={<Aurora />} />
+            <Route path="/locations/lakewood" element={<Lakewood />} />
+            <Route path="/locations/littleton" element={<Littleton />} />
+            <Route path="/locations/centennial" element={<Centennial />} />
+            <Route path="/locations/englewood" element={<Englewood />} />
+            <Route path="/locations/arvada" element={<Arvada />} />
+            <Route path="/locations/westminster" element={<Westminster />} />
+            <Route path="/locations/thornton" element={<Thornton />} />
+            <Route path="/locations/boulder" element={<Boulder />} />
+            <Route path="/locations/longmont" element={<Longmont />} />
+            <Route path="/locations/fort-collins" element={<FortCollins />} />
+            <Route path="/locations/loveland" element={<Loveland />} />
+            <Route path="/locations/greeley" element={<Greeley />} />
+            <Route path="/locations/colorado-springs" element={<ColoradoSprings />} />
+            <Route path="/locations/pueblo" element={<Pueblo />} />
   
             {/* 404 */}
             <Route path="*" element={<NotFound />} />
