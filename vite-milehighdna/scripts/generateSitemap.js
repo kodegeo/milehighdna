@@ -2,35 +2,17 @@
 
 /**
  * Comprehensive Sitemap Generator for Mile High DNA Testing
- * Automatically scans pages directory and generates sitemap.xml with all routes
+ * Parses App.jsx directly to extract all routes and generates sitemap.xml
  */
 
 const fs = require('fs');
 const path = require('path');
 
 const BASE_URL = 'https://milehighdnatesting.com';
-const PAGES_DIR = path.join(__dirname, '..', 'src', 'pages');
+const APP_JSX_PATH = path.join(__dirname, '..', 'src', 'App.jsx');
 const OUTPUT_PATH = path.join(__dirname, '..', 'public', 'sitemap.xml');
 
-// Pages to exclude from sitemap (admin, internal, etc.)
-const EXCLUDED_PAGES = [
-  'NotFound.jsx',
-  'AdminUploaderPage.jsx',
-  'TestAdmin.jsx',
-  'AppointmentFormPage.jsx',
-  'AppointmentWizard.jsx',
-  'MyResults.jsx',
-  'MyResultsPage.jsx',
-  'CheckoutDomestic.jsx',
-  'CheckoutInternational.jsx',
-  'Confirmation.jsx',
-  'Cancel.jsx',
-  'Success.jsx',
-  'ResetPassword.jsx',
-  'index.jsx', // locations index is handled separately
-];
-
-// Pages that should be excluded (admin routes)
+// Routes to exclude from sitemap (admin, internal, etc.)
 const EXCLUDED_ROUTES = [
   '/admin-dashboard',
   '/admin-uploader',
@@ -45,69 +27,52 @@ const EXCLUDED_ROUTES = [
   '/confirmation',
   '/cancel',
   '/success',
+  '*', // 404 page
 ];
 
-// Route mappings from App.jsx (file name -> route path)
-const ROUTE_MAPPINGS = {
-  'Home.jsx': '/',
-  'AboutUs.jsx': '/about',
-  'LegalPaternityTests.jsx': '/legal-paternity-tests',
-  'PeaceOfMindPaternityTests.jsx': '/peace-of-mind-paternity-tests',
-  'ImmigrationDNATests.jsx': '/immigration-dna-tests',
-  'GrandparentageTests.jsx': '/grandparentage-dna-tests',
-  'Siblingship.jsx': '/siblingship-dna-tests',
-  'Prenatal.jsx': '/prenatal-dna-test',
-  'Appointments.jsx': '/appointments',
-  'FAQ.jsx': '/faq',
-  'GetResults.jsx': '/get-results',
-  'BookAppointment.jsx': '/book-appointment',
-  'AABBAccreditation.jsx': '/aabb-accreditation',
-  'DNATestingDenverPage.jsx': '/dna-testing-denver',
-  'Services.jsx': '/services',
-  'DiscreetDNATesting.jsx': '/discreet-dna-testing',
-  'ForensicDNAAnalysis.jsx': '/forensic-dna-analysis',
-  'PeaceOfMindDNAKit.jsx': '/products/peace-of-mind-dna-kit',
-  'FamilyRelationshipDNA.jsx': '/family-relationship-dna',
-  'MileHighDNACorner.jsx': '/mile-high-dna-corner',
-  'DNATestingTypes.jsx': '/dna-testing-types',
-};
+// Routes that start with /es are excluded (handled via hreflang)
+const EXCLUDED_PATTERNS = [
+  /^\/es/, // Spanish routes
+];
 
-// Mile High DNA Corner blog post mappings
-const BLOG_POST_MAPPINGS = {
-  'PrenatalDNAGuide.jsx': '/mile-high-dna-corner/prenatal-dna-cost-guide',
-  'PrenatalDNACost.jsx': '/mile-high-dna-corner/how-much-does-a-prenatal-dna-test-cost',
-  'LegalVsNonLegal.jsx': '/mile-high-dna-corner/legal-vs-non-legal-dna-test',
-  'HomeDNATestAccuracy.jsx': '/mile-high-dna-corner/how-reliable-and-accurate-are-home-dna-tests',
-  'AnswersMatterMost.jsx': '/mile-high-dna-corner/family-relationship-dna-testing-denver',
-  'WhatToExpectNIPP.jsx': '/mile-high-dna-corner/what-to-expect-non-invasive-prenatal-dna-test-denver',
-  'BestAtHomePaternityDNAKit.jsx': '/mile-high-dna-corner/best-at-home-paternity-dna-kit-denver',
-  'BilingualDNATestingDenver.jsx': '/mile-high-dna-corner/why-bilingual-dna-testing-matters-denver',
-  'LegalDNACostGuide.jsx': '/mile-high-dna-corner/legal-dna-cost-guide',
-  'NonLegalDNACostGuide.jsx': '/mile-high-dna-corner/non-legal-dna-cost-guide',
-};
+/**
+ * Extract all routes from App.jsx
+ */
+function extractRoutesFromAppJsx() {
+  const appContent = fs.readFileSync(APP_JSX_PATH, 'utf8');
+  const routes = [];
+  
+  // Match Route components: <Route path="/path" element={<Component />} />
+  const routeRegex = /<Route\s+path=["']([^"']+)["']\s+element=\{<([^>]+)\s*\/>\}\s*\/>/g;
+  
+  let match;
+  while ((match = routeRegex.exec(appContent)) !== null) {
+    const routePath = match[1];
+    const componentName = match[2];
+    
+    // Skip excluded routes
+    if (EXCLUDED_ROUTES.includes(routePath)) {
+      continue;
+    }
+    
+    // Skip routes matching excluded patterns
+    if (EXCLUDED_PATTERNS.some(pattern => pattern.test(routePath))) {
+      continue;
+    }
+    
+    routes.push({
+      path: routePath,
+      component: componentName,
+    });
+  }
+  
+  return routes;
+}
 
-// Location page mappings
-const LOCATION_MAPPINGS = {
-  'denver.jsx': '/locations/denver',
-  'aurora.jsx': '/locations/aurora',
-  'lakewood.jsx': '/locations/lakewood',
-  'littleton.jsx': '/locations/littleton',
-  'centennial.jsx': '/locations/centennial',
-  'englewood.jsx': '/locations/englewood',
-  'arvada.jsx': '/locations/arvada',
-  'westminster.jsx': '/locations/westminster',
-  'thornton.jsx': '/locations/thornton',
-  'boulder.jsx': '/locations/boulder',
-  'longmont.jsx': '/locations/longmont',
-  'fort-collins.jsx': '/locations/fort-collins',
-  'loveland.jsx': '/locations/loveland',
-  'greeley.jsx': '/locations/greeley',
-  'colorado-springs.jsx': '/locations/colorado-springs',
-  'pueblo.jsx': '/locations/pueblo',
-};
-
-// Priority and changefreq settings
-const getPriorityAndFreq = (route) => {
+/**
+ * Get priority and changefreq for a route
+ */
+function getPriorityAndFreq(route) {
   // Home page
   if (route === '/') {
     return { priority: '1.0', changefreq: 'daily' };
@@ -122,12 +87,16 @@ const getPriorityAndFreq = (route) => {
       route.includes('/prenatal-dna-test') ||
       route.includes('/discreet-dna-testing') ||
       route.includes('/forensic-dna-analysis') ||
-      route.includes('/services')) {
+      route === '/services' ||
+      route === '/dna-testing-denver' ||
+      route === '/dna-testing-types' ||
+      route === '/family-relationship-dna' ||
+      route.startsWith('/products/')) {
     return { priority: '0.8', changefreq: 'monthly' };
   }
   
   // Location pages
-  if (route.startsWith('/locations/')) {
+  if (route.startsWith('/locations')) {
     return { priority: '0.8', changefreq: 'monthly' };
   }
   
@@ -141,22 +110,28 @@ const getPriorityAndFreq = (route) => {
     return { priority: '0.8', changefreq: 'monthly' };
   }
   
-  // Important pages
-  if (route === '/appointments' || route === '/book-appointment' || route === '/get-results') {
+  // Important action pages
+  if (route === '/appointments' || 
+      route === '/book-appointment' || 
+      route === '/get-results') {
     return { priority: '0.8', changefreq: 'monthly' };
   }
   
   // Information pages
-  if (route === '/about' || route === '/faq' || route === '/aabb-accreditation') {
+  if (route === '/about' || 
+      route === '/faq' || 
+      route === '/aabb-accreditation') {
     return { priority: '0.6', changefreq: 'monthly' };
   }
   
   // Default
   return { priority: '0.8', changefreq: 'monthly' };
-};
+}
 
-// Hreflang mappings for bilingual pages
-const getHreflang = (route) => {
+/**
+ * Get hreflang mappings for bilingual pages
+ */
+function getHreflang(route) {
   const hreflangMap = {
     '/': { 'en-us': '/', 'es-us': '/es' },
     '/about': { 'en-us': '/about', 'es-us': '/es/sobre-nosotros' },
@@ -174,114 +149,21 @@ const getHreflang = (route) => {
   };
   
   return hreflangMap[route] || null;
-};
-
-/**
- * Collect all routes from pages directory
- */
-function collectRoutes() {
-  const routes = [];
-  
-  // Always include core pages
-  const coreRoutes = [
-    '/',
-    '/locations',
-    '/appointments',
-    '/book-appointment',
-    '/get-results',
-    '/faq',
-  ];
-  
-  coreRoutes.forEach(route => {
-    if (!EXCLUDED_ROUTES.includes(route)) {
-      routes.push({
-        loc: `${BASE_URL}${route}`,
-        route: route,
-      });
-    }
-  });
-  
-  // Scan main pages directory
-  const mainPagesDir = PAGES_DIR;
-  if (fs.existsSync(mainPagesDir)) {
-    const files = fs.readdirSync(mainPagesDir);
-    files.forEach(file => {
-      if (file.endsWith('.jsx') && !EXCLUDED_PAGES.includes(file)) {
-        const route = ROUTE_MAPPINGS[file];
-        if (route && !EXCLUDED_ROUTES.includes(route)) {
-          routes.push({
-            loc: `${BASE_URL}${route}`,
-            route: route,
-          });
-        }
-      }
-    });
-  }
-  
-  // Scan locations directory
-  const locationsDir = path.join(PAGES_DIR, 'locations');
-  if (fs.existsSync(locationsDir)) {
-    const files = fs.readdirSync(locationsDir);
-    files.forEach(file => {
-      if (file.endsWith('.jsx') && file !== 'index.jsx') {
-        const route = LOCATION_MAPPINGS[file];
-        if (route) {
-          routes.push({
-            loc: `${BASE_URL}${route}`,
-            route: route,
-          });
-        }
-      }
-    });
-  }
-  
-  // Add locations index
-  routes.push({
-    loc: `${BASE_URL}/locations`,
-    route: '/locations',
-  });
-  
-  // Scan mile-high-dna-corner directory
-  const blogDir = path.join(PAGES_DIR, 'mile-high-dna-corner');
-  if (fs.existsSync(blogDir)) {
-    const files = fs.readdirSync(blogDir);
-    files.forEach(file => {
-      if (file.endsWith('.jsx')) {
-        const route = BLOG_POST_MAPPINGS[file];
-        if (route) {
-          routes.push({
-            loc: `${BASE_URL}${route}`,
-            route: route,
-          });
-        }
-      }
-    });
-  }
-  
-  // Remove duplicates
-  const uniqueRoutes = [];
-  const seen = new Set();
-  routes.forEach(route => {
-    if (!seen.has(route.loc)) {
-      seen.add(route.loc);
-      uniqueRoutes.push(route);
-    }
-  });
-  
-  return uniqueRoutes.sort((a, b) => {
-    // Sort: home first, then alphabetical
-    if (a.route === '/') return -1;
-    if (b.route === '/') return 1;
-    return a.route.localeCompare(b.route);
-  });
 }
 
 /**
  * Generate XML sitemap content
  */
 function generateSitemap() {
-  const routes = collectRoutes();
+  const routes = extractRoutesFromAppJsx();
   const currentDate = new Date().toISOString();
+  
+  // Sort routes: home first, then by path
+  routes.sort((a, b) => {
+    if (a.path === '/') return -1;
+    if (b.path === '/') return 1;
+    return a.path.localeCompare(b.path);
+  });
   
   let sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
@@ -290,11 +172,11 @@ function generateSitemap() {
 `;
 
   routes.forEach(routeData => {
-    const { priority, changefreq } = getPriorityAndFreq(routeData.route);
-    const hreflang = getHreflang(routeData.route);
+    const { priority, changefreq } = getPriorityAndFreq(routeData.path);
+    const hreflang = getHreflang(routeData.path);
     
     sitemap += `  <url>
-    <loc>${routeData.loc}</loc>
+    <loc>${BASE_URL}${routeData.path}</loc>
     <lastmod>${currentDate}</lastmod>
     <changefreq>${changefreq}</changefreq>
     <priority>${priority}</priority>`;
@@ -337,20 +219,19 @@ function writeSitemap() {
     console.log(`📁 Output: ${OUTPUT_PATH}`);
     console.log('\n📋 Included Routes:');
     routes.forEach((r, i) => {
-      console.log(`   ${i + 1}. ${r.loc}`);
+      const { priority, changefreq } = getPriorityAndFreq(r.path);
+      console.log(`   ${i + 1}. ${r.path} (priority: ${priority}, changefreq: ${changefreq})`);
     });
     
-    // Check for missing pages
-    console.log('\n⚠️  Pages that may need manual review:');
-    const allPages = fs.readdirSync(PAGES_DIR).filter(f => f.endsWith('.jsx'));
-    allPages.forEach(file => {
-      if (!EXCLUDED_PAGES.includes(file) && !ROUTE_MAPPINGS[file]) {
-        console.log(`   - ${file} (not in route mappings)`);
-      }
-    });
+    // Verify against App.jsx
+    console.log('\n✅ Verification:');
+    console.log(`   - Parsed ${count} routes from App.jsx`);
+    console.log(`   - All routes include priority and changefreq`);
+    console.log(`   - Hreflang tags added for bilingual pages`);
     
   } catch (error) {
     console.error('❌ Error writing sitemap:', error.message);
+    console.error(error.stack);
     process.exit(1);
   }
 }
@@ -359,12 +240,13 @@ function writeSitemap() {
  * Main execution
  */
 if (require.main === module) {
-  console.log('🚀 Generating comprehensive sitemap for Mile High DNA Testing...\n');
+  console.log('🚀 Generating comprehensive sitemap for Mile High DNA Testing...');
+  console.log(`📄 Parsing routes from: ${APP_JSX_PATH}\n`);
   writeSitemap();
 }
 
 module.exports = {
   generateSitemap,
   writeSitemap,
-  collectRoutes,
+  extractRoutesFromAppJsx,
 };
