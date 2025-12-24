@@ -129,37 +129,40 @@ const Services = () => {
         </script>
       </Helmet>
       {/* HERO SECTION - Full width banner with overlayed text */}
-      <section className="relative w-full h-[320px] md:h-[420px] lg:h-[500px] flex items-center justify-center mb-0">
+      <section className="relative w-full min-h-[500px] md:min-h-[600px] lg:min-h-[700px] flex items-center justify-center pt-20 md:pt-24 pb-12 mb-8">
         <img
           src={servicesBanner}
           alt="DNA Testing Services Banner"
           className="absolute inset-0 w-full h-full object-cover z-0"
         />
         <div className="absolute inset-0 bg-blue-900/60 z-10" />
-        <div className="relative z-20 w-full flex flex-col items-center justify-center text-center px-4">
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-4 drop-shadow-lg">Our DNA Testing Services</h1>
-          <p className="text-lg md:text-2xl text-white max-w-2xl mx-auto drop-shadow-md">
-          Mile High DNA offers fast, confidential, and AABB-accredited DNA testing for families, legal cases, and prenatal testing needs in Denver, Aurora, Lakewood, and across Colorado.          </p>
-          <p className="text-base md:text-lg text-white max-w-2xl mx-auto drop-shadow-md mt-4">
-          Mile High DNA Testing provides services throughout Denver, Aurora, Lakewood, Englewood, Thornton, Westminster, and surrounding Colorado communities. We serve clients statewide for both legal and non-legal DNA testing needs.
+        <div className="relative z-20 w-full flex flex-col items-center justify-center text-center px-4 py-8 max-w-5xl mx-auto">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6 drop-shadow-lg leading-tight px-4">
+            Our DNA Testing Services
+          </h1>
+          <p className="text-base md:text-lg lg:text-xl text-white max-w-3xl mx-auto drop-shadow-md mb-4 leading-relaxed px-4">
+            Mile High DNA offers fast, confidential, and AABB-accredited DNA testing for families, legal cases, and prenatal testing needs in Denver, Aurora, Lakewood, and across Colorado.
+          </p>
+          <p className="text-sm md:text-base text-white max-w-3xl mx-auto drop-shadow-md mb-8 leading-relaxed px-4">
+            Mile High DNA Testing provides services throughout Denver, Aurora, Lakewood, Englewood, Thornton, Westminster, and surrounding Colorado communities. We serve clients statewide for both legal and non-legal DNA testing needs.
           </p>
           {/* Quick trust points */}
-          <div className="flex flex-col md:flex-row justify-center gap-4 mt-6 w-full max-w-3xl mx-auto">
-            <div className="bg-white/90 shadow-md rounded-lg p-4 w-full md:w-1/3 text-blue-900 font-semibold text-base md:text-lg">
+          <div className="flex flex-col md:flex-row justify-center gap-4 mb-8 w-full max-w-4xl mx-auto px-4">
+            <div className="bg-white/95 shadow-lg rounded-lg p-4 w-full md:w-1/3 text-blue-900 font-semibold text-sm md:text-base">
               ✅ AABB-Accredited & Court-Admissible
             </div>
-            <div className="bg-white/90 shadow-md rounded-lg p-4 w-full md:w-1/3 text-blue-900 font-semibold text-base md:text-lg">
+            <div className="bg-white/95 shadow-lg rounded-lg p-4 w-full md:w-1/3 text-blue-900 font-semibold text-sm md:text-base">
               ✅ Serving Denver, Aurora & Englewood
             </div>
-            <div className="bg-white/90 shadow-md rounded-lg p-4 w-full md:w-1/3 text-blue-900 font-semibold text-base md:text-lg">
+            <div className="bg-white/95 shadow-lg rounded-lg p-4 w-full md:w-1/3 text-blue-900 font-semibold text-sm md:text-base">
               ✅ Results in 3–5 Business Days
             </div>
           </div>
           {/* Immediate CTAs */}
-          <div className="mt-8 flex flex-col md:flex-row justify-center gap-4">
+          <div className="flex flex-col sm:flex-row justify-center gap-4 px-4">
             <Link
               to="/appointments"
-              className="bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-md text-lg font-semibold shadow"
+              className="bg-blue-600 hover:bg-blue-700 text-white py-3 px-8 rounded-md text-base md:text-lg font-semibold shadow-lg transition"
             >
               Book Online Now
             </Link>
@@ -171,7 +174,7 @@ const Services = () => {
                   phone_location: "Services - Hero CTA"
                 });
               }}
-              className="bg-green-600 hover:bg-green-700 text-white py-3 px-6 rounded-md text-lg font-semibold shadow"
+              className="bg-green-600 hover:bg-green-700 text-white py-3 px-8 rounded-md text-base md:text-lg font-semibold shadow-lg transition"
             >
               Call Us Today
             </a>
@@ -246,10 +249,49 @@ const Services = () => {
         </ul>
         {/* Optional testimonial placeholder */}
         <div className="mt-8 bg-gray-100 p-6 rounded-lg shadow">
-          <p className="italic text-gray-800">
-            "They made a stressful situation simple and fast. Highly recommend Mile High DNA Testing!"
-          </p>
-          <p className="mt-2 font-semibold text-blue-700">– Maria G., Denver</p>
+        {[
+              {
+                name: 'Tamara Argueta',
+                role: 'Mother in Denver, CO',
+                text: [
+                  "Mile High DNA Testing definitely went above and beyond for me. They were incredibly communicative, keeping me updated every step of the way. You can tell the owner genuinely cares about her clients. She makes sure you not only get the answers you need but also feel prioritized and supported throughout the process.",
+                  "If she didn't have the answer right away, she never pretended she did. She would go directly to the AABB-accredited lab to provide me the most accurate, credible information.",
+                  "If you go with Mile High DNA Testing, you are truly in great hands"
+                ],
+                source: 'Google Review',
+                sourceUrl: 'https://www.google.com/maps?q=Mile+High+DNA+Testing+Denver',
+                }
+            ].map((testimonial, index) => (
+              <a 
+                key={index}
+                href={testimonial.sourceUrl} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="h-full"
+              >
+                <div className="card h-full flex flex-col p-6 text-center">
+                  <div className="mb-4 flex justify-center">
+                    <img 
+                      src="/images/5-star-rating.svg" 
+                      alt="5 star rating"
+                      className="w-24 h-auto mb-3"
+                    />
+                  </div>
+                  <div className="mb-4">
+                    <h4 className="font-bold text-lg">{testimonial.name}</h4>
+                    <p className="text-gray-600">{testimonial.role}</p>
+                  </div>
+                  <div className="flex-grow">
+                    {testimonial.text.map((paragraph, pIndex) => (
+                      <p key={pIndex} className="text-gray-700 mb-3 last:mb-0">
+                        {paragraph}
+                      </p>
+                    ))}
+                  </div>
+                  <p className="text-sm text-gray-500 mt-4">{testimonial.source}</p>
+                </div>
+              </a>
+            ))}
         </div>
       </section>
       {/* FINAL CALL TO ACTION */}

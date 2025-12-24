@@ -12,7 +12,7 @@ const CallToAction = () => {
         </p>
         <div className="w-full">
           <iframe
-            src="https://calendly.com/milehighdnatesting/prueba-hermandad"
+            src="https://calendly.com/milehighdnatesting/full-siblingship-dna-test"
             width="100%"
             height="500"
             frameBorder="0"

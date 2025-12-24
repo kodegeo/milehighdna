@@ -5,7 +5,6 @@ import Overview from "../components/immigration/Overview";
 import Steps from "../components/immigration/Steps";
 import WhoNeedsTest from "../components/immigration/WhoNeedsThis";
 import WhyChooseUs from "../components/immigration/WhyChooseUs";
-import Testimonials from "../components/immigration/Testimonials";
 import Contact from "../components/immigration/Contact";
 import Compliance from "../components/immigration/Compliance";
 import immigrationHero from "../assets/images/immigration-hero.png";
@@ -115,7 +114,47 @@ const ImmigrationDNA = () => {
       <Steps />
       <WhoNeedsTest />
       <WhyChooseUs />
-      <Testimonials />
+      {/* TESTIMONIALS */}
+      <section className="section-padding section-bg-alt">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center mb-12">What Our Clients Say</h2>
+          <div className="max-w-2xl mx-auto">
+            {[
+              {
+                name: 'Yasmin',
+                role: 'Mother in Denver, CO',
+                text: "We had such a wonderful experience with Mile High DNA Testing! The process was honestly overwhelming for our family, but Cynthia made everything simple, and clear from the very beginning. She went above and beyond to make sure we understood each step and felt supported the whole time. You can tell Cynthia truly cares about families going through immigration. We were treated with kindness, patience, and compassion. Everything was professional, quick, and handled with so much care. I'm really grateful for her help and would absolutely recommend her and Mile High DNA Testing to anyone needing immigration DNA testing. Thank you so much for supporting us during such an important moment.",
+                source: 'Google Review',
+                sourceUrl: 'https://www.google.com/maps?q=Mile+High+DNA+Testing+Denver',
+              }
+            ].map((testimonial, index) => (
+              <a 
+                key={index}
+                href={testimonial.sourceUrl} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="block h-full"
+              >
+                <div className="card h-full flex flex-col p-6 text-center">
+                  <div className="mb-4 flex justify-center">
+                    <img 
+                      src="/images/5-star-rating.svg" 
+                      alt="5 star rating"
+                      className="w-24 h-auto mb-3"
+                    />
+                  </div>
+                  <div className="mb-4">
+                    <h4 className="font-bold text-lg">{testimonial.name}</h4>
+                    <p className="text-gray-600">{testimonial.role}</p>
+                  </div>
+                  <p className="text-gray-700 flex-grow">{testimonial.text}</p>
+                  <p className="text-sm text-gray-500 mt-4">{testimonial.source}</p>
+                </div>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
       <ServingColorado />
       <CallToAction />
       <Compliance />

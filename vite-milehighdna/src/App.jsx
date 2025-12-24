@@ -51,6 +51,11 @@ import BilingualDNATestingDenver from './pages/mile-high-dna-corner/BilingualDNA
 import LegalDNACostGuide from './pages/mile-high-dna-corner/LegalDNACostGuide';
 import NonLegalDNACostGuide from './pages/mile-high-dna-corner/NonLegalDNACostGuide';
 import NotFound from './pages/NotFound';
+import ImmigrationDNATestingDenver from './pages/mile-high-dna-corner/ImmigrationDNATestingDenver';
+import PrenatalPaternityTestingDenver from './pages/mile-high-dna-corner/PrenatalPaternityTestingDenver';
+import PeaceOfMindFathersStory from './pages/mile-high-dna-corner/WhenPeaceOfMindBecomesLifeChanging';
+import WhenDNATellsTheTruth from './pages/mile-high-dna-corner/WhenDNATellsTheTruth';
+import DNATestNearMeDenver from './pages/mile-high-dna-corner/DNATestNearMeDenver';
 
 // Location pages
 import LocationsIndex from './pages/locations/index';
@@ -145,6 +150,8 @@ function AppLayout() {
             <Route path="/mile-high-dna-corner/prenatal-dna-cost-guide" element={<PrenatalDNAGuide />} />
             <Route path="/mile-high-dna-corner/how-much-does-a-prenatal-dna-test-cost" element={<PrenatalDNACost />} />
             <Route path="/dna-testing-types" element={<DNATestingTypes />} />
+
+            {/* Mile High DNA Corner Pages */}
             <Route path="/mile-high-dna-corner/legal-vs-non-legal-dna-test" element={<LegalVsNonLegal />} />
             <Route path="/mile-high-dna-corner/how-reliable-and-accurate-are-home-dna-tests" element={<HomeDNATestAccuracy />} />
             <Route path="/mile-high-dna-corner/family-relationship-dna-testing-denver" element={<AnswersMatterMost />} />
@@ -153,7 +160,12 @@ function AppLayout() {
             <Route path="/mile-high-dna-corner/why-bilingual-dna-testing-matters-denver" element={<BilingualDNATestingDenver />} />
             <Route path="/mile-high-dna-corner/legal-dna-cost-guide" element={<LegalDNACostGuide />} />
             <Route path="/mile-high-dna-corner/non-legal-dna-cost-guide" element={<NonLegalDNACostGuide />} />
-  
+            <Route path="/mile-high-dna-corner/immigration-dna-testing-denver" element={<ImmigrationDNATestingDenver />} />
+            <Route path="/mile-high-dna-corner/prenatal-paternity-testing-denver" element={<PrenatalPaternityTestingDenver />} />
+            <Route path="/mile-high-dna-corner/peace-of-mind-paternity-testing-denver" element={<PeaceOfMindFathersStory />} />
+            <Route path="/mile-high-dna-corner/when-dna-tells-the-truth-paternity-testing-denver" element={<WhenDNATellsTheTruth />} />
+            <Route path="/mile-high-dna-corner/dna-test-near-me-denver" element={<DNATestNearMeDenver />} />
+
             {/* Location Pages */}
             <Route path="/locations" element={<LocationsIndex />} />
             <Route path="/locations/denver" element={<Denver />} />

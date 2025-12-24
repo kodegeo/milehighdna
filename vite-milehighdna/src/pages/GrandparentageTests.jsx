@@ -5,7 +5,6 @@ import GrandparentageWhoNeedsTest from '../components/grandparentage/Grandparent
 import GrandparentageSteps from '../components/grandparentage/GrandparentageSteps';
 import GrandparentageLegalVsNonLegal from '../components/grandparentage/GrandparentageLegalVsNonLegal';
 import GrandparentageWhyChooseUs from '../components/grandparentage/GrandparentageWhyChooseUs';
-import GrandparentageTestimonial from '../components/grandparentage/GrandparentageTestimonial';
 import GrandparentageContact from '../components/grandparentage/GrandparentageContact';
 import GrandparentageCompliance from '../components/grandparentage/GrandparentageCompliance';
 import grandparentageHero from '../assets/images/grandparentage-hero.png';
@@ -100,7 +99,47 @@ const GrandparentagePage = () => {
       <GrandparentageSteps />
       <GrandparentageLegalVsNonLegal />
       <GrandparentageWhyChooseUs />
-      <GrandparentageTestimonial />
+      {/* TESTIMONIALS */}
+      <section className="section-padding section-bg-alt">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center mb-12">What Our Clients Say</h2>
+          <div className="max-w-2xl mx-auto">
+            {[
+              {
+                name: 'Ruth Gallegos',
+                role: 'Grandmother in Denver, CO',
+                text: 'Very good experience felt at ease, we all felt heard and seen.',
+                source: 'Google Review',
+                sourceUrl: 'https://www.google.com/maps?q=Mile+High+DNA+Testing+Denver',
+              }
+            ].map((testimonial, index) => (
+              <a 
+                key={index}
+                href={testimonial.sourceUrl} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="block h-full"
+              >
+                <div className="card h-full flex flex-col p-6 text-center">
+                  <div className="mb-4 flex justify-center">
+                    <img 
+                      src="/images/5-star-rating.svg" 
+                      alt="5 star rating"
+                      className="w-24 h-auto mb-3"
+                    />
+                  </div>
+                  <div className="mb-4">
+                    <h4 className="font-bold text-lg">{testimonial.name}</h4>
+                    <p className="text-gray-600">{testimonial.role}</p>
+                  </div>
+                  <p className="text-gray-700 flex-grow">{testimonial.text}</p>
+                  <p className="text-sm text-gray-500 mt-4">{testimonial.source}</p>
+                </div>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
       <ServingColorado />
       <CallToAction />
       <GrandparentageCompliance />

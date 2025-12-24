@@ -2,7 +2,6 @@ import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import ServingColorado from '../components/common/ServingColorado';
 import CallToAction from '../components/prenatal/CallToAction';
-import Testimonials from '../components/Testimonials';
 import FAQSection from '../components/FAQ/FAQSection';
 import PrenatalHero from '../components/prenatal/PrenatalHero';
 import PrenatalOverview from '../components/prenatal/PrenatalOverview';
@@ -203,6 +202,57 @@ const Prenatal = () => {
       <PrenatalSteps />
       <PrenatalWhyChooseUs />
       <PrenatalFAQ />
+      {/* TESTIMONIALS */}
+      <section className="section-padding section-bg-alt">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center mb-12">What Our Clients Say</h2>
+          <div className="max-w-2xl mx-auto">
+            {[
+              {
+                name: 'Rosie Sanchez',
+                role: 'Mother in Denver, CO',
+                text: [
+                  "I recently got a non-invasive prenatal paternity test here, and I couldn't be happier with the entire experience. The staff was on it from start to finish. A few days before my appointment, they sent me an email with clear instructions on how to prepare before and after the test, which helped calm my nerves and made everything so much easier.",
+                  "The owner was incredibly communicative throughout the whole process, always making sure I knew what to expect. We even received our results faster than expected. The results were AABB accredited and can be used for court, which gave me so much peace of mind.",
+                  "The customer service alone is worth every penny. I felt like I was in great hands the whole time, and the staff made me feel so comfortable during the appointment. Such a sweet and caring team. Highly recommend!"
+                ],
+                source: 'Google Review',
+                sourceUrl: 'https://www.google.com/maps?q=Mile+High+DNA+Testing+Denver',
+              }
+            ].map((testimonial, index) => (
+              <a 
+                key={index}
+                href={testimonial.sourceUrl} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="block h-full"
+              >
+                <div className="card h-full flex flex-col p-6 text-center">
+                  <div className="mb-4 flex justify-center">
+                    <img 
+                      src="/images/5-star-rating.svg" 
+                      alt="5 star rating"
+                      className="w-24 h-auto mb-3"
+                    />
+                  </div>
+                  <div className="mb-4">
+                    <h4 className="font-bold text-lg">{testimonial.name}</h4>
+                    <p className="text-gray-600">{testimonial.role}</p>
+                  </div>
+                  <div className="flex-grow">
+                    {testimonial.text.map((paragraph, pIndex) => (
+                      <p key={pIndex} className="text-gray-700 mb-3 last:mb-0">
+                        {paragraph}
+                      </p>
+                    ))}
+                  </div>
+                  <p className="text-sm text-gray-500 mt-4">{testimonial.source}</p>
+                </div>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
       <ServingColorado />
       <CallToAction />
       

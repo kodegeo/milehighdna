@@ -6,7 +6,6 @@ import SiblingshipWhenToUse from '../components/siblingship/SiblingshipWhenToUse
 import SiblingshipSteps from '../components/siblingship/SiblingshipSteps';
 import SiblingshipLegalVsNonLegal from '../components/siblingship/SiblingshipLegalVsNonLegal';
 import SiblingshipWhyChooseUs from '../components/siblingship/SiblingshipWhyChooseUs';
-import SiblingshipTestimonials from '../components/siblingship/SiblingshipTestimonials';
 import SiblingshipContact from '../components/siblingship/SiblingshipContact';
 import SiblingshipLegalNote from '../components/siblingship/SiblingshipLegalNote';
 import siblingshipHero from "../assets/images/siblingship-hero.png";
@@ -104,7 +103,54 @@ const Siblingship = () => {
       <SiblingshipSteps />
       <SiblingshipLegalVsNonLegal />
       <SiblingshipWhyChooseUs />
-      <SiblingshipTestimonials />
+      {/* TESTIMONIALS */}
+      <section className="section-padding section-bg-alt">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center mb-12">What Our Clients Say</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            {[
+              {
+                name: 'Timothy Greer',
+                role: 'Brother in Denver, CO',
+                text: 'Fast results, easy booking, accurate, and was able to answer any questions I had.',
+                source: 'Google Review',
+                sourceUrl: 'https://www.google.com/maps?q=Mile+High+DNA+Testing+Denver',
+              },
+              {
+                name: 'Andrew Gipson',
+                role: 'Brother in Aurora, CO',
+                text: 'They were very attentive precise, easy and prompt.',
+                source: 'Google Review',
+                sourceUrl: 'https://www.google.com/maps?q=Mile+High+DNA+Testing+Denver',
+              }
+            ].map((testimonial, index) => (
+              <a 
+                key={index}
+                href={testimonial.sourceUrl} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="h-full"
+              >
+                <div className="card h-full flex flex-col p-6 text-center">
+                  <div className="mb-4 flex justify-center">
+                    <img 
+                      src="/images/5-star-rating.svg" 
+                      alt="5 star rating"
+                      className="w-24 h-auto mb-3"
+                    />
+                  </div>
+                  <div className="mb-4">
+                    <h4 className="font-bold text-lg">{testimonial.name}</h4>
+                    <p className="text-gray-600">{testimonial.role}</p>
+                  </div>
+                  <p className="text-gray-700 flex-grow">{testimonial.text}</p>
+                  <p className="text-sm text-gray-500 mt-4">{testimonial.source}</p>
+                </div>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
       <ServingColorado />
       <CallToAction />
       <SiblingshipLegalNote />

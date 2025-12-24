@@ -293,32 +293,43 @@ const Home = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {[
               {
-                name: 'Sarah Johnson',
-                role: 'Mother',
-                image: 'https://picsum.photos/200/200?random=5',
-                text: 'Booking was easy and the team was so supportive. Results came quickly and were handled with total confidentiality.'
-              },
-              {
-                name: 'Michael Brown',
+                name: 'Ilyas Ibrahim',
                 role: 'Father',
-                image: 'https://picsum.photos/200/200?random=6',
-                text: 'Professional, fast, and very clear results. I felt reassured every step of the way.'
+                text: 'Mile High DNA Testing was amazing. The team was kind, professional, and very supportive throughout our case. We truly appreciate all their help and highly recommend them.',
+                source: 'Google Review',
+                sourceUrl: 'https://www.google.com/maps?q=Mile+High+DNA+Testing+Denver',
+                },
+              {
+                name: 'Ruth Gallegos',
+                role: 'Mother',
+                text: 'Very good experience felt at ease, we all felt heard and seen.',
+                source: 'Google Review',
+                sourceUrl: 'https://www.google.com/maps?q=Mile+High+DNA+Testing+Denver',
               }
             ].map((testimonial, index) => (
-              <div key={index} className="card">
-                <div className="flex items-center mb-4">
-                  <img 
-                    src={testimonial.image} 
-                    alt={testimonial.name}
-                    className="w-12 h-12 rounded-full mr-4"
-                  />
-                  <div>
-                    <h4 className="font-bold">{testimonial.name}</h4>
+              <a 
+                key={index}
+                href={testimonial.sourceUrl} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="h-full"
+              >
+                <div className="card h-full flex flex-col p-6">
+                  <div className="mb-4">
+                    <img 
+                      src="/images/5-star-rating.svg" 
+                      alt="5 star rating"
+                      className="w-24 h-auto mb-3"
+                    />
+                  </div>
+                  <div className="mb-4">
+                    <h4 className="font-bold text-lg">{testimonial.name}</h4>
                     <p className="text-gray-600">{testimonial.role}</p>
                   </div>
+                  <p className="text-gray-700 flex-grow">{testimonial.text}</p>
+                  <p className="text-sm text-gray-500 mt-4">{testimonial.source}</p>
                 </div>
-                <p className="text-gray-700">{testimonial.text}</p>
-              </div>
+              </a>
             ))}
           </div>
         </div>

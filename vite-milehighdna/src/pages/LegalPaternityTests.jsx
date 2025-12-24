@@ -3,7 +3,6 @@ import HeroSection from "../components/common/HeroSection";
 import ServiceOverview from "../components/legalPaternity/ServiceOverview";
 import HowItWorks from "../components/legalPaternity/HowItWorks";
 import LegalUseCases from "../components/legalPaternity/LegalUseCases";
-import Testimonial from "../components/legalPaternity/Testimonial";
 import CallToAction from "../components/legalPaternity/CallToAction";
 import legalHero from "../assets/images/legal_hero.png";
 import Pricing from "../components/legalPaternity/Pricing";
@@ -220,12 +219,47 @@ const LegalPaternityPage = () => {
         </div>
       </section>
 
-      {/* TESTIMONIAL */}
-      <Testimonial
-        quote="The process was smooth and professional. Results were delivered quickly and accepted in court with no issues."
-        author="Sarah J."
-        role="Mother in Denver, CO"
-      />
+      {/* TESTIMONIALS */}
+      <section className="section-padding section-bg-alt">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center mb-12">What Our Clients Say</h2>
+          <div className="max-w-2xl mx-auto">
+            {[
+              {
+                name: 'Ilyas Ibrahim',
+                role: 'Father in Denver, CO',
+                text: 'Mile High DNA Testing was amazing. The team was kind, professional, and very supportive throughout our case. We truly appreciate all their help and highly recommend them.',
+                source: 'Google Review',
+                sourceUrl: 'https://www.google.com/maps?q=Mile+High+DNA+Testing+Denver',
+              }
+            ].map((testimonial, index) => (
+              <a 
+                key={index}
+                href={testimonial.sourceUrl} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="block h-full"
+              >
+                <div className="card h-full flex flex-col p-6 text-center">
+                  <div className="mb-4 flex justify-center">
+                    <img 
+                      src="/images/5-star-rating.svg" 
+                      alt="5 star rating"
+                      className="w-24 h-auto mb-3"
+                    />
+                  </div>
+                  <div className="mb-4">
+                    <h4 className="font-bold text-lg">{testimonial.name}</h4>
+                    <p className="text-gray-600">{testimonial.role}</p>
+                  </div>
+                  <p className="text-gray-700 flex-grow">{testimonial.text}</p>
+                  <p className="text-sm text-gray-500 mt-4">{testimonial.source}</p>
+                </div>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
 
       {/* LOCAL COVERAGE */}
       <ServingColorado />

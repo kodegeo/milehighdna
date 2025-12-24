@@ -6,13 +6,17 @@ import clsx from 'clsx';
 const testimonials = [
   {
     quote:
-      'The process was quick, professional, and the results were delivered promptly. Highly recommend!',
-    name: 'Sarah M.',
+      "Very good experience felt at ease, we all felt heard and seen.",
+    name: "Ruth Gallegos",
+    source: "Google Review",
+    sourceUrl: "https://www.google.com/maps?q=Mile+High+DNA+Testing+Denver",
   },
   {
     quote:
-      'The staff was incredibly supportive throughout the entire process. They made a difficult situation much easier to handle.',
-    name: 'James T.',
+      "Mile High DNA Testing was amazing. The team was kind, professional, and very supportive throughout our case. We truly appreciate all their help and highly recommend them.",
+    name: "Ilyas Ibrahim",
+    source: "Google Review",
+    sourceUrl: "https://www.google.com/maps?q=Mile+High+DNA+Testing+Denver",
   },
 ];
 
