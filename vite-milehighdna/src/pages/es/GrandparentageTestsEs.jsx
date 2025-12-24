@@ -28,7 +28,7 @@ const GrandparentageTestsEs = () => {
   {/* Canonical and hreflang */}
   <link rel="canonical" href="https://milehighdnatesting.com/es/prueba-de-abuelidad" />
   <link rel="alternate" hreflang="es-us" href="https://milehighdnatesting.com/es/prueba-de-abuelidad" />
-  <link rel="alternate" hreflang="en-us" href="https://milehighdnatesting.com/grandparentage-dna-test" />
+  <link rel="alternate" hreflang="en-us" href="https://milehighdnatesting.com/grandparentage-dna-tests" />
   <link rel="alternate" hreflang="x-default" href="https://milehighdnatesting.com/" />
 
   {/* OG & Twitter */}

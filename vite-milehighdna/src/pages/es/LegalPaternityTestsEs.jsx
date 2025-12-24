@@ -29,13 +29,18 @@ const LegalPaternityTestsEs = () => {
         />
         <link
           rel="alternate"
-          hreflang="en"
+          hreflang="en-us"
           href="https://milehighdnatesting.com/legal-paternity-tests"
         />
         <link
           rel="alternate"
-          hreflang="es"
+          hreflang="es-us"
           href="https://milehighdnatesting.com/es/prueba-de-paternidad-legal"
+        />
+        <link
+          rel="alternate"
+          hreflang="x-default"
+          href="https://milehighdnatesting.com/"
         />
 
         <meta

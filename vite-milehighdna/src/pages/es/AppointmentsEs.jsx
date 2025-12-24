@@ -25,9 +25,9 @@ const AppointmentsEs = () => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:image" content="https://milehighdnatesting.com/images/banner-1200.png" />
         <link rel="canonical" href="https://milehighdnatesting.com/es/programar-cita" />
-<link rel="alternate" hreflang="es-us" href="https://milehighdnatesting.com/es/programar-cita" />
-<link rel="alternate" hreflang="en-us" href="https://milehighdnatesting.com/schedule-test" />
-<link rel="alternate" hreflang="x-default" href="https://milehighdnatesting.com/" />
+        <link rel="alternate" hreflang="en-us" href="https://milehighdnatesting.com/appointments" />
+        <link rel="alternate" hreflang="es-us" href="https://milehighdnatesting.com/es/programar-cita" />
+        <link rel="alternate" hreflang="x-default" href="https://milehighdnatesting.com/" />
 
       </Helmet>
 

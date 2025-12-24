@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { supabase } from '../../infrastructure/supabaseClient';
+import { Helmet } from 'react-helmet-async';
 
 const GetResultsEs = () => {
   const [code, setCode] = useState('');
@@ -50,6 +51,17 @@ const GetResultsEs = () => {
 
   return (
     <div className="min-h-screen bg-gray-100 py-12 px-4">
+      <Helmet>
+        <title>Consultar Resultados de Prueba de ADN | Mile High DNA</title>
+        <meta 
+          name="description" 
+          content="Acceda a sus resultados de prueba de ADN usando su código de acceso. Resultados confidenciales y seguros." 
+        />
+        <link rel="canonical" href="https://milehighdnatesting.com/es/consultar-resultados" />
+        <link rel="alternate" hreflang="en-us" href="https://milehighdnatesting.com/get-results" />
+        <link rel="alternate" hreflang="es-us" href="https://milehighdnatesting.com/es/consultar-resultados" />
+        <link rel="alternate" hreflang="x-default" href="https://milehighdnatesting.com/" />
+      </Helmet>
       <div className="max-w-md mx-auto bg-white p-6 rounded-lg shadow-md">
         <h1 className="text-xl font-bold mb-4 text-gray-800">Acceda a Sus Resultados de Prueba de ADN</h1>
         <form onSubmit={handleSubmit}>

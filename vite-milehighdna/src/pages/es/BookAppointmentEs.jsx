@@ -97,6 +97,11 @@ const BookAppointmentEs = () => {
           content="Programe en línea su prueba de paternidad, inmigración o familiar. Ofrecemos servicios en español en Denver, Aurora y Lakewood. Pague por adelantado si lo desea." 
         />
 
+        <link rel="canonical" href="https://milehighdnatesting.com/es/reservar-cita" />
+        <link rel="alternate" hreflang="en-us" href="https://milehighdnatesting.com/book-appointment" />
+        <link rel="alternate" hreflang="es-us" href="https://milehighdnatesting.com/es/reservar-cita" />
+        <link rel="alternate" hreflang="x-default" href="https://milehighdnatesting.com/" />
+
         <meta property="og:title" content="Agende Su Cita para Prueba de ADN en Colorado" />
         <meta property="og:description" content="Programe su cita para pruebas de ADN legales, inmigratorias o familiares. Resultados confidenciales y servicio en español. Sirviendo Denver y Colorado." />
         <meta property="og:image" content="https://milehighdnatesting.com/images/banner-1200.png" />

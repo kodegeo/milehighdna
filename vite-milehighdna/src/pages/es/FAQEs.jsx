@@ -17,10 +17,15 @@ const FAQEs = () => {
             content="Respuestas a las preguntas más comunes sobre pruebas de ADN en español. Información sobre costos, tiempos, validez legal, inmigración, paternidad, y más." 
           />
 
+          <link rel="canonical" href="https://milehighdnatesting.com/es/preguntas-frecuentes" />
+          <link rel="alternate" hreflang="en-us" href="https://milehighdnatesting.com/faq" />
+          <link rel="alternate" hreflang="es-us" href="https://milehighdnatesting.com/es/preguntas-frecuentes" />
+          <link rel="alternate" hreflang="x-default" href="https://milehighdnatesting.com/" />
+
           <meta property="og:title" content="Preguntas Frecuentes sobre Pruebas de ADN en Español" />
           <meta property="og:description" content="Conozca los detalles sobre pruebas de paternidad, inmigración y ADN legales. Servicios disponibles en Denver, Aurora y todo Colorado." />
           <meta property="og:image" content="https://milehighdnatesting.com/images/banner-1200.png" />
-          <meta property="og:url" content="https://milehighdnatesting.com/es/faq" />
+          <meta property="og:url" content="https://milehighdnatesting.com/es/preguntas-frecuentes" />
           <meta property="og:type" content="article" />
           <meta name="twitter:card" content="summary_large_image" />
           <meta name="twitter:image" content="https://milehighdnatesting.com/images/banner-1200.png" />

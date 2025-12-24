@@ -19,6 +19,11 @@ const AboutUsPage = () => {
           content="Conoce a Mile High DNA Testing. Servicios confiables de pruebas de ADN en Denver, Aurora y Lakewood. Atención en español. Laboratorio acreditado por la AABB. Resultados válidos para inmigración y corte." 
         />
 
+        <link rel="canonical" href="https://milehighdnatesting.com/es/sobre-nosotros" />
+        <link rel="alternate" hreflang="en-us" href="https://milehighdnatesting.com/about" />
+        <link rel="alternate" hreflang="es-us" href="https://milehighdnatesting.com/es/sobre-nosotros" />
+        <link rel="alternate" hreflang="x-default" href="https://milehighdnatesting.com/" />
+
         <meta property="og:title" content="Quiénes Somos | Pruebas de ADN en Español en Denver" />
         <meta property="og:description" content="Mile High DNA Testing ofrece servicios de pruebas de ADN legales, personales y migratorias con atención profesional en español. Acreditado por AABB." />
         <meta property="og:image" content="https://milehighdnatesting.com/images/banner-1200.png" />

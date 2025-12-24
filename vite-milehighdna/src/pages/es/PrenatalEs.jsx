@@ -1,5 +1,5 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 import ServingColoradoEs from '../../components/es/common/ServingColoradoEs';
 import CallToActionEs from '../../components/es/common/CallToActionEs';
 import TestimonialsEs from '../../components/es/TestimonialsEs';
@@ -20,6 +20,12 @@ const PrenatalEs = () => {
           name="description" 
           content="Pruebas de paternidad prenatal no invasivas en Denver, Aurora y Lakewood. Pruebas seguras, precisas y confidenciales para madres embarazadas. Resultados de laboratorio acreditado por AABB." 
         />
+
+        <link rel="canonical" href="https://milehighdnatesting.com/es/prueba-de-paternidad-prenatal" />
+        <link rel="alternate" hreflang="en-us" href="https://milehighdnatesting.com/prenatal-dna-test" />
+        <link rel="alternate" hreflang="es-us" href="https://milehighdnatesting.com/es/prueba-de-paternidad-prenatal" />
+        <link rel="alternate" hreflang="x-default" href="https://milehighdnatesting.com/" />
+
         {/* Open Graph for Social Sharing */}
         <meta property="og:title" content="Pruebas de Paternidad Prenatal en Colorado" />
         <meta property="og:description" content="Obtenga pruebas de paternidad prenatal seguras y no invasivas en Colorado. Resultados rápidos, confidenciales y acreditados por AABB para madres embarazadas y familias." />

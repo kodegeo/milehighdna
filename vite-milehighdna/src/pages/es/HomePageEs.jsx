@@ -13,21 +13,29 @@ import { Helmet } from 'react-helmet-async';
 function HomePageEs() {
   return (
     <div className="min-h-screen">
-      <Helmet>
-        <title>Pruebas de ADN en Denver | Legal, Inmigración y Familiares</title>
-        <meta 
-          name="description" 
-          content="Servicios de pruebas de ADN en español en Denver, Aurora y Lakewood. Pruebas legales, de inmigración y familiares con laboratorios acreditados por la AABB." 
-        />
+    <Helmet>
+      <title>Pruebas de ADN en Denver | Legal, Inmigración y Familiares</title>
+      <meta
+        name="description"
+        content="Servicios de pruebas de ADN en español en Denver, Aurora y Lakewood. Pruebas legales, de inmigración y familiares con laboratorios acreditados por la AABB."
+      />
 
-        <meta property="og:title" content="Pruebas de ADN en Colorado | Paternidad, Inmigración, Legal" />
-        <meta property="og:description" content="Realiza tu prueba de ADN con un laboratorio acreditado por AABB. Pruebas legales y privadas en Denver, Aurora y comunidades cercanas." />
-        <meta property="og:image" content="https://milehighdnatesting.com/images/banner-1200.png" />
-        <meta property="og:url" content="https://milehighdnatesting.com/es" />
-        <meta property="og:type" content="website" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:image" content="https://milehighdnatesting.com/images/banner-1200.png" />
-      </Helmet>
+      {/* ✅ CANONICAL */}
+      <link rel="canonical" href="https://milehighdnatesting.com/es/" />
+      <link rel="alternate" hreflang="en-us" href="https://milehighdnatesting.com/" />
+      <link rel="alternate" hreflang="es-us" href="https://milehighdnatesting.com/es/" />
+      <link rel="alternate" hreflang="x-default" href="https://milehighdnatesting.com/" />
+
+      {/* Open Graph */}
+      <meta property="og:title" content="Pruebas de ADN en Colorado | Paternidad, Inmigración, Legal" />
+      <meta property="og:description" content="Realiza tu prueba de ADN con un laboratorio acreditado por AABB. Pruebas legales y privadas en Denver, Aurora y comunidades cercanas." />
+      <meta property="og:image" content="https://milehighdnatesting.com/images/banner-1200.png" />
+      <meta property="og:url" content="https://milehighdnatesting.com/es/" />
+      <meta property="og:type" content="website" />
+
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:image" content="https://milehighdnatesting.com/images/banner-1200.png" />
+    </Helmet>
 
       {/* Hero Section */}
       <div className="relative h-[600px] mb-8">

@@ -25,10 +25,15 @@ const SiblingshipPageEs = () => {
           content="Confirmación de relación biológica entre hermanos o medios hermanos con pruebas de ADN legales y confidenciales. Resultados válidos en corte. Servicios en Denver, Aurora, Lakewood y Colorado." 
         />
 
+        <link rel="canonical" href="https://milehighdnatesting.com/es/prueba-de-hermanos" />
+        <link rel="alternate" hreflang="en-us" href="https://milehighdnatesting.com/siblingship-dna-tests" />
+        <link rel="alternate" hreflang="es-us" href="https://milehighdnatesting.com/es/prueba-de-hermanos" />
+        <link rel="alternate" hreflang="x-default" href="https://milehighdnatesting.com/" />
+
         <meta property="og:title" content="Prueba de Hermandad por ADN en Colorado | Legal y Personal" />
         <meta property="og:description" content="Realizamos pruebas de ADN entre hermanos con opciones legales y privadas. Resultados válidos para la corte e inmigración. Atendemos en español en Colorado." />
         <meta property="og:image" content="https://milehighdnatesting.com/images/banner-1200.png" />
-        <meta property="og:url" content="https://milehighdnatesting.com/es/prueba-de-hermandad" />
+        <meta property="og:url" content="https://milehighdnatesting.com/es/prueba-de-hermanos" />
         <meta property="og:type" content="article" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:image" content="https://milehighdnatesting.com/images/banner-1200.png" />

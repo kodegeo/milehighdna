@@ -15,6 +15,11 @@ const AABBAccreditation = () => {
           content="Descubre por qué la acreditación AABB es esencial para pruebas de ADN legales e inmigratorias. Resultados aceptados por USCIS y tribunales. Atendemos en Denver, Aurora y Lakewood." 
         />
 
+        <link rel="canonical" href="https://milehighdnatesting.com/es/aabb-accreditation" />
+        <link rel="alternate" hreflang="en-us" href="https://milehighdnatesting.com/aabb-accreditation" />
+        <link rel="alternate" hreflang="es-us" href="https://milehighdnatesting.com/es/aabb-accreditation" />
+        <link rel="alternate" hreflang="x-default" href="https://milehighdnatesting.com/" />
+
         <meta property="og:title" content="¿Qué es la acreditación AABB en pruebas de ADN?" />
         <meta property="og:description" content="Laboratorios acreditados por la AABB garantizan pruebas de ADN confiables, válidas legalmente y aceptadas por USCIS. Servicios disponibles en español en Colorado." />
         <meta property="og:image" content="https://milehighdnatesting.com/images/banner-1200.png" />

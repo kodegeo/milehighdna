@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet-async";
 import HeroSection from "../../components/common/HeroSection";
 import PricingEs from "../../components/es/immigration/PricingEs";
 import OverviewEs from "../../components/es/immigration/OverviewEs";
@@ -16,9 +17,9 @@ const ImmigrationDNATestsEs = () => {
       <main>
         <Helmet>
         <link rel="canonical" href="https://milehighdnatesting.com/es/prueba-de-inmigracion" />
-<link rel="alternate" hreflang="es-us" href="https://milehighdnatesting.com/es/prueba-de-inmigracion" />
-<link rel="alternate" hreflang="en-us" href="https://milehighdnatesting.com/immigration-dna-test" />
-<link rel="alternate" hreflang="x-default" href="https://milehighdnatesting.com/" />
+        <link rel="alternate" hreflang="en-us" href="https://milehighdnatesting.com/immigration-dna-tests" />
+        <link rel="alternate" hreflang="es-us" href="https://milehighdnatesting.com/es/prueba-de-inmigracion" />
+        <link rel="alternate" hreflang="x-default" href="https://milehighdnatesting.com/" />
 
 
         </Helmet>
