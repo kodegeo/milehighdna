@@ -31,8 +31,17 @@ import AppointmentWizard from './pages/AppointmentWizard';
 import Prenatal from './pages/Prenatal';
 import DNATestingDenverPage from './pages/DNATestingDenverPage';
 import Services from './pages/Services';
+import LegalPaternityTesting from './pages/services/LegalPaternityTesting';
+import NonLegalPaternityTesting from './pages/services/NonLegalPaternityTesting';
+import ImmigrationDNATesting from './pages/services/ImmigrationDNATesting';
+import PrenatalPaternityTesting from './pages/services/PrenatalPaternityTesting';
+import SiblingshipTesting from './pages/services/SiblingshipTesting';
+import GrandparentageTesting from './pages/services/GrandparentageTesting';
 import DiscreetDNATesting from './pages/DiscreetDNATesting';
+import DiscreetDNATestingService from './pages/services/DiscreetDNATesting';
 import ForensicDNAAnalysis from './pages/ForensicDNAAnalysis';
+import ForensicDNAAnalysisService from './pages/services/ForensicDNAAnalysis';
+import AvuncularDNATesting from './pages/services/AvuncularDNATesting';
 import CheckoutDomestic from './pages/CheckoutDomestic';
 import CheckoutInternational from './pages/CheckoutInternational';
 import PeaceOfMindDNAKit from './pages/PeaceOfMindDNAKit';
@@ -139,6 +148,15 @@ function AppLayout() {
             <Route path="/test-admin" element={<TestAdmin />} />
             <Route path="/dna-testing-denver" element={<DNATestingDenverPage />} />
             <Route path="/services" element={<Services />} />
+            <Route path="/services/legal-paternity-testing" element={<LegalPaternityTesting />} />
+            <Route path="/services/non-legal-paternity-testing" element={<NonLegalPaternityTesting />} />
+            <Route path="/services/immigration-dna-testing" element={<ImmigrationDNATesting />} />
+            <Route path="/services/prenatal-paternity-testing" element={<PrenatalPaternityTesting />} />
+            <Route path="/services/siblingship-testing" element={<SiblingshipTesting />} />
+            <Route path="/services/grandparentage-testing" element={<GrandparentageTesting />} />
+            <Route path="/services/discreet-dna-testing" element={<DiscreetDNATestingService />} />
+            <Route path="/services/avuncular-dna-testing" element={<AvuncularDNATesting />} />
+            <Route path="/services/forensic-dna-analysis" element={<ForensicDNAAnalysisService />} />
             <Route path="/discreet-dna-testing" element={<DiscreetDNATesting />} />
             <Route path="/forensic-dna-analysis" element={<ForensicDNAAnalysis />} />
             <Route path="/checkout-domestic" element={<CheckoutDomestic />} />

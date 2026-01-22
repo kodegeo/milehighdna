@@ -78,7 +78,22 @@ function getPriorityAndFreq(route) {
     return { priority: '1.0', changefreq: 'daily' };
   }
   
-  // Service pages
+  // /services/* detail pages (educational reference pages)
+  if (route.startsWith('/services/')) {
+    return { priority: '0.6', changefreq: 'monthly' };
+  }
+  
+  // /services hub page
+  if (route === '/services') {
+    return { priority: '0.7', changefreq: 'monthly' };
+  }
+  
+  // Appointments page (primary conversion)
+  if (route === '/appointments') {
+    return { priority: '0.8', changefreq: 'weekly' };
+  }
+  
+  // Service pages (legacy landing pages)
   if (route.includes('/legal-paternity-tests') ||
       route.includes('/peace-of-mind-paternity-tests') ||
       route.includes('/immigration-dna-tests') ||
@@ -87,7 +102,6 @@ function getPriorityAndFreq(route) {
       route.includes('/prenatal-dna-test') ||
       route.includes('/discreet-dna-testing') ||
       route.includes('/forensic-dna-analysis') ||
-      route === '/services' ||
       route === '/dna-testing-denver' ||
       route === '/dna-testing-types' ||
       route === '/family-relationship-dna' ||
@@ -111,8 +125,7 @@ function getPriorityAndFreq(route) {
   }
   
   // Important action pages
-  if (route === '/appointments' || 
-      route === '/book-appointment' || 
+  if (route === '/book-appointment' || 
       route === '/get-results') {
     return { priority: '0.8', changefreq: 'monthly' };
   }
