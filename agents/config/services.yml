@@ -1,0 +1,86 @@
+# DNA Testing Services Configuration
+# Used by GBP post agent to generate service-specific posts
+
+services:
+  - name: "Legal Paternity DNA Testing"
+    description: "Court-admissible paternity testing for legal cases"
+    keywords:
+      - "legal paternity test"
+      - "court DNA test"
+      - "child support DNA"
+      - "custody DNA test"
+    
+  - name: "Peace of Mind Paternity Testing"
+    description: "Non-legal paternity testing for personal knowledge"
+    keywords:
+      - "peace of mind paternity"
+      - "at-home DNA test"
+      - "private paternity test"
+    
+  - name: "Prenatal Paternity Testing"
+    description: "Non-invasive prenatal paternity testing as early as 6 weeks"
+    keywords:
+      - "prenatal paternity test"
+      - "pregnancy DNA test"
+      - "non-invasive prenatal"
+    
+  - name: "Immigration DNA Testing"
+    description: "AABB-accredited immigration DNA testing for USCIS cases"
+    keywords:
+      - "immigration DNA test"
+      - "USCIS DNA testing"
+      - "embassy DNA test"
+    
+  - name: "Siblingship DNA Testing"
+    description: "DNA testing to determine full or half sibling relationships"
+    keywords:
+      - "siblingship test"
+      - "sibling DNA test"
+      - "brother sister DNA"
+    
+  - name: "Grandparentage DNA Testing"
+    description: "DNA testing between grandparents and grandchildren"
+    keywords:
+      - "grandparent DNA test"
+      - "grandparentage test"
+      - "grandparent relationship"
+    
+  - name: "Avuncular DNA Testing"
+    description: "DNA testing between a child and aunt or uncle"
+    keywords:
+      - "avuncular DNA test"
+      - "aunt uncle DNA test"
+      - "avuncular relationship"
+    
+  - name: "Forensic DNA Analysis"
+    description: "Specialized forensic DNA testing for complex cases"
+    keywords:
+      - "forensic DNA"
+      - "legal DNA analysis"
+      - "expert DNA witness"
+    
+  - name: "Discreet DNA Testing"
+    description: "Confidential DNA testing using personal items or samples"
+    keywords:
+      - "discreet DNA test"
+      - "private DNA testing"
+      - "confidential DNA"
+
+# Service categories for post generation
+categories:
+  legal:
+    - "Legal Paternity DNA Testing"
+    - "Immigration DNA Testing"
+    - "Forensic DNA Analysis"
+  
+  non_legal:
+    - "Peace of Mind Paternity Testing"
+    - "Discreet DNA Testing"
+  
+  family:
+    - "Siblingship DNA Testing"
+    - "Grandparentage DNA Testing"
+    - "Avuncular DNA Testing"
+  
+  prenatal:
+    - "Prenatal Paternity Testing"

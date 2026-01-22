@@ -1,0 +1,16 @@
+# Python dependencies for agents framework
+
+# YAML configuration parsing
+PyYAML>=6.0
+
+# Standard library modules used:
+# - pathlib (built-in)
+# - logging (built-in)
+# - json (built-in)
+# - datetime (built-in)
+# - abc (built-in)
+# - typing (built-in)
+
+# Future dependencies (not yet required):
+# google-api-python-client>=2.0.0  # For GBP API
+# openai>=1.0.0  # For LLM content generation

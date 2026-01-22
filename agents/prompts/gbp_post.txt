@@ -1,0 +1,41 @@
+Generate a Google Business Profile post for {service_name}.
+
+Service Details:
+- Name: {service_name}
+- Description: {service_description}
+- Keywords: {keywords}
+
+Posting Requirements:
+- Length: 300-500 characters (optimal)
+- Tone: Professional, helpful, informative
+- Must include: Service name, call-to-action, location reference (Denver/Colorado)
+- Should include: Benefit statement, trust signal (AABB-accredited, court-admissible, etc.)
+- Must NOT include: Pricing, competitor names, medical advice, guarantees
+
+Location Context:
+- Primary location: Denver, Colorado
+- Secondary locations: Aurora, Lakewood, Englewood, Thornton, Westminster
+
+Trust Signals (use 1-2):
+- AABB-accredited laboratory
+- Court-admissible results
+- Fast turnaround times
+- Confidential and professional
+- Experienced team
+
+Call-to-Action Options (choose one):
+- "Schedule an appointment today"
+- "Contact us to learn more"
+- "Visit our website for details"
+- "Call us for a consultation"
+
+Generate a post that:
+1. Clearly identifies the service
+2. Explains who it's for and when it's needed
+3. Highlights a key benefit or trust signal
+4. Includes a natural location reference
+5. Ends with a clear call-to-action
+6. Stays within character limits
+7. Avoids salesy language or excessive punctuation
+
+Post:

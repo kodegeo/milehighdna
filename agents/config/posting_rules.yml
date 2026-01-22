@@ -1,0 +1,77 @@
+# Google Business Profile Posting Rules
+# Defines constraints and guidelines for GBP post generation
+
+rules:
+  # Character limits
+  max_length: 1500
+  min_length: 100
+  optimal_length: 300-500
+  
+  # Content requirements
+  must_include:
+    - service_name
+    - call_to_action
+    - location_reference  # "Denver", "Colorado", etc.
+  
+  should_include:
+    - benefit_statement
+    - urgency_or_relevance
+    - trust_signal  # "AABB-accredited", "court-admissible", etc.
+  
+  must_not_include:
+    - pricing_information  # Keep pricing off GBP posts
+    - competitor_names
+    - medical_advice
+    - guarantees  # Avoid "guaranteed results" language
+  
+  # Tone and style
+  tone: "professional, helpful, informative"
+  voice: "authoritative but approachable"
+  avoid:
+    - excessive_exclamation_marks
+    - all_caps
+    - salesy_language
+    - fear_mongering
+  
+  # Posting frequency
+  max_posts_per_week: 3
+  min_days_between_posts: 2
+  
+  # Call-to-action options
+  cta_options:
+    - "Schedule an appointment today"
+    - "Contact us to learn more"
+    - "Visit our website for details"
+    - "Call us for a consultation"
+  
+  # Location references (for local SEO)
+  location_keywords:
+    primary: ["Denver", "Colorado"]
+    secondary: ["Aurora", "Lakewood", "Englewood", "Thornton", "Westminster"]
+    state: ["Colorado", "CO"]
+  
+  # Trust signals
+  trust_signals:
+    - "AABB-accredited laboratory"
+    - "Court-admissible results"
+    - "Fast turnaround times"
+    - "Confidential and professional"
+    - "Experienced team"
+  
+  # Service-specific rules
+  service_rules:
+    legal_paternity:
+      must_mention: ["court-admissible", "legal documentation"]
+      avoid: ["at-home", "non-legal"]
+    
+    peace_of_mind:
+      must_mention: ["personal knowledge", "confidential"]
+      avoid: ["court", "legal"]
+    
+    immigration:
+      must_mention: ["AABB-accredited", "USCIS-compliant"]
+      avoid: ["non-legal", "at-home"]
+    
+    prenatal:
+      must_mention: ["non-invasive", "early as 6 weeks"]
+      avoid: ["invasive", "risky"]

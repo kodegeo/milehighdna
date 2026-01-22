@@ -1,0 +1,2 @@
+# State persistence directory
+# This directory stores agent state files (JSON)
