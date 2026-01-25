@@ -11,10 +11,17 @@ Provides reusable functionality for all agents:
 import json
 import logging
 import os
+
 from abc import ABC, abstractmethod
 from datetime import datetime
 from pathlib import Path
 from typing import Any, Dict, Optional
+from dotenv import load_dotenv
+
+load_dotenv()
+
+def get_openai_key() -> Optional[str]:
+    return os.getenv("OPENAI_API_KEY")
 
 
 class BaseAgent(ABC):
@@ -27,6 +34,9 @@ class BaseAgent(ABC):
     - Guardrail checks before execution
     - State persistence for resumable operations
     """
+
+    def has_openai_key(self) -> bool:
+        return bool(os.getenv("OPENAI_API_KEY"))
     
     def __init__(
         self,
@@ -139,6 +149,126 @@ class BaseAgent(ABC):
             self.logger.warning("⚠️  LIVE MODE: Guardrails should verify API credentials and permissions")
         
         return True
+    
+    def can_publish_live(self) -> bool:
+        """
+        Check if live publishing is allowed.
+        
+        This method provides a guardrail for publishing operations.
+        By default, returns False to prevent accidental live publishing.
+        
+        Subclasses can override this method to implement custom logic,
+        but should respect dry_run mode.
+        
+        Returns:
+            False (publishing is blocked by default)
+        """
+        if self.dry_run:
+            self.logger.warning(
+                "🚫 Attempt to check live publishing capability in dry-run mode. "
+                "Live publishing is blocked."
+            )
+            return False
+        
+        # Even in non-dry-run mode, publishing is disabled by default
+        # This must be explicitly enabled in a subclass
+        return False
+    
+    def check_cadence(self, service_name: str, location: str = "default") -> Dict[str, Any]:
+        """
+        Check if posting cadence allows a new post.
+        
+        Enforces anti-spam guardrail: max 1 post per service per location per 24 hours.
+        
+        Args:
+            service_name: Name of the service
+            location: Location identifier (default: "default")
+        
+        Returns:
+            Dictionary with:
+                - allowed: Boolean indicating if posting is allowed
+                - reason: String explaining why posting is/isn't allowed
+                - last_post_time: ISO timestamp of last post (if any)
+                - hours_since_last: Hours since last post (if any)
+        """
+        history_file = self.state_dir / "gbp_post_history.json"
+        
+        # Load posting history
+        history = {}
+        if history_file.exists():
+            try:
+                with open(history_file, 'r') as f:
+                    history = json.load(f)
+            except (json.JSONDecodeError, IOError) as e:
+                self.logger.warning(f"Failed to load post history: {e}")
+                history = {}
+        
+        # Create key for service + location
+        key = f"{service_name}::{location}"
+        
+        # Check if there's a recent post
+        if key in history:
+            last_post_time_str = history[key].get('last_post_time')
+            if last_post_time_str:
+                try:
+                    last_post_time = datetime.fromisoformat(last_post_time_str)
+                    hours_since = (datetime.now() - last_post_time).total_seconds() / 3600
+                    
+                    if hours_since < 24:
+                        return {
+                            "allowed": False,
+                            "reason": f"Posting cadence violated: last post was {hours_since:.1f} hours ago (minimum 24 hours required)",
+                            "last_post_time": last_post_time_str,
+                            "hours_since_last": hours_since
+                        }
+                except (ValueError, TypeError) as e:
+                    self.logger.warning(f"Failed to parse last post time: {e}")
+        
+        # Cadence allows posting
+        return {
+            "allowed": True,
+            "reason": "Cadence check passed",
+            "last_post_time": history.get(key, {}).get('last_post_time'),
+            "hours_since_last": None
+        }
+    
+    def record_post(self, service_name: str, location: str = "default") -> None:
+        """
+        Record a post in the posting history.
+        
+        Args:
+            service_name: Name of the service
+            location: Location identifier (default: "default")
+        """
+        history_file = self.state_dir / "gbp_post_history.json"
+        
+        # Load existing history
+        history = {}
+        if history_file.exists():
+            try:
+                with open(history_file, 'r') as f:
+                    history = json.load(f)
+            except (json.JSONDecodeError, IOError) as e:
+                self.logger.warning(f"Failed to load post history: {e}")
+                history = {}
+        
+        # Create key for service + location
+        key = f"{service_name}::{location}"
+        
+        # Update history
+        history[key] = {
+            "service_name": service_name,
+            "location": location,
+            "last_post_time": datetime.now().isoformat(),
+            "post_count": history.get(key, {}).get('post_count', 0) + 1
+        }
+        
+        # Save history
+        try:
+            with open(history_file, 'w') as f:
+                json.dump(history, f, indent=2)
+        except IOError as e:
+            self.logger.error(f"Failed to save post history: {e}")
     
     @abstractmethod
     def execute(self, *args, **kwargs) -> Dict[str, Any]:

@@ -11,7 +11,7 @@ Future functionality:
 - Generate sitemap reports
 """
 
-from ...core.base_agent import BaseAgent
+from agents.core.base_agent import BaseAgent
 
 
 class SEOSitemapAgent(BaseAgent):

@@ -2,34 +2,80 @@ import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 
+// Prenatal components
+import PrenatalHero from '../../components/prenatal/PrenatalHero';
+import PrenatalPricing from '../../components/prenatal/PrenatalPricing';
+import PrenatalOverview from '../../components/prenatal/PrenatalOverview';
+import PrenatalWhoNeedsTest from '../../components/prenatal/PrenatalWhoNeedsTest';
+import PrenatalSteps from '../../components/prenatal/PrenatalSteps';
+import PrenatalWhyChooseUs from '../../components/prenatal/PrenatalWhyChooseUs';
+import PrenatalFAQ from '../../components/prenatal/PrenatalFAQ';
+
+// Common components
+import ServingColorado from '../../components/common/ServingColorado';
+import CallToAction from '../../components/common/CallToAction';
+
 const PrenatalPaternityTesting = () => {
   return (
     <main>
       <Helmet>
         <html lang="en" />
-        <title>Prenatal Paternity DNA Testing in Denver | Non-Invasive Prenatal DNA Test | Mile High DNA</title>
+
+        {/* Primary SEO */}
+        <title>
+          Non-Invasive Prenatal Paternity DNA Test in Denver, CO | From 7 Weeks | Mile High DNA
+        </title>
+
         <meta
           name="description"
-          content="Prenatal paternity DNA testing determines biological parenthood during pregnancy using non-invasive DNA analysis. Available for legal and peace-of-mind purposes in Denver, Colorado."
+          content="Get a safe, non-invasive prenatal paternity DNA test in Denver from 7 weeks. AABB-accredited labs, legal & peace-of-mind options, results in 7–10 days. Schedule today."
         />
+
         <meta
           name="keywords"
-          content="prenatal paternity DNA testing Denver, non-invasive prenatal DNA test, pregnancy paternity test Colorado, early paternity testing"
+          content="non-invasive prenatal paternity test Denver, prenatal DNA test Colorado, pregnancy paternity test from 7 weeks, legal prenatal paternity testing Denver"
         />
-        <link rel="canonical" href="https://milehighdnatesting.com/services/prenatal-paternity-testing" />
-        
-        {/* OG / Twitter */}
-        <meta property="og:title" content="Prenatal Paternity DNA Testing in Denver | Non-Invasive Prenatal DNA Test" />
-        <meta property="og:description" content="Prenatal paternity DNA testing determines biological parenthood during pregnancy using non-invasive DNA analysis for legal and peace-of-mind purposes." />
-        <meta property="og:image" content="https://milehighdnatesting.com/images/banner-1200.png" />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://milehighdnatesting.com/services/prenatal-paternity-testing" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Prenatal Paternity DNA Testing in Denver" />
-        <meta name="twitter:description" content="Non-invasive prenatal paternity testing during pregnancy." />
-        <meta name="twitter:image" content="https://milehighdnatesting.com/images/banner-1200.png" />
 
-        {/* Breadcrumb JSON-LD Schema */}
+        <link
+          rel="canonical"
+          href="https://milehighdnatesting.com/services/prenatal-paternity-testing"
+        />
+
+        {/* Open Graph */}
+        <meta
+          property="og:title"
+          content="Non-Invasive Prenatal Paternity DNA Test in Denver | Mile High DNA"
+        />
+        <meta
+          property="og:description"
+          content="Safe, accurate prenatal paternity DNA testing from 7 weeks. Serving Denver & Colorado. Legal and peace-of-mind options available."
+        />
+        <meta
+          property="og:image"
+          content="https://milehighdnatesting.com/images/banner-1200.png"
+        />
+        <meta
+          property="og:url"
+          content="https://milehighdnatesting.com/services/prenatal-paternity-testing"
+        />
+        <meta property="og:type" content="website" />
+
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="Prenatal Paternity DNA Test in Denver | Non-Invasive & Accurate"
+        />
+        <meta
+          name="twitter:description"
+          content="Non-invasive prenatal paternity DNA testing from 7 weeks. Trusted Denver provider."
+        />
+        <meta
+          name="twitter:image"
+          content="https://milehighdnatesting.com/images/banner-1200.png"
+        />
+
+        {/* Breadcrumb Schema */}
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
@@ -57,229 +103,145 @@ const PrenatalPaternityTesting = () => {
           })}
         </script>
 
-        {/* FAQ JSON-LD Schema */}
+        {/* LocalBusiness Schema */}
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
-            "@type": "FAQPage",
-            "mainEntity": [
+            "@type": "LocalBusiness",
+            "@id": "https://milehighdnatesting.com/services/prenatal-paternity-testing#business",
+            "name": "Mile High DNA Testing",
+            "url": "https://milehighdnatesting.com/services/prenatal-paternity-testing",
+            "telephone": "+1-720-900-9342",
+            "priceRange": "$$",
+            "image": "https://milehighdnatesting.com/logo.png",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "975 N Lincoln St Suite 205C",
+              "addressLocality": "Denver",
+              "addressRegion": "CO",
+              "postalCode": "80203",
+              "addressCountry": "US"
+            },
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": 39.7323,
+              "longitude": -104.9862
+            },
+            "openingHoursSpecification": [
               {
-                "@type": "Question",
-                "name": "How early in pregnancy can prenatal paternity testing be performed?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Non-invasive prenatal paternity testing can typically be performed as early as 6-8 weeks into pregnancy using a maternal blood sample. The exact timing depends on the specific test method and laboratory requirements."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "Is prenatal paternity testing safe for the baby?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Non-invasive prenatal paternity testing uses a maternal blood sample and does not pose risks to the developing baby. The test analyzes cell-free fetal DNA found in the mother's bloodstream."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "Can prenatal paternity test results be used in court?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Legal prenatal paternity testing that follows proper chain-of-custody procedures can be used in court. Non-legal prenatal testing provides accurate results but is not court-admissible."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "What is the difference between legal and non-legal prenatal paternity testing?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Legal prenatal paternity testing follows strict chain-of-custody procedures and identification verification for court use. Non-legal prenatal testing provides accurate results for personal knowledge without the formal documentation requirements."
-                }
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": [
+                  "Monday",
+                  "Tuesday",
+                  "Wednesday",
+                  "Thursday",
+                  "Friday"
+                ],
+                "opens": "09:00",
+                "closes": "18:00"
               }
             ]
           })}
         </script>
       </Helmet>
 
-      {/* Header Section */}
-      <section className="bg-blue-50 py-10 px-6 md:px-12 lg:px-24">
-        <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-3xl font-bold text-[#1A3C59] mb-4">
-            Prenatal Paternity DNA Testing
-          </h1>
-          <p className="text-lg text-gray-700 leading-relaxed">
-            An overview of prenatal paternity DNA testing, including when it is appropriate,
-            how non-invasive testing works, and how to determine whether this is the right test for your situation.
-          </p>
+      <PrenatalHero />
+      <PrenatalPricing />
+      <PrenatalOverview />
+      <PrenatalWhoNeedsTest />
+      <PrenatalSteps />
+      <PrenatalWhyChooseUs />
+      <PrenatalFAQ />
+      {/* TESTIMONIALS */}
+      <section className="section-padding section-bg-alt">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center mb-12">What Our Clients Say</h2>
+          <div className="max-w-2xl mx-auto">
+            {[
+              {
+                name: 'Rosie Sanchez',
+                role: 'Mother in Denver, CO',
+                text: [
+                  "I recently got a non-invasive prenatal paternity test here, and I couldn't be happier with the entire experience. The staff was on it from start to finish. A few days before my appointment, they sent me an email with clear instructions on how to prepare before and after the test, which helped calm my nerves and made everything so much easier.",
+                  "The owner was incredibly communicative throughout the whole process, always making sure I knew what to expect. We even received our results faster than expected. The results were AABB accredited and can be used for court, which gave me so much peace of mind.",
+                  "The customer service alone is worth every penny. I felt like I was in great hands the whole time, and the staff made me feel so comfortable during the appointment. Such a sweet and caring team. Highly recommend!"
+                ],
+                source: 'Google Review',
+                sourceUrl: 'https://www.google.com/maps?q=Mile+High+DNA+Testing+Denver',
+              }
+            ].map((testimonial, index) => (
+              <a 
+                key={index}
+                href={testimonial.sourceUrl} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="block h-full"
+              >
+                <div className="card h-full flex flex-col p-6 text-center">
+                  <div className="mb-4 flex justify-center">
+                    <img 
+                      src="/images/5-star-rating.svg" 
+                      alt="5 star rating"
+                      className="w-24 h-auto mb-3"
+                    />
+                  </div>
+                  <div className="mb-4">
+                    <h4 className="font-bold text-lg">{testimonial.name}</h4>
+                    <p className="text-gray-600">{testimonial.role}</p>
+                  </div>
+                  <div className="flex-grow">
+                    {testimonial.text.map((paragraph, pIndex) => (
+                      <p key={pIndex} className="text-gray-700 mb-3 last:mb-0">
+                        {paragraph}
+                      </p>
+                    ))}
+                  </div>
+                  <p className="text-sm text-gray-500 mt-4">{testimonial.source}</p>
+                </div>
+              </a>
+            ))}
+          </div>
         </div>
       </section>
-
-      {/* Main Content */}
-      <div className="section-padding">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            {/* Who This Test Is For */}
-            <section className="mb-16">
-              <p className="text-lg text-gray-700 leading-relaxed mb-4">
-                Prenatal paternity DNA testing is designed for expectant parents who need to determine biological parenthood during pregnancy. This type of DNA test uses non-invasive methods to analyze fetal DNA. Non-invasive prenatal paternity testing as early as 6 weeks into pregnancy is available for expectant parents who need early answers.
-              </p>
-              <p className="text-base text-gray-700 leading-relaxed">
-                If answers about paternity are needed before birth, this is an appropriate testing option.
-              </p>
-            </section>
-
-            {/* When Prenatal Paternity Testing Is Appropriate */}
-            <section className="mb-16">
-              <h2 className="text-3xl font-bold text-[#1A3C59] mb-6">
-                When Prenatal Paternity Testing Is Appropriate
-              </h2>
-              <p className="text-base text-gray-700 leading-relaxed mb-4">
-                Prenatal paternity testing is commonly chosen when:
-              </p>
-              <ul className="list-disc list-outside space-y-3 text-base text-gray-700 mb-6 ml-6 pl-2">
-                <li>Early answers are needed before birth</li>
-                <li>Legal documentation is required during pregnancy</li>
-                <li>Personal knowledge is needed for family planning</li>
-                <li>Court cases or legal matters require prenatal confirmation</li>
-                <li>Personal knowledge is needed to make informed decisions</li>
-                <li>Family clarity is important before the baby is born</li>
-              </ul>
-              <p className="text-base text-gray-700 leading-relaxed">
-                This testing option allows results to be obtained during pregnancy without waiting until after birth.
-              </p>
-            </section>
-
-            {/* When Prenatal Paternity Testing Is Not Appropriate */}
-            <section className="mb-16">
-              <h2 className="text-3xl font-bold text-[#1A3C59] mb-6">
-                When Prenatal Paternity Testing Is Not Required
-              </h2>
-              <p className="text-base text-gray-700 leading-relaxed mb-4">
-                Prenatal paternity testing may not be necessary if:
-              </p>
-              <ul className="list-disc list-outside space-y-3 text-base text-gray-700 mb-6 ml-6 pl-2">
-                <li>Testing can wait until after birth</li>
-                <li>No urgent legal or personal decisions depend on early results</li>
-                <li>Postnatal testing would be more convenient or cost-effective</li>
-                <li>The pregnancy is too early for reliable testing</li>
-              </ul>
-              <p className="text-base text-gray-700 leading-relaxed">
-                In these cases, postnatal paternity DNA testing may be a suitable alternative.
-              </p>
-            </section>
-
-            {/* How Prenatal Paternity DNA Testing Works */}
-            <section className="mb-16">
-              <h2 className="text-3xl font-bold text-[#1A3C59] mb-6">
-                How Prenatal Paternity DNA Testing Works
-              </h2>
-              <p className="text-base text-gray-700 leading-relaxed mb-4">
-                Non-invasive prenatal paternity testing follows a safe process:
-              </p>
-              <ul className="list-disc list-outside space-y-3 text-base text-gray-700 mb-6 ml-6 pl-2">
-                <li>A blood sample is collected from the expectant mother</li>
-                <li>The sample contains cell-free fetal DNA from the developing baby</li>
-                <li>A DNA sample is collected from the alleged father</li>
-                <li>Laboratory analysis compares the DNA profiles</li>
-                <li>Results confirm or exclude biological paternity</li>
-              </ul>
-              <p className="text-base text-gray-700 leading-relaxed">
-                This non-invasive method does not pose risks to the developing baby and allows testing during pregnancy.
-              </p>
-            </section>
-
-            {/* Common Situations */}
-            <section className="mb-16">
-              <h2 className="text-3xl font-bold text-[#1A3C59] mb-6">
-                Common Situations
-              </h2>
-              <p className="text-base text-gray-700 leading-relaxed">
-                Prenatal paternity testing is commonly requested when expectant parents need early answers for family planning, when legal matters require prenatal confirmation, when personal knowledge is needed before birth, or when court cases or custody matters depend on establishing paternity during pregnancy.
-              </p>
-            </section>
-
-            {/* Results & Accuracy */}
-            <section className="mb-16">
-              <h2 className="text-3xl font-bold text-[#1A3C59] mb-6">
-                Results & Accuracy
-              </h2>
-              <p className="text-base text-gray-700 leading-relaxed">
-                Prenatal paternity DNA testing provides statistically reliable results when performed using proper non-invasive methods. Results confirm or exclude biological parenthood and are available during pregnancy. Legal prenatal testing includes documentation suitable for court use, while non-legal testing provides results for personal knowledge.
-              </p>
-            </section>
-          </div>
-        </div>
-      </div>
-
-      {/* FAQ Section */}
-      <div className="section-padding section-bg-alt">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold text-[#1A3C59] mb-10 text-center">
-              Frequently Asked Questions
-            </h2>
-            <div className="space-y-4">
-              <div className="card p-6">
-                <h3 className="text-xl font-bold text-[#1A3C59] mb-3">
-                  How early in pregnancy can prenatal paternity testing be performed?
-                </h3>
-                <p className="text-base text-gray-600 leading-relaxed">
-                  Non-invasive prenatal paternity testing can typically be performed as early as 6-8 weeks into pregnancy using a maternal blood sample. The exact timing depends on the specific test method and laboratory requirements.
-                </p>
-              </div>
-              <div className="card p-6">
-                <h3 className="text-xl font-bold text-[#1A3C59] mb-3">
-                  Is prenatal paternity testing safe for the baby?
-                </h3>
-                <p className="text-base text-gray-600 leading-relaxed">
-                  Non-invasive prenatal paternity testing uses a maternal blood sample and does not pose risks to the developing baby. The test analyzes cell-free fetal DNA found in the mother's bloodstream.
-                </p>
-              </div>
-              <div className="card p-6">
-                <h3 className="text-xl font-bold text-[#1A3C59] mb-3">
-                  Can prenatal paternity test results be used in court?
-                </h3>
-                <p className="text-base text-gray-600 leading-relaxed">
-                  Legal prenatal paternity testing that follows proper chain-of-custody procedures can be used in court. Non-legal prenatal testing provides results but is not court-admissible.
-                </p>
-              </div>
-              <div className="card p-6">
-                <h3 className="text-xl font-bold text-[#1A3C59] mb-3">
-                  What is the difference between legal and non-legal prenatal paternity testing?
-                </h3>
-                <p className="text-base text-gray-600 leading-relaxed">
-                  Legal prenatal paternity testing follows strict chain-of-custody procedures and identification verification for court use. Non-legal prenatal testing provides results for personal knowledge without the formal documentation requirements.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Next Step CTA */}
-      <div className="section-padding">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <section className="mt-12 pt-8 border-t border-gray-200">
-              <h2 className="text-xl font-semibold text-gray-900 mb-2">
-                Next Step
-              </h2>
-              <p className="text-base text-gray-700 mb-4">
-                Appointments for this DNA test are scheduled separately.
-              </p>
-              <Link
-                to="/appointments"
-                className="text-blue-600 hover:text-blue-700 font-medium"
-              >
-                View appointment options →
-              </Link>
-            </section>
-            <p className="text-sm text-gray-600 mt-6">
-              Related service:{" "}
-              <Link to="/services/legal-paternity-testing" className="underline">
-                Legal Paternity Testing
-              </Link>
-            </p>
-          </div>
+      <ServingColorado />
+      <CallToAction />
+      
+      {/* Social Share Block */}
+      <div className="mt-12 bg-gray-50 p-6 rounded-xl border border-gray-200 max-w-4xl mx-auto px-4">
+        <h3 className="text-xl font-semibold mb-4 text-gray-800 text-center">Share This Page</h3>
+        <p className="text-center text-gray-600 mb-6">Help others find reliable DNA testing services in Denver.</p>
+        <div className="flex justify-center gap-4 flex-wrap">
+          <a 
+            href="https://www.facebook.com/sharer/sharer.php?u=https://milehighdnatesting.com/services/prenatal-paternity-testing" 
+            className="flex items-center space-x-2 bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-all duration-300 shadow-md hover:shadow-lg"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+            </svg>
+            <span className="font-medium">Facebook</span>
+          </a>
+          <a 
+            href="https://twitter.com/intent/tweet?url=https://milehighdnatesting.com/services/prenatal-paternity-testing&text=Non-Invasive%20Prenatal%20DNA%20Test%20in%20Denver" 
+            className="flex items-center space-x-2 bg-gray-900 text-white px-4 py-2 rounded-lg hover:bg-gray-800 transition-all duration-300 shadow-md hover:shadow-lg"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+            </svg>
+            <span className="font-medium">X / Twitter</span>
+          </a>
+          <a 
+            href="mailto:?subject=Non-Invasive%20Prenatal%20DNA%20Test%20in%20Denver&body=Check%20out%20this%20page:%20https://milehighdnatesting.com/services/prenatal-paternity-testing" 
+            className="flex items-center space-x-2 bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-700 transition-all duration-300 shadow-md hover:shadow-lg"
+          >
+            <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+            </svg>
+            <span className="font-medium">Email</span>
+          </a>
         </div>
       </div>
     </main>

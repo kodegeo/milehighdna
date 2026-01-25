@@ -298,7 +298,7 @@ const WhatToExpectNIPP = () => {
 
           <div className="mt-8">
             <a
-              href="/prenatal-dna-test"
+              href="/services/prenatal-paternity-testing"
               className="inline-block bg-sky-700 text-white px-6 py-3 rounded-md font-semibold hover:bg-sky-800 transition"
             >
               Learn More About Prenatal DNA Testing

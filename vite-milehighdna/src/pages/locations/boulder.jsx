@@ -302,10 +302,10 @@ const Boulder = () => {
           <h2 className="text-2xl font-bold mb-6 text-center text-gray-800">Related Services</h2>
           
           <div className="flex flex-wrap justify-center gap-4">
-            <Link to="/legal-paternity-tests" className="bg-white border border-gray-300 rounded-lg px-6 py-3 text-blue-600 hover:bg-blue-50 hover:border-blue-500 transition-colors font-medium shadow-sm">
+            <Link to="/services/legal-paternity-testing" className="bg-white border border-gray-300 rounded-lg px-6 py-3 text-blue-600 hover:bg-blue-50 hover:border-blue-500 transition-colors font-medium shadow-sm">
               Paternity Testing
             </Link>
-            <Link to="/immigration-dna-tests" className="bg-white border border-gray-300 rounded-lg px-6 py-3 text-blue-600 hover:bg-blue-50 hover:border-blue-500 transition-colors font-medium shadow-sm">
+            <Link to="/services/immigration-dna-testing" className="bg-white border border-gray-300 rounded-lg px-6 py-3 text-blue-600 hover:bg-blue-50 hover:border-blue-500 transition-colors font-medium shadow-sm">
               Immigration DNA Testing
             </Link>
             <Link to="/locations" className="bg-white border border-gray-300 rounded-lg px-6 py-3 text-blue-600 hover:bg-blue-50 hover:border-blue-500 transition-colors font-medium shadow-sm">

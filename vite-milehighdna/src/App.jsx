@@ -30,11 +30,16 @@ import AppointmentFormPage from './pages/AppointmentFormPage';
 import AppointmentWizard from './pages/AppointmentWizard';
 import Prenatal from './pages/Prenatal';
 import DNATestingDenverPage from './pages/DNATestingDenverPage';
+import DNATestingColorado from './pages/DNATestingColorado';
+import PaternityTestColorado from './pages/PaternityTestColorado';
 import Services from './pages/Services';
 import LegalPaternityTesting from './pages/services/LegalPaternityTesting';
+import LegalPaternityTestingDenver from './pages/services/LegalPaternityTestingDenver';
 import NonLegalPaternityTesting from './pages/services/NonLegalPaternityTesting';
 import ImmigrationDNATesting from './pages/services/ImmigrationDNATesting';
 import PrenatalPaternityTesting from './pages/services/PrenatalPaternityTesting';
+import PrenatalPaternityTestingDenverService from './pages/services/PrenatalPaternityTestingDenver';
+import NonLegalPaternityTestingDenver from './pages/services/NonLegalPaternityTestingDenver';
 import SiblingshipTesting from './pages/services/SiblingshipTesting';
 import GrandparentageTesting from './pages/services/GrandparentageTesting';
 import DiscreetDNATesting from './pages/DiscreetDNATesting';
@@ -60,6 +65,12 @@ import BilingualDNATestingDenver from './pages/mile-high-dna-corner/BilingualDNA
 import LegalDNACostGuide from './pages/mile-high-dna-corner/LegalDNACostGuide';
 import NonLegalDNACostGuide from './pages/mile-high-dna-corner/NonLegalDNACostGuide';
 import NotFound from './pages/NotFound';
+
+// Guide pages
+import GuidesIndex from './pages/guides/GuidesIndex';
+import PrenatalDNATestCostGuide from './pages/guides/PrenatalDNATestCostGuide';
+import LegalDNATestCostGuide from './pages/guides/LegalDNATestCostGuide';
+import NonLegalDNATestCostGuide from './pages/guides/NonLegalDNATestCostGuide';
 import ImmigrationDNATestingDenver from './pages/mile-high-dna-corner/ImmigrationDNATestingDenver';
 import PrenatalPaternityTestingDenver from './pages/mile-high-dna-corner/PrenatalPaternityTestingDenver';
 import PeaceOfMindFathersStory from './pages/mile-high-dna-corner/WhenPeaceOfMindBecomesLifeChanging';
@@ -147,16 +158,28 @@ function AppLayout() {
             <Route path="/appointment-wizard" element={<AppointmentWizard />} />
             <Route path="/test-admin" element={<TestAdmin />} />
             <Route path="/dna-testing-denver" element={<DNATestingDenverPage />} />
+            <Route path="/dna-testing-colorado" element={<DNATestingColorado />} />
+            <Route path="/paternity-test-colorado" element={<PaternityTestColorado />} />
             <Route path="/services" element={<Services />} />
             <Route path="/services/legal-paternity-testing" element={<LegalPaternityTesting />} />
+            <Route path="/services/legal-paternity-testing-denver" element={<LegalPaternityTestingDenver />} />
             <Route path="/services/non-legal-paternity-testing" element={<NonLegalPaternityTesting />} />
+            <Route path="/services/non-legal-paternity-testing-denver" element={<NonLegalPaternityTestingDenver />} />
             <Route path="/services/immigration-dna-testing" element={<ImmigrationDNATesting />} />
             <Route path="/services/prenatal-paternity-testing" element={<PrenatalPaternityTesting />} />
+            <Route path="/services/prenatal-paternity-testing-denver" element={<PrenatalPaternityTestingDenverService />} />
             <Route path="/services/siblingship-testing" element={<SiblingshipTesting />} />
             <Route path="/services/grandparentage-testing" element={<GrandparentageTesting />} />
             <Route path="/services/discreet-dna-testing" element={<DiscreetDNATestingService />} />
             <Route path="/services/avuncular-dna-testing" element={<AvuncularDNATesting />} />
             <Route path="/services/forensic-dna-analysis" element={<ForensicDNAAnalysisService />} />
+
+            {/* Guide Pages */}
+            <Route path="/guides" element={<GuidesIndex />} />
+            <Route path="/guides/prenatal-dna-test-cost" element={<PrenatalDNATestCostGuide />} />
+            <Route path="/guides/legal-dna-test-cost" element={<LegalDNATestCostGuide />} />
+            <Route path="/guides/non-legal-dna-test-cost" element={<NonLegalDNATestCostGuide />} />
+
             <Route path="/discreet-dna-testing" element={<DiscreetDNATesting />} />
             <Route path="/forensic-dna-analysis" element={<ForensicDNAAnalysis />} />
             <Route path="/checkout-domestic" element={<CheckoutDomestic />} />

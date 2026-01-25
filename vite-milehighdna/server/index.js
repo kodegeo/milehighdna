@@ -107,7 +107,7 @@ if (process.env.NODE_ENV === "production") {
     "https://milehighdnatesting.com/book-appointment",
     "https://milehighdnatesting.com/legal-paternity-tests",
     "https://milehighdnatesting.com/aabb-accreditation",
-    "https://milehighdnatesting.com/prenatal-dna-test",
+    "https://milehighdnatesting.com/services/prenatal-paternity-testing",
     "https://milehighdnatesting.com/sitemap.xml"
   ]);
 }

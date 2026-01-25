@@ -72,7 +72,7 @@ const FamilyRelationshipDNA = () => {
             "itemOffered": {
               "@type": "Service",
               "name": "Grandparent DNA Test",
-              "url": "https://milehighdnatesting.com/grandparentage-dna-tests"
+              "url": "https://milehighdnatesting.com/services/grandparentage-testing"
             }
           },
           {
@@ -80,7 +80,7 @@ const FamilyRelationshipDNA = () => {
             "itemOffered": {
               "@type": "Service",
               "name": "Siblingship DNA Test",
-              "url": "https://milehighdnatesting.com/siblingship-dna-tests"
+              "url": "https://milehighdnatesting.com/services/siblingship-testing"
             }
           }
         ]
@@ -107,13 +107,13 @@ const FamilyRelationshipDNA = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <a
-                href="https://milehighdnatesting.com/grandparentage-dna-tests"
+                href="https://milehighdnatesting.com/services/grandparentage-testing"
                 className="bg-blue-600 text-white px-8 py-4 rounded-xl shadow-lg hover:bg-blue-700 transition font-semibold text-lg inline-block"
               >
                 Learn About Grandparent DNA Testing
               </a>
               <a
-                href="https://milehighdnatesting.com/siblingship-dna-tests"
+                href="https://milehighdnatesting.com/services/siblingship-testing"
                 className="bg-green-600 text-white px-8 py-4 rounded-xl shadow-lg hover:bg-green-700 transition font-semibold text-lg inline-block"
               >
                 Learn About Siblingship DNA Testing
@@ -163,7 +163,7 @@ const FamilyRelationshipDNA = () => {
                 Used when a parent is unavailable. One or both grandparents can participate to help establish a biological connection with a grandchild.
               </p>
               <a
-                href="https://milehighdnatesting.com/grandparentage-dna-tests"
+                href="https://milehighdnatesting.com/services/grandparentage-testing"
                 className="bg-blue-600 text-white px-6 py-3 rounded-xl shadow-lg hover:bg-blue-700 transition font-semibold text-lg inline-block w-full text-center"
               >
                 Explore Grandparentage Testing
@@ -176,7 +176,7 @@ const FamilyRelationshipDNA = () => {
                 Determines whether two or more individuals share one or both biological parents. Often referred to as a 'brother and sister DNA test.'
               </p>
               <a
-                href="https://milehighdnatesting.com/siblingship-dna-tests"
+                href="https://milehighdnatesting.com/services/siblingship-testing"
                 className="bg-green-600 text-white px-6 py-3 rounded-xl shadow-lg hover:bg-green-700 transition font-semibold text-lg inline-block w-full text-center"
               >
                 Explore Siblingship Testing

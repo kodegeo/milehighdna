@@ -32,22 +32,22 @@ agents/
 
 ```bash
 # Run GBP post agent (dry-run)
-python run.py gbp.post --dry-run
+python -m agents.run gbp.post --dry-run
 
 # Run for specific service
-python run.py gbp.post --service "Legal Paternity DNA Testing"
+python -m agents.run gbp.post --service "Legal Paternity DNA Testing"
 
 # Run other agents
-python run.py gbp.qa --dry-run
-python run.py seo.sitemap
-python run.py analytics.gsc_monitor --dry-run
+python -m agents.run gbp.qa --dry-run
+python -m agents.run seo.sitemap
+python -m agents.run analytics.gsc_monitor --dry-run
 ```
 
 ### Live Mode (⚠️ WARNING)
 
 ```bash
 # Run in live mode (makes actual API calls)
-python run.py gbp.post --live
+python -m agents.run gbp.post --live
 ```
 
 **Note**: Live mode is currently blocked for safety. Agents will need API credentials and implementation before enabling.
@@ -90,7 +90,7 @@ Defines constraints and guidelines for GBP post generation.
 ### Example
 
 ```python
-from ...core.base_agent import BaseAgent
+from agents.core.base_agent import BaseAgent
 
 class MyAgent(BaseAgent):
     def __init__(self, dry_run=True):

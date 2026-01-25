@@ -25,8 +25,13 @@ const routeConfig = {
   },
 
   // Primary Service Pages - high priority
-  '/legal-paternity-tests': {
+  '/services': {
     priority: '0.9',
+    changefreq: 'monthly'
+  },
+  
+  '/legal-paternity-tests': {
+    priority: '0.1',
     changefreq: 'weekly',
     hreflang: {
       'en-us': '/legal-paternity-tests',
@@ -34,7 +39,7 @@ const routeConfig = {
     }
   },
   '/peace-of-mind-paternity-tests': {
-    priority: '0.9',
+    priority: '0.1',
     changefreq: 'weekly',
     hreflang: {
       'en-us': '/peace-of-mind-paternity-tests',
@@ -42,7 +47,7 @@ const routeConfig = {
     }
   },
   '/prenatal-dna-test': {
-    priority: '0.9',
+    priority: '0.1',
     changefreq: 'weekly',
     hreflang: {
       'en-us': '/prenatal-dna-test',
@@ -54,11 +59,11 @@ const routeConfig = {
     changefreq: 'weekly'
   },
   '/family-relationship-dna': {
-    priority: '0.9',
+    priority: '0.1',
     changefreq: 'weekly'
   },
   '/immigration-dna-tests': {
-    priority: '0.9',
+    priority: '0.1',
     changefreq: 'weekly',
     hreflang: {
       'en-us': '/immigration-dna-tests',
@@ -66,7 +71,7 @@ const routeConfig = {
     }
   },
   '/grandparentage-dna-tests': {
-    priority: '0.9',
+    priority: '0.1',
     changefreq: 'weekly',
     hreflang: {
       'en-us': '/grandparentage-dna-tests',
@@ -74,7 +79,7 @@ const routeConfig = {
     }
   },
   '/siblingship-dna-tests': {
-    priority: '0.9',
+    priority: '0.1',
     changefreq: 'weekly',
     hreflang: {
       'en-us': '/siblingship-dna-tests',
@@ -255,12 +260,8 @@ const routeConfig = {
     priority: '0.9',
     changefreq: 'weekly'
   },
-
+  
   // Utility Pages (lower priority)
-  '/services': {
-    priority: '0.6',
-    changefreq: 'monthly'
-  },
   '/dna-testing-denver': {
     priority: '0.6',
     changefreq: 'monthly'

@@ -59,32 +59,32 @@ const Navigation = () => {
                         All DNA Testing Services
                     </Link>
                     <Link
-                        to="/legal-paternity-tests"
+                        to="/services/legal-paternity-testing"
                         className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" 
                     >
                         Legal Paternity DNA Testing
                     </Link>
                     <Link
-                        to="/peace-of-mind-paternity-tests"
+                        to="/services/non-legal-paternity-testing"
                         className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" 
                     >
                         Non Legal Paternity Testing
                     </Link>
 
                     <Link
-                        to="/prenatal-dna-test"
+                        to="/services/prenatal-paternity-testing"
                         className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                     >
                         Prenatal DNA Testing
                     </Link> 
                     <Link
-                        to="/grandparentage-dna-tests"
+                        to="/services/grandparentage-testing"
                         className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                     >
                         Grandparentage Testing
                     </Link>
                     <Link
-                        to="/siblingship-dna-tests"
+                        to="/services/siblingship-testing"
                         className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                     >
                         Siblingship Testing
@@ -138,12 +138,12 @@ const Navigation = () => {
             <details className="py-2">
               <summary className="text-gray-700 hover:text-blue-600 transition duration-300 cursor-pointer">Services</summary>
               <div className="ml-4 space-y-1 mt-1 max-h-[300px] overflow-y-auto">
-                <Link to="/legal-paternity-tests" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={() => setIsMenuOpen(false)}>Legal Paternity DNA Testing</Link>
-                <Link to="/peace-of-mind-paternity-tests" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={() => setIsMenuOpen(false)}>Non Legal Paternity DNA Testing</Link>
+                <Link to="/services/legal-paternity-testing" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={() => setIsMenuOpen(false)}>Legal Paternity DNA Testing</Link>
+                <Link to="/services/non-legal-paternity-testing" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={() => setIsMenuOpen(false)}>Non Legal Paternity DNA Testing</Link>
 
-                <Link to="/prenatal-dna-test" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={() => setIsMenuOpen(false)}>Prenatal DNA Testing</Link>
-                <Link to="/grandparentage-dna-tests" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={() => setIsMenuOpen(false)}> Grandparentage Testing </Link>
-                <Link to="/siblingship-dna-tests" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={() => setIsMenuOpen(false)}> Siblingship Testing </Link> 
+                <Link to="/services/prenatal-paternity-testing" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={() => setIsMenuOpen(false)}>Prenatal DNA Testing</Link>
+                <Link to="/services/grandparentage-testing" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={() => setIsMenuOpen(false)}> Grandparentage Testing </Link>
+                <Link to="/services/siblingship-testing" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={() => setIsMenuOpen(false)}> Siblingship Testing </Link> 
                 <Link to="/products/peace-of-mind-dna-kit" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={() => setIsMenuOpen(false)}>At Home DNA Test Kits</Link>
               </div>
             </details>

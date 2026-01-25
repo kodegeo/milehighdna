@@ -133,7 +133,7 @@ const PrenatalDNACost = () => {
           <p className="mb-6">If you're interested in a full breakdown of pricing — including what's included in the fee, how NIPP compares to other prenatal procedures, and what affects the final cost — we've created a detailed cost guide that walks through every part of the process.</p>
 
           <a
-                href="/mile-high-dna-corner/prenatal-dna-cost-guide"
+                href="/guides/prenatal-dna-test-cost"
                 className="bg-blue-600 text-white px-8 py-4 rounded-xl shadow-lg hover:bg-blue-700 transition font-semibold text-lg inline-block"
               >
                 PrenatalDNA Test Cost Guide

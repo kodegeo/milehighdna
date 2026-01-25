@@ -215,7 +215,7 @@ const LegalVsNonLegal = () => {
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center mt-6">
             <a 
-              href="/mile-high-dna-corner/legal-dna-cost-guide" 
+              href="/guides/legal-dna-test-cost" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-all duration-300 shadow-md hover:shadow-lg text-center"
@@ -223,7 +223,7 @@ const LegalVsNonLegal = () => {
               Legal DNA Testing Guide
             </a>
             <a 
-              href="/mile-high-dna-corner/non-legal-dna-cost-guide" 
+              href="/guides/non-legal-dna-test-cost" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="bg-green-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-700 transition-all duration-300 shadow-md hover:shadow-lg text-center"

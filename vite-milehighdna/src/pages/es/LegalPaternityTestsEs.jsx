@@ -30,7 +30,7 @@ const LegalPaternityTestsEs = () => {
         <link
           rel="alternate"
           hreflang="en-us"
-          href="https://milehighdnatesting.com/legal-paternity-tests"
+          href="https://milehighdnatesting.com/services/legal-paternity-testing"
         />
         <link
           rel="alternate"

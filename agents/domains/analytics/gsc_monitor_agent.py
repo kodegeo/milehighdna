@@ -12,7 +12,7 @@ Future functionality:
 - Alert on significant changes
 """
 
-from ...core.base_agent import BaseAgent
+from agents.core.base_agent import BaseAgent
 
 
 class GSCMonitorAgent(BaseAgent):

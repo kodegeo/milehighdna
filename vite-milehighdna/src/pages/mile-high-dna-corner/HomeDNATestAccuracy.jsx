@@ -211,7 +211,7 @@ const HomeDNATestAccuracy = () => {
           For families across Denver, Aurora, Thornton, and Lakewood, the question isn't just about convenience — it's about confidence and reliable information.
           It's important to understand that all at-home DNA tests are considered non-legal, meaning their results cannot be used in court or official proceedings.
           If you require a DNA test for child custody, immigration, inheritance, or legal documentation, you'll need a{" "}
-          <a href="/legal-paternity-tests" className="text-blue-600 hover:text-blue-800 underline">Legal DNA Test</a> performed under verified chain-of-custody procedures.
+          <a href="/services/legal-paternity-testing" className="text-blue-600 hover:text-blue-800 underline">Legal DNA Test</a> performed under verified chain-of-custody procedures.
           </p>
 
           <p className="text-base mb-6 text-justify">
@@ -343,7 +343,7 @@ const HomeDNATestAccuracy = () => {
 
           <div className="mt-8">
             <a
-              href="/legal-paternity-tests"
+              href="/services/legal-paternity-testing"
               className="inline-block bg-blue-600 text-white px-6 py-3 rounded-md font-semibold hover:bg-blue-700 transition"
             >
               Learn More About Legal DNA Testing

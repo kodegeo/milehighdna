@@ -161,7 +161,7 @@ const Home = () => {
                 <h3 className="text-xl font-bold mb-2">Prenatal Paternity Testing</h3>
                 <p className="text-gray-600 mb-4">Non-invasive prenatal paternity testing in Denver with 99.9% accuracy. Get early answers during pregnancy—safe for mother and baby. Trusted DNA testing lab near you for fast, confidential results.</p>
                 <Link
-                  to="/prenatal-dna-test"
+                  to="/services/prenatal-paternity-testing"
                   className="text-[#2C6FA6] hover:text-[#7DB9E8] font-semibold transition duration-300"
                 >
                   Learn More →
@@ -179,7 +179,7 @@ const Home = () => {
                 <h3 className="text-xl font-bold mb-2">Legal Paternity Testing</h3>
                 <p className="text-gray-600 mb-4">Court-admissible legal paternity testing in Denver with 99.99% accuracy. Ideal for child support, custody, or immigration cases. Collected by certified professionals and processed in an accredited DNA lab you can trust.</p>
                 <Link
-                  to="/legal-paternity-tests"
+                  to="/services/legal-paternity-testing"
                   className="text-[#2C6FA6] hover:text-[#7DB9E8] font-semibold transition duration-300"
                 >
                   Learn More →
@@ -197,7 +197,7 @@ const Home = () => {
                 <h3 className="text-xl font-bold mb-2">In Office Non Legal Paternity Testing</h3>
                 <p className="text-gray-600 mb-4">Accurate, affordable paternity testing in Denver done in our certified DNA testing center. Perfect for peace of mind—no court order required. Professional collection and same-day appointments available.</p>
                 <Link
-                  to="/peace-of-mind-paternity-tests"
+                  to="/services/non-legal-paternity-testing"
                   className="text-[#2C6FA6] hover:text-[#7DB9E8] font-semibold transition duration-300"
                 >
                   Learn More →
@@ -232,7 +232,7 @@ const Home = () => {
                 <h3 className="text-xl font-bold mb-2">Grandparentage Testing</h3>
                 <p className="text-gray-600 mb-4">Accurate grandparent DNA testing in Denver to confirm biological relationships when a parent is unavailable. Reliable, confidential results accepted for legal or personal purposes.</p>
                 <Link
-                  to="/grandparentage-dna-tests"
+                  to="/services/grandparentage-testing"
                   className="text-[#2C6FA6] hover:text-[#7DB9E8] font-semibold transition duration-300"
                 >
                   Learn More →
@@ -250,7 +250,7 @@ const Home = () => {
                 <h3 className="text-xl font-bold mb-2">Siblingship Testing</h3>
                 <p className="text-gray-600 mb-4">Trusted siblingship DNA testing in Denver to determine full or half-sibling relationships. Perfect for personal knowledge or legal documentation. Convenient collection with secure processing.</p>
                 <Link
-                  to="/siblingship-dna-tests"
+                  to="/services/siblingship-testing"
                   className="text-[#2C6FA6] hover:text-[#7DB9E8] font-semibold transition duration-300"
                 >
                   Learn More →

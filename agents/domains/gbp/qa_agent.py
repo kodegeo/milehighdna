@@ -11,7 +11,7 @@ Future functionality:
 - Track Q&A performance
 """
 
-from ...core.base_agent import BaseAgent
+from agents.core.base_agent import BaseAgent
 
 
 class GBPQAAgent(BaseAgent):

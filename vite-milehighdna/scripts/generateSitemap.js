@@ -27,6 +27,7 @@ const EXCLUDED_ROUTES = [
   '/confirmation',
   '/cancel',
   '/success',
+  '/dna-testing-denver', // Not part of current strategy
   '*', // 404 page
 ];
 
@@ -71,14 +72,33 @@ function extractRoutesFromAppJsx() {
 
 /**
  * Get priority and changefreq for a route
+ * Priority hierarchy: Home > State Authority > City-Service > Generic Service > Location > Blog > Legacy
  */
 function getPriorityAndFreq(route) {
-  // Home page
+  // Home page - highest priority
   if (route === '/') {
     return { priority: '1.0', changefreq: 'daily' };
   }
   
-  // /services/* detail pages (educational reference pages)
+  // Redirect-only pages - must be checked early, before generic rules
+  if (route === '/prenatal-dna-test') {
+    return { priority: '0.3', changefreq: 'yearly' };
+  }
+  
+  // State authority pages - second highest priority (informational authority)
+  if (route === '/dna-testing-colorado' || route === '/paternity-test-colorado') {
+    return { priority: '0.9', changefreq: 'monthly' };
+  }
+  
+  // City-specific service pages - high priority (transactional, location-specific)
+  // Pattern: /services/*-testing-{city}
+  // Use regex to detect routes that start with /services/ and end with -testing-{city}
+  const cityServicePattern = /^\/services\/.+-testing-[a-z-]+$/;
+  if (cityServicePattern.test(route)) {
+    return { priority: '0.85', changefreq: 'monthly' };
+  }
+  
+  // Generic service pages - medium priority (educational reference)
   if (route.startsWith('/services/')) {
     return { priority: '0.6', changefreq: 'monthly' };
   }
@@ -88,40 +108,34 @@ function getPriorityAndFreq(route) {
     return { priority: '0.7', changefreq: 'monthly' };
   }
   
+  // Guide pages - individual guides slightly de-emphasized
+  if (route.startsWith('/guides/') && route !== '/guides') {
+    return { priority: '0.7', changefreq: 'monthly' };
+  }
+  
+  // /guides index page
+  if (route === '/guides') {
+    return { priority: '0.8', changefreq: 'monthly' };
+  }
+  
+  // Location pages - high priority (local intent)
+  if (route.startsWith('/locations')) {
+    return { priority: '0.8', changefreq: 'monthly' };
+  }
+  
   // Appointments page (primary conversion)
   if (route === '/appointments') {
     return { priority: '0.8', changefreq: 'weekly' };
   }
   
-  // Service pages (legacy landing pages)
-  if (route.includes('/legal-paternity-tests') ||
-      route.includes('/peace-of-mind-paternity-tests') ||
-      route.includes('/immigration-dna-tests') ||
-      route.includes('/grandparentage-dna-tests') ||
-      route.includes('/siblingship-dna-tests') ||
-      route.includes('/prenatal-dna-test') ||
-      route.includes('/discreet-dna-testing') ||
-      route.includes('/forensic-dna-analysis') ||
-      route === '/dna-testing-denver' ||
-      route === '/dna-testing-types' ||
-      route === '/family-relationship-dna' ||
-      route.startsWith('/products/')) {
-    return { priority: '0.8', changefreq: 'monthly' };
-  }
-  
-  // Location pages
-  if (route.startsWith('/locations')) {
-    return { priority: '0.8', changefreq: 'monthly' };
-  }
-  
-  // Blog posts
+  // Blog posts - medium-high priority
   if (route.startsWith('/mile-high-dna-corner/')) {
     return { priority: '0.7', changefreq: 'monthly' };
   }
   
   // Main blog index
   if (route === '/mile-high-dna-corner') {
-    return { priority: '0.8', changefreq: 'monthly' };
+    return { priority: '0.7', changefreq: 'monthly' };
   }
   
   // Important action pages
@@ -137,7 +151,26 @@ function getPriorityAndFreq(route) {
     return { priority: '0.6', changefreq: 'monthly' };
   }
   
-  // Default
+  // Legacy and redirect-only pages - low priority
+  // These should remain in sitemap if present in App.jsx but be de-prioritized
+  if (route.includes('/legal-paternity-tests') ||
+      route.includes('/peace-of-mind-paternity-tests') ||
+      route.includes('/immigration-dna-tests') ||
+      route.includes('/grandparentage-dna-tests') ||
+      route.includes('/siblingship-dna-tests') ||
+      route.includes('/discreet-dna-testing') ||
+      route.includes('/forensic-dna-analysis')) {
+    return { priority: '0.3', changefreq: 'yearly' };
+  }
+  
+  // Other legacy patterns
+  if (route === '/dna-testing-types' ||
+      route === '/family-relationship-dna' ||
+      route.startsWith('/products/')) {
+    return { priority: '0.3', changefreq: 'yearly' };
+  }
+  
+  // Default - medium priority
   return { priority: '0.8', changefreq: 'monthly' };
 }
 
@@ -153,7 +186,7 @@ function getHreflang(route) {
     '/immigration-dna-tests': { 'en-us': '/immigration-dna-tests', 'es-us': '/es/prueba-de-inmigracion' },
     '/grandparentage-dna-tests': { 'en-us': '/grandparentage-dna-tests', 'es-us': '/es/prueba-de-abuelidad' },
     '/siblingship-dna-tests': { 'en-us': '/siblingship-dna-tests', 'es-us': '/es/prueba-de-hermanos' },
-    '/prenatal-dna-test': { 'en-us': '/prenatal-dna-test', 'es-us': '/es/prueba-de-paternidad-prenatal' },
+    '/services/prenatal-paternity-testing': { 'en-us': '/services/prenatal-paternity-testing', 'es-us': '/es/prueba-de-paternidad-prenatal' },
     '/appointments': { 'en-us': '/appointments', 'es-us': '/es/programar-cita' },
     '/book-appointment': { 'en-us': '/book-appointment', 'es-us': '/es/reservar-cita' },
     '/faq': { 'en-us': '/faq', 'es-us': '/es/preguntas-frecuentes' },

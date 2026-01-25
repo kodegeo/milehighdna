@@ -240,11 +240,11 @@ const WhenTheAnswersMatterMost = () => {
           <p className="text-base mb-6 text-justify">
             At <span className="font-semibold text-[#2C6FA6]">Mile High DNA Testing</span>, we help families across Denver, Aurora, Thornton, and
             Lakewood find clarity through professional, compassionate DNA testing services — from{" "}
-            <a href="/legal-paternity-tests" className="text-blue-600 hover:text-blue-800 underline">
+            <a href="/services/legal-paternity-testing" className="text-blue-600 hover:text-blue-800 underline">
               legal relationship verification
             </a>{" "}
             to{" "}
-            <a href="/peace-of-mind-paternity-tests" className="text-blue-600 hover:text-blue-800 underline">
+            <a href="/services/non-legal-paternity-testing" className="text-blue-600 hover:text-blue-800 underline">
               peace-of-mind testing
             </a>{" "}
             that restores understanding.

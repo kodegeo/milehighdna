@@ -11,7 +11,7 @@ Future functionality:
 - Track review sentiment and trends
 """
 
-from ...core.base_agent import BaseAgent
+from agents.core.base_agent import BaseAgent
 
 
 class GBPReviewAgent(BaseAgent):

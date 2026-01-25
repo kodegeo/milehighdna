@@ -2,31 +2,45 @@ import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 
+// Grandparentage components
+import GrandparentageHero from '../../components/grandparentage/GrandparentageHero';
+import GrandparentagePricing from '../../components/grandparentage/GrandparentagePricing';
+import GrandparentageOverview from '../../components/grandparentage/GrandparentageOverview';
+import GrandparentageWhoNeedsTest from '../../components/grandparentage/GrandparentageWhoNeedsTest';
+import GrandparentageSteps from '../../components/grandparentage/GrandparentageSteps';
+import GrandparentageLegalVsNonLegal from '../../components/grandparentage/GrandparentageLegalVsNonLegal';
+import GrandparentageWhyChooseUs from '../../components/grandparentage/GrandparentageWhyChooseUs';
+import GrandparentageCompliance from '../../components/grandparentage/GrandparentageCompliance';
+
+// Common components
+import ServingColorado from '../../components/common/ServingColorado';
+import CallToAction from '../../components/grandparentage/CallToAction';
+
 const GrandparentageTesting = () => {
   return (
     <main>
       <Helmet>
         <html lang="en" />
-        <title>Grandparentage DNA Testing in Denver | Grandparent DNA Test | Mile High DNA</title>
+        <title>Grandparent DNA Test in Denver, CO | Legal & Non-Legal Testing | Mile High DNA</title>
         <meta
           name="description"
-          content="Grandparentage DNA testing helps establish biological relationships between grandparents and grandchildren when a parent is unavailable. Used for legal cases, family verification, and personal knowledge in Denver, Colorado."
+          content="Accurate, AABB-accredited grandparent DNA testing in Denver, Aurora, Thornton, & Lakewood Colorado. Court-admissible and peace-of-mind options available. Fast results and confidential support."
         />
         <meta
           name="keywords"
-          content="grandparentage DNA testing Denver, grandparent DNA test, grandparent relationship test Colorado, indirect paternity testing"
+          content="grandparent DNA test Denver, grandparentage DNA test Colorado, legal grandparent DNA test, court admissible DNA testing, family relationship DNA Denver"
         />
         <link rel="canonical" href="https://milehighdnatesting.com/services/grandparentage-testing" />
         
         {/* OG / Twitter */}
-        <meta property="og:title" content="Grandparentage DNA Testing in Denver | Grandparent DNA Test" />
-        <meta property="og:description" content="Grandparentage DNA testing establishes biological relationships between grandparents and grandchildren when a parent is unavailable." />
+        <meta property="og:title" content="Grandparent DNA Test in Denver | Legal & Non-Legal Testing" />
+        <meta property="og:description" content="AABB-accredited grandparent DNA testing in Denver, CO. Legal and non-legal testing with fast, confidential results." />
         <meta property="og:image" content="https://milehighdnatesting.com/images/banner-1200.png" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://milehighdnatesting.com/services/grandparentage-testing" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Grandparentage DNA Testing in Denver" />
-        <meta name="twitter:description" content="DNA testing to establish grandparent-grandchild relationships." />
+        <meta name="twitter:title" content="Grandparent DNA Test in Denver, CO" />
+        <meta name="twitter:description" content="Fast, confidential, and AABB-accredited grandparent DNA testing." />
         <meta name="twitter:image" content="https://milehighdnatesting.com/images/banner-1200.png" />
 
         {/* Breadcrumb JSON-LD Schema */}
@@ -52,6 +66,41 @@ const GrandparentageTesting = () => {
                 "position": 3,
                 "name": "Grandparentage DNA Testing",
                 "item": "https://milehighdnatesting.com/services/grandparentage-testing"
+              }
+            ]
+          })}
+        </script>
+
+        {/* LocalBusiness Schema */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            "@id": "https://milehighdnatesting.com/services/grandparentage-testing#business",
+            "name": "Mile High DNA Testing",
+            "url": "https://milehighdnatesting.com/services/grandparentage-testing",
+            "telephone": "+1-720-900-9342",
+            "priceRange": "$$",
+            "image": "https://milehighdnatesting.com/logo.png",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "975 N Lincoln St Suite 205C",
+              "addressLocality": "Denver",
+              "addressRegion": "CO",
+              "postalCode": "80203",
+              "addressCountry": "US"
+            },
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": 39.7323,
+              "longitude": -104.9862
+            },
+            "openingHoursSpecification": [
+              {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                "opens": "09:00",
+                "closes": "18:00"
               }
             ]
           })}
@@ -100,114 +149,77 @@ const GrandparentageTesting = () => {
         </script>
       </Helmet>
 
-      {/* Header Section */}
-      <section className="bg-blue-50 py-10 px-6 md:px-12 lg:px-24">
-        <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-3xl font-bold text-[#1A3C59] mb-4">
-            Grandparentage DNA Testing
-          </h1>
-          <p className="text-lg text-gray-700 leading-relaxed">
-            An overview of grandparentage DNA testing, including when it is appropriate,
-            how it works, and how to determine whether this is the right test for your situation.
-          </p>
+      {/* Hero Section */}
+      <GrandparentageHero />
+
+      {/* Pricing */}
+      <GrandparentagePricing />
+
+      {/* Overview */}
+      <GrandparentageOverview />
+
+      {/* Who Needs Test */}
+      <GrandparentageWhoNeedsTest />
+
+      {/* Steps */}
+      <GrandparentageSteps />
+
+      {/* Legal vs Non-Legal */}
+      <GrandparentageLegalVsNonLegal />
+
+      {/* Why Choose Us */}
+      <GrandparentageWhyChooseUs />
+
+      {/* TESTIMONIALS */}
+      <section className="section-padding section-bg-alt">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center mb-12">What Our Clients Say</h2>
+          <div className="max-w-2xl mx-auto">
+            {[
+              {
+                name: 'Ruth Gallegos',
+                role: 'Grandmother in Denver, CO',
+                text: 'Very good experience felt at ease, we all felt heard and seen.',
+                source: 'Google Review',
+                sourceUrl: 'https://www.google.com/maps?q=Mile+High+DNA+Testing+Denver',
+              }
+            ].map((testimonial, index) => (
+              <a 
+                key={index}
+                href={testimonial.sourceUrl} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="block h-full"
+              >
+                <div className="card h-full flex flex-col p-6 text-center">
+                  <div className="mb-4 flex justify-center">
+                    <img 
+                      src="/images/5-star-rating.svg" 
+                      alt="5 star rating"
+                      className="w-24 h-auto mb-3"
+                    />
+                  </div>
+                  <div className="mb-4">
+                    <h4 className="font-bold text-lg">{testimonial.name}</h4>
+                    <p className="text-gray-600">{testimonial.role}</p>
+                  </div>
+                  <p className="text-gray-700 flex-grow">{testimonial.text}</p>
+                  <p className="text-sm text-gray-500 mt-4">{testimonial.source}</p>
+                </div>
+              </a>
+            ))}
+          </div>
         </div>
       </section>
 
-      {/* Main Content */}
-      <div className="section-padding">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            {/* Who This Test Is For */}
-            <section className="mb-16">
-              <p className="text-lg text-gray-700 leading-relaxed mb-4">
-                Grandparentage DNA testing is designed for situations where a biological relationship between grandparents and grandchildren needs to be established when a parent is unavailable for testing. This type of DNA test provides an indirect method to verify family relationships through genetic analysis. Grandparent DNA testing for paternity establishment is commonly used when direct parent testing is not possible.
-              </p>
-              <p className="text-base text-gray-700 leading-relaxed">
-                If you need to establish a grandparent-grandchild relationship and direct parent testing is not possible, this is the appropriate test.
-              </p>
-            </section>
+      {/* Serving Colorado */}
+      <ServingColorado />
 
-            {/* When Grandparentage Testing Is Appropriate */}
-            <section className="mb-16">
-              <h2 className="text-3xl font-bold text-[#1A3C59] mb-6">
-                When Grandparentage Testing Is Appropriate
-              </h2>
-              <p className="text-base text-gray-700 leading-relaxed mb-4">
-                Grandparentage DNA testing is commonly used when:
-              </p>
-              <ul className="list-disc list-outside space-y-3 text-base text-gray-700 mb-6 ml-6 pl-2">
-                <li>A parent is unavailable, deceased, or unwilling to participate</li>
-                <li>Legal cases require grandparent-grandchild relationship verification</li>
-                <li>Family verification is needed for personal knowledge</li>
-                <li>Immigration cases require extended family relationship proof</li>
-                <li>Inheritance or estate matters need relationship confirmation</li>
-                <li>Extended family relationships need clarification</li>
-              </ul>
-              <p className="text-base text-gray-700 leading-relaxed">
-                This testing option is used when direct parent-child testing is not feasible.
-              </p>
-            </section>
+      {/* Call To Action */}
+      <CallToAction />
 
-            {/* When Grandparentage Testing Is Not Appropriate */}
-            <section className="mb-16">
-              <h2 className="text-3xl font-bold text-[#1A3C59] mb-6">
-                When Grandparentage Testing Is Not Appropriate
-              </h2>
-              <p className="text-base text-gray-700 leading-relaxed mb-4">
-                Grandparentage testing may not be necessary if:
-              </p>
-              <ul className="list-disc list-outside space-y-3 text-base text-gray-700 mb-6 ml-6 pl-2">
-                <li>A parent is available and willing to participate in direct paternity or maternity testing</li>
-                <li>Direct parent-child testing would provide clearer results</li>
-                <li>The relationship in question is not between grandparents and grandchildren</li>
-              </ul>
-              <p className="text-base text-gray-700 leading-relaxed">
-                In these cases, direct paternity or maternity testing may be more appropriate and conclusive.
-              </p>
-            </section>
-
-            {/* How Grandparentage DNA Testing Works */}
-            <section className="mb-16">
-              <h2 className="text-3xl font-bold text-[#1A3C59] mb-6">
-                How Grandparentage DNA Testing Works
-              </h2>
-              <p className="text-base text-gray-700 leading-relaxed mb-4">
-                Grandparentage DNA testing follows an indirect genetic analysis process:
-              </p>
-              <ul className="list-disc list-outside space-y-3 text-base text-gray-700 mb-6 ml-6 pl-2">
-                <li>DNA samples are collected from the grandchild and grandparent(s)</li>
-                <li>Genetic markers are analyzed and compared</li>
-                <li>Statistical analysis determines the probability of a grandparent-grandchild relationship</li>
-                <li>Results indicate whether a biological relationship exists</li>
-                <li>Laboratory analysis is performed by an accredited facility</li>
-              </ul>
-              <p className="text-base text-gray-700 leading-relaxed">
-                This process allows relationship determination when direct parent testing is not available. Testing both grandparents typically yields more conclusive results.
-              </p>
-            </section>
-
-            {/* Common Situations */}
-            <section className="mb-16">
-              <h2 className="text-3xl font-bold text-[#1A3C59] mb-6">
-                Common Situations
-              </h2>
-              <p className="text-base text-gray-700 leading-relaxed">
-                Grandparentage testing is commonly requested when a parent is deceased and relationships need verification, when legal cases require grandparent-grandchild relationship proof, when immigration cases need extended family documentation, when inheritance matters depend on relationship confirmation, or when family relationships need clarification for personal knowledge.
-              </p>
-            </section>
-
-            {/* Results & Accuracy */}
-            <section className="mb-16">
-              <h2 className="text-3xl font-bold text-[#1A3C59] mb-6">
-                Results & Accuracy
-              </h2>
-              <p className="text-base text-gray-700 leading-relaxed">
-                Grandparentage DNA testing provides statistically reliable results when performed by an accredited laboratory. Results indicate the probability of a grandparent-grandchild relationship and include statistical analysis. Legal grandparentage testing includes documentation suitable for court use, while non-legal testing provides results for personal knowledge. Testing both grandparents typically provides more conclusive results than testing a single grandparent.
-              </p>
-            </section>
-          </div>
-        </div>
-      </div>
+      {/* Compliance */}
+      <GrandparentageCompliance />
 
       {/* FAQ Section */}
       <div className="section-padding section-bg-alt">
@@ -254,31 +266,56 @@ const GrandparentageTesting = () => {
         </div>
       </div>
 
-      {/* Next Step CTA */}
+      {/* Related Services */}
       <div className="section-padding">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <section className="mt-12 pt-8 border-t border-gray-200">
-              <h2 className="text-xl font-semibold text-gray-900 mb-2">
-                Next Step
-              </h2>
-              <p className="text-base text-gray-700 mb-4">
-                Appointments for this DNA test are scheduled separately.
-              </p>
-              <Link
-                to="/appointments"
-                className="text-blue-600 hover:text-blue-700 font-medium"
-              >
-                View appointment options →
-              </Link>
-            </section>
-            <p className="text-sm text-gray-600 mt-6">
+            <p className="text-sm text-gray-600">
               Related service:{" "}
-              <Link to="/services/siblingship-testing" className="underline">
+              <Link to="/services/siblingship-testing" className="underline text-blue-600">
                 Siblingship Testing
               </Link>
             </p>
           </div>
+        </div>
+      </div>
+      
+      {/* Social Share Block */}
+      <div className="mt-12 bg-gray-50 p-6 rounded-xl border border-gray-200 max-w-4xl mx-auto px-4">
+        <h3 className="text-xl font-semibold mb-4 text-gray-800 text-center">Share This Page</h3>
+        <p className="text-center text-gray-600 mb-6">Help others find reliable DNA testing services in Denver.</p>
+        <div className="flex justify-center gap-4 flex-wrap">
+          <a 
+            href="https://www.facebook.com/sharer/sharer.php?u=https://milehighdnatesting.com/services/grandparentage-testing" 
+            className="flex items-center space-x-2 bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-all duration-300 shadow-md hover:shadow-lg"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+            </svg>
+            <span className="font-medium">Facebook</span>
+          </a>
+          <a 
+            href="https://twitter.com/intent/tweet?url=https://milehighdnatesting.com/services/grandparentage-testing&text=Grandparent%20DNA%20Test%20in%20Denver" 
+            className="flex items-center space-x-2 bg-gray-900 text-white px-4 py-2 rounded-lg hover:bg-gray-800 transition-all duration-300 shadow-md hover:shadow-lg"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+            </svg>
+            <span className="font-medium">X / Twitter</span>
+          </a>
+          <a 
+            href="mailto:?subject=Grandparent%20DNA%20Test%20in%20Denver&body=Check%20out%20this%20page:%20https://milehighdnatesting.com/services/grandparentage-testing" 
+            className="flex items-center space-x-2 bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-700 transition-all duration-300 shadow-md hover:shadow-lg"
+          >
+            <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+            </svg>
+            <span className="font-medium">Email</span>
+          </a>
         </div>
       </div>
     </main>

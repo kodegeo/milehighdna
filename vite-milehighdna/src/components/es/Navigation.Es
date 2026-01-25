@@ -52,25 +52,25 @@ const Navigation = () => {
                 {openDropdown === "services" && (
                     <div className="absolute top-[100%] bg-white border border-gray-200 shadow-lg rounded-md pt-2 w-64 z-50 max-h-72 overflow-y-auto">
                     <Link
-                        to="/legal-paternity-tests"
+                        to="/services/legal-paternity-testing"
                         className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                     >
                         Pruebas de Paternidad
                     </Link>
                     <Link
-                        to="/immigration-dna-tests"
+                        to="/services/immigration-dna-testing"
                         className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                     >
                         Pruebas de ADN para Inmigración
                     </Link>
                     <Link
-                        to="/siblingship-dna-tests"
+                        to="/services/siblingship-testing"
                         className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                     >
                         Pruebas de Hermanos
                     </Link>
                     <Link
-                        to="/grandparentage-dna-tests"
+                        to="/services/grandparentage-testing"
                         className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                     >
                         Pruebas de Abuelos
@@ -117,10 +117,10 @@ const Navigation = () => {
             <details className="py-2">
               <summary className="text-gray-700 hover:text-blue-600 transition duration-300 cursor-pointer">Servicios</summary>
               <div className="ml-4 space-y-1 mt-1 max-h-[300px] overflow-y-auto">
-                <Link to="/legal-paternity-tests" onClick={() => setIsMenuOpen(false)} className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Pruebas de Paternidad</Link>
-                <Link to="/immigration-dna-tests" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={() => setIsMenuOpen(false)}>Immigration DNA Testing</Link>
-                <Link to="/siblingship-dna-tests" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={() => setIsMenuOpen(false)}>Sibling Testing</Link>
-                <Link to="/grandparentage-dna-tests" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={() => setIsMenuOpen(false)}>Grandparentage Testing</Link>
+                <Link to="/services/legal-paternity-testing" onClick={() => setIsMenuOpen(false)} className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Pruebas de Paternidad</Link>
+                <Link to="/services/immigration-dna-testing" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={() => setIsMenuOpen(false)}>Immigration DNA Testing</Link>
+                <Link to="/services/siblingship-testing" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={() => setIsMenuOpen(false)}>Sibling Testing</Link>
+                <Link to="/services/grandparentage-testing" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={() => setIsMenuOpen(false)}>Grandparentage Testing</Link>
               </div>
             </details>
 

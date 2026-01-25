@@ -3,31 +3,28 @@
 Agent Runner CLI
 
 Allows running agents via command line:
-    python run.py gbp.post --dry-run
-    python run.py gbp.post --service "Legal Paternity DNA Testing"
-    python run.py gbp.qa --dry-run
-    python run.py seo.sitemap
-    python run.py analytics.gsc_monitor
+    python -m agents.run gbp.post --dry-run
+    python -m agents.run gbp.post --service "Legal Paternity DNA Testing"
+    python -m agents.run gbp.qa --dry-run
+    python -m agents.run seo.sitemap
+    python -m agents.run analytics.gsc_monitor
 """
 
 import argparse
 import sys
-from pathlib import Path
 
-# Add agents directory to path
-agents_dir = Path(__file__).parent
-sys.path.insert(0, str(agents_dir))
-
-from domains.gbp.post_agent import GBPPostAgent
-from domains.gbp.qa_agent import GBPQAAgent
-from domains.gbp.review_agent import GBPReviewAgent
-from domains.seo.sitemap_agent import SEOSitemapAgent
-from domains.analytics.gsc_monitor_agent import GSCMonitorAgent
+from agents.domains.gbp.post_agent import GBPPostAgent
+from agents.domains.gbp.approval_agent import GBPApprovalAgent
+from agents.domains.gbp.qa_agent import GBPQAAgent
+from agents.domains.gbp.review_agent import GBPReviewAgent
+from agents.domains.seo.sitemap_agent import SEOSitemapAgent
+from agents.domains.analytics.gsc_monitor_agent import GSCMonitorAgent
 
 
 # Agent registry
 AGENTS = {
     "gbp.post": GBPPostAgent,
+    "gbp.approval": GBPApprovalAgent,
     "gbp.qa": GBPQAAgent,
     "gbp.review": GBPReviewAgent,
     "seo.sitemap": SEOSitemapAgent,
@@ -42,11 +39,12 @@ def parse_args():
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
 Examples:
-  python run.py gbp.post --dry-run
-  python run.py gbp.post --service "Legal Paternity DNA Testing"
-  python run.py gbp.qa --dry-run
-  python run.py seo.sitemap
-  python run.py analytics.gsc_monitor --dry-run
+  python -m agents.run gbp.post --dry-run
+  python -m agents.run gbp.post --service "Legal Paternity DNA Testing"
+  python -m agents.run gbp.post --dry-run --export
+  python -m agents.run gbp.qa --dry-run
+  python -m agents.run seo.sitemap
+  python -m agents.run analytics.gsc_monitor --dry-run
         """
     )
     
@@ -73,6 +71,37 @@ Examples:
         "--service",
         type=str,
         help="Specific service name (for gbp.post agent)"
+    )
+    
+    parser.add_argument(
+        "--export",
+        action="store_true",
+        help="Save generated posts to gbp_posts_pending.json for review (dry-run only)"
+    )
+    
+    parser.add_argument(
+        "--approve",
+        action="store_true",
+        help="Approve a post (for gbp.approval agent)"
+    )
+    
+    parser.add_argument(
+        "--reject",
+        action="store_true",
+        help="Reject a post (for gbp.approval agent)"
+    )
+    
+    parser.add_argument(
+        "--reason",
+        type=str,
+        default="",
+        help="Reason for rejection (for gbp.approval agent)"
+    )
+    
+    parser.add_argument(
+        "--location",
+        type=str,
+        help="Specific location (for gbp.post agent)"
     )
     
     return parser.parse_args()
@@ -108,8 +137,22 @@ def main():
     
     # Prepare execution arguments
     exec_kwargs = {}
-    if args.service and args.agent == "gbp.post":
-        exec_kwargs["service_name"] = args.service
+    if args.service:
+        if args.agent == "gbp.post":
+            exec_kwargs["service_name"] = args.service
+        elif args.agent == "gbp.approval":
+            exec_kwargs["service_name"] = args.service
+    
+    if args.export and args.agent == "gbp.post":
+        exec_kwargs["export"] = True
+    
+    if args.agent == "gbp.approval":
+        exec_kwargs["approve"] = args.approve
+        exec_kwargs["reject"] = args.reject
+        exec_kwargs["reason"] = args.reason
+    
+    if args.location and args.agent == "gbp.post":
+        exec_kwargs["location"] = args.location
     
     # Run agent
     print(f"\n🚀 Running {args.agent} (dry_run={dry_run})...\n")

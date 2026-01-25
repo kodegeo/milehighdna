@@ -124,13 +124,13 @@ const DNATestingTypes = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center">
               <Link 
-                to="/legal-paternity-tests"
+                to="/services/legal-paternity-testing"
                 className="bg-blue-600 text-white px-6 md:px-8 py-3 md:py-4 font-bold uppercase tracking-wide rounded-lg hover:bg-blue-700 transition-all duration-300 shadow-lg text-sm md:text-base"
               >
                 Legal DNA Testing
               </Link>
               <Link 
-                to="/peace-of-mind-paternity-tests"
+                to="/services/non-legal-paternity-testing"
                 className="bg-green-600 text-white px-6 md:px-8 py-3 md:py-4 font-bold uppercase tracking-wide rounded-lg hover:bg-green-700 transition-all duration-300 shadow-lg text-sm md:text-base"
               >
                 Peace of Mind Testing
@@ -205,7 +205,7 @@ const DNATestingTypes = () => {
               
               <div className="flex flex-col sm:flex-row gap-3">
                 <Link 
-                  to="/mile-high-dna-corner/legal-dna-cost-guide"
+                  to="/guides/legal-dna-test-cost"
                   className="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-all duration-300 shadow-md hover:shadow-lg text-center"
                 >
                   Legal Testing Guide
@@ -259,7 +259,7 @@ const DNATestingTypes = () => {
               
               <div className="flex flex-col sm:flex-row gap-3">
                 <Link 
-                  to="/mile-high-dna-corner/non-legal-dna-cost-guide"
+                  to="/guides/non-legal-dna-test-cost"
                   className="bg-green-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-700 transition-all duration-300 shadow-md hover:shadow-lg text-center"
                 >
                   Non-Legal Testing Guide

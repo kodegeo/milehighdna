@@ -9,6 +9,10 @@ services:
       - "court DNA test"
       - "child support DNA"
       - "custody DNA test"
+    locations:
+      - "Denver, Colorado"
+      - "Aurora, Colorado"
+      - "Lakewood, Colorado"
     
   - name: "Peace of Mind Paternity Testing"
     description: "Non-legal paternity testing for personal knowledge"
@@ -16,6 +20,10 @@ services:
       - "peace of mind paternity"
       - "at-home DNA test"
       - "private paternity test"
+    locations:
+      - "Denver, Colorado"
+      - "Aurora, Colorado"
+      - "Lakewood, Colorado"
     
   - name: "Prenatal Paternity Testing"
     description: "Non-invasive prenatal paternity testing as early as 6 weeks"
@@ -23,6 +31,10 @@ services:
       - "prenatal paternity test"
       - "pregnancy DNA test"
       - "non-invasive prenatal"
+    locations:
+      - "Denver, Colorado"
+      - "Aurora, Colorado"
+      - "Lakewood, Colorado"
     
   - name: "Immigration DNA Testing"
     description: "AABB-accredited immigration DNA testing for USCIS cases"
@@ -30,6 +42,10 @@ services:
       - "immigration DNA test"
       - "USCIS DNA testing"
       - "embassy DNA test"
+    locations:
+      - "Denver, Colorado"
+      - "Aurora, Colorado"
+      - "Lakewood, Colorado"
     
   - name: "Siblingship DNA Testing"
     description: "DNA testing to determine full or half sibling relationships"
@@ -37,6 +53,10 @@ services:
       - "siblingship test"
       - "sibling DNA test"
       - "brother sister DNA"
+    locations:
+      - "Denver, Colorado"
+      - "Aurora, Colorado"
+      - "Lakewood, Colorado"
     
   - name: "Grandparentage DNA Testing"
     description: "DNA testing between grandparents and grandchildren"
@@ -44,6 +64,10 @@ services:
       - "grandparent DNA test"
       - "grandparentage test"
       - "grandparent relationship"
+    locations:
+      - "Denver, Colorado"
+      - "Aurora, Colorado"
+      - "Lakewood, Colorado"
     
   - name: "Avuncular DNA Testing"
     description: "DNA testing between a child and aunt or uncle"
@@ -51,6 +75,10 @@ services:
       - "avuncular DNA test"
       - "aunt uncle DNA test"
       - "avuncular relationship"
+    locations:
+      - "Denver, Colorado"
+      - "Aurora, Colorado"
+      - "Lakewood, Colorado"
     
   - name: "Forensic DNA Analysis"
     description: "Specialized forensic DNA testing for complex cases"
@@ -58,6 +86,10 @@ services:
       - "forensic DNA"
       - "legal DNA analysis"
       - "expert DNA witness"
+    locations:
+      - "Denver, Colorado"
+      - "Aurora, Colorado"
+      - "Lakewood, Colorado"
     
   - name: "Discreet DNA Testing"
     description: "Confidential DNA testing using personal items or samples"
@@ -65,6 +97,10 @@ services:
       - "discreet DNA test"
       - "private DNA testing"
       - "confidential DNA"
+    locations:
+      - "Denver, Colorado"
+      - "Aurora, Colorado"
+      - "Lakewood, Colorado"
 
 # Service categories for post generation
 categories:

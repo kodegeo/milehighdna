@@ -22,7 +22,7 @@ const PeaceOfMindPaternityTestsEs = () => {
         />
 
         <link rel="canonical" href="https://milehighdnatesting.com/es/prueba-paternidad-tranquilidad" />
-        <link rel="alternate" hreflang="en-us" href="https://milehighdnatesting.com/peace-of-mind-paternity-tests" />
+        <link rel="alternate" hreflang="en-us" href="https://milehighdnatesting.com/services/non-legal-paternity-testing" />
         <link rel="alternate" hreflang="es-us" href="https://milehighdnatesting.com/es/prueba-paternidad-tranquilidad" />
         <link rel="alternate" hreflang="x-default" href="https://milehighdnatesting.com/" />
 

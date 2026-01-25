@@ -26,7 +26,7 @@ const SiblingshipPageEs = () => {
         />
 
         <link rel="canonical" href="https://milehighdnatesting.com/es/prueba-de-hermanos" />
-        <link rel="alternate" hreflang="en-us" href="https://milehighdnatesting.com/siblingship-dna-tests" />
+        <link rel="alternate" hreflang="en-us" href="https://milehighdnatesting.com/services/siblingship-testing" />
         <link rel="alternate" hreflang="es-us" href="https://milehighdnatesting.com/es/prueba-de-hermanos" />
         <link rel="alternate" hreflang="x-default" href="https://milehighdnatesting.com/" />
 

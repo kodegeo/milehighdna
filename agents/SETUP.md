@@ -21,24 +21,24 @@ pip3 install -r requirements.txt
 
 ```bash
 # Generate posts for all services
-python3 run.py gbp.post --dry-run
+python3 -m agents.run gbp.post --dry-run
 
 # Generate post for specific service
-python3 run.py gbp.post --service "Legal Paternity DNA Testing" --dry-run
+python3 -m agents.run gbp.post --service "Legal Paternity DNA Testing" --dry-run
 ```
 
 ### Available Agents
 
 ```bash
 # List all available agents
-python3 run.py --help
+python3 -m agents.run --help
 
 # Run specific agents
-python3 run.py gbp.post --dry-run
-python3 run.py gbp.qa --dry-run
-python3 run.py gbp.review --dry-run
-python3 run.py seo.sitemap
-python3 run.py analytics.gsc_monitor --dry-run
+python3 -m agents.run gbp.post --dry-run
+python3 -m agents.run gbp.qa --dry-run
+python3 -m agents.run gbp.review --dry-run
+python3 -m agents.run seo.sitemap
+python3 -m agents.run analytics.gsc_monitor --dry-run
 ```
 
 ## Directory Structure
@@ -95,10 +95,14 @@ pip install PyYAML
 
 ### Import errors
 
-Make sure you're running from the `agents/` directory:
+Make sure you're running from the project root (parent of `agents/`):
 ```bash
-cd agents
-python3 run.py gbp.post --dry-run
+# From project root
+python3 -m agents.run gbp.post --dry-run
+
+# Or if you're in the agents directory, go up one level
+cd ..
+python3 -m agents.run gbp.post --dry-run
 ```
 
 ### Permission errors

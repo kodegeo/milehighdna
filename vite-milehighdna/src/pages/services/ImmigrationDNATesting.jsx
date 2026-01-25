@@ -2,6 +2,20 @@ import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 
+// Components
+import HeroSection from '../../components/common/HeroSection';
+import Pricing from '../../components/immigration/Pricing';
+import Overview from '../../components/immigration/Overview';
+import Steps from '../../components/immigration/Steps';
+import WhoNeedsTest from '../../components/immigration/WhoNeedsThis';
+import WhyChooseUs from '../../components/immigration/WhyChooseUs';
+import Compliance from '../../components/immigration/Compliance';
+import ServingColorado from '../../components/common/ServingColorado';
+import CallToAction from '../../components/immigration/CallToAction';
+
+// Assets
+import immigrationHero from '../../assets/images/immigration-hero.png';
+
 const ImmigrationDNATesting = () => {
   return (
     <main>
@@ -10,23 +24,23 @@ const ImmigrationDNATesting = () => {
         <title>Immigration DNA Testing in Denver | USCIS-Compliant DNA Test | Mile High DNA</title>
         <meta
           name="description"
-          content="Immigration DNA testing for USCIS, embassy, and consular cases requiring verified biological relationships. AABB-accredited laboratory testing in Denver, Colorado."
+          content="AABB-accredited immigration DNA testing in Denver for USCIS, embassy, and consular cases. Fast, accurate results accepted worldwide. Schedule your immigration DNA test today."
         />
         <meta
           name="keywords"
-          content="immigration DNA testing Denver, USCIS DNA test, embassy DNA testing Colorado, AABB accredited immigration DNA"
+          content="immigration DNA testing Denver, USCIS DNA test, embassy DNA testing Colorado, AABB accredited immigration DNA, visa DNA test Denver"
         />
         <link rel="canonical" href="https://milehighdnatesting.com/services/immigration-dna-testing" />
         
         {/* OG / Twitter */}
         <meta property="og:title" content="Immigration DNA Testing in Denver | USCIS-Compliant DNA Test" />
-        <meta property="og:description" content="Immigration DNA testing for USCIS, embassy, and consular cases requiring verified biological relationships through AABB-accredited laboratory." />
+        <meta property="og:description" content="AABB-accredited immigration DNA testing for USCIS, embassy, and consular cases. Fast, accurate results accepted worldwide." />
         <meta property="og:image" content="https://milehighdnatesting.com/images/banner-1200.png" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://milehighdnatesting.com/services/immigration-dna-testing" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Immigration DNA Testing in Denver" />
-        <meta name="twitter:description" content="USCIS-compliant DNA testing through AABB-accredited laboratory." />
+        <meta name="twitter:title" content="Immigration DNA Testing in Denver | USCIS-Compliant" />
+        <meta name="twitter:description" content="AABB-accredited immigration DNA testing for USCIS and embassy cases." />
         <meta name="twitter:image" content="https://milehighdnatesting.com/images/banner-1200.png" />
 
         {/* Breadcrumb JSON-LD Schema */}
@@ -52,6 +66,41 @@ const ImmigrationDNATesting = () => {
                 "position": 3,
                 "name": "Immigration DNA Testing",
                 "item": "https://milehighdnatesting.com/services/immigration-dna-testing"
+              }
+            ]
+          })}
+        </script>
+
+        {/* LocalBusiness Schema */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            "@id": "https://milehighdnatesting.com/services/immigration-dna-testing#business",
+            "name": "Mile High DNA Testing",
+            "url": "https://milehighdnatesting.com/services/immigration-dna-testing",
+            "telephone": "+1-720-900-9342",
+            "priceRange": "$$",
+            "image": "https://milehighdnatesting.com/logo.png",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "975 N Lincoln St Suite 205C",
+              "addressLocality": "Denver",
+              "addressRegion": "CO",
+              "postalCode": "80203",
+              "addressCountry": "US"
+            },
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": 39.7323,
+              "longitude": -104.9862
+            },
+            "openingHoursSpecification": [
+              {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                "opens": "09:00",
+                "closes": "18:00"
               }
             ]
           })}
@@ -100,115 +149,82 @@ const ImmigrationDNATesting = () => {
         </script>
       </Helmet>
 
-      {/* Header Section */}
-      <section className="bg-blue-50 py-10 px-6 md:px-12 lg:px-24">
-        <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-3xl font-bold text-[#1A3C59] mb-4">
-            Immigration DNA Testing
-          </h1>
-          <p className="text-lg text-gray-700 leading-relaxed">
-            An overview of USCIS-compliant immigration DNA testing, including when it is required,
-            how the process works, and how to determine whether this applies to your immigration case.
-          </p>
+      {/* Hero Section */}
+      <HeroSection
+        title="USCIS-Compliant Immigration DNA Testing"
+        subtitle="AABB-accredited immigration DNA testing in Denver for USCIS, embassies, and visa cases. We coordinate directly with immigration authorities for secure delivery of results."
+        imageUrl={immigrationHero}
+        buttonText="Schedule Your Test"
+        buttonLink="https://calendly.com/milehighdnatesting/immigration"
+        secondaryButtonText="Call Now"
+        secondaryButtonLink="tel:7209009342"
+      />
+
+      {/* Pricing */}
+      <Pricing />
+
+      {/* Overview */}
+      <Overview />
+
+      {/* Steps */}
+      <Steps />
+
+      {/* Who Needs This Test */}
+      <WhoNeedsTest />
+
+      {/* Why Choose Us */}
+      <WhyChooseUs />
+
+      {/* TESTIMONIALS */}
+      <section className="section-padding section-bg-alt">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center mb-12">What Our Clients Say</h2>
+          <div className="max-w-2xl mx-auto">
+            {[
+              {
+                name: 'Yasmin',
+                role: 'Mother in Denver, CO',
+                text: "We had such a wonderful experience with Mile High DNA Testing! The process was honestly overwhelming for our family, but Cynthia made everything simple, and clear from the very beginning. She went above and beyond to make sure we understood each step and felt supported the whole time. You can tell Cynthia truly cares about families going through immigration. We were treated with kindness, patience, and compassion. Everything was professional, quick, and handled with so much care. I'm really grateful for her help and would absolutely recommend her and Mile High DNA Testing to anyone needing immigration DNA testing. Thank you so much for supporting us during such an important moment.",
+                source: 'Google Review',
+                sourceUrl: 'https://www.google.com/maps?q=Mile+High+DNA+Testing+Denver',
+              }
+            ].map((testimonial, index) => (
+              <a 
+                key={index}
+                href={testimonial.sourceUrl} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="block h-full"
+              >
+                <div className="card h-full flex flex-col p-6 text-center">
+                  <div className="mb-4 flex justify-center">
+                    <img 
+                      src="/images/5-star-rating.svg" 
+                      alt="5 star rating"
+                      className="w-24 h-auto mb-3"
+                    />
+                  </div>
+                  <div className="mb-4">
+                    <h4 className="font-bold text-lg">{testimonial.name}</h4>
+                    <p className="text-gray-600">{testimonial.role}</p>
+                  </div>
+                  <p className="text-gray-700 flex-grow">{testimonial.text}</p>
+                  <p className="text-sm text-gray-500 mt-4">{testimonial.source}</p>
+                </div>
+              </a>
+            ))}
+          </div>
         </div>
       </section>
 
-      {/* Main Content */}
-      <div className="section-padding">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            {/* Who This Test Is For */}
-            <section className="mb-16">
-              <p className="text-lg text-gray-700 leading-relaxed mb-4">
-                Immigration DNA testing is designed for individuals who need to verify biological relationships for USCIS, embassy, or consular cases. This type of DNA testing must be conducted through an AABB-accredited laboratory and follows strict protocols required for immigration and visa-related applications. Testing is coordinated through an AABB-accredited immigration DNA testing center in Denver.
-              </p>
-              <p className="text-base text-gray-700 leading-relaxed">
-                If a government agency has requested DNA testing to establish a biological relationship for immigration purposes, this is the appropriate process.
-              </p>
-            </section>
+      {/* Serving Colorado */}
+      <ServingColorado />
 
-            {/* When Immigration DNA Testing Is Required */}
-            <section className="mb-16">
-              <h2 className="text-3xl font-bold text-[#1A3C59] mb-6">
-                When Immigration DNA Testing Is Required
-              </h2>
-              <p className="text-base text-gray-700 leading-relaxed mb-4">
-                Immigration DNA testing is typically required when:
-              </p>
-              <ul className="list-disc list-outside space-y-3 text-base text-gray-700 mb-6 ml-6 pl-2">
-                <li>USCIS requests verification of a biological relationship</li>
-                <li>Embassy or consular officials require DNA evidence</li>
-                <li>Documentation is insufficient to establish family relationships</li>
-                <li>Birth certificates or other documents are unavailable or questioned</li>
-                <li>Family-based visa applications need biological relationship confirmation</li>
-                <li>Refugee or asylum cases require relationship verification</li>
-              </ul>
-              <p className="text-base text-gray-700 leading-relaxed">
-                The requesting agency will specify if DNA testing is required and provide guidance on the process.
-              </p>
-            </section>
+      {/* Call To Action */}
+      <CallToAction />
 
-            {/* When Immigration DNA Testing Is Not Required */}
-            <section className="mb-16">
-              <h2 className="text-3xl font-bold text-[#1A3C59] mb-6">
-                When Immigration DNA Testing Is Not Required
-              </h2>
-              <p className="text-base text-gray-700 leading-relaxed mb-4">
-                Immigration DNA testing is not necessary if:
-              </p>
-              <ul className="list-disc list-outside space-y-3 text-base text-gray-700 mb-6 ml-6 pl-2">
-                <li>Sufficient documentation already establishes the relationship</li>
-                <li>The immigration agency has not requested DNA testing</li>
-                <li>Results are needed for personal knowledge only</li>
-                <li>The case does not involve family relationship verification</li>
-              </ul>
-              <p className="text-base text-gray-700 leading-relaxed">
-                If you are unsure whether DNA testing is required, consult with your immigration attorney or the requesting agency.
-              </p>
-            </section>
-
-            {/* How Immigration DNA Testing Works */}
-            <section className="mb-16">
-              <h2 className="text-3xl font-bold text-[#1A3C59] mb-6">
-                How Immigration DNA Testing Works
-              </h2>
-              <p className="text-base text-gray-700 leading-relaxed mb-4">
-                Immigration DNA testing follows a coordinated process designed to meet government requirements:
-              </p>
-              <ul className="list-disc list-outside space-y-3 text-base text-gray-700 mb-6 ml-6 pl-2">
-                <li>Case coordination with an AABB-accredited laboratory</li>
-                <li>Documentation guidance for immigration requirements</li>
-                <li>Proper sample collection procedures with chain of custody</li>
-                <li>International sample collection coordination if needed</li>
-                <li>Results formatted for immigration agency submission</li>
-              </ul>
-              <p className="text-base text-gray-700 leading-relaxed">
-                This process meets the specific requirements of USCIS, embassies, and consulates.
-              </p>
-            </section>
-
-            {/* Common Situations */}
-            <section className="mb-16">
-              <h2 className="text-3xl font-bold text-[#1A3C59] mb-6">
-                Common Situations
-              </h2>
-              <p className="text-base text-gray-700 leading-relaxed">
-                Immigration DNA testing is commonly requested when family members are separated across borders and documentation is insufficient, when birth certificates are unavailable or questioned, when USCIS requires additional evidence for family-based petitions, or when embassies need to verify relationships for visa applications.
-              </p>
-            </section>
-
-            {/* Results & Accuracy */}
-            <section className="mb-16">
-              <h2 className="text-3xl font-bold text-[#1A3C59] mb-6">
-                Results & Accuracy
-              </h2>
-              <p className="text-base text-gray-700 leading-relaxed">
-                Immigration DNA testing provides statistically reliable results when performed through an AABB-accredited laboratory following proper procedures. Results confirm or exclude biological relationships and are formatted for submission to immigration agencies. The testing process is designed to meet the specific documentation and chain-of-custody requirements of USCIS, embassies, and consulates.
-              </p>
-            </section>
-          </div>
-        </div>
-      </div>
+      {/* Compliance */}
+      <Compliance />
 
       {/* FAQ Section */}
       <div className="section-padding section-bg-alt">
@@ -254,26 +270,43 @@ const ImmigrationDNATesting = () => {
           </div>
         </div>
       </div>
-
-      {/* Next Step CTA */}
-      <div className="section-padding">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <section className="mt-12 pt-8 border-t border-gray-200">
-              <h2 className="text-xl font-semibold text-gray-900 mb-2">
-                Next Step
-              </h2>
-              <p className="text-base text-gray-700 mb-4">
-                Appointments for this DNA test are scheduled separately.
-              </p>
-              <Link
-                to="/appointments"
-                className="text-blue-600 hover:text-blue-700 font-medium"
-              >
-                View appointment options →
-              </Link>
-            </section>
-          </div>
+      
+      {/* Social Share Block */}
+      <div className="mt-12 bg-gray-50 p-6 rounded-xl border border-gray-200 max-w-4xl mx-auto px-4">
+        <h3 className="text-xl font-semibold mb-4 text-gray-800 text-center">Share This Page</h3>
+        <p className="text-center text-gray-600 mb-6">Help others find reliable DNA testing services in Denver.</p>
+        <div className="flex justify-center gap-4 flex-wrap">
+          <a 
+            href="https://www.facebook.com/sharer/sharer.php?u=https://milehighdnatesting.com/services/immigration-dna-testing" 
+            className="flex items-center space-x-2 bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-all duration-300 shadow-md hover:shadow-lg"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+            </svg>
+            <span className="font-medium">Facebook</span>
+          </a>
+          <a 
+            href="https://twitter.com/intent/tweet?url=https://milehighdnatesting.com/services/immigration-dna-testing&text=Immigration%20DNA%20Testing%20in%20Denver" 
+            className="flex items-center space-x-2 bg-gray-900 text-white px-4 py-2 rounded-lg hover:bg-gray-800 transition-all duration-300 shadow-md hover:shadow-lg"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+            </svg>
+            <span className="font-medium">X / Twitter</span>
+          </a>
+          <a 
+            href="mailto:?subject=Immigration%20DNA%20Testing%20in%20Denver&body=Check%20out%20this%20page:%20https://milehighdnatesting.com/services/immigration-dna-testing" 
+            className="flex items-center space-x-2 bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-700 transition-all duration-300 shadow-md hover:shadow-lg"
+          >
+            <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+            </svg>
+            <span className="font-medium">Email</span>
+          </a>
         </div>
       </div>
     </main>

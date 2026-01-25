@@ -29,7 +29,7 @@ npm run build
 | Priority | Route Type | Change Frequency | Examples |
 |----------|------------|------------------|----------|
 | `1.0` | Homepage | `daily` | `/` |
-| `0.9` | Primary Services | `weekly` | `/legal-paternity-tests`, `/prenatal-dna-test` |
+| `0.9` | Primary Services | `weekly` | `/legal-paternity-tests`, `/services/prenatal-paternity-testing` |
 | `0.8` | Secondary Services | `weekly` | `/mile-high-dna-corner`, `/products/*` |
 | `0.7` | Blog Articles | `weekly` | `/mile-high-dna-corner/*` |
 | `0.6` | Information Pages | `monthly` | `/about`, `/faq` |

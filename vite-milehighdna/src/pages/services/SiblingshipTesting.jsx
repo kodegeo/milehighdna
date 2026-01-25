@@ -2,31 +2,46 @@ import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 
+// Siblingship components
+import SiblingshipHero from '../../components/siblingship/SiblingshipHero';
+import SiblingshipPricing from '../../components/siblingship/SiblingshipPricing';
+import SiblingshipOverview from '../../components/siblingship/SiblingshipOverview';
+import SiblingshipTypes from '../../components/siblingship/SiblingshipTypes';
+import SiblingshipWhenToUse from '../../components/siblingship/SiblingshipWhenToUse';
+import SiblingshipSteps from '../../components/siblingship/SiblingshipSteps';
+import SiblingshipLegalVsNonLegal from '../../components/siblingship/SiblingshipLegalVsNonLegal';
+import SiblingshipWhyChooseUs from '../../components/siblingship/SiblingshipWhyChooseUs';
+import SiblingshipLegalNote from '../../components/siblingship/SiblingshipLegalNote';
+
+// Common components
+import ServingColorado from '../../components/common/ServingColorado';
+import CallToAction from '../../components/siblingship/CallToAction';
+
 const SiblingshipTesting = () => {
   return (
     <main>
       <Helmet>
         <html lang="en" />
-        <title>Siblingship DNA Testing in Denver | Full or Half Sibling DNA Test | Mile High DNA</title>
+        <title>Sibling DNA Test in Denver, CO | Legal & Non-Legal Relationship Testing | Mile High DNA</title>
         <meta
           name="description"
-          content="Siblingship DNA testing determines whether individuals are full or half siblings through genetic analysis. Used when one or both parents are unavailable for testing in Denver, Colorado."
+          content="Confirm sibling relationships with our AABB-accredited DNA testing in Denver, Aurora, Thornton, and Lakewood Colorado. Legal and non-legal sibling DNA tests with fast, confidential results."
         />
         <meta
           name="keywords"
-          content="siblingship DNA testing Denver, sibling DNA test, full sibling test Colorado, half sibling DNA testing"
+          content="sibling DNA test Denver, half sibling DNA test Colorado, brother sister DNA testing, legal sibling DNA test, siblingship DNA testing"
         />
         <link rel="canonical" href="https://milehighdnatesting.com/services/siblingship-testing" />
         
         {/* OG / Twitter */}
-        <meta property="og:title" content="Siblingship DNA Testing in Denver | Full or Half Sibling DNA Test" />
-        <meta property="og:description" content="Siblingship DNA testing determines whether individuals are full or half siblings through genetic analysis when parents are unavailable." />
+        <meta property="og:title" content="Sibling DNA Test in Denver | Legal & Non-Legal Relationship Testing" />
+        <meta property="og:description" content="AABB-accredited sibling DNA testing in Denver. Legal and non-legal testing for full, half, or no biological relation. Fast, confidential results." />
         <meta property="og:image" content="https://milehighdnatesting.com/images/banner-1200.png" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://milehighdnatesting.com/services/siblingship-testing" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Siblingship DNA Testing in Denver" />
-        <meta name="twitter:description" content="DNA testing to determine full or half sibling relationships." />
+        <meta name="twitter:title" content="Sibling DNA Test in Denver, CO" />
+        <meta name="twitter:description" content="Confirm sibling relationships with accurate, AABB-accredited DNA testing." />
         <meta name="twitter:image" content="https://milehighdnatesting.com/images/banner-1200.png" />
 
         {/* Breadcrumb JSON-LD Schema */}
@@ -52,6 +67,41 @@ const SiblingshipTesting = () => {
                 "position": 3,
                 "name": "Siblingship DNA Testing",
                 "item": "https://milehighdnatesting.com/services/siblingship-testing"
+              }
+            ]
+          })}
+        </script>
+
+        {/* LocalBusiness Schema */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            "@id": "https://milehighdnatesting.com/services/siblingship-testing#business",
+            "name": "Mile High DNA Testing",
+            "url": "https://milehighdnatesting.com/services/siblingship-testing",
+            "telephone": "+1-720-900-9342",
+            "priceRange": "$$",
+            "image": "https://milehighdnatesting.com/logo.png",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "975 N Lincoln St Suite 205C",
+              "addressLocality": "Denver",
+              "addressRegion": "CO",
+              "postalCode": "80203",
+              "addressCountry": "US"
+            },
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": 39.7323,
+              "longitude": -104.9862
+            },
+            "openingHoursSpecification": [
+              {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                "opens": "09:00",
+                "closes": "18:00"
               }
             ]
           })}
@@ -100,114 +150,90 @@ const SiblingshipTesting = () => {
         </script>
       </Helmet>
 
-      {/* Header Section */}
-      <section className="bg-blue-50 py-10 px-6 md:px-12 lg:px-24">
-        <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-3xl font-bold text-[#1A3C59] mb-4">
-            Siblingship DNA Testing
-          </h1>
-          <p className="text-lg text-gray-700 leading-relaxed">
-            An overview of siblingship DNA testing, including when it is appropriate,
-            how it works, and how to determine whether this is the right test for your situation.
-          </p>
+      {/* Hero Section */}
+      <SiblingshipHero 
+        title="Sibling DNA Test | Relationship DNA Testing in Denver, Aurora & Lakewood"
+        subtitle="AABB-accredited sibling DNA testing in Denver, Aurora, and Lakewood. Legal and non-legal options to confirm biological relationships for family, court, or immigration needs."
+      />
+
+      {/* Pricing */}
+      <SiblingshipPricing />
+
+      {/* Overview */}
+      <SiblingshipOverview />
+
+      {/* Types */}
+      <SiblingshipTypes />
+
+      {/* When To Use */}
+      <SiblingshipWhenToUse />
+
+      {/* Steps */}
+      <SiblingshipSteps />
+
+      {/* Legal vs Non-Legal */}
+      <SiblingshipLegalVsNonLegal />
+
+      {/* Why Choose Us */}
+      <SiblingshipWhyChooseUs />
+
+      {/* TESTIMONIALS */}
+      <section className="section-padding section-bg-alt">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center mb-12">What Our Clients Say</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            {[
+              {
+                name: 'Timothy Greer',
+                role: 'Brother in Denver, CO',
+                text: 'Fast results, easy booking, accurate, and was able to answer any questions I had.',
+                source: 'Google Review',
+                sourceUrl: 'https://www.google.com/maps?q=Mile+High+DNA+Testing+Denver',
+              },
+              {
+                name: 'Andrew Gipson',
+                role: 'Brother in Aurora, CO',
+                text: 'They were very attentive precise, easy and prompt.',
+                source: 'Google Review',
+                sourceUrl: 'https://www.google.com/maps?q=Mile+High+DNA+Testing+Denver',
+              }
+            ].map((testimonial, index) => (
+              <a 
+                key={index}
+                href={testimonial.sourceUrl} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="h-full"
+              >
+                <div className="card h-full flex flex-col p-6 text-center">
+                  <div className="mb-4 flex justify-center">
+                    <img 
+                      src="/images/5-star-rating.svg" 
+                      alt="5 star rating"
+                      className="w-24 h-auto mb-3"
+                    />
+                  </div>
+                  <div className="mb-4">
+                    <h4 className="font-bold text-lg">{testimonial.name}</h4>
+                    <p className="text-gray-600">{testimonial.role}</p>
+                  </div>
+                  <p className="text-gray-700 flex-grow">{testimonial.text}</p>
+                  <p className="text-sm text-gray-500 mt-4">{testimonial.source}</p>
+                </div>
+              </a>
+            ))}
+          </div>
         </div>
       </section>
 
-      {/* Main Content */}
-      <div className="section-padding">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            {/* Who This Test Is For */}
-            <section className="mb-16">
-              <p className="text-lg text-gray-700 leading-relaxed mb-4">
-                Siblingship DNA testing is designed for individuals who need to determine whether they are full or half siblings when one or both parents are unavailable for testing. This type of DNA test is used as an alternative to paternity testing when a parent is unavailable, analyzing genetic markers to establish sibling relationships through indirect comparison.
-              </p>
-              <p className="text-base text-gray-700 leading-relaxed">
-                If you need to establish a sibling relationship and direct parent testing is not possible, this is the appropriate test.
-              </p>
-            </section>
+      {/* Serving Colorado */}
+      <ServingColorado />
 
-            {/* When Siblingship Testing Is Appropriate */}
-            <section className="mb-16">
-              <h2 className="text-3xl font-bold text-[#1A3C59] mb-6">
-                When Siblingship Testing Is Appropriate
-              </h2>
-              <p className="text-base text-gray-700 leading-relaxed mb-4">
-                Siblingship DNA testing is commonly used when:
-              </p>
-              <ul className="list-disc list-outside space-y-3 text-base text-gray-700 mb-6 ml-6 pl-2">
-                <li>One or both parents are unavailable for testing</li>
-                <li>A parent is deceased or unwilling to participate</li>
-                <li>Full vs half sibling relationship needs to be determined</li>
-                <li>Legal cases require sibling relationship verification</li>
-                <li>Family relationships need clarification</li>
-                <li>Immigration cases require sibling relationship proof</li>
-              </ul>
-              <p className="text-base text-gray-700 leading-relaxed">
-                This testing option is used when direct parent-child testing is not feasible.
-              </p>
-            </section>
+      {/* Call To Action */}
+      <CallToAction />
 
-            {/* When Siblingship Testing Is Not Appropriate */}
-            <section className="mb-16">
-              <h2 className="text-3xl font-bold text-[#1A3C59] mb-6">
-                When Siblingship Testing Is Not Appropriate
-              </h2>
-              <p className="text-base text-gray-700 leading-relaxed mb-4">
-                Siblingship testing may not be necessary if:
-              </p>
-              <ul className="list-disc list-outside space-y-3 text-base text-gray-700 mb-6 ml-6 pl-2">
-                <li>A parent is available and willing to participate in direct paternity or maternity testing</li>
-                <li>Direct parent-child testing would provide clearer results</li>
-                <li>The relationship in question is not between siblings</li>
-              </ul>
-              <p className="text-base text-gray-700 leading-relaxed">
-                In these cases, direct paternity or maternity testing may be more appropriate and conclusive.
-              </p>
-            </section>
-
-            {/* How Siblingship DNA Testing Works */}
-            <section className="mb-16">
-              <h2 className="text-3xl font-bold text-[#1A3C59] mb-6">
-                How Siblingship DNA Testing Works
-              </h2>
-              <p className="text-base text-gray-700 leading-relaxed mb-4">
-                Siblingship DNA testing follows a genetic analysis process:
-              </p>
-              <ul className="list-disc list-outside space-y-3 text-base text-gray-700 mb-6 ml-6 pl-2">
-                <li>DNA samples are collected from the individuals being tested</li>
-                <li>Genetic markers are analyzed and compared</li>
-                <li>Statistical analysis determines the probability of a sibling relationship</li>
-                <li>Results indicate whether individuals are full siblings, half siblings, or unrelated</li>
-                <li>Laboratory analysis is performed by an accredited facility</li>
-              </ul>
-              <p className="text-base text-gray-700 leading-relaxed">
-                This process allows relationship determination when direct parent testing is not available.
-              </p>
-            </section>
-
-            {/* Common Situations */}
-            <section className="mb-16">
-              <h2 className="text-3xl font-bold text-[#1A3C59] mb-6">
-                Common Situations
-              </h2>
-              <p className="text-base text-gray-700 leading-relaxed">
-                Siblingship testing is commonly requested when separated siblings need to establish their relationship, when a parent is deceased and relationships need verification, when legal cases require sibling relationship proof, when immigration cases need sibling relationship documentation, or when family relationships need clarification for personal knowledge.
-              </p>
-            </section>
-
-            {/* Results & Accuracy */}
-            <section className="mb-16">
-              <h2 className="text-3xl font-bold text-[#1A3C59] mb-6">
-                Results & Accuracy
-              </h2>
-              <p className="text-base text-gray-700 leading-relaxed">
-                Siblingship DNA testing provides statistically reliable results when performed by an accredited laboratory. Results indicate the probability of a full or half sibling relationship and include statistical analysis. Legal siblingship testing includes documentation suitable for court use, while non-legal testing provides results for personal knowledge.
-              </p>
-            </section>
-          </div>
-        </div>
-      </div>
+      {/* Legal Note */}
+      <SiblingshipLegalNote />
 
       {/* FAQ Section */}
       <div className="section-padding section-bg-alt">
@@ -254,31 +280,56 @@ const SiblingshipTesting = () => {
         </div>
       </div>
 
-      {/* Next Step CTA */}
+      {/* Related Services */}
       <div className="section-padding">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <section className="mt-12 pt-8 border-t border-gray-200">
-              <h2 className="text-xl font-semibold text-gray-900 mb-2">
-                Next Step
-              </h2>
-              <p className="text-base text-gray-700 mb-4">
-                Appointments for this DNA test are scheduled separately.
-              </p>
-              <Link
-                to="/appointments"
-                className="text-blue-600 hover:text-blue-700 font-medium"
-              >
-                View appointment options →
-              </Link>
-            </section>
-            <p className="text-sm text-gray-600 mt-6">
+            <p className="text-sm text-gray-600">
               Related service:{" "}
-              <Link to="/services/grandparentage-testing" className="underline">
+              <Link to="/services/grandparentage-testing" className="underline text-blue-600">
                 Grandparentage Testing
               </Link>
             </p>
           </div>
+        </div>
+      </div>
+      
+      {/* Social Share Block */}
+      <div className="mt-12 bg-gray-50 p-6 rounded-xl border border-gray-200 max-w-4xl mx-auto px-4">
+        <h3 className="text-xl font-semibold mb-4 text-gray-800 text-center">Share This Page</h3>
+        <p className="text-center text-gray-600 mb-6">Help others find reliable DNA testing services in Denver.</p>
+        <div className="flex justify-center gap-4 flex-wrap">
+          <a 
+            href="https://www.facebook.com/sharer/sharer.php?u=https://milehighdnatesting.com/services/siblingship-testing" 
+            className="flex items-center space-x-2 bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-all duration-300 shadow-md hover:shadow-lg"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+            </svg>
+            <span className="font-medium">Facebook</span>
+          </a>
+          <a 
+            href="https://twitter.com/intent/tweet?url=https://milehighdnatesting.com/services/siblingship-testing&text=Sibling%20DNA%20Test%20in%20Denver" 
+            className="flex items-center space-x-2 bg-gray-900 text-white px-4 py-2 rounded-lg hover:bg-gray-800 transition-all duration-300 shadow-md hover:shadow-lg"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+            </svg>
+            <span className="font-medium">X / Twitter</span>
+          </a>
+          <a 
+            href="mailto:?subject=Sibling%20DNA%20Test%20in%20Denver&body=Check%20out%20this%20page:%20https://milehighdnatesting.com/services/siblingship-testing" 
+            className="flex items-center space-x-2 bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-700 transition-all duration-300 shadow-md hover:shadow-lg"
+          >
+            <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+            </svg>
+            <span className="font-medium">Email</span>
+          </a>
         </div>
       </div>
     </main>

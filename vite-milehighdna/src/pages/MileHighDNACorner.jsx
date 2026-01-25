@@ -430,7 +430,7 @@ export default function MileHighDNACorner() {
               <div className="text-sm text-gray-500 mb-4">
                 <span>By Mile High DNA Corner Team</span> • <span>August 2025</span>
               </div>
-              <Link to="/mile-high-dna-corner/legal-dna-cost-guide" className="text-blue-600 font-semibold hover:text-blue-800">
+              <Link to="/guides/legal-dna-test-cost" className="text-blue-600 font-semibold hover:text-blue-800">
                 Read More →
               </Link>
             </div>
@@ -447,7 +447,7 @@ export default function MileHighDNACorner() {
               <div className="text-sm text-gray-500 mb-4">
                 <span>By Mile High DNA Corner Team</span> • <span>August 2025</span>
               </div>
-              <Link to="/mile-high-dna-corner/non-legal-dna-cost-guide" className="text-blue-600 font-semibold hover:text-blue-800">
+              <Link to="/guides/non-legal-dna-test-cost" className="text-blue-600 font-semibold hover:text-blue-800">
                 Read More →
               </Link>
             </div>
@@ -461,7 +461,7 @@ export default function MileHighDNACorner() {
               <div className="text-sm text-gray-500 mb-4">
                 <span>By Mile High DNA Corner Team</span> • <span>July 2025</span>
               </div>
-              <Link to="/mile-high-dna-corner/prenatal-dna-cost-guide" className="text-blue-600 font-semibold hover:text-blue-800">
+              <Link to="/guides/prenatal-dna-test-cost" className="text-blue-600 font-semibold hover:text-blue-800">
                 Read More →
               </Link>
             </div>
