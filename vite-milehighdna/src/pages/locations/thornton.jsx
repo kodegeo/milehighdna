@@ -115,43 +115,122 @@ const Thornton = () => {
           </p>
         </div>
 
-        {/* Services Grid */}
+        {/* Services Available in {City} */}
         <section className="mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center text-gray-800">DNA Testing Services Available in {cityName}</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center text-gray-800">Services Available in {cityName}</h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-6">
-            <div className="bg-white border border-gray-200 rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
-              <h3 className="font-semibold text-lg mb-2 text-blue-600">Legal Paternity Testing</h3>
-              <p className="text-sm text-gray-600">Court-Admissible</p>
-            </div>
-            <div className="bg-white border border-gray-200 rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
-              <h3 className="font-semibold text-lg mb-2 text-blue-600">Peace of Mind Testing</h3>
-              <p className="text-sm text-gray-600">Non-Legal</p>
-            </div>
-            <div className="bg-white border border-gray-200 rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
-              <h3 className="font-semibold text-lg mb-2 text-blue-600">Immigration DNA Testing</h3>
-              <p className="text-sm text-gray-600">USCIS Approved</p>
-            </div>
-            <div className="bg-white border border-gray-200 rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
-              <h3 className="font-semibold text-lg mb-2 text-blue-600">Prenatal Testing</h3>
-              <p className="text-sm text-gray-600">Non-Invasive</p>
-            </div>
-            <div className="bg-white border border-gray-200 rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
-              <h3 className="font-semibold text-lg mb-2 text-blue-600">Siblingship Testing</h3>
-              <p className="text-sm text-gray-600">Relationship Verification</p>
-            </div>
-            <div className="bg-white border border-gray-200 rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
-              <h3 className="font-semibold text-lg mb-2 text-blue-600">Grandparentage Testing</h3>
-              <p className="text-sm text-gray-600">Family Relationships</p>
-            </div>
-            <div className="bg-white border border-gray-200 rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
-              <h3 className="font-semibold text-lg mb-2 text-blue-600">Avuncular Testing</h3>
-              <p className="text-sm text-gray-600">Aunt/Uncle DNA</p>
-            </div>
-            <div className="bg-white border border-gray-200 rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
-              <h3 className="font-semibold text-lg mb-2 text-blue-600">Forensic Analysis</h3>
-              <p className="text-sm text-gray-600">Specialty Testing</p>
-            </div>
+            <Link
+              to={`/services/legal-paternity-testing-${citySlug}`}
+              className="bg-white border border-gray-200 rounded-lg p-6 shadow-sm hover:shadow-md hover:border-blue-300 transition-all group"
+            >
+              <h3 className="font-semibold text-lg mb-3 text-blue-600 group-hover:text-blue-700">Legal Paternity Testing</h3>
+              <p className="text-sm text-gray-600 mb-4">Court-admissible paternity testing for legal proceedings in {cityName}.</p>
+              <span className="text-blue-600 text-sm font-medium group-hover:underline inline-flex items-center">
+                View Service
+                <svg className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+              </span>
+            </Link>
+            
+            <Link
+              to={`/services/non-legal-paternity-testing-${citySlug}`}
+              className="bg-white border border-gray-200 rounded-lg p-6 shadow-sm hover:shadow-md hover:border-blue-300 transition-all group"
+            >
+              <h3 className="font-semibold text-lg mb-3 text-blue-600 group-hover:text-blue-700">Non-Legal Paternity Testing</h3>
+              <p className="text-sm text-gray-600 mb-4">Private, confidential paternity testing for personal knowledge in {cityName}.</p>
+              <span className="text-blue-600 text-sm font-medium group-hover:underline inline-flex items-center">
+                View Service
+                <svg className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+              </span>
+            </Link>
+            
+            <Link
+              to={`/services/prenatal-paternity-testing-${citySlug}`}
+              className="bg-white border border-gray-200 rounded-lg p-6 shadow-sm hover:shadow-md hover:border-blue-300 transition-all group"
+            >
+              <h3 className="font-semibold text-lg mb-3 text-blue-600 group-hover:text-blue-700">Prenatal Paternity Testing</h3>
+              <p className="text-sm text-gray-600 mb-4">Safe, non-invasive prenatal paternity testing available in {cityName}.</p>
+              <span className="text-blue-600 text-sm font-medium group-hover:underline inline-flex items-center">
+                View Service
+                <svg className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+              </span>
+            </Link>
+
+            <Link
+              to="/services/immigration-dna-testing"
+              className="bg-white border border-gray-200 rounded-lg p-6 shadow-sm hover:shadow-md hover:border-blue-300 transition-all group"
+            >
+              <h3 className="font-semibold text-lg mb-3 text-blue-600 group-hover:text-blue-700">Immigration DNA Testing</h3>
+              <p className="text-sm text-gray-600 mb-4">USCIS-approved DNA testing for immigration cases in {cityName}.</p>
+              <span className="text-blue-600 text-sm font-medium group-hover:underline inline-flex items-center">
+                View Service
+                <svg className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+              </span>
+            </Link>
+
+            <Link
+              to="/services/siblingship-testing"
+              className="bg-white border border-gray-200 rounded-lg p-6 shadow-sm hover:shadow-md hover:border-blue-300 transition-all group"
+            >
+              <h3 className="font-semibold text-lg mb-3 text-blue-600 group-hover:text-blue-700">Siblingship Testing</h3>
+              <p className="text-sm text-gray-600 mb-4">Relationship verification through siblingship DNA testing in {cityName}.</p>
+              <span className="text-blue-600 text-sm font-medium group-hover:underline inline-flex items-center">
+                View Service
+                <svg className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+              </span>
+            </Link>
+
+            <Link
+              to="/services/grandparentage-testing"
+              className="bg-white border border-gray-200 rounded-lg p-6 shadow-sm hover:shadow-md hover:border-blue-300 transition-all group"
+            >
+              <h3 className="font-semibold text-lg mb-3 text-blue-600 group-hover:text-blue-700">Grandparentage Testing</h3>
+              <p className="text-sm text-gray-600 mb-4">Family relationship DNA testing through grandparentage analysis in {cityName}.</p>
+              <span className="text-blue-600 text-sm font-medium group-hover:underline inline-flex items-center">
+                View Service
+                <svg className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+              </span>
+            </Link>
+
+            <Link
+              to="/services/avuncular-dna-testing"
+              className="bg-white border border-gray-200 rounded-lg p-6 shadow-sm hover:shadow-md hover:border-blue-300 transition-all group"
+            >
+              <h3 className="font-semibold text-lg mb-3 text-blue-600 group-hover:text-blue-700">Avuncular Testing</h3>
+              <p className="text-sm text-gray-600 mb-4">Aunt/uncle DNA relationship testing available in {cityName}.</p>
+              <span className="text-blue-600 text-sm font-medium group-hover:underline inline-flex items-center">
+                View Service
+                <svg className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+              </span>
+            </Link>
+
+            <Link
+              to="/services/forensic-dna-analysis"
+              className="bg-white border border-gray-200 rounded-lg p-6 shadow-sm hover:shadow-md hover:border-blue-300 transition-all group"
+            >
+              <h3 className="font-semibold text-lg mb-3 text-blue-600 group-hover:text-blue-700">Forensic Analysis</h3>
+              <p className="text-sm text-gray-600 mb-4">Specialty forensic DNA analysis services in {cityName}.</p>
+              <span className="text-blue-600 text-sm font-medium group-hover:underline inline-flex items-center">
+                View Service
+                <svg className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+              </span>
+            </Link>
           </div>
 
           <p className="text-center text-gray-600 italic">All tests follow strict chain-of-custody procedures when required.</p>
