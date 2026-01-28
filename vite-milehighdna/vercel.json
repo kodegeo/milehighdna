@@ -145,6 +145,16 @@
     },
 
     {
+      "redirects": [
+        {
+          "source": "/book-appointment",
+          "destination": "/appointments",
+          "permanent": true
+        }
+      ]
+    },    
+
+    {
       "source": "/(.*)",
       "has": [
         { "type": "host", "value": "www.milehighdnatesting.com" }
