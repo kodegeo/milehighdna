@@ -145,15 +145,11 @@
     },
 
     {
-      "redirects": [
-        {
-          "source": "/book-appointment",
-          "destination": "/appointments",
-          "permanent": true
-        }
-      ]
-    },    
-
+      "source": "/book-appointment",
+      "destination": "/appointments",
+      "permanent": true
+    },
+    
     {
       "source": "/(.*)",
       "has": [
