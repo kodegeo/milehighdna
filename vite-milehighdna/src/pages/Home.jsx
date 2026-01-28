@@ -36,8 +36,7 @@ const Home = () => {
 
         <link rel="canonical" href="https://milehighdnatesting.com/" />
         <link rel="alternate" href="https://milehighdnatesting.com/" hreflang="en" />
-<link rel="alternate" href="https://milehighdnatesting.com/es/" hreflang="es" />
-
+        <link rel="alternate" href="https://milehighdnatesting.com/es/" hreflang="es" />
 
         <script type="application/ld+json">
           {JSON.stringify([
@@ -129,7 +128,7 @@ const Home = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
-                to="/book-appointment"
+                to="/appointments"
                 className="btn-primary"
               >
                 Book Now

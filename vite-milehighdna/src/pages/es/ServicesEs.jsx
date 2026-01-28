@@ -67,7 +67,7 @@ const ServicesEs = () => {
                 </ul>
                 <div className="text-xl font-bold text-blue-600 mb-6">{service.price}</div>
                 <Link
-                  to="/book-appointment"
+                  to="/appointments"
                   className="block w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg text-center transition duration-300"
                 >
                   Reservar Ahora

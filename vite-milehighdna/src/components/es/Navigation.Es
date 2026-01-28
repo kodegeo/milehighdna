@@ -84,7 +84,7 @@ const Navigation = () => {
             <Link to="/get-results" className="text-gray-700 hover:text-blue-600 transition duration-300">Obtener Resultados</Link>
 
             <Link 
-              to="/book-appointment" 
+              to="/appointments" 
               className="bg-blue-600 text-white px-6 py-2 rounded-lg font-semibold hover:bg-blue-700 transition duration-300"
             >
               Haz tu cita Aqui
@@ -129,7 +129,7 @@ const Navigation = () => {
             <Link to="/get-results" className="text-gray-700 hover:text-blue-600 transition duration-300 block py-2" onClick={() => setIsMenuOpen(false)}>Obtener Resultados</Link>
 
             <Link 
-              to="/book-appointment" 
+              to="/appointments" 
               className="bg-blue-600 text-white px-6 py-2 rounded-lg font-semibold hover:bg-blue-700 transition duration-300 mt-4 block text-center"
               onClick={() => setIsMenuOpen(false)}
             >

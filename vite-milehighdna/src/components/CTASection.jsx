@@ -13,7 +13,7 @@ const CTASection = () => {
           Schedule your confidential DNA test with Mile High DNA Testing and get results you can trust.
         </p>
         <Link
-          to="/book-appointment"
+          to="/appointments"
           className="inline-block bg-white text-blue-900 font-semibold py-3 px-6 rounded-full hover:bg-blue-100 transition"
         >
           Book an Appointment

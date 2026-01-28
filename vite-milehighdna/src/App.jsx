@@ -150,7 +150,7 @@ function AppLayout() {
             <Route path="/admin-uploader" element={<AdminUploaderPage />} />
             <Route path="/my-results" element={<MyResults />} />
             <Route path="/my-results-page" element={<MyResultsPage />} />
-            <Route path="/book-appointment" element={<BookAppointment />} />
+            <Route path="/book-appointment" element={<Navigate to="/appointments" replace />} />
             <Route path="/aabb-accreditation" element={<AABBAccreditation />} />
             <Route path="/cancel" element={<Cancel />} />
             <Route path="/success" element={<Success />} />

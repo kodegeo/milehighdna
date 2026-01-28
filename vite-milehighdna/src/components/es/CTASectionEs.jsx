@@ -12,7 +12,7 @@ const CTASectionEs = () => {
           Programe su prueba de ADN confidencial con Mile High DNA Testing y obtenga resultados en los que puede confiar.
         </p>
         <Link
-          to="/book-appointment"
+          to="/appointments"
           className="inline-block bg-white text-blue-900 font-semibold py-3 px-6 rounded-full hover:bg-blue-100 transition"
         >
           Reservar una Cita

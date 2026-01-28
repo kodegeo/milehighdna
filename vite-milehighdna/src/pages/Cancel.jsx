@@ -17,7 +17,7 @@ const Cancel = () => {
         </p>
         <div className="flex justify-center">
           <Link
-            to="/book-appointment"
+            to="/appointments"
             className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded transition"
           >
             Return to Booking Page

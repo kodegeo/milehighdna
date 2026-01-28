@@ -128,7 +128,7 @@ const NonLegalPaternityTestingDenver = () => {
               </p>
               <div className="flex flex-wrap gap-4">
                 <Link
-                  to="/book-appointment"
+                  to="/appointments"
                   className="bg-white text-blue-900 px-6 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors"
                 >
                   Schedule Appointment
@@ -455,7 +455,7 @@ const NonLegalPaternityTestingDenver = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-                to="/book-appointment"
+                to="/appointments"
                 className="inline-flex items-center justify-center bg-blue-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700 transition-colors"
               >
                 Schedule Appointment

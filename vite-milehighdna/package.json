@@ -5,8 +5,8 @@
   "type": "commonjs",
   "scripts": {
     "dev": "concurrently \"npm run dev:frontend\" \"npm run dev:backend\"",
-    "dev:frontend": "vite --config vite.config.js",
-    "dev:backend": "cd ../vite-milehighdna-infra && npm run dev",
+    "dev:frontend": "vite",
+    "dev:backend": "cd server && npm run dev",
     "build": "vite build",
     "postbuild": "node generateSitemap.js",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
