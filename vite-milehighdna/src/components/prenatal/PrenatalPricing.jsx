@@ -25,12 +25,21 @@ const PrenatalPricing = () => {
               <li>✔ Peace of Mind</li>
               <li>✔ 7–10 Business Day Turnaround</li>
             </ul>
-            <a
-              href="https://calendly.com/milehighdnatesting/noninvasive-prenatal-paternity"
-              className="inline-block bg-blue-600 text-white px-5 py-3 rounded-lg shadow hover:bg-blue-700 transition"
-            >
-              Book This Test
-            </a>
+            <div className="flex flex-wrap gap-3">
+              <a
+                href="https://calendly.com/milehighdnatesting/noninvasive-prenatal-paternity"
+                className="inline-block bg-blue-600 text-white px-5 py-3 rounded-lg shadow hover:bg-blue-700 transition font-medium"
+              >
+                Book This Test
+              </a>
+              <a
+                href="tel:+17209009342"
+                onClick={() => { window.dataLayer = window.dataLayer || []; window.dataLayer.push({ event: "phone_click", phone_number: "720-900-9342" }); }}
+                className="inline-block bg-white text-blue-600 border-2 border-blue-600 px-5 py-3 rounded-lg shadow hover:bg-blue-50 transition font-medium"
+              >
+                Call Now
+              </a>
+            </div>
           </div>
 
           <div className="bg-white rounded-xl shadow-md border-l-4 border-blue-600 p-6">
@@ -47,12 +56,21 @@ const PrenatalPricing = () => {
               <li>✔ Legal Documentation</li>
               <li>✔ 7–10 Business Day Turnaround</li>
             </ul>
-            <a
-              href="https://calendly.com/milehighdnatesting/noninvasive-prenatal-paternity"
-              className="inline-block bg-blue-600 text-white px-5 py-3 rounded-lg shadow hover:bg-blue-700 transition"
-            >
-              Book This Test
-            </a>
+            <div className="flex flex-wrap gap-3">
+              <a
+                href="https://calendly.com/milehighdnatesting/noninvasive-prenatal-paternity"
+                className="inline-block bg-blue-600 text-white px-5 py-3 rounded-lg shadow hover:bg-blue-700 transition font-medium"
+              >
+                Book This Test
+              </a>
+              <a
+                href="tel:+17209009342"
+                onClick={() => { window.dataLayer = window.dataLayer || []; window.dataLayer.push({ event: "phone_click", phone_number: "720-900-9342" }); }}
+                className="inline-block bg-white text-blue-600 border-2 border-blue-600 px-5 py-3 rounded-lg shadow hover:bg-blue-50 transition font-medium"
+              >
+                Call Now
+              </a>
+            </div>
           </div>
         </div>
 

@@ -195,12 +195,24 @@ const Services = () => {
                     </span>
                   )}
                   <p className="text-gray-600 mb-4">{service.description}</p>
-                  <Link
-                    to={service.link}
-                    className="text-[#2C6FA6] hover:text-[#7DB9E8] font-semibold transition duration-300"
-                  >
-                    Learn More →
-                  </Link>
+                  <div className="flex flex-wrap items-center gap-3">
+                    <Link
+                      to={service.link}
+                      className="text-[#2C6FA6] hover:text-[#7DB9E8] font-semibold transition duration-300"
+                    >
+                      Learn More →
+                    </Link>
+                    <a
+                      href="tel:+17209009342"
+                      onClick={() => {
+                        window.dataLayer = window.dataLayer || [];
+                        window.dataLayer.push({ event: "phone_click", phone_number: "720-900-9342" });
+                      }}
+                      className="text-[#2C6FA6] hover:text-[#7DB9E8] font-semibold transition duration-300 inline-flex items-center gap-1"
+                    >
+                      Call Now
+                    </a>
+                  </div>
                 </div>
               </div>
             ))}
@@ -210,6 +222,20 @@ const Services = () => {
       {/* MID-PAGE BOOKING CTA */}
       <div className="section-padding">
         <div className="container mx-auto px-4 text-center">
+          <p className="text-gray-600 mb-4">Questions about pricing or testing? We’re here to help.</p>
+          <a
+            href="tel:+17209009342"
+            onClick={() => {
+              window.dataLayer = window.dataLayer || [];
+              window.dataLayer.push({ event: "phone_click", phone_number: "720-900-9342" });
+            }}
+            className="inline-flex items-center gap-2 bg-blue-600 text-white px-6 py-3 rounded-xl shadow hover:bg-blue-700 transition font-medium mb-10"
+          >
+            <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+            </svg>
+            Call Now: (720) 900-9342
+          </a>
           <h2 className="text-3xl font-bold mb-4">Ready to Book Your DNA Test?</h2>
           <p className="text-gray-700 mb-6 max-w-2xl mx-auto">
             Many visitors are ready to book after choosing a service—so you can secure your appointment right here.
@@ -253,9 +279,9 @@ const Services = () => {
 
       {/* Testimonials */}
       <div className="section-padding section-bg-alt">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold text-center mb-12">What Our Clients Say</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="flex flex-wrap justify-center gap-8">
             {[
               {
                 name: 'Tamara Argueta',
@@ -274,10 +300,10 @@ const Services = () => {
                 href={testimonial.sourceUrl} 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="h-full"
+                className="block w-full max-w-xl mx-auto"
               >
-                <div className="card h-full flex flex-col p-6">
-                  <div className="mb-4">
+                <div className="card h-full flex flex-col p-6 text-center">
+                  <div className="mb-4 flex justify-center">
                     <img 
                       src="/images/5-star-rating.svg" 
                       alt="5 star rating"
