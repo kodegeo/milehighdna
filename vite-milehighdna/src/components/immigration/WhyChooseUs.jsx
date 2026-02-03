@@ -1,29 +1,29 @@
 const WhyChooseUs = () => {
     const benefits = [
       {
-        title: 'AABB-Accredited Lab',
+        title: 'U.S. DNA Collection',
         description:
-          'All tests are processed through an AABB-accredited laboratory, approved by USCIS and U.S. embassies worldwide.',
-      },
-      {
-        title: 'Fast & Reliable Results',
-        description:
-          'Results are typically available within 3–5 business days after collection. Expedited processing available.',
+          'Appointments are coordinated at our Denver office or approved partner facilities nationwide, with strict chain-of-custody procedures for USCIS acceptance.',
       },
       {
         title: 'International Coordination',
         description:
-          'We work directly with U.S. embassies and clinics overseas to coordinate testing for family members abroad.',
+          'Secure DNA kit delivery to U.S. Embassies and Consulates abroad, creating a seamless experience for families with relatives outside the United States.',
       },
       {
-        title: 'Bilingual Support (English & Spanish)',
+        title: 'Rapid Laboratory Processing',
         description:
-          'Our team speaks your language — we offer full support in both English and Spanish to make the process stress-free.',
+          'Testing is performed by UFC, an AABB-accredited laboratory approved for USCIS cases. Quick and accurate results with full compliance.',
       },
       {
-        title: 'Simple, Secure Process',
+        title: 'Direct Result Submission',
         description:
-          'From scheduling to sample collection and result delivery, we make the process easy and fully compliant with immigration regulations.',
+          'Official results are sent directly to USCIS, passport agencies, or the requesting immigration authority. You also receive a copy for your records.',
+      },
+      {
+        title: 'Nationwide Support',
+        description:
+          'Assistance available throughout the United States. Our team guides you through every step with clarity and confidence.',
       },
     ];
   

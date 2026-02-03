@@ -36,10 +36,10 @@ const Appointments = () => {
               "telephone": "+1-720-900-9342",
               "address": {
                 "@type": "PostalAddress",
-                "streetAddress": "700 N Colorado Blvd Suite 574",
+                "streetAddress": "975 N. Lincoln Street Suite 205 C",
                 "addressLocality": "Denver",
                 "addressRegion": "CO",
-                "postalCode": "80206",
+                "postalCode": "80203",
                 "addressCountry": "US"
               }
             },
@@ -67,10 +67,10 @@ const Appointments = () => {
                       "telephone": "+1-720-900-9342",
                       "address": {
                         "@type": "PostalAddress",
-                        "streetAddress": "700 N Colorado Blvd Suite 574",
+                        "streetAddress": "975 N. Lincoln Street Suite 205 C",
                         "addressLocality": "Denver",
                         "addressRegion": "CO",
-                        "postalCode": "80206",
+                        "postalCode": "80203",
                         "addressCountry": "US"
                       }
                     },
@@ -96,10 +96,10 @@ const Appointments = () => {
                       "telephone": "+1-720-900-9342",
                       "address": {
                         "@type": "PostalAddress",
-                        "streetAddress": "700 N Colorado Blvd Suite 574",
+                        "streetAddress": "975 N. Lincoln Street Suite 205 C",
                         "addressLocality": "Denver",
                         "addressRegion": "CO",
-                        "postalCode": "80206",
+                        "postalCode": "80203",
                         "addressCountry": "US"
                       }
                     },
@@ -125,10 +125,10 @@ const Appointments = () => {
                       "telephone": "+1-720-900-9342",
                       "address": {
                         "@type": "PostalAddress",
-                        "streetAddress": "700 N Colorado Blvd Suite 574",
+                        "streetAddress": "975 N. Lincoln Street Suite 205 C",
                         "addressLocality": "Denver",
                         "addressRegion": "CO",
-                        "postalCode": "80206",
+                        "postalCode": "80203",
                         "addressCountry": "US"
                       }
                     },

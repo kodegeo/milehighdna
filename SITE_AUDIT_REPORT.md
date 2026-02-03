@@ -150,7 +150,7 @@ This audit identified **67 distinct issues** across 10 categories, with **12 cri
 
 **Home.jsx**
 - **Status:** ✅ Has LocalBusiness schema (lines 42-71)
-- **Issue:** Address in schema (line 53) shows `"700 N Colorado Blvd Suite 574"` but should verify against actual business address
+- **Issue:** Address in schema (line 53) shows `"975 N. Lincoln Street Suite 205 C"` but should verify against actual business address
 
 **Prenatal.jsx**
 - **Status:** ✅ Has MedicalBusiness schema mentioned in search results

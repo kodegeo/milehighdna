@@ -1,10 +1,10 @@
 const WhoNeedsTest = () => {
     const relationships = [
-      'Parent / Child',
-      'Siblings',
-      'Grandparent / Grandchild',
-      'Aunt / Uncle and Niece / Nephew',
-      'Other Biological Relatives (case-by-case)',
+      'Parentage testing (mother, father, and child)',
+      'Full and half sibling testing',
+      'Avuncular testing (aunts, uncles, nieces, nephews)',
+      'Grandparent testing',
+      'Extended-family testing when requested',
     ];
   
     return (
@@ -14,7 +14,7 @@ const WhoNeedsTest = () => {
             Who Needs Immigration DNA Testing?
           </h2>
           <p className="text-lg text-gray-600 mb-8">
-            Immigration DNA testing is typically required when there is a need to prove a biological relationship for a visa or residency petition. This is often used when documents are unavailable, incomplete, or questioned by immigration authorities.
+            Mile High DNA Testing provides all USCIS-recognized relationship tests for visa, passport, and citizenship cases. Immigration DNA testing is typically requested when documentation is insufficient to establish a biological relationship — USCIS, embassies, or consulates will specify if a DNA test is required for your case.
           </p>
   
           <div className="grid gap-4 md:grid-cols-2 text-left max-w-xl mx-auto">

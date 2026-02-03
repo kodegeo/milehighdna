@@ -6,10 +6,15 @@ import { Link } from 'react-router-dom';
 import HeroSection from '../../components/common/HeroSection';
 import Pricing from '../../components/immigration/Pricing';
 import Overview from '../../components/immigration/Overview';
+import USCISRelationshipTesting from '../../components/immigration/USCISRelationshipTesting';
+import ProcessCompliance from '../../components/immigration/ProcessCompliance';
+import StreamlinedServices from '../../components/immigration/StreamlinedServices';
+import WhatYoullNeed from '../../components/immigration/WhatYoullNeed';
 import Steps from '../../components/immigration/Steps';
 import WhoNeedsTest from '../../components/immigration/WhoNeedsThis';
 import WhyChooseUs from '../../components/immigration/WhyChooseUs';
 import Compliance from '../../components/immigration/Compliance';
+import ImportantInfoAndHelp from '../../components/immigration/ImportantInfoAndHelp';
 import ServingColorado from '../../components/common/ServingColorado';
 import CallToAction from '../../components/immigration/CallToAction';
 
@@ -117,7 +122,7 @@ const ImmigrationDNATesting = () => {
                 "name": "What is immigration DNA testing?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Immigration DNA testing is a specialized process that verifies biological relationships for USCIS, embassy, and consular cases. Testing must be conducted through an AABB-accredited laboratory and follow strict protocols required for immigration applications."
+                  "text": "Immigration DNA testing verifies biological relationships for visa, passport, and citizenship cases when required by USCIS or U.S. Embassies and Consulates. All testing is conducted through an AABB-accredited laboratory under strict USCIS chain-of-custody procedures to ensure legal admissibility."
                 }
               },
               {
@@ -133,7 +138,7 @@ const ImmigrationDNATesting = () => {
                 "name": "How long does immigration DNA testing take?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Immigration DNA testing involves coordination with an AABB-accredited laboratory and may include international sample collection. Timeline varies based on case requirements, laboratory processing, and any international coordination needed."
+                  "text": "Timeline varies by case requirements, international coordination, and laboratory processing. After you submit the referral form, our AABB-accredited lab partner will provide case-specific timelines and next steps."
                 }
               },
               {
@@ -141,7 +146,7 @@ const ImmigrationDNATesting = () => {
                 "name": "Can I use a regular DNA test for immigration purposes?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "No. Immigration cases require testing through an AABB-accredited laboratory with specific documentation and chain-of-custody procedures. Regular DNA tests are not accepted for immigration purposes."
+                  "text": "No. Immigration DNA testing must be initiated through an AABB-accredited laboratory and follow strict USCIS and U.S. Department of State compliance requirements. Regular DNA tests are not accepted for immigration purposes."
                 }
               }
             ]
@@ -151,34 +156,41 @@ const ImmigrationDNATesting = () => {
 
       {/* Hero Section */}
       <HeroSection
-        title="USCIS-Compliant Immigration DNA Testing"
-        subtitle="AABB-accredited immigration DNA testing in Denver for USCIS, embassies, and visa cases. We coordinate directly with immigration authorities for secure delivery of results."
+        title="Immigration DNA Testing for USCIS and U.S. Embassies"
+        subtitle="USCIS-compliant DNA testing with an AABB-accredited lab partner. Local DNA collections in Denver with worldwide coordination for family members living abroad."
         imageUrl={immigrationHero}
-        buttonText="Schedule Your Test"
-        buttonLink="https://calendly.com/milehighdnatesting/immigration"
+        buttonText="Get Started Today"
+        buttonLink="https://ufclab.forms-db.com/view.php?id=10429"
         secondaryButtonText="Call Now"
-        secondaryButtonLink="tel:7209009342"
+        secondaryButtonLink="tel:+17209009342"
       />
-
-      {/* Pricing */}
-      <Pricing />
 
       {/* Overview */}
       <Overview />
 
+      {/* USCIS-Approved Relationship Testing */}
+      <USCISRelationshipTesting />
+
+      {/* Make Your Immigration Process Easier */}
+      <ProcessCompliance />
+
+      {/* Streamlined Immigration DNA Testing Services */}
+      <StreamlinedServices />
+
+      {/* What You'll Need Before Getting Started */}
+      <WhatYoullNeed />
+
       {/* Steps */}
       <Steps />
 
-      {/* Who Needs This Test */}
-      <WhoNeedsTest />
+      {/* Important Information & Need Assistance */}
+      <ImportantInfoAndHelp />
 
-      {/* Why Choose Us */}
-      <WhyChooseUs />
 
       {/* TESTIMONIALS */}
-      <section className="section-padding section-bg-alt">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12">What Our Clients Say</h2>
+      <section className="py-12 md:py-16 px-6 md:px-12 lg:px-16 bg-[#F5F7FA]">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl font-bold text-[#1A3C59] text-center mb-10">What Our Clients Say</h2>
           <div className="max-w-2xl mx-auto">
             {[
               {
@@ -205,10 +217,10 @@ const ImmigrationDNATesting = () => {
                     />
                   </div>
                   <div className="mb-4">
-                    <h4 className="font-bold text-lg">{testimonial.name}</h4>
-                    <p className="text-gray-600">{testimonial.role}</p>
+                    <h4 className="font-semibold text-lg text-[#1A3C59]">{testimonial.name}</h4>
+                    <p className="text-base text-gray-600">{testimonial.role}</p>
                   </div>
-                  <p className="text-gray-700 flex-grow">{testimonial.text}</p>
+                  <p className="text-base text-gray-700 flex-grow leading-relaxed">{testimonial.text}</p>
                   <p className="text-sm text-gray-500 mt-4">{testimonial.source}</p>
                 </div>
               </a>
@@ -225,56 +237,12 @@ const ImmigrationDNATesting = () => {
 
       {/* Compliance */}
       <Compliance />
-
-      {/* FAQ Section */}
-      <div className="section-padding section-bg-alt">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold text-[#1A3C59] mb-10 text-center">
-              Frequently Asked Questions
-            </h2>
-            <div className="space-y-4">
-              <div className="card p-6">
-                <h3 className="text-xl font-bold text-[#1A3C59] mb-3">
-                  What is immigration DNA testing?
-                </h3>
-                <p className="text-base text-gray-600 leading-relaxed">
-                  Immigration DNA testing is a specialized process that verifies biological relationships for USCIS, embassy, and consular cases. Testing must be conducted through an AABB-accredited laboratory and follow strict protocols required for immigration applications.
-                </p>
-              </div>
-              <div className="card p-6">
-                <h3 className="text-xl font-bold text-[#1A3C59] mb-3">
-                  Is immigration DNA testing required for all visa applications?
-                </h3>
-                <p className="text-base text-gray-600 leading-relaxed">
-                  No. Immigration DNA testing is typically requested by USCIS, embassies, or consulates when documentation is insufficient to establish a biological relationship. The requesting agency will specify if DNA testing is required for your case.
-                </p>
-              </div>
-              <div className="card p-6">
-                <h3 className="text-xl font-bold text-[#1A3C59] mb-3">
-                  How long does immigration DNA testing take?
-                </h3>
-                <p className="text-base text-gray-600 leading-relaxed">
-                  Immigration DNA testing involves coordination with an AABB-accredited laboratory and may include international sample collection. Timeline varies based on case requirements, laboratory processing, and any international coordination needed.
-                </p>
-              </div>
-              <div className="card p-6">
-                <h3 className="text-xl font-bold text-[#1A3C59] mb-3">
-                  Can I use a regular DNA test for immigration purposes?
-                </h3>
-                <p className="text-base text-gray-600 leading-relaxed">
-                  No. Immigration cases require testing through an AABB-accredited laboratory with specific documentation and chain-of-custody procedures. Regular DNA tests are not accepted for immigration purposes.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
       
       {/* Social Share Block */}
-      <div className="mt-12 bg-gray-50 p-6 rounded-xl border border-gray-200 max-w-4xl mx-auto px-4">
-        <h3 className="text-xl font-semibold mb-4 text-gray-800 text-center">Share This Page</h3>
-        <p className="text-center text-gray-600 mb-6">Help others find reliable DNA testing services in Denver.</p>
+      <div className="py-10 md:py-12 px-6 md:px-12 lg:px-16 bg-white">
+        <div className="max-w-4xl mx-auto">
+          <h3 className="text-xl font-semibold text-[#1A3C59] mb-4 text-center">Share This Page</h3>
+          <p className="text-center text-base text-gray-600 mb-6 leading-relaxed">Help others find reliable immigration DNA testing in Denver.</p>
         <div className="flex justify-center gap-4 flex-wrap">
           <a 
             href="https://www.facebook.com/sharer/sharer.php?u=https://milehighdnatesting.com/services/immigration-dna-testing" 
@@ -307,6 +275,7 @@ const ImmigrationDNATesting = () => {
             </svg>
             <span className="font-medium">Email</span>
           </a>
+        </div>
         </div>
       </div>
     </main>

@@ -307,8 +307,8 @@ Found **49 phone number links** (`tel:`) across the codebase:
 
 #### 4.2 **Inconsistent Address Data**
 
-- **Home page schema:** `700 N Colorado Blvd Suite 574, Denver, CO 80206`
-- **Legal Paternity schema:** `700 N Colorado Blvd Suite 574, Denver, CO 80206`
+- **Home page schema:** `975 N. Lincoln Street Suite 205 C, Denver, CO 80203`
+- **Legal Paternity schema:** `975 N. Lincoln Street Suite 205 C, Denver, CO 80203`
 - **Peace of Mind schema:** `975 N Lincoln St, Suite 205C, Denver, CO 80203`
 - **Prenatal schema:** `975 N Lincoln St, Suite 205C, Denver, CO 80203`
 

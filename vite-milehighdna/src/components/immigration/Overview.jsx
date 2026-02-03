@@ -1,32 +1,31 @@
 const Overview = () => {
     return (
-      <section className="bg-white py-16 px-6 md:px-16 lg:px-24">
-        <div className="max-w-5xl mx-auto text-center">
-          <h2 className="text-3xl font-bold text-gray-800 mb-6">
-            What is Immigration DNA Testing?
+      <section className="bg-white py-12 md:py-16 px-6 md:px-12 lg:px-16">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-3xl font-bold text-[#1A3C59] mb-8">
+            Trusted Immigration DNA Testing in Denver
           </h2>
-          <p className="text-lg text-gray-600 mb-8">
-            Immigration DNA testing is used to verify biological relationships for immigration purposes when required by USCIS, U.S. embassies, or other immigration authorities. It is a reliable and legally accepted method to support your petition and prove family relationships when documents are insufficient or unavailable.
+          <p className="text-base md:text-lg text-gray-600 mb-8 leading-relaxed">
+            Mile High DNA Testing, in partnership with an{' '}
+            <a href="https://www.ufclab.com/lab-services/immigration" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline">AABB-accredited</a>
+            {' '}and CAP-certified laboratory, provides specialized immigration DNA testing for visa, passport, and citizenship cases. All immigration DNA testing services are fully compliant with USCIS protocols. We manage the entire testing process — coordinating U.S. sample collection and international logistics — to ensure timely delivery of official results to{' '}
+            <a href="https://travel.state.gov/content/travel/en/us-visas/visa-information-resources/list-of-posts.html" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline">U.S. Embassies and Consulates</a>.
           </p>
   
-          <div className="grid gap-8 md:grid-cols-3 text-left">
-            <div className="p-6 border rounded-xl shadow-sm hover:shadow-md transition">
-              <h3 className="text-xl font-semibold text-blue-700 mb-2">USCIS-Compliant</h3>
-              <p className="text-gray-600">
-              All immigration DNA tests are processed by AABB-accredited laboratories and fully compliant with USCIS and U.S. embassy requirements for visa, green card, and family-based petitions.
+          <div className="grid gap-6 md:grid-cols-2 text-left">
+            <div className="p-6 bg-white border border-gray-200 rounded-xl shadow-sm hover:shadow-md transition">
+              <h3 className="text-xl font-semibold text-[#1A3C59] mb-3">USCIS-Compliant</h3>
+              <p className="text-base text-gray-600 leading-relaxed">
+                All immigration DNA tests follow strict USCIS chain-of-custody procedures to ensure legal admissibility. Testing is conducted through our{' '}
+                <a href="https://www.ufclab.com/lab-services/immigration" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline">AABB-accredited</a>
+                {' '}lab partner in full compliance with USCIS and U.S. Department of State requirements.
               </p>
             </div>
-            <div className="p-6 border rounded-xl shadow-sm hover:shadow-md transition">
-              <h3 className="text-xl font-semibold text-blue-700 mb-2">Results Timeline</h3>
-              <p className="text-gray-600">
-              Immigration DNA testing timelines vary depending on the destination country, specific U.S. embassy requirements, and international shipping logistics. Schedule your appointment today to get accurate timelines for your case.
-            </p>
-            </div>
-            <div className="p-6 border rounded-xl shadow-sm hover:shadow-md transition">
-              <h3 className="text-xl font-semibold text-blue-700 mb-2">International Coordination</h3>
-              <p className="text-gray-600">
-              We coordinate directly with U.S. embassies and overseas collection clinics to ensure timely and secure DNA sample collection for family members outside the United States.
-</p>
+            <div className="p-6 bg-white border border-gray-200 rounded-xl shadow-sm hover:shadow-md transition">
+              <h3 className="text-xl font-semibold text-[#1A3C59] mb-3">Worldwide Support, Trusted Outcomes</h3>
+              <p className="text-base text-gray-600 leading-relaxed">
+              Our international network allows quick shipment of DNA kits abroad, ensuring a seamless testing experience. Results are quick, accurate and sent straight to immigration authorities to support your application.
+              </p>
             </div>
           </div>
         </div>
