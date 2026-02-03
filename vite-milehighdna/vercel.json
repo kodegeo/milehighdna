@@ -26,40 +26,59 @@
     },
 
     {
+      "source": "/paternity-test-colorado",
+      "destination": "/dna-testing-colorado",
+      "permanent": true
+    },
+
+    {
       "source": "/peace-of-mind-paternity-test",
-      "destination": "/peace-of-mind-paternity-tests",
+      "destination": "/services/non-legal-paternity-testing",
       "permanent": true
     },
     {
       "source": "/peace-of-mind-tests",
-      "destination": "/peace-of-mind-paternity-tests",
+      "destination": "/services/non-legal-paternity-testing",
       "permanent": true
     },
 
     {
       "source": "/legal-paternity-test",
-      "destination": "/legal-paternity-tests",
+      "destination": "/services/legal-paternity-testing",
       "permanent": true
     },
     {
       "source": "/legal-dna-testing",
-      "destination": "/legal-paternity-tests",
+      "destination": "/services/legal-paternity-testing",
       "permanent": true
     },
 
     {
-      "source": "/appointment",
-      "destination": "/book-appointment",
+      "source": "/services/legal-paternity-testing-denver",
+      "destination": "/services/legal-paternity-testing",
       "permanent": true
     },
+
+    {
+      "source": "/services/non-legal-paternity-testing-denver",
+      "destination": "/services/non-legal-paternity-testing",
+      "permanent": true
+    },
+
+    {
+      "source": "/services/prenatal-paternity-testing-denver",
+      "destination": "/services/prenatal-paternity-testing",
+      "permanent": true
+    },
+
     {
       "source": "/schedule",
-      "destination": "/book-appointment",
+      "destination": "/appointments",
       "permanent": true
     },
     {
       "source": "/schedule-appointment",
-      "destination": "/book-appointment",
+      "destination": "/appointments",
       "permanent": true
     },
 
@@ -111,23 +130,22 @@
     },
 
     {
+      "source": "/dna-testing-types",
+      "destination": "/guides/paternity-test-guide",
+      "permanent": true
+    },
+    {
       "source": "/dna-test-types",
-      "destination": "/dna-testing-types",
+      "destination": "/guides/paternity-test-guide",
       "permanent": true
     },
 
     {
       "source": "/paternity-testing-colorado",
-      "destination": "/paternity-test-colorado",
-      "permanent": true
-    },
-    
-    {
-      "source": "/dna-test-colorado",
       "destination": "/dna-testing-colorado",
       "permanent": true
     },
-
+    
     {
       "source": "/mile-high-dna-corner/prenatal-dna-cost-guide",
       "destination": "/guides/prenatal-dna-test-cost",

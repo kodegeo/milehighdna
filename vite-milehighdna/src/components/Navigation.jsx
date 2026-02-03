@@ -3,6 +3,18 @@ import { Link } from 'react-router-dom';
 import '../styles/global.css';
 import logo from '../assets/images/milehigh-dna-logo.png';
 
+const GUIDE_ITEMS = [
+  { label: 'Paternity Test Guide', to: '/guides/paternity-test-guide' },
+  { label: 'Legal DNA Test Cost', to: '/guides/legal-dna-test-cost' },
+  { label: 'Non-Legal DNA Test Cost', to: '/guides/non-legal-dna-test-cost' },
+  { label: 'Prenatal DNA Test Cost', to: '/guides/prenatal-dna-test-cost' },
+];
+
+const ABOUT_ITEMS = [
+  { label: 'About Us', to: '/about' },
+  { label: 'AABB Accreditation', to: '/aabb-accreditation' },
+];
+
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState(null);
@@ -14,6 +26,15 @@ const Navigation = () => {
       document.body.style.overflow = 'auto';
     };
   }, [isMenuOpen]);
+
+  const closeDropdown = () => setOpenDropdown(null);
+
+  const handleDropdownKeyDown = (e, name) => {
+    if (e.key === 'Escape') {
+      closeDropdown();
+      e.currentTarget.focus();
+    }
+  };
 
   return (
     <nav className="bg-white border-b border-gray-200 shadow-sm sticky top-0 z-50">
@@ -36,68 +57,145 @@ const Navigation = () => {
           </div>
           {/* Desktop Navigation */}
           <div className="hidden md:flex md:items-center md:space-x-8">
-            <Link to="/about" className="text-gray-700 hover:text-blue-600 transition duration-300">About Us</Link>
-            <Link to="/aabb-accreditation" className="text-gray-700 hover:text-blue-600 transition duration-300">AABB Accreditation</Link>
-            
+            {/* About Dropdown */}
+            <div
+              className="relative"
+              onMouseEnter={() => setOpenDropdown('about')}
+              onMouseLeave={closeDropdown}
+            >
+              <button
+                type="button"
+                className="text-gray-700 hover:text-blue-600 transition duration-300 flex items-center"
+                aria-expanded={openDropdown === 'about'}
+                aria-haspopup="true"
+                aria-controls="nav-about-menu"
+                id="nav-about-trigger"
+                onClick={() => setOpenDropdown(openDropdown === 'about' ? null : 'about')}
+                onKeyDown={(e) => handleDropdownKeyDown(e, 'about')}
+              >
+                About
+                <svg className="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+              {openDropdown === 'about' && (
+                <div
+                  id="nav-about-menu"
+                  role="menu"
+                  aria-labelledby="nav-about-trigger"
+                  className="absolute top-[100%] left-0 bg-white border border-gray-200 shadow-lg rounded-md pt-2 w-52 z-50"
+                >
+                  {ABOUT_ITEMS.map(({ label, to }) => (
+                    <Link
+                      key={to}
+                      to={to}
+                      role="menuitem"
+                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                      onClick={closeDropdown}
+                    >
+                      {label}
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </div>
+
+            {/* Guides Dropdown */}
+            <div
+              className="relative"
+              onMouseEnter={() => setOpenDropdown('guides')}
+              onMouseLeave={closeDropdown}
+            >
+              <button
+                type="button"
+                className="text-gray-700 hover:text-blue-600 transition duration-300 flex items-center"
+                aria-expanded={openDropdown === 'guides'}
+                aria-haspopup="true"
+                aria-controls="nav-guides-menu"
+                id="nav-guides-trigger"
+                onClick={() => setOpenDropdown(openDropdown === 'guides' ? null : 'guides')}
+                onKeyDown={(e) => handleDropdownKeyDown(e, 'guides')}
+              >
+                Guides
+                <svg className="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+              {openDropdown === 'guides' && (
+                <div
+                  id="nav-guides-menu"
+                  role="menu"
+                  aria-labelledby="nav-guides-trigger"
+                  className="absolute top-[100%] left-0 bg-white border border-gray-200 shadow-lg rounded-md pt-2 w-64 z-50"
+                >
+                  {GUIDE_ITEMS.map(({ label, to }) => (
+                    <Link
+                      key={to}
+                      to={to}
+                      role="menuitem"
+                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                      onClick={closeDropdown}
+                    >
+                      {label}
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </div>
 
             {/* Services Dropdown */}
             <div
-                className="relative"
-                onMouseEnter={() => setOpenDropdown("services")}
-                onMouseLeave={() => setOpenDropdown(null)}
+              className="relative"
+              onMouseEnter={() => setOpenDropdown('services')}
+              onMouseLeave={closeDropdown}
+            >
+              <button
+                type="button"
+                className="text-gray-700 hover:text-blue-600 transition duration-300 flex items-center"
+                aria-expanded={openDropdown === 'services'}
+                aria-haspopup="true"
+                aria-controls="nav-services-menu"
+                id="nav-services-trigger"
+                onClick={() => setOpenDropdown(openDropdown === 'services' ? null : 'services')}
+                onKeyDown={(e) => handleDropdownKeyDown(e, 'services')}
+              >
+                Services
+                <svg className="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+              {openDropdown === 'services' && (
+                <div
+                  id="nav-services-menu"
+                  role="menu"
+                  aria-labelledby="nav-services-trigger"
+                  className="absolute top-[100%] bg-white border border-gray-200 shadow-lg rounded-md pt-2 w-64 z-50 max-h-72 overflow-y-auto"
                 >
-                <button className="text-gray-700 hover:text-blue-600 transition duration-300">
-                    Services
-                </button>
-
-                {openDropdown === "services" && (
-                    <div className="absolute top-[100%] bg-white border border-gray-200 shadow-lg rounded-md pt-2 w-64 z-50 max-h-72 overflow-y-auto">
-                    <Link
-                        to="/services"
-                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" 
-                    >
-                        All DNA Testing Services
-                    </Link>
-                    <Link
-                        to="/services/legal-paternity-testing"
-                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" 
-                    >
-                        Legal Paternity DNA Testing
-                    </Link>
-                    <Link
-                        to="/services/non-legal-paternity-testing"
-                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" 
-                    >
-                        Non Legal Paternity Testing
-                    </Link>
-
-                    <Link
-                        to="/services/prenatal-paternity-testing"
-                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                    >
-                        Prenatal DNA Testing
-                    </Link> 
-                    <Link
-                        to="/services/grandparentage-testing"
-                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                    >
-                        Grandparentage Testing
-                    </Link>
-                    <Link
-                        to="/services/siblingship-testing"
-                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                    >
-                        Siblingship Testing
-                    </Link>
-                    <Link
-                        to="/products/peace-of-mind-dna-kit"
-                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                    >
-                        At Home DNA Test Kits
-                    </Link>
-                    </div>
-                )}
+                  <Link to="/services" role="menuitem" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={closeDropdown}>
+                    All DNA Testing Services
+                  </Link>
+                  <Link to="/services/legal-paternity-testing" role="menuitem" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={closeDropdown}>
+                    Legal Paternity DNA Testing
+                  </Link>
+                  <Link to="/services/non-legal-paternity-testing" role="menuitem" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={closeDropdown}>
+                    Non Legal Paternity Testing
+                  </Link>
+                  <Link to="/services/prenatal-paternity-testing" role="menuitem" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={closeDropdown}>
+                    Prenatal DNA Testing
+                  </Link>
+                  <Link to="/services/grandparentage-testing" role="menuitem" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={closeDropdown}>
+                    Grandparentage Testing
+                  </Link>
+                  <Link to="/services/siblingship-testing" role="menuitem" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={closeDropdown}>
+                    Siblingship Testing
+                  </Link>
+                  <Link to="/products/peace-of-mind-dna-kit" role="menuitem" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={closeDropdown}>
+                    At Home DNA Test Kits
+                  </Link>
                 </div>
+              )}
+            </div>
+
             <Link to="/mile-high-dna-corner" className="text-gray-700 hover:text-blue-600 transition duration-300">Mile High DNA Corner</Link>
 
             <Link to="/locations" className="text-gray-700 hover:text-blue-600 transition duration-300">Locations</Link>
@@ -132,18 +230,52 @@ const Navigation = () => {
         {/* Mobile Menu - moved inside max-w container */}
         {isMenuOpen && (
           <div className="md:hidden px-4 pb-4 max-h-[80vh] overflow-y-auto">
-            <Link to="/about" className="text-gray-700 hover:text-blue-600 transition duration-300 block py-2" onClick={() => setIsMenuOpen(false)}>About Us</Link>
-            <Link to="/aabb-accreditation" className="text-gray-700 hover:text-blue-600 transition duration-300 block py-2" onClick={() => setIsMenuOpen(false)}>AABB Accreditation</Link>
+            <details className="py-2" aria-label="About menu">
+              <summary className="text-gray-700 hover:text-blue-600 transition duration-300 cursor-pointer list-none flex items-center justify-between">
+                <span>About</span>
+                <svg className="w-4 h-4 flex-shrink-0 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </summary>
+              <div className="ml-4 space-y-1 mt-1">
+                {ABOUT_ITEMS.map(({ label, to }) => (
+                  <Link key={to} to={to} className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={() => setIsMenuOpen(false)}>
+                    {label}
+                  </Link>
+                ))}
+              </div>
+            </details>
 
-            <details className="py-2">
-              <summary className="text-gray-700 hover:text-blue-600 transition duration-300 cursor-pointer">Services</summary>
+            <details className="py-2" aria-label="Guides menu">
+              <summary className="text-gray-700 hover:text-blue-600 transition duration-300 cursor-pointer list-none flex items-center justify-between">
+                <span>Guides</span>
+                <svg className="w-4 h-4 flex-shrink-0 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </summary>
+              <div className="ml-4 space-y-1 mt-1">
+                {GUIDE_ITEMS.map(({ label, to }) => (
+                  <Link key={to} to={to} className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={() => setIsMenuOpen(false)}>
+                    {label}
+                  </Link>
+                ))}
+              </div>
+            </details>
+
+            <details className="py-2" aria-label="Services menu">
+              <summary className="text-gray-700 hover:text-blue-600 transition duration-300 cursor-pointer list-none flex items-center justify-between">
+                <span>Services</span>
+                <svg className="w-4 h-4 flex-shrink-0 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </summary>
               <div className="ml-4 space-y-1 mt-1 max-h-[300px] overflow-y-auto">
+                <Link to="/services" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={() => setIsMenuOpen(false)}>All DNA Testing Services</Link>
                 <Link to="/services/legal-paternity-testing" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={() => setIsMenuOpen(false)}>Legal Paternity DNA Testing</Link>
                 <Link to="/services/non-legal-paternity-testing" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={() => setIsMenuOpen(false)}>Non Legal Paternity DNA Testing</Link>
-
                 <Link to="/services/prenatal-paternity-testing" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={() => setIsMenuOpen(false)}>Prenatal DNA Testing</Link>
-                <Link to="/services/grandparentage-testing" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={() => setIsMenuOpen(false)}> Grandparentage Testing </Link>
-                <Link to="/services/siblingship-testing" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={() => setIsMenuOpen(false)}> Siblingship Testing </Link> 
+                <Link to="/services/grandparentage-testing" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={() => setIsMenuOpen(false)}>Grandparentage Testing</Link>
+                <Link to="/services/siblingship-testing" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={() => setIsMenuOpen(false)}>Siblingship Testing</Link>
                 <Link to="/products/peace-of-mind-dna-kit" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={() => setIsMenuOpen(false)}>At Home DNA Test Kits</Link>
               </div>
             </details>

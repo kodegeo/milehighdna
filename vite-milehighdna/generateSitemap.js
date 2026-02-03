@@ -54,9 +54,9 @@ const routeConfig = {
       'es-us': '/es/prueba-de-paternidad-prenatal'
     }
   },
-  '/dna-testing-types': {
-    priority: '0.9',
-    changefreq: 'weekly'
+  '/guides/paternity-test-guide': {
+    priority: '0.7',
+    changefreq: 'monthly'
   },
   '/family-relationship-dna': {
     priority: '0.1',

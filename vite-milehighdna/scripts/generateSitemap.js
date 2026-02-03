@@ -28,6 +28,7 @@ const EXCLUDED_ROUTES = [
   '/cancel',
   '/success',
   '/dna-testing-denver', // Not part of current strategy
+  '/dna-testing-types', // 301 to /guides/paternity-test-guide
   '*', // 404 page
 ];
 
@@ -164,8 +165,7 @@ function getPriorityAndFreq(route) {
   }
   
   // Other legacy patterns
-  if (route === '/dna-testing-types' ||
-      route === '/family-relationship-dna' ||
+  if (route === '/family-relationship-dna' ||
       route.startsWith('/products/')) {
     return { priority: '0.3', changefreq: 'yearly' };
   }

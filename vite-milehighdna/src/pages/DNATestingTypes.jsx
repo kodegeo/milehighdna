@@ -20,11 +20,11 @@ const DNATestingTypes = () => {
         <meta property="og:title" content="DNA Testing Types in Denver | Legal vs Non-Legal Paternity Test Guide" />
 <meta property="og:description" content="Compare legal and non-legal DNA testing options in Denver. Learn costs, requirements, and which paternity test is right for you." />
         <meta property="og:image" content="https://milehighdnatesting.com/images/landing-1.1.png" />
-        <meta property="og:url" content="https://milehighdnatesting.com/dna-testing-types" />
+        <meta property="og:url" content="https://milehighdnatesting.com/guides/paternity-test-guide" />
         <meta property="og:type" content="article" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:image" content="https://milehighdnatesting.com/images/landing-1.1.png" />
-        <link rel="canonical" href="https://milehighdnatesting.com/dna-testing-types" />
+        <link rel="canonical" href="https://milehighdnatesting.com/guides/paternity-test-guide" />
 
         
         
@@ -40,7 +40,7 @@ const DNATestingTypes = () => {
               "inLanguage": "en-US",
               "mainEntityOfPage": {
                 "@type": "WebPage",
-                "@id": "https://milehighdnatesting.com/dna-testing-types"
+                "@id": "https://milehighdnatesting.com/guides/paternity-test-guide"
               },
               "description": "Complete guide to DNA testing types in Denver, including legal vs non-legal testing options, costs, and requirements."
             },
@@ -70,7 +70,7 @@ const DNATestingTypes = () => {
                   "@type": "Offer",
                   "priceCurrency": "USD",
                   "price": "249.00",
-                  "url": "https://milehighdnatesting.com/dna-testing-types",
+                  "url": "https://milehighdnatesting.com/guides/paternity-test-guide",
                   "availability": "https://schema.org/InStock"
                 }
               },

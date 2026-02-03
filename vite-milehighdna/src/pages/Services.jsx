@@ -6,11 +6,19 @@ import peaceOfMindHero from '../assets/images/paternity-peace-of-mind-denver.png
 import avuncularHero from '../assets/images/family-dna-hero.png';
 import discreetHero from '../assets/images/father_baby.jpg';
 import grandparentageHero from '../assets/images/grandparentage-hero.png';
-import siblingshipHero from '../assets/images/siblingship_1.png';
-import prenatalHero from '../assets/images/service_pre.png';
-import immigrationHero from '../assets/images/service_imma.png';
+import siblingshipHero from '../assets/images/siblingship-hero.png';
+import twinZygosityHero from '../assets/images/siblingship_1.png';
+import prenatalHero from '../assets/images/prenatal-3.png';
+import immigrationHero from '../assets/images/immigration-dna.png';
 import servicesBanner from '../assets/images/services-1.jpg';
 import ServingColorado from '../components/common/ServingColorado';
+import forensicsHero from '../assets/images/forensic.png';
+import yStrHero from '../assets/images/service_imma.png';
+import mtdnaHero from '../assets/images/grandparantage_1.png';
+import gpsOriginsHero from '../assets/images/gps.png';
+import infidelityHero from '../assets/images/infidelity.png';
+import healthyWeightHero from '../assets/images/healthy-weight.png';
+import atHomeKitsHero from '../assets/images/at-home-test-kit-1.png';
 import CallToAction from '../components/common/CallToAction';
 
 const services = [
@@ -73,9 +81,72 @@ const services = [
   {
     title: 'Forensic DNA Analysis',
     description: 'Forensic DNA analysis involves advanced genetic testing for complex cases, including legal investigations, missing persons, and specialized relationship analysis. This service may include enhanced testing methods and expert-level interpretation depending on case requirements.',
-    image: legalHero,
+    image: forensicsHero,
     link: '/services/forensic-dna-analysis',
     badge: 'Specialty Testing',
+  },
+  {
+    title: 'Infidelity DNA Testing',
+    description: 'Infidelity DNA testing provides discreet analysis using personal items or DNA samples to help confirm or exclude biological relationships. Conducted with strict confidentiality and sensitivity for private, non-court use.',
+    image: infidelityHero,
+    link: '/services/infidelity-dna-testing',
+    badge: '100% Confidential',
+  },
+  {
+    title: 'Peek-A-Boo Gender Reveal DNA Test',
+    description: 'Early gender reveal DNA testing determines your baby\'s gender as early as 6 weeks into pregnancy using a simple maternal blood draw. Fast, reliable results with no risk to the baby. Available in Denver and Colorado.',
+    image: prenatalHero,
+    link: '/services/gender-reveal-dna-testing',
+    badge: 'Early as 6 Weeks',
+  },
+  {
+    title: 'Twin Zygosity DNA Testing',
+    description: 'Twin zygosity DNA testing determines whether twins are identical or fraternal using precise DNA analysis. Used for medical insight, family knowledge, or personal clarity. Schedule in Denver or nearby.',
+    image: twinZygosityHero,
+    link: '/services/twin-zygosity-testing',
+    badge: 'Identical vs Fraternal',
+  },
+  {
+    title: 'Y-STR DNA Testing (Paternal Lineage)',
+    description: 'Y-STR DNA testing analyzes the male Y-chromosome to establish paternal lineage and shared male ancestry. Used for genealogy research, surname studies, and paternal relationship analysis.',
+    image: yStrHero,
+    link: '/services/y-str-dna-testing',
+    badge: 'Paternal Lineage',
+  },
+  {
+    title: 'mtDNA Testing (Maternal Lineage)',
+    description: 'Mitochondrial DNA (mtDNA) testing traces maternal ancestry through the direct maternal line. Useful for genealogy and extended maternal relationship testing when close maternal relatives are unavailable.',
+    image: mtdnaHero,
+    link: '/services/mtdna-testing',
+    badge: 'Maternal Lineage',
+  },
+  {
+    title: 'Lifestyle & Ancestry DNA Tests',
+    description: 'Lifestyle and ancestry DNA testing provides insight into genetic traits related to wellness, nutrition, and ancestral origins. Explore your genetics beyond paternity with professional testing in Colorado.',
+    image: servicesBanner,
+    link: '/services/lifestyle-ancestry-dna-testing',
+    badge: 'Wellness & Ancestry',
+  },
+  {
+    title: 'Healthy Weight DNA Test',
+    description: 'The Healthy Weight DNA Test analyzes genetic factors related to metabolism, diet response, and exercise tendencies. Personalize weight and wellness strategies based on your genetics.',
+    image: healthyWeightHero,
+    link: '/services/healthy-weight-dna-test',
+    badge: 'Personalized Wellness',
+  },
+  {
+    title: 'GPS Origins DNA Test',
+    description: 'The GPS Origins DNA Test provides detailed ancestry insights and geographic genetic origins using advanced DNA analysis. Ideal for deeper ancestral and regional genetic information.',
+    image: gpsOriginsHero,
+    link: '/services/gps-origins-dna-test',
+    badge: 'Ancestry & Origins',
+  },
+  {
+    title: 'At-Home DNA Kits (Postnatal)',
+    description: 'At-home DNA test kits offer convenient, non-legal postnatal DNA testing with the same laboratory accuracy as in-office testing. Processed by an AABB-accredited lab and shipped securely nationwide.',
+    image: atHomeKitsHero,
+    link: '/services/at-home-dna-kits',
+    badge: 'Convenient & Accurate',
   },
 ];
 
@@ -86,18 +157,18 @@ const Services = () => {
         <title>All DNA Testing Services | Mile High DNA Testing</title>
         <meta
           name="description"
-          content="Explore all DNA testing services offered by Mile High DNA Testing in Colorado. Legal paternity, peace of mind, discreet, immigration, prenatal, siblingship, grandparentage, avuncular, and forensic DNA testing available."
+          content="Explore all DNA testing services offered by Mile High DNA Testing in Colorado. Legal paternity, peace of mind, discreet, immigration, prenatal, siblingship, grandparentage, avuncular, forensic, infidelity, gender reveal, twin zygosity, Y-STR, mtDNA, lifestyle, healthy weight, GPS origins, and at-home DNA kits."
         />
         <meta
           name="keywords"
-          content="DNA testing Denver, paternity testing Colorado, legal DNA test, immigration DNA Colorado, discreet DNA testing, forensic DNA, prenatal paternity test"
+          content="DNA testing Denver, paternity testing Colorado, legal DNA test, immigration DNA Colorado, discreet DNA testing, forensic DNA, prenatal paternity test, infidelity DNA test, gender reveal DNA, twin zygosity, at-home DNA kit"
         />
         <link rel="canonical" href="https://milehighdnatesting.com/services" />
         
         {/* OG / Twitter */}
         <meta property="og:type" content="website" />
         <meta property="og:title" content="All DNA Testing Services | Mile High DNA Testing" />
-        <meta property="og:description" content="Explore all DNA testing services offered by Mile High DNA Testing in Colorado. Legal paternity, peace of mind, discreet, immigration, prenatal, siblingship, grandparentage, avuncular, and forensic DNA testing available." />
+        <meta property="og:description" content="Explore all DNA testing services offered by Mile High DNA Testing in Colorado. Legal paternity, peace of mind, discreet, immigration, prenatal, siblingship, grandparentage, avuncular, forensic, and more." />
         <meta property="og:image" content="https://milehighdnatesting.com/images/banner-1200.png" />
         <meta property="og:url" content="https://milehighdnatesting.com/services" />
         <meta name="twitter:card" content="summary_large_image" />

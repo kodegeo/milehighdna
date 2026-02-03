@@ -39,40 +39,10 @@
   </url>
 
   <url>
-    <loc>https://milehighdnatesting.com/book-appointment</loc>
-    <lastmod>2026-01-25T03:47:39.090Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en-us" href="https://milehighdnatesting.com/book-appointment" />
-    <xhtml:link rel="alternate" hreflang="es-us" href="https://milehighdnatesting.com/es/reservar-cita" />
-  </url>
-
-  <url>
-    <loc>https://milehighdnatesting.com/discreet-dna-testing</loc>
-    <lastmod>2026-01-25T03:47:39.090Z</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-
-  <url>
     <loc>https://milehighdnatesting.com/dna-testing-colorado</loc>
     <lastmod>2026-01-25T03:47:39.090Z</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-  <url>
-    <loc>https://milehighdnatesting.com/dna-testing-types</loc>
-    <lastmod>2026-01-25T03:47:39.090Z</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-
-  <url>
-    <loc>https://milehighdnatesting.com/family-relationship-dna</loc>
-    <lastmod>2026-01-25T03:47:39.090Z</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
+    <priority>0.8</priority>
   </url>
 
   <url>
@@ -85,35 +55,10 @@
   </url>
 
   <url>
-    <loc>https://milehighdnatesting.com/forensic-dna-analysis</loc>
-    <lastmod>2026-01-25T03:47:39.090Z</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-
-  <url>
-    <loc>https://milehighdnatesting.com/get-results</loc>
-    <lastmod>2026-01-25T03:47:39.090Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en-us" href="https://milehighdnatesting.com/get-results" />
-    <xhtml:link rel="alternate" hreflang="es-us" href="https://milehighdnatesting.com/es/consultar-resultados" />
-  </url>
-
-  <url>
-    <loc>https://milehighdnatesting.com/grandparentage-dna-tests</loc>
-    <lastmod>2026-01-25T03:47:39.090Z</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-    <xhtml:link rel="alternate" hreflang="en-us" href="https://milehighdnatesting.com/grandparentage-dna-tests" />
-    <xhtml:link rel="alternate" hreflang="es-us" href="https://milehighdnatesting.com/es/prueba-de-abuelidad" />
-  </url>
-
-  <url>
     <loc>https://milehighdnatesting.com/guides</loc>
     <lastmod>2026-01-25T03:47:39.090Z</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
 
   <url>
@@ -138,21 +83,10 @@
   </url>
 
   <url>
-    <loc>https://milehighdnatesting.com/immigration-dna-tests</loc>
+    <loc>https://milehighdnatesting.com/guides/paternity-test-guide</loc>
     <lastmod>2026-01-25T03:47:39.090Z</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-    <xhtml:link rel="alternate" hreflang="en-us" href="https://milehighdnatesting.com/immigration-dna-tests" />
-    <xhtml:link rel="alternate" hreflang="es-us" href="https://milehighdnatesting.com/es/prueba-de-inmigracion" />
-  </url>
-
-  <url>
-    <loc>https://milehighdnatesting.com/legal-paternity-tests</loc>
-    <lastmod>2026-01-25T03:47:39.090Z</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-    <xhtml:link rel="alternate" hreflang="en-us" href="https://milehighdnatesting.com/legal-paternity-tests" />
-    <xhtml:link rel="alternate" hreflang="es-us" href="https://milehighdnatesting.com/es/prueba-de-paternidad-legal" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
 
   <url>
@@ -278,135 +212,112 @@
     <loc>https://milehighdnatesting.com/mile-high-dna-corner</loc>
     <lastmod>2026-01-25T03:47:39.090Z</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.6</priority>
   </url>
 
   <url>
     <loc>https://milehighdnatesting.com/mile-high-dna-corner/best-at-home-paternity-dna-kit-denver</loc>
     <lastmod>2026-01-25T03:47:39.090Z</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.6</priority>
   </url>
 
   <url>
     <loc>https://milehighdnatesting.com/mile-high-dna-corner/dna-test-near-me-denver</loc>
     <lastmod>2026-01-25T03:47:39.090Z</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.6</priority>
   </url>
 
   <url>
     <loc>https://milehighdnatesting.com/mile-high-dna-corner/family-relationship-dna-testing-denver</loc>
     <lastmod>2026-01-25T03:47:39.090Z</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.6</priority>
   </url>
 
   <url>
     <loc>https://milehighdnatesting.com/mile-high-dna-corner/how-much-does-a-prenatal-dna-test-cost</loc>
     <lastmod>2026-01-25T03:47:39.090Z</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.6</priority>
   </url>
 
   <url>
     <loc>https://milehighdnatesting.com/mile-high-dna-corner/how-reliable-and-accurate-are-home-dna-tests</loc>
     <lastmod>2026-01-25T03:47:39.090Z</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.6</priority>
   </url>
 
   <url>
     <loc>https://milehighdnatesting.com/mile-high-dna-corner/immigration-dna-testing-denver</loc>
     <lastmod>2026-01-25T03:47:39.090Z</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.6</priority>
   </url>
 
   <url>
     <loc>https://milehighdnatesting.com/mile-high-dna-corner/legal-dna-cost-guide</loc>
     <lastmod>2026-01-25T03:47:39.090Z</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.6</priority>
   </url>
 
   <url>
     <loc>https://milehighdnatesting.com/mile-high-dna-corner/legal-vs-non-legal-dna-test</loc>
     <lastmod>2026-01-25T03:47:39.090Z</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.6</priority>
   </url>
 
   <url>
     <loc>https://milehighdnatesting.com/mile-high-dna-corner/non-legal-dna-cost-guide</loc>
     <lastmod>2026-01-25T03:47:39.090Z</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.6</priority>
   </url>
 
   <url>
     <loc>https://milehighdnatesting.com/mile-high-dna-corner/peace-of-mind-paternity-testing-denver</loc>
     <lastmod>2026-01-25T03:47:39.090Z</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.6</priority>
   </url>
 
   <url>
     <loc>https://milehighdnatesting.com/mile-high-dna-corner/prenatal-dna-cost-guide</loc>
     <lastmod>2026-01-25T03:47:39.090Z</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.6</priority>
   </url>
 
   <url>
     <loc>https://milehighdnatesting.com/mile-high-dna-corner/prenatal-paternity-testing-denver</loc>
     <lastmod>2026-01-25T03:47:39.090Z</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.6</priority>
   </url>
 
   <url>
     <loc>https://milehighdnatesting.com/mile-high-dna-corner/what-to-expect-non-invasive-prenatal-dna-test-denver</loc>
     <lastmod>2026-01-25T03:47:39.090Z</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.6</priority>
   </url>
 
   <url>
     <loc>https://milehighdnatesting.com/mile-high-dna-corner/when-dna-tells-the-truth-paternity-testing-denver</loc>
     <lastmod>2026-01-25T03:47:39.090Z</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.6</priority>
   </url>
 
   <url>
     <loc>https://milehighdnatesting.com/mile-high-dna-corner/why-bilingual-dna-testing-matters-denver</loc>
     <lastmod>2026-01-25T03:47:39.090Z</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://milehighdnatesting.com/paternity-test-colorado</loc>
-    <lastmod>2026-01-25T03:47:39.090Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-  <url>
-    <loc>https://milehighdnatesting.com/peace-of-mind-paternity-tests</loc>
-    <lastmod>2026-01-25T03:47:39.090Z</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-    <xhtml:link rel="alternate" hreflang="en-us" href="https://milehighdnatesting.com/peace-of-mind-paternity-tests" />
-    <xhtml:link rel="alternate" hreflang="es-us" href="https://milehighdnatesting.com/es/prueba-paternidad-tranquilidad" />
-  </url>
-
-  <url>
-    <loc>https://milehighdnatesting.com/prenatal-dna-test</loc>
-    <lastmod>2026-01-25T03:47:39.090Z</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
+    <priority>0.6</priority>
   </url>
 
   <url>
@@ -446,44 +357,36 @@
 
   <url>
     <loc>https://milehighdnatesting.com/services/grandparentage-testing</loc>
-    <lastmod>2026-01-25T03:47:39.090Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <lastmod>2026-02-02</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.6</priority>
   </url>
 
   <url>
     <loc>https://milehighdnatesting.com/services/immigration-dna-testing</loc>
-    <lastmod>2026-01-25T03:47:39.090Z</lastmod>
+    <lastmod>2026-02-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://milehighdnatesting.com/services/immigration-dna-testing" />
+    <xhtml:link rel="alternate" hreflang="es-us" href="https://milehighdnatesting.com/es/prueba-de-inmigracion" />
   </url>
 
   <url>
     <loc>https://milehighdnatesting.com/services/legal-paternity-testing</loc>
-    <lastmod>2026-01-25T03:47:39.090Z</lastmod>
+    <lastmod>2026-02-02</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://milehighdnatesting.com/services/legal-paternity-testing" />
+    <xhtml:link rel="alternate" hreflang="es-us" href="https://milehighdnatesting.com/es/prueba-de-paternidad-legal" />
   </url>
 
-  <url>
-    <loc>https://milehighdnatesting.com/services/legal-paternity-testing-denver</loc>
-    <lastmod>2026-01-25T03:47:39.090Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-
-  <url>
+    <url>
     <loc>https://milehighdnatesting.com/services/non-legal-paternity-testing</loc>
-    <lastmod>2026-01-25T03:47:39.090Z</lastmod>
+    <lastmod>2026-02-02</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <url>
-    <loc>https://milehighdnatesting.com/services/non-legal-paternity-testing-denver</loc>
-    <lastmod>2026-01-25T03:47:39.090Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://milehighdnatesting.com/services/non-legal-paternity-testing" />
+    <xhtml:link rel="alternate" hreflang="es-us" href="https://milehighdnatesting.com/es/prueba-paternidad-tranquilidad" />
   </url>
 
   <url>
@@ -496,26 +399,68 @@
   </url>
 
   <url>
-    <loc>https://milehighdnatesting.com/services/prenatal-paternity-testing-denver</loc>
+    <loc>https://milehighdnatesting.com/services/siblingship-testing</loc>
     <lastmod>2026-01-25T03:47:39.090Z</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://milehighdnatesting.com/services/siblingship-testing" />
+    <xhtml:link rel="alternate" hreflang="es-us" href="https://milehighdnatesting.com/es/prueba-de-hermanos" />
   </url>
 
   <url>
-    <loc>https://milehighdnatesting.com/services/siblingship-testing</loc>
+    <loc>https://milehighdnatesting.com/services/infidelity-dna-testing</loc>
     <lastmod>2026-01-25T03:47:39.090Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
-    <loc>https://milehighdnatesting.com/siblingship-dna-tests</loc>
+    <loc>https://milehighdnatesting.com/services/gender-reveal-dna-testing</loc>
     <lastmod>2026-01-25T03:47:39.090Z</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-    <xhtml:link rel="alternate" hreflang="en-us" href="https://milehighdnatesting.com/siblingship-dna-tests" />
-    <xhtml:link rel="alternate" hreflang="es-us" href="https://milehighdnatesting.com/es/prueba-de-hermanos" />
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://milehighdnatesting.com/services/twin-zygosity-testing</loc>
+    <lastmod>2026-01-25T03:47:39.090Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://milehighdnatesting.com/services/y-str-dna-testing</loc>
+    <lastmod>2026-01-25T03:47:39.090Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://milehighdnatesting.com/services/mtdna-testing</loc>
+    <lastmod>2026-01-25T03:47:39.090Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://milehighdnatesting.com/services/lifestyle-ancestry-dna-testing</loc>
+    <lastmod>2026-01-25T03:47:39.090Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://milehighdnatesting.com/services/healthy-weight-dna-test</loc>
+    <lastmod>2026-01-25T03:47:39.090Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://milehighdnatesting.com/services/gps-origins-dna-test</loc>
+    <lastmod>2026-01-25T03:47:39.090Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
 
 </urlset>

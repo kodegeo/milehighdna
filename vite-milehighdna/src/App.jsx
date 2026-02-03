@@ -47,6 +47,15 @@ import DiscreetDNATestingService from './pages/services/DiscreetDNATesting';
 import ForensicDNAAnalysis from './pages/ForensicDNAAnalysis';
 import ForensicDNAAnalysisService from './pages/services/ForensicDNAAnalysis';
 import AvuncularDNATesting from './pages/services/AvuncularDNATesting';
+import InfidelityDNATesting from './pages/services/InfidelityDNATesting';
+import GenderRevealDNATesting from './pages/services/GenderRevealDNATesting';
+import TwinZygosityTesting from './pages/services/TwinZygosityTesting';
+import YStrDNATesting from './pages/services/YStrDNATesting';
+import MtdnaTesting from './pages/services/MtdnaTesting';
+import LifestyleAncestryDNATesting from './pages/services/LifestyleAncestryDNATesting';
+import HealthyWeightDNATest from './pages/services/HealthyWeightDNATest';
+import GpsOriginsDNATest from './pages/services/GpsOriginsDNATest';
+import AtHomeDNAKits from './pages/services/AtHomeDNAKits';
 import CheckoutDomestic from './pages/CheckoutDomestic';
 import CheckoutInternational from './pages/CheckoutInternational';
 import PeaceOfMindDNAKit from './pages/PeaceOfMindDNAKit';
@@ -173,6 +182,15 @@ function AppLayout() {
             <Route path="/services/discreet-dna-testing" element={<DiscreetDNATestingService />} />
             <Route path="/services/avuncular-dna-testing" element={<AvuncularDNATesting />} />
             <Route path="/services/forensic-dna-analysis" element={<ForensicDNAAnalysisService />} />
+            <Route path="/services/infidelity-dna-testing" element={<InfidelityDNATesting />} />
+            <Route path="/services/gender-reveal-dna-testing" element={<GenderRevealDNATesting />} />
+            <Route path="/services/twin-zygosity-testing" element={<TwinZygosityTesting />} />
+            <Route path="/services/y-str-dna-testing" element={<YStrDNATesting />} />
+            <Route path="/services/mtdna-testing" element={<MtdnaTesting />} />
+            <Route path="/services/lifestyle-ancestry-dna-testing" element={<LifestyleAncestryDNATesting />} />
+            <Route path="/services/healthy-weight-dna-test" element={<HealthyWeightDNATest />} />
+            <Route path="/services/gps-origins-dna-test" element={<GpsOriginsDNATest />} />
+            <Route path="/services/at-home-dna-kits" element={<AtHomeDNAKits />} />
 
             {/* Guide Pages */}
             <Route path="/guides" element={<GuidesIndex />} />
@@ -190,7 +208,8 @@ function AppLayout() {
             <Route path="/mile-high-dna-corner" element={<MileHighDNACorner />} />
             <Route path="/mile-high-dna-corner/prenatal-dna-cost-guide" element={<PrenatalDNAGuide />} />
             <Route path="/mile-high-dna-corner/how-much-does-a-prenatal-dna-test-cost" element={<PrenatalDNACost />} />
-            <Route path="/dna-testing-types" element={<DNATestingTypes />} />
+            <Route path="/guides/paternity-test-guide" element={<DNATestingTypes />} />
+            <Route path="/dna-testing-types" element={<Navigate to="/guides/paternity-test-guide" replace />} />
 
             {/* Mile High DNA Corner Pages */}
             <Route path="/mile-high-dna-corner/legal-vs-non-legal-dna-test" element={<LegalVsNonLegal />} />
