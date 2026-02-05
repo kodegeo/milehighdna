@@ -165,7 +165,7 @@ const LegalPaternityTesting = () => {
             Why Choose Mile High DNA Testing?
           </h2>
           <p className="text-gray-700 mb-6">
-            Trusted by Colorado families, attorneys, and agencies. Our legal DNA
+            Trusted by <a href="https://milehighdnatesting.com/dna-testing-colorado" className="text-blue-600 hover:text-blue-700 transition duration-300">Colorado</a> families, attorneys, and agencies. Our legal DNA
             testing process is simple, fast, and fully court-admissible.
           </p>
           <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">

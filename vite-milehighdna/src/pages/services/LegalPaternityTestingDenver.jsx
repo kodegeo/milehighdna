@@ -188,7 +188,7 @@ const LegalPaternityTestingDenver = () => {
                 Why {cityName} Residents Need It
               </h3>
               <p className="text-gray-600">
-                Colorado family courts require legal paternity testing with proper documentation for child support and custody cases. {cityName} residents can access these services locally.
+                <a href="https://milehighdnatesting.com/dna-testing-colorado" className="text-blue-600 hover:text-blue-700 transition duration-300">Colorado</a> family courts require legal paternity testing with proper documentation for child support and custody cases. {cityName} residents can access these services locally.
               </p>
             </div>
           </div>

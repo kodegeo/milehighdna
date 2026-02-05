@@ -11,7 +11,7 @@ const Footer = () => {
         <div>
           <h4 className="text-lg font-semibold mb-4">Mile High DNA Testing</h4>
           <p className="text-gray-600">
-            Providing trusted, confidential DNA testing services to families across Colorado.
+            Providing trusted, confidential DNA testing services to families across <a href="https://milehighdnatesting.com/dna-testing-colorado" className="text-blue-600 hover:text-blue-700 transition duration-300">Colorado</a>.
           </p>
         </div>
 

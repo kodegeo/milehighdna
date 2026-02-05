@@ -124,7 +124,7 @@ const PrenatalPaternityTestingDenver = () => {
                 {serviceName} in {cityName}
               </h1>
               <p className="text-xl text-blue-100 mb-8 leading-relaxed">
-                Non-invasive prenatal paternity testing is available in {cityName}, Colorado. Safe DNA testing during pregnancy with accurate results—no risk to you or your baby.
+                Non-invasive prenatal paternity testing is available in {cityName}, <a href="https://milehighdnatesting.com/dna-testing-colorado" className="text-blue-600 hover:text-blue-700 transition duration-300">Colorado</a>. Safe DNA testing during pregnancy with accurate results—no risk to you or your baby.
               </p>
               <div className="flex flex-wrap gap-4">
                 <Link
