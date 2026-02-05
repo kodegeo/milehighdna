@@ -21,20 +21,37 @@ function HomePageEs() {
       />
 
       {/* ✅ CANONICAL */}
-      <link rel="canonical" href="https://milehighdnatesting.com/es/" />
-      <link rel="alternate" hreflang="en-us" href="https://milehighdnatesting.com/" />
-      <link rel="alternate" hreflang="es-us" href="https://milehighdnatesting.com/es/" />
-      <link rel="alternate" hreflang="x-default" href="https://milehighdnatesting.com/" />
+      <link rel="canonical" href="https://milehighdnatesting.com/es" />
+      <link rel="alternate" hreflang="en" href="https://milehighdnatesting.com" />
+      <link rel="alternate" hreflang="es" href="https://milehighdnatesting.com/es" />
+      <link rel="alternate" hreflang="x-default" href="https://milehighdnatesting.com" />
 
       {/* Open Graph */}
       <meta property="og:title" content="Pruebas de ADN en Colorado | Paternidad, Inmigración, Legal" />
       <meta property="og:description" content="Realiza tu prueba de ADN con un laboratorio acreditado por AABB. Pruebas legales y privadas en Denver, Aurora y comunidades cercanas." />
       <meta property="og:image" content="https://milehighdnatesting.com/images/banner-1200.png" />
-      <meta property="og:url" content="https://milehighdnatesting.com/es/" />
+      <meta property="og:url" content="https://milehighdnatesting.com/es" />
       <meta property="og:type" content="website" />
 
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:image" content="https://milehighdnatesting.com/images/banner-1200.png" />
+
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "@id": "https://milehighdnatesting.com/es#webpage",
+          "url": "https://milehighdnatesting.com/es",
+          "name": "Pruebas de ADN en Denver | Legal, Inmigración y Familiares",
+          "inLanguage": "es",
+          "isPartOf": {
+            "@type": "WebSite",
+            "name": "Mile High DNA Testing",
+            "url": "https://milehighdnatesting.com"
+          }
+        })}
+      </script>
+
     </Helmet>
 
       {/* Hero Section */}

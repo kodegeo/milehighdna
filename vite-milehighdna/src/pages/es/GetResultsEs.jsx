@@ -58,9 +58,9 @@ const GetResultsEs = () => {
           content="Acceda a sus resultados de prueba de ADN usando su código de acceso. Resultados confidenciales y seguros." 
         />
         <link rel="canonical" href="https://milehighdnatesting.com/es/consultar-resultados" />
-        <link rel="alternate" hreflang="en-us" href="https://milehighdnatesting.com/get-results" />
-        <link rel="alternate" hreflang="es-us" href="https://milehighdnatesting.com/es/consultar-resultados" />
-        <link rel="alternate" hreflang="x-default" href="https://milehighdnatesting.com/" />
+        <link rel="alternate" hreflang="en" href="https://milehighdnatesting.com/get-results" />
+        <link rel="alternate" hreflang="es" href="https://milehighdnatesting.com/es/consultar-resultados" />
+        <link rel="alternate" hreflang="x-default" href="https://milehighdnatesting.com" />
       </Helmet>
       <div className="max-w-md mx-auto bg-white p-6 rounded-lg shadow-md">
         <h1 className="text-xl font-bold mb-4 text-gray-800">Acceda a Sus Resultados de Prueba de ADN</h1>

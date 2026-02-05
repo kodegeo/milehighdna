@@ -6,179 +6,179 @@
 
     {
       "source": "/dna-denver-testing",
-      "destination": "/locations/denver",
+      "destination": "https://milehighdnatesting.com/locations/denver",
       "permanent": true
     },
     {
       "source": "/denver-dna-testing",
-      "destination": "/locations/denver",
+      "destination": "https://milehighdnatesting.com/locations/denver",
       "permanent": true
     },
     {
       "source": "/dna-test-denver",
-      "destination": "/locations/denver",
+      "destination": "https://milehighdnatesting.com/locations/denver",
       "permanent": true
     },
     {
       "source": "/denver-dna-test",
-      "destination": "/locations/denver",
+      "destination": "https://milehighdnatesting.com/locations/denver",
       "permanent": true
     },
     {
       "source": "/dna-testing-denver",
-      "destination": "/locations/denver",
+      "destination": "https://milehighdnatesting.com/locations/denver",
       "permanent": true
     },    
     {
       "source": "/paternity-test-colorado",
-      "destination": "/dna-testing-colorado",
+      "destination": "https://milehighdnatesting.com/dna-testing-colorado",
       "permanent": true
     },
     {
       "source": "/peace-of-mind-paternity-test",
-      "destination": "/services/non-legal-paternity-testing",
+      "destination": "https://milehighdnatesting.com/services/non-legal-paternity-testing",
       "permanent": true
     },
     {
       "source": "/peace-of-mind-tests",
-      "destination": "/services/non-legal-paternity-testing",
+      "destination": "https://milehighdnatesting.com/services/non-legal-paternity-testing",
       "permanent": true
     },
 
     {
       "source": "/legal-paternity-test",
-      "destination": "/services/legal-paternity-testing",
+      "destination": "https://milehighdnatesting.com/services/legal-paternity-testing",
       "permanent": true
     },
     {
       "source": "/legal-dna-testing",
-      "destination": "/services/legal-paternity-testing",
+      "destination": "https://milehighdnatesting.com/services/legal-paternity-testing",
       "permanent": true
     },
 
     {
       "source": "/services/legal-paternity-testing-denver",
-      "destination": "/services/legal-paternity-testing",
+      "destination": "https://milehighdnatesting.com/services/legal-paternity-testing",
       "permanent": true
     },
 
     {
       "source": "/services/non-legal-paternity-testing-denver",
-      "destination": "/services/non-legal-paternity-testing",
+      "destination": "https://milehighdnatesting.com/services/non-legal-paternity-testing",
       "permanent": true
     },
 
     {
       "source": "/services/prenatal-paternity-testing-denver",
-      "destination": "/services/prenatal-paternity-testing",
+      "destination": "https://milehighdnatesting.com/services/prenatal-paternity-testing",
       "permanent": true
     },
 
     {
       "source": "/mile-high-dna-corner/legal-vs-non-legal-dna-testing-guide",
-      "destination": "/guides/paternity-test-guide",
+      "destination": "https://milehighdnatesting.com/guides/paternity-test-guide",
       "permanent": true
     },
 
     {
       "source": "/schedule",
-      "destination": "/appointments",
+      "destination": "https://milehighdnatesting.com/appointments",
       "permanent": true
     },
     {
       "source": "/schedule-appointment",
-      "destination": "/appointments",
+      "destination": "https://milehighdnatesting.com/appointments",
       "permanent": true
     },
 
     {
       "source": "/prenatal-dna-testing",
-      "destination": "/services/prenatal-paternity-testing",
+      "destination": "https://milehighdnatesting.com/services/prenatal-paternity-testing",
       "permanent": true
     },
     {
       "source": "/nipp",
-      "destination": "/services/prenatal-paternity-testing",
+      "destination": "https://milehighdnatesting.com/services/prenatal-paternity-testing",
       "permanent": true
     },
     {
       "source": "/prenatal-dna-test",
-      "destination": "/services/prenatal-paternity-testing",
+      "destination": "https://milehighdnatesting.com/services/prenatal-paternity-testing",
       "permanent": true
     },
     {
       "source": "/immigration-dna-tests",
-      "destination": "/services/immigration-dna-testing",
+      "destination": "https://milehighdnatesting.com/services/immigration-dna-testing",
       "permanent": true
     },
     {
       "source": "/siblingship-dna-tests",
-      "destination": "/services/siblingship-testing",
+      "destination": "https://milehighdnatesting.com/services/siblingship-testing",
       "permanent": true
     },
     {
       "source": "/discreet-dna-testing",
-      "destination": "/services/discreet-dna-testing",
+      "destination": "https://milehighdnatesting.com/services/discreet-dna-testing",
       "permanent": true
     },
     {
       "source": "/forensic-dna-analysis",
-      "destination": "/services/forensic-dna-analysis",
+      "destination": "https://milehighdnatesting.com/services/forensic-dna-analysis",
       "permanent": true
     },
     {
       "source": "/grandparentage-dna-tests",
-      "destination": "/services/grandparentage-testing",
+      "destination": "https://milehighdnatesting.com/services/grandparentage-testing",
       "permanent": true
     },
 
     {
       "source": "/peace-of-mind-dna-kit",
-      "destination": "/shop/at-home-paternity-test",
+      "destination": "https://milehighdnatesting.com/shop/at-home-paternity-test",
       "permanent": true
     },
     {
       "source": "/products/peace-of-mind-dna-kit",
-      "destination": "/shop/at-home-paternity-test",
+      "destination": "https://milehighdnatesting.com/shop/at-home-paternity-test",
       "permanent": true
     },
 
     {
       "source": "/dna-testing-types",
-      "destination": "/guides/paternity-test-guide",
+      "destination": "https://milehighdnatesting.com/guides/paternity-test-guide",
       "permanent": true
     },
     {
       "source": "/dna-test-types",
-      "destination": "/guides/paternity-test-guide",
+      "destination": "https://milehighdnatesting.com/guides/paternity-test-guide",
       "permanent": true
     },
 
     {
       "source": "/paternity-testing-colorado",
-      "destination": "/dna-testing-colorado",
+      "destination": "https://milehighdnatesting.com/dna-testing-colorado",
       "permanent": true
     },
     
     {
       "source": "/mile-high-dna-corner/prenatal-dna-cost-guide",
-      "destination": "/guides/prenatal-dna-test-cost",
+      "destination": "https://milehighdnatesting.com/guides/prenatal-dna-test-cost",
       "permanent": true
     },
     {
       "source": "/mile-high-dna-corner/legal-dna-cost-guide",
-      "destination": "/guides/legal-dna-test-cost",
+      "destination": "https://milehighdnatesting.com/guides/legal-dna-test-cost",
       "permanent": true
     },
     {
       "source": "/mile-high-dna-corner/non-legal-dna-cost-guide",
-      "destination": "/guides/non-legal-dna-test-cost",
+      "destination": "https://milehighdnatesting.com/guides/non-legal-dna-test-cost",
       "permanent": true
     },
 
     {
       "source": "/book-appointment",
-      "destination": "/appointments",
+      "destination": "https://milehighdnatesting.com/appointments",
       "permanent": true
     },
     

@@ -22,9 +22,9 @@ const PrenatalEs = () => {
         />
 
         <link rel="canonical" href="https://milehighdnatesting.com/es/prueba-de-paternidad-prenatal" />
-        <link rel="alternate" hreflang="en-us" href="https://milehighdnatesting.com/services/prenatal-paternity-testing" />
-        <link rel="alternate" hreflang="es-us" href="https://milehighdnatesting.com/es/prueba-de-paternidad-prenatal" />
-        <link rel="alternate" hreflang="x-default" href="https://milehighdnatesting.com/" />
+        <link rel="alternate" hreflang="en" href="https://milehighdnatesting.com/services/prenatal-paternity-testing" />
+        <link rel="alternate" hreflang="es" href="https://milehighdnatesting.com/es/prueba-de-paternidad-prenatal" />
+        <link rel="alternate" hreflang="x-default" href="https://milehighdnatesting.com" />
 
         {/* Open Graph for Social Sharing */}
         <meta property="og:title" content="Pruebas de Paternidad Prenatal en Colorado" />

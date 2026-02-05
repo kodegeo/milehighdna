@@ -22,9 +22,9 @@ const PeaceOfMindPaternityTestsEs = () => {
         />
 
         <link rel="canonical" href="https://milehighdnatesting.com/es/prueba-paternidad-tranquilidad" />
-        <link rel="alternate" hreflang="en-us" href="https://milehighdnatesting.com/services/non-legal-paternity-testing" />
-        <link rel="alternate" hreflang="es-us" href="https://milehighdnatesting.com/es/prueba-paternidad-tranquilidad" />
-        <link rel="alternate" hreflang="x-default" href="https://milehighdnatesting.com/" />
+        <link rel="alternate" hreflang="en" href="https://milehighdnatesting.com/services/non-legal-paternity-testing" />
+        <link rel="alternate" hreflang="es" href="https://milehighdnatesting.com/es/prueba-paternidad-tranquilidad" />
+        <link rel="alternate" hreflang="x-default" href="https://milehighdnatesting.com" />
 
         <meta property="og:title" content="Kit de Prueba de Paternidad para Tranquilidad | Pruebas de ADN Personales" />
         <meta property="og:description" content="Pruebas de paternidad confidenciales para conocimiento personal. 99%+ de precisión, empaque discreto, recolección simple en casa. Resultados en 2-3 días hábiles." />

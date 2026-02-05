@@ -47,8 +47,8 @@ The following routes are automatically excluded from the sitemap:
 
 Routes with Spanish translations include proper `hreflang` attributes:
 ```xml
-<xhtml:link rel="alternate" hreflang="en-us" href="https://milehighdnatesting.com/legal-paternity-tests" />
-<xhtml:link rel="alternate" hreflang="es-us" href="https://milehighdnatesting.com/es/prueba-de-paternidad-legal" />
+<xhtml:link rel="alternate" hreflang="en" href="https://milehighdnatesting.com/legal-paternity-tests" />
+<xhtml:link rel="alternate" hreflang="es" href="https://milehighdnatesting.com/es/prueba-de-paternidad-legal" />
 ```
 
 ## Output
@@ -97,8 +97,8 @@ The script includes built-in validation:
     <lastmod>2025-10-11T13:25:32.007Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="en-us" href="https://milehighdnatesting.com/" />
-    <xhtml:link rel="alternate" hreflang="es-us" href="https://milehighdnatesting.com/es" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://milehighdnatesting.com/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://milehighdnatesting.com/es" />
   </url>
   
   <!-- Additional URLs... -->

@@ -16,9 +16,9 @@ const AABBAccreditation = () => {
         />
 
         <link rel="canonical" href="https://milehighdnatesting.com/es/aabb-accreditation" />
-        <link rel="alternate" hreflang="en-us" href="https://milehighdnatesting.com/aabb-accreditation" />
-        <link rel="alternate" hreflang="es-us" href="https://milehighdnatesting.com/es/aabb-accreditation" />
-        <link rel="alternate" hreflang="x-default" href="https://milehighdnatesting.com/" />
+        <link rel="alternate" hreflang="en" href="https://milehighdnatesting.com/aabb-accreditation" />
+        <link rel="alternate" hreflang="es" href="https://milehighdnatesting.com/es/aabb-accreditation" />
+        <link rel="alternate" hreflang="x-default" href="https://milehighdnatesting.com" />
 
         <meta property="og:title" content="¿Qué es la acreditación AABB en pruebas de ADN?" />
         <meta property="og:description" content="Laboratorios acreditados por la AABB garantizan pruebas de ADN confiables, válidas legalmente y aceptadas por USCIS. Servicios disponibles en español en Colorado." />

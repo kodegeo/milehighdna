@@ -98,9 +98,9 @@ const BookAppointmentEs = () => {
         />
 
         <link rel="canonical" href="https://milehighdnatesting.com/es/reservar-cita" />
-        <link rel="alternate" hreflang="en-us" href="https://milehighdnatesting.com/book-appointment" />
-        <link rel="alternate" hreflang="es-us" href="https://milehighdnatesting.com/es/reservar-cita" />
-        <link rel="alternate" hreflang="x-default" href="https://milehighdnatesting.com/" />
+        <link rel="alternate" hreflang="en" href="https://milehighdnatesting.com/book-appointment" />
+        <link rel="alternate" hreflang="es" href="https://milehighdnatesting.com/es/reservar-cita" />
+        <link rel="alternate" hreflang="x-default" href="https://milehighdnatesting.com" />
 
         <meta property="og:title" content="Agende Su Cita para Prueba de ADN en Colorado" />
         <meta property="og:description" content="Programe su cita para pruebas de ADN legales, inmigratorias o familiares. Resultados confidenciales y servicio en español. Sirviendo Denver y Colorado." />

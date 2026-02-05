@@ -20,9 +20,9 @@ const AboutUsPage = () => {
         />
 
         <link rel="canonical" href="https://milehighdnatesting.com/es/sobre-nosotros" />
-        <link rel="alternate" hreflang="en-us" href="https://milehighdnatesting.com/about" />
-        <link rel="alternate" hreflang="es-us" href="https://milehighdnatesting.com/es/sobre-nosotros" />
-        <link rel="alternate" hreflang="x-default" href="https://milehighdnatesting.com/" />
+        <link rel="alternate" hreflang="en" href="https://milehighdnatesting.com/about" />
+        <link rel="alternate" hreflang="es" href="https://milehighdnatesting.com/es/sobre-nosotros" />
+        <link rel="alternate" hreflang="x-default" href="https://milehighdnatesting.com" />
 
         <meta property="og:title" content="Quiénes Somos | Pruebas de ADN en Español en Denver" />
         <meta property="og:description" content="Mile High DNA Testing ofrece servicios de pruebas de ADN legales, personales y migratorias con atención profesional en español. Acreditado por AABB." />
