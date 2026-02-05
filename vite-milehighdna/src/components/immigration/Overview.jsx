@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 const Overview = () => {
     return (
       <section className="bg-white py-12 md:py-16 px-6 md:px-12 lg:px-16">
@@ -8,7 +10,7 @@ const Overview = () => {
           <p className="text-base md:text-lg text-gray-600 mb-8 leading-relaxed">
             Mile High DNA Testing, in partnership with an{' '}
             <a href="https://www.ufclab.com/lab-services/immigration" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline">AABB-accredited</a>
-            {' '}and CAP-certified laboratory, provides specialized immigration DNA testing for visa, passport, and citizenship cases. All immigration DNA testing services are fully compliant with USCIS protocols. We manage the entire testing process — coordinating U.S. sample collection and international logistics — to ensure timely delivery of official results to{' '}
+            {' '}and CAP-certified laboratory, provides specialized <Link to="/services/immigration-dna-testing" className="text-blue-600 hover:text-blue-800 underline">immigration DNA testing</Link> for visa, passport, and citizenship cases. All immigration DNA testing services are fully compliant with USCIS protocols. We manage the entire testing process — coordinating U.S. sample collection from our <Link to="/locations/denver" className="text-blue-600 hover:text-blue-800 underline">Denver</Link> office and international logistics — to ensure timely delivery of official results to{' '}
             <a href="https://travel.state.gov/content/travel/en/us-visas/visa-information-resources/list-of-posts.html" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline">U.S. Embassies and Consulates</a>.
           </p>
   

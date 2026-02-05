@@ -87,8 +87,12 @@ const routeConfig = {
     }
   },
 
-  // Product Pages
-  '/products/peace-of-mind-dna-kit': {
+  // Shop (ecommerce) Pages
+  '/shop': {
+    priority: '0.8',
+    changefreq: 'weekly'
+  },
+  '/shop/at-home-paternity-test': {
     priority: '0.8',
     changefreq: 'weekly'
   },

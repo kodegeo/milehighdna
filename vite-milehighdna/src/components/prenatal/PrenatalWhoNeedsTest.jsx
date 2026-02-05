@@ -1,3 +1,6 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
+
 const PrenatalWhoNeedsTest = () => {
   const scenarios = [
     'You want to confirm paternity before birth for peace of mind.',
@@ -13,8 +16,8 @@ const PrenatalWhoNeedsTest = () => {
           Who Should Get a Prenatal DNA Test in Denver?
         </h2>
         <p className="text-lg text-gray-600 mb-8">
-          Prenatal paternity testing helps expectant mothers and families confirm biological relationships 
-          before birth. Whether for peace of mind or legal documentation, 
+          <Link to="/services/prenatal-paternity-testing" className="text-blue-600 underline">Prenatal paternity testing</Link> helps expectant mothers and families confirm biological relationships 
+          before birth. Whether for peace of mind or <Link to="/services/legal-paternity-testing" className="text-blue-600 underline">legal</Link> documentation, or <Link to="/services/immigration-dna-testing" className="text-blue-600 underline">immigration DNA testing</Link> needs, 
           it provides clear answers when you need them most.
         </p>
 

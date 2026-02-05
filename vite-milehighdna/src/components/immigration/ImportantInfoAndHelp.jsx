@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 const ImportantInfoAndHelp = () => {
   const REFERRAL_FORM_URL = 'https://ufclab.forms-db.com/view.php?id=10429';
   const PHONE = '720-900-9342';
@@ -74,7 +76,7 @@ const ImportantInfoAndHelp = () => {
           </a>
         </p>
         <p className="text-base text-gray-600 text-center leading-relaxed">
-          We’re here to help you move forward with your immigration DNA testing process with clarity, accuracy, and confidence.
+          We’re here to help you move forward with your immigration DNA testing process with clarity, accuracy, and confidence. To <Link to="/appointments" className="text-blue-600 hover:text-blue-800 font-semibold underline">schedule a DNA test</Link> for other services, we also offer <Link to="/services/legal-paternity-testing" className="text-blue-600 hover:text-blue-800 font-semibold underline">legal paternity testing</Link> and <Link to="/services/prenatal-paternity-testing" className="text-blue-600 hover:text-blue-800 font-semibold underline">prenatal paternity testing</Link>.
         </p>
       </div>
     </section>

@@ -6,31 +6,34 @@
 
     {
       "source": "/dna-denver-testing",
-      "destination": "/dna-testing-denver",
+      "destination": "/locations/denver",
       "permanent": true
     },
     {
       "source": "/denver-dna-testing",
-      "destination": "/dna-testing-denver",
+      "destination": "/locations/denver",
       "permanent": true
     },
     {
       "source": "/dna-test-denver",
-      "destination": "/dna-testing-denver",
+      "destination": "/locations/denver",
       "permanent": true
     },
     {
       "source": "/denver-dna-test",
-      "destination": "/dna-testing-denver",
+      "destination": "/locations/denver",
       "permanent": true
     },
-
+    {
+      "source": "/dna-testing-denver",
+      "destination": "/locations/denver",
+      "permanent": true
+    },    
     {
       "source": "/paternity-test-colorado",
       "destination": "/dna-testing-colorado",
       "permanent": true
     },
-
     {
       "source": "/peace-of-mind-paternity-test",
       "destination": "/services/non-legal-paternity-testing",
@@ -68,6 +71,12 @@
     {
       "source": "/services/prenatal-paternity-testing-denver",
       "destination": "/services/prenatal-paternity-testing",
+      "permanent": true
+    },
+
+    {
+      "source": "/mile-high-dna-corner/legal-vs-non-legal-dna-testing-guide",
+      "destination": "/guides/paternity-test-guide",
       "permanent": true
     },
 
@@ -125,7 +134,12 @@
 
     {
       "source": "/peace-of-mind-dna-kit",
-      "destination": "/products/peace-of-mind-dna-kit",
+      "destination": "/shop/at-home-paternity-test",
+      "permanent": true
+    },
+    {
+      "source": "/products/peace-of-mind-dna-kit",
+      "destination": "/shop/at-home-paternity-test",
       "permanent": true
     },
 

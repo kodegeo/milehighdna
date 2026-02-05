@@ -1,18 +1,23 @@
 import React, { useState, useEffect } from "react";
 import { Helmet } from "react-helmet-async";
-import { useLocation } from "react-router-dom";
+import { useLocation, Navigate } from "react-router-dom";
 
 const CheckoutDomestic = () => {
   const location = useLocation();
+  const state = location.state || {};
+  if (!state.fromShop) {
+    return <Navigate to="/shop" replace />;
+  }
   const {
     firstName,
     lastName,
     customerEmail,
-    phoneNumber,           // <-- ADD THIS
+    phoneNumber,
     productName = "At Home DNA Testing Kit",
     unitPrice = 199,
     country = "US",
-  } = location.state || {};
+    shippingFee,
+  } = state;
   
   // Shipping state
   const [shippingMethod, setShippingMethod] = useState("regular"); // "regular" | "overnight"

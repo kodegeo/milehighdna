@@ -54,7 +54,7 @@ const AtHomeDNAKits = () => {
             <Link to="/appointments" className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition mr-3">
               Book Appointment
             </Link>
-            <Link to="/products/peace-of-mind-dna-kit" className="inline-block bg-white text-blue-600 border-2 border-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-blue-50 transition">
+            <Link to="/shop/at-home-paternity-test" className="inline-block bg-white text-blue-600 border-2 border-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-blue-50 transition">
               Peace of Mind DNA Kit
             </Link>
           </section>

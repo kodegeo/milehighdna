@@ -128,6 +128,10 @@ const Navigation = () => {
                   aria-labelledby="nav-guides-trigger"
                   className="absolute top-[100%] left-0 bg-white border border-gray-200 shadow-lg rounded-md pt-2 w-64 z-50"
                 >
+                  <Link to="/guides" role="menuitem" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={closeDropdown}>
+                    All DNA Testing Guides
+                  </Link>
+
                   {GUIDE_ITEMS.map(({ label, to }) => (
                     <Link
                       key={to}
@@ -189,7 +193,7 @@ const Navigation = () => {
                   <Link to="/services/siblingship-testing" role="menuitem" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={closeDropdown}>
                     Siblingship Testing
                   </Link>
-                  <Link to="/products/peace-of-mind-dna-kit" role="menuitem" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={closeDropdown}>
+                  <Link to="/shop/at-home-paternity-test" role="menuitem" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={closeDropdown}>
                     At Home DNA Test Kits
                   </Link>
                 </div>
@@ -276,7 +280,7 @@ const Navigation = () => {
                 <Link to="/services/prenatal-paternity-testing" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={() => setIsMenuOpen(false)}>Prenatal DNA Testing</Link>
                 <Link to="/services/grandparentage-testing" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={() => setIsMenuOpen(false)}>Grandparentage Testing</Link>
                 <Link to="/services/siblingship-testing" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={() => setIsMenuOpen(false)}>Siblingship Testing</Link>
-                <Link to="/products/peace-of-mind-dna-kit" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={() => setIsMenuOpen(false)}>At Home DNA Test Kits</Link>
+                <Link to="/shop/at-home-paternity-test" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={() => setIsMenuOpen(false)}>At Home DNA Test Kits</Link>
               </div>
             </details>
 

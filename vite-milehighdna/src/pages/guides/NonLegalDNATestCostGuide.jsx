@@ -213,10 +213,10 @@ const NonLegalDNATestCostGuide = () => {
           <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Understanding Non-Legal DNA Test Cost for Personal Peace of Mind</h2>
           <div className="prose prose-lg max-w-none">
             <p className="text-xl text-gray-600 mb-6 leading-relaxed">
-              When you need answers for personal peace of mind rather than legal purposes, non-legal DNA testing offers an affordable and convenient option. These tests provide the same scientific accuracy as legal tests but without the additional costs of professional collection and court documentation.
+              When you need answers for personal peace of mind rather than <Link to="/services/legal-paternity-testing" className="text-green-600 underline">legal purposes</Link>, <Link to="/services/non-legal-paternity-testing" className="text-green-600 underline">private paternity testing</Link> offers an affordable and convenient option. These tests provide the same scientific accuracy as <Link to="/services/legal-paternity-testing" className="text-green-600 underline">legal tests</Link> but without the additional costs of professional collection and court documentation.
             </p>
             <p className="text-lg text-gray-600 mb-6">
-              Whether you're seeking clarity about family relationships, want to confirm paternity privately, or need answers for personal reasons, understanding non-legal DNA test cost helps you make informed decisions about your testing options.
+              Whether you're seeking clarity about family relationships, want to confirm paternity privately, or need answers for personal reasons, understanding non-legal DNA test cost helps you make informed decisions. To <Link to="/appointments" className="text-green-600 underline">schedule a DNA test</Link>, visit our appointments page.
             </p>
           </div>
         </div>

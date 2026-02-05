@@ -29,6 +29,7 @@ const EXCLUDED_ROUTES = [
   '/success',
   '/dna-testing-denver', // Not part of current strategy
   '/dna-testing-types', // 301 to /guides/paternity-test-guide
+  '/products/peace-of-mind-dna-kit', // 301 to /shop/at-home-paternity-test
   '*', // 404 page
 ];
 
@@ -164,9 +165,13 @@ function getPriorityAndFreq(route) {
     return { priority: '0.3', changefreq: 'yearly' };
   }
   
-  // Other legacy patterns
-  if (route === '/family-relationship-dna' ||
-      route.startsWith('/products/')) {
+  // Shop (ecommerce) pages
+  if (route === '/shop' || route === '/shop/at-home-paternity-test') {
+    return { priority: '0.8', changefreq: 'weekly' };
+  }
+  
+  // Deprecated / redirect-only (exclude from sitemap or low priority)
+  if (route === '/family-relationship-dna' || route.startsWith('/products/')) {
     return { priority: '0.3', changefreq: 'yearly' };
   }
   

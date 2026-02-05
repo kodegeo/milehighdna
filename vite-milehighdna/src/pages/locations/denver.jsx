@@ -111,7 +111,7 @@ const Denver = () => {
         {/* Introduction Section */}
         <div className="text-center mb-12">
           <p className="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
-            Mile High DNA Testing provides confidential, accurate, and AABB-accredited DNA testing services to families, attorneys, and immigration agencies throughout <strong className="text-blue-600">{cityName}, Colorado</strong>. Whether you need legal documentation, answers for personal reasons, or immigration verification for USCIS, our team delivers fast, professional, and trustworthy results.
+            Mile High DNA Testing provides confidential, accurate, and AABB-accredited <Link to="/services/legal-paternity-testing" className="text-blue-600 underline">paternity testing near me</Link> and DNA testing services to families, attorneys, and immigration agencies throughout <strong className="text-blue-600">{cityName}, Colorado</strong>. Whether you need <Link to="/services/legal-paternity-testing" className="text-blue-600 underline">legal documentation</Link>, answers for personal reasons via <Link to="/services/non-legal-paternity-testing" className="text-blue-600 underline">peace of mind paternity test</Link>, or <Link to="/services/immigration-dna-testing" className="text-blue-600 underline">immigration DNA testing</Link> for USCIS, our team delivers fast, professional, and trustworthy results.
           </p>
         </div>
 

@@ -226,8 +226,12 @@ const LegalPaternityTesting = () => {
           // NEW — strong indexing & intent signals
           {
             title: "Immigration & Government Requirements",
-            description:
-              "Meet USCIS and other government documentation standards when DNA evidence is required for immigration or citizenship cases."
+            description: (
+              <>
+                Meet USCIS and other government documentation standards when DNA evidence is required for{" "}
+                <Link to="/services/immigration-dna-testing" className="text-blue-600 underline">immigration DNA testing</Link> or citizenship cases.
+              </>
+            )
           },
           {
             title: "Court-Admissible DNA Results",
@@ -243,8 +247,11 @@ const LegalPaternityTesting = () => {
         steps={[
           {
             title: "Schedule Your Appointment",
-            description:
-              "Book online or call our Denver office for same-day availability."
+            description: (
+              <>
+                Book online or call our <Link to="/locations/denver" className="text-blue-600 underline">Denver</Link> office for same-day availability.
+              </>
+            )
           },
           {
             title: "Professional Sample Collection",
@@ -279,7 +286,7 @@ const LegalPaternityTesting = () => {
           Ready to Book Your Legal DNA Test?
         </h2>
         <p className="text-gray-700 mb-6 max-w-2xl mx-auto">
-          Schedule your appointment in minutes. Book online below or call us
+          <Link to="/appointments" className="text-blue-600 underline font-medium">Schedule a DNA test</Link> or book a DNA test appointment in minutes. Book online below or call us
           today for immediate assistance.
         </p>
         <div className="max-w-3xl mx-auto">
@@ -349,16 +356,25 @@ const LegalPaternityTesting = () => {
         <h2 className="text-xl font-bold text-blue-900 mb-4">Other Services</h2>
         <p className="text-gray-700 mb-6">
           Looking for other types of DNA testing? Explore our{" "}
-          <a
-            href="/peace-of-mind-dna-tests"
-            className="text-blue-600 underline"
-          >
-            Peace of Mind DNA Test
-          </a>{" "}
-          or{" "}
-          <a href="/services/immigration-dna-testing" className="text-blue-600 underline">
-            Immigration DNA Testing
-          </a>
+          <Link to="/services/non-legal-paternity-testing" className="text-blue-600 underline">
+            peace of mind paternity test
+          </Link>
+          , our{" "}
+          <Link to="/services/prenatal-paternity-testing" className="text-blue-600 underline">
+            prenatal paternity test
+          </Link>
+          , or{" "}
+          <Link to="/services/immigration-dna-testing" className="text-blue-600 underline">
+            immigration DNA testing
+          </Link>
+          . Learn more about{" "}
+          <Link to="/mile-high-dna-corner/legal-vs-non-legal-dna-test" className="text-blue-600 underline">
+            legal vs non-legal DNA testing
+          </Link>
+          {" "}in our guide. For typical costs, see our{" "}
+          <Link to="/guides/legal-dna-test-cost" className="text-blue-600 underline">
+            legal DNA test cost guide
+          </Link>
           .
         </p>
       </section>

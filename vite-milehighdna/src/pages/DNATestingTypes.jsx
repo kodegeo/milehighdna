@@ -265,7 +265,7 @@ const DNATestingTypes = () => {
                   Non-Legal Testing Guide
                 </Link>
                 <Link 
-                  to="/products/peace-of-mind-dna-kit"
+                  to="/shop/at-home-paternity-test"
                   className="border-2 border-green-600 text-green-600 px-6 py-3 rounded-lg font-semibold hover:bg-green-600 hover:text-white transition-all duration-300 text-center"
                 >
                   Order At-Home Kit

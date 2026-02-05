@@ -1,3 +1,8 @@
+/**
+ * @deprecated This page is no longer used. The route /products/peace-of-mind-dna-kit
+ * redirects to /shop/at-home-paternity-test. See src/pages/shop/AtHomePaternityTest.jsx.
+ * File kept for reference; safe to remove in a future cleanup.
+ */
 import React, { useState, useEffect } from "react";
 import { Helmet } from "react-helmet-async";
 import { useNavigate } from "react-router-dom";

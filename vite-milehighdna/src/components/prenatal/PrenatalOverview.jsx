@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const PrenatalOverview = () => {
   return (
@@ -8,10 +9,10 @@ const PrenatalOverview = () => {
           How Non-Invasive Prenatal DNA Testing Works in Denver
         </h2>
         <p className="text-lg text-gray-600 mb-8">
-          Our non-invasive prenatal DNA test uses a simple blood sample from the expectant mother 
+          Our non-invasive <Link to="/services/prenatal-paternity-testing" className="text-blue-600 underline">prenatal paternity test</Link> uses a simple blood sample from the expectant mother 
           and a cheek swab from the alleged father to safely determine paternity before birth. 
-          The test is risk-free, AABB-accredited, and provides over 99.9% accurate results for peace of mind, 
-          legal cases, or immigration purposes—trusted by families across Denver, Aurora, Lakewood, and throughout Colorado.
+          The test is risk-free, AABB-accredited, and provides over 99.9% accurate results for peace of mind,{" "}
+          <Link to="/services/legal-paternity-testing" className="text-blue-600 underline">legal cases</Link>, or <Link to="/services/immigration-dna-testing" className="text-blue-600 underline">immigration</Link> purposes—trusted by families across <Link to="/locations/denver" className="text-blue-600 underline">Denver</Link>, Aurora, Lakewood, and throughout Colorado.
         </p>
 
         <div className="grid gap-8 md:grid-cols-3 text-left">

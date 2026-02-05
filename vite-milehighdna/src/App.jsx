@@ -58,7 +58,8 @@ import GpsOriginsDNATest from './pages/services/GpsOriginsDNATest';
 import AtHomeDNAKits from './pages/services/AtHomeDNAKits';
 import CheckoutDomestic from './pages/CheckoutDomestic';
 import CheckoutInternational from './pages/CheckoutInternational';
-import PeaceOfMindDNAKit from './pages/PeaceOfMindDNAKit';
+import ShopCollection from './pages/shop/ShopCollection';
+import AtHomePaternityTest from './pages/shop/AtHomePaternityTest';
 import Confirmation from './pages/Confirmation';
 import FamilyRelationshipDNA from './pages/FamilyRelationshipDNA';
 import MileHighDNACorner from './pages/MileHighDNACorner';
@@ -202,7 +203,9 @@ function AppLayout() {
             <Route path="/forensic-dna-analysis" element={<ForensicDNAAnalysis />} />
             <Route path="/checkout-domestic" element={<CheckoutDomestic />} />
             <Route path="/checkout-international" element={<CheckoutInternational />} />
-            <Route path="/products/peace-of-mind-dna-kit" element={<PeaceOfMindDNAKit />} />
+            <Route path="/shop" element={<ShopCollection />} />
+            <Route path="/shop/at-home-paternity-test" element={<AtHomePaternityTest />} />
+            <Route path="/products/peace-of-mind-dna-kit" element={<Navigate to="/shop/at-home-paternity-test" replace />} />
             <Route path="/confirmation" element={<Confirmation />} />
             <Route path="/family-relationship-dna" element={<FamilyRelationshipDNA />} />
             <Route path="/mile-high-dna-corner" element={<MileHighDNACorner />} />

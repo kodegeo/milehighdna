@@ -124,10 +124,7 @@ const GuidesIndex = () => {
         <div className="max-w-4xl mx-auto">
           <div className="bg-white p-4 rounded-lg shadow-sm border-l-4 border-blue-500">
             <p className="text-gray-700">
-              <strong>About This Page:</strong> This is an <em>educational resource hub</em> providing informational guides about DNA testing costs and options. For booking appointments or service-specific details, please visit our{' '}
-              <Link to="/services" className="text-blue-600 underline font-medium">
-                Services page
-              </Link>.
+              <strong>About This Page:</strong> This is an <em>educational resource hub</em> providing informational guides about DNA testing costs and options. For booking or service details, see our <Link to="/services/prenatal-paternity-testing" className="text-blue-600 underline font-medium">prenatal paternity test</Link>, <Link to="/services/legal-paternity-testing" className="text-blue-600 underline font-medium">legal paternity testing</Link>, <Link to="/services/non-legal-paternity-testing" className="text-blue-600 underline font-medium">peace of mind paternity test</Link>, <Link to="/services/immigration-dna-testing" className="text-blue-600 underline font-medium">immigration DNA testing</Link>, or <Link to="/services" className="text-blue-600 underline font-medium">all services</Link>.
             </p>
           </div>
         </div>

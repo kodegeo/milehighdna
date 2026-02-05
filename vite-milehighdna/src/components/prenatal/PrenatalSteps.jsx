@@ -1,10 +1,16 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
+
 const PrenatalSteps = () => {
   const steps = [
     {
       number: 1,
       title: 'Book Your Appointment',
-      description:
-        'Call us or book online to schedule your prenatal DNA test. We’ll explain the process, answer questions, and coordinate sample collection for both parents.',
+      description: (
+        <>
+          <Link to="/appointments" className="text-blue-600 underline font-medium">Schedule a DNA test</Link> or book online to schedule your prenatal DNA test. We’ll explain the process, answer questions, and coordinate sample collection for both parents.
+        </>
+      ),
     },
     {
       number: 2,
@@ -41,7 +47,7 @@ const PrenatalSteps = () => {
               <div className="text-3xl font-bold text-blue-600">{step.number}</div>
               <div>
                 <h3 className="text-xl font-semibold text-gray-800 mb-2">{step.title}</h3>
-                <p className="text-gray-600">{step.description}</p>
+                <p className="text-gray-600">{typeof step.description === 'string' ? step.description : step.description}</p>
               </div>
             </div>
           ))}

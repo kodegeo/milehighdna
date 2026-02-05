@@ -1,5 +1,6 @@
 import React from "react";
 import { Helmet } from 'react-helmet-async';
+import { Link } from 'react-router-dom';
 
 // Assets
 import HeroImage from "../../assets/images/father-baby-3.png";
@@ -156,9 +157,9 @@ const NonLegalPaternityTesting = () => {
         sensitive questions without the need for court involvement.
       </p>
       <p className="text-gray-700 mb-8 text-lg leading-relaxed">
-        Same-day in-person testing at our Denver location is available, or 
+        Same-day in-person testing at our <Link to="/locations/denver" className="text-blue-600 underline">Denver</Link> location is available, or 
         request an at-home kit if preferred. All tests are handled with care, discretion, 
-        and professional support from start to finish.
+        and professional support from start to finish. To <Link to="/appointments" className="text-blue-600 underline">schedule a DNA test</Link> or book a DNA test appointment, use the options below or call us.
       </p>
       <div className="flex flex-col sm:flex-row gap-4">
         <a
@@ -168,7 +169,7 @@ const NonLegalPaternityTesting = () => {
           Schedule In-Person Test
         </a>
         <a
-          href="/products/peace-of-mind-dna-kit"
+          href="/shop/at-home-paternity-test"
           className="bg-blue-600 text-white px-8 py-4 rounded-xl shadow-lg hover:bg-blue-700 transition font-semibold text-lg inline-block text-center"
         >
           Order Home Kit
@@ -226,7 +227,7 @@ const NonLegalPaternityTesting = () => {
               <p className="text-3xl font-bold text-blue-600 mb-4">$199</p>
               <p className="text-gray-600 mb-4">Order online and complete the test <br/> from the comfort of your home</p>
               <a
-                href="/products/peace-of-mind-dna-kit"
+                href="/shop/at-home-paternity-test"
                 className="bg-blue-600 text-white px-6 py-3 rounded-xl shadow-lg hover:bg-blue-700 transition font-semibold text-lg inline-block w-full"
               >
                 Order Online
@@ -247,8 +248,12 @@ const NonLegalPaternityTesting = () => {
           </div>
           
           <p className="text-gray-700 mb-6 text-lg">
-            This non-legal DNA test uses the same laboratory technology as court-admissible tests, 
-            but results are not admissible in court. Perfect for personal confirmation and family reassurance.
+            This non-legal DNA test uses the same laboratory technology as{" "}
+            <Link to="/services/legal-paternity-testing" className="text-blue-600 underline">court-admissible DNA tests</Link>, 
+            but results are not admissible in court. Perfect for personal confirmation and family reassurance. 
+            Need testing during pregnancy? See our <Link to="/services/prenatal-paternity-testing" className="text-blue-600 underline">prenatal paternity test</Link>. 
+            For visa and USCIS cases, we offer <Link to="/services/immigration-dna-testing" className="text-blue-600 underline">immigration DNA testing</Link>. 
+            Learn more in our <Link to="/mile-high-dna-corner/legal-vs-non-legal-dna-test" className="text-blue-600 underline">legal vs non-legal guide</Link> and <Link to="/guides/non-legal-dna-test-cost" className="text-blue-600 underline">non-legal DNA test cost guide</Link>.
           </p>
           
         </div>

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import CornerLayout from "../../components/corner/CornerLayout";
 import ServingColorado from "../../components/common/ServingColorado";
 import CallToAction from "../../components/corner/CallToAction";
@@ -98,7 +99,7 @@ const ImmigrationDNATestingDenver = () => {
         <div className="w-full px-4 md:px-0 py-8 bg-white/90 rounded-xl shadow-lg">
           <p className="text-base mb-6 text-justify">
             If you are completing an immigration process that requires proof of a biological relationship,
-            choosing the right DNA testing provider is critical. Immigration DNA testing must meet strict
+            choosing the right DNA testing provider is critical. <Link to="/services/immigration-dna-testing" className="text-blue-600 underline">Immigration DNA testing</Link> must meet strict
             U.S. Department of State and USCIS requirements.
           </p>
 

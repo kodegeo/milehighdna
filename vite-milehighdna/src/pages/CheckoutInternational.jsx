@@ -1,25 +1,26 @@
 import React, { useState, useEffect } from "react";
 import { Helmet } from "react-helmet-async";
-import { useLocation } from "react-router-dom";
+import { useLocation, Navigate } from "react-router-dom";
 import Select from "react-select";
 import countryRegionData from "country-region-data/data.json";
 import { getShippingRate } from "../utils/getShippingRate";
 
-
-
 const CheckoutInternational = () => {
   const location = useLocation();
+  const state = location.state || {};
+  if (!state.fromShop) {
+    return <Navigate to="/shop" replace />;
+  }
   const countries = countryRegionData;
-
   const {
     firstName,
     lastName,
     customerEmail,
-    phoneNumber,           // <-- ADD THIS
+    phoneNumber,
     productName = "At Home DNA Testing Kit",
     unitPrice = 199,
     country: initialCountry = "CA",
-  } = location.state || {};
+  } = state;
 
   // Shipping state
   const [shippingMethod, setShippingMethod] = useState("regular");

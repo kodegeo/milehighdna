@@ -214,7 +214,7 @@ const Home = () => {
                 <h3 className="text-xl font-bold mb-2">At Home Paternity Kits</h3>
                 <p className="text-gray-600 mb-4">Order an at-home paternity DNA test kit for private, convenient testing. Collect samples at home, mail them to our Denver DNA lab, and receive secure, accurate results online. Ideal for families seeking peace of mind.</p>
                 <Link
-                  to="/products/peace-of-mind-dna-kit"
+                  to="/shop/at-home-paternity-test"
                   className="text-[#2C6FA6] hover:text-[#7DB9E8] font-semibold transition duration-300"
                 >
                   Learn More →

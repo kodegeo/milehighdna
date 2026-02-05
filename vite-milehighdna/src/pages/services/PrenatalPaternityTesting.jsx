@@ -203,6 +203,11 @@ const PrenatalPaternityTesting = () => {
           </div>
         </div>
       </section>
+      <section className="py-10 px-6 text-center">
+        <p className="text-gray-700 mb-0 max-w-2xl mx-auto">
+          We also offer <Link to="/services/legal-paternity-testing" className="text-blue-600 underline">legal paternity testing</Link> and <Link to="/services/non-legal-paternity-testing" className="text-blue-600 underline">peace of mind paternity testing</Link> after birth, and <Link to="/services/immigration-dna-testing" className="text-blue-600 underline">immigration DNA testing</Link> for visa and USCIS cases. See our <Link to="/guides/prenatal-dna-test-cost" className="text-blue-600 underline">prenatal DNA test cost guide</Link> and <Link to="/mile-high-dna-corner/how-much-does-a-prenatal-dna-test-cost" className="text-blue-600 underline">prenatal cost guide</Link> for more details.
+        </p>
+      </section>
       <ServingColorado />
       <CallToAction />
       

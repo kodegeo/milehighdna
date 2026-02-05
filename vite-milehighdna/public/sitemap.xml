@@ -321,10 +321,16 @@
   </url>
 
   <url>
-    <loc>https://milehighdnatesting.com/products/peace-of-mind-dna-kit</loc>
+    <loc>https://milehighdnatesting.com/shop</loc>
     <lastmod>2026-01-25T03:47:39.090Z</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://milehighdnatesting.com/shop/at-home-paternity-test</loc>
+    <lastmod>2026-01-25T03:47:39.090Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
 
   <url>

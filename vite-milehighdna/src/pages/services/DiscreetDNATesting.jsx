@@ -174,7 +174,7 @@ const DiscreetDNATesting = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a
-                href="/products/peace-of-mind-dna-kit"
+                href="/shop/at-home-paternity-test"
                 className="bg-blue-600 text-white px-8 py-4 rounded-xl shadow-lg hover:bg-blue-700 transition font-semibold text-lg inline-block text-center"
               >
                 Order Discreet Kit
@@ -208,7 +208,7 @@ const DiscreetDNATesting = () => {
               <p className="text-3xl font-bold text-blue-600 mb-4">$199</p>
               <p className="text-gray-600 mb-4">Unbranded kit delivered discreetly to your address</p>
               <a
-                href="/products/peace-of-mind-dna-kit"
+                href="/shop/at-home-paternity-test"
                 className="bg-blue-600 text-white px-6 py-3 rounded-xl shadow-lg hover:bg-blue-700 transition font-semibold text-lg inline-block w-full"
               >
                 Order Kit

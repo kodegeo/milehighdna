@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 const ProcessCompliance = () => {
   const mustBeItems = [
     'Initiated through an AABB-accredited laboratory',
@@ -16,7 +18,7 @@ const ProcessCompliance = () => {
           Make Your Immigration Process Easier
         </h2>
         <p className="text-base text-gray-600 mb-6 text-center leading-relaxed">
-          Immigration DNA testing differs from standard legal DNA tests. These cases must be:
+          Immigration DNA testing differs from standard <Link to="/services/legal-paternity-testing" className="text-blue-600 hover:text-blue-800 underline">legal DNA tests</Link>. These cases must be:
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
           {mustBeItems.map((item, index) => (

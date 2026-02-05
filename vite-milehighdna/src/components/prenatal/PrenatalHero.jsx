@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import prenatalHero from '../../assets/images/service_pre.png';
 
 const PrenatalHero = () => {
@@ -11,7 +12,7 @@ const PrenatalHero = () => {
             Non-Invasive Prenatal Paternity Test (NIPP) in Denver, CO | Mile High DNA Testing
           </h1>
           <p className="text-lg text-gray-600 mb-6">
-            Mile High DNA Testing offers non-invasive prenatal paternity testing (NIPP) in Denver, Aurora, and Lakewood, Colorado. 
+            Mile High DNA Testing offers non-invasive <Link to="/services/prenatal-paternity-testing" className="text-blue-600 underline">prenatal paternity testing</Link> (NIPP) in <Link to="/locations/denver" className="text-blue-600 underline">Denver</Link>, Aurora, and Lakewood, Colorado. 
             Our safe blood draw and cheek swab process poses no risk to pregnancy while delivering fast, accurate, and confidential results 
             processed by AABB-accredited laboratories—with results typically available in just 7–10 business days.
           </p>

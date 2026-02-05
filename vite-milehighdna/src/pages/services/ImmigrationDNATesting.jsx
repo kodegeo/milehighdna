@@ -229,6 +229,15 @@ const ImmigrationDNATesting = () => {
         </div>
       </section>
 
+      {/* Other services */}
+      <section className="py-10 px-6 md:px-12 lg:px-16 bg-white text-center">
+        <div className="max-w-4xl mx-auto">
+          <p className="text-gray-700 mb-0">
+            We also provide <Link to="/services/legal-paternity-testing" className="text-blue-600 underline">legal paternity testing</Link>, <Link to="/services/non-legal-paternity-testing" className="text-blue-600 underline">peace of mind paternity testing</Link>, and <Link to="/services/prenatal-paternity-testing" className="text-blue-600 underline">prenatal paternity testing</Link>. Learn more in our <Link to="/mile-high-dna-corner/immigration-dna-testing-denver" className="text-blue-600 underline">immigration DNA testing guide</Link>.
+          </p>
+        </div>
+      </section>
+
       {/* Serving Colorado */}
       <ServingColorado />
 

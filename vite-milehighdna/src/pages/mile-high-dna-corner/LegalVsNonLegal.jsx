@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Helmet } from "react-helmet-async";
 
 import CornerLayout from '../../components/corner/CornerLayout';
@@ -145,7 +146,7 @@ const LegalVsNonLegal = () => {
         {/* Article Content */}
         <div className="w-full px-4 md:px-0 py-8 bg-white/90 rounded-xl shadow-lg">
           <p className="text-base leading-relaxed mb-6 text-justify">
-          As you begin exploring DNA testing, you may be surprised to find there's more than one type — and the difference between them can be significant. Whether you're seeking proof for court, personal peace of mind, or immigration purposes, understanding the distinction between legal and non-legal DNA testing helps you make an informed, confident decision.         
+          As you begin exploring DNA testing, you may be surprised to find there's more than one type — and the difference between them can be significant. Whether you're seeking proof for court via <Link to="/services/legal-paternity-testing" className="text-blue-600 underline">court-admissible DNA test</Link>, personal <Link to="/services/non-legal-paternity-testing" className="text-blue-600 underline">peace of mind paternity test</Link>, or <Link to="/services/immigration-dna-testing" className="text-blue-600 underline">immigration DNA testing</Link>, understanding the distinction between <Link to="/services/legal-paternity-testing" className="text-blue-600 underline">legal</Link> and <Link to="/services/non-legal-paternity-testing" className="text-blue-600 underline">non-legal DNA testing</Link> helps you make an informed, confident decision.         
            </p>
           <p className="text-base mb-6 text-justify">It's a common question we hear in Denver, Aurora, Thornton, and Lakewood: <br /><br /> 
           <em>What’s the difference between a legal DNA test and one that isn’t?</em> <br /><br /> 
@@ -190,7 +191,7 @@ const LegalVsNonLegal = () => {
           <h3 className="text-2xl font-bold mt-10 mb-4 text-gray-800">How Much Do Legal DNA Tests Cost, Near Me?</h3>
           <p className="text-base mb-6 text-justify">Because legal tests require additional verification and professional oversight, they generally cost more than non-legal tests. <br /><br />
           In Colorado, legal DNA tests (paternity, maternity, or relationship) typically range from $350 and $550, depending on the type of test and the number of people tested. <br /><br />
-          A non-legal (peace-of-mind) DNA test usually costs between $199 and $299, since the process doesn't include identity verification or notarized documentation. You can get an at home DNA kit <a href="/products/peace-of-mind-dna-kit" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline">here.</a><br /><br />          
+          A non-legal (peace-of-mind) DNA test usually costs between $199 and $299, since the process doesn't include identity verification or notarized documentation. You can get an at home DNA kit <a href="/shop/at-home-paternity-test" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline">here.</a><br /><br />          
           Both tests deliver certified results within 3–5 business days once the lab receives the samples.
           </p>
 

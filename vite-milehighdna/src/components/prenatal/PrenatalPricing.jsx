@@ -1,3 +1,6 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
+
 const PrenatalPricing = () => {
   return (
     <section className="bg-blue-50 py-16 px-6 md:px-16 lg:px-24">
@@ -7,7 +10,8 @@ const PrenatalPricing = () => {
         </h2>
         <p className="text-lg text-gray-600 mb-10">
           Our prenatal packages include non-invasive lab analysis, professional sample collection, and 
-          optional legal documentation. We provide clear, upfront pricing for Denver families—no hidden fees.
+          optional legal documentation. We provide clear, upfront pricing for Denver families—no hidden fees. 
+          For peace of mind only, see our <Link to="/services/non-legal-paternity-testing" className="text-blue-600 underline">private paternity testing</Link>; for court use, see <Link to="/services/legal-paternity-testing" className="text-blue-600 underline">court-admissible DNA testing</Link>.
         </p>
 
         <div className="grid gap-6 md:grid-cols-2">

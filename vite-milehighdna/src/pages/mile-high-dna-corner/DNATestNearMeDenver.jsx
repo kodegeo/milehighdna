@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import CornerLayout from "../../components/corner/CornerLayout";
 import ServingColorado from "../../components/common/ServingColorado";
 import CallToAction from "../../components/corner/CallToAction";
@@ -142,9 +143,9 @@ const DNATestNearMeDenver = () => {
           </h3>
 
           <p className="text-base mb-6 text-justify">
-            Our paternity DNA tests provide clear, science-backed answers when they
-            matter most. We offer both legal paternity testing accepted in court and
-            non-legal peace-of-mind testing for personal reassurance.
+            Our <Link to="/services/legal-paternity-testing" className="text-blue-600 underline">paternity DNA tests</Link> provide clear, science-backed answers when they
+            matter most. We offer both <Link to="/services/legal-paternity-testing" className="text-blue-600 underline">legal paternity testing</Link> accepted in court and
+            <Link to="/services/non-legal-paternity-testing" className="text-blue-600 underline">peace of mind paternity testing</Link> for personal reassurance.
           </p>
 
           <h3 className="text-2xl font-bold mt-10 mb-4">
@@ -152,7 +153,7 @@ const DNATestNearMeDenver = () => {
           </h3>
 
           <p className="text-base mb-6 text-justify">
-            Expecting a child and searching for a safe prenatal DNA test near you?
+            Expecting a child and searching for a safe <Link to="/services/prenatal-paternity-testing" className="text-blue-600 underline">prenatal paternity test</Link> near you?
             Non-invasive prenatal paternity testing can determine paternity as early
             as 7 weeks of pregnancy using only a blood draw from the mother and cheek
             swabs from the alleged father.

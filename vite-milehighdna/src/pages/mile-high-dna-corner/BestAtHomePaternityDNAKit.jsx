@@ -374,7 +374,7 @@ export default function BestAtHomePaternityDNAKit() {
           </p>
           <div className="mt-8">
             <a
-              href="https://www.milehighdnatesting.com/products/peace-of-mind-dna-kit"
+              href="https://www.milehighdnatesting.com/shop/at-home-paternity-test"
               className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition"
             >
               Order Your Kit Here

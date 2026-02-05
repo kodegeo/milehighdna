@@ -11,6 +11,7 @@ Mile High DNA Testing, in partnership with an **AABB-accredited and CAP-certifie
 
 All immigration DNA testing services are **fully compliant with USCIS protocols**. We manage the entire testing process — coordinating U.S. sample collection and international logistics — to ensure timely delivery of official results to **U.S. Embassies and Consulates**.
 
+https://www.ufclab.com/lab-services/immigration
 ---
 
 ## Worldwide Support, Trusted Outcomes
