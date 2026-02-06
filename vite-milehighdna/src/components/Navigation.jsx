@@ -100,53 +100,6 @@ const Navigation = () => {
               )}
             </div>
 
-            {/* Guides Dropdown */}
-            <div
-              className="relative"
-              onMouseEnter={() => setOpenDropdown('guides')}
-              onMouseLeave={closeDropdown}
-            >
-              <button
-                type="button"
-                className="text-gray-700 hover:text-blue-600 transition duration-300 flex items-center"
-                aria-expanded={openDropdown === 'guides'}
-                aria-haspopup="true"
-                aria-controls="nav-guides-menu"
-                id="nav-guides-trigger"
-                onClick={() => setOpenDropdown(openDropdown === 'guides' ? null : 'guides')}
-                onKeyDown={(e) => handleDropdownKeyDown(e, 'guides')}
-              >
-                Guides
-                <svg className="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                </svg>
-              </button>
-              {openDropdown === 'guides' && (
-                <div
-                  id="nav-guides-menu"
-                  role="menu"
-                  aria-labelledby="nav-guides-trigger"
-                  className="absolute top-[100%] left-0 bg-white border border-gray-200 shadow-lg rounded-md pt-2 w-64 z-50"
-                >
-                  <Link to="/guides" role="menuitem" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={closeDropdown}>
-                    All DNA Testing Guides
-                  </Link>
-
-                  {GUIDE_ITEMS.map(({ label, to }) => (
-                    <Link
-                      key={to}
-                      to={to}
-                      role="menuitem"
-                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                      onClick={closeDropdown}
-                    >
-                      {label}
-                    </Link>
-                  ))}
-                </div>
-              )}
-            </div>
-
             {/* Services Dropdown */}
             <div
               className="relative"
@@ -193,9 +146,56 @@ const Navigation = () => {
                   <Link to="/services/siblingship-testing" role="menuitem" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={closeDropdown}>
                     Siblingship Testing
                   </Link>
-                  <Link to="/shop/at-home-paternity-test" role="menuitem" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={closeDropdown}>
+                  <Link to="/shop" role="menuitem" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={closeDropdown}>
                     At Home DNA Test Kits
                   </Link>
+                </div>
+              )}
+            </div>
+
+            {/* Guides Dropdown */}
+            <div
+              className="relative"
+              onMouseEnter={() => setOpenDropdown('guides')}
+              onMouseLeave={closeDropdown}
+            >
+              <button
+                type="button"
+                className="text-gray-700 hover:text-blue-600 transition duration-300 flex items-center"
+                aria-expanded={openDropdown === 'guides'}
+                aria-haspopup="true"
+                aria-controls="nav-guides-menu"
+                id="nav-guides-trigger"
+                onClick={() => setOpenDropdown(openDropdown === 'guides' ? null : 'guides')}
+                onKeyDown={(e) => handleDropdownKeyDown(e, 'guides')}
+              >
+                Pricing Guides
+                <svg className="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+              {openDropdown === 'guides' && (
+                <div
+                  id="nav-guides-menu"
+                  role="menu"
+                  aria-labelledby="nav-guides-trigger"
+                  className="absolute top-[100%] left-0 bg-white border border-gray-200 shadow-lg rounded-md pt-2 w-64 z-50"
+                >
+                  <Link to="/guides" role="menuitem" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={closeDropdown}>
+                    All DNA Testing Pricing Guides
+                  </Link>
+
+                  {GUIDE_ITEMS.map(({ label, to }) => (
+                    <Link
+                      key={to}
+                      to={to}
+                      role="menuitem"
+                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                      onClick={closeDropdown}
+                    >
+                      {label}
+                    </Link>
+                  ))}
                 </div>
               )}
             </div>

@@ -60,6 +60,18 @@ import CheckoutDomestic from './pages/CheckoutDomestic';
 import CheckoutInternational from './pages/CheckoutInternational';
 import ShopCollection from './pages/shop/ShopCollection';
 import AtHomePaternityTest from './pages/shop/AtHomePaternityTest';
+import AtHomePaternityTestMultipleChildren from './pages/shop/AtHomePaternityTestMultipleChildren';
+import PeaceOfMindDNATestProduct from './pages/shop/PeaceOfMindDNATestProduct';
+import MultiLocationPaternityDNATest from './pages/shop/MultiLocationPaternityDNATest';
+import FastTrackResultsUpgrade from './pages/shop/FastTrackResultsUpgrade';
+import PaternityDNATest from './pages/shop/PaternityDNATest';
+import ProductPage from './pages/shop/ProductPage';
+import GrandparentDNATest from './pages/shop/GrandparentDNATest';
+import GrandparentProductPage from './pages/shop/GrandparentProductPage';
+import SiblingDNATest from './pages/shop/SiblingDNATest';
+import SiblingProductPage from './pages/shop/SiblingProductPage';
+import DiscreetDNATest from './pages/shop/DiscreetDNATest';
+import DiscreetProductPage from './pages/shop/DiscreetProductPage';
 import Confirmation from './pages/Confirmation';
 import FamilyRelationshipDNA from './pages/FamilyRelationshipDNA';
 import MileHighDNACorner from './pages/MileHighDNACorner';
@@ -204,7 +216,19 @@ function AppLayout() {
             <Route path="/checkout-domestic" element={<CheckoutDomestic />} />
             <Route path="/checkout-international" element={<CheckoutInternational />} />
             <Route path="/shop" element={<ShopCollection />} />
+            <Route path="/shop/product/:productKey" element={<ProductPage />} />
+            <Route path="/shop/paternity-dna-test" element={<PaternityDNATest />} />
+            <Route path="/shop/grandparent-dna-test" element={<GrandparentDNATest />} />
+            <Route path="/shop/grandparent-dna-test/:productSlug" element={<GrandparentProductPage />} />
+            <Route path="/shop/sibling-dna-test" element={<SiblingDNATest />} />
+            <Route path="/shop/sibling-dna-test/:productSlug" element={<SiblingProductPage />} />
+            <Route path="/shop/discreet-dna-test" element={<DiscreetDNATest />} />
+            <Route path="/shop/discreet-dna-test/:productSlug" element={<DiscreetProductPage />} />
             <Route path="/shop/at-home-paternity-test" element={<AtHomePaternityTest />} />
+            <Route path="/shop/at-home-paternity-test-multiple-children" element={<AtHomePaternityTestMultipleChildren />} />
+            <Route path="/shop/peace-of-mind-dna-test" element={<PeaceOfMindDNATestProduct />} />
+            <Route path="/shop/multi-location-paternity-dna-test" element={<MultiLocationPaternityDNATest />} />
+            <Route path="/shop/fast-track-results-upgrade" element={<FastTrackResultsUpgrade />} />
             <Route path="/products/peace-of-mind-dna-kit" element={<Navigate to="/shop/at-home-paternity-test" replace />} />
             <Route path="/confirmation" element={<Confirmation />} />
             <Route path="/family-relationship-dna" element={<FamilyRelationshipDNA />} />

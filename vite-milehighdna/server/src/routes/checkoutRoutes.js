@@ -1,5 +1,6 @@
 import express from "express";
 import { processCheckout } from "../utils/checkoutUtils.js";
+import { getProductConfig, isValidProductKey } from "../config/productCatalog.js";
 import axios from "axios";
 
 const router = express.Router();
@@ -10,16 +11,64 @@ router.post("/create-checkout", async (req, res) => {
       firstName,
       lastName,
       customerEmail,
-      phoneNumber,        // ✅ Capture from frontend
+      phoneNumber,
       productName,
       unitPrice,
+      productKey, // Accept productKey instead of stripePriceId
       shippingFee,
       country,
       shippingMethod,
       locations,
-      primaryAddress,     // international/domestic structured address
+      primaryAddress,
       secondaryAddress,
     } = req.body;
+
+    // 🔍 DEBUG: Log incoming productKey
+    console.log("🔍 [ROUTE] Incoming productKey:", productKey);
+    console.log("🔍 [ROUTE] Request body keys:", Object.keys(req.body));
+
+    // ⚠️ STRICT VALIDATION: Fail loudly if productKey is missing
+    if (!productKey || !productKey.trim()) {
+      const errorMsg = `❌ [ROUTE] productKey is REQUIRED but missing or empty. Product: ${productName || "unknown"}`;
+      console.error(errorMsg);
+      return res.status(400).json({ error: "Product key is required for shop orders" });
+    }
+
+    // Resolve productKey to Stripe configuration
+    let stripePriceId = null;
+    let testType = null;
+    let legal = false;
+
+    const trimmedProductKey = productKey.trim();
+    
+    if (!isValidProductKey(trimmedProductKey)) {
+      const errorMsg = `❌ [ROUTE] Invalid productKey: "${trimmedProductKey}". Product: ${productName || "unknown"}`;
+      console.error(errorMsg);
+      return res.status(400).json({ error: `Invalid product key: ${trimmedProductKey}` });
+    }
+
+    const productConfig = getProductConfig(trimmedProductKey);
+    if (!productConfig) {
+      const errorMsg = `❌ [ROUTE] Product config not found for key: "${trimmedProductKey}". Product: ${productName || "unknown"}`;
+      console.error(errorMsg);
+      return res.status(400).json({ error: `Product configuration not found for key: ${trimmedProductKey}` });
+    }
+
+    stripePriceId = productConfig.stripePriceId;
+    testType = productConfig.testType;
+    legal = productConfig.legal;
+
+    // 🔍 DEBUG: Log resolved values
+    console.log("🔍 [ROUTE] Resolved stripePriceId:", stripePriceId);
+    console.log("🔍 [ROUTE] Resolved testType:", testType);
+    console.log("🔍 [ROUTE] Resolved legal:", legal);
+
+    // ⚠️ FINAL VALIDATION: Ensure stripePriceId was resolved
+    if (!stripePriceId || !stripePriceId.trim()) {
+      const errorMsg = `❌ [ROUTE] stripePriceId is missing after resolution. ProductKey: ${trimmedProductKey}, Product: ${productName || "unknown"}`;
+      console.error(errorMsg);
+      return res.status(500).json({ error: "Failed to resolve Stripe price ID from product key" });
+    }
 
     // Dynamic URLs
     const successUrl = `${process.env.FRONTEND_URL}/success`;
@@ -28,6 +77,10 @@ router.post("/create-checkout", async (req, res) => {
     // 🔥 Pass everything to checkoutUtils (FULL PAYLOAD)
     const result = await processCheckout({
       ...req.body,
+      stripePriceId, // Resolved from productKey
+      productKey, // Pass productKey for metadata
+      testType, // Pass testType for metadata
+      legal, // Pass legal flag for metadata
       success_url: successUrl,
       cancel_url: cancelUrl,
     });

@@ -135,14 +135,30 @@ const ScheduleTestSection = () => {
                 )}
               </h3>
               <p className="text-gray-600 mb-4 whitespace-pre-line">{service.description}</p>
-              <a
-                href={service.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition"
-              >
-                Book Appointment
-              </a>
+              <div className="flex flex-wrap gap-3">
+                <a
+                  href={service.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition"
+                >
+                  Book Appointment
+                </a>
+                <a
+                  href="tel:+17209009342"
+                  onClick={() => {
+                    window.dataLayer = window.dataLayer || [];
+                    window.dataLayer.push({
+                      event: 'phone_click',
+                      phone_number: '720-900-9342',
+                      phone_location: `ScheduleTestSection - ${service.name}`,
+                    });
+                  }}
+                  className="inline-block text-blue-600 font-semibold px-6 py-3 rounded-lg border-2 border-blue-600 hover:bg-blue-50 transition"
+                >
+                  Call Now
+                </a>
+              </div>
             </div>
           ))}
         </div>

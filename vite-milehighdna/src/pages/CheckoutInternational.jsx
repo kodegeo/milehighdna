@@ -19,6 +19,7 @@ const CheckoutInternational = () => {
     phoneNumber,
     productName = "At Home DNA Testing Kit",
     unitPrice = 199,
+    productKey, // Accept productKey instead of stripePriceId
     country: initialCountry = "CA",
   } = state;
 
@@ -128,6 +129,14 @@ const CheckoutInternational = () => {
       return;
     }
       
+    // Validate productKey is provided for shop orders
+    if (!productKey) {
+      console.warn("productKey missing for shop order. Product:", productName);
+      alert("Product configuration error. Please contact support.");
+      setLoading(false);
+      return;
+    }
+
     setLoading(true);
   
     try {
@@ -140,9 +149,10 @@ const CheckoutInternational = () => {
             firstName,
             lastName,
             customerEmail,
-            phoneNumber,                     // <-- ADD THIS
+            phoneNumber,
             productName,
             unitPrice,
+            productKey, // Send productKey instead of stripePriceId
             shippingFee: shippingTotal,
             country: country1,
             orderSource: "online_international",

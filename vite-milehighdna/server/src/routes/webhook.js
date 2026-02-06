@@ -41,14 +41,35 @@ router.post("/", async (req, res) => {
 
       const orderId = metadata.orderId;
       if (orderId) {
+        // Extract productKey and testType from metadata
+        const productKey = metadata.productKey || null;
+        const testType = metadata.testType || null;
+        const legal = metadata.legal === "true"; // Convert string to boolean
+
+        // Build update object with product information
+        const updateData = {
+          order_status: "Paid",
+          stripe_payment_intent_id: session.payment_intent,
+          stripe_session_id: session.id,
+        };
+
+        // Add productKey and testType if available
+        if (productKey) {
+          updateData.product_key = productKey;
+        }
+        if (testType) {
+          // Map testType to database format (e.g., "grandparent" -> "grandparentage")
+          const dbTestType = testType === "grandparent" ? "grandparentage" : testType;
+          updateData.test_type = dbTestType;
+        }
+        if (metadata.legal !== undefined) {
+          updateData.legal = legal;
+        }
+
         // Update order in Supabase
         await supabase
           .from("orders")
-          .update({
-            order_status: "Paid",
-            stripe_payment_intent_id: session.payment_intent,
-            stripe_session_id: session.id,
-          })
+          .update(updateData)
           .eq("id", orderId);
 
         // Trigger confirmation email

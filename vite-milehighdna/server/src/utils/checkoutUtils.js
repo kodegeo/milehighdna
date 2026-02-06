@@ -8,9 +8,13 @@ export async function processCheckout(payload) {
     firstName,
     lastName,
     customerEmail,
-    phoneNumber,      // <-- ADD THIS
+    phoneNumber,
     productName,
     unitPrice,
+    stripePriceId, // Resolved from productKey in checkoutRoutes
+    productKey, // Product key for metadata
+    testType, // Test type for metadata and customer record
+    legal, // Legal flag for metadata
     shippingFee,
     orderSource,
     country,
@@ -31,6 +35,24 @@ export async function processCheckout(payload) {
     success_url,
     cancel_url,
   } = payload;
+
+  // 🔍 DEBUG: Log incoming productKey and resolved stripePriceId
+  console.log("🔍 [CHECKOUT] Incoming productKey:", productKey);
+  console.log("🔍 [CHECKOUT] Resolved stripePriceId:", stripePriceId);
+  console.log("🔍 [CHECKOUT] Product name:", productName);
+
+  // ⚠️ STRICT VALIDATION: Fail loudly if productKey or stripePriceId is missing
+  if (!productKey || !productKey.trim()) {
+    const errorMsg = `❌ [CHECKOUT] productKey is REQUIRED but missing. Product: ${productName || "unknown"}`;
+    console.error(errorMsg);
+    throw new Error(errorMsg);
+  }
+
+  if (!stripePriceId || !stripePriceId.trim()) {
+    const errorMsg = `❌ [CHECKOUT] stripePriceId is REQUIRED but missing. ProductKey: ${productKey}, Product: ${productName || "unknown"}`;
+    console.error(errorMsg);
+    throw new Error(errorMsg);
+  }
 
   let finalAddress = address;
   let finalCity = city;
@@ -53,6 +75,9 @@ export async function processCheckout(payload) {
 
   try {
     // 1. Upsert customer
+    // Map testType to database format (e.g., "paternity" -> "paternity", "grandparent" -> "grandparentage")
+    const dbTestType = testType === "grandparent" ? "grandparentage" : (testType || "peace_of_mind");
+    
     const { data: customer, error: customerErr } = await supabase
       .from("customerdb")
       .upsert(
@@ -60,8 +85,8 @@ export async function processCheckout(payload) {
           first_name: firstName,
           last_name: lastName,
           email: customerEmail,
-          phone: phoneNumber,       // <-- ADD THIS
-          test_type: "peace_of_mind",
+          phone: phoneNumber,
+          test_type: dbTestType,
         },
         { onConflict: ["email"], returning: "representation" }
       )
@@ -129,17 +154,20 @@ export async function processCheckout(payload) {
     if (itemErr) throw itemErr;
 
     // 4. Define Stripe line items
+    // stripePriceId should already be validated above, but double-check before Stripe API call
+    const trimmedPriceId = stripePriceId.trim();
+    console.log("🔍 [CHECKOUT] Creating Stripe session with priceId:", trimmedPriceId);
+    
+    if (!trimmedPriceId) {
+      const errorMsg = `❌ [CHECKOUT] stripePriceId is empty after trim. ProductKey: ${productKey}, Product: ${productName}`;
+      console.error(errorMsg);
+      throw new Error(errorMsg);
+    }
+
+    const productLineItem = { price: trimmedPriceId, quantity: 1 };
+
     const lineItems = [
-      process.env.STRIPE_LIVE_PRICE_ID
-        ? { price: process.env.STRIPE_LIVE_PRICE_ID, quantity: 1 }
-        : {
-            price_data: {
-              currency: "usd",
-              product_data: { name: productName },
-              unit_amount: Math.round(Number(unitPrice) * 100),
-            },
-            quantity: 1,
-          },
+      productLineItem,
       {
         price_data: {
           currency: "usd",
@@ -167,8 +195,11 @@ export async function processCheckout(payload) {
         firstName: firstName || "",
         lastName: lastName || "",
         productName: productName || "",
+        productKey: productKey || "", // Product key for order tracking
+        testType: testType || "", // Test type (paternity, grandparent, sibling, discreet, addon)
+        legal: String(legal || false), // Legal flag as string
         country: country || "",
-        phoneNumber,   // ✅ ADDED
+        phoneNumber,
         shippingMethod: shippingMethod || "",
         shippingLocations: String(locations),
       },
