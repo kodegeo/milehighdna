@@ -250,22 +250,6 @@ const Navigation = () => {
               </div>
             </details>
 
-            <details className="py-2" aria-label="Guides menu">
-              <summary className="text-gray-700 hover:text-blue-600 transition duration-300 cursor-pointer list-none flex items-center justify-between">
-                <span>Guides</span>
-                <svg className="w-4 h-4 flex-shrink-0 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                </svg>
-              </summary>
-              <div className="ml-4 space-y-1 mt-1">
-                {GUIDE_ITEMS.map(({ label, to }) => (
-                  <Link key={to} to={to} className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={() => setIsMenuOpen(false)}>
-                    {label}
-                  </Link>
-                ))}
-              </div>
-            </details>
-
             <details className="py-2" aria-label="Services menu">
               <summary className="text-gray-700 hover:text-blue-600 transition duration-300 cursor-pointer list-none flex items-center justify-between">
                 <span>Services</span>
@@ -280,7 +264,23 @@ const Navigation = () => {
                 <Link to="/services/prenatal-paternity-testing" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={() => setIsMenuOpen(false)}>Prenatal DNA Testing</Link>
                 <Link to="/services/grandparentage-testing" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={() => setIsMenuOpen(false)}>Grandparentage Testing</Link>
                 <Link to="/services/siblingship-testing" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={() => setIsMenuOpen(false)}>Siblingship Testing</Link>
-                <Link to="/shop/at-home-paternity-test" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={() => setIsMenuOpen(false)}>At Home DNA Test Kits</Link>
+                <Link to="/shop" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={() => setIsMenuOpen(false)}>At Home DNA Test Kits</Link>
+              </div>
+            </details>
+
+            <details className="py-2" aria-label="Guides menu">
+              <summary className="text-gray-700 hover:text-blue-600 transition duration-300 cursor-pointer list-none flex items-center justify-between">
+                <span>Pricing Guides</span>
+                <svg className="w-4 h-4 flex-shrink-0 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </summary>
+              <div className="ml-4 space-y-1 mt-1">
+                {GUIDE_ITEMS.map(({ label, to }) => (
+                  <Link key={to} to={to} className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={() => setIsMenuOpen(false)}>
+                    {label}
+                  </Link>
+                ))}
               </div>
             </details>
 
