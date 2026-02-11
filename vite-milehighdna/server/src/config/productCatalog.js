@@ -10,13 +10,13 @@ export const PRODUCT_CATALOG = {
   // PATERNITY
   // ─────────────────────────
   PATERNITY_AT_HOME_SINGLE: {
-    stripePriceId: "price_1SxfjcK2515KuCq28DsWMVni",
+    stripePriceId: "price_1SzXYSK2515KuCq2snadta8S",
     testType: "paternity",
     legal: false, // Peace of mind / non-legal
   },
 
   PATERNITY_AT_HOME_MULTI_CHILD: {
-    stripePriceId: "price_1SxflsK2515KuCq2pxLPof0j",
+    stripePriceId: "price_1SzXeMK2515KuCq2fp7dSAsO",
     testType: "paternity",
     legal: false,
   },
@@ -28,7 +28,7 @@ export const PRODUCT_CATALOG = {
   },
 
   PATERNITY_PEACE_OF_MIND: {
-    stripePriceId: "price_1SxfmgK2515KuCq2igk4PNo9",
+    stripePriceId: "price_1SzXifK2515KuCq2KxTB4HAK",
     testType: "paternity",
     legal: false,
   },
@@ -43,19 +43,19 @@ export const PRODUCT_CATALOG = {
   // GRANDPARENT
   // ─────────────────────────
   GRANDPARENT_SINGLE_LOCATION: {
-    stripePriceId: "price_1SxiXuK2515KuCq2UwDYuVCU",
+    stripePriceId: "price_1SzXzgK2515KuCq2U4PDIGKF",
     testType: "grandparent",
     legal: false,
   },
 
   GRANDPARENT_MULTI_LOCATION: {
-    stripePriceId: "price_1SxiYZK2515KuCq20NMyHjrt",
+    stripePriceId: "price_1SzYCZK2515KuCq2J5wFnb5f",
     testType: "grandparent",
     legal: false,
   },
 
   GRANDPARENT_PEACE_OF_MIND: {
-    stripePriceId: "price_1SxgFrK2515KuCq2F4DPSaJc",
+    stripePriceId: "price_1SzY4EK2515KuCq2hnfWp5rT",
     testType: "grandparent",
     legal: false,
   },
@@ -64,7 +64,7 @@ export const PRODUCT_CATALOG = {
   // SIBLING
   // ─────────────────────────
   SIBLING_SINGLE_LOCATION: {
-    stripePriceId: "price_1SxiXuK2515KuCq2UwDYuVCU",
+    stripePriceId: "price_1SzYGXK2515KuCq2KC8wdAaM",
     testType: "sibling",
     legal: false,
   },

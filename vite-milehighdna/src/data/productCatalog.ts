@@ -11,8 +11,8 @@ export const PRODUCT_CATALOG = {
   PATERNITY_AT_HOME_SINGLE: {
     name: "2 Party At-Home Paternity DNA Test",
     category: "paternity",
-    stripePriceId: "price_1SxfjcK2515KuCq28DsWMVni",
-    price: 139,
+    stripePriceId: "price_1SzXYSK2515KuCq2snadta8S",
+    price: 179,
     shortDescription:
       "Private DNA testing to confirm biological fatherhood. One child, one alleged father, one location. Mail-in kit with confidential results.",
     participantSummary: "1 Child / 1 Alleged Father · 1 Location",
@@ -25,8 +25,8 @@ export const PRODUCT_CATALOG = {
   PATERNITY_AT_HOME_MULTI_CHILD: {
     name: "3 Party At-Home Paternity DNA Test",
     category: "paternity",
-    stripePriceId: "price_1SxflsK2515KuCq2pxLPof0j",
-    price: 199,
+    stripePriceId: "price_1SzXeMK2515KuCq2fp7dSAsO",
+    price: 229,
     shortDescription:
       "Peace-of-mind paternity testing for families with two or more children. One location. Same accuracy and confidentiality as our single-child test.",
     participantSummary: "2+ Children · 1 Location",
@@ -53,8 +53,8 @@ export const PRODUCT_CATALOG = {
   PATERNITY_PEACE_OF_MIND: {
     name: "Paternity Peace of Mind DNA Test",
     category: "paternity",
-    stripePriceId: "price_1SxfmgK2515KuCq2igk4PNo9",
-    price: 139,
+    stripePriceId: "price_1SzXifK2515KuCq2KxTB4HAK",
+    price: 179,
     shortDescription:
       "Private, non-legal confirmation of biological fatherhood. One location. For personal knowledge only—not for court or immigration.",
     participantSummary: "Private confirmation · 1 Location",
@@ -84,8 +84,8 @@ export const PRODUCT_CATALOG = {
   GRANDPARENT_SINGLE_LOCATION: {
     name: "2 Party Grandparent At-Home DNA Test",
     category: "grandparent",
-    stripePriceId: "price_1SxiXuK2515KuCq2UwDYuVCU",
-    price: 249,
+    stripePriceId: "price_1SzXzgK2515KuCq2U4PDIGKF",
+    price: 299,
     shortDescription:
       "Establish biological relationships when a parent is unavailable. One child, one grandparent, one location. Mail-in kit with confidential results.",
     participantSummary: "1 Child / 1 Grandparent · 1 Location",
@@ -98,8 +98,8 @@ export const PRODUCT_CATALOG = {
   GRANDPARENT_MULTI_LOCATION: {
     name: "Multi-Location Grandparent DNA Test",
     category: "grandparent",
-    stripePriceId: "price_1SxiYZK2515KuCq20NMyHjrt",
-    price: 299,
+    stripePriceId: "price_1SzYCZK2515KuCq2J5wFnb5f",
+    price: 329,
     shortDescription:
       "When child and grandparent are in different locations. Two kits shipped to two addresses. Same lab, same accuracy, confidential results.",
     participantSummary: "1 Child / 1 Grandparent · 2 Locations",
@@ -112,8 +112,8 @@ export const PRODUCT_CATALOG = {
   GRANDPARENT_PEACE_OF_MIND: {
     name: "Grandparent Peace of Mind DNA Test",
     category: "grandparent",
-    stripePriceId: "price_1SxgFrK2515KuCq2F4DPSaJc",
-    price: 249,
+    stripePriceId: "price_1SzY4EK2515KuCq2hnfWp5rT",
+    price: 299,
     shortDescription:
       "Private relationship confirmation for grandparent and grandchild. One location. For personal knowledge only—not for court or immigration.",
     participantSummary: "Private confirmation · 1 Location",
@@ -129,8 +129,8 @@ export const PRODUCT_CATALOG = {
   SIBLING_SINGLE_LOCATION: {
     name: "At-Home Sibling DNA Test",
     category: "sibling",
-    stripePriceId: "price_1SxiXuK2515KuCq2UwDYuVCU",
-    price: 249,
+    stripePriceId: "price_1SzYGXK2515KuCq2KC8wdAaM",
+    price: 299,
     shortDescription:
       "Determine whether two individuals share one or both biological parents. Two siblings, one location. Mail-in kit with confidential results.",
     participantSummary: "2 Siblings · 1 Location",
@@ -144,7 +144,7 @@ export const PRODUCT_CATALOG = {
     name: "Multi-Location Sibling DNA Test",
     category: "sibling",
     stripePriceId: "price_1SxiYZK2515KuCq20NMyHjrt",
-    price: 299,
+    price: 329,
     shortDescription:
       "When siblings are in different locations. Two kits shipped to two addresses. Same lab, same accuracy, confidential results.",
     participantSummary: "2 Siblings · 2 Locations",
@@ -157,8 +157,8 @@ export const PRODUCT_CATALOG = {
   SIBLING_PEACE_OF_MIND: {
     name: "Sibling Peace of Mind DNA Test",
     category: "sibling",
-    stripePriceId: "price_1SxiZEK2515KuCq2IEH7Qkzq",
-    price: 249,
+    stripePriceId: "price_1SzYIYK2515KuCq2JfvbF4xt",
+    price: 299,
     shortDescription:
       "Private sibling relationship confirmation. For personal knowledge only—not for court or immigration.",
     participantSummary: "Private sibling relationship confirmation",

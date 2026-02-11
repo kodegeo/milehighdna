@@ -6,6 +6,8 @@ import ServingColorado from "../components/common/ServingColorado";
 import CallToAction from "../components/common/CallToAction";
 import aboutHero from "../assets/images/about_hero.png";
 import aboutMid from "../assets/images/about_mid.png";
+import WhyChooseUs from "../components/about/WhyChooseUs";
+import ClientSupport from "../components/about/ClientSupport";
 import { Helmet } from 'react-helmet-async';
 
 
@@ -39,6 +41,9 @@ const AboutUsPage = () => {
         secondaryButtonText="Contact Us Today"
         secondaryButtonLink="tel:7209009342"
       />
+
+      <WhyChooseUs />
+      <ClientSupport />
 
       <WhoWeAre
         title="Who We Are"

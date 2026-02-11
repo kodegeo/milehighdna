@@ -9,7 +9,7 @@ export const PATERNITY_PRODUCTS = {
     title: "At-Home Paternity DNA Test",
     shortDescription:
       "Private DNA testing to confirm biological fatherhood. One child, one alleged father, one location. Mail-in kit with confidential results.",
-    unitPrice: 139,
+    unitPrice: 179,
     locations: 1,
     children: 1,
     metaDescription:
@@ -22,7 +22,7 @@ export const PATERNITY_PRODUCTS = {
     title: "At-Home Paternity DNA Test (Multiple Children)",
     shortDescription:
       "Peace-of-mind paternity testing for families with two or more children. One location. Same accuracy and confidentiality as our single-child test.",
-    unitPrice: 199,
+    unitPrice: 229,
     locations: 1,
     children: 2,
     metaDescription:
@@ -35,7 +35,7 @@ export const PATERNITY_PRODUCTS = {
     title: "Peace of Mind DNA Test",
     shortDescription:
       "Private, non-legal confirmation of biological fatherhood. One location. For personal knowledge only—not for court or immigration.",
-    unitPrice: 139,
+    unitPrice: 179,
     locations: 1,
     children: 1,
     metaDescription:
