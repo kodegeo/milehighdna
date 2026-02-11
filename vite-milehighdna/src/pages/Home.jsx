@@ -219,50 +219,33 @@ const Home = () => {
         {/* Overlay for darkness */}
         <div className="absolute inset-0 bg-black/50 z-0" />
         
-        {/* Urgency Badge */}
-        <div className="absolute top-6 right-6 bg-red-600 text-white px-4 py-2 rounded-full text-sm font-semibold shadow-md z-20">
-          Available Today – Same Day Appointments
-        </div>
-        
         <div className="relative z-10 container mx-auto px-4 h-full flex items-center">
           <div className="max-w-2xl text-white">
+            <div className="inline-block bg-green-600 text-white font-semibold px-4 py-2 rounded-full shadow-md mb-4">
+              Available Today – Same Day Appointments
+            </div>
             <h2 className="text-5xl text-white font-bold mb-4">DNA Testing in Denver – Court Approved & Confidential</h2>
-            <p className="text-xl font-semibold mt-4 text-white">
-              Call{" "}
-              <span className="md:hidden">
-                <a
-                  href="tel:+17209009342"
-                  onClick={() => {
-                    window.dataLayer = window.dataLayer || [];
-                    window.dataLayer.push({
-                      event: "phone_click",
-                      phone_number: "720-900-9342",
-                      phone_location: "Hero Headline"
-                    });
-                  }}
-                  className="underline"
-                >
-                  720-900-9342
-                </a>
-              </span>
-              <span className="hidden md:inline">720-900-9342</span> for Same-Day Appointments
-            </p>
-            <p className="text-2xl font-bold text-yellow-300 mb-4">
-              Call Now:{" "}
+            <div className="mt-6 mb-6">
               <a
                 href="tel:+17209009342"
                 onClick={() => {
                   window.dataLayer = window.dataLayer || [];
                   window.dataLayer.push({
                     event: "phone_click",
+                    phone_number: "720-900-9342",
                     phone_location: "Hero Headline"
                   });
                 }}
-                className="underline ml-2"
+                className="block text-2xl md:text-3xl font-extrabold text-yellow-300 hover:text-yellow-200 transition"
               >
-                720-900-9342
+                Call Now: 720-900-9342
               </a>
-            </p>
+
+              <div className="text-lg md:text-xl text-white font-medium mt-2">
+                Same-Day Appointments Available
+              </div>
+            </div>
+
             <p className="text-xl mb-6">
               Court-Admissible • AABB Accredited Lab • Same-Day Appointments • Results in 3–5 Days
             </p>
@@ -284,6 +267,21 @@ const Home = () => {
                 Call Now
               </a>
             </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Trust Badges Section */}
+      <div className="bg-gray-50 py-6 border-t border-b">
+        <div className="container mx-auto px-4 text-center">
+          <p className="font-semibold text-gray-800 mb-4">
+            Trusted for Legal & Prenatal DNA Testing in Colorado
+          </p>
+          <div className="flex flex-wrap justify-center gap-6 text-sm text-gray-700">
+            <span>✔ AABB Accredited Laboratory</span>
+            <span>✔ Court-Admissible Results</span>
+            <span>✔ Used by Attorneys & Immigration Cases</span>
+            <span>✔ Confidential & Secure Process</span>
           </div>
         </div>
       </div>
@@ -772,7 +770,7 @@ const Home = () => {
       </div>
 
       {/* Sticky Mobile Call Bar */}
-      <div className="fixed bottom-0 left-0 right-0 w-full h-16 bg-[#2C6FA6] text-white font-bold flex items-center justify-center shadow-lg z-50 md:hidden">
+      <div className="fixed bottom-0 left-0 right-0 z-50 md:hidden">
         <a
           href="tel:+17209009342"
           onClick={() => {
@@ -783,25 +781,14 @@ const Home = () => {
               phone_location: "Sticky Mobile Bar"
             });
           }}
-          className="flex items-center justify-center gap-2 w-full h-full"
+          className="block w-full bg-green-600 hover:bg-green-700 text-white text-center font-bold py-4 text-lg shadow-lg transition"
         >
-          <svg
-            className="w-6 h-6"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
-            />
-          </svg>
-          <span>Call Now – 720-900-9342</span>
+          📞 Call Now – 720-900-9342
+          <div className="text-sm font-normal">
+            Same-Day Appointments Available
+          </div>
         </a>
-      </div>
+      </div>      
     </div>
   );
 };
