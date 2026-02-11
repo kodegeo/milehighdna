@@ -23,17 +23,12 @@ const PrenatalPaternityTesting = () => {
 
         {/* Primary SEO */}
         <title>
-          Non-Invasive Prenatal Paternity DNA Test in Denver, CO | From 7 Weeks | Mile High DNA
+        Prenatal Paternity Test in Denver – Safe, Non-Invasive from 7 Weeks | Same-Day Appointments
         </title>
 
         <meta
           name="description"
-          content="Get a safe, non-invasive prenatal paternity DNA test in Denver from 7 weeks. AABB-accredited labs, legal & peace-of-mind options, results in 7–10 days. Schedule today."
-        />
-
-        <meta
-          name="keywords"
-          content="non-invasive prenatal paternity test Denver, prenatal DNA test Colorado, pregnancy paternity test from 7 weeks, legal prenatal paternity testing Denver"
+          content="Call (720) 900-9342 for same-day prenatal DNA testing. Safe, non-invasive paternity test from 7 weeks. AABB-accredited lab results accepted for legal or peace-of-mind cases."
         />
 
         <link
@@ -146,6 +141,44 @@ const PrenatalPaternityTesting = () => {
       </Helmet>
 
       <PrenatalHero />
+      
+      {/* Trust Badge */}
+      <div className="bg-white py-4 text-center">
+        <div className="container mx-auto px-4">
+          <div className="inline-block bg-green-600 text-white text-sm font-semibold px-4 py-2 rounded-full">
+            Same-Day Appointments Available
+          </div>
+        </div>
+      </div>
+
+      {/* Google Review Snippet */}
+      <section className="py-6 bg-white text-center">
+        <div className="container mx-auto px-4">
+          <div className="flex justify-center items-center gap-3">
+            <img src="/images/5-star-rating.svg" alt="5 star rating" className="w-24 h-auto" />
+            <p className="text-gray-700 font-medium">
+              Rated 5.0 ★ on Google by Colorado Families
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* COST SECTION */}
+      <section className="py-12 px-6 bg-gray-50 text-center">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl font-bold mb-4">
+            How Much Does a Prenatal Paternity Test Cost in Denver?
+          </h2>
+          <p className="text-gray-700 mb-6">
+            Pricing depends on the number of participants and legal documentation needs.
+            Our non-invasive prenatal DNA testing includes professional collection and AABB-accredited lab analysis.
+          </p>
+          <p className="font-semibold text-lg">
+            Call 720-900-9342 for an exact quote and same-day availability.
+          </p>
+        </div>
+      </section>
+
       <PrenatalPricing />
       <PrenatalOverview />
       <PrenatalWhoNeedsTest />

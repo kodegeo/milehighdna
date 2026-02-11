@@ -30,6 +30,20 @@ const services = [
     badge: 'Court-Admissible',
   },
   {
+    title: 'Prenatal Paternity DNA Testing',
+    description: 'Prenatal paternity DNA testing determines biological parenthood during pregnancy using non-invasive DNA analysis. This service is available for both legal and peace-of-mind purposes and is commonly chosen when early answers are needed before birth.',
+    image: prenatalHero,
+    link: '/services/prenatal-paternity-testing',
+    badge: 'Non-Invasive',
+  },
+  {
+    title: 'Immigration DNA Testing',
+    description: 'Immigration DNA testing supports USCIS, embassy, and consular cases that require verified biological relationships. Testing is conducted through an AABB-accredited laboratory and follows strict protocols required for immigration and visa-related applications.',
+    image: immigrationHero,
+    link: '/services/immigration-dna-testing',
+    badge: 'USCIS Approved',
+  },
+  {
     title: 'Peace of Mind DNA Testing',
     description: 'Peace-of-mind DNA testing is a non-legal option for individuals seeking private confirmation of biological parenthood. This testing is designed for personal knowledge and family clarity without the documentation or identification requirements associated with legal testing.',
     image: peaceOfMindHero,
@@ -42,20 +56,6 @@ const services = [
     image: discreetHero,
     link: '/services/discreet-dna-testing',
     badge: '100% Confidential',
-  },
-  {
-    title: 'Immigration DNA Testing',
-    description: 'Immigration DNA testing supports USCIS, embassy, and consular cases that require verified biological relationships. Testing is conducted through an AABB-accredited laboratory and follows strict protocols required for immigration and visa-related applications.',
-    image: immigrationHero,
-    link: '/services/immigration-dna-testing',
-    badge: 'USCIS Approved',
-  },
-  {
-    title: 'Prenatal Paternity DNA Testing',
-    description: 'Prenatal paternity DNA testing determines biological parenthood during pregnancy using non-invasive DNA analysis. This service is available for both legal and peace-of-mind purposes and is commonly chosen when early answers are needed before birth.',
-    image: prenatalHero,
-    link: '/services/prenatal-paternity-testing',
-    badge: 'Non-Invasive',
   },
   {
     title: 'Siblingship DNA Testing',
@@ -154,11 +154,13 @@ const Services = () => {
   return (
     <main>
       <Helmet>
-        <title>All DNA Testing Services | Mile High DNA Testing</title>
-        <meta
-          name="description"
-          content="Explore all DNA testing services offered by Mile High DNA Testing in Colorado. Legal paternity, peace of mind, discreet, immigration, prenatal, siblingship, grandparentage, avuncular, forensic, infidelity, gender reveal, twin zygosity, Y-STR, mtDNA, lifestyle, healthy weight, GPS origins, and at-home DNA kits."
-        />
+        <title>
+          DNA Testing in Denver – Legal & Prenatal Paternity Tests | Open Today
+          </title>
+          <meta
+            name="description"
+            content="Need a DNA test in Denver? Court-admissible legal paternity and non-invasive prenatal DNA testing available today. Same-day appointments. AABB-accredited lab. Call 720-900-9342."
+          />
         <meta
           name="keywords"
           content="DNA testing Denver, paternity testing Colorado, legal DNA test, immigration DNA Colorado, discreet DNA testing, forensic DNA, prenatal paternity test, infidelity DNA test, gender reveal DNA, twin zygosity, at-home DNA kit"
@@ -221,6 +223,17 @@ const Services = () => {
             <p className="text-lg mb-8">
               Serving Denver, Aurora, Lakewood, Englewood, Thornton, Westminster, and surrounding Colorado communities. We serve clients statewide for both legal and non-legal DNA testing needs.
             </p>
+            <div className="bg-green-600 text-white px-6 py-4 rounded-xl shadow-lg mb-6">
+              <p className="text-xl font-bold">
+                Call Now: 
+                <a href="tel:+17209009342" className="underline ml-2">
+                  720-900-9342
+                </a>
+              </p>
+              <p className="text-sm">
+                Open Today – Same-Day Appointments Available
+              </p>
+            </div>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
                 to="/appointments"
@@ -246,47 +259,172 @@ const Services = () => {
           </div>
         </div>
       </section>
+      {/* SEO CONTENT SECTION */}
+      <section className="py-12 bg-white">
+        <div className="container mx-auto px-4 max-w-4xl">
+          <h2 className="text-3xl font-bold mb-4">
+            Legal & Prenatal DNA Testing in Denver, Colorado
+          </h2>
+          <p className="text-gray-700 mb-4">
+            Mile High DNA Testing provides court-admissible legal paternity testing, non-invasive prenatal DNA testing, immigration DNA testing, and private peace-of-mind DNA testing in Denver and throughout Colorado.
+          </p>
+          <p className="text-gray-700">
+            Our AABB-accredited laboratory ensures accurate, confidential results accepted by courts and USCIS. Same-day appointments are available.
+          </p>
+        </div>
+      </section>
+
+      {/* PRIMARY REVENUE SERVICES */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center mb-12">
+            Our Most Requested DNA Tests
+          </h2>
+          <div className="grid md:grid-cols-2 gap-10">
+            {/* LEGAL */}
+            <div className="bg-green-50 border-2 border-green-600 rounded-2xl shadow-lg overflow-hidden">
+              <img src={legalHero} alt="Legal Paternity DNA Testing in Denver" className="w-full h-64 object-cover" />
+              <div className="p-8">
+                <h3 className="text-2xl font-bold mb-3">
+                  Legal Paternity DNA Testing
+                </h3>
+                <p className="text-gray-700 mb-6">
+                  Court-admissible DNA testing accepted by Colorado courts and agencies. Strict chain of custody. Same-day appointments available.
+                </p>
+                <div className="flex gap-4 flex-wrap">
+                  <Link
+                    to="/services/legal-paternity-testing"
+                    className="bg-green-600 text-white px-6 py-3 rounded-xl font-semibold shadow hover:bg-green-700 transition"
+                  >
+                    Learn More
+                  </Link>
+                  <a
+                    href="tel:+17209009342"
+                    onClick={() => {
+                      window.dataLayer = window.dataLayer || [];
+                      window.dataLayer.push({ event: "phone_click", phone_number: "720-900-9342" });
+                    }}
+                    className="bg-white border border-green-600 text-green-600 px-6 py-3 rounded-xl font-semibold hover:bg-green-100 transition"
+                  >
+                    Call Now
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* PRENATAL */}
+            <div className="bg-blue-50 border-2 border-blue-600 rounded-2xl shadow-lg overflow-hidden">
+              <img src={prenatalHero} alt="Prenatal Paternity DNA Testing in Denver" className="w-full h-64 object-cover" />
+              <div className="p-8">
+                <h3 className="text-2xl font-bold mb-3">
+                  Prenatal Paternity DNA Testing
+                </h3>
+                <p className="text-gray-700 mb-6">
+                  Non-invasive prenatal DNA testing from 7 weeks. Safe for mother and baby. Legal and peace-of-mind options available.
+                </p>
+                <div className="flex gap-4 flex-wrap">
+                  <Link
+                    to="/services/prenatal-paternity-testing"
+                    className="bg-blue-600 text-white px-6 py-3 rounded-xl font-semibold shadow hover:bg-blue-700 transition"
+                  >
+                    Learn More
+                  </Link>
+                  <a
+                    href="tel:+17209009342"
+                    onClick={() => {
+                      window.dataLayer = window.dataLayer || [];
+                      window.dataLayer.push({ event: "phone_click", phone_number: "720-900-9342" });
+                    }}
+                    className="bg-white border border-blue-600 text-blue-600 px-6 py-3 rounded-xl font-semibold hover:bg-blue-100 transition"
+                  >
+                    Call Now
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* SECONDARY SERVICES */}
+      <section className="py-12 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="grid md:grid-cols-2 gap-8">
+            {/* Immigration */}
+            <div className="bg-white rounded-xl shadow-md p-6">
+              <h3 className="text-xl font-bold mb-3">Immigration DNA Testing</h3>
+              <p className="text-gray-600 mb-4">
+                USCIS-compliant DNA testing processed through AABB-accredited laboratories.
+              </p>
+              <Link to="/services/immigration-dna-testing" className="text-[#2C6FA6] font-semibold">
+                Learn More →
+              </Link>
+            </div>
+
+            {/* Non-Legal */}
+            <div className="bg-white rounded-xl shadow-md p-6">
+              <h3 className="text-xl font-bold mb-3">Peace of Mind Paternity Testing</h3>
+              <p className="text-gray-600 mb-4">
+                Private, confidential DNA testing for personal reassurance.
+              </p>
+              <Link to="/services/non-legal-paternity-testing" className="text-[#2C6FA6] font-semibold">
+                Learn More →
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* SERVICES GRID */}
       <div className="section-padding">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12">Our DNA Testing Services</h2>
+          <h2 className="text-3xl font-bold text-center mb-12">Additional DNA Testing Services</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {services.map((service) => (
-              <div key={service.title} className="card">
-                <img
-                  src={service.image}
-                  alt={service.title}
-                  className="w-full h-48 object-cover"
-                />
-                <div className="p-6">
-                  <h3 className="text-xl font-bold mb-2">{service.title}</h3>
-                  {service.badge && (
-                    <span className="inline-block bg-blue-100 text-blue-700 text-xs font-semibold px-3 py-1 rounded-full mb-3">
-                      {service.badge}
-                    </span>
-                  )}
-                  <p className="text-gray-600 mb-4">{service.description}</p>
-                  <div className="flex flex-wrap items-center gap-3">
-                    <Link
-                      to={service.link}
-                      className="text-[#2C6FA6] hover:text-[#7DB9E8] font-semibold transition duration-300"
-                    >
-                      Learn More →
-                    </Link>
-                    <a
-                      href="tel:+17209009342"
-                      onClick={() => {
-                        window.dataLayer = window.dataLayer || [];
-                        window.dataLayer.push({ event: "phone_click", phone_number: "720-900-9342" });
-                      }}
-                      className="text-[#2C6FA6] hover:text-[#7DB9E8] font-semibold transition duration-300 inline-flex items-center gap-1"
-                    >
-                      Call Now
-                    </a>
+            {services
+              .filter(service =>
+                ![
+                  'Legal Paternity DNA Testing',
+                  'Prenatal Paternity DNA Testing',
+                  'Immigration DNA Testing',
+                  'Peace of Mind DNA Testing'
+                ].includes(service.title)
+              )
+              .map((service) => (
+                <div key={service.title} className="card relative overflow-hidden">
+                  <img
+                    src={service.image}
+                    alt={service.title}
+                    className="w-full h-48 object-cover"
+                  />
+                  <div className="p-6">
+                    <h3 className="text-xl font-bold mb-2">{service.title}</h3>
+                    {service.badge && (
+                      <span className="inline-block bg-blue-100 text-blue-700 text-xs font-semibold px-3 py-1 rounded-full mb-3">
+                        {service.badge}
+                      </span>
+                    )}
+                    <p className="text-gray-600 mb-4">{service.description}</p>
+                    <div className="flex flex-wrap items-center gap-3">
+                      <Link
+                        to={service.link}
+                        className="text-[#2C6FA6] hover:text-[#7DB9E8] font-semibold transition duration-300"
+                      >
+                        Learn More →
+                      </Link>
+                      <a
+                        href="tel:+17209009342"
+                        onClick={() => {
+                          window.dataLayer = window.dataLayer || [];
+                          window.dataLayer.push({ event: "phone_click", phone_number: "720-900-9342" });
+                        }}
+                        className="text-[#2C6FA6] hover:text-[#7DB9E8] font-semibold transition duration-300 inline-flex items-center gap-1"
+                      >
+                        Call Now
+                      </a>
+                    </div>
                   </div>
                 </div>
-              </div>
-            ))}
+              ))}
           </div>
         </div>
       </div>

@@ -13,6 +13,17 @@ import CallToAction from '../components/common/CallToAction';
 import { Helmet } from 'react-helmet-async';
 
 const Home = () => {
+  const isOpenNow = () => {
+    const now = new Date();
+    const day = now.getDay(); // 0 = Sunday
+    const hour = now.getHours();
+
+    const isWeekday = day >= 1 && day <= 5;
+    const isBusinessHours = hour >= 9 && hour < 18;
+
+    return isWeekday && isBusinessHours;
+  };
+
   return (
     <div className="min-h-screen pb-16 md:pb-0">
       <Helmet>
@@ -222,7 +233,9 @@ const Home = () => {
         <div className="relative z-10 container mx-auto px-4 h-full flex items-center">
           <div className="max-w-2xl text-white">
             <div className="inline-block bg-green-600 text-white font-semibold px-4 py-2 rounded-full shadow-md mb-4">
-              Available Today – Same Day Appointments
+              {isOpenNow()
+                ? "Open Now – Same Day Appointments Available"
+                : "Opens at 9:00 AM – Same Day Appointments Available"}
             </div>
             <h2 className="text-5xl text-white font-bold mb-4">DNA Testing in Denver – Court Approved & Confidential</h2>
             <div className="mt-6 mb-6">
@@ -236,13 +249,23 @@ const Home = () => {
                     phone_location: "Hero Headline"
                   });
                 }}
-                className="block text-2xl md:text-3xl font-extrabold text-yellow-300 hover:text-yellow-200 transition"
+                className="block text-3xl md:text-4xl font-extrabold tracking-tight text-yellow-300 hover:text-yellow-200 transition animate-pulse md:animate-none"
               >
                 Call Now: 720-900-9342
               </a>
 
-              <div className="text-lg md:text-xl text-white font-medium mt-2">
+              <div className="text-base md:text-lg text-white/90 font-medium mt-2">
                 Same-Day Appointments Available
+              </div>
+              <div className="mt-4 flex items-center gap-2 text-white text-sm md:text-base">
+                <img
+                  src="/images/5-star-rating.svg"
+                  alt="5 star Google rating"
+                  className="w-20 h-auto"
+                />
+                <span>
+                  5.0 Rating on Google • Trusted by Denver Families & Attorneys
+                </span>
               </div>
             </div>
 

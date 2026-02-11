@@ -140,51 +140,91 @@ const NonLegalPaternityTesting = () => {
       </Helmet>
 
       {/* Hero Section */}
-{/* Hero Section */}
-<section className="relative bg-white">
-  <div className="container mx-auto px-6 py-16 flex flex-col lg:flex-row items-center gap-12">
-    <div className="flex-1 text-center lg:text-left">
-      <h1 className="text-4xl font-bold text-gray-800 mb-6">
-        Non-Legal Peace of Mind Paternity Testing in Denver
-      </h1>
-      <p className="text-xl text-gray-600 mb-6">
-        Fast. Confidential. Reliable Results You Can Trust.
-      </p>
-      <p className="text-gray-700 mb-8 text-lg leading-relaxed">
-        Our Peace of Mind Paternity Test provides private, 
-        non-legal DNA results performed by AABB-accredited laboratories. 
-        This service is ideal for personal knowledge, family reassurance, or resolving 
-        sensitive questions without the need for court involvement.
-      </p>
-      <p className="text-gray-700 mb-8 text-lg leading-relaxed">
-        Same-day in-person testing at our <Link to="/locations/denver" className="text-blue-600 underline">Denver</Link> location is available, or 
-        request an at-home kit if preferred. All tests are handled with care, discretion, 
-        and professional support from start to finish. To <Link to="/appointments" className="text-blue-600 underline">schedule a DNA test</Link> or book a DNA test appointment, use the options below or call us.
-      </p>
-      <div className="flex flex-col sm:flex-row gap-4">
-        <a
-          href="https://calendly.com/milehighdnatesting/non-legal-paternity-test"
-          className="bg-green-600 text-white px-8 py-4 rounded-xl shadow-lg hover:bg-green-700 transition font-semibold text-lg inline-block text-center"
-        >
-          Schedule In-Person Test
-        </a>
-        <a
-          href="/shop/at-home-paternity-test"
-          className="bg-blue-600 text-white px-8 py-4 rounded-xl shadow-lg hover:bg-blue-700 transition font-semibold text-lg inline-block text-center"
-        >
-          Order Home Kit
-        </a>
-      </div>
-    </div>
-    <div className="flex-1 flex justify-center">
-      <img
-        src={HeroImage}
-        alt="Peace of Mind Paternity Test in Denver"
-        className="w-full max-w-md rounded-xl shadow-lg"
-      />
-    </div>
-  </div>
-</section>
+      <section className="relative bg-white">
+        <div className="container mx-auto px-6 py-16 flex flex-col lg:flex-row items-center gap-12">
+          <div className="flex-1 text-center lg:text-left">
+            <h1 className="text-4xl font-bold text-gray-800 mb-6">
+              Private Paternity Test in Denver – Fast Results & Same-Day Available
+            </h1>
+            <p className="text-xl text-gray-600 mb-4">
+              99%+ Accurate. Confidential. Results in 2–3 Business Days.
+            </p>
+            <p className="text-gray-600 mb-8 text-base">
+              Not valid for court. If you may need results for custody, child support, or legal matters, see our <Link to="/services/legal-paternity-testing" className="text-blue-600 underline font-semibold">Legal Paternity Test</Link>.
+            </p>
+            <p className="text-gray-700 mb-8 text-lg leading-relaxed">
+              Our Peace of Mind Paternity Test provides private, 
+              non-legal DNA results performed by AABB-accredited laboratories. 
+              This service is ideal for personal knowledge, family reassurance, or resolving 
+              sensitive questions without the need for court involvement.
+            </p>
+            <p className="text-gray-700 mb-8 text-lg leading-relaxed">
+              Same-day in-person testing at our <Link to="/locations/denver" className="text-blue-600 underline">Denver</Link> location is available, or 
+              request an at-home kit if preferred. All tests are handled with care, discretion, 
+              and professional support from start to finish. To <Link to="/appointments" className="text-blue-600 underline">schedule a DNA test</Link> or book a DNA test appointment, use the options below or call us.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4">
+              <a
+                href="https://calendly.com/milehighdnatesting/non-legal-paternity-test"
+                className="bg-green-600 text-white px-8 py-4 rounded-xl shadow-lg hover:bg-green-700 transition font-semibold text-lg inline-block text-center"
+              >
+                Schedule In-Person Test
+              </a>
+              <a
+                href="/shop/at-home-paternity-test"
+                className="bg-blue-600 text-white px-8 py-4 rounded-xl shadow-lg hover:bg-blue-700 transition font-semibold text-lg inline-block text-center"
+              >
+                Order Home Kit
+              </a>
+            </div>
+          </div>
+          <div className="flex-1 flex justify-center">
+            <img
+              src={HeroImage}
+              alt="Peace of Mind Paternity Test in Denver"
+              className="w-full max-w-md rounded-xl shadow-lg"
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* Decision Clarifier Section */}
+      <section className="bg-gray-50 py-16">
+        <div className="container mx-auto px-6 max-w-5xl">
+          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">
+            Do You Need Legal or Peace-of-Mind Testing?
+          </h2>
+          <div className="grid md:grid-cols-2 gap-6">
+            {/* Peace of Mind Card */}
+            <div className="bg-white p-6 rounded-xl shadow-lg">
+              <h3 className="text-2xl font-bold text-gray-800 mb-4">Peace of Mind Test</h3>
+              <ul className="space-y-2 text-gray-700 mb-6">
+                <li>✓ Private personal knowledge</li>
+                <li>✓ No ID required</li>
+                <li>✓ Not court-admissible</li>
+                <li>✓ Faster turnaround</li>
+              </ul>
+            </div>
+            
+            {/* Legal Card */}
+            <div className="bg-white p-6 rounded-xl shadow-lg border-2 border-blue-600">
+              <h3 className="text-2xl font-bold text-gray-800 mb-4">Legal Paternity Test</h3>
+              <ul className="space-y-2 text-gray-700 mb-6">
+                <li>✓ Court-admissible</li>
+                <li>✓ Chain of custody required</li>
+                <li>✓ Used for custody, child support, immigration</li>
+                <li>✓ Required by courts</li>
+              </ul>
+              <Link
+                to="/services/legal-paternity-testing"
+                className="bg-blue-600 text-white px-6 py-3 rounded-xl shadow-lg hover:bg-blue-700 transition font-semibold text-lg inline-block w-full text-center"
+              >
+                Need Court-Admissible Results? → View Legal Test
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Why Choose Us */}
       <section className="bg-gray-50 py-16">
@@ -216,6 +256,23 @@ const NonLegalPaternityTesting = () => {
         </div>
       </section>
 
+      {/* Upsell Banner */}
+      <section className="bg-yellow-50 border-l-4 border-yellow-400 py-6 px-6">
+        <div className="container mx-auto max-w-4xl">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-4">
+            <p className="text-gray-800 font-semibold text-lg">
+              <strong>Important:</strong> If there is any chance this test may be used in court in the future, you must choose Legal Testing now. Peace-of-mind results cannot be upgraded later.
+            </p>
+            <Link
+              to="/services/legal-paternity-testing"
+              className="bg-blue-600 text-white px-6 py-3 rounded-xl shadow-lg hover:bg-blue-700 transition font-semibold whitespace-nowrap"
+            >
+              Switch to Legal Testing
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Pricing and Ordering Options */}
       <section id="pricing-info" className="bg-gray-50 py-16">
         <div className="container mx-auto px-6 text-center max-w-4xl">
@@ -224,7 +281,8 @@ const NonLegalPaternityTesting = () => {
           <div className="grid md:grid-cols-2 gap-8 mb-8">
             <div className="bg-white p-6 rounded-xl shadow-lg">
               <h4 className="text-2xl font-bold text-gray-800 mb-2">Online Kit</h4>
-              <p className="text-3xl font-bold text-blue-600 mb-4">$199</p>
+              <p className="text-3xl font-bold text-blue-600 mb-2">$179</p>
+              <p className="text-sm text-gray-500 mb-4">Best for private confirmation only.</p>
               <p className="text-gray-600 mb-4">Order online and complete the test <br/> from the comfort of your home</p>
               <a
                 href="/shop/at-home-paternity-test"
@@ -236,7 +294,8 @@ const NonLegalPaternityTesting = () => {
             
             <div className="bg-white p-6 rounded-xl shadow-lg">
               <h4 className="text-2xl font-bold text-gray-800 mb-2">In-Person Testing</h4>
-              <p className="text-3xl font-bold text-green-600 mb-4">$249</p>
+              <p className="text-3xl font-bold text-green-600 mb-2">$249</p>
+              <p className="text-sm text-gray-500 mb-4">Most popular for faster turnaround.</p>
               <p className="text-gray-600 mb-4">Schedule an appointment <br />at our testing location</p>
               <a
                 href="https://calendly.com/milehighdnatesting/non-legal-paternity-test"
@@ -246,6 +305,10 @@ const NonLegalPaternityTesting = () => {
               </a>
             </div>
           </div>
+          
+          <p className="text-gray-600 text-sm mb-6">
+            Need court documentation? <Link to="/services/legal-paternity-testing" className="text-blue-600 underline font-semibold">See Legal Testing Options</Link>.
+          </p>
           
           <p className="text-gray-700 mb-6 text-lg">
             This non-legal DNA test uses the same laboratory technology as{" "}
@@ -300,6 +363,16 @@ const NonLegalPaternityTesting = () => {
           </div>
         </div>
       </section>
+
+      {/* Cross-Sell Section */}
+      <section className="bg-blue-50 border-l-4 border-blue-400 py-6 px-6">
+        <div className="container mx-auto max-w-4xl">
+          <p className="text-gray-800 text-lg">
+            <strong>Considering testing during pregnancy?</strong> See our <Link to="/services/prenatal-paternity-testing" className="text-blue-600 underline font-semibold">Prenatal Paternity Test</Link>.
+          </p>
+        </div>
+      </section>
+
       <ServingColorado />
       <CallToAction />
       

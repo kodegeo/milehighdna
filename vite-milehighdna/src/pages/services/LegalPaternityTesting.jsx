@@ -25,17 +25,12 @@ const LegalPaternityTesting = () => {
 
         {/* Primary SEO */}
         <title>
-          Court-Admissible Legal Paternity DNA Test in Denver, CO | AABB-Accredited | Mile High DNA
+        Legal Paternity Test Denver | Court-Admissible DNA | Same-Day Appointments
         </title>
 
         <meta
           name="description"
-          content="Get a court-admissible legal paternity DNA test in Denver, CO. AABB-accredited labs, strict chain of custody, and fast results in 3–5 business days. Trusted by courts and agencies."
-        />
-
-        <meta
-          name="keywords"
-          content="legal paternity test Denver, court-admissible DNA testing Colorado, AABB-accredited paternity test, chain of custody DNA test, child custody paternity test Denver"
+          content="Court-admissible legal paternity DNA testing in Denver. AABB-accredited, chain of custody, results in 3–5 days. Call (720) 900-9342 for same-day availability."
         />
 
         <link
@@ -145,18 +140,73 @@ const LegalPaternityTesting = () => {
             ]
           })}
         </script>
+
+        {/* FAQ Schema */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "How long does a legal paternity test take?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Results are typically available within 3–5 business days. Expedited options may be available."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Is this test court admissible?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. All legal paternity tests follow strict chain-of-custody procedures and are processed through AABB-accredited laboratories."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Do you offer same-day appointments?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. Same-day legal DNA testing appointments are often available in Denver and surrounding areas."
+                }
+              }
+            ]
+          })}
+        </script>
       </Helmet>
 
       {/* HERO */}
       <HeroSection
-        title="Court-Admissible Legal DNA Paternity Testing in Colorado"
-        subtitle="Fast, confidential, and AABB-accredited testing accepted by family courts and government agencies. Serving Denver, Aurora, Lakewood, Westminster, and surrounding communities."
+        title="Legal Paternity Test in Denver – Court-Admissible & Same-Day Available"
+        subtitle="AABB-accredited DNA testing with strict chain of custody. Accepted by Colorado courts, attorneys, and government agencies. Results in 3–5 business days."
         imageUrl={legalHero}
         buttonText="Book Your Legal Test"
         buttonLink="https://calendly.com/milehighdnatesting/legal-paternity-test"
         secondaryButtonText="Call Now"
         secondaryButtonLink="tel:+17209009342"
       />
+      
+      {/* Trust Badge */}
+      <div className="bg-white py-4 text-center">
+        <div className="container mx-auto px-4">
+          <div className="inline-block bg-green-600 text-white text-sm font-semibold px-4 py-2 rounded-full">
+            Same-Day Appointments Available
+          </div>
+        </div>
+      </div>
+
+      {/* Google Review Snippet */}
+      <section className="py-6 bg-white text-center">
+        <div className="container mx-auto px-4">
+          <div className="flex justify-center items-center gap-3">
+            <img src="/images/5-star-rating.svg" alt="5 star rating" className="w-24 h-auto" />
+            <p className="text-gray-700 font-medium">
+              Rated 5.0 ★ on Google by Colorado Families
+            </p>
+          </div>
+        </div>
+      </section>
 
       {/* QUICK BENEFITS */}
       <section className="py-10 px-6 bg-blue-50 text-center">
@@ -185,6 +235,22 @@ const LegalPaternityTesting = () => {
         </div>
       </section>
 
+      {/* COST SECTION */}
+      <section className="py-12 px-6 bg-gray-50 text-center">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl font-bold mb-4">
+            How Much Does a Legal Paternity Test Cost in Denver?
+          </h2>
+          <p className="text-gray-700 mb-6">
+            Legal paternity testing costs vary depending on the number of participants and documentation required.
+            Our pricing includes professional collection, chain of custody, and AABB-accredited lab analysis.
+          </p>
+          <p className="font-semibold text-lg">
+            Call 720-900-9342 for an exact quote and same-day availability.
+          </p>
+        </div>
+      </section>
+
       {/* PRICING */}
       <Pricing />
 
@@ -192,9 +258,9 @@ const LegalPaternityTesting = () => {
       <ServiceOverview
         title="What Is Legal DNA Paternity Testing?"
         paragraphs={[
-          "Legal DNA paternity testing is required when proof of parentage must meet legal standards. Courts often request it for child custody disputes, child support, and birth certificate corrections.",
-          "At Mile High DNA Testing, every sample is collected under a strict chain-of-custody process and analyzed by AABB-accredited laboratories. This ensures your results are 100% valid in court.",
-          "Whether you are preparing for a family court case or updating legal records, we provide professional collection, clear guidance, and fast, confidential results."
+          "Legal paternity testing is required when biological parentage must meet court or government standards. Colorado courts require strict chain-of-custody documentation to ensure results are legally valid.",
+          "At Mile High DNA Testing, all samples are collected by trained professionals and processed by AABB-accredited laboratories. Our results are accepted for child custody, child support, birth certificate changes, inheritance cases, and immigration matters.",
+          "If you need a court-admissible DNA test in Denver, we offer same-day appointments and fast results in 3–5 business days."
         ]}
       />
 
@@ -303,6 +369,29 @@ const LegalPaternityTesting = () => {
             }}
             allowFullScreen
           ></iframe>
+        </div>
+      </section>
+
+      {/* FAQ SECTION */}
+      <section className="py-12 px-6 bg-white">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl font-bold text-center mb-8">
+            Frequently Asked Questions
+          </h2>
+          <div className="space-y-6 text-gray-700">
+            <div>
+              <h3 className="font-semibold">How long does a legal paternity test take?</h3>
+              <p>Results are typically available within 3–5 business days. Expedited options may be available.</p>
+            </div>
+            <div>
+              <h3 className="font-semibold">Is this test court admissible?</h3>
+              <p>Yes. All legal paternity tests follow strict chain-of-custody procedures and are processed through AABB-accredited laboratories.</p>
+            </div>
+            <div>
+              <h3 className="font-semibold">Do you offer same-day appointments?</h3>
+              <p>Yes. Same-day legal DNA testing appointments are often available in Denver and surrounding areas.</p>
+            </div>
+          </div>
         </div>
       </section>
 
