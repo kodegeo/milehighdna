@@ -38,7 +38,6 @@ import LegalPaternityTestingDenver from './pages/services/LegalPaternityTestingD
 import NonLegalPaternityTesting from './pages/services/NonLegalPaternityTesting';
 import ImmigrationDNATesting from './pages/services/ImmigrationDNATesting';
 import PrenatalPaternityTesting from './pages/services/PrenatalPaternityTesting';
-import PrenatalPaternityTestingDenverService from './pages/services/PrenatalPaternityTestingDenver';
 import NonLegalPaternityTestingDenver from './pages/services/NonLegalPaternityTestingDenver';
 import SiblingshipTesting from './pages/services/SiblingshipTesting';
 import GrandparentageTesting from './pages/services/GrandparentageTesting';
@@ -184,12 +183,9 @@ function AppLayout() {
             <Route path="/paternity-test-colorado" element={<PaternityTestColorado />} />
             <Route path="/services" element={<Services />} />
             <Route path="/services/legal-paternity-testing" element={<LegalPaternityTesting />} />
-            <Route path="/services/legal-paternity-testing-denver" element={<LegalPaternityTestingDenver />} />
             <Route path="/services/non-legal-paternity-testing" element={<NonLegalPaternityTesting />} />
-            <Route path="/services/non-legal-paternity-testing-denver" element={<NonLegalPaternityTestingDenver />} />
             <Route path="/services/immigration-dna-testing" element={<ImmigrationDNATesting />} />
             <Route path="/services/prenatal-paternity-testing" element={<PrenatalPaternityTesting />} />
-            <Route path="/services/prenatal-paternity-testing-denver" element={<PrenatalPaternityTestingDenverService />} />
             <Route path="/services/siblingship-testing" element={<SiblingshipTesting />} />
             <Route path="/services/grandparentage-testing" element={<GrandparentageTesting />} />
             <Route path="/services/discreet-dna-testing" element={<DiscreetDNATestingService />} />

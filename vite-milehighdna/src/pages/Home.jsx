@@ -27,7 +27,9 @@ const Home = () => {
   return (
     <div className="min-h-screen pb-16 md:pb-0">
       <Helmet>
-      <title>DNA Testing in Denver | Legal & Prenatal Paternity Test – Same Day Appointments</title>
+      <title>
+      DNA Testing in Denver – Call 720-900-9342 | Legal & Prenatal Paternity
+      </title>
       <meta
           name="description"
           content="Need a legal or prenatal paternity test in Denver? Court-admissible DNA testing with AABB-accredited labs. Same-day appointments available. Call 720-900-9342 or book online today."
