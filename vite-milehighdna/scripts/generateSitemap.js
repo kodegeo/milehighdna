@@ -193,7 +193,6 @@ function getHreflang(route) {
     '/siblingship-dna-tests': { 'en-us': '/siblingship-dna-tests', 'es-us': '/es/prueba-de-hermanos' },
     '/services/prenatal-paternity-testing': { 'en-us': '/services/prenatal-paternity-testing', 'es-us': '/es/prueba-de-paternidad-prenatal' },
     '/appointments': { 'en-us': '/appointments', 'es-us': '/es/programar-cita' },
-    '/book-appointment': { 'en-us': '/book-appointment', 'es-us': '/es/reservar-cita' },
     '/faq': { 'en-us': '/faq', 'es-us': '/es/preguntas-frecuentes' },
     '/get-results': { 'en-us': '/get-results', 'es-us': '/es/consultar-resultados' },
     '/aabb-accreditation': { 'en-us': '/aabb-accreditation', 'es-us': '/es/aabb-accreditation' },

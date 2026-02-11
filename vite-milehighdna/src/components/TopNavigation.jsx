@@ -23,8 +23,7 @@ const TopNavigation = () => {
       "/": "/es",
       "/about": "/es/about",
       "/services": "/es/services",
-      "/book-appointment": "/es/book-appointment",
-      "/get-results": "/es/get-results",
+      "/appointments": "/es/programar-cita",
     };
 
     const newPath = isSpanish

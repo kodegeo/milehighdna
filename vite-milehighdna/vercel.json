@@ -181,6 +181,12 @@
       "destination": "https://milehighdnatesting.com/appointments",
       "permanent": true
     },
+
+    {
+      "source": "/es/prueba-prenatal",
+      "destination": "https://milehighdnatesting.com/es/prueba-de-paternidad-prenatal",
+      "permanent": true
+    },    
     
     {
       "source": "/(.*)",

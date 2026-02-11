@@ -106,15 +106,6 @@ const routeConfig = {
       'es-us': '/es/programar-cita'
     }
   },
-  '/book-appointment': {
-    priority: '0.8',
-    changefreq: 'weekly',
-    hreflang: {
-      'en-us': '/book-appointment',
-      'es-us': '/es/reservar-cita'
-    }
-  },
-
   // Information Pages
   '/about': {
     priority: '0.6',

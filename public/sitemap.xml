@@ -51,18 +51,6 @@
   </url>
 
   <url>
-    <loc>https://milehighdnatesting.com/get-results</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://milehighdnatesting.com/get-results" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://milehighdnatesting.com/es/consultar-resultados" />
-  </url>
-
-  <url>
-    <loc>https://milehighdnatesting.com/book-appointment</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://milehighdnatesting.com/book-appointment" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://milehighdnatesting.com/es/reservar-cita" />
-  </url>
-
-  <url>
     <loc>https://milehighdnatesting.com/aabb-accreditation</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://milehighdnatesting.com/aabb-accreditation" />
     <xhtml:link rel="alternate" hreflang="es" href="https://milehighdnatesting.com/es/aabb-accreditation" />

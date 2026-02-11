@@ -14,12 +14,12 @@ import { Helmet } from 'react-helmet-async';
 
 const Home = () => {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen pb-16 md:pb-0">
       <Helmet>
-        <title>Fast & Confidential DNA Testing in Denver, CO | Legal Paternity & Relationship Tests – Mile High DNA</title>
-        <meta 
-          name="description" 
-          content="Fast, confidential, AABB-accredited DNA testing in Denver, Aurora, Thornton & Lakewood Colorado. We provide legal paternity, prenatal, immigration, and family relationship testing with same-day appointments available throughout Denver and nearby cities." 
+      <title>DNA Testing in Denver | Legal & Prenatal Paternity Test – Same Day Appointments</title>
+      <meta
+          name="description"
+          content="Need a legal or prenatal paternity test in Denver? Court-admissible DNA testing with AABB-accredited labs. Same-day appointments available. Call 720-900-9342 or book online today."
         />
         <meta name="msvalidate.01" content="5905CEB57CBF0561C0CECACC8EB705D6" />
 
@@ -44,13 +44,64 @@ const Home = () => {
           {JSON.stringify([
             {
               "@context": "https://schema.org",
-              "@type": "LocalBusiness",
+              "@type": ["LocalBusiness", "MedicalBusiness"],
               "@id": "https://milehighdnatesting.com/#dna-testing-denver",
               "name": "Mile High DNA Testing",
               "image": "https://milehighdnatesting.com/logo.png",
               "url": "https://milehighdnatesting.com",
               "telephone": "+1-720-900-9342",
               "priceRange": "$$",
+              "areaServed": [
+                { "@type": "City", "name": "Denver" },
+                { "@type": "City", "name": "Aurora" },
+                { "@type": "City", "name": "Lakewood" },
+                { "@type": "City", "name": "Thornton" },
+                { "@type": "City", "name": "Westminster" },
+                { "@type": "City", "name": "Littleton" },
+                { "@type": "City", "name": "Colorado Springs" },
+                { "@type": "City", "name": "Boulder" }
+              ],
+              "hasOfferCatalog": {
+                "@type": "OfferCatalog",
+                "name": "DNA Testing Services",
+                "itemListElement": [
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "MedicalTest",
+                      "name": "Legal Paternity Testing"
+                    }
+                  },
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "MedicalTest",
+                      "name": "Prenatal Paternity Testing"
+                    }
+                  },
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "MedicalTest",
+                      "name": "Non-Legal Paternity Testing"
+                    }
+                  },
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "MedicalTest",
+                      "name": "Grandparentage Testing"
+                    }
+                  },
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "MedicalTest",
+                      "name": "Siblingship Testing"
+                    }
+                  }
+                ]
+              },
               "address": {
                 "@type": "PostalAddress",
                 "streetAddress": "975 N Lincoln St Suite 205C",
@@ -78,6 +129,7 @@ const Home = () => {
                 "https://www.linkedin.com/company/milehighdnatesting"
               ]
             },
+
             {
               "@context": "https://schema.org",
               "@type": "WebPage",
@@ -90,6 +142,53 @@ const Home = () => {
                 "name": "Mile High DNA Testing",
                 "url": "https://milehighdnatesting.com"
               }
+            },
+
+            {
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "How much does a legal paternity test cost in Denver?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Legal paternity testing costs vary depending on the case. Call 720-900-9342 for an exact quote and same-day availability."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Is your DNA testing court admissible?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. We work with AABB-accredited laboratories and follow strict chain-of-custody procedures required for court and immigration cases."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "How fast do I get results?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Most results are available within 3–5 business days. Expedited options are available."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Do you offer same-day appointments?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. Same-day DNA testing appointments are often available in Denver and surrounding areas."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Do you serve areas outside Denver?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. We serve Aurora, Lakewood, Thornton, Westminster, Littleton, Boulder, and Colorado Springs."
+                  }
+                }
+              ]
             }
           ])}
           </script>
@@ -97,8 +196,8 @@ const Home = () => {
 
       {/* Hero Section */}
       <h1 className="sr-only">
-        Fast and Confidential DNA Testing in Denver, Colorado – Legal, Relationship, Immigration, and Prenatal Services
-      </h1>
+      Court-Ordered DNA Testing in Denver – Same Day Appointments Available & Prenatal Paternity Specialists
+        </h1>
 
       <div className="relative h-[600px]">
         {/* Desktop image */}
@@ -119,11 +218,53 @@ const Home = () => {
         />
         {/* Overlay for darkness */}
         <div className="absolute inset-0 bg-black/50 z-0" />
+        
+        {/* Urgency Badge */}
+        <div className="absolute top-6 right-6 bg-red-600 text-white px-4 py-2 rounded-full text-sm font-semibold shadow-md z-20">
+          Available Today – Same Day Appointments
+        </div>
+        
         <div className="relative z-10 container mx-auto px-4 h-full flex items-center">
           <div className="max-w-2xl text-white">
-            <h2 className="text-5xl text-white font-bold mb-4">Fast & Confidential DNA Testing in Colorado</h2>
+            <h2 className="text-5xl text-white font-bold mb-4">DNA Testing in Denver – Court Approved & Confidential</h2>
+            <p className="text-xl font-semibold mt-4 text-white">
+              Call{" "}
+              <span className="md:hidden">
+                <a
+                  href="tel:+17209009342"
+                  onClick={() => {
+                    window.dataLayer = window.dataLayer || [];
+                    window.dataLayer.push({
+                      event: "phone_click",
+                      phone_number: "720-900-9342",
+                      phone_location: "Hero Headline"
+                    });
+                  }}
+                  className="underline"
+                >
+                  720-900-9342
+                </a>
+              </span>
+              <span className="hidden md:inline">720-900-9342</span> for Same-Day Appointments
+            </p>
+            <p className="text-2xl font-bold text-yellow-300 mb-4">
+              Call Now:{" "}
+              <a
+                href="tel:+17209009342"
+                onClick={() => {
+                  window.dataLayer = window.dataLayer || [];
+                  window.dataLayer.push({
+                    event: "phone_click",
+                    phone_location: "Hero Headline"
+                  });
+                }}
+                className="underline ml-2"
+              >
+                720-900-9342
+              </a>
+            </p>
             <p className="text-xl mb-6">
-              Same-day appointments • AABB-Accredited Labs • Trusted by Families & Attorneys
+              Court-Admissible • AABB Accredited Lab • Same-Day Appointments • Results in 3–5 Days
             </p>
             <p className="text-lg mb-8">
               Get accurate, court-admissible results with full privacy. Serving Denver, Aurora, Lakewood, and beyond.
@@ -147,6 +288,105 @@ const Home = () => {
         </div>
       </div>
 
+      {/* Trust Badge Strip */}
+      <div className="bg-white py-8 shadow-sm border-t">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+            <div className="text-center">
+              <div className="flex justify-center mb-2">
+                <div className="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center">
+                  <svg
+                    className="w-6 h-6 text-[#2C6FA6]"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M5 13l4 4L19 7"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <h3 className="font-bold text-gray-900 mb-1">AABB Accredited Lab</h3>
+              <p className="text-sm text-gray-600">Industry-leading standards</p>
+            </div>
+            
+            <div className="text-center">
+              <div className="flex justify-center mb-2">
+                <div className="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center">
+                  <svg
+                    className="w-6 h-6 text-[#2C6FA6]"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M5 13l4 4L19 7"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <h3 className="font-bold text-gray-900 mb-1">Court-Admissible Results</h3>
+              <p className="text-sm text-gray-600">Legally recognized testing</p>
+            </div>
+            
+            <div className="text-center">
+              <div className="flex justify-center mb-2">
+                <div className="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center">
+                  <svg
+                    className="w-6 h-6 text-[#2C6FA6]"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M5 13l4 4L19 7"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <h3 className="font-bold text-gray-900 mb-1">100% Confidential</h3>
+              <p className="text-sm text-gray-600">Privacy guaranteed</p>
+            </div>
+            
+            <div className="text-center">
+              <div className="flex justify-center mb-2">
+                <div className="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center">
+                  <svg
+                    className="w-6 h-6 text-[#2C6FA6]"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M5 13l4 4L19 7"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <h3 className="font-bold text-gray-900 mb-1">Results in 3–5 Days</h3>
+              <p className="text-sm text-gray-600">Fast turnaround time</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
       {/* Services Preview */}
       <div className="section-padding">
         <div className="container mx-auto px-4">
@@ -161,7 +401,7 @@ const Home = () => {
               <div className="p-6">
                 <h3 className="text-xl font-bold mb-2">Prenatal Paternity Testing</h3>
                 <p className="text-gray-600 mb-4">Non-invasive prenatal paternity testing in Denver with 99.9% accuracy. Get early answers during pregnancy—safe for mother and baby. Trusted DNA testing lab near you for fast, confidential results.</p>
-                <div className="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-0">
+                <div className="flex flex-col sm:flex-row sm:items-center gap-3">
                   <Link
                     to="/services/prenatal-paternity-testing"
                     className="text-[#2C6FA6] hover:text-[#7DB9E8] font-semibold transition duration-300"
@@ -170,8 +410,15 @@ const Home = () => {
                   </Link>
                   <a
                     href="tel:+17209009342"
-                    onClick={() => { window.dataLayer = window.dataLayer || []; window.dataLayer.push({ event: "phone_click", phone_number: "720-900-9342", phone_location: "Home - Prenatal Service Card" }); }}
-                    className="sm:hidden text-[#2C6FA6] hover:text-[#7DB9E8] font-semibold transition duration-300"
+                    onClick={() => {
+                      window.dataLayer = window.dataLayer || [];
+                      window.dataLayer.push({
+                        event: "phone_click",
+                        phone_number: "720-900-9342",
+                        phone_location: "Home - Prenatal Service Card"
+                      });
+                    }}
+                    className="text-[#2C6FA6] hover:text-[#7DB9E8] font-semibold transition duration-300"
                   >
                     Call Now →
                   </a>
@@ -188,7 +435,7 @@ const Home = () => {
               <div className="p-6">
                 <h3 className="text-xl font-bold mb-2">Legal Paternity Testing</h3>
                 <p className="text-gray-600 mb-4">Court-admissible legal paternity testing in Denver with 99.99% accuracy. Ideal for child support, custody, or immigration cases. Collected by certified professionals and processed in an accredited DNA lab you can trust.</p>
-                <div className="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-0">
+                <div className="flex flex-col sm:flex-row sm:items-center gap-3">
                   <Link
                     to="/services/legal-paternity-testing"
                     className="text-[#2C6FA6] hover:text-[#7DB9E8] font-semibold transition duration-300"
@@ -197,8 +444,15 @@ const Home = () => {
                   </Link>
                   <a
                     href="tel:+17209009342"
-                    onClick={() => { window.dataLayer = window.dataLayer || []; window.dataLayer.push({ event: "phone_click", phone_number: "720-900-9342", phone_location: "Home - Legal Paternity Service Card" }); }}
-                    className="sm:hidden text-[#2C6FA6] hover:text-[#7DB9E8] font-semibold transition duration-300"
+                    onClick={() => {
+                      window.dataLayer = window.dataLayer || [];
+                      window.dataLayer.push({
+                        event: "phone_click",
+                        phone_number: "720-900-9342",
+                        phone_location: "Home - Legal Paternity Service Card"
+                      });
+                    }}
+                    className="text-[#2C6FA6] hover:text-[#7DB9E8] font-semibold transition duration-300"
                   >
                     Call Now →
                   </a>
@@ -215,7 +469,7 @@ const Home = () => {
               <div className="p-6">
                 <h3 className="text-xl font-bold mb-2">In Office Non Legal Paternity Testing</h3>
                 <p className="text-gray-600 mb-4">Accurate, affordable paternity testing in Denver done in our certified DNA testing center. Perfect for peace of mind—no court order required. Professional collection and same-day appointments available.</p>
-                <div className="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-0">
+                <div className="flex flex-col sm:flex-row sm:items-center gap-3">
                   <Link
                     to="/services/non-legal-paternity-testing"
                     className="text-[#2C6FA6] hover:text-[#7DB9E8] font-semibold transition duration-300"
@@ -224,8 +478,15 @@ const Home = () => {
                   </Link>
                   <a
                     href="tel:+17209009342"
-                    onClick={() => { window.dataLayer = window.dataLayer || []; window.dataLayer.push({ event: "phone_click", phone_number: "720-900-9342", phone_location: "Home - In Office Non Legal Service Card" }); }}
-                    className="sm:hidden text-[#2C6FA6] hover:text-[#7DB9E8] font-semibold transition duration-300"
+                    onClick={() => {
+                      window.dataLayer = window.dataLayer || [];
+                      window.dataLayer.push({
+                        event: "phone_click",
+                        phone_number: "720-900-9342",
+                        phone_location: "Home - In Office Non Legal Service Card"
+                      });
+                    }}
+                    className="text-[#2C6FA6] hover:text-[#7DB9E8] font-semibold transition duration-300"
                   >
                     Call Now →
                   </a>
@@ -242,7 +503,7 @@ const Home = () => {
               <div className="p-6">
                 <h3 className="text-xl font-bold mb-2">At Home Paternity Kits</h3>
                 <p className="text-gray-600 mb-4">Order an at-home paternity DNA test kit for private, convenient testing. Collect samples at home, mail them to our Denver DNA lab, and receive secure, accurate results online. Ideal for families seeking peace of mind.</p>
-                <div className="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-0">
+                <div className="flex flex-col sm:flex-row sm:items-center gap-3">
                   <Link
                     to="/shop/at-home-paternity-test"
                     className="text-[#2C6FA6] hover:text-[#7DB9E8] font-semibold transition duration-300"
@@ -251,8 +512,15 @@ const Home = () => {
                   </Link>
                   <a
                     href="tel:+17209009342"
-                    onClick={() => { window.dataLayer = window.dataLayer || []; window.dataLayer.push({ event: "phone_click", phone_number: "720-900-9342", phone_location: "Home - At Home Kits Service Card" }); }}
-                    className="sm:hidden text-[#2C6FA6] hover:text-[#7DB9E8] font-semibold transition duration-300"
+                    onClick={() => {
+                      window.dataLayer = window.dataLayer || [];
+                      window.dataLayer.push({
+                        event: "phone_click",
+                        phone_number: "720-900-9342",
+                        phone_location: "Home - At Home Kits Service Card"
+                      });
+                    }}
+                    className="text-[#2C6FA6] hover:text-[#7DB9E8] font-semibold transition duration-300"
                   >
                     Call Now →
                   </a>
@@ -268,7 +536,7 @@ const Home = () => {
               <div className="p-6">
                 <h3 className="text-xl font-bold mb-2">Grandparentage Testing</h3>
                 <p className="text-gray-600 mb-4">Accurate grandparent DNA testing in Denver to confirm biological relationships when a parent is unavailable. Reliable, confidential results accepted for legal or personal purposes.</p>
-                <div className="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-0">
+                <div className="flex flex-col sm:flex-row sm:items-center gap-3">
                   <Link
                     to="/services/grandparentage-testing"
                     className="text-[#2C6FA6] hover:text-[#7DB9E8] font-semibold transition duration-300"
@@ -277,8 +545,15 @@ const Home = () => {
                   </Link>
                   <a
                     href="tel:+17209009342"
-                    onClick={() => { window.dataLayer = window.dataLayer || []; window.dataLayer.push({ event: "phone_click", phone_number: "720-900-9342", phone_location: "Home - Grandparentage Service Card" }); }}
-                    className="sm:hidden text-[#2C6FA6] hover:text-[#7DB9E8] font-semibold transition duration-300"
+                    onClick={() => {
+                      window.dataLayer = window.dataLayer || [];
+                      window.dataLayer.push({
+                        event: "phone_click",
+                        phone_number: "720-900-9342",
+                        phone_location: "Home - Grandparentage Service Card"
+                      });
+                    }}
+                    className="text-[#2C6FA6] hover:text-[#7DB9E8] font-semibold transition duration-300"
                   >
                     Call Now →
                   </a>
@@ -295,7 +570,7 @@ const Home = () => {
               <div className="p-6">
                 <h3 className="text-xl font-bold mb-2">Siblingship Testing</h3>
                 <p className="text-gray-600 mb-4">Trusted siblingship DNA testing in Denver to determine full or half-sibling relationships. Perfect for personal knowledge or legal documentation. Convenient collection with secure processing.</p>
-                <div className="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-0">
+                <div className="flex flex-col sm:flex-row sm:items-center gap-3">
                   <Link
                     to="/services/siblingship-testing"
                     className="text-[#2C6FA6] hover:text-[#7DB9E8] font-semibold transition duration-300"
@@ -304,8 +579,15 @@ const Home = () => {
                   </Link>
                   <a
                     href="tel:+17209009342"
-                    onClick={() => { window.dataLayer = window.dataLayer || []; window.dataLayer.push({ event: "phone_click", phone_number: "720-900-9342", phone_location: "Home - Siblingship Service Card" }); }}
-                    className="sm:hidden text-[#2C6FA6] hover:text-[#7DB9E8] font-semibold transition duration-300"
+                    onClick={() => {
+                      window.dataLayer = window.dataLayer || [];
+                      window.dataLayer.push({
+                        event: "phone_click",
+                        phone_number: "720-900-9342",
+                        phone_location: "Home - Siblingship Service Card"
+                      });
+                    }}
+                    className="text-[#2C6FA6] hover:text-[#7DB9E8] font-semibold transition duration-300"
                   >
                     Call Now →
                   </a>
@@ -336,6 +618,60 @@ const Home = () => {
             <div className="card p-6">
               <h3 className="text-xl font-bold mb-2">100% Confidential</h3>
               <p className="text-gray-600">Your privacy is our priority—secure handling of all samples and results.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* SEO Content Section */}
+      <div className="section-padding">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center mb-8">DNA Testing Services in Denver, Colorado</h2>
+          
+          <div className="max-w-4xl mx-auto space-y-6 text-gray-700">
+            <p className="text-lg leading-relaxed">
+              When you need reliable DNA testing in Denver, Mile High DNA Testing provides comprehensive paternity test Denver services for legal, personal, and medical purposes. Our AABB-accredited facility serves families throughout the greater Denver metro area, offering same-day appointments and court-admissible results. Whether you require legal paternity testing Denver for child support, custody, or immigration cases, our certified professionals ensure accurate, confidential testing with proper chain-of-custody documentation.
+            </p>
+            
+            <p className="text-lg leading-relaxed">
+              For expectant mothers seeking early answers, our prenatal paternity test Denver service uses non-invasive technology that's completely safe for both mother and baby. This advanced testing method requires only a blood sample from the mother and a cheek swab from the alleged father, eliminating any risk to the pregnancy. When a court ordered DNA test Denver is required, our legal paternity testing Denver process meets all judicial requirements, ensuring results are admissible in Colorado courts and accepted by immigration authorities.
+            </p>
+            
+            <p className="text-lg leading-relaxed">
+              Our Denver DNA testing laboratory processes all samples through AABB-accredited facilities, guaranteeing 99.99% accuracy for paternity test Denver results. We understand that DNA testing often occurs during sensitive family situations, which is why we provide compassionate, bilingual support throughout the entire process. From initial consultation to final results delivery, our team guides you every step of the way, ensuring you understand your options and receive reliable answers when you need them most.
+            </p>
+          </div>
+
+          <div className="max-w-4xl mx-auto mt-8 pt-8 border-t border-gray-200">
+            <p className="text-center text-gray-600 mb-4">Explore our DNA testing services:</p>
+            <div className="flex flex-wrap justify-center gap-4">
+              <Link
+                to="/services/legal-paternity-testing"
+                className="text-[#2C6FA6] hover:text-[#7DB9E8] font-semibold transition duration-300"
+              >
+                Legal Paternity Testing
+              </Link>
+              <span className="text-gray-400">•</span>
+              <Link
+                to="/services/prenatal-paternity-testing"
+                className="text-[#2C6FA6] hover:text-[#7DB9E8] font-semibold transition duration-300"
+              >
+                Prenatal Paternity Testing
+              </Link>
+              <span className="text-gray-400">•</span>
+              <Link
+                to="/services/non-legal-paternity-testing"
+                className="text-[#2C6FA6] hover:text-[#7DB9E8] font-semibold transition duration-300"
+              >
+                Peace of Mind Testing
+              </Link>
+              <span className="text-gray-400">•</span>
+              <Link
+                to="/appointments"
+                className="text-[#2C6FA6] hover:text-[#7DB9E8] font-semibold transition duration-300"
+              >
+                Schedule Appointment
+              </Link>
             </div>
           </div>
         </div>
@@ -433,6 +769,38 @@ const Home = () => {
             <span className="font-medium">Email</span>
           </a>
         </div>
+      </div>
+
+      {/* Sticky Mobile Call Bar */}
+      <div className="fixed bottom-0 left-0 right-0 w-full h-16 bg-[#2C6FA6] text-white font-bold flex items-center justify-center shadow-lg z-50 md:hidden">
+        <a
+          href="tel:+17209009342"
+          onClick={() => {
+            window.dataLayer = window.dataLayer || [];
+            window.dataLayer.push({
+              event: "phone_click",
+              phone_number: "720-900-9342",
+              phone_location: "Sticky Mobile Bar"
+            });
+          }}
+          className="flex items-center justify-center gap-2 w-full h-full"
+        >
+          <svg
+            className="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+            />
+          </svg>
+          <span>Call Now – 720-900-9342</span>
+        </a>
       </div>
     </div>
   );
