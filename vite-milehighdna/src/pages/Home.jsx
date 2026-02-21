@@ -212,7 +212,7 @@ const Home = () => {
       Court-Ordered DNA Testing in Denver – Same Day Appointments Available & Prenatal Paternity Specialists
         </h1>
 
-      <div className="relative h-[600px]">
+      <div className="relative min-h-[560px] md:min-h-[600px]">
         {/* Desktop image */}
         <div 
           className="absolute inset-0 bg-cover bg-center hidden sm:block"
@@ -229,17 +229,21 @@ const Home = () => {
             filter: 'brightness(0.9999)'
           }}
         />
-        {/* Overlay for darkness */}
-        <div className="absolute inset-0 bg-black/50 z-0" />
+        {/* Overlay: darker on mobile for text contrast */}
+        <div className="absolute inset-0 bg-black/60 md:bg-black/40 z-0" />
         
-        <div className="relative z-10 container mx-auto px-4 h-full flex items-center">
+        <div className="relative z-10 container mx-auto px-4 h-full flex items-center py-20 md:py-28">
           <div className="max-w-2xl text-white">
             <div className="inline-block bg-green-600 text-white font-semibold px-4 py-2 rounded-full shadow-md mb-4">
               {isOpenNow()
                 ? "Open Now – Same Day Appointments Available"
                 : "Opens at 9:00 AM – Same Day Appointments Available"}
             </div>
-            <h2 className="text-5xl text-white font-bold mb-4">DNA Testing in Denver – Court Approved & Confidential</h2>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl text-white font-bold mb-4 leading-tight md:leading-snug">
+              DNA Testing in Denver
+              <br className="md:hidden" />
+              <span className="md:inline"> – </span>Court Approved & Confidential
+            </h2>
             <div className="mt-6 mb-6">
               <a
                 href="tel:+17209009342"
@@ -271,10 +275,10 @@ const Home = () => {
               </div>
             </div>
 
-            <p className="text-xl mb-6">
+            <p className="text-base md:text-xl mb-6">
               Court-Admissible • AABB Accredited Lab • Same-Day Appointments • Results in 3–5 Days
             </p>
-            <p className="text-lg mb-8">
+            <p className="text-base md:text-lg mb-8">
               Get accurate, court-admissible results with full privacy. Serving Denver, Aurora, Lakewood, and beyond.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
@@ -795,7 +799,7 @@ const Home = () => {
       </div>
 
       {/* Sticky Mobile Call Bar */}
-      <div className="fixed bottom-0 left-0 right-0 z-50 md:hidden">
+      <div className="fixed bottom-0 left-0 right-0 z-40 md:hidden shadow-[0_-4px_20px_rgba(0,0,0,0.15)]">
         <a
           href="tel:+17209009342"
           onClick={() => {
@@ -806,10 +810,10 @@ const Home = () => {
               phone_location: "Sticky Mobile Bar"
             });
           }}
-          className="block w-full bg-green-600 hover:bg-green-700 text-white text-center font-bold py-4 text-lg shadow-lg transition"
+          className="block w-full bg-green-600 hover:bg-green-700 text-white text-center font-bold py-3 text-sm sm:text-base shadow-lg transition"
         >
           📞 Call Now – 720-900-9342
-          <div className="text-sm font-normal">
+          <div className="text-xs sm:text-sm font-normal mt-0.5">
             Same-Day Appointments Available
           </div>
         </a>

@@ -55,6 +55,8 @@ import LifestyleAncestryDNATesting from './pages/services/LifestyleAncestryDNATe
 import HealthyWeightDNATest from './pages/services/HealthyWeightDNATest';
 import GpsOriginsDNATest from './pages/services/GpsOriginsDNATest';
 import AtHomeDNAKits from './pages/services/AtHomeDNAKits';
+import PostmortemPaternityTesting from './pages/services/PostmortemPaternityTesting';
+import SingleDNAProfile from './pages/services/SingleDNAProfile';
 import CheckoutDomestic from './pages/CheckoutDomestic';
 import CheckoutInternational from './pages/CheckoutInternational';
 import ShopCollection from './pages/shop/ShopCollection';
@@ -200,6 +202,8 @@ function AppLayout() {
             <Route path="/services/healthy-weight-dna-test" element={<HealthyWeightDNATest />} />
             <Route path="/services/gps-origins-dna-test" element={<GpsOriginsDNATest />} />
             <Route path="/services/at-home-dna-kits" element={<AtHomeDNAKits />} />
+            <Route path="/services/postmortem-paternity-testing" element={<PostmortemPaternityTesting />} />
+            <Route path="/services/single-dna-profile" element={<SingleDNAProfile />} />
 
             {/* Guide Pages */}
             <Route path="/guides" element={<GuidesIndex />} />
