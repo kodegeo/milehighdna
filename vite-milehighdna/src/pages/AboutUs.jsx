@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import HeroSection from "../components/common/HeroSection";
 import aboutHero from "../assets/images/about_hero.png";
-import aboutMid from "../assets/images/about_mid.png";
+import aboutMid from "../assets/images/about_mid-1.png";
 
 const AboutUsPage = () => {
   return (
@@ -37,6 +37,7 @@ const AboutUsPage = () => {
 
       <section className="py-12 px-6 max-w-5xl mx-auto">
         <h2 className="text-2xl font-semibold mb-6 text-gray-900">
+          
           Is This Office Appropriate for Your Situation
         </h2>
         <ul className="space-y-3 text-gray-700">
