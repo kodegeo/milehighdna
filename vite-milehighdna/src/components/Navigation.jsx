@@ -30,7 +30,9 @@ const SERVICES_MENU = [
       { label: 'Discreet & Private DNA Testing', to: '/services/discreet-dna-testing' },
       { label: 'Single DNA Profile', to: '/services/single-dna-profile' },
       { label: 'DNA Gender Reveal', to: '/services/gender-reveal-dna-testing' },
-      { label: 'Y-STR / mtDNA Testing', to: '/services/y-str-dna-testing' },
+      { label: 'Y-STR DNA Testing', to: '/services/y-str-dna-testing' },
+      { label: 'mtDNA Testing', to: '/services/mtdna-testing' },
+      { label: 'Lifestyle & Ancestry DNA', to: '/services/lifestyle-ancestry-dna-testing' },
       { label: 'GPS Origins DNA', to: '/services/gps-origins-dna-test' },
       { label: 'Healthy Weight DNA', to: '/services/healthy-weight-dna-test' },
     ],
@@ -81,10 +83,49 @@ const Navigation = () => {
           {/* Desktop Navigation */}
           <div className="hidden md:flex md:items-center md:space-x-8">
 
-            {/* About */}
-            <Link to="/about" className="text-gray-700 hover:text-blue-600 transition duration-300">
-              About
-            </Link>
+            {/* About Us dropdown */}
+            <div
+              className="relative"
+              onMouseEnter={() => setOpenDropdown('about')}
+              onMouseLeave={closeDropdown}
+            >
+              <button
+                type="button"
+                className="text-gray-700 hover:text-blue-600 transition duration-300 flex items-center"
+                onClick={() => setOpenDropdown(openDropdown === 'about' ? null : 'about')}
+              >
+                About Us
+                <svg className="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+              {openDropdown === 'about' && (
+                <div
+                  className="absolute top-full left-0 pt-2 z-50"
+                  style={{ minWidth: '200px' }}
+                >
+                  <div
+                    className="bg-white rounded-[10px] py-2 z-50"
+                    style={{ boxShadow: '0 12px 30px rgba(0,0,0,0.12)' }}
+                  >
+                    <Link
+                      to="/about"
+                      className="block px-4 py-2.5 text-sm text-gray-700 whitespace-nowrap hover:bg-gray-50 hover:text-blue-600"
+                      onClick={closeDropdown}
+                    >
+                      About Us
+                    </Link>
+                    <Link
+                      to="/why-choose-us"
+                      className="block px-4 py-2.5 text-sm text-gray-700 whitespace-nowrap hover:bg-gray-50 hover:text-blue-600"
+                      onClick={closeDropdown}
+                    >
+                      Why Choose Us
+                    </Link>
+                  </div>
+                </div>
+              )}
+            </div>
 
             {/* AABB Accredited */}
             <Link to="/aabb-accreditation" className="text-gray-700 hover:text-blue-600 transition duration-300">
@@ -251,8 +292,14 @@ const Navigation = () => {
         {/* Mobile Menu - moved inside max-w container */}
         {isMenuOpen && (
           <div className="md:hidden px-4 pb-4 max-h-[80vh] overflow-y-auto">
-            <Link to="/about" className="block py-2 text-gray-700" onClick={() => setIsMenuOpen(false)}>About</Link>
-            <Link to="/aabb-accreditation" className="block py-2 text-gray-700" onClick={() => setIsMenuOpen(false)}>AABB Accredited</Link>
+            <details className="py-2">
+              <summary className="cursor-pointer text-gray-700 font-semibold">About Us</summary>
+              <div className="ml-4 mt-2 space-y-1">
+                <Link to="/about" className="block py-1 text-gray-700" onClick={() => setIsMenuOpen(false)}>About Us</Link>
+                <Link to="/why-choose-us" className="block py-1 text-gray-700" onClick={() => setIsMenuOpen(false)}>Why Choose Us</Link>
+              </div>
+            </details>
+            <Link to="/aabb-accredited-dna-testing-denver" className="block py-2 text-gray-700" onClick={() => setIsMenuOpen(false)}>AABB Accredited</Link>
 
             <details className="py-2">
               <summary className="cursor-pointer text-gray-700 font-semibold">Services</summary>
@@ -286,12 +333,14 @@ const Navigation = () => {
                 <div>
                   <p className="text-xs uppercase text-gray-500 mb-1">Specialty</p>
                   <Link to="/services/infidelity-dna-testing" className="block py-1" onClick={() => setIsMenuOpen(false)}>Infidelity</Link>
-                  <Link to="/services/discreet-private-dna-testing" className="block py-1" onClick={() => setIsMenuOpen(false)}>Discreet & Private</Link>
+                  <Link to="/services/discreet-dna-testing" className="block py-1" onClick={() => setIsMenuOpen(false)}>Discreet & Private</Link>
                   <Link to="/services/single-dna-profile" className="block py-1" onClick={() => setIsMenuOpen(false)}>Single DNA Profile</Link>
-                  <Link to="/services/dna-gender-reveal" className="block py-1" onClick={() => setIsMenuOpen(false)}>Gender Reveal</Link>
-                  <Link to="/services/y-str-mtdna-testing" className="block py-1" onClick={() => setIsMenuOpen(false)}>Y-STR / mtDNA</Link>
-                  <Link to="/services/gps-origins-dna" className="block py-1" onClick={() => setIsMenuOpen(false)}>GPS Origins</Link>
-                  <Link to="/services/healthy-weight-dna" className="block py-1" onClick={() => setIsMenuOpen(false)}>Healthy Weight DNA</Link>
+                  <Link to="/services/gender-reveal-dna-testing" className="block py-1" onClick={() => setIsMenuOpen(false)}>Gender Reveal</Link>
+                  <Link to="/services/y-str-dna-testing" className="block py-1" onClick={() => setIsMenuOpen(false)}>Y-STR DNA</Link>
+                  <Link to="/services/mtdna-testing" className="block py-1" onClick={() => setIsMenuOpen(false)}>mtDNA Testing</Link>
+                  <Link to="/services/lifestyle-ancestry-dna-testing" className="block py-1" onClick={() => setIsMenuOpen(false)}>Lifestyle & Ancestry</Link>
+                  <Link to="/services/gps-origins-dna-test" className="block py-1" onClick={() => setIsMenuOpen(false)}>GPS Origins</Link>
+                  <Link to="/services/healthy-weight-dna-test" className="block py-1" onClick={() => setIsMenuOpen(false)}>Healthy Weight DNA</Link>
                 </div>
 
                 <div className="border-t pt-2">

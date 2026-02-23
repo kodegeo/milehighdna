@@ -11,6 +11,7 @@ import TopNavigationEs from './components/es/TopNavigationEs';
 import NavigationEs from './components/es/NavigationEs';
 import Home from './pages/Home';
 import AboutUs from './pages/AboutUs';
+import WhyChooseUsPage from './pages/WhyChooseUsPage';
 import LegalPaternityTests from './pages/LegalPaternityTests';
 import PeaceOfMindPaternityTests from './pages/PeaceOfMindPaternityTests';
 import ImmigrationDNATests from './pages/ImmigrationDNATests';
@@ -25,7 +26,7 @@ import AdminUploaderPage from './pages/AdminUploaderPage';
 import MyResults from './pages/MyResults';
 import MyResultsPage from './pages/MyResultsPage';
 import BookAppointment from './pages/BookAppointment';
-import AABBAccreditation from './pages/AABBAccreditation';
+import AABBAccreditedDNATestingDenver from './pages/AABBAccreditedDNATestingDenver';
 import AppointmentFormPage from './pages/AppointmentFormPage';
 import AppointmentWizard from './pages/AppointmentWizard';
 import Prenatal from './pages/Prenatal';
@@ -158,6 +159,7 @@ function AppLayout() {
             {/* English Routes */}
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<AboutUs />} />
+            <Route path="/why-choose-us" element={<WhyChooseUsPage />} />
             <Route path="/legal-paternity-tests" element={<LegalPaternityTests />} />
             <Route path="/peace-of-mind-paternity-tests" element={<PeaceOfMindPaternityTests />} />
             <Route path="/immigration-dna-tests" element={<ImmigrationDNATests />} />
@@ -174,7 +176,8 @@ function AppLayout() {
             <Route path="/my-results" element={<MyResults />} />
             <Route path="/my-results-page" element={<MyResultsPage />} />
             <Route path="/book-appointment" element={<Navigate to="/appointments" replace />} />
-            <Route path="/aabb-accreditation" element={<AABBAccreditation />} />
+            <Route path="/aabb-accreditation" element={<Navigate to="/aabb-accredited-dna-testing-denver" replace />} />
+            <Route path="/aabb-accredited-dna-testing-denver" element={<AABBAccreditedDNATestingDenver />} />
             <Route path="/cancel" element={<Cancel />} />
             <Route path="/success" element={<Success />} />
             <Route path="/appointment-form" element={<AppointmentFormPage />} />

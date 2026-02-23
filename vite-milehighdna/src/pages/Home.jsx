@@ -276,7 +276,7 @@ const Home = () => {
             </div>
 
             <p className="text-base md:text-xl mb-6">
-              Court-Admissible • AABB Accredited Lab • Same-Day Appointments • Results in 3–5 Days
+              Court-Admissible • <Link to="/aabb-accredited-dna-testing-denver" className="text-blue-100 hover:text-white underline">AABB-accredited DNA testing in Denver</Link> • Same-Day Appointments • Results in 3–5 Days
             </p>
             <p className="text-base md:text-lg mb-8">
               Get accurate, court-admissible results with full privacy. Serving Denver, Aurora, Lakewood, and beyond.

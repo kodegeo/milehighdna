@@ -43,7 +43,7 @@ const InfidelityDNATesting = () => {
       {/* Hero */}
       <section className="relative bg-gradient-to-br from-blue-900 via-blue-800 to-indigo-900 text-white overflow-hidden">
         <div className="relative z-10 max-w-6xl mx-auto px-6 py-16 md:py-24">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4 leading-tight">Infidelity DNA Testing in Denver</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4 leading-tight text-white">Infidelity DNA Testing in Denver</h1>
           <p className="text-xl text-blue-100 mb-8 max-w-2xl">Discreet DNA analysis using personal items or samples. Conducted with strict confidentiality and sensitivity for private, non-court use in Denver and Colorado.</p>
           <Link to="/appointments" className="inline-flex items-center bg-white text-blue-900 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">Schedule Confidential Consultation</Link>
         </div>
@@ -88,7 +88,7 @@ const InfidelityDNATesting = () => {
               {processSteps.map(({ step, title, description }) => (
                 <div key={step} className="relative flex gap-6">
                   <div className="flex-shrink-0 w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center text-xl font-bold z-10">{step}</div>
-                  <div className="flex-grow bg-gray-50 rounded-xl p-6 border border-gray-200">
+                  <div className="flex-grow bg-white rounded-xl p-6 border border-gray-200">
                     <h3 className="text-lg font-semibold text-gray-800 mb-2">{title}</h3>
                     <p className="text-gray-700">{description}</p>
                   </div>
@@ -113,7 +113,7 @@ const InfidelityDNATesting = () => {
           <h2 className="text-3xl font-bold text-gray-800 mb-8">Frequently Asked Questions</h2>
           <div className="space-y-4">
             {faqs.map((faq, i) => (
-              <div key={i} className="bg-gray-50 rounded-xl border border-gray-200 overflow-hidden">
+              <div key={i} className="bg-white rounded-xl border border-gray-200 overflow-hidden">
                 <button onClick={() => toggleFaq(i)} className="w-full px-6 py-5 flex items-center justify-between text-left hover:bg-gray-100">
                   <span className="font-medium text-gray-800 pr-4">{faq.question}</span>
                   <svg className={`w-6 h-6 text-gray-500 flex-shrink-0 transition-transform ${openFaq === i ? "rotate-180" : ""}`} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" /></svg>
@@ -128,7 +128,7 @@ const InfidelityDNATesting = () => {
       {/* Final CTA */}
       <section className="py-16 px-6 bg-blue-900 text-white">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-4">Schedule a Confidential Consultation</h2>
+          <h2 className="text-3xl font-bold mb-4 text-white">Schedule a Confidential Consultation</h2>
           <p className="text-blue-100 mb-8 max-w-xl mx-auto">Book an appointment to discuss your options with our team. All inquiries are handled with discretion.</p>
           <Link to="/appointments" className="inline-flex items-center justify-center bg-white text-blue-900 px-8 py-4 rounded-lg font-bold hover:bg-gray-100 transition">Book Appointment</Link>
           <p className="mt-8 text-blue-200">975 N Lincoln Street, Suite 205C, Denver, CO 80203</p>

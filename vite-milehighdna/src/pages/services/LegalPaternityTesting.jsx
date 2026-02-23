@@ -186,6 +186,13 @@ const LegalPaternityTesting = () => {
         secondaryButtonText="Call Now"
         secondaryButtonLink="tel:+17209009342"
       />
+      <section className="bg-white py-2 px-6 text-center">
+        <div className="max-w-4xl mx-auto">
+          <p className="text-gray-700">
+            Our testing meets <Link to="/aabb-accredited-dna-testing-denver" className="text-blue-600 hover:underline">AABB-accredited DNA testing standards</Link>.
+          </p>
+        </div>
+      </section>
       
       {/* Trust Badge */}
       <div className="bg-white py-4 text-center">
@@ -216,7 +223,7 @@ const LegalPaternityTesting = () => {
           </h2>
           <p className="text-gray-700 mb-6">
             Trusted by <a href="https://milehighdnatesting.com/dna-testing-colorado" className="text-blue-600 hover:text-blue-700 transition duration-300">Colorado</a> families, attorneys, and agencies. Our legal DNA
-            testing process is simple, fast, and fully court-admissible.
+            testing meets <Link to="/aabb-accredited-dna-testing-denver" className="text-blue-600 hover:underline">AABB-accredited DNA testing standards</Link> and is simple, fast, and fully court-admissible.
           </p>
           <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
             <div className="bg-white rounded-lg shadow p-4">

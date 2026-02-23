@@ -148,6 +148,20 @@ const services = [
     link: '/services/at-home-dna-kits',
     badge: 'Convenient & Accurate',
   },
+  {
+    title: 'Single DNA Profile',
+    description: 'Secure one person\'s DNA profile for future comparison when the other party is unavailable. Legal and non-legal options. Establish and preserve a DNA profile today; order a comparison test later when needed.',
+    image: servicesBanner,
+    link: '/services/single-dna-profile',
+    badge: 'Secure Now, Compare Later',
+  },
+  {
+    title: 'Postmortem Paternity DNA Testing',
+    description: 'Establish paternity when the alleged father is deceased. DNA can be obtained from stored samples, personal effects, or relatives. Court-admissible and peace-of-mind options available in Denver and Colorado.',
+    image: forensicsHero,
+    link: '/services/postmortem-paternity-testing',
+    badge: 'When Father Is Deceased',
+  },
 ];
 
 const Services = () => {

@@ -183,6 +183,12 @@
     },
 
     {
+      "source": "/aabb-accreditation",
+      "destination": "https://milehighdnatesting.com/aabb-accredited-dna-testing-denver",
+      "permanent": true
+    },
+
+    {
       "source": "/es/prueba-prenatal",
       "destination": "https://milehighdnatesting.com/es/prueba-de-paternidad-prenatal",
       "permanent": true

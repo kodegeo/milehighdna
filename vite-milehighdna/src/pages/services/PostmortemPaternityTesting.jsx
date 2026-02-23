@@ -111,7 +111,7 @@ const PostmortemPaternityTesting = () => {
           Postmortem DNA Testing in Denver
           </h1>
           <p className="text-xl text-gray-200 mb-8 max-w-2xl">
-            Court-admissible and kinship DNA testing after a loved one has passed away.
+            Court-admissible and kinship DNA testing after a loved one has passed away. We follow <Link to="/aabb-accredited-dna-testing-denver" className="text-blue-200 hover:text-white underline">court-admissible DNA testing requirements</Link> for legal and probate cases.
           </p>
           <a
             href={PHONE_TEL}

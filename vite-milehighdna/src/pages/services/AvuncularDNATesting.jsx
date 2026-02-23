@@ -49,8 +49,9 @@ const AvuncularDNATesting = () => {
 
       {/* Hero */}
       <section className="relative bg-gradient-to-br from-blue-900 via-blue-800 to-indigo-900 text-white overflow-hidden">
-        <div className="relative z-10 max-w-6xl mx-auto px-6 py-16 md:py-24">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4 leading-tight">Avuncular DNA Testing in Denver</h1>
+        <div className="relative z-10 max-w-6xl mx-auto px-6 py-20 md:py-28">
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight text-white">
+          Avuncular DNA Testing in Denver</h1>
           <p className="text-xl text-blue-100 mb-8 max-w-2xl">Establish biological relationships through an aunt or uncle when direct parent testing is not possible. Available for legal and peace-of-mind cases in Denver and Colorado.</p>
           <div className="flex flex-wrap gap-4">
             <Link to="/appointments" className="inline-flex items-center bg-white text-blue-900 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">Book Now</Link>
@@ -157,9 +158,9 @@ const AvuncularDNATesting = () => {
       </section>
 
       {/* Final CTA */}
-      <section className="py-16 px-6 bg-blue-900 text-white">
+      <section className="relative bg-gradient-to-br from-blue-900 via-blue-800 to-indigo-900 text-white py-16 md:py-20">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-4">Ready to Schedule Your Avuncular DNA Test?</h2>
+          <h2 className="text-3xl font-bold mb-4 text-white">Ready to Schedule Your Avuncular DNA Test?</h2>
           <p className="text-blue-100 mb-8 max-w-xl mx-auto">Appointments for avuncular DNA testing are scheduled through our Denver office. Book online or call to discuss your situation.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link to="/appointments" className="inline-flex items-center justify-center bg-white text-blue-900 px-8 py-4 rounded-lg font-bold hover:bg-gray-100 transition">Book Now</Link>
