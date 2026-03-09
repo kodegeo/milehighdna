@@ -3,6 +3,7 @@ import React, { useEffect } from 'react';
 import { Helmet } from 'react-helmet-async'; // Already have HelmetProvider in main.jsx
 import './styles/global.css';
 import GTMPageView from './components/GTMPageView';
+import ScrollToTop from "./components/ScrollToTop";
 
 import { BrowserRouter as Router, Routes, Route, Navigate, useLocation } from 'react-router-dom';
 import Navigation from './components/Navigation';
@@ -95,6 +96,31 @@ import GuidesIndex from './pages/guides/GuidesIndex';
 import PrenatalDNATestCostGuide from './pages/guides/PrenatalDNATestCostGuide';
 import LegalDNATestCostGuide from './pages/guides/LegalDNATestCostGuide';
 import NonLegalDNATestCostGuide from './pages/guides/NonLegalDNATestCostGuide';
+import HowDNATestingWorks from './pages/guides/HowDNATestingWorks';
+import HowAccurateIsDNATesting from './pages/guides/HowAccurateIsDNATesting';
+import HowLongDoesDNATestingTake from './pages/guides/HowLongDoesDNATestingTake';
+import DNATestingResultsExplained from './pages/guides/DNATestingResultsExplained';
+import HowToPrepareForADNATest from './pages/guides/HowToPrepareForADNATest';
+import CourtAdmissibleDNATesting from './pages/guides/CourtAdmissibleDNATesting';
+import ChainOfCustodyDNATesting from './pages/guides/ChainOfCustodyDNATesting';
+import DNATestForCourt from './pages/guides/DNATestForCourt';
+import DNATestForChildCustody from './pages/guides/DNATestForChildCustody';
+import DNATestWithoutTheFather from './pages/guides/DNATestWithoutTheFather';
+import DNATestWhilePregnant from './pages/guides/DNATestWhilePregnant';
+import PrenatalPaternityTestAccuracy from './pages/guides/PrenatalPaternityTestAccuracy';
+import PrenatalPaternityTestSafety from './pages/guides/PrenatalPaternityTestSafety';
+import PrenatalDNATestTimeline from './pages/guides/PrenatalDNATestTimeline';
+import PrenatalDNATestCostBreakdown from './pages/guides/PrenatalDNATestCostBreakdown';
+import ImmigrationDNATestingProcess from './pages/guides/ImmigrationDNATestingProcess';
+import USCISDNATesting from './pages/guides/USCISDNATesting';
+import AABBLabsForImmigration from './pages/guides/AABBLabsForImmigration';
+import EmbassyDNATesting from './pages/guides/EmbassyDNATesting';
+import ImmigrationDNATestTimeline from './pages/guides/ImmigrationDNATestTimeline';
+import GrandparentDNATestingExplained from './pages/guides/GrandparentDNATestingExplained';
+import SiblingshipDNATestingExplained from './pages/guides/SiblingshipDNATestingExplained';
+import AvuncularDNATestingExplained from './pages/guides/AvuncularDNATestingExplained';
+import DNATestingAfterDeath from './pages/guides/DNATestingAfterDeath';
+import SingleProfileDNATesting from './pages/guides/SingleProfileDNATesting';
 import ImmigrationDNATestingDenver from './pages/mile-high-dna-corner/ImmigrationDNATestingDenver';
 import PrenatalPaternityTestingDenver from './pages/mile-high-dna-corner/PrenatalPaternityTestingDenver';
 import PeaceOfMindFathersStory from './pages/mile-high-dna-corner/WhenPeaceOfMindBecomesLifeChanging';
@@ -152,9 +178,10 @@ function AppLayout() {
       <div className="min-h-screen flex flex-col">
         {isSpanish ? <TopNavigationEs /> : <TopNavigation />}
         {isSpanish ? <NavigationEs /> : <Navigation />}
-  
+
         <main className="flex-grow">
           <GTMPageView />
+          <ScrollToTop />
           <Routes>
             {/* English Routes */}
             <Route path="/" element={<Home />} />
@@ -213,6 +240,31 @@ function AppLayout() {
             <Route path="/guides/prenatal-dna-test-cost" element={<PrenatalDNATestCostGuide />} />
             <Route path="/guides/legal-dna-test-cost" element={<LegalDNATestCostGuide />} />
             <Route path="/guides/non-legal-dna-test-cost" element={<NonLegalDNATestCostGuide />} />
+            <Route path="/guides/how-dna-testing-works" element={<HowDNATestingWorks />} />
+            <Route path="/guides/how-accurate-is-dna-testing" element={<HowAccurateIsDNATesting />} />
+            <Route path="/guides/how-long-does-dna-testing-take" element={<HowLongDoesDNATestingTake />} />
+            <Route path="/guides/dna-testing-results-explained" element={<DNATestingResultsExplained />} />
+            <Route path="/guides/how-to-prepare-for-a-dna-test" element={<HowToPrepareForADNATest />} />
+            <Route path="/guides/court-admissible-dna-testing" element={<CourtAdmissibleDNATesting />} />
+            <Route path="/guides/chain-of-custody-dna-testing" element={<ChainOfCustodyDNATesting />} />
+            <Route path="/guides/dna-test-for-court" element={<DNATestForCourt />} />
+            <Route path="/guides/dna-test-for-child-custody" element={<DNATestForChildCustody />} />
+            <Route path="/guides/dna-test-without-the-father" element={<DNATestWithoutTheFather />} />
+            <Route path="/guides/dna-test-while-pregnant" element={<DNATestWhilePregnant />} />
+            <Route path="/guides/prenatal-paternity-test-accuracy" element={<PrenatalPaternityTestAccuracy />} />
+            <Route path="/guides/prenatal-paternity-test-safety" element={<PrenatalPaternityTestSafety />} />
+            <Route path="/guides/prenatal-dna-test-timeline" element={<PrenatalDNATestTimeline />} />
+            <Route path="/guides/prenatal-dna-test-cost-breakdown" element={<PrenatalDNATestCostBreakdown />} />
+            <Route path="/guides/immigration-dna-testing-process" element={<ImmigrationDNATestingProcess />} />
+            <Route path="/guides/uscis-dna-testing" element={<USCISDNATesting />} />
+            <Route path="/guides/aabb-labs-for-immigration" element={<AABBLabsForImmigration />} />
+            <Route path="/guides/embassy-dna-testing" element={<EmbassyDNATesting />} />
+            <Route path="/guides/immigration-dna-test-timeline" element={<ImmigrationDNATestTimeline />} />
+            <Route path="/guides/grandparent-dna-testing-explained" element={<GrandparentDNATestingExplained />} />
+            <Route path="/guides/siblingship-dna-testing-explained" element={<SiblingshipDNATestingExplained />} />
+            <Route path="/guides/avuncular-dna-testing-explained" element={<AvuncularDNATestingExplained />} />
+            <Route path="/guides/dna-testing-after-death" element={<DNATestingAfterDeath />} />
+            <Route path="/guides/single-profile-dna-testing" element={<SingleProfileDNATesting />} />
 
             <Route path="/discreet-dna-testing" element={<DiscreetDNATesting />} />
             <Route path="/forensic-dna-analysis" element={<ForensicDNAAnalysis />} />
@@ -297,7 +349,9 @@ function AppLayout() {
             <Route path="/es/aabb-accreditation" element={<AABBAccreditationEs />} />
             <Route path="/es/prueba-de-paternidad-prenatal" element={<PrenatalEs />} />
           </Routes>
+
         </main>
+
       </div>
     </>
   );

@@ -235,7 +235,7 @@ const Navigation = () => {
                 className="text-gray-700 hover:text-blue-600 transition duration-300 flex items-center"
                 onClick={() => setOpenDropdown(openDropdown === 'corner' ? null : 'corner')}
               >
-                Mile High DNA Corner
+                Resources
                 <svg className="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                 </svg>
@@ -244,8 +244,13 @@ const Navigation = () => {
               {openDropdown === 'corner' && (
                 <div className="absolute top-[100%] left-0 bg-white border border-gray-200 shadow-lg rounded-md pt-2 w-64 z-50">
                   <Link to="/mile-high-dna-corner" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={closeDropdown}>
-                  DNA Resource Center
+                  Mile High Corner
                   </Link>
+
+                  <Link to="/guides" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={closeDropdown}>
+                  DNA Testing Guides
+                  </Link>
+
 
                   <div className="border-t border-gray-200 mt-2 pt-2">
                     <span className="block px-4 py-2 text-xs font-semibold text-gray-500 uppercase">
@@ -263,6 +268,11 @@ const Navigation = () => {
                 </div>
               )}
             </div>
+
+            <Link to="/faq" className="text-gray-700 hover:text-blue-600 transition duration-300">
+              FAQs
+            </Link>
+
 
             <Link 
               to="/appointments" 

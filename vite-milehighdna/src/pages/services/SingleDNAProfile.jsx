@@ -13,10 +13,10 @@ const SingleDNAProfile = () => {
   const toggleFaq = (i) => setOpenFaq(openFaq === i ? null : i);
 
   const faqs = [
-    { question: "What is a single profile DNA test?", answer: "A Single Profile DNA Test creates a laboratory-issued DNA profile for one individual only. It does not compare two people; it establishes and preserves a DNA profile for future use. If a comparison is needed later, that is ordered as a separate test." },
-    { question: "Does a single profile test determine paternity?", answer: "No. A single profile DNA test does not determine paternity, maternity, or any biological relationship. It does not compare against any database. It establishes one individual's DNA profile only. A comparison test can be ordered later if needed." },
-    { question: "When is a single profile test needed?", answer: "When the other party is out of state or unavailable, when you want to preserve DNA documentation before a medical procedure, when you anticipate a future legal matter but need documentation now, or when you want control over timing instead of waiting." },
-    { question: "What's the difference between legal and non-legal single profile?", answer: "Legal single profile testing includes government-issued ID verification, certified collection, strict chain-of-custody documentation, and a formal report suitable for legal submission. Non-legal is for personal documentation only and is not court-admissible." }
+    { question: "What is a single profile DNA test?", answer: "A single profile DNA test creates a laboratory DNA profile for one individual without comparing it to another person." },
+    { question: "Can a single profile DNA test determine paternity?", answer: "No. A single profile DNA test does not compare two individuals and therefore cannot determine paternity or biological relationships." },
+    { question: "Can the DNA profile be used later for comparison?", answer: "Yes. The preserved DNA profile can be used in a future DNA comparison test if another participant becomes available." },
+    { question: "Is a single profile DNA test legal?", answer: "A single profile test can be performed under legal chain-of-custody procedures if court documentation may be required later." }
   ];
 
   const processSteps = [
@@ -52,6 +52,7 @@ const SingleDNAProfile = () => {
       {/* Hero */}
       <section className="relative bg-gradient-to-br from-blue-900 via-blue-800 to-indigo-900 text-white overflow-hidden">
         <div className="relative z-10 max-w-6xl mx-auto px-6 py-16 md:py-24">
+          
           <h1 className="text-4xl md:text-5xl font-bold mb-4 leading-tight text-white">Single Profile DNA Testing in Denver</h1>
           <p className="text-xl text-blue-100 mb-6 max-w-2xl">Secure the DNA Now. Compare Later.</p>
           <p className="text-blue-100 mb-8 max-w-2xl">When the other participant is unavailable, you do not have to wait. A Single Profile DNA Test allows you to professionally document and preserve one person's DNA profile today. A comparison test can be ordered later when the second party becomes available.</p>
@@ -61,7 +62,10 @@ const SingleDNAProfile = () => {
             <li>✔ 3–5 business day turnaround</li>
             <li>✔ Legal and non-legal options available</li>
           </ul>
-          <a href={CALENDLY_EN} target="_blank" rel="noopener noreferrer" className="inline-flex items-center bg-white text-blue-900 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">Book Your Appointment</a>
+          <div className="flex flex-wrap gap-4">
+            <a href={CALENDLY_EN} target="_blank" rel="noopener noreferrer" className="inline-flex items-center bg-white text-blue-900 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">Book Your Appointment</a>
+            <a href={CALENDLY_ES} target="_blank" rel="noopener noreferrer" className="inline-flex items-center border-2 border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-white/10 transition">Cita en español</a>
+          </div>
         </div>
       </section>
 
@@ -77,23 +81,29 @@ const SingleDNAProfile = () => {
         </div>
       </section>
 
-      {/* What Is / When needed */}
+      {/* What Is a Single Profile DNA Test? */}
       <section className="py-12 md:py-16 px-6 bg-white">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-bold text-gray-800 mb-6">What Is a Single Profile DNA Test?</h2>
-          <p className="text-gray-700 mb-4">A Single Profile DNA Test creates a laboratory-issued DNA profile for one individual only.</p>
-          <p className="text-gray-700 mb-6 font-medium">This test does not compare two people. It establishes and preserves a DNA profile for future use. If a comparison is needed later, that is ordered as a separate test.</p>
+          <p className="text-gray-700 mb-4">A Single Profile DNA Test creates a laboratory-issued DNA profile for one individual.</p>
+          <p className="text-gray-700 mb-4">Unlike paternity or relationship testing, this test does not compare two people. Instead, it establishes a verified DNA profile that can be used later if a comparison test becomes necessary.</p>
+          <p className="text-gray-700">This option is useful when another participant is unavailable, out of the country, or unwilling to participate in testing at the current time.</p>
+        </div>
+      </section>
 
-          <h2 className="text-3xl font-bold text-gray-800 mb-6 mt-12">When Is This Test Needed?</h2>
-          <p className="text-gray-700 mb-4">This service is commonly requested when:</p>
-          <ul className="list-disc list-outside ml-6 space-y-2 text-gray-700 mb-6">
-            <li>The other party is out of state or out of the country</li>
-            <li>The other participant is unavailable or refusing to test</li>
-            <li>You want to preserve DNA documentation before a medical procedure</li>
-            <li>You anticipate a future legal matter but need documentation now</li>
-            <li>You want control over timing instead of waiting</li>
+      {/* When Should Someone Order a Single Profile DNA Test? */}
+      <section className="py-12 md:py-16 px-6 bg-gray-50">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl font-bold text-gray-800 mb-6">When Should Someone Order a Single Profile DNA Test?</h2>
+          <p className="text-gray-700 mb-4">A single profile DNA test may be appropriate when:</p>
+          <ul className="list-disc list-outside ml-6 space-y-2 text-gray-700 mb-4">
+            <li>The second participant is unavailable</li>
+            <li>The second participant lives in another state or country</li>
+            <li>A legal case may arise later</li>
+            <li>DNA documentation is needed before a medical procedure</li>
+            <li>Someone wants to preserve DNA evidence before circumstances change</li>
           </ul>
-          <p className="text-gray-700 font-medium">You do not have to delay action just because someone else is unavailable.</p>
+          <p className="text-gray-700">This allows individuals to secure documented DNA information without waiting for another participant.</p>
         </div>
       </section>
 
@@ -184,14 +194,56 @@ const SingleDNAProfile = () => {
             <li>AABB-accredited laboratory processing</li>
             <li>Proper structure for future comparison testing</li>
           </ul>
-          <p className="text-gray-700 font-medium">This ensures your DNA profile is preserved correctly the first time.</p>
+          <p className="text-gray-700 font-medium">This ensures your DNA profile is preserved correctly the first time. We also coordinate <Link to="/services/legal-paternity-testing" className="text-blue-600 hover:underline">legal paternity DNA testing</Link> and <Link to="/services/immigration-dna-testing" className="text-blue-600 hover:underline">immigration DNA testing</Link> when comparison testing is needed.</p>
+        </div>
+      </section>
+
+      {/* Is a Single Profile DNA Test Legally Admissible? */}
+      <section className="py-12 md:py-16 px-6 bg-gray-50">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl font-bold text-gray-800 mb-6">Is a Single Profile DNA Test Legally Admissible?</h2>
+          <p className="text-gray-700 mb-6">A single profile test can be performed under two structures:</p>
+          <div className="space-y-6 mb-6">
+            <div>
+              <h3 className="text-xl font-semibold text-gray-800 mb-2">Non-Legal Testing</h3>
+              <p className="text-gray-700">Personal documentation only.</p>
+              <p className="text-gray-700">Does not include legal chain-of-custody procedures.</p>
+            </div>
+            <div>
+              <h3 className="text-xl font-semibold text-gray-800 mb-2">Legal Single Profile Testing</h3>
+              <p className="text-gray-700 mb-2">Includes:</p>
+              <ul className="list-disc list-outside ml-6 space-y-1 text-gray-700">
+                <li>Government ID verification</li>
+                <li>Certified DNA collector</li>
+                <li>Documented chain-of-custody procedures</li>
+                <li>AABB-accredited laboratory analysis</li>
+              </ul>
+              <p className="text-gray-700 mt-2">Legal testing ensures the profile is documented correctly if it may be used later in court. Learn more about <Link to="/aabb-accredited-dna-testing-denver" className="text-blue-600 hover:underline">AABB-accredited DNA testing</Link> standards.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* How Single Profile Testing Supports Future DNA Comparisons */}
+      <section className="py-12 md:py-16 px-6 bg-white">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl font-bold text-gray-800 mb-6">How Single Profile Testing Supports Future DNA Comparisons</h2>
+          <p className="text-gray-700 mb-4">If another individual becomes available later, the laboratory can perform a comparison test using the preserved DNA profile.</p>
+          <p className="text-gray-700 mb-4">This means the original participant does not need to be re-tested.</p>
+          <p className="text-gray-700 mb-2">The preserved DNA profile can be used for:</p>
+          <ul className="list-disc list-outside ml-6 space-y-2 text-gray-700">
+            <li>future paternity testing</li>
+            <li>maternity confirmation</li>
+            <li>sibling DNA testing</li>
+            <li>legal case documentation</li>
+          </ul>
         </div>
       </section>
 
       {/* FAQ */}
       <section className="py-12 md:py-16 px-6 bg-gray-50">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold text-gray-800 mb-8">Frequently Asked Questions</h2>
+          <h2 className="text-3xl font-bold text-gray-800 mb-8">Frequently Asked Questions About Single Profile DNA Testing</h2>
           <div className="space-y-4">
             {faqs.map((faq, i) => (
               <div key={i} className="bg-white rounded-xl border border-gray-200 overflow-hidden">
@@ -224,7 +276,7 @@ const SingleDNAProfile = () => {
       <section className="py-10 px-6 bg-white border-t border-gray-200">
         <div className="max-w-4xl mx-auto text-center text-gray-700">
           <p>
-            We also offer <Link to="/services/legal-paternity-testing" className="text-blue-600 hover:underline">legal paternity testing</Link>, <Link to="/services/prenatal-paternity-testing" className="text-blue-600 hover:underline">prenatal paternity testing</Link>, and <Link to="/services/immigration-dna-testing" className="text-blue-600 hover:underline">immigration DNA testing</Link>. <Link to="/locations/denver" className="text-blue-600 hover:underline">Denver location</Link>.
+            We also offer <Link to="/services/legal-paternity-testing" className="text-blue-600 hover:underline">legal paternity DNA testing</Link>, <Link to="/services/prenatal-paternity-testing" className="text-blue-600 hover:underline">prenatal paternity testing</Link>, and <Link to="/services/immigration-dna-testing" className="text-blue-600 hover:underline">immigration DNA testing</Link>. Learn about <Link to="/aabb-accredited-dna-testing-denver" className="text-blue-600 hover:underline">AABB-accredited DNA testing</Link> and our <Link to="/locations/denver" className="text-blue-600 hover:underline">Denver location</Link>.
           </p>
         </div>
       </section>

@@ -39,6 +39,33 @@ const FAQ = () => {
         </div>
       </section>
 
+      {/* Browse Questions By Topic */}
+      <section className="bg-white py-10 px-6 md:px-12 lg:px-24 border-b border-gray-200">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-xl font-bold text-gray-800 mb-6 text-center">Browse Questions By Topic</h2>
+          <nav className="flex flex-wrap justify-center gap-3 md:gap-4" aria-label="FAQ topics">
+            <a href="#dna-basics" className="text-blue-600 font-medium hover:text-blue-700 hover:underline">
+              DNA Testing Basics
+            </a>
+            <a href="#legal-dna-testing" className="text-blue-600 font-medium hover:text-blue-700 hover:underline">
+              Legal DNA Testing
+            </a>
+            <a href="#immigration-dna-testing" className="text-blue-600 font-medium hover:text-blue-700 hover:underline">
+              Immigration DNA Testing
+            </a>
+            <a href="#dna-costs" className="text-blue-600 font-medium hover:text-blue-700 hover:underline">
+              DNA Testing Costs
+            </a>
+            <a href="#appointments" className="text-blue-600 font-medium hover:text-blue-700 hover:underline">
+              Appointments and Process
+            </a>
+            <a href="#dna-accuracy" className="text-blue-600 font-medium hover:text-blue-700 hover:underline">
+              Accuracy and Science
+            </a>
+          </nav>
+        </div>
+      </section>
+
       <FAQSection />
       <ServingColorado />
       <CallToAction />

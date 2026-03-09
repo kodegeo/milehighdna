@@ -14,6 +14,19 @@ import PrenatalFAQ from '../../components/prenatal/PrenatalFAQ';
 // Common components
 import ServingColorado from '../../components/common/ServingColorado';
 import CallToAction from '../../components/common/CallToAction';
+import FAQSection from '../../components/FAQSection';
+
+const PRENATAL_PATERNITY_FAQS = [
+  { question: "Is non-invasive prenatal paternity testing safe?", answer: "Yes. Non-invasive prenatal paternity testing uses only a blood draw from the mother and a cheek swab from the alleged father. There is no risk to the pregnancy; no needles or procedures touch the baby. Our prenatal DNA testing in Denver is performed through AABB-accredited laboratories with the same safety standards used nationwide." },
+  { question: "How accurate is a prenatal paternity test?", answer: "A prenatal paternity test is highly accurate. Non-invasive prenatal paternity testing typically reports 99% or higher probability when the alleged father is included, and 100% exclusion when he is not the biological father. The DNA testing is performed by AABB-accredited laboratories to ensure scientific accuracy." },
+  { question: "How long does a prenatal paternity test take?", answer: "Prenatal paternity test results are typically available in 7–10 business days after the laboratory receives the DNA samples. The DNA testing results timeline may be shorter with expedited options; ask when you schedule your prenatal paternity testing in Denver." },
+  { question: "How early can prenatal paternity testing be done?", answer: "Non-invasive prenatal paternity testing can be performed as early as 7 weeks into pregnancy. This early window allows families in Denver and Colorado to get answers sooner in the prenatal DNA testing process." },
+  { question: "Is prenatal paternity testing confidential?", answer: "Yes. All prenatal paternity testing is confidential. Your DNA testing results and personal information are protected and only shared with parties you authorize. We maintain strict confidentiality for every prenatal paternity test." },
+  { question: "Can a prenatal paternity test be used in court?", answer: "Yes. If you select the legal (court-admissible) prenatal paternity test option, results include notarized documentation and verified chain of custody from our AABB-accredited laboratory and can be used in court proceedings. The DNA testing process meets the same legal standards as postnatal legal paternity tests." },
+  { question: "Can multiple alleged fathers be tested in prenatal paternity testing?", answer: "Yes. Multiple alleged fathers can be tested with prenatal paternity testing. Ask about this option when scheduling your prenatal DNA test at our Denver location so we can coordinate the DNA testing process accordingly." },
+  { question: "What if the alleged father is not available for prenatal testing?", answer: "We can coordinate separate-location testing so the mother and alleged father can provide samples in different cities or states. We also offer single-profile DNA testing to establish one person's profile for future comparison. Prenatal paternity testing in Colorado and nationwide can be arranged around your situation." },
+  { question: "Can prenatal paternity testing be done with twins?", answer: "Yes. Prenatal paternity testing can be performed in twin pregnancies. The DNA testing process and laboratory analysis support twin cases; discuss your situation with us when booking your prenatal paternity test so we can confirm the lab's requirements and timeline." }
+];
 
 const PrenatalPaternityTesting = () => {
   return (
@@ -138,6 +151,19 @@ const PrenatalPaternityTesting = () => {
             ]
           })}
         </script>
+
+        {/* FAQ Schema */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": PRENATAL_PATERNITY_FAQS.map((faq) => ({
+              "@type": "Question",
+              "name": faq.question,
+              "acceptedAnswer": { "@type": "Answer", "text": faq.answer }
+            }))
+          })}
+        </script>
       </Helmet>
 
       <PrenatalHero />
@@ -184,7 +210,8 @@ const PrenatalPaternityTesting = () => {
       <PrenatalWhoNeedsTest />
       <PrenatalSteps />
       <PrenatalWhyChooseUs />
-      <PrenatalFAQ />
+      <FAQSection faqs={PRENATAL_PATERNITY_FAQS} />
+
       {/* TESTIMONIALS */}
       <section className="section-padding section-bg-alt">
         <div className="container mx-auto px-4">

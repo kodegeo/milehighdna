@@ -76,72 +76,124 @@ const AABBAccreditedDNATestingDenver = () => {
         <script type="application/ld+json">{JSON.stringify(BREADCRUMB_SCHEMA)}</script>
       </Helmet>
 
-      {/* Intro */}
+      {/* Hero */}
       <section className="relative bg-gradient-to-br from-blue-900 via-blue-800 to-indigo-900 text-white overflow-hidden">
         <div className="relative z-10 max-w-6xl mx-auto px-6 py-16 md:py-24">
-
           <h1 className="text-3xl md:text-4xl font-bold text-white mb-6 leading-tight">
             AABB-Accredited DNA Testing in Denver
           </h1>
-          <p className="text-lg text-white leading-relaxed">
-            AABB accreditation is the nationally recognized standard for relationship DNA testing. It matters for legal and immigration DNA tests because courts and USCIS require results from laboratories that meet strict quality and chain-of-custody standards. Mile High DNA Testing works exclusively with AABB-accredited laboratory partners so that your results are reliable, defensible, and accepted when they matter most.
+          <p className="text-lg text-blue-100 font-medium mb-4">
+            Court-admissible DNA testing requires strict identity verification, documented chain-of-custody procedures, and analysis by an AABB-accredited laboratory.
+          </p>
+          <p className="text-white leading-relaxed mb-4">
+            Mile High DNA Testing coordinates professional DNA testing services in Denver using laboratories that meet AABB accreditation standards required for legal and immigration DNA testing.
+          </p>
+          <p className="text-white leading-relaxed">
+            These standards ensure results meet documentation requirements used by courts, USCIS, and federal agencies.
           </p>
         </div>
       </section>
 
-      {/* H2: What AABB Accreditation Means */}
+      {/* What Is AABB Accreditation? */}
       <section className="bg-gray-50 py-10 md:py-12 px-4 md:px-8">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
-            What AABB Accreditation Means for DNA Testing
+            What Is AABB Accreditation?
           </h2>
           <p className="text-gray-700 leading-relaxed mb-4">
-            AABB (Association for the Advancement of Blood & Biotherapies) accreditation means the laboratory has met rigorous quality standards for relationship testing. These standards cover how samples are handled, how testing is performed, and how results are reported. For legal and immigration cases, accreditation is directly tied to chain-of-custody: only when identity is verified and every step is documented can results be used in court or by federal agencies. Choosing an AABB-accredited lab ensures your test meets the bar that courts and USCIS expect.
+            The American Association of Blood Banks (AABB) establishes internationally recognized standards for relationship DNA testing laboratories.
+          </p>
+          <p className="text-gray-700 leading-relaxed mb-4">
+            AABB accreditation verifies that a laboratory has demonstrated compliance with strict requirements related to:
+          </p>
+          <ul className="list-disc list-outside ml-6 space-y-2 text-gray-700 mb-4">
+            <li>laboratory validation procedures</li>
+            <li>genetic marker analysis</li>
+            <li>statistical interpretation of results</li>
+            <li>documentation and record keeping</li>
+            <li>chain-of-custody sample handling</li>
+          </ul>
+          <p className="text-gray-700 leading-relaxed mb-4">
+            Laboratories must undergo regular inspections and audits to maintain accreditation status.
+          </p>
+          <p className="text-gray-700 leading-relaxed">
+            This oversight helps ensure that relationship DNA testing results remain scientifically reliable and legally defensible.
           </p>
         </div>
       </section>
 
-      {/* H2: When You Need AABB-Accredited DNA Testing */}
+      {/* Why Courts Require AABB-Accredited DNA Testing */}
       <section className="bg-white py-10 md:py-12 px-4 md:px-8">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
-            When You Need AABB-Accredited DNA Testing
+            Why Courts Require AABB-Accredited DNA Testing
           </h2>
-          <ul className="list-disc list-outside ml-6 space-y-2 text-gray-700">
-            <li>Court cases (paternity, custody, child support)</li>
-            <li>Child support or custody proceedings</li>
-            <li>Immigration and USCIS applications</li>
-            <li>U.S. embassy or consular cases</li>
-            <li>Other legal or government requirements</li>
+          <p className="text-gray-700 leading-relaxed mb-4">
+            Family courts require strict documentation procedures when DNA results are used as legal evidence.
+          </p>
+          <p className="text-gray-700 leading-relaxed mb-4">
+            AABB-accredited laboratories follow validated testing procedures and chain-of-custody protocols designed to ensure:
+          </p>
+          <ul className="list-disc list-outside ml-6 space-y-2 text-gray-700 mb-4">
+            <li>verified participant identification</li>
+            <li>documented sample collection</li>
+            <li>controlled laboratory analysis</li>
+            <li>certified reporting procedures</li>
           </ul>
-          <p className="mt-4 text-gray-700 leading-relaxed">
-            In these situations, identity verification and chain of custody are required. Testing must be performed by an AABB-accredited laboratory and follow documented procedures so that results are admissible.
+          <p className="text-gray-700 leading-relaxed">
+            These safeguards allow DNA testing results to meet court-admissibility standards.
           </p>
         </div>
       </section>
 
-      {/* H2: How the AABB Chain-of-Custody Process Works */}
+      {/* Why USCIS Requires AABB-Accredited DNA Testing */}
       <section className="bg-gray-50 py-10 md:py-12 px-4 md:px-8">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
-            How the AABB Chain-of-Custody Process Works
+            Why USCIS Requires AABB-Accredited DNA Testing
           </h2>
-          <ol className="list-decimal list-outside ml-6 space-y-3 text-gray-700">
-            <li>You schedule an in-person appointment (required for legal and immigration testing).</li>
-            <li>Government-issued ID is verified and documented.</li>
-            <li>Samples are collected by a trained collector and sealed with tamper-evident packaging.</li>
-            <li>Chain-of-custody paperwork tracks the sample from collection to the AABB-accredited lab.</li>
-            <li>The laboratory analyzes the sample and issues a formal report suitable for court or USCIS.</li>
-            <li>Results are delivered securely; certified copies are available when needed.</li>
-          </ol>
-          <p className="mt-6 text-gray-700 leading-relaxed">
-            At-home peace of mind kits are not performed under chain of custody and are not court-admissible. For any legal or immigration need, you must schedule an in-person appointment so that identity and chain of custody are properly documented.
+          <p className="text-gray-700 leading-relaxed mb-4">
+            The United States Citizenship and Immigration Services (USCIS) requires relationship DNA testing to be performed by an AABB-accredited laboratory when DNA evidence is used in immigration cases.
+          </p>
+          <p className="text-gray-700 leading-relaxed mb-4">
+            These requirements help ensure that immigration DNA testing results meet consistent scientific and documentation standards.
+          </p>
+          <p className="text-gray-700 leading-relaxed">
+            In many cases, U.S. embassies and consulates also require AABB accreditation for family relationship DNA testing.
           </p>
         </div>
       </section>
 
-      {/* H2: We Specialize in Legal and Immigration DNA Testing */}
+      {/* Chain-of-Custody DNA Testing Procedures */}
       <section className="bg-white py-10 md:py-12 px-4 md:px-8">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
+            Chain-of-Custody DNA Testing Procedures
+          </h2>
+          <p className="text-gray-700 leading-relaxed mb-4">
+            Legal and immigration DNA testing must follow documented chain-of-custody procedures.
+          </p>
+          <p className="text-gray-700 leading-relaxed mb-4">
+            Chain-of-custody ensures the identity of each participant is verified and that samples are handled securely from collection through laboratory analysis.
+          </p>
+          <p className="text-gray-700 leading-relaxed mb-2">
+            Standard procedures include:
+          </p>
+          <ul className="list-disc list-outside ml-6 space-y-2 text-gray-700 mb-4">
+            <li>government-issued photo identification verification</li>
+            <li>certified DNA sample collection</li>
+            <li>sealed specimen packaging</li>
+            <li>documented transfer to the laboratory</li>
+            <li>controlled laboratory processing</li>
+          </ul>
+          <p className="text-gray-700 leading-relaxed">
+            These procedures protect the integrity of the testing process and ensure results can be used for official purposes.
+          </p>
+        </div>
+      </section>
+
+      {/* We Specialize in Legal and Immigration DNA Testing */}
+      <section className="bg-gray-50 py-10 md:py-12 px-4 md:px-8">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
             We Specialize in Legal and Immigration DNA Testing
@@ -157,19 +209,19 @@ const AABBAccreditedDNATestingDenver = () => {
         </div>
       </section>
 
-      {/* H2: FAQ */}
-      <section className="bg-gray-50 py-10 md:py-12 px-4 md:px-8">
+      {/* FAQ */}
+      <section className="bg-white py-10 md:py-12 px-4 md:px-8">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-8">
             Frequently Asked Questions About AABB-Accredited DNA Testing
           </h2>
           <div className="space-y-4">
             {faqs.map((faq, i) => (
-              <div key={i} className="bg-white rounded-lg border border-gray-200 overflow-hidden">
+              <div key={i} className="bg-gray-50 rounded-lg border border-gray-200 overflow-hidden">
                 <button
                   type="button"
                   onClick={() => toggleFaq(i)}
-                  className="w-full px-5 py-4 flex items-center justify-between text-left hover:bg-gray-50 transition"
+                  className="w-full px-5 py-4 flex items-center justify-between text-left hover:bg-gray-100 transition"
                 >
                   <span className="font-medium text-gray-900 pr-4">Q: {faq.question}</span>
                   <svg className={`w-5 h-5 text-gray-500 flex-shrink-0 transition-transform ${openFaq === i ? "rotate-180" : ""}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -177,7 +229,7 @@ const AABBAccreditedDNATestingDenver = () => {
                   </svg>
                 </button>
                 {openFaq === i && (
-                  <div className="px-5 pb-4 border-t border-gray-100">
+                  <div className="px-5 pb-4 border-t border-gray-200">
                     <p className="pt-4 text-gray-700">{faq.answer}</p>
                   </div>
                 )}
@@ -195,14 +247,12 @@ const AABBAccreditedDNATestingDenver = () => {
           </p>
           <Link
             to="/appointments"
-            className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition"
+            className="inline-block bg-white text-blue-900 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition"
           >
             Book an Appointment
           </Link>
         </div>
       </section>
-
-      
     </main>
   );
 };

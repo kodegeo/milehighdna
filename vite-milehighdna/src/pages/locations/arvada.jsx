@@ -362,6 +362,23 @@ const Arvada = () => {
           </div>
         </section>
 
+        {/* Helpful DNA Testing Guides */}
+        <section className="mb-16">
+          <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center text-gray-800">Helpful DNA Testing Guides</h2>
+          <p className="text-center text-gray-700 mb-6 text-lg max-w-3xl mx-auto">
+            If you are researching DNA testing before scheduling an appointment,
+            these guides explain common questions about DNA testing costs,
+            legal requirements, and timelines.
+          </p>
+          <ul className="list-disc list-inside space-y-2 max-w-2xl mx-auto text-gray-700">
+            <li><Link to="/guides/how-dna-testing-works" className="text-blue-600 underline hover:text-blue-700">How DNA Testing Works</Link></li>
+            <li><Link to="/guides/how-long-does-dna-testing-take" className="text-blue-600 underline hover:text-blue-700">How Long Does DNA Testing Take</Link></li>
+            <li><Link to="/guides/court-admissible-dna-testing" className="text-blue-600 underline hover:text-blue-700">Court-Admissible DNA Testing</Link></li>
+            <li><Link to="/guides/dna-test-while-pregnant" className="text-blue-600 underline hover:text-blue-700">DNA Testing While Pregnant</Link></li>
+            <li><Link to="/guides/immigration-dna-testing-process" className="text-blue-600 underline hover:text-blue-700">Immigration DNA Testing Process</Link></li>
+          </ul>
+        </section>
+
         {/* CTA Section - Full Width Background */}
       </div>
       

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import HeroSection from "../components/common/HeroSection";
 import aboutHero from "../assets/images/about_hero.png";
-import aboutMid from "../assets/images/about_mid-1.png";
+import aboutMid from "../assets/images/about_mid.png";
 
 const AboutUsPage = () => {
   return (
@@ -37,25 +37,26 @@ const AboutUsPage = () => {
 
       <section className="py-12 px-6 max-w-5xl mx-auto">
         <h2 className="text-2xl font-semibold mb-6 text-gray-900">
-          
-          Is This Office Appropriate for Your Situation
+          Professional DNA Testing With Purpose and Accountability
         </h2>
-        <ul className="space-y-3 text-gray-700">
-          <li>• Court-admissible DNA testing</li>
-          <li>• Immigration and USCIS DNA cases</li>
-          <li>• Legal paternity disputes</li>
-          <li>• Government related documentation requirements</li>
-          <li>• Situations requiring chain-of-custody verification</li>
-        </ul>
-        <p className="mt-6 text-sm text-gray-700">
-          Still unsure? Call or text <a href="tel:7209009342" className="text-blue-600 underline">720 900 9342</a> before scheduling so we can confirm the correct test designation.
+        <p className="text-gray-700 mb-4">
+          Mile High DNA Testing is a Denver-based DNA testing office serving families across Denver, Aurora, Lakewood, and surrounding Colorado communities.
+        </p>
+        <p className="text-gray-700 mb-4">
+          DNA testing results can influence legal status, financial responsibilities, immigration matters, and deeply personal decisions. These situations deserve steady guidance, disciplined procedures, and clear communication.
+        </p>
+        <p className="text-gray-700 mb-4">
+          Our role is not simply to process DNA tests.
+        </p>
+        <p className="text-gray-700">
+          Our responsibility is to ensure each case is handled correctly from the beginning.
         </p>
       </section>
 
       <section className="py-12 bg-gray-50 px-6">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-2xl font-semibold mb-6 text-gray-900">
-            Structured Scientific Oversight With Direct Support
+            A Message From Our Founder
           </h2>
           <img
             src={aboutMid}
@@ -63,46 +64,76 @@ const AboutUsPage = () => {
             className="w-full mb-6 rounded-lg object-cover max-h-[400px]"
           />
           <p className="text-gray-700 mb-4">
-            Every legal and immigration case follows documented identity verification procedures and controlled sample collection protocols.
+            Mile High DNA Testing was established after recognizing that many complications in DNA testing cases arise not from laboratory science, but from preventable errors in case setup, unclear communication, and lack of procedural oversight.
+          </p>
+          <p className="text-gray-700 mb-4">
+            This office was designed to reduce those risks.
+          </p>
+          <p className="text-gray-700 mb-4">
+            We prioritize structured intake procedures, documentation integrity, and clear explanation because DNA testing often occurs during important and sometimes stressful life events.
           </p>
           <p className="text-gray-700">
-            Chain-of-custody documentation is reviewed prior to laboratory submission to ensure accuracy, compliance, and admissibility.
+            Whether testing is <Link to="/services/legal-paternity-testing" className="text-blue-600 hover:text-blue-800 underline">court-admissible</Link>, <Link to="/services/prenatal-paternity-testing" className="text-blue-600 hover:text-blue-800 underline">prenatal</Link>, <Link to="/services/immigration-dna-testing" className="text-blue-600 hover:text-blue-800 underline">immigration related</Link>, or private, every case should be handled with professionalism and care.
           </p>
         </div>
       </section>
 
       <section className="py-12 px-6 max-w-5xl mx-auto">
         <h2 className="text-2xl font-semibold mb-6 text-gray-900">
-          Laboratory Accuracy and Multi Level PhD Review
+          Our Mission
         </h2>
         <p className="text-gray-700 mb-4">
-          All relationship DNA testing is performed by AABB-accredited laboratory partners meeting nationally recognized standards.
+          Our mission is to elevate the standard of DNA testing by combining accredited laboratory science, certified procedural oversight, and personalized case coordination.
         </p>
+        <p className="text-gray-700 mb-4">
+          We are committed to:
+        </p>
+        <ul className="space-y-3 text-gray-700 mb-4">
+          <li>• Accuracy</li>
+          <li>• Documentation integrity</li>
+          <li>• Professional guidance</li>
+          <li>• Clear communication</li>
+        </ul>
         <p className="text-gray-700">
-          Multi level PhD review is conducted prior to report release to ensure analytical accuracy and compliance with court and USCIS standards.
+          DNA testing often carries lasting consequences. Our responsibility is to ensure every case proceeds with precision and reliability. Learn more about <Link to="/why-choose-us" className="text-blue-600 hover:text-blue-800 underline">why families choose us</Link> for paternity testing in Denver and across Colorado.
         </p>
       </section>
 
       <section className="py-12 bg-gray-50 px-6">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-2xl font-semibold mb-6 text-gray-900">
-            Experience With Legal and Government Related Testing
+            Our Philosophy
           </h2>
           <p className="text-gray-700 mb-4">
-            We work with families, attorneys, and government agencies requiring court-admissible documentation and USCIS compliant DNA testing.
+            We believe accuracy begins before laboratory analysis.
+          </p>
+          <p className="text-gray-700 mb-4">
+            Proper intake procedures, identity verification, structured documentation, and clear communication form the foundation of reliable DNA testing results.
+          </p>
+          <p className="text-gray-700 mb-4">
+            Oversight is not an add-on. It is part of the process.
           </p>
           <p className="text-gray-700">
-            Proper documentation, verified identity, and procedural compliance prevent delays and ensure results are accepted when submitted.
+            By maintaining consistent professional standards across all testing categories, we protect both the integrity of results and the confidence of the individuals involved.
           </p>
         </div>
       </section>
 
       <section className="py-12 px-6 max-w-5xl mx-auto">
         <h2 className="text-2xl font-semibold mb-6 text-gray-900">
-          Transparent Expectations
+          Professional Standards and Laboratory Partnerships
         </h2>
+        <p className="text-gray-700 mb-4">
+          Our testing services are performed through nationally recognized laboratory partners that meet established accreditation standards, including AABB accreditation for applicable testing categories.
+        </p>
+        <p className="text-gray-700 mb-4">
+          These standards confirm that testing procedures meet strict requirements for validation, documentation, and scientific reliability.
+        </p>
+        <p className="text-gray-700 mb-4">
+          Our office coordinates testing with attention to documentation integrity, procedural compliance, and confidentiality.
+        </p>
         <p className="text-gray-700 mb-6">
-          Confirming the correct test structure before scheduling prevents preventable delays and ensures your case proceeds efficiently.
+          Professional standards guide every aspect of our work.
         </p>
         <div className="bg-blue-50 p-6 rounded-lg text-center">
           <p className="mb-4 text-gray-700">
@@ -117,11 +148,56 @@ const AboutUsPage = () => {
         </div>
       </section>
 
+      <section className="py-12 px-6 max-w-5xl mx-auto">
+        <h2 className="text-2xl font-semibold mb-6 text-gray-900">
+          Why Families Across Denver Choose Mile High DNA Testing
+        </h2>
+        <p className="text-gray-700 mb-4">
+          Families seeking DNA testing often need results that will be accepted by courts, government agencies, or medical professionals.
+        </p>
+        <p className="text-gray-700 mb-4">
+          Our Denver office was designed to provide structured case management for situations where accuracy, documentation, and procedural compliance matter.
+        </p>
+        <p className="text-gray-700 mb-2">
+          Clients choose Mile High DNA Testing for:
+        </p>
+        <ul className="space-y-3 text-gray-700 mb-4">
+          <li>• AABB-accredited laboratory partnerships</li>
+          <li>• Certified DNA collection procedures</li>
+          <li>• Clear communication throughout the testing process</li>
+          <li>• Support for <Link to="/services/legal-paternity-testing" className="text-blue-600 hover:text-blue-800 underline">legal</Link>, <Link to="/services/immigration-dna-testing" className="text-blue-600 hover:text-blue-800 underline">immigration</Link>, <Link to="/services/prenatal-paternity-testing" className="text-blue-600 hover:text-blue-800 underline">prenatal</Link>, and personal DNA testing cases</li>
+          <li>• A private professional office located in downtown Denver</li>
+        </ul>
+        <p className="text-gray-700 mb-4">
+          Many DNA testing companies operate as anonymous online kit providers.
+        </p>
+        <p className="text-gray-700">
+          Our office provides professional oversight and direct support from case intake through final results.
+        </p>
+      </section>
+
       <section className="py-12 bg-gray-50 px-6">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-2xl font-semibold mb-6 text-gray-900">
             Our Denver Office
           </h2>
+          <h3 className="text-lg font-semibold mb-3 text-gray-900">
+            Serving the Denver Community
+          </h3>
+          <p className="text-gray-700 mb-4">
+            Mile High DNA Testing is located in downtown Denver, Colorado, providing professional DNA testing services to families throughout the Denver metro area and across the United States.
+          </p>
+          <p className="text-gray-700 mb-2">
+            Our office is located near:
+          </p>
+          <ul className="space-y-2 text-gray-700 mb-4">
+            <li>• Denver County Court</li>
+            <li>• Denver Health</li>
+            <li>• Denver Vital Records Office</li>
+          </ul>
+          <p className="text-gray-700 mb-6">
+            This central location allows efficient coordination for individuals managing court timelines, hospital-related testing, and official documentation requirements.
+          </p>
           <p className="mb-6 text-gray-700">
             Mile High DNA Testing<br />
             975 N Lincoln Street, Suite 205C<br />

@@ -635,8 +635,8 @@ const Home = () => {
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="card p-6">
-              <h3 className="text-xl font-bold mb-2">AABB-Accredited</h3>
-              <p className="text-gray-600">Court-admissible testing trusted by immigration attorneys and legal professionals.</p>
+              <h3 className="text-xl font-bold mb-2"><Link to="/aabb-accredited-dna-testing-denver" className="text-gray-900 hover:text-[#2C6FA6] transition duration-300">AABB-Accredited</Link></h3>
+              <p className="text-gray-600">Court-admissible testing trusted by immigration attorneys and legal professionals. <Link to="/aabb-accredited-dna-testing-denver" className="text-[#2C6FA6] hover:text-[#7DB9E8] font-medium transition duration-300">AABB-accredited DNA testing in Denver</Link>.</p>
             </div>
             <div className="card p-6">
               <h3 className="text-xl font-bold mb-2">Fast Results</h3>
@@ -657,7 +657,7 @@ const Home = () => {
           
           <div className="max-w-4xl mx-auto space-y-6 text-gray-700">
             <p className="text-lg leading-relaxed">
-              When you need reliable DNA testing in Denver, Mile High DNA Testing provides comprehensive paternity test Denver services for legal, personal, and medical purposes. Our AABB-accredited facility serves families throughout the greater Denver metro area, offering same-day appointments and court-admissible results. Whether you require legal paternity testing Denver for child support, custody, or immigration cases, our certified professionals ensure accurate, confidential testing with proper chain-of-custody documentation.
+              When you need reliable DNA testing in Denver, Mile High DNA Testing provides comprehensive paternity test Denver services for legal, personal, and medical purposes. Our <Link to="/aabb-accredited-dna-testing-denver" className="text-[#2C6FA6] hover:text-[#7DB9E8] font-semibold transition duration-300 underline">AABB-accredited DNA testing in Denver</Link> facility serves families throughout the greater Denver metro area, offering same-day appointments and court-admissible results. Whether you require legal paternity testing Denver for child support, custody, or immigration cases, our certified professionals ensure accurate, confidential testing with proper chain-of-custody documentation.
             </p>
             
             <p className="text-lg leading-relaxed">

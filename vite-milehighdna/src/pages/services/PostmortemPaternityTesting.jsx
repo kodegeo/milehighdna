@@ -14,23 +14,23 @@ const PostmortemPaternityTesting = () => {
   const faqs = [
     {
       question: "Can you do a DNA test if the father is deceased?",
-      answer: "Yes, postmortem DNA testing can be completed using biological relatives, stored medical samples, or certain personal items depending on the circumstances."
+      answer: "Yes. Postmortem DNA testing can determine biological relationships using DNA samples from biological relatives such as children, grandparents, or siblings."
     },
     {
-      question: "Can postmortem DNA testing determine relationships other than paternity?",
-      answer: "Yes, postmortem testing can determine grandparentage, siblingship, avuncular relationships, and other kinship determinations."
+      question: "What relatives can be used for postmortem DNA testing?",
+      answer: "Common relatives used in testing include: children, grandparents, siblings, and aunts or uncles. The specific relatives used depend on the case and the type of relationship being evaluated."
     },
     {
-      question: "Can this be used for inheritance or probate in Colorado?",
-      answer: "Yes, postmortem DNA testing can support probate and inheritance claims only if strict legal chain-of-custody procedures are followed from the beginning."
+      question: "Can postmortem DNA testing be used in court?",
+      answer: "Yes, if strict chain-of-custody procedures are followed and the test is performed through an AABB-accredited laboratory."
+    },
+    {
+      question: "Can personal items be used for DNA testing?",
+      answer: "Sometimes. Items such as toothbrushes or razors may contain DNA, but recovery depends on sample condition and environmental exposure. Results from personal items are typically not court admissible."
     },
     {
       question: "How long does postmortem DNA testing take?",
-      answer: "The timeline depends on the type and condition of the sample submitted and the complexity of DNA extraction."
-    },
-    {
-      question: "Is postmortem DNA testing accurate?",
-      answer: "Yes, when sufficient biological reference samples are available, postmortem DNA testing meets the same scientific standards as legal paternity testing."
+      answer: "The timeline depends on the type of sample submitted and the complexity of DNA extraction. Standard cases typically take several business days once testing begins."
     }
   ];
 
@@ -107,19 +107,28 @@ const PostmortemPaternityTesting = () => {
       {/* Hero */}
       <section className="relative bg-gradient-to-br from-blue-900 via-blue-800 to-indigo-900 text-white overflow-hidden">
         <div className="relative z-10 max-w-6xl mx-auto px-6 py-20 md:py-28">
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight text-white">
-          Postmortem DNA Testing in Denver
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight text-white">
+            Postmortem DNA Testing in Denver
           </h1>
-          <p className="text-xl text-gray-200 mb-8 max-w-2xl">
-            Court-admissible and kinship DNA testing after a loved one has passed away. We follow <Link to="/aabb-accredited-dna-testing-denver" className="text-blue-200 hover:text-white underline">court-admissible DNA testing requirements</Link> for legal and probate cases.
+          <p className="text-xl text-gray-200 mb-4 max-w-2xl">
+            Court-Admissible and Kinship DNA Testing After a Loved One Has Passed Away
+          </p>
+          <p className="text-gray-200 mb-4 max-w-2xl">
+            When a potential father or biological relative is deceased, families are often navigating grief, probate deadlines, and complex legal questions at the same time.
+          </p>
+          <p className="text-gray-200 mb-8 max-w-2xl">
+            Mile High DNA Testing provides structured postmortem DNA testing in Denver for legal, probate, and family documentation cases.
           </p>
           <a
             href={PHONE_TEL}
             onClick={() => { window.dataLayer = window.dataLayer || []; window.dataLayer.push({ event: "phone_click", phone_number: PHONE, phone_location: "Postmortem Hero" }); }}
             className="inline-flex items-center bg-white text-gray-900 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition"
           >
-            Call Now: {PHONE}
+            Call Now to Speak With a Denver DNA Specialist
           </a>
+          <p className="mt-3 text-blue-100 text-sm">
+            <a href={PHONE_TEL} className="underline hover:text-white" onClick={() => { window.dataLayer = window.dataLayer || []; window.dataLayer.push({ event: "phone_click", phone_number: PHONE }); }}>{PHONE}</a>
+          </p>
         </div>
       </section>
 
@@ -139,10 +148,7 @@ const PostmortemPaternityTesting = () => {
       <section className="py-12 md:py-16 px-6 bg-white">
         <div className="max-w-4xl mx-auto">
           <p className="text-lg text-gray-700 leading-relaxed mb-6">
-            When a potential father or biological relative is deceased, families are often navigating grief, probate deadlines, and complex legal questions at the same time.
-          </p>
-          <p className="text-lg text-gray-700 leading-relaxed mb-6">
-            Mile High DNA Testing provides structured postmortem DNA testing in Denver for:
+            We coordinate <Link to="/aabb-accredited-dna-testing-denver" className="text-blue-600 hover:underline">AABB-accredited DNA testing</Link> for postmortem cases and work with families who need <Link to="/services/legal-paternity-testing" className="text-blue-600 hover:underline">legal paternity DNA testing</Link> or <Link to="/services/immigration-dna-testing" className="text-blue-600 hover:underline">immigration DNA testing</Link> in other situations. Mile High DNA Testing provides structured postmortem DNA testing in Denver for:
           </p>
           <ul className="list-disc list-outside ml-6 space-y-2 text-gray-700 mb-8">
             <li>Postmortem paternity testing</li>
@@ -300,21 +306,69 @@ const PostmortemPaternityTesting = () => {
         </div>
       </section>
 
-      {/* FAQ */}
+      {/* Can You Do a DNA Test If the Father Is Deceased? */}
       <section className="py-12 md:py-16 px-6 bg-white">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold text-gray-800 mb-8">Frequently Asked Questions About Postmortem DNA Testing in Denver</h2>
-          <div className="space-y-4">
-            {faqs.map((faq, i) => (
-              <div key={i} className="bg-gray-50 rounded-xl border border-gray-200 overflow-hidden">
-                <button onClick={() => toggleFaq(i)} className="w-full px-6 py-5 flex items-center justify-between text-left hover:bg-gray-100">
-                  <span className="font-medium text-gray-800 pr-4">{faq.question}</span>
-                  <svg className={`w-6 h-6 text-gray-500 flex-shrink-0 transition-transform ${openFaq === i ? "rotate-180" : ""}`} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" /></svg>
-                </button>
-                {openFaq === i && <div className="px-6 pb-5 border-t border-gray-100"><p className="pt-4 text-gray-700">{faq.answer}</p></div>}
-              </div>
-            ))}
-          </div>
+          <h2 className="text-3xl font-bold text-gray-800 mb-6">Can You Do a DNA Test If the Father Is Deceased?</h2>
+          <p className="text-gray-700 mb-4">Yes. Postmortem DNA testing allows biological relationships to be determined even after a potential father or relative has passed away.</p>
+          <p className="text-gray-700 mb-4">Instead of testing the deceased person directly, laboratories can analyze DNA from biological relatives such as:</p>
+          <ul className="list-disc list-outside ml-6 space-y-2 text-gray-700 mb-4">
+            <li>children</li>
+            <li>grandparents</li>
+            <li>siblings</li>
+            <li>aunts or uncles</li>
+          </ul>
+          <p className="text-gray-700">Using kinship analysis, the laboratory evaluates genetic markers to determine whether a biological relationship exists.</p>
+        </div>
+      </section>
+
+      {/* What Types of Relationships Can Postmortem DNA Testing Determine? */}
+      <section className="py-12 md:py-16 px-6 bg-gray-50">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl font-bold text-gray-800 mb-6">What Types of Relationships Can Postmortem DNA Testing Determine?</h2>
+          <p className="text-gray-700 mb-4">Postmortem DNA testing is commonly used for:</p>
+          <ul className="list-disc list-outside ml-6 space-y-2 text-gray-700 mb-4">
+            <li>postmortem paternity testing</li>
+            <li>grandparent DNA testing</li>
+            <li>siblingship DNA testing</li>
+            <li>avuncular DNA testing (aunt or uncle relationship testing)</li>
+            <li>inheritance and probate DNA cases</li>
+          </ul>
+          <p className="text-gray-700">Each test uses a different statistical model depending on which relatives are available for testing.</p>
+        </div>
+      </section>
+
+      {/* Postmortem DNA Testing for Probate and Inheritance Cases */}
+      <section className="py-12 md:py-16 px-6 bg-white">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl font-bold text-gray-800 mb-6">Postmortem DNA Testing for Probate and Inheritance Cases</h2>
+          <p className="text-gray-700 mb-4">In Colorado probate cases, courts may require biological relationships to be confirmed before inheritance claims can proceed.</p>
+          <p className="text-gray-700 mb-4">Postmortem DNA testing may be used to support:</p>
+          <ul className="list-disc list-outside ml-6 space-y-2 text-gray-700 mb-4">
+            <li>probate court cases</li>
+            <li>inheritance claims</li>
+            <li>Social Security survivor benefits</li>
+            <li>estate administration matters</li>
+            <li>birth certificate amendments</li>
+          </ul>
+          <p className="text-gray-700">When results may be used in court, legal chain-of-custody procedures must be followed from the beginning.</p>
+        </div>
+      </section>
+
+      {/* Is Postmortem DNA Testing Court Admissible? */}
+      <section className="py-12 md:py-16 px-6 bg-gray-50">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl font-bold text-gray-800 mb-6">Is Postmortem DNA Testing Court Admissible?</h2>
+          <p className="text-gray-700 mb-4">Postmortem DNA testing can be legally admissible if proper procedures are followed.</p>
+          <p className="text-gray-700 mb-2">Legal testing typically requires:</p>
+          <ul className="list-disc list-outside ml-6 space-y-2 text-gray-700 mb-4">
+            <li>government-issued identification</li>
+            <li>certified DNA collectors</li>
+            <li>strict chain-of-custody documentation</li>
+            <li>AABB-accredited laboratory analysis</li>
+            <li>court-admissible reporting</li>
+          </ul>
+          <p className="text-gray-700">If these procedures are not followed from the beginning, results may not be accepted by courts.</p>
         </div>
       </section>
 

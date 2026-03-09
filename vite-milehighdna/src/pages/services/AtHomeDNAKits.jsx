@@ -1,6 +1,18 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
+import FAQSection from '../../components/FAQSection';
+
+const AT_HOME_PATERNITY_FAQS = [
+  { question: "Are at-home paternity tests accurate?", answer: "Yes. At-home paternity tests use the same AABB-accredited laboratory technology as in-office DNA testing and typically report 99% or higher probability of paternity when the alleged father is included. The DNA testing process and laboratory analysis are identical; only the collection method differs—you collect cheek swabs at home and ship them to the lab. At-home DNA testing from our Denver-based service maintains the same scientific accuracy as in-person paternity testing." },
+  { question: "How long does an at-home paternity test take?", answer: "At-home paternity test results are typically available in 2–3 business days after the AABB-accredited laboratory receives your DNA samples. The total DNA testing results timeline depends on how quickly you collect and return the kit. Many families in Colorado and nationwide receive their paternity test results within a week of ordering." },
+  { question: "Is at-home DNA test packaging discreet?", answer: "Yes. When you choose discreet options, at-home DNA test kits are shipped in plain, unbranded packaging. No company name or DNA-related wording appears on the outside, so the DNA testing process remains private from delivery through results." },
+  { question: "Can at-home paternity test kits be shipped nationwide?", answer: "Yes. We ship at-home paternity test kits to most U.S. addresses. DNA testing in Denver and across Colorado is available, and we serve clients nationwide. Some state restrictions may apply; we can confirm when you order your at-home DNA test kit." },
+  { question: "What if an at-home paternity test sample is collected incorrectly?", answer: "Follow the instructions included with your at-home DNA test kit. If the laboratory cannot obtain sufficient DNA from the sample, we will send a replacement kit or arrange recollection at no extra charge in most cases. The DNA testing process is designed to catch insufficient samples before results are reported." },
+  { question: "Are at-home paternity test results court-admissible?", answer: "No. At-home peace-of-mind paternity test results are not court-admissible. For court, custody, or legal purposes, you need in-person legal paternity testing with verified identification and chain of custody. We offer court-admissible DNA testing at our Denver location for when you need a legal paternity test." },
+  { question: "Do food or medication affect at-home paternity test results?", answer: "Cheek swab collection for an at-home paternity test is not affected by food or most medications. Avoid eating, drinking, or smoking for about 30 minutes before collecting samples, as directed in your DNA test kit. The laboratory analysis is reliable when samples are collected according to the instructions." },
+  { question: "How should at-home paternity test swabs be stored?", answer: "Let the swabs air-dry for the time specified in your at-home DNA test instructions (usually a few minutes), then place them in the provided envelopes or containers. Keep them at room temperature and return them in the prepaid mailer as soon as possible so the DNA testing process can begin without delay." }
+];
 
 const AtHomeDNAKits = () => {
   return (
@@ -9,6 +21,17 @@ const AtHomeDNAKits = () => {
         <title>At-Home DNA Kits in Denver | Postnatal Peace of Mind Testing | Mile High DNA</title>
         <meta name="description" content="At-home DNA test kits in Denver provide convenient, non-legal postnatal DNA testing with AABB-accredited lab accuracy. Order your kit, collect at home, ship securely. Mile High DNA." />
         <link rel="canonical" href="https://milehighdnatesting.com/services/at-home-dna-kits" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": AT_HOME_PATERNITY_FAQS.map((faq) => ({
+              "@type": "Question",
+              "name": faq.question,
+              "acceptedAnswer": { "@type": "Answer", "text": faq.answer }
+            }))
+          })}
+        </script>
       </Helmet>
 
       <section className="bg-blue-50 py-10 px-6 md:px-12 lg:px-24">

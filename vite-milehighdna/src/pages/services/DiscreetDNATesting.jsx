@@ -4,6 +4,18 @@ import { Link } from 'react-router-dom';
 import HeroImage from '../../assets/images/father-baby-3.png';
 import ServingColorado from '../../components/common/ServingColorado';
 import CallToAction from '../../components/common/CallToAction';
+import FAQSection from '../../components/FAQSection';
+
+const DISCREET_DNA_FAQS = [
+  { question: "Is discreet DNA testing confidential?", answer: "Yes. Discreet DNA testing in Denver is designed for maximum confidentiality. We use unbranded packaging, secure data handling, and private communication throughout the DNA testing process. Your paternity test or relationship test results and personal information are never shared without your authorization. Our AABB-accredited laboratory partners follow the same privacy standards for discreet DNA testing." },
+  { question: "What is the most reliable alternative sample for discreet DNA testing?", answer: "Cheek (buccal) swabs are the most reliable and preferred sample type for DNA testing. When the alleged father cannot provide a swab, other samples (e.g., used toothbrush, hair with roots) may be possible for peace-of-mind paternity testing; discuss options with our Denver office. The DNA testing process works best with swabs when they can be obtained." },
+  { question: "How should alternative samples be stored for DNA testing?", answer: "Place items in a clean, dry paper envelope or bag. Do not use plastic for items that may be damp. Label with the donor's name and date collected, and send or bring to the laboratory as soon as possible so the DNA testing process can begin. Proper storage helps the AABB-accredited lab recover sufficient DNA for analysis." },
+  { question: "How long does discreet DNA testing take?", answer: "Discreet DNA testing results are typically available in 2–3 business days after the AABB-accredited laboratory receives samples. The DNA testing results timeline may vary with alternative samples or if recollection is needed. Ask about expedited options when you order your discreet paternity test or relationship test." },
+  { question: "Can discreet DNA test samples be expedited?", answer: "Expedited processing for discreet DNA testing may be available for an additional fee. Ask about rush options when you order or schedule your paternity test or relationship test at our Denver location. The DNA testing process can sometimes be accelerated for time-sensitive situations." },
+  { question: "What happens if sufficient DNA is not recovered from a discreet sample?", answer: "If the laboratory cannot obtain enough DNA from an alternative sample, we will notify you and can send a cheek swab kit or arrange in-person collection at no extra charge in most cases. The DNA testing process requires sufficient DNA for accurate paternity test or relationship test results." },
+  { question: "Can discreet DNA test results be used in court?", answer: "Discreet DNA testing is typically for peace of mind only and is not court-admissible. For court-admissible results, you need a legal paternity test with verified ID and chain of custody from an AABB-accredited laboratory. We can arrange discreet handling for legal DNA testing in Denver when privacy is still a priority." },
+  { question: "Are cheek swabs more reliable than alternative samples for DNA testing?", answer: "Yes. Cheek swabs are the standard and most reliable sample for DNA testing. Alternative samples (e.g., toothbrush, hair) can work for peace-of-mind paternity testing but may have a higher chance of insufficient DNA; we recommend swabs when possible. Our Denver office can guide you through the DNA testing process for either option." }
+];
 
 const DiscreetDNATesting = () => {
   return (
@@ -110,40 +122,11 @@ const DiscreetDNATesting = () => {
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "FAQPage",
-            "mainEntity": [
-              {
-                "@type": "Question",
-                "name": "What makes discreet DNA testing different?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Discreet testing uses unbranded packaging with no company logos or identifying information. All communications and data handling prioritize maximum privacy and confidentiality."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "Is the accuracy the same as regular DNA tests?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Yes. Discreet DNA testing uses the same AABB-accredited laboratory technology and provides 99%+ accuracy. Only the packaging and privacy handling differ."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "Can discreet test results be used in court?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Discreet testing is typically non-legal (peace of mind). For court-admissible results, you would need a legal DNA test with verified chain of custody, though we can arrange discreet handling for legal tests as well."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "How are results delivered?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Results are delivered securely via encrypted email to ensure complete privacy. No physical mail is sent unless specifically requested."
-                }
-              }
-            ]
+            "mainEntity": DISCREET_DNA_FAQS.map((faq) => ({
+              "@type": "Question",
+              "name": faq.question,
+              "acceptedAnswer": { "@type": "Answer", "text": faq.answer }
+            }))
           })}
         </script>
       </Helmet>
@@ -302,30 +285,7 @@ const DiscreetDNATesting = () => {
         </div>
       </section>
 
-      {/* FAQ Section */}
-      <section className="bg-gray-50 py-16">
-        <div className="container mx-auto px-6 max-w-4xl">
-          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Frequently Asked Questions</h2>
-          <div className="space-y-6">
-            <div className="bg-white p-6 rounded-lg shadow">
-              <h3 className="text-xl font-semibold text-gray-800 mb-2">What makes discreet DNA testing different?</h3>
-              <p className="text-gray-600">Discreet testing uses unbranded packaging with no company logos or identifying information. All communications and data handling prioritize maximum privacy and confidentiality.</p>
-            </div>
-            <div className="bg-white p-6 rounded-lg shadow">
-              <h3 className="text-xl font-semibold text-gray-800 mb-2">Is the accuracy the same as regular DNA tests?</h3>
-              <p className="text-gray-600">Yes. Discreet DNA testing uses the same AABB-accredited laboratory technology and provides 99%+ accuracy. Only the packaging and privacy handling differ.</p>
-            </div>
-            <div className="bg-white p-6 rounded-lg shadow">
-              <h3 className="text-xl font-semibold text-gray-800 mb-2">Can discreet test results be used in court?</h3>
-              <p className="text-gray-600">Discreet testing is typically non-legal (peace of mind). For court-admissible results, you would need a legal DNA test with verified chain of custody, though we can arrange discreet handling for legal tests as well.</p>
-            </div>
-            <div className="bg-white p-6 rounded-lg shadow">
-              <h3 className="text-xl font-semibold text-gray-800 mb-2">How are results delivered?</h3>
-              <p className="text-gray-600">Results are delivered securely via encrypted email to ensure complete privacy. No physical mail is sent unless specifically requested.</p>
-            </div>
-          </div>
-        </div>
-      </section>
+      <FAQSection faqs={DISCREET_DNA_FAQS} className="bg-gray-50" />
 
       <ServingColorado />
       <CallToAction />
