@@ -371,13 +371,15 @@ const Navigation = () => {
             <Link to="/locations" className="block py-2 text-gray-700" onClick={() => setIsMenuOpen(false)}>Locations</Link>
 
             <details className="py-2">
-              <summary className="cursor-pointer text-gray-700">Mile High DNA Corner</summary>
+              <summary className="cursor-pointer text-gray-700">Resources</summary>
               <div className="ml-4 mt-2 space-y-1">
-                <Link to="/mile-high-dna-corner" className="block py-1" onClick={() => setIsMenuOpen(false)}>DNA Resource Center</Link>
+                <Link to="/mile-high-dna-corner" className="block py-1" onClick={() => setIsMenuOpen(false)}>Mile High DNA Corner</Link>
                 <Link to="/guides/legal-dna-test-cost" className="block py-1" onClick={() => setIsMenuOpen(false)}>Legal Pricing Guide</Link>
                 <Link to="/guides/non-legal-dna-test-cost" className="block py-1" onClick={() => setIsMenuOpen(false)}>Non-Legal Pricing Guide</Link>
               </div>
             </details>
+
+              <Link to="/faq" className="text-gray-700 hover:text-blue-600 transition duration-300">FAQs</Link>              
 
             <Link 
               to="/appointments" 
