@@ -371,21 +371,10 @@ const ColoradoSprings = () => {
             legal requirements, and timelines.
           </p>
           <ul className="list-disc list-inside space-y-2 max-w-2xl mx-auto text-gray-700">
-            <li>
-              <Link to="/guides/dna-test-cost-colorado" className="text-blue-600 underline hover:text-blue-700">How Much Does a DNA Test Cost in Colorado</Link>
-            </li>
-            <li>
-              <Link to="/guides/legal-vs-at-home-dna-test" className="text-blue-600 underline hover:text-blue-700">Legal vs At Home DNA Testing</Link>
-            </li>
-            <li>
-              <Link to="/guides/how-long-do-dna-results-take" className="text-blue-600 underline hover:text-blue-700">How Long Do DNA Test Results Take</Link>
-            </li>
-            <li>
-              <Link to="/guides/immigration-dna-testing-guide" className="text-blue-600 underline hover:text-blue-700">DNA Testing for Immigration Cases</Link>
-            </li>
-            <li>
-              <Link to="/guides/prenatal-dna-testing-guide" className="text-blue-600 underline hover:text-blue-700">Prenatal DNA Testing Explained</Link>
-            </li>
+            <li><Link to="/guides/how-dna-testing-works" className="text-blue-600 underline hover:text-blue-700">How DNA Testing Works</Link></li>
+            <li><Link to="/guides/how-much-does-a-dna-test-cost" className="text-blue-600 underline hover:text-blue-700">How Much Does a DNA Test Cost</Link></li>
+            <li><Link to="/guides/court-admissible-dna-testing" className="text-blue-600 underline hover:text-blue-700">Court-Admissible DNA Testing</Link></li>
+            <li><Link to="/guides/how-long-does-dna-testing-take" className="text-blue-600 underline hover:text-blue-700">How Long Does DNA Testing Take</Link></li>
           </ul>
         </section>
 

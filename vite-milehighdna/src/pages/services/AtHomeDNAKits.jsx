@@ -71,6 +71,7 @@ const AtHomeDNAKits = () => {
             </p>
           </section>
 
+
           <section className="mb-12 p-6 bg-blue-50 rounded-xl">
             <h2 className="text-xl font-bold text-[#1A3C59] mb-2">Order an At-Home DNA Kit or Book a Consultation</h2>
             <p className="text-gray-700 mb-4">Schedule an appointment to order your kit or learn more about at-home testing options.</p>
