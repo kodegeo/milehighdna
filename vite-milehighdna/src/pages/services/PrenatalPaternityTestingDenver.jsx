@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import PrenatalImage from "../../assets/images/prenatal-3.png";
+import PrenatalPricing from "../../components/prenatal/PrenatalPricing";
 
 const PrenatalPaternityTestingDenver = () => {
   const [openFaq, setOpenFaq] = useState(null);
@@ -319,6 +320,8 @@ const PrenatalPaternityTestingDenver = () => {
           </div>
         </div>
       </section>
+
+      <PrenatalPricing />
 
       {/* Local Availability in Denver */}
       <section className="py-16 px-6 md:px-12 bg-gray-50">

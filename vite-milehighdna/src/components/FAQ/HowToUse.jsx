@@ -9,7 +9,7 @@ const HowToUse = () => {
         Have questions about legal testing?
         <HashLink 
           smooth 
-          to="/faq#legal" 
+          to="/faq#legal-dna-testing" 
           className="text-blue-600 hover:underline ml-2"
           scroll={(el) => el.scrollIntoView({ behavior: 'smooth', block: 'start' })}
         >

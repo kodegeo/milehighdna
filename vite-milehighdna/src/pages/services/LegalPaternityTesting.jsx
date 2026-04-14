@@ -19,14 +19,113 @@ import FAQSection from "../../components/FAQSection";
 import legalHero from "../../assets/images/legal_hero.png";
 
 const LEGAL_PATERNITY_FAQS = [
-  { question: "Can a DNA test be used in court?", answer: "A court-admissible DNA test requires verified identification, documented chain-of-custody, certified collection, and analysis by an AABB-accredited laboratory. Our legal paternity test in Denver includes all of these and is accepted by Colorado courts, attorneys, and government agencies. The DNA testing process is designed specifically for legal admissibility." },
-  { question: "How accurate is a legal paternity test?", answer: "A legal paternity test uses the same AABB-accredited laboratory technology as our other DNA testing and typically reports 99.9% or higher probability of paternity when the alleged father is included, and 100% exclusion when he is not the biological father. Legal paternity testing in Denver is held to the same scientific standards as court-admissible testing nationwide." },
-  { question: "How long does a paternity test take?", answer: "Most legal paternity tests are completed within 3–5 business days after the AABB-accredited laboratory receives the DNA samples. The DNA testing results timeline can be faster with expedited options; ask when you book your appointment at our Denver location." },
-  { question: "What makes a paternity test legally valid?", answer: "A legally valid paternity test requires government-issued ID verification, certified collection by an authorized collector, strict chain-of-custody documentation, and analysis by an AABB-accredited laboratory. Our legal paternity testing in Denver meets all of these requirements so results are acceptable for court and agency use." },
-  { question: "Is the mother required for a legal paternity test?", answer: "No. A legal paternity test can be performed with only the alleged father and child. Including the mother can strengthen the DNA testing results in some cases but is not required for the paternity testing process." },
-  { question: "Can paternity test results be sent to an attorney or court?", answer: "Yes. We can send your court-admissible DNA test results and documentation directly to your attorney or the court when you authorize it. Chain-of-custody and notarized reports are provided for legal submission as part of our legal paternity testing service." },
-  { question: "Do I need a court order to get a legal paternity test?", answer: "No. You do not need a court order to start legal paternity testing. Many clients in Denver and Colorado order a legal paternity test on their own for custody, child support, or peace of mind. Results from our DNA testing process can be used in court when needed." },
-  { question: "Is legal paternity testing confidential?", answer: "Yes. All DNA testing is confidential. Your paternity test results and personal information are protected and only shared with parties you authorize, such as your attorney or the court. Our Denver office follows strict confidentiality standards for legal paternity testing." }
+  {
+    question: "Will this DNA test hold up in court?",
+    answerSchema:
+      "A court-admissible DNA test requires verified identification, documented chain-of-custody, certified collection, and analysis by an AABB-accredited laboratory. Our legal paternity tests meet all of these requirements. Participant identities are verified at collection, documentation is completed under evidentiary standards, and samples are processed by an AABB-accredited laboratory. Selecting legal testing at the outset ensures admissibility and eliminates procedural risk.",
+    answer: (
+      <>
+        <p>
+          A court-admissible DNA test requires verified identification, documented chain-of-custody, certified collection, and analysis by an AABB-accredited laboratory.
+        </p>
+        <p>
+          Our legal paternity tests meet all of these requirements. Participant identities are verified at collection, documentation is completed under evidentiary standards, and samples are processed by an AABB-accredited laboratory.
+        </p>
+        <p>Selecting legal testing at the outset ensures admissibility and eliminates procedural risk.</p>
+      </>
+    ),
+  },
+  {
+    question: "How accurate is legal paternity testing?",
+    answerSchema:
+      "Legal paternity testing provides a 99.999% probability of paternity when the alleged father is included. All testing is performed by an AABB-accredited laboratory under strict chain-of-custody procedures to ensure scientific reliability and court admissibility.",
+    answer: (
+      <>
+        <p>
+          Legal paternity testing provides a 99.999% probability of paternity when the alleged father is included.
+        </p>
+        <p>
+          All testing is performed by an AABB-accredited laboratory under strict chain-of-custody procedures to ensure scientific reliability and court admissibility.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "How long does legal paternity testing take?",
+    answerSchema:
+      "Standard laboratory processing time: 2–3 business days after laboratory receipt. Eligible postnatal paternity cases may qualify for next-business-day laboratory processing once all required samples are received. Immigration-related cases are not eligible for expedited processing. Early scheduling ensures alignment with court timelines.",
+    answer: (
+      <>
+        <p>
+          <strong>Standard laboratory processing time:</strong> 2–3 business days after laboratory receipt.
+        </p>
+        <p>
+          Eligible postnatal paternity cases may qualify for <strong>next-business-day laboratory processing</strong> once all required samples are received. Immigration-related cases are not eligible for expedited processing.
+        </p>
+        <p>Early scheduling ensures alignment with court timelines.</p>
+      </>
+    ),
+  },
+  {
+    question: "What makes a DNA test legally valid?",
+    answerSchema:
+      "A legally admissible DNA test requires: Government-issued photo identification; Certified DNA collection; Documented chain-of-custody; AABB-accredited laboratory analysis. Without these elements, results may not be accepted in court.",
+    answer: (
+      <>
+        <p>A legally admissible DNA test requires:</p>
+        <ul className="list-disc list-outside ml-5 space-y-2">
+          <li>Government-issued photo identification</li>
+          <li>Certified DNA collection</li>
+          <li>Documented chain-of-custody</li>
+          <li>AABB-accredited laboratory analysis</li>
+        </ul>
+        <p>Without these elements, results may not be accepted in court.</p>
+      </>
+    ),
+  },
+  {
+    question: "Is the mother required for legal paternity testing?",
+    answerSchema:
+      "No. The alleged father and child are required. The mother is not mandatory; however, her participation is always recommended as it strengthens the statistical analysis and overall results.",
+    answer: (
+      <p>
+        No. The alleged father and child are required. The mother is not mandatory; however, her participation is always recommended as it strengthens the statistical analysis and overall results.
+      </p>
+    ),
+  },
+  {
+    question: "Can results be sent directly to an attorney or court?",
+    answerSchema:
+      "Yes. With written authorization, certified copies may be sent directly to attorneys or courts in accordance with submission standards.",
+    answer: (
+      <p>
+        Yes. With written authorization, certified copies may be sent directly to attorneys or courts in accordance with submission standards.
+      </p>
+    ),
+  },
+  {
+    question: "Do I need a court order to begin legal testing?",
+    answerSchema:
+      "No. Legal DNA testing may be initiated voluntarily unless otherwise ordered by a judge.",
+    answer: (
+      <p>No. Legal DNA testing may be initiated voluntarily unless otherwise ordered by a judge.</p>
+    ),
+  },
+  {
+    question: "Is this process confidential?",
+    answerSchema:
+      "Yes. Results are released only to authorized individuals listed on the case. Case records are handled under strict confidentiality protocols. All legal testing is performed by an AABB-accredited laboratory in accordance with established DNA testing standards.",
+    answer: (
+      <>
+        <p>
+          Yes. Results are released only to authorized individuals listed on the case. Case records are handled under strict confidentiality protocols.
+        </p>
+        <p>
+          All legal testing is performed by an AABB-accredited laboratory in accordance with established DNA testing standards.
+        </p>
+      </>
+    ),
+  },
 ];
 
 const LegalPaternityTesting = () => {
@@ -161,7 +260,10 @@ const LegalPaternityTesting = () => {
             "mainEntity": LEGAL_PATERNITY_FAQS.map((faq) => ({
               "@type": "Question",
               "name": faq.question,
-              "acceptedAnswer": { "@type": "Answer", "text": faq.answer }
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": faq.answerSchema ?? (typeof faq.answer === "string" ? faq.answer : "")
+              }
             }))
           })}
         </script>
@@ -371,7 +473,17 @@ const LegalPaternityTesting = () => {
       </section>
 
       {/* FAQ SECTION */}
-      <FAQSection faqs={LEGAL_PATERNITY_FAQS} />
+      <FAQSection
+        title={
+          <>
+            Court-Admissible DNA Testing in Denver
+            <br />
+            <br />
+            Frequently Asked Questions
+          </>
+        }
+        faqs={LEGAL_PATERNITY_FAQS}
+      />
 
       {/* TESTIMONIALS */}
       <section className="section-padding section-bg-alt">

@@ -72,6 +72,52 @@ const HealthyWeightDNATest = () => {
         </div>
       </section>
 
+      {/* Pricing */}
+      <section id="pricing-info" className="bg-gray-50 py-16 border-b border-gray-200">
+        <div className="container mx-auto px-6 text-center max-w-4xl">
+          <h3 className="text-3xl font-bold text-gray-800 mb-8">Choose Your Testing Option</h3>
+
+          <div className="grid md:grid-cols-2 gap-8 mb-8">
+            <div className="bg-white p-6 rounded-xl shadow-lg">
+              <h4 className="text-2xl font-bold text-gray-800 mb-2">Healthy Weight DNA Test</h4>
+              <p className="text-3xl font-bold text-blue-600 mb-2">$149</p>
+              <p className="text-sm text-gray-500 mb-4">Metabolism, diet &amp; exercise insights.</p>
+              <p className="text-gray-600 mb-4">Personalized insights for nutrition, metabolism, and fitness based on genetics.</p>
+              <a
+                href={CALENDLY_EN}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-blue-600 text-white px-6 py-3 rounded-xl shadow-lg hover:bg-blue-700 transition font-semibold text-lg inline-block w-full"
+              >
+                Book Appointment
+              </a>
+            </div>
+
+            <div className="bg-white p-6 rounded-xl shadow-lg">
+              <h4 className="text-2xl font-bold text-gray-800 mb-2">More Lifestyle &amp; Ancestry</h4>
+              <p className="text-3xl font-bold text-green-600 mb-2">Explore</p>
+              <p className="text-sm text-gray-500 mb-4">GPS Origins &amp; other panels.</p>
+              <p className="text-gray-600 mb-4">Compare wellness and ancestry options in our hub.</p>
+              <Link
+                to="/services/lifestyle-ancestry-dna-testing"
+                className="bg-green-600 text-white px-6 py-3 rounded-xl shadow-lg hover:bg-green-700 transition font-semibold text-lg inline-block w-full"
+              >
+                View All Options
+              </Link>
+            </div>
+          </div>
+
+          <p className="text-gray-600 text-sm mb-6">
+            Personal wellness only—not for medical diagnosis or legal use. Turnaround time may vary.
+          </p>
+
+          <p className="text-gray-700 mb-6 text-lg">
+            Curious about ancestry? See the{" "}
+            <Link to="/services/gps-origins-dna-test" className="text-blue-600 underline">GPS Origins DNA Test</Link>.
+          </p>
+        </div>
+      </section>
+
       {/* What Is / When needed */}
       <section className="py-12 md:py-16 px-6 bg-white">
         <div className="max-w-4xl mx-auto">
@@ -104,18 +150,11 @@ const HealthyWeightDNATest = () => {
         </div>
       </section>
 
-      {/* Pricing note */}
-      <section className="py-12 md:py-16 px-6 bg-white">
-        <div className="max-w-4xl mx-auto">
-          <p className="text-gray-700">Pricing and turnaround time vary. Contact us for current pricing and to schedule.</p>
-        </div>
-      </section>
-
       {/* Why Choose */}
       <section className="py-12 md:py-16 px-6 bg-gray-50">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-bold text-gray-800 mb-6">Why Choose Mile High DNA Testing?</h2>
-          <p className="text-gray-700 mb-4">We offer the Healthy Weight DNA Test in Denver and surrounding areas. Contact us for current pricing and to schedule your appointment.</p>
+          <p className="text-gray-700 mb-4">We offer the Healthy Weight DNA Test in Denver and surrounding areas. Contact us to schedule your appointment.</p>
         </div>
       </section>
 

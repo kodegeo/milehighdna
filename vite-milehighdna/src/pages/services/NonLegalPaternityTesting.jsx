@@ -11,15 +11,113 @@ import CallToAction from '../../components/common/CallToAction';
 import FAQSection from '../../components/FAQSection';
 
 const NON_LEGAL_IN_OFFICE_FAQS = [
-  { question: "What is non-legal in-office paternity testing?", answer: "Non-legal in-office paternity testing is peace-of-mind DNA testing performed at our Denver location with professional collection. Results are not court-admissible but use the same AABB-accredited laboratory technology as legal paternity tests and are ideal for personal knowledge and family clarity. The DNA testing process is the same; only documentation and chain-of-custody differ from a legal paternity test." },
-  { question: "How accurate is a non-legal paternity test?", answer: "A non-legal paternity test uses the same AABB-accredited laboratory technology as legal paternity testing and typically reports 99% or higher probability of paternity when the alleged father is included. The DNA testing and laboratory analysis are identical; only the documentation and chain-of-custody differ from a court-admissible DNA test." },
-  { question: "How long does a non-legal paternity test take?", answer: "Non-legal paternity test results are typically available in 2–3 business days after the AABB-accredited laboratory receives the DNA samples. In-office paternity testing in Denver can mean a faster DNA testing results timeline than at-home kits because samples go directly to the lab without shipping delay." },
-  { question: "Is non-legal paternity testing confidential?", answer: "Yes. All DNA testing at our Denver office is confidential. Your paternity test results and personal information are protected and never shared without your authorization. We treat every non-legal paternity test with the same privacy standards as legal paternity testing." },
-  { question: "Can in-office paternity test collections be scheduled separately?", answer: "Yes. We can schedule the alleged father and child at different times for in-office paternity testing if needed. Ask about separate collection appointments when booking your DNA test at our Denver location." },
-  { question: "What ID is required for non-legal paternity testing?", answer: "For non-legal paternity testing, strict government-issued ID is not required the way it is for a court-admissible DNA test. We may ask for basic identification for our records. DNA testing requirements can vary; confirm when you schedule your paternity test in Denver." },
-  { question: "Can a non-legal paternity test be upgraded to legal later?", answer: "No. Peace-of-mind paternity test results cannot be upgraded to legal results after the fact. If there is any chance you will need court-admissible DNA test results, choose legal paternity testing from the start. The DNA testing process for legal tests requires verified collection and chain-of-custody from the beginning." },
-  { question: "Why choose in-office paternity testing instead of at-home?", answer: "In-office paternity testing in Denver ensures proper collection, often a faster DNA testing results timeline, and professional handling from start to finish. The DNA testing process is overseen by our staff, so it is a good option when you prefer not to collect samples at home or want same-day paternity test collection." },
-  { question: "Can you coordinate international paternity testing?", answer: "We can help coordinate DNA testing when one party is outside the U.S. Contact our Denver office to discuss your situation and how we can arrange paternity testing or other relationship testing across locations." }
+  {
+    question: "What is non-legal in-office paternity testing?",
+    answerSchema:
+      "Non-legal paternity testing is a professionally collected DNA test intended for personal knowledge only. It does not follow legal chain-of-custody procedures and is not court-admissible.",
+    answer: (
+      <p>
+        Non-legal paternity testing is a professionally collected DNA test intended for personal knowledge only. It does not follow legal chain-of-custody procedures and is not court-admissible.
+      </p>
+    ),
+  },
+  {
+    question: "How accurate is non-legal paternity testing?",
+    answerSchema:
+      "Non-legal paternity testing provides a 99.999% probability of paternity when the alleged father is included. Laboratory analysis is identical to legal testing. The only difference is the absence of court documentation.",
+    answer: (
+      <>
+        <p>
+          Non-legal paternity testing provides a 99.999% probability of paternity when the alleged father is included.
+        </p>
+        <p>
+          Laboratory analysis is identical to legal testing. The only difference is the absence of court documentation.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "How long does non-legal paternity testing take?",
+    answerSchema:
+      "Standard laboratory processing time: 2–3 business days after laboratory receipt. Eligible postnatal cases may qualify for next-business-day laboratory processing once samples are received.",
+    answer: (
+      <>
+        <p>
+          <strong>Standard laboratory processing time:</strong> 2–3 business days after laboratory receipt.
+        </p>
+        <p>
+          Eligible postnatal cases may qualify for next-business-day laboratory processing once samples are received.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "Is non-legal testing confidential?",
+    answerSchema:
+      "Yes. Results are released only to authorized individuals listed on the case.",
+    answer: (
+      <p>Yes. Results are released only to authorized individuals listed on the case.</p>
+    ),
+  },
+  {
+    question: "Can collections be scheduled separately?",
+    answerSchema:
+      "Separate collection appointments may be arranged when necessary. Additional coordination fees may apply depending on scheduling requirements.",
+    answer: (
+      <>
+        <p>Separate collection appointments may be arranged when necessary.</p>
+        <p>Additional coordination fees may apply depending on scheduling requirements.</p>
+      </>
+    ),
+  },
+  {
+    question: "What identification is required?",
+    answerSchema:
+      "Identification is not required for non-legal testing, though accurate participant documentation is recommended.",
+    answer: (
+      <p>
+        Identification is not required for non-legal testing, though accurate participant documentation is recommended.
+      </p>
+    ),
+  },
+  {
+    question: "Can non-legal testing be upgraded to legal later?",
+    answerSchema:
+      "No. Legal documentation must be established at the time of collection.",
+    answer: <p>No. Legal documentation must be established at the time of collection.</p>,
+  },
+  {
+    question: "Why choose in-office testing instead of at-home?",
+    answerSchema:
+      "In-office testing provides: Certified DNA collectors; Immediate sample verification; Reduced risk of recollection; No inter-participant mailing delays; Professional oversight.",
+    answer: (
+      <>
+        <p>In-office testing provides:</p>
+        <ul className="list-disc list-outside ml-5 space-y-2">
+          <li>Certified DNA collectors</li>
+          <li>Immediate sample verification</li>
+          <li>Reduced risk of recollection</li>
+          <li>No inter-participant mailing delays</li>
+          <li>Professional oversight</li>
+        </ul>
+      </>
+    ),
+  },
+  {
+    question: "Can you coordinate international non-legal testing?",
+    answerSchema:
+      "Yes. International kit shipments can be coordinated. Shipping timelines and customs regulations vary by country. All testing is performed by an AABB-accredited laboratory in accordance with established DNA testing standards.",
+    answer: (
+      <>
+        <p>
+          Yes. International kit shipments can be coordinated. Shipping timelines and customs regulations vary by country.
+        </p>
+        <p>
+          All testing is performed by an AABB-accredited laboratory in accordance with established DNA testing standards.
+        </p>
+      </>
+    ),
+  },
 ];
 
 const NonLegalPaternityTesting = () => {
@@ -159,7 +257,10 @@ const NonLegalPaternityTesting = () => {
             "mainEntity": NON_LEGAL_IN_OFFICE_FAQS.map((faq) => ({
               "@type": "Question",
               "name": faq.question,
-              "acceptedAnswer": { "@type": "Answer", "text": faq.answer }
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": faq.answerSchema ?? (typeof faq.answer === "string" ? faq.answer : "")
+              }
             }))
           })}
         </script>
@@ -399,7 +500,20 @@ const NonLegalPaternityTesting = () => {
         </div>
       </section>
 
-      <FAQSection faqs={NON_LEGAL_IN_OFFICE_FAQS} className="bg-gray-50" />
+      <FAQSection
+        title={
+          <>
+            Professionally Collected DNA Testing for
+            <br />
+            Personal Knowledge
+            <br />
+            <br />
+            Frequently Asked Questions
+          </>
+        }
+        faqs={NON_LEGAL_IN_OFFICE_FAQS}
+        className="bg-gray-50"
+      />
 
       <ServingColorado />
       <CallToAction />

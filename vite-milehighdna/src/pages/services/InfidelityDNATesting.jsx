@@ -61,6 +61,51 @@ const InfidelityDNATesting = () => {
         </div>
       </section>
 
+      {/* Pricing */}
+      <section id="pricing-info" className="bg-gray-50 py-16 border-b border-gray-200">
+        <div className="container mx-auto px-6 text-center max-w-4xl">
+          <h3 className="text-3xl font-bold text-gray-800 mb-8">Choose Your Testing Option</h3>
+
+          <div className="grid md:grid-cols-2 gap-8 mb-8">
+            <div className="bg-white p-6 rounded-xl shadow-lg">
+              <h4 className="text-2xl font-bold text-gray-800 mb-2">Confidential Testing</h4>
+              <p className="text-3xl font-bold text-blue-600 mb-2">From $275+</p>
+              <p className="text-sm text-gray-500 mb-4">Price depends on sample type and analysis.</p>
+              <p className="text-gray-600 mb-4">Discreet handling of personal items or samples. Private, non-court use only.</p>
+              <Link
+                to="/appointments"
+                className="bg-blue-600 text-white px-6 py-3 rounded-xl shadow-lg hover:bg-blue-700 transition font-semibold text-lg inline-block w-full"
+              >
+                Schedule Confidential Consultation
+              </Link>
+            </div>
+
+            <div className="bg-white p-6 rounded-xl shadow-lg">
+              <h4 className="text-2xl font-bold text-gray-800 mb-2">Call for a Quote</h4>
+              <p className="text-3xl font-bold text-green-600 mb-2">720-900-9342</p>
+              <p className="text-sm text-gray-500 mb-4">Speak directly with our team.</p>
+              <p className="text-gray-600 mb-4">All inquiries are handled with discretion. No obligation.</p>
+              <a
+                href="tel:+17209009342"
+                className="bg-green-600 text-white px-6 py-3 rounded-xl shadow-lg hover:bg-green-700 transition font-semibold text-lg inline-block w-full"
+                onClick={() => { window.dataLayer = window.dataLayer || []; window.dataLayer.push({ event: "phone_click", phone_number: "720-900-9342", phone_location: "Infidelity pricing" }); }}
+              >
+                Call Now
+              </a>
+            </div>
+          </div>
+
+          <p className="text-gray-600 text-sm mb-6">
+            Infidelity DNA testing is for personal use only—not for court. For legal documentation, see{" "}
+            <Link to="/services/legal-paternity-testing" className="text-blue-600 underline font-semibold">legal paternity testing</Link>.
+          </p>
+
+          <p className="text-gray-700 mb-6 text-lg">
+            We use AABB-accredited laboratory partners where applicable and serve Denver and Colorado with strict confidentiality.
+          </p>
+        </div>
+      </section>
+
       {/* What Is */}
       <section className="py-12 md:py-16 px-6 bg-white">
         <div className="max-w-4xl mx-auto">
@@ -100,10 +145,10 @@ const InfidelityDNATesting = () => {
       </section>
 
       {/* Why Choose */}
-      <section className="py-12 md:py-16 px-6 bg-gray-50">
+      <section className="py-12 md:py-16 px-6 bg-white">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-bold text-gray-800 mb-6">Why Choose Mile High DNA Testing?</h2>
-          <p className="text-gray-700 mb-4">Pricing varies by type of sample and analysis required. Mile High DNA Testing uses AABB-accredited laboratory partners where applicable and serves Denver and Colorado with strict confidentiality. Contact us for a confidential quote.</p>
+          <p className="text-gray-700 mb-4">Mile High DNA Testing uses AABB-accredited laboratory partners where applicable and serves Denver and Colorado with strict confidentiality.</p>
         </div>
       </section>
 

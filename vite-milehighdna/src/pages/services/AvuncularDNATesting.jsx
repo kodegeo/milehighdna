@@ -72,6 +72,55 @@ const AvuncularDNATesting = () => {
         </div>
       </section>
 
+      {/* Pricing */}
+      <section id="pricing-info" className="bg-gray-50 py-16 border-b border-gray-200">
+        <div className="container mx-auto px-6 text-center max-w-4xl">
+          <h3 className="text-3xl font-bold text-gray-800 mb-8">Choose Your Testing Option</h3>
+
+          <div className="grid md:grid-cols-2 gap-8 mb-8">
+            <div className="bg-white p-6 rounded-xl shadow-lg">
+              <h4 className="text-2xl font-bold text-gray-800 mb-2">Non-Legal (Peace of Mind)</h4>
+              <p className="text-3xl font-bold text-blue-600 mb-2">$349+</p>
+              <p className="text-sm text-gray-500 mb-4">Aunt/uncle and child; personal use only.</p>
+              <p className="text-gray-600 mb-4">Not court-admissible. Quick cheek swab collection in our Denver office.</p>
+              <Link
+                to="/appointments"
+                className="bg-blue-600 text-white px-6 py-3 rounded-xl shadow-lg hover:bg-blue-700 transition font-semibold text-lg inline-block w-full"
+              >
+                Schedule Appointment
+              </Link>
+            </div>
+
+            <div className="bg-white p-6 rounded-xl shadow-lg">
+              <h4 className="text-2xl font-bold text-gray-800 mb-2">Legal (Court-Admissible)</h4>
+              <p className="text-3xl font-bold text-green-600 mb-2">$475+</p>
+              <p className="text-sm text-gray-500 mb-4">Chain of custody and ID verification.</p>
+              <p className="text-gray-600 mb-4">Documentation suitable for court, immigration, or official use.</p>
+              <Link
+                to="/appointments"
+                className="bg-green-600 text-white px-6 py-3 rounded-xl shadow-lg hover:bg-green-700 transition font-semibold text-lg inline-block w-full"
+              >
+                Schedule Appointment
+              </Link>
+            </div>
+          </div>
+
+          <p className="text-gray-600 text-sm mb-6">
+            Additional participants: often <strong>$150 per person</strong>. Y-STR and mtDNA lineage panels from <strong>$349+</strong> depending on scope—ask for details.
+          </p>
+
+          <p className="text-gray-700 mb-6 text-lg">
+            Compare with{" "}
+            <Link to="/services/siblingship-testing" className="text-blue-600 underline">siblingship</Link>{" "}
+            and{" "}
+            <Link to="/services/grandparentage-testing" className="text-blue-600 underline">grandparentage</Link>{" "}
+            testing, or see{" "}
+            <Link to="/services/legal-paternity-testing" className="text-blue-600 underline">legal paternity testing</Link>{" "}
+            when a parent can test directly.
+          </p>
+        </div>
+      </section>
+
       {/* What Is */}
       <section className="py-12 md:py-16 px-6 bg-white">
         <div className="max-w-4xl mx-auto">

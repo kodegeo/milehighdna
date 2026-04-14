@@ -72,6 +72,54 @@ const MtdnaTesting = () => {
         </div>
       </section>
 
+      {/* Pricing */}
+      <section id="pricing-info" className="bg-gray-50 py-16 border-b border-gray-200">
+        <div className="container mx-auto px-6 text-center max-w-4xl">
+          <h3 className="text-3xl font-bold text-gray-800 mb-8">Choose Your Testing Option</h3>
+
+          <div className="grid md:grid-cols-2 gap-8 mb-8">
+            <div className="bg-white p-6 rounded-xl shadow-lg">
+              <h4 className="text-2xl font-bold text-gray-800 mb-2">mtDNA Testing</h4>
+              <p className="text-3xl font-bold text-blue-600 mb-2">$349+</p>
+              <p className="text-sm text-gray-500 mb-4">Maternal line / genealogy.</p>
+              <p className="text-gray-600 mb-4">Mitochondrial DNA analysis with clear reporting for personal use.</p>
+              <a
+                href={CALENDLY_EN}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-blue-600 text-white px-6 py-3 rounded-xl shadow-lg hover:bg-blue-700 transition font-semibold text-lg inline-block w-full"
+              >
+                Book Appointment
+              </a>
+            </div>
+
+            <div className="bg-white p-6 rounded-xl shadow-lg">
+              <h4 className="text-2xl font-bold text-gray-800 mb-2">Y-STR + mtDNA Combo</h4>
+              <p className="text-3xl font-bold text-green-600 mb-2">From $349+</p>
+              <p className="text-sm text-gray-500 mb-4">Combined lineage panels (scope varies).</p>
+              <p className="text-gray-600 mb-4">Often quoted together—ask for details based on your research goals.</p>
+              <a
+                href={CALENDLY_EN}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-green-600 text-white px-6 py-3 rounded-xl shadow-lg hover:bg-green-700 transition font-semibold text-lg inline-block w-full"
+              >
+                Book Consultation
+              </a>
+            </div>
+          </div>
+
+          <p className="text-gray-600 text-sm mb-6">
+            Pricing may vary by testing panel and reporting. Testing may be performed through accredited laboratories depending on your needs.
+          </p>
+
+          <p className="text-gray-700 mb-6 text-lg">
+            For paternal line testing, see{" "}
+            <Link to="/services/y-str-dna-testing" className="text-blue-600 underline">Y-STR DNA testing</Link>.
+          </p>
+        </div>
+      </section>
+
       {/* What Is / When needed */}
       <section className="py-12 md:py-16 px-6 bg-white">
         <div className="max-w-4xl mx-auto">
@@ -101,13 +149,6 @@ const MtdnaTesting = () => {
               ))}
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* Pricing note */}
-      <section className="py-12 md:py-16 px-6 bg-white">
-        <div className="max-w-4xl mx-auto">
-          <p className="text-gray-700">Pricing varies by testing panel and reporting. Contact us for a quote. Testing may be performed through accredited laboratories depending on your needs.</p>
         </div>
       </section>
 

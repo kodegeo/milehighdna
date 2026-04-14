@@ -144,6 +144,69 @@ const PostmortemPaternityTesting = () => {
         </div>
       </section>
 
+      {/* Pricing */}
+      <section id="pricing-info" className="bg-gray-50 py-16 border-b border-gray-200">
+        <div className="container mx-auto px-6 text-center max-w-4xl">
+          <h3 className="text-3xl font-bold text-gray-800 mb-8">Choose Your Testing Option</h3>
+
+          <div className="grid md:grid-cols-2 gap-8 mb-8">
+            <div className="bg-white p-6 rounded-xl shadow-lg">
+              <h4 className="text-2xl font-bold text-gray-800 mb-2">Non-Legal Kinship</h4>
+              <p className="text-3xl font-bold text-blue-600 mb-2">$349+</p>
+              <p className="text-sm text-gray-500 mb-4">Siblingship, grandparentage, or avuncular (peace of mind).</p>
+              <p className="text-gray-600 mb-4">
+                Typical starting range for personal or family documentation when court-admissible results are not required.
+              </p>
+              <Link
+                to="/appointments"
+                className="bg-blue-600 text-white px-6 py-3 rounded-xl shadow-lg hover:bg-blue-700 transition font-semibold text-lg inline-block w-full"
+              >
+                Schedule Appointment
+              </Link>
+            </div>
+
+            <div className="bg-white p-6 rounded-xl shadow-lg">
+              <h4 className="text-2xl font-bold text-gray-800 mb-2">Legal Kinship</h4>
+              <p className="text-3xl font-bold text-green-600 mb-2">$479+</p>
+              <p className="text-sm text-gray-500 mb-4">Court-admissible siblingship, grandparentage, or avuncular.</p>
+              <p className="text-gray-600 mb-4">
+                Chain of custody and AABB-accredited documentation for probate, inheritance, benefits, and court use.
+              </p>
+              <Link
+                to="/appointments"
+                className="bg-green-600 text-white px-6 py-3 rounded-xl shadow-lg hover:bg-green-700 transition font-semibold text-lg inline-block w-full"
+              >
+                Schedule Appointment
+              </Link>
+            </div>
+          </div>
+
+          <p className="text-gray-600 text-sm mb-6">
+            Additional participants are often <strong>$150 per person</strong> when adding beyond the base participants. Case fees depend on sample type, number of participants, and legal documentation—call{" "}
+            <a
+              href={PHONE_TEL}
+              className="text-blue-600 underline font-semibold"
+              onClick={() => {
+                window.dataLayer = window.dataLayer || [];
+                window.dataLayer.push({ event: "phone_click", phone_number: PHONE, phone_location: "Postmortem pricing" });
+              }}
+            >
+              {PHONE}
+            </a>{" "}
+            for a written quote.
+          </p>
+
+          <p className="text-gray-700 mb-6 text-lg">
+            Postmortem cases often use the same relationship tests as standard{" "}
+            <Link to="/services/siblingship-testing" className="text-blue-600 underline">siblingship</Link>,{" "}
+            <Link to="/services/grandparentage-testing" className="text-blue-600 underline">grandparentage</Link>, or{" "}
+            <Link to="/services/avuncular-dna-testing" className="text-blue-600 underline">avuncular</Link>{" "}
+            testing. When you need court-admissible fatherhood documentation, see{" "}
+            <Link to="/services/legal-paternity-testing" className="text-blue-600 underline">legal paternity testing</Link>.
+          </p>
+        </div>
+      </section>
+
       {/* Intro + visual block */}
       <section className="py-12 md:py-16 px-6 bg-white">
         <div className="max-w-4xl mx-auto">

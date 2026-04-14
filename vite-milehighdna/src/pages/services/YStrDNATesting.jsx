@@ -72,6 +72,56 @@ const YStrDNATesting = () => {
         </div>
       </section>
 
+      {/* Pricing */}
+      <section id="pricing-info" className="bg-gray-50 py-16 border-b border-gray-200">
+        <div className="container mx-auto px-6 text-center max-w-4xl">
+          <h3 className="text-3xl font-bold text-gray-800 mb-8">Choose Your Testing Option</h3>
+
+          <div className="grid md:grid-cols-2 gap-8 mb-8">
+            <div className="bg-white p-6 rounded-xl shadow-lg">
+              <h4 className="text-2xl font-bold text-gray-800 mb-2">Y-STR Analysis</h4>
+              <p className="text-3xl font-bold text-blue-600 mb-2">$324+</p>
+              <p className="text-sm text-gray-500 mb-4">Paternal line / male participants.</p>
+              <p className="text-gray-600 mb-4">Cheek swab collection and laboratory STR analysis for genealogy and lineage questions.</p>
+              <a
+                href={CALENDLY_EN}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-blue-600 text-white px-6 py-3 rounded-xl shadow-lg hover:bg-blue-700 transition font-semibold text-lg inline-block w-full"
+              >
+                Book Appointment
+              </a>
+            </div>
+
+            <div className="bg-white p-6 rounded-xl shadow-lg">
+              <h4 className="text-2xl font-bold text-gray-800 mb-2">Y-STR + mtDNA Combo</h4>
+              <p className="text-3xl font-bold text-green-600 mb-2">From $349+</p>
+              <p className="text-sm text-gray-500 mb-4">Combined lineage panels (scope varies).</p>
+              <p className="text-gray-600 mb-4">Ask us which panel fits your goals—pricing depends on reporting and participants.</p>
+              <a
+                href={CALENDLY_EN}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-green-600 text-white px-6 py-3 rounded-xl shadow-lg hover:bg-green-700 transition font-semibold text-lg inline-block w-full"
+              >
+                Book Consultation
+              </a>
+            </div>
+          </div>
+
+          <p className="text-gray-600 text-sm mb-6">
+            Additional participants may apply for extended comparisons. Not a substitute for{" "}
+            <Link to="/services/legal-paternity-testing" className="text-blue-600 underline font-semibold">legal paternity testing</Link>{" "}
+            when court-admissible results are required.
+          </p>
+
+          <p className="text-gray-700 mb-6 text-lg">
+            For maternal lineage, see our{" "}
+            <Link to="/services/mtdna-testing" className="text-blue-600 underline">mtDNA testing</Link> page.
+          </p>
+        </div>
+      </section>
+
       {/* What Is / When needed */}
       <section className="py-12 md:py-16 px-6 bg-white">
         <div className="max-w-4xl mx-auto">
@@ -101,13 +151,6 @@ const YStrDNATesting = () => {
               ))}
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* Pricing note */}
-      <section className="py-12 md:py-16 px-6 bg-white">
-        <div className="max-w-4xl mx-auto">
-          <p className="text-gray-700">Pricing varies by number of participants and reporting options. Contact us for a quote. Testing may be performed through accredited laboratories depending on your needs.</p>
         </div>
       </section>
 

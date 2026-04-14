@@ -81,6 +81,56 @@ const SingleDNAProfile = () => {
         </div>
       </section>
 
+      {/* Pricing */}
+      <section id="pricing-info" className="bg-gray-50 py-16 border-b border-gray-200">
+        <div className="container mx-auto px-6 text-center max-w-4xl">
+          <h3 className="text-3xl font-bold text-gray-800 mb-8">Choose Your Testing Option</h3>
+
+          <div className="grid md:grid-cols-2 gap-8 mb-8">
+            <div className="bg-white p-6 rounded-xl shadow-lg">
+              <h4 className="text-2xl font-bold text-gray-800 mb-2">Non-Legal Single Profile</h4>
+              <p className="text-3xl font-bold text-blue-600 mb-2">$250</p>
+              <p className="text-sm text-gray-500 mb-4">Personal documentation only.</p>
+              <p className="text-gray-600 mb-4">Certified in-office collection and AABB-accredited lab analysis. Not court-admissible.</p>
+              <a
+                href={CALENDLY_EN}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-blue-600 text-white px-6 py-3 rounded-xl shadow-lg hover:bg-blue-700 transition font-semibold text-lg inline-block w-full"
+              >
+                Book Appointment
+              </a>
+            </div>
+
+            <div className="bg-white p-6 rounded-xl shadow-lg">
+              <h4 className="text-2xl font-bold text-gray-800 mb-2">Legal Single Profile</h4>
+              <p className="text-3xl font-bold text-green-600 mb-2">$349</p>
+              <p className="text-sm text-gray-500 mb-4">Court-admissible documentation.</p>
+              <p className="text-gray-600 mb-4">Chain of custody, ID verification, and formal report suitable for legal submission.</p>
+              <a
+                href={CALENDLY_EN}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-green-600 text-white px-6 py-3 rounded-xl shadow-lg hover:bg-green-700 transition font-semibold text-lg inline-block w-full"
+              >
+                Book Appointment
+              </a>
+            </div>
+          </div>
+
+          <p className="text-gray-600 text-sm mb-6">
+            A single profile preserves one person&apos;s DNA for future comparison—it does not determine paternity or relationships until a comparison test is ordered.
+          </p>
+
+          <p className="text-gray-700 mb-6 text-lg">
+            Need two-party testing instead? See{" "}
+            <Link to="/services/non-legal-paternity-testing" className="text-blue-600 underline">non-legal paternity</Link>{" "}
+            or{" "}
+            <Link to="/services/legal-paternity-testing" className="text-blue-600 underline">legal paternity testing</Link>.
+          </p>
+        </div>
+      </section>
+
       {/* What Is a Single Profile DNA Test? */}
       <section className="py-12 md:py-16 px-6 bg-white">
         <div className="max-w-4xl mx-auto">
@@ -104,45 +154,6 @@ const SingleDNAProfile = () => {
             <li>Someone wants to preserve DNA evidence before circumstances change</li>
           </ul>
           <p className="text-gray-700">This allows individuals to secure documented DNA information without waiting for another participant.</p>
-        </div>
-      </section>
-
-      {/* Pricing options */}
-      <section className="py-12 md:py-16 px-6 bg-gray-50">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold text-gray-800 mb-8">Single Profile DNA Testing Options</h2>
-          <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-white rounded-xl p-8 border-2 border-gray-200">
-              <h3 className="text-xl font-bold text-gray-800 mb-2">Non-Legal Single Profile DNA Test</h3>
-              <p className="text-sm text-gray-500 mb-2">Personal Documentation Only</p>
-              <p className="text-3xl font-bold text-blue-600 mb-4">$250</p>
-              <p className="text-gray-700 mb-4">Professionally collected in our Denver office and analyzed through our AABB-accredited laboratory partner.</p>
-              <ul className="list-disc list-outside ml-6 space-y-1 text-gray-700 mb-4 text-sm">
-                <li>Certified specimen collection</li>
-                <li>Laboratory-issued DNA profile report</li>
-                <li>PhD-level review prior to release</li>
-                <li>Secure PDF delivery</li>
-              </ul>
-              <p className="text-sm text-gray-600 mb-4">Does not include legal chain-of-custody. Not admissible in court. Best for personal records and future comparison planning.</p>
-              <a href={CALENDLY_EN} target="_blank" rel="noopener noreferrer" className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700">Book Appointment</a>
-            </div>
-            <div className="bg-white rounded-xl p-8 border-2 border-blue-600">
-              <h3 className="text-xl font-bold text-gray-800 mb-2">Legal Single Profile DNA Test</h3>
-              <p className="text-sm text-gray-500 mb-2">Court-Admissible Documentation</p>
-              <p className="text-3xl font-bold text-blue-600 mb-4">$349</p>
-              <p className="text-gray-700 mb-4">Conducted in full compliance with legal chain-of-custody standards.</p>
-              <ul className="list-disc list-outside ml-6 space-y-1 text-gray-700 mb-4 text-sm">
-                <li>Government-issued ID verification</li>
-                <li>Certified DNA collector</li>
-                <li>Strict chain-of-custody documentation</li>
-                <li>Tamper-evident packaging</li>
-                <li>AABB-accredited laboratory analysis</li>
-                <li>Formal report suitable for legal submission</li>
-              </ul>
-              <p className="text-sm text-gray-600 mb-4">Best for anticipated court use or formal legal documentation.</p>
-              <a href={CALENDLY_EN} target="_blank" rel="noopener noreferrer" className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700">Book Appointment</a>
-            </div>
-          </div>
         </div>
       </section>
 

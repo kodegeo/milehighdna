@@ -191,8 +191,47 @@ const NonLegalPaternityTestingDenver = () => {
         </div>
       </section>
 
+      {/* Pricing */}
+      <section id="pricing-info" className="py-16 px-6 md:px-12 bg-gray-50">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-8">Choose Your Testing Option</h2>
+          <div className="grid md:grid-cols-2 gap-8 mb-8">
+            <div className="bg-white p-6 rounded-xl shadow-lg">
+              <h3 className="text-2xl font-bold text-gray-800 mb-2">Online Kit</h3>
+              <p className="text-3xl font-bold text-blue-600 mb-2">$179</p>
+              <p className="text-sm text-gray-500 mb-4">Best for private confirmation only.</p>
+              <p className="text-gray-600 mb-4">Order online and complete the test from the comfort of your home.</p>
+              <a
+                href="/shop/at-home-paternity-test"
+                className="bg-blue-600 text-white px-6 py-3 rounded-xl shadow-lg hover:bg-blue-700 transition font-semibold text-lg inline-block w-full"
+              >
+                Order Online
+              </a>
+            </div>
+            <div className="bg-white p-6 rounded-xl shadow-lg">
+              <h3 className="text-2xl font-bold text-gray-800 mb-2">In-Person Testing</h3>
+              <p className="text-3xl font-bold text-green-600 mb-2">$249</p>
+              <p className="text-sm text-gray-500 mb-4">Non-legal (peace of mind), in-office collection in {cityName}.</p>
+              <p className="text-gray-600 mb-4">Schedule an appointment at our testing location.</p>
+              <a
+                href="https://calendly.com/milehighdnatesting/non-legal-paternity-test"
+                className="bg-green-600 text-white px-6 py-3 rounded-xl shadow-lg hover:bg-green-700 transition font-semibold text-lg inline-block w-full"
+              >
+                Schedule Appointment
+              </a>
+            </div>
+          </div>
+          <p className="text-gray-600 text-sm mb-4">
+            Need court documentation? <Link to="/services/legal-paternity-testing-denver" className="text-blue-600 underline font-semibold">See legal paternity testing in {cityName}</Link> (typically from <strong>$349</strong>). Additional alleged father testing may be available—ask for details.
+          </p>
+          <p className="text-gray-600 text-sm">
+            Full details: <Link to="/services/non-legal-paternity-testing" className="text-blue-600 underline">Non-legal paternity testing</Link>.
+          </p>
+        </div>
+      </section>
+
       {/* How Non-Legal Paternity Testing Works in Denver */}
-      <section className="py-16 px-6 md:px-12 bg-gray-50">
+      <section className="py-16 px-6 md:px-12 bg-white">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">

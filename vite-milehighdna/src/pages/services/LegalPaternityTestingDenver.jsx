@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import LegalDNAImage from "../../assets/images/dna-legal-document.png";
+import Pricing from "../../components/legalPaternity/Pricing";
 
 const LegalPaternityTestingDenver = () => {
   const [openFaq, setOpenFaq] = useState(null);
@@ -194,6 +195,8 @@ const LegalPaternityTestingDenver = () => {
           </div>
         </div>
       </section>
+
+      <Pricing />
 
       {/* How This Service Works in Denver */}
       <section className="py-16 px-6 md:px-12 bg-gray-50">

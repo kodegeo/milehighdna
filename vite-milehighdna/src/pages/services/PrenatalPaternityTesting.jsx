@@ -9,23 +9,138 @@ import PrenatalOverview from '../../components/prenatal/PrenatalOverview';
 import PrenatalWhoNeedsTest from '../../components/prenatal/PrenatalWhoNeedsTest';
 import PrenatalSteps from '../../components/prenatal/PrenatalSteps';
 import PrenatalWhyChooseUs from '../../components/prenatal/PrenatalWhyChooseUs';
-import PrenatalFAQ from '../../components/prenatal/PrenatalFAQ';
-
 // Common components
 import ServingColorado from '../../components/common/ServingColorado';
 import CallToAction from '../../components/common/CallToAction';
 import FAQSection from '../../components/FAQSection';
 
 const PRENATAL_PATERNITY_FAQS = [
-  { question: "Is non-invasive prenatal paternity testing safe?", answer: "Yes. Non-invasive prenatal paternity testing uses only a blood draw from the mother and a cheek swab from the alleged father. There is no risk to the pregnancy; no needles or procedures touch the baby. Our prenatal DNA testing in Denver is performed through AABB-accredited laboratories with the same safety standards used nationwide." },
-  { question: "How accurate is a prenatal paternity test?", answer: "A prenatal paternity test is highly accurate. Non-invasive prenatal paternity testing typically reports 99% or higher probability when the alleged father is included, and 100% exclusion when he is not the biological father. The DNA testing is performed by AABB-accredited laboratories to ensure scientific accuracy." },
-  { question: "How long does a prenatal paternity test take?", answer: "Prenatal paternity test results are typically available in 7–10 business days after the laboratory receives the DNA samples. The DNA testing results timeline may be shorter with expedited options; ask when you schedule your prenatal paternity testing in Denver." },
-  { question: "How early can prenatal paternity testing be done?", answer: "Non-invasive prenatal paternity testing can be performed as early as 7 weeks into pregnancy. This early window allows families in Denver and Colorado to get answers sooner in the prenatal DNA testing process." },
-  { question: "Is prenatal paternity testing confidential?", answer: "Yes. All prenatal paternity testing is confidential. Your DNA testing results and personal information are protected and only shared with parties you authorize. We maintain strict confidentiality for every prenatal paternity test." },
-  { question: "Can a prenatal paternity test be used in court?", answer: "Yes. If you select the legal (court-admissible) prenatal paternity test option, results include notarized documentation and verified chain of custody from our AABB-accredited laboratory and can be used in court proceedings. The DNA testing process meets the same legal standards as postnatal legal paternity tests." },
-  { question: "Can multiple alleged fathers be tested in prenatal paternity testing?", answer: "Yes. Multiple alleged fathers can be tested with prenatal paternity testing. Ask about this option when scheduling your prenatal DNA test at our Denver location so we can coordinate the DNA testing process accordingly." },
-  { question: "What if the alleged father is not available for prenatal testing?", answer: "We can coordinate separate-location testing so the mother and alleged father can provide samples in different cities or states. We also offer single-profile DNA testing to establish one person's profile for future comparison. Prenatal paternity testing in Colorado and nationwide can be arranged around your situation." },
-  { question: "Can prenatal paternity testing be done with twins?", answer: "Yes. Prenatal paternity testing can be performed in twin pregnancies. The DNA testing process and laboratory analysis support twin cases; discuss your situation with us when booking your prenatal paternity test so we can confirm the lab's requirements and timeline." }
+  {
+    question: "Is non-invasive prenatal paternity testing safe?",
+    answerSchema:
+      "Non-invasive prenatal paternity testing requires only a maternal blood draw and a cheek swab from the alleged father. The pregnancy is not disturbed during testing. Our prenatal paternity test is endorsed by the American Pregnancy Association and processed by an AABB-accredited laboratory in the United States.",
+    answer: (
+      <>
+        <p>
+          Non-invasive prenatal paternity testing requires only a maternal blood draw and a cheek swab from the alleged father. The pregnancy is not disturbed during testing.
+        </p>
+        <p>
+          Our prenatal paternity test is endorsed by the American Pregnancy Association and processed by an AABB-accredited laboratory in the United States.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "How accurate is your prenatal paternity test?",
+    answerSchema:
+      "Non-invasive prenatal paternity testing is 99.9% accurate. Testing is conducted by the only AABB-accredited laboratory performing non-invasive prenatal paternity analysis in the United States. This accreditation confirms adherence to strict scientific validation standards. When collected under legal chain-of-custody procedures, prenatal results meet court admissibility requirements.",
+    answer: (
+      <>
+        <p>Non-invasive prenatal paternity testing is 99.9% accurate.</p>
+        <p>
+          Testing is conducted by the only AABB-accredited laboratory performing non-invasive prenatal paternity analysis in the United States. This accreditation confirms adherence to strict scientific validation standards.
+        </p>
+        <p>When collected under legal chain-of-custody procedures, prenatal results meet court admissibility requirements.</p>
+      </>
+    ),
+  },
+  {
+    question: "How long does prenatal testing take?",
+    answerSchema:
+      "Standard laboratory processing time: 7–10 business days after laboratory receipt. Expedited eligible cases: As soon as 3 business days after laboratory receipt, based on laboratory processing criteria. Total turnaround depends on shipping time and when all required samples are received.",
+    answer: (
+      <>
+        <p>
+          <strong>Standard laboratory processing time:</strong> 7–10 business days after laboratory receipt.
+        </p>
+        <p>
+          <strong>Expedited eligible cases:</strong> As soon as 3 business days after laboratory receipt, based on laboratory processing criteria.
+        </p>
+        <p>Total turnaround depends on shipping time and when all required samples are received.</p>
+      </>
+    ),
+  },
+  {
+    question: "How early can prenatal paternity testing be performed?",
+    answerSchema:
+      "Non-invasive prenatal paternity testing can be performed as early as 7 weeks of pregnancy. Scheduling is confirmed after reviewing gestational timing.",
+    answer: (
+      <>
+        <p>
+          Non-invasive prenatal paternity testing can be performed as early as 7 weeks of pregnancy.
+        </p>
+        <p>Scheduling is confirmed after reviewing gestational timing.</p>
+      </>
+    ),
+  },
+  {
+    question: "Is prenatal testing confidential?",
+    answerSchema:
+      "Yes. Prenatal cases are handled under strict confidentiality protocols. Results are released only to authorized individuals. Collection logistics can also be coordinated to protect privacy when necessary.",
+    answer: (
+      <>
+        <p>
+          Yes. Prenatal cases are handled under strict confidentiality protocols. Results are released only to authorized individuals.
+        </p>
+        <p>Collection logistics can also be coordinated to protect privacy when necessary.</p>
+      </>
+    ),
+  },
+  {
+    question: "Can prenatal paternity results be used in court?",
+    answerSchema:
+      "Yes. When collected under legal chain-of-custody procedures, prenatal results meet court standards.",
+    answer: (
+      <p>
+        Yes. When collected under legal chain-of-custody procedures, prenatal results meet court standards.
+      </p>
+    ),
+  },
+  {
+    question: "Can multiple alleged fathers be tested?",
+    answerSchema:
+      "Yes. Multiple alleged fathers can be included in the same prenatal paternity test. Including more than one potential father in a single case is often more cost-effective than conducting separate individual tests. The laboratory analyzes each alleged father against the same fetal DNA sample within one coordinated process. Separate collection times can be arranged to ensure participants do not encounter one another.",
+    answer: (
+      <>
+        <p>Yes. Multiple alleged fathers can be included in the same prenatal paternity test.</p>
+        <p>
+          Including more than one potential father in a single case is often more cost-effective than conducting separate individual tests. The laboratory analyzes each alleged father against the same fetal DNA sample within one coordinated process.
+        </p>
+        <p>
+          Separate collection times can be arranged to ensure participants do not encounter one another.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "What if the alleged father is not available for testing?",
+    answerSchema:
+      "If the alleged father is not available for direct collection, an alternative sample such as a well-used toothbrush may be submitted for analysis. The true viability of an alternative sample is determined only after laboratory analysis.",
+    answer: (
+      <>
+        <p>
+          If the alleged father is not available for direct collection, an alternative sample such as a well-used toothbrush may be submitted for analysis.
+        </p>
+        <p>The true viability of an alternative sample is determined only after laboratory analysis.</p>
+      </>
+    ),
+  },
+  {
+    question: "Can prenatal paternity testing be performed in a twin pregnancy?",
+    answerSchema:
+      "Yes. Prenatal paternity testing can be performed in twin pregnancies. Testing methodology varies depending on whether the twins are identical or fraternal. Case details are reviewed prior to scheduling to determine the appropriate approach. All prenatal testing is performed by an AABB-accredited laboratory in accordance with established DNA testing standards.",
+    answer: (
+      <>
+        <p>Yes. Prenatal paternity testing can be performed in twin pregnancies.</p>
+        <p>
+          Testing methodology varies depending on whether the twins are identical or fraternal. Case details are reviewed prior to scheduling to determine the appropriate approach.
+        </p>
+        <p>
+          All prenatal testing is performed by an AABB-accredited laboratory in accordance with established DNA testing standards.
+        </p>
+      </>
+    ),
+  },
 ];
 
 const PrenatalPaternityTesting = () => {
@@ -160,7 +275,10 @@ const PrenatalPaternityTesting = () => {
             "mainEntity": PRENATAL_PATERNITY_FAQS.map((faq) => ({
               "@type": "Question",
               "name": faq.question,
-              "acceptedAnswer": { "@type": "Answer", "text": faq.answer }
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": faq.answerSchema ?? (typeof faq.answer === "string" ? faq.answer : "")
+              }
             }))
           })}
         </script>
@@ -210,7 +328,16 @@ const PrenatalPaternityTesting = () => {
       <PrenatalWhoNeedsTest />
       <PrenatalSteps />
       <PrenatalWhyChooseUs />
-      <FAQSection faqs={PRENATAL_PATERNITY_FAQS} />
+      <FAQSection
+        title={
+          <>
+            99.9% Accurate Prenatal DNA Testing
+            <br />
+            Frequently Asked Questions
+          </>
+        }
+        faqs={PRENATAL_PATERNITY_FAQS}
+      />
 
       {/* TESTIMONIALS */}
       <section className="section-padding section-bg-alt">

@@ -43,6 +43,52 @@ const TwinZygosityTesting = () => {
         </div>
       </section>
 
+      {/* Pricing */}
+      <section id="pricing-info" className="bg-gray-50 py-16 border-b border-gray-200">
+        <div className="container mx-auto px-6 text-center max-w-4xl">
+          <h3 className="text-3xl font-bold text-gray-800 mb-8">Choose Your Testing Option</h3>
+
+          <div className="grid md:grid-cols-2 gap-8 mb-8">
+            <div className="bg-white p-6 rounded-xl shadow-lg">
+              <h4 className="text-2xl font-bold text-gray-800 mb-2">Non-Legal (Peace of Mind)</h4>
+              <p className="text-3xl font-bold text-blue-600 mb-2">$250+</p>
+              <p className="text-sm text-gray-500 mb-4">Twin zygosity for personal or family knowledge.</p>
+              <p className="text-gray-600 mb-4">Results are not court-admissible. Cheek swabs from both twins.</p>
+              <Link
+                to="/appointments"
+                className="bg-blue-600 text-white px-6 py-3 rounded-xl shadow-lg hover:bg-blue-700 transition font-semibold text-lg inline-block w-full"
+              >
+                Schedule Appointment
+              </Link>
+            </div>
+
+            <div className="bg-white p-6 rounded-xl shadow-lg">
+              <h4 className="text-2xl font-bold text-gray-800 mb-2">Legal (Court-Admissible)</h4>
+              <p className="text-3xl font-bold text-green-600 mb-2">$374+</p>
+              <p className="text-sm text-gray-500 mb-4">Chain of custody when results may be used officially.</p>
+              <p className="text-gray-600 mb-4">AABB-accredited laboratory processing when required.</p>
+              <Link
+                to="/appointments"
+                className="bg-green-600 text-white px-6 py-3 rounded-xl shadow-lg hover:bg-green-700 transition font-semibold text-lg inline-block w-full"
+              >
+                Schedule Appointment
+              </Link>
+            </div>
+          </div>
+
+          <p className="text-gray-600 text-sm mb-6">
+            Standard twin zygosity package: <strong>$369</strong>. Additional participants for postnatal tests: often <strong>$150 per person</strong>. Final price depends on lab package and documentation needs.
+          </p>
+
+          <p className="text-gray-700 mb-6 text-lg">
+            Need a different relationship test? See{" "}
+            <Link to="/services/siblingship-testing" className="text-blue-600 underline">siblingship testing</Link>{" "}
+            or{" "}
+            <Link to="/services/legal-paternity-testing" className="text-blue-600 underline">legal paternity testing</Link>.
+          </p>
+        </div>
+      </section>
+
       {/* How the Test Works */}
       <section className="py-12 md:py-16 px-6 bg-white">
         <div className="max-w-4xl mx-auto">
@@ -62,15 +108,6 @@ const TwinZygosityTesting = () => {
           <h2 className="text-3xl font-bold text-gray-800 mb-6">When This Test Is Used</h2>
           <p className="text-gray-700 mb-4">
             Twin zygosity testing is used for <strong>personal knowledge</strong>, medical or genetic counseling purposes, and family clarity. It can be performed as a legal (court-admissible) or non-legal (peace of mind) test depending on your needs. Legal testing follows chain-of-custody procedures when results may be used for official purposes.
-          </p>
-        </div>
-      </section>
-
-      {/* Pricing / Lab info */}
-      <section className="py-12 md:py-16 px-6 bg-white">
-        <div className="max-w-4xl mx-auto">
-          <p className="text-gray-700">
-            Pricing depends on whether you need legal or non-legal results. Contact us for a quote. Testing is performed through AABB-accredited laboratories when court-admissible results are required.
           </p>
         </div>
       </section>

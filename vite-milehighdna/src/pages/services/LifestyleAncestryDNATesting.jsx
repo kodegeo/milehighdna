@@ -72,6 +72,49 @@ const LifestyleAncestryDNATesting = () => {
         </div>
       </section>
 
+      {/* Pricing */}
+      <section id="pricing-info" className="bg-gray-50 py-16 border-b border-gray-200">
+        <div className="container mx-auto px-6 text-center max-w-4xl">
+          <h3 className="text-3xl font-bold text-gray-800 mb-8">Choose Your Testing Option</h3>
+
+          <div className="grid md:grid-cols-2 gap-8 mb-8">
+            <div className="bg-white p-6 rounded-xl shadow-lg">
+              <h4 className="text-2xl font-bold text-gray-800 mb-2">Healthy Weight DNA Test</h4>
+              <p className="text-3xl font-bold text-blue-600 mb-2">$149</p>
+              <p className="text-sm text-gray-500 mb-4">Nutrition, metabolism &amp; fitness insights.</p>
+              <p className="text-gray-600 mb-4">Personal wellness only—not for legal or medical diagnosis.</p>
+              <Link
+                to="/services/healthy-weight-dna-test"
+                className="bg-blue-600 text-white px-6 py-3 rounded-xl shadow-lg hover:bg-blue-700 transition font-semibold text-lg inline-block w-full"
+              >
+                View Healthy Weight Test
+              </Link>
+            </div>
+
+            <div className="bg-white p-6 rounded-xl shadow-lg">
+              <h4 className="text-2xl font-bold text-gray-800 mb-2">GPS Origins DNA Test</h4>
+              <p className="text-3xl font-bold text-green-600 mb-2">$169</p>
+              <p className="text-sm text-gray-500 mb-4">Ancestral roots &amp; migration patterns.</p>
+              <p className="text-gray-600 mb-4">Geographic detail for personal ancestry and genealogy.</p>
+              <Link
+                to="/services/gps-origins-dna-test"
+                className="bg-green-600 text-white px-6 py-3 rounded-xl shadow-lg hover:bg-green-700 transition font-semibold text-lg inline-block w-full"
+              >
+                View GPS Origins Test
+              </Link>
+            </div>
+          </div>
+
+          <p className="text-gray-600 text-sm mb-6">
+            Contact us for other panels or bundled options.
+          </p>
+
+          <p className="text-gray-700 mb-6 text-lg">
+            All lifestyle and ancestry tests are for personal knowledge only—not for court use.
+          </p>
+        </div>
+      </section>
+
       {/* What Is / When needed */}
       <section className="py-12 md:py-16 px-6 bg-white">
         <div className="max-w-4xl mx-auto">
@@ -101,13 +144,6 @@ const LifestyleAncestryDNATesting = () => {
               ))}
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* Pricing note */}
-      <section className="py-12 md:py-16 px-6 bg-white">
-        <div className="max-w-4xl mx-auto">
-          <p className="text-gray-700">Pricing varies by test type and panel. Contact us for options and current pricing.</p>
         </div>
       </section>
 

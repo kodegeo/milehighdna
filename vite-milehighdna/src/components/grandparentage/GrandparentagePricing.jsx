@@ -10,11 +10,10 @@ const GrandparentagePricing = () => {
           </p>
   
           <div className="grid gap-6 md:grid-cols-2">
-            {/* Single Grandparent */}
             <div className="bg-white rounded-xl shadow-md border-l-4 border-blue-600 p-6">
-              <h3 className="text-xl font-bold text-gray-800 mb-2">Non Legal Single Grandparent + Child</h3>
-              <p className="text-gray-600 mb-4">Includes a Non Legal DNA test for one grandparent and one child. Ideal for peace of mind.</p>
-              <p className="text-2xl font-bold text-blue-700 mb-4">$349 and up</p>
+              <h3 className="text-xl font-bold text-gray-800 mb-2">Non-Legal (1 Grandparent + Child)</h3>
+              <p className="text-gray-600 mb-4">Peace of mind testing with one grandparent and one child.</p>
+              <p className="text-2xl font-bold text-blue-700 mb-4">$349+</p>
               <ul className="text-left text-gray-700 space-y-2 mb-4">
                 <li>✔ AABB Lab Analysis</li>
                 <li>✔ Sample Collection</li>
@@ -28,12 +27,47 @@ const GrandparentagePricing = () => {
                 Book This Test
               </a>
             </div>
-  
-            {/* Both Grandparents */}
+
             <div className="bg-white rounded-xl shadow-md border-l-4 border-blue-600 p-6">
-              <h3 className="text-xl font-bold text-gray-800 mb-2">Legal Single Grandparent + Child</h3>
-              <p className="text-gray-600 mb-4">Includes a Legal DNA test for one grandparent and one child. Recommended for cases where court verification is required.</p>
-              <p className="text-2xl font-bold text-blue-700 mb-4">$479 and up</p>
+              <h3 className="text-xl font-bold text-gray-800 mb-2">Non-Legal (2 Grandparents + Child)</h3>
+              <p className="text-gray-600 mb-4">Peace of mind testing with both grandparents and one child.</p>
+              <p className="text-2xl font-bold text-blue-700 mb-4">$449+</p>
+              <ul className="text-left text-gray-700 space-y-2 mb-4">
+                <li>✔ AABB Lab Analysis</li>
+                <li>✔ Sample Collection</li>
+                <li>✔ Peace of Mind</li>
+                <li>✔ 7–10 Business Day Turnaround</li>
+              </ul>
+              <a
+                href="https://calendly.com/milehighdnatesting/grandparentage-dna-test"
+                className="inline-block bg-blue-600 text-white px-5 py-3 rounded-lg shadow hover:bg-blue-700 transition"
+              >
+                Book This Test
+              </a>
+            </div>
+
+            <div className="bg-white rounded-xl shadow-md border-l-4 border-blue-600 p-6">
+              <h3 className="text-xl font-bold text-gray-800 mb-2">Legal (1 Grandparent + Child)</h3>
+              <p className="text-gray-600 mb-4">Court-admissible testing with one grandparent and one child.</p>
+              <p className="text-2xl font-bold text-blue-700 mb-4">$479+</p>
+              <ul className="text-left text-gray-700 space-y-2 mb-4">
+                <li>✔ AABB Lab Analysis</li>
+                <li>✔ Sample Collection for All Participants</li>
+                <li>✔ Legal Documentation</li>
+                <li>✔ 7–10 Business Day Turnaround</li>
+              </ul>
+              <a
+                href="https://calendly.com/milehighdnatesting/grandparentage-dna-test"
+                className="inline-block bg-blue-600 text-white px-5 py-3 rounded-lg shadow hover:bg-blue-700 transition"
+              >
+                Book This Test
+              </a>
+            </div>
+
+            <div className="bg-white rounded-xl shadow-md border-l-4 border-blue-600 p-6">
+              <h3 className="text-xl font-bold text-gray-800 mb-2">Legal (2 Grandparents + Child)</h3>
+              <p className="text-gray-600 mb-4">Court-admissible testing with both grandparents and one child.</p>
+              <p className="text-2xl font-bold text-blue-700 mb-4">$549+</p>
               <ul className="text-left text-gray-700 space-y-2 mb-4">
                 <li>✔ AABB Lab Analysis</li>
                 <li>✔ Sample Collection for All Participants</li>

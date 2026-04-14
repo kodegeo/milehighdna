@@ -10,6 +10,7 @@ const SERVICES_MENU = [
       { label: 'Legal Paternity', to: '/services/legal-paternity-testing' },
       { label: 'Non-Legal Paternity', to: '/services/non-legal-paternity-testing' },
       { label: 'Postmortem Paternity', to: '/services/postmortem-paternity-testing' },
+      { label: 'At-Home DNA Kit', to: '/services/at-home-dna-kits' },
     ],
   },
   { label: 'Non-Invasive Prenatal', to: '/services/prenatal-paternity-testing' },
@@ -320,6 +321,7 @@ const Navigation = () => {
                   <Link to="/services/legal-paternity-testing" className="block py-1" onClick={() => setIsMenuOpen(false)}>Legal Paternity</Link>
                   <Link to="/services/non-legal-paternity-testing" className="block py-1" onClick={() => setIsMenuOpen(false)}>Non-Legal Paternity</Link>
                   <Link to="/services/postmortem-paternity-testing" className="block py-1" onClick={() => setIsMenuOpen(false)}>Postmortem Paternity</Link>
+                  <Link to="/services/at-home-dna-kits" className="block py-1" onClick={() => setIsMenuOpen(false)}>At-Home DNA Kit</Link>
                 </div>
 
                 <div>

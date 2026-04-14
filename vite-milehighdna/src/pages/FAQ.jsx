@@ -15,12 +15,12 @@ const FAQ = () => {
           <title>DNA Testing FAQs | Mile High DNA – Paternity, Immigration & Legal Tests</title>
           <meta 
             name="description" 
-            content="Answers to the most common DNA testing questions. Learn about paternity testing, immigration cases, legal DNA requirements, and AABB accreditation." 
+            content="General DNA testing FAQ: AABB-accredited labs, legal vs. non-legal testing, timelines, confidentiality, alternative samples, mobile collection, nationwide and international testing, and our Denver office." 
           />
 
           {/* Open Graph */}
-          <meta property="og:title" content="Frequently Asked Questions About DNA Testing" />
-          <meta property="og:description" content="Got questions about DNA tests? We cover paternity, immigration, legal testing, costs, timelines, and more. Trusted answers for families across Colorado." />
+          <meta property="og:title" content="General DNA Testing FAQ | Mile High DNA Testing" />
+          <meta property="og:description" content="Accredited, professional, confidential answers on laboratory standards, court-admissible testing, processing times, privacy, and what makes Mile High DNA Testing different." />
           <meta property="og:image" content="https://milehighdnatesting.com/images/banner-1200.png" />
           <meta property="og:url" content="https://milehighdnatesting.com/faq" />
           <meta property="og:type" content="article" />
@@ -32,8 +32,7 @@ const FAQ = () => {
             Frequently Asked Questions
           </h1>
           <p className="text-lg text-gray-700">
-          Have questions about paternity, immigration, or legal DNA testing? From how long tests take to what makes a DNA test court-admissible, we’ve answered the most common questions families in Denver, Aurora, and Lakewood ask.
-          We've got answers.
+            Mile High DNA Testing is accredited, professional, and confidential. Below you’ll find clear answers on laboratory standards, legal vs. non-legal testing, timelines, alternative samples, nationwide and international coordination, and what sets us apart from mass-market kits.
           </p>
           <HowToUse />
         </div>
@@ -50,17 +49,17 @@ const FAQ = () => {
             <a href="#legal-dna-testing" className="text-blue-600 font-medium hover:text-blue-700 hover:underline">
               Legal DNA Testing
             </a>
-            <a href="#immigration-dna-testing" className="text-blue-600 font-medium hover:text-blue-700 hover:underline">
-              Immigration DNA Testing
-            </a>
-            <a href="#dna-costs" className="text-blue-600 font-medium hover:text-blue-700 hover:underline">
-              DNA Testing Costs
+            <a href="#privacy-samples" className="text-blue-600 font-medium hover:text-blue-700 hover:underline">
+              Confidentiality &amp; Samples
             </a>
             <a href="#appointments" className="text-blue-600 font-medium hover:text-blue-700 hover:underline">
-              Appointments and Process
+              Mobile &amp; Scheduling
             </a>
-            <a href="#dna-accuracy" className="text-blue-600 font-medium hover:text-blue-700 hover:underline">
-              Accuracy and Science
+            <a href="#services" className="text-blue-600 font-medium hover:text-blue-700 hover:underline">
+              Services &amp; Office
+            </a>
+            <a href="#why-mile-high" className="text-blue-600 font-medium hover:text-blue-700 hover:underline">
+              Why Mile High DNA
             </a>
           </nav>
         </div>

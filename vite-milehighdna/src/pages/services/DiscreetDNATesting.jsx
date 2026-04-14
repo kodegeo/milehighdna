@@ -7,14 +7,67 @@ import CallToAction from '../../components/common/CallToAction';
 import FAQSection from '../../components/FAQSection';
 
 const DISCREET_DNA_FAQS = [
-  { question: "Is discreet DNA testing confidential?", answer: "Yes. Discreet DNA testing in Denver is designed for maximum confidentiality. We use unbranded packaging, secure data handling, and private communication throughout the DNA testing process. Your paternity test or relationship test results and personal information are never shared without your authorization. Our AABB-accredited laboratory partners follow the same privacy standards for discreet DNA testing." },
-  { question: "What is the most reliable alternative sample for discreet DNA testing?", answer: "Cheek (buccal) swabs are the most reliable and preferred sample type for DNA testing. When the alleged father cannot provide a swab, other samples (e.g., used toothbrush, hair with roots) may be possible for peace-of-mind paternity testing; discuss options with our Denver office. The DNA testing process works best with swabs when they can be obtained." },
-  { question: "How should alternative samples be stored for DNA testing?", answer: "Place items in a clean, dry paper envelope or bag. Do not use plastic for items that may be damp. Label with the donor's name and date collected, and send or bring to the laboratory as soon as possible so the DNA testing process can begin. Proper storage helps the AABB-accredited lab recover sufficient DNA for analysis." },
-  { question: "How long does discreet DNA testing take?", answer: "Discreet DNA testing results are typically available in 2–3 business days after the AABB-accredited laboratory receives samples. The DNA testing results timeline may vary with alternative samples or if recollection is needed. Ask about expedited options when you order your discreet paternity test or relationship test." },
-  { question: "Can discreet DNA test samples be expedited?", answer: "Expedited processing for discreet DNA testing may be available for an additional fee. Ask about rush options when you order or schedule your paternity test or relationship test at our Denver location. The DNA testing process can sometimes be accelerated for time-sensitive situations." },
-  { question: "What happens if sufficient DNA is not recovered from a discreet sample?", answer: "If the laboratory cannot obtain enough DNA from an alternative sample, we will notify you and can send a cheek swab kit or arrange in-person collection at no extra charge in most cases. The DNA testing process requires sufficient DNA for accurate paternity test or relationship test results." },
-  { question: "Can discreet DNA test results be used in court?", answer: "Discreet DNA testing is typically for peace of mind only and is not court-admissible. For court-admissible results, you need a legal paternity test with verified ID and chain of custody from an AABB-accredited laboratory. We can arrange discreet handling for legal DNA testing in Denver when privacy is still a priority." },
-  { question: "Are cheek swabs more reliable than alternative samples for DNA testing?", answer: "Yes. Cheek swabs are the standard and most reliable sample for DNA testing. Alternative samples (e.g., toothbrush, hair) can work for peace-of-mind paternity testing but may have a higher chance of insufficient DNA; we recommend swabs when possible. Our Denver office can guide you through the DNA testing process for either option." }
+  {
+    question: "1. Is discreet DNA testing confidential?",
+    answerSchema:
+      "Yes. Discreet cases are handled under strict confidentiality protocols. Results are released only to authorized individuals.",
+    answer:
+      "Yes. Discreet cases are handled under strict confidentiality protocols. Results are released only to authorized individuals.",
+  },
+  {
+    question: "2. What is the most reliable alternative sample?",
+    answerSchema:
+      "A well-used toothbrush stored dry at room temperature is often the most reliable alternative sample when direct cheek swabs are not available.",
+    answer:
+      "A well-used toothbrush stored dry at room temperature is often the most reliable alternative sample when direct cheek swabs are not available.",
+  },
+  {
+    question: "3. How should alternative samples be stored?",
+    answerSchema:
+      "Alternative samples should be kept dry and placed in a paper envelope. Avoid moisture and plastic storage.",
+    answer:
+      "Alternative samples should be kept dry and placed in a paper envelope. Avoid moisture and plastic storage.",
+  },
+  {
+    question: "4. How long does discreet testing take?",
+    answerSchema:
+      "Standard laboratory processing time: 7–10 business days after laboratory receipt.",
+    answer:
+      "Standard laboratory processing time: 7–10 business days after laboratory receipt.",
+  },
+  {
+    question: "5. Can discreet samples be expedited?",
+    answerSchema:
+      "Discreet or alternative samples are not typically eligible for expedited processing due to additional laboratory analysis requirements.",
+    answer:
+      "Discreet or alternative samples are not typically eligible for expedited processing due to additional laboratory analysis requirements.",
+  },
+  {
+    question: "6. What happens if sufficient DNA is recovered?",
+    answerSchema:
+      "When sufficient DNA is recovered, paternity comparison provides a 99.999% probability of paternity when the alleged father is included. If insufficient DNA is recovered, additional samples would require a new test.",
+    answer: (
+      <>
+        <p>
+          When sufficient DNA is recovered, paternity comparison provides a{" "}
+          <strong>99.999%</strong> probability of paternity when the alleged father is included.
+        </p>
+        <p>If insufficient DNA is recovered, additional samples would require a new test.</p>
+      </>
+    ),
+  },
+  {
+    question: "7. Can discreet results be used in court?",
+    answerSchema: "No. Discreet DNA testing is non-legal and for informational purposes only.",
+    answer: "No. Discreet DNA testing is non-legal and for informational purposes only.",
+  },
+  {
+    question: "8. Are cheek swabs more reliable?",
+    answerSchema:
+      "Yes. Direct buccal cheek swabs remain the most reliable and preferred method whenever possible.",
+    answer:
+      "Yes. Direct buccal cheek swabs remain the most reliable and preferred method whenever possible.",
+  },
 ];
 
 const DiscreetDNATesting = () => {
@@ -125,7 +178,7 @@ const DiscreetDNATesting = () => {
             "mainEntity": DISCREET_DNA_FAQS.map((faq) => ({
               "@type": "Question",
               "name": faq.question,
-              "acceptedAnswer": { "@type": "Answer", "text": faq.answer }
+              "acceptedAnswer": { "@type": "Answer", "text": faq.answerSchema }
             }))
           })}
         </script>
@@ -215,6 +268,9 @@ const DiscreetDNATesting = () => {
             Both options provide the same AABB-accredited accuracy and complete privacy protection. 
             Choose the option that best fits your needs for maximum discretion.
           </p>
+          <p className="text-gray-600 text-sm max-w-2xl mx-auto">
+            Discreet testing with <strong>unusual or alternative samples</strong> (non-standard items) typically starts at <strong>$280+</strong> depending on the sample type and lab processing required.
+          </p>
         </div>
       </section>
 
@@ -285,7 +341,18 @@ const DiscreetDNATesting = () => {
         </div>
       </section>
 
-      <FAQSection faqs={DISCREET_DNA_FAQS} className="bg-gray-50" />
+      <FAQSection
+        title={
+          <>
+            Alternative Sample DNA Testing
+            <br />
+            <br />
+            Frequently Asked Questions
+          </>
+        }
+        faqs={DISCREET_DNA_FAQS}
+        className="bg-gray-50"
+      />
 
       <ServingColorado />
       <CallToAction />
