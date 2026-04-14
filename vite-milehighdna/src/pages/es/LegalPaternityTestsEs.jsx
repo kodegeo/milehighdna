@@ -193,7 +193,7 @@ const LegalPaternityTestsEs = () => {
           {
             title: "Obtenga Sus Resultados",
             description:
-              "Reciba sus resultados admisibles en la corte dentro de 2-5 días hábiles."
+              "Reciba sus resultados admisibles en la corte dentro de 3-5 días hábiles."
           }
         ]}
       />
