@@ -1,10 +1,10 @@
 /**
  * Approved compliance language — Mile High DNA Testing is not AABB accredited;
- * partner laboratories maintain AABB accreditation where applicable.
+ * partner laboratories maintain AABB accreditation.
  */
 
 export const MH_NOT_AABB_LONG =
-  "Mile High DNA Testing is an independent specimen collection company. We are not AABB accredited. Legal and immigration DNA testing are performed by partner laboratories which maintain AABB accreditation where applicable.";
+  "Mile High DNA Testing is an independent DNA collection company. We are not AABB accredited. Legal and immigration DNA testing are performed by partner laboratories which maintain AABB accreditation where applicable.";
 
 export const MH_LEGAL_IMMIGRATION_SHORT =
   "We partner with AABB-accredited laboratories for legal and immigration DNA testing.";

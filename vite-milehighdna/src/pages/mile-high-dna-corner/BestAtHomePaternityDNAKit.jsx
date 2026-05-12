@@ -179,7 +179,7 @@ export default function BestAtHomePaternityDNAKit() {
         {/* Article Content */}
         <div className="w-full px-4 md:px-0 py-8 bg-white/90 rounded-xl shadow-lg">
           <p className="text-sm text-gray-700 bg-amber-50 border border-amber-200 rounded-lg p-4 mb-8 leading-relaxed">
-            {AABB_HOME_KIT_DISCLAIMER} Mile High DNA Testing is not AABB accredited; we coordinate specimen collection and case management, and partner laboratories perform analysis.
+            {AABB_HOME_KIT_DISCLAIMER} Mile High DNA Testing provides professional DNA testing services, including sample collection, case management, and results coordination. Laboratory analysis is performed by accredited laboratories where applicable.
           </p>
           <h2 className="text-2xl font-bold mt-10 mb-4 text-gray-800">
             When Accuracy, Privacy, and Support Matter Most
@@ -298,7 +298,7 @@ export default function BestAtHomePaternityDNAKit() {
             Why Laboratory Quality and Upgrades Matter
           </h2>
           <p className="text-base mb-6 text-justify">
-            {AABB_HOME_KIT_DISCLAIMER} For legal and immigration cases, we partner with AABB-accredited laboratories where applicable. Upgrades such as express shipping and expedited testing help
+            {AABB_HOME_KIT_DISCLAIMER} For legal and immigration cases, we partner with AABB-accredited laboratories. Upgrades such as express shipping and expedited testing help
             you receive your results faster, while video call support provides
             supervised guidance from a certified DNA collector.
           </p>

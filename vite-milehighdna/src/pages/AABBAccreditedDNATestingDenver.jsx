@@ -20,7 +20,7 @@ const FAQ_SCHEMA = {
       "name": "Do courts require AABB-accredited partner laboratory testing?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Most courts require legal paternity testing to be performed by an AABB-accredited partner laboratory using documented chain-of-custody procedures for court-admissible DNA results. Mile High DNA Testing is a collection company and coordinates testing with partner laboratories that maintain AABB accreditation where applicable."
+        "text": "Most courts require legal paternity testing to be performed by an AABB-accredited partner laboratory using documented chain-of-custody procedures for court-admissible DNA results. Mile High DNA Testing is a collection company and coordinates testing with partner laboratories that maintain AABB accreditation."
       }
     },
     {
@@ -63,7 +63,7 @@ const AABBAccreditedDNATestingDenver = () => {
     {
       question: "Do courts require AABB-accredited partner laboratory testing?",
       answer:
-        "Most courts require legal paternity testing to be performed by an AABB-accredited partner laboratory using documented chain-of-custody procedures for court-admissible DNA results. Mile High DNA Testing coordinates collection and chain-of-custody with partner laboratories that maintain AABB accreditation where applicable."
+        "Most courts require legal paternity testing to be performed by an AABB-accredited partner laboratory using documented chain-of-custody procedures for court-admissible DNA results. Mile High DNA Testing coordinates collection and chain-of-custody with partner laboratories that maintain AABB accreditation."
     },
     {
       question: "Does USCIS require AABB-accredited partner laboratories?",
@@ -90,7 +90,7 @@ const AABBAccreditedDNATestingDenver = () => {
         <meta property="og:title" content="Legal & Immigration DNA Testing in Denver | Partner Laboratories | Mile High DNA" />
         <meta
           property="og:description"
-          content="Independent specimen collection in Denver. Legal and immigration testing is performed by AABB-accredited partner laboratories where applicable."
+          content="Independent DNA testing company in Denver. Legal and immigration testing is performed by AABB-accredited partner laboratories."
         />
         <meta property="og:url" content="https://milehighdnatesting.com/aabb-accredited-dna-testing-denver" />
         <meta property="og:type" content="website" />
@@ -116,7 +116,7 @@ const AABBAccreditedDNATestingDenver = () => {
           <p className="text-white leading-relaxed mb-4">{MH_NOT_AABB_LONG}</p>
           <p className="text-white leading-relaxed mb-4">{MH_LEGAL_IMMIGRATION_SHORT}</p>
           <p className="text-white leading-relaxed">
-            Mile High DNA Testing coordinates professional collection and case management in Denver; partner laboratories perform analysis and maintain AABB accreditation where applicable for legal and immigration testing.
+            Mile High DNA Testing coordinates professional collection and case management in Denver; partner laboratories perform analysis and maintain AABB accreditation for legal and immigration testing.
           </p>
         </div>
       </section>

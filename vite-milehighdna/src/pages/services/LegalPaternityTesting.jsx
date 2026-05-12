@@ -142,7 +142,7 @@ const LegalPaternityTesting = () => {
 
         <meta
           name="description"
-          content="Court-admissible legal paternity DNA testing in Denver. Chain of custody; analysis by AABB-accredited partner laboratories where applicable. Results in 3–5 days. Call (720) 900-9342 for same-day availability."
+          content="Court-admissible legal paternity DNA testing in Denver. Chain of custody; analysis by AABB-accredited partner laboratories. Results in 3–5 days. Call (720) 900-9342 for same-day availability."
         />
 
         <link
@@ -177,7 +177,7 @@ const LegalPaternityTesting = () => {
         />
         <meta
           name="twitter:description"
-          content="Fast, confidential legal paternity DNA testing accepted by courts and agencies. Coordinated with AABB-accredited partner laboratories where applicable."
+          content="Fast, confidential legal paternity DNA testing accepted by courts and agencies. Coordinated with AABB-accredited partner laboratories."
         />
         <meta
           name="twitter:image"
@@ -283,7 +283,7 @@ const LegalPaternityTesting = () => {
       <section className="bg-white py-2 px-6 text-center">
         <div className="max-w-4xl mx-auto space-y-3">
           <p className="text-sm text-gray-600 leading-relaxed">
-            Mile High DNA Testing is an independent specimen collection company and is not AABB accredited. {MH_LEGAL_IMMIGRATION_SHORT}
+          Mile High DNA Testing provides professional DNA testing services, including sample collection, case management, and results coordination. Laboratory analysis is performed by AABB accredited laboratories. {MH_LEGAL_IMMIGRATION_SHORT}
           </p>
           <p className="text-gray-700">
             Our testing meets <Link to="/aabb-accredited-dna-testing-denver" className="text-blue-600 hover:underline">AABB laboratory standards for partner facilities</Link>.
@@ -330,7 +330,7 @@ const LegalPaternityTesting = () => {
               ✅ Fast Turnaround (3–5 Business Days)
             </div>
             <div className="bg-white rounded-lg shadow p-4">
-              ✅ Partner laboratories (AABB where applicable) with chain of custody
+              ✅ AABB Partner laboratories with chain of custody
             </div>
             <div className="bg-white rounded-lg shadow p-4">
               ✅ Confidential & Professional Service
