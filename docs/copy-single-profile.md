@@ -15,7 +15,7 @@ A Single Profile DNA Test allows you to professionally document and preserve one
 
 ✔ Certified in-office DNA collection
 
-✔ AABB-accredited laboratory analysis
+✔ Partner laboratory analysis (AABB where applicable for legal testing)
 
 ✔ 3–5 business day turnaround
 
@@ -81,7 +81,7 @@ $250
 
 
 
-Professionally collected in our Denver office and analyzed through our AABB-accredited laboratory partner.
+Professionally collected in our Denver office and analyzed through an AABB-accredited partner laboratory when applicable.
 
 
 
@@ -128,7 +128,7 @@ Includes:
 
 • Tamper-evident packaging
 
-• AABB-accredited laboratory analysis
+• Partner laboratory analysis (AABB where applicable)
 
 • Formal report suitable for legal submission
 
@@ -166,7 +166,7 @@ Present government-issued ID
 
 Quick cheek swab collection
 
-Samples shipped to our AABB-accredited laboratory partner
+Samples shipped to an AABB-accredited partner laboratory
 
 Results issued in 3–5 business days
 
@@ -189,7 +189,7 @@ We provide:
 
 • Secure documentation
 
-• AABB-accredited laboratory processing
+• Partner laboratory processing
 
 • Proper structure for future comparison testing
 

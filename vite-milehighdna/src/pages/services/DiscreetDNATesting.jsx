@@ -197,7 +197,7 @@ const DiscreetDNATesting = () => {
             <p className="text-gray-700 mb-8 text-lg leading-relaxed">
               Our Discreet DNA Testing service provides completely private DNA testing with unbranded packaging 
               and confidential handling. Perfect for sensitive situations where maximum privacy is essential. 
-              All testing is performed by AABB-accredited laboratories with the same accuracy as standard tests, 
+              All testing is performed by AABB-accredited partner laboratories with the same accuracy as standard tests, 
               but with enhanced privacy protections.
             </p>
             <p className="text-gray-700 mb-8 text-lg leading-relaxed">
@@ -284,7 +284,7 @@ const DiscreetDNATesting = () => {
             <li>✅ Unbranded Packaging — No company logos or identifying information visible</li>
             <li>✅ Complete Confidentiality — All personal data protected and never shared</li>
             <li>✅ Private Communication — Secure, discreet handling of all correspondence</li>
-            <li>✅ Same Accuracy — AABB-accredited laboratory testing with 99%+ accuracy</li>
+            <li>✅ Same Accuracy — AABB-accredited partner laboratory testing with 99%+ accuracy</li>
             <li>✅ Flexible Options — At-home kit or private in-person appointment available</li>
             <li>✅ Fast Results — Results delivered securely within 2–3 business days</li>
           </ul>

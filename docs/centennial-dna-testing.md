@@ -1,6 +1,6 @@
 # DNA Testing in Centennial, Colorado
 
-Mile High DNA Testing offers comprehensive, reliable, and AABB-certified DNA testing services to families, legal professionals, and immigration agencies serving **Centennial, Colorado**. Whether you require legally binding test results for court cases, personal relationship confirmation, or USCIS immigration documentation, our dedicated team ensures accurate, timely, and confidential outcomes.
+Mile High DNA Testing offers comprehensive, reliable DNA testing services to families, legal professionals, and immigration agencies serving **Centennial, Colorado**. Whether you require legally binding test results for court cases, personal relationship confirmation, or USCIS immigration documentation, our dedicated team ensures accurate, timely, and confidential outcomes.
 
 ---
 
@@ -31,7 +31,7 @@ If you need a reliable DNA test "near me," our team provides convenient scheduli
 
 ## Why Choose Mile High DNA Testing in Centennial?
 
-- AABB-Accredited Laboratory  
+- Accredited partner laboratories (AABB where applicable for legal and immigration testing)  
 - Court-Admissible Results  
 - USCIS-Approved Immigration Testing  
 - Fast Turnaround Times  
@@ -66,7 +66,7 @@ Yes — when you choose a legal test with chain-of-custody documentation.
 Yes, mobile appointments are available in most areas.
 
 **Is immigration DNA testing approved for USCIS cases?**  
-Yes, all immigration tests follow USCIS, AABB, and embassy requirements.
+Yes. Immigration relationship testing is coordinated to meet USCIS and embassy requirements, including processing by AABB-accredited partner laboratories when required.
 
 ---
 

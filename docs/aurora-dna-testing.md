@@ -1,6 +1,6 @@
 # DNA Testing in Aurora, Colorado
 
-Mile High DNA Testing offers professional, confidential, and AABB-certified DNA testing solutions for families, legal professionals, and immigration services across **Aurora, Colorado**. From court-admissible paternity tests to personal peace-of-mind screenings and USCIS immigration verification, we ensure precise, timely, and reliable outcomes for every client.
+Mile High DNA Testing offers professional, confidential, DNA testing solutions for families, legal professionals, and immigration services across **Aurora, Colorado**. From court-admissible paternity tests to personal peace-of-mind screenings and USCIS immigration verification, we ensure precise, timely, and reliable outcomes for every client.
 
 ---
 
@@ -31,7 +31,7 @@ If you need a reliable DNA test "near me," our team provides convenient scheduli
 
 ## Why Choose Mile High DNA Testing in Aurora?
 
-- AABB-Accredited Laboratory  
+- Accredited partner laboratories (AABB where applicable for legal and immigration testing)  
 - Court-Admissible Results  
 - USCIS-Approved Immigration Testing  
 - Fast Turnaround Times  
@@ -66,7 +66,7 @@ Yes — when you choose a legal test with chain-of-custody documentation.
 Yes, mobile appointments are available in most areas.
 
 **Is immigration DNA testing approved for USCIS cases?**  
-Yes, all immigration tests follow USCIS, AABB, and embassy requirements.
+Yes. Immigration relationship testing is coordinated to meet USCIS and embassy requirements, including processing by AABB-accredited partner laboratories when required.
 
 ---
 

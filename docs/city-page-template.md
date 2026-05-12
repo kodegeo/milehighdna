@@ -14,7 +14,7 @@ Output the final page as a `.md` file named:
 
 # DNA Testing in [CITY], Colorado
 
-Mile High DNA Testing provides confidential, accurate, and AABB-accredited DNA testing services to families, attorneys, and immigration agencies throughout **[CITY], Colorado**. Whether you need legal documentation, answers for personal reasons, or immigration verification for USCIS, our team delivers fast, professional, and trustworthy results.
+Mile High DNA Testing provides confidential, accurate DNA testing services to families, attorneys, and immigration agencies throughout **[CITY], Colorado**. Whether you need legal documentation, answers for personal reasons, or immigration verification for USCIS, our team delivers fast, professional, and trustworthy results.
 
 ---
 
@@ -45,7 +45,7 @@ If you need a reliable DNA test “near me,” our team provides convenient sche
 
 ## Why Choose Mile High DNA Testing in [CITY]?
 
-- AABB-Accredited Laboratory  
+- Accredited partner laboratories (AABB where applicable for legal and immigration testing)  
 - Court-Admissible Results  
 - USCIS-Approved Immigration Testing  
 - Fast Turnaround Times  
@@ -80,7 +80,7 @@ Yes — when you choose a legal test with chain-of-custody documentation.
 Yes, mobile appointments are available in most areas.
 
 **Is immigration DNA testing approved for USCIS cases?**  
-Yes, all immigration tests follow USCIS, AABB, and embassy requirements.
+Yes. Immigration relationship testing is coordinated to meet USCIS and embassy requirements, including processing by AABB-accredited partner laboratories when required.
 
 ---
 

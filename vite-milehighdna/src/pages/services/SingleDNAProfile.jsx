@@ -23,7 +23,7 @@ const SingleDNAProfile = () => {
     { step: 1, title: "Schedule your appointment", description: "Book online or call our Denver office." },
     { step: 2, title: "Present government-issued ID", description: "Required for legal single profile tests." },
     { step: 3, title: "Quick cheek swab collection", description: "Certified in-office collection." },
-    { step: 4, title: "Samples shipped to AABB-accredited lab", description: "Professional laboratory analysis." },
+    { step: 4, title: "Samples shipped to AABB-accredited partner lab", description: "Professional laboratory analysis." },
     { step: 5, title: "Results in 3–5 business days", description: "Secure PDF report delivered to you." }
   ];
 
@@ -58,7 +58,7 @@ const SingleDNAProfile = () => {
           <p className="text-blue-100 mb-8 max-w-2xl">When the other participant is unavailable, you do not have to wait. A Single Profile DNA Test allows you to professionally document and preserve one person's DNA profile today. A comparison test can be ordered later when the second party becomes available.</p>
           <ul className="space-y-2 text-blue-100 mb-8">
             <li>✔ Certified in-office DNA collection</li>
-            <li>✔ AABB-accredited laboratory analysis</li>
+            <li>✔ AABB-accredited partner laboratory analysis</li>
             <li>✔ 3–5 business day turnaround</li>
             <li>✔ Legal and non-legal options available</li>
           </ul>
@@ -73,7 +73,7 @@ const SingleDNAProfile = () => {
       <section className="py-6 bg-gray-50 border-b border-gray-200">
         <div className="max-w-6xl mx-auto px-6">
           <div className="flex flex-wrap justify-center gap-x-8 gap-y-2 text-gray-700 text-sm md:text-base">
-            <span>✓ AABB Accredited Laboratory</span>
+            <span>✓ AABB-accredited partner laboratory</span>
             <span>✓ Court-Admissible Options Available</span>
             <span>✓ 3–5 Business Day Results</span>
             <span>✓ Confidential & Secure Process</span>
@@ -91,7 +91,7 @@ const SingleDNAProfile = () => {
               <h4 className="text-2xl font-bold text-gray-800 mb-2">Non-Legal Single Profile</h4>
               <p className="text-3xl font-bold text-blue-600 mb-2">$250</p>
               <p className="text-sm text-gray-500 mb-4">Personal documentation only.</p>
-              <p className="text-gray-600 mb-4">Certified in-office collection and AABB-accredited lab analysis. Not court-admissible.</p>
+              <p className="text-gray-600 mb-4">Certified in-office collection and AABB-accredited partner lab analysis. Not court-admissible.</p>
               <a
                 href={CALENDLY_EN}
                 target="_blank"
@@ -202,7 +202,7 @@ const SingleDNAProfile = () => {
             <li>Certified in-office collection</li>
             <li>Professional identity verification</li>
             <li>Secure documentation</li>
-            <li>AABB-accredited laboratory processing</li>
+            <li>AABB-accredited partner laboratory processing</li>
             <li>Proper structure for future comparison testing</li>
           </ul>
           <p className="text-gray-700 font-medium">This ensures your DNA profile is preserved correctly the first time. We also coordinate <Link to="/services/legal-paternity-testing" className="text-blue-600 hover:underline">legal paternity DNA testing</Link> and <Link to="/services/immigration-dna-testing" className="text-blue-600 hover:underline">immigration DNA testing</Link> when comparison testing is needed.</p>
@@ -227,7 +227,7 @@ const SingleDNAProfile = () => {
                 <li>Government ID verification</li>
                 <li>Certified DNA collector</li>
                 <li>Documented chain-of-custody procedures</li>
-                <li>AABB-accredited laboratory analysis</li>
+                <li>AABB-accredited partner laboratory analysis</li>
               </ul>
               <p className="text-gray-700 mt-2">Legal testing ensures the profile is documented correctly if it may be used later in court. Learn more about <Link to="/aabb-accredited-dna-testing-denver" className="text-blue-600 hover:underline">AABB-accredited DNA testing</Link> standards.</p>
             </div>

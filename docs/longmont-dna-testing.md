@@ -1,6 +1,6 @@
 # DNA Testing in Longmont, Colorado
 
-Mile High DNA Testing delivers professional, accurate, and AABB-certified DNA analysis services to residents, law offices, and immigration agencies in **Longmont, Colorado**. Whether you need legally binding test results for court proceedings, personal peace-of-mind screenings, or USCIS immigration verification, our experienced team ensures reliable, timely, and confidential testing solutions.
+Mile High DNA Testing delivers professional, accurate, DNA analysis services to residents, law offices, and immigration agencies in **Longmont, Colorado**. Whether you need legally binding test results for court proceedings, personal peace-of-mind screenings, or USCIS immigration verification, our experienced team ensures reliable, timely, and confidential testing solutions.
 
 ---
 
@@ -31,7 +31,7 @@ If you need a reliable DNA test "near me," our team provides convenient scheduli
 
 ## Why Choose Mile High DNA Testing in Longmont?
 
-- AABB-Accredited Laboratory  
+- Accredited partner laboratories (AABB where applicable for legal and immigration testing)  
 - Court-Admissible Results  
 - USCIS-Approved Immigration Testing  
 - Fast Turnaround Times  
@@ -66,7 +66,7 @@ Yes — when you choose a legal test with chain-of-custody documentation.
 Yes, mobile appointments are available in most areas.
 
 **Is immigration DNA testing approved for USCIS cases?**  
-Yes, all immigration tests follow USCIS, AABB, and embassy requirements.
+Yes. Immigration relationship testing is coordinated to meet USCIS and embassy requirements, including processing by AABB-accredited partner laboratories when required.
 
 ---
 

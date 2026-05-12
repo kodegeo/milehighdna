@@ -51,8 +51,8 @@ const services = [
     detailPath: '/services/infidelity-dna-testing',
   },
   {
-    name: 'Immigration DNA Testing (AABB-Accredited Lab Contact Request)',
-    description: 'This appointment initiates a USCIS-compliant immigration DNA test through an AABB-accredited laboratory. It includes coordination of case requirements, documentation guidance, and proper sample collection procedures required for immigration cases.',
+    name: 'Immigration DNA Testing (partner laboratory contact)',
+    description: 'This appointment initiates a USCIS-compliant immigration DNA test through an AABB-accredited partner laboratory. It includes coordination of case requirements, documentation guidance, and proper sample collection procedures required for immigration cases.',
     link: 'https://calendly.com/milehighdnatesting/immigration',
     detailPath: '/services/immigration-dna-testing',
   },
@@ -106,7 +106,7 @@ const services = [
   },
   {
     name: 'At-Home DNA Kits (Postnatal Only)',
-    description: 'At-home DNA test kits provide a convenient, non-legal postnatal DNA testing option with the same laboratory accuracy as in-office testing. All samples are processed by an AABB-accredited laboratory and shipped securely nationwide. Schedule an appointment to order your at-home DNA test kit.',
+    description: 'At-home DNA test kits provide a convenient, non-legal postnatal DNA testing option. Samples are processed by partner laboratories using validated methods. AABB does not accredit home DNA test kits. Schedule an appointment to order your at-home DNA test kit.',
     link: 'https://calendly.com/milehighdnatesting/30-minute-dna-test-appointment',
     detailPath: '/services/at-home-dna-kits',
   },

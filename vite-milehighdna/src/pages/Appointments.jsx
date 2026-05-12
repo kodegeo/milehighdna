@@ -116,7 +116,7 @@ const Appointments = () => {
                   "itemOffered": {
                     "@type": "Service",
                     "name": "Immigration DNA Testing (AABB-Accredited Lab Contact Request)",
-                    "description": "This appointment initiates a USCIS-compliant immigration DNA test through an AABB-accredited laboratory. It includes coordination of case requirements, documentation guidance, and proper sample collection procedures required for immigration cases.",
+                    "description": "This appointment initiates a USCIS-compliant immigration DNA test through an AABB-accredited partner laboratory. It includes coordination of case requirements, documentation guidance, and proper sample collection procedures required for immigration cases.",
                     "provider": {
                       "@type": "LocalBusiness",
                       "name": "Mile High DNA Testing",

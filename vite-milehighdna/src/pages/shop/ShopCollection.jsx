@@ -74,11 +74,11 @@ const ShopCollection = () => {
             Order a Professional DNA Test Kit Online
           </h1>
           <p className="mt-4 text-lg text-blue-100">
-            Processed by AABB-Accredited Laboratory Partners. Accurate. Confidential. Fast.
+            Processed by AABB-accredited partner laboratory Partners. Accurate. Confidential. Fast.
           </p>
 
           <div className="mt-6 space-y-2 text-sm md:text-base text-blue-50">
-            <p>✔ AABB-Accredited Laboratory Partner</p>
+            <p>✔ AABB-accredited partner laboratory Partner</p>
             <p>✔ Court-Admissible Options Available</p>
             <p>✔ Secure & Confidential Results</p>
             <p>✔ English & Spanish Support</p>
@@ -116,7 +116,7 @@ const ShopCollection = () => {
               meet court and USCIS requirements when applicable.
             </p>
             <p>
-              Mile High DNA Testing works exclusively with AABB-accredited laboratory
+              Mile High DNA Testing works exclusively with AABB-accredited partner laboratory
               partners to ensure reliable, professional-grade results.
             </p>
           </div>

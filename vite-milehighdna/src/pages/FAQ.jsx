@@ -15,7 +15,7 @@ const FAQ = () => {
           <title>DNA Testing FAQs | Mile High DNA – Paternity, Immigration & Legal Tests</title>
           <meta 
             name="description" 
-            content="General DNA testing FAQ: AABB-accredited labs, legal vs. non-legal testing, timelines, confidentiality, alternative samples, mobile collection, nationwide and international testing, and our Denver office." 
+            content="General DNA testing FAQ: partner laboratories and AABB standards for legal testing, legal vs. non-legal testing, timelines, confidentiality, alternative samples, mobile collection, nationwide and international testing, and our Denver office." 
           />
 
           {/* Open Graph */}

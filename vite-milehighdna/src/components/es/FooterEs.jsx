@@ -2,6 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import clsx from 'clsx';
 
+const FOOTER_AABB_ES =
+  'Mile High DNA Testing no está acreditada por la AABB. Las pruebas son procesadas por laboratorios asociados acreditados cuando corresponde.';
+
 const FooterEs = () => {
   return (
     <footer className="bg-gray-100 text-gray-700 py-12 border-t">
@@ -40,7 +43,11 @@ const FooterEs = () => {
         </div>
       </div>
 
-      <div className="mt-12 border-t pt-6 text-center text-xs text-gray-500">
+      <div className="mt-12 border-t pt-8 px-4 max-w-4xl mx-auto">
+        <p className="text-xs text-gray-600 text-center leading-relaxed mb-6">{FOOTER_AABB_ES}</p>
+      </div>
+
+      <div className="border-t pt-6 text-center text-xs text-gray-500">
         &copy; {new Date().getFullYear()} Mile High DNA Testing. Todos los derechos reservados.
       </div>
     </footer>

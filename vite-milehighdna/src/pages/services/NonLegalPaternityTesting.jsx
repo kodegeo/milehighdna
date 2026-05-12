@@ -106,14 +106,14 @@ const NON_LEGAL_IN_OFFICE_FAQS = [
   {
     question: "Can you coordinate international non-legal testing?",
     answerSchema:
-      "Yes. International kit shipments can be coordinated. Shipping timelines and customs regulations vary by country. All testing is performed by an AABB-accredited laboratory in accordance with established DNA testing standards.",
+      "Yes. International kit shipments can be coordinated. Shipping timelines and customs regulations vary by country. All testing is performed by an AABB-accredited partner laboratory in accordance with established DNA testing standards.",
     answer: (
       <>
         <p>
           Yes. International kit shipments can be coordinated. Shipping timelines and customs regulations vary by country.
         </p>
         <p>
-          All testing is performed by an AABB-accredited laboratory in accordance with established DNA testing standards.
+          All testing is performed by an AABB-accredited partner laboratory in accordance with established DNA testing standards.
         </p>
       </>
     ),
@@ -281,7 +281,7 @@ const NonLegalPaternityTesting = () => {
             </p>
             <p className="text-gray-700 mb-8 text-lg leading-relaxed">
               Our Peace of Mind Paternity Test provides private, 
-              non-legal DNA results performed by AABB-accredited laboratories. 
+              non-legal DNA results performed by AABB-accredited partner laboratories. 
               This service is ideal for personal knowledge, family reassurance, or resolving 
               sensitive questions without the need for court involvement.
             </p>

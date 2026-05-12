@@ -29,23 +29,23 @@ const ImmigrationDNATesting = () => {
         <title>Immigration DNA Testing in Denver | USCIS-Compliant DNA Test | Mile High DNA</title>
         <meta
           name="description"
-          content="AABB-accredited immigration DNA testing in Denver for USCIS, embassy, and consular cases. Fast, accurate results accepted worldwide. Schedule your immigration DNA test today."
+          content="Immigration DNA testing in Denver coordinated with AABB-accredited partner laboratories for USCIS, embassy, and consular cases. Schedule your immigration DNA test today."
         />
         <meta
           name="keywords"
-          content="immigration DNA testing Denver, USCIS DNA test, embassy DNA testing Colorado, AABB accredited immigration DNA, visa DNA test Denver"
+          content="immigration DNA testing Denver, USCIS DNA test, embassy DNA testing Colorado, AABB partner laboratory immigration DNA, visa DNA test Denver"
         />
         <link rel="canonical" href="https://milehighdnatesting.com/services/immigration-dna-testing" />
         
         {/* OG / Twitter */}
         <meta property="og:title" content="Immigration DNA Testing in Denver | USCIS-Compliant DNA Test" />
-        <meta property="og:description" content="AABB-accredited immigration DNA testing for USCIS, embassy, and consular cases. Fast, accurate results accepted worldwide." />
+        <meta property="og:description" content="We partner with AABB-accredited laboratories for immigration DNA testing coordinated from Denver. USCIS and embassy cases." />
         <meta property="og:image" content="https://milehighdnatesting.com/images/banner-1200.png" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://milehighdnatesting.com/services/immigration-dna-testing" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Immigration DNA Testing in Denver | USCIS-Compliant" />
-        <meta name="twitter:description" content="AABB-accredited immigration DNA testing for USCIS and embassy cases." />
+        <meta name="twitter:description" content="Immigration DNA testing with AABB-accredited partner laboratories for USCIS and embassy cases." />
         <meta name="twitter:image" content="https://milehighdnatesting.com/images/banner-1200.png" />
 
         {/* Breadcrumb JSON-LD Schema */}
@@ -122,7 +122,7 @@ const ImmigrationDNATesting = () => {
                 "name": "What is immigration DNA testing?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Immigration DNA testing verifies biological relationships for visa, passport, and citizenship cases when required by USCIS or U.S. Embassies and Consulates. All testing is conducted through an AABB-accredited laboratory under strict USCIS chain-of-custody procedures to ensure legal admissibility."
+                  "text": "Immigration DNA testing verifies biological relationships for visa, passport, and citizenship cases when required by USCIS or U.S. Embassies and Consulates. All testing is conducted through an AABB-accredited partner laboratory under strict USCIS chain-of-custody procedures to ensure legal admissibility."
                 }
               },
               {
@@ -138,7 +138,7 @@ const ImmigrationDNATesting = () => {
                 "name": "How long does immigration DNA testing take?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Timeline varies by case requirements, international coordination, and laboratory processing. After you submit the referral form, our AABB-accredited lab partner will provide case-specific timelines and next steps."
+                  "text": "Timeline varies by case requirements, international coordination, and laboratory processing. After you submit the referral form, our AABB-accredited partner laboratory will provide case-specific timelines and next steps."
                 }
               },
               {
@@ -146,7 +146,7 @@ const ImmigrationDNATesting = () => {
                 "name": "Can I use a regular DNA test for immigration purposes?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "No. Immigration DNA testing must be initiated through an AABB-accredited laboratory and follow strict USCIS and U.S. Department of State compliance requirements. Regular DNA tests are not accepted for immigration purposes."
+                  "text": "No. Immigration DNA testing must be initiated through an AABB-accredited partner laboratory and follow strict USCIS and U.S. Department of State compliance requirements. Regular DNA tests are not accepted for immigration purposes."
                 }
               }
             ]
@@ -157,7 +157,7 @@ const ImmigrationDNATesting = () => {
       {/* Hero Section */}
       <HeroSection
         title="Immigration DNA Testing for USCIS and U.S. Embassies"
-        subtitle="USCIS-compliant DNA testing with an AABB-accredited lab partner. Local DNA collections in Denver with worldwide coordination for family members living abroad."
+        subtitle="USCIS-compliant DNA testing coordinated with AABB-accredited partner laboratories. Local DNA collections in Denver with worldwide coordination for family members living abroad."
         imageUrl={immigrationHero}
         buttonText="Get Started Today"
         buttonLink="https://ufclab.forms-db.com/view.php?id=10429"

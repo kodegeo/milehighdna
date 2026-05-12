@@ -55,7 +55,7 @@ export default function ImmigrationDNATestTimeline() {
       process={
         <>
           <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-            After you receive the request, schedule collection for all participants as soon as possible. Each person is collected at an approved site with ID and chain-of-custody. Samples are sent to the AABB-accredited lab (from the U.S. and from overseas if applicable). The lab processes and issues the report; you or your attorney submit it as directed. Lab processing is usually a matter of business days; the rest depends on logistics.
+            After you receive the request, schedule collection for all participants as soon as possible. Each person is collected at an approved site with ID and chain-of-custody. Samples are sent to the AABB-accredited partner lab (from the U.S. and from overseas if applicable). The lab processes and issues the report; you or your attorney submit it as directed. Lab processing is usually a matter of business days; the rest depends on logistics.
           </p>
           <p className="text-lg text-gray-600 mb-6">
             For comparison with other test types, see <Link to="/guides/how-long-does-dna-testing-take" className="text-blue-600 underline">how long DNA test results take</Link>. For the full immigration process, read <Link to="/guides/immigration-dna-testing-process" className="text-blue-600 underline">immigration DNA testing process</Link>.

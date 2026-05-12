@@ -132,7 +132,7 @@ const ForensicDNAAnalysis = () => {
                 "name": "Are forensic DNA test results court-admissible?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Yes. All forensic DNA analysis follows strict chain-of-custody procedures and is performed by AABB-accredited laboratories, ensuring results are court-admissible and suitable for legal proceedings."
+                  "text": "Yes. All forensic DNA analysis follows strict chain-of-custody procedures and is performed by AABB-accredited partner laboratories, ensuring results are court-admissible and suitable for legal proceedings."
                 }
               },
               {
@@ -169,7 +169,7 @@ const ForensicDNAAnalysis = () => {
             <p className="text-gray-700 mb-8 text-lg leading-relaxed">
               Our Forensic DNA Analysis service provides expert DNA testing for legal cases, 
               missing persons investigations, and complex relationship verification. Performed by 
-              AABB-accredited laboratories with strict chain-of-custody procedures, our forensic 
+              AABB-accredited partner laboratories with strict chain-of-custody procedures, our forensic 
               DNA testing meets the highest standards for court admissibility and legal documentation.
             </p>
             <p className="text-gray-700 mb-8 text-lg leading-relaxed">
@@ -270,7 +270,7 @@ const ForensicDNAAnalysis = () => {
               </li>
               <li className="flex items-start">
                 <span className="font-bold text-blue-600 mr-3">4.</span>
-                <span><strong>Laboratory Processing:</strong> AABB-accredited laboratory analysis with full documentation.</span>
+                <span><strong>Laboratory Processing:</strong> AABB-accredited partner laboratory analysis with full documentation.</span>
               </li>
               <li className="flex items-start">
                 <span className="font-bold text-blue-600 mr-3">5.</span>
@@ -299,7 +299,7 @@ const ForensicDNAAnalysis = () => {
             <li className="p-4 bg-gray-50 rounded-lg shadow">
               <div className="text-2xl font-bold text-blue-600 mb-2">3</div>
               <p className="font-semibold mb-2">Expert Analysis</p>
-              <p className="text-sm">AABB-accredited laboratory processing</p>
+              <p className="text-sm">AABB-accredited partner laboratory processing</p>
             </li>
             <li className="p-4 bg-gray-50 rounded-lg shadow">
               <div className="text-2xl font-bold text-blue-600 mb-2">4</div>
@@ -325,7 +325,7 @@ const ForensicDNAAnalysis = () => {
             </div>
             <div className="bg-white p-6 rounded-lg shadow">
               <h3 className="text-xl font-semibold text-gray-800 mb-2">Are forensic DNA test results court-admissible?</h3>
-              <p className="text-gray-600">Yes. All forensic DNA analysis follows strict chain-of-custody procedures and is performed by AABB-accredited laboratories, ensuring results are court-admissible and suitable for legal proceedings.</p>
+              <p className="text-gray-600">Yes. All forensic DNA analysis follows strict chain-of-custody procedures and is performed by AABB-accredited partner laboratories, ensuring results are court-admissible and suitable for legal proceedings.</p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow">
               <h3 className="text-xl font-semibold text-gray-800 mb-2">Do you provide expert testimony?</h3>

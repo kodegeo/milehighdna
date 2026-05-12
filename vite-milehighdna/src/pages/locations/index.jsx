@@ -61,7 +61,7 @@ const LocationsIndex = () => {
     </h1>
 
     <p className="text-lg mb-6 text-blue-100">
-      Mile High DNA Testing proudly serves families, attorneys, and immigration clients across Colorado with fast, confidential, and AABB-accredited DNA testing services. We offer{" "}
+      Mile High DNA Testing proudly serves families, attorneys, and immigration clients across Colorado with fast, confidential DNA testing services. We partner with AABB-accredited partner laboratories for legal and immigration DNA testing. We offer{" "}
       <Link to="/services/legal-paternity-testing" className="underline text-white hover:text-blue-200">
         legal paternity testing
       </Link>,{" "}

@@ -16,7 +16,7 @@ const SiblingshipSteps = () => {
         number: 3,
         title: 'Lab Analysis',
         description:
-          'Our AABB-accredited lab compares DNA profiles to determine whether individuals are full or half siblings.',
+          'Our AABB-accredited partner lab compares DNA profiles to determine whether individuals are full or half siblings.',
       },
       {
         number: 4,

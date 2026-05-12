@@ -38,7 +38,7 @@ const services = [
   },
   {
     title: 'Immigration DNA Testing',
-    description: 'Immigration DNA testing supports USCIS, embassy, and consular cases that require verified biological relationships. Testing is conducted through an AABB-accredited laboratory and follows strict protocols required for immigration and visa-related applications.',
+    description: 'Immigration DNA testing supports USCIS, embassy, and consular cases that require verified biological relationships. Testing is conducted through an AABB-accredited partner laboratory and follows strict protocols required for immigration and visa-related applications.',
     image: immigrationHero,
     link: '/services/immigration-dna-testing',
     badge: 'USCIS Approved',
@@ -143,7 +143,7 @@ const services = [
   },
   {
     title: 'At-Home DNA Kits (Postnatal)',
-    description: 'At-home DNA test kits offer convenient, non-legal postnatal DNA testing with the same laboratory accuracy as in-office testing. Processed by an AABB-accredited lab and shipped securely nationwide.',
+    description: 'At-home DNA test kits offer convenient, non-legal postnatal DNA testing with the same laboratory accuracy as in-office testing. Processed by an AABB-accredited partner lab and shipped securely nationwide.',
     image: atHomeKitsHero,
     link: '/services/at-home-dna-kits',
     badge: 'Convenient & Accurate',
@@ -173,7 +173,7 @@ const Services = () => {
           </title>
           <meta
             name="description"
-            content="Need a DNA test in Denver? Court-admissible legal paternity and non-invasive prenatal DNA testing available today. Same-day appointments. AABB-accredited lab. Call 720-900-9342."
+            content="Need a DNA test in Denver? Court-admissible legal paternity and non-invasive prenatal DNA testing available today. Same-day appointments. AABB-accredited partner lab. Call 720-900-9342."
           />
         <meta
           name="keywords"
@@ -283,7 +283,7 @@ const Services = () => {
             Mile High DNA Testing provides court-admissible legal paternity testing, non-invasive prenatal DNA testing, immigration DNA testing, and private peace-of-mind DNA testing in Denver and throughout Colorado.
           </p>
           <p className="text-gray-700">
-            Our AABB-accredited laboratory ensures accurate, confidential results accepted by courts and USCIS. Same-day appointments are available.
+            Our AABB-accredited partner laboratory ensures accurate, confidential results accepted by courts and USCIS. Same-day appointments are available.
           </p>
         </div>
       </section>
@@ -368,7 +368,7 @@ const Services = () => {
             <div className="bg-white rounded-xl shadow-md p-6">
               <h3 className="text-xl font-bold mb-3">Immigration DNA Testing</h3>
               <p className="text-gray-600 mb-4">
-                USCIS-compliant DNA testing processed through AABB-accredited laboratories.
+                USCIS-compliant DNA testing processed through AABB-accredited partner laboratories.
               </p>
               <Link to="/services/immigration-dna-testing" className="text-[#2C6FA6] font-semibold">
                 Learn More →
@@ -511,7 +511,7 @@ const Services = () => {
                 role: 'Mother in Denver, CO',
                 text: [
                   "Mile High DNA Testing definitely went above and beyond for me. They were incredibly communicative, keeping me updated every step of the way. You can tell the owner genuinely cares about her clients. She makes sure you not only get the answers you need but also feel prioritized and supported throughout the process.",
-                  "If she didn't have the answer right away, she never pretended she did. She would go directly to the AABB-accredited lab to provide me the most accurate, credible information.",
+                  "If she didn't have the answer right away, she never pretended she did. She would go directly to the AABB-accredited partner lab to provide me the most accurate, credible information.",
                   "If you go with Mile High DNA Testing, you are truly in great hands"
                 ],
                 source: 'Google Review',

@@ -5,7 +5,7 @@ import GuideLayout from "./GuideLayout";
 const faqs = [
   {
     question: "What DNA test do I need for court?",
-    answer: "You need a legal (court-admissible) DNA test that includes identity verification, chain-of-custody procedures, and analysis by an AABB-accredited laboratory. Results are then certified and can be submitted to the court."
+    answer: "You need a legal (court-admissible) DNA test that includes identity verification, chain-of-custody procedures, and analysis by an AABB-accredited partner laboratory. Results are then certified and can be submitted to the court."
   },
   {
     question: "Can the court order a DNA test?",
@@ -35,7 +35,7 @@ export default function DNATestForCourt() {
       overview={
         <>
           <p className="text-xl text-gray-600 mb-6 leading-relaxed">
-            DNA testing for court cases must be performed as a legal test: identity verification at collection, chain-of-custody from collection through the lab, and analysis by an AABB-accredited laboratory. Results are then in a form that courts accept as evidence.
+            DNA testing for court cases must be performed as a legal test: identity verification at collection, chain-of-custody from collection through the lab, and analysis by an AABB-accredited partner laboratory. Results are then in a form that courts accept as evidence.
           </p>
           <p className="text-lg text-gray-600 mb-6">
             Mile High DNA Testing helps clients in Denver and surrounding areas arrange court-ready legal paternity tests. For the requirements in detail, see <Link to="/guides/court-admissible-dna-testing" className="text-blue-600 underline">court admissible DNA testing</Link> and <Link to="/guides/chain-of-custody-dna-testing" className="text-blue-600 underline">chain of custody DNA testing</Link>. To <Link to="/appointments" className="text-blue-600 underline">schedule a test</Link>, visit our appointments page.

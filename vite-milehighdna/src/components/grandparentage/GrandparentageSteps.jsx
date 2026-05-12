@@ -16,7 +16,7 @@ const GrandparentageSteps = () => {
         number: 3,
         title: 'Lab Analysis',
         description:
-          'Our AABB-accredited lab compares the DNA profiles to determine the likelihood of a biological relationship.',
+          'Our partner laboratory compares the DNA profiles to determine the likelihood of a biological relationship.',
       },
       {
         number: 4,

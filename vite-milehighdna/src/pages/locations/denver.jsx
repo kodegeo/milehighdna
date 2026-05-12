@@ -10,7 +10,7 @@ const Denver = () => {
   const cityImage = `/images/denver-steve-adams.jpg`;
   const photographer = "Steve Adams";
   const [imageError, setImageError] = useState(false);
-  const metaDescription = "Fast, confidential, AABB-accredited DNA testing in Denver, Colorado. Legal paternity, immigration, prenatal, and peace-of-mind testing with results in 3-5 business days.";
+  const metaDescription = "Fast, confidential DNA testing in Denver, Colorado. Legal paternity, immigration, prenatal, and peace-of-mind testing with results in 3-5 business days.";
   const canonical = canonicalUrl(citySlug);
   const neighborhoods = "Capitol Hill, LoDo, Five Points, Cherry Creek, Washington Park, Highlands, RiNo, Stapleton, Park Hill, Baker, Sloan's Lake, and Glendale";
 
@@ -102,7 +102,7 @@ const Denver = () => {
             DNA Testing in {cityName}, Colorado
           </h1>
           <p className="text-lg md:text-xl text-white drop-shadow-md max-w-3xl">
-            Professional, confidential, and AABB-certified DNA testing solutions for families, legal professionals, and immigration services
+            Professional, confidential DNA testing solutions for families, legal professionals, and immigration services
           </p>
         </div>
       </section>
@@ -111,7 +111,7 @@ const Denver = () => {
         {/* Introduction Section */}
         <div className="text-center mb-12">
           <p className="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
-            Mile High DNA Testing provides confidential, accurate, and AABB-accredited <Link to="/services/legal-paternity-testing" className="text-blue-600 underline">paternity testing near me</Link> and DNA testing services to families, attorneys, and immigration agencies throughout <strong className="text-blue-600">{cityName}, Colorado</strong>. Whether you need <Link to="/services/legal-paternity-testing" className="text-blue-600 underline">legal documentation</Link>, answers for personal reasons via <Link to="/services/non-legal-paternity-testing" className="text-blue-600 underline">peace of mind paternity test</Link>, or <Link to="/services/immigration-dna-testing" className="text-blue-600 underline">immigration DNA testing</Link> for USCIS, our team delivers fast, professional, and trustworthy results.
+            Mile High DNA Testing provides confidential, accurate <Link to="/services/legal-paternity-testing" className="text-blue-600 underline">paternity testing near me</Link> and DNA testing services to families, attorneys, and immigration agencies throughout <strong className="text-blue-600">{cityName}, Colorado</strong>. Whether you need <Link to="/services/legal-paternity-testing" className="text-blue-600 underline">legal documentation</Link>, answers for personal reasons via <Link to="/services/non-legal-paternity-testing" className="text-blue-600 underline">peace of mind paternity test</Link>, or <Link to="/services/immigration-dna-testing" className="text-blue-600 underline">immigration DNA testing</Link> for USCIS, our team delivers fast, professional, and trustworthy results.
           </p>
         </div>
 
@@ -267,7 +267,7 @@ const Denver = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <div className="bg-gradient-to-br from-blue-50 to-white border border-blue-100 rounded-lg p-6 shadow-sm">
               <div className="text-3xl mb-3">✅</div>
-              <h3 className="font-semibold text-lg mb-2 text-gray-800">AABB-Accredited Laboratory</h3>
+              <h3 className="font-semibold text-lg mb-2 text-gray-800">Accredited partner laboratories</h3>
               <p className="text-gray-600 text-sm">Certified and trusted</p>
             </div>
             <div className="bg-gradient-to-br from-blue-50 to-white border border-blue-100 rounded-lg p-6 shadow-sm">
@@ -357,7 +357,7 @@ const Denver = () => {
             
             <div className="bg-white border border-gray-200 rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
               <h3 className="font-semibold text-lg mb-2 text-gray-800">Is immigration DNA testing approved for USCIS cases?</h3>
-              <p className="text-gray-600">Yes, all immigration tests follow USCIS, AABB, and embassy requirements.</p>
+              <p className="text-gray-600">Yes. Immigration relationship testing is coordinated to meet USCIS and embassy requirements, including processing by AABB-accredited partner laboratories when required for your case.</p>
             </div>
           </div>
         </section>

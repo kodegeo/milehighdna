@@ -190,7 +190,7 @@ Legal testing requires:
 
 • Strict chain-of-custody documentation
 
-• AABB-accredited laboratory analysis
+• Partner laboratory analysis (AABB where applicable)
 
 • Court-admissible reporting
 
@@ -274,7 +274,7 @@ Step 4: Laboratory Analysis
 
 
 
-All testing is performed through our AABB-accredited laboratory partner. Legal cases undergo multi-level technical review before release.
+All testing is performed through an AABB-accredited partner laboratory. Legal cases undergo multi-level technical review before release.
 
 
 
@@ -318,7 +318,7 @@ Families choose Mile High DNA Testing because we provide:
 
 • Structured legal DNA coordination
 
-• AABB-accredited laboratory partnerships
+• Partner laboratory relationships (AABB where applicable)
 
 • Strict chain-of-custody compliance
 

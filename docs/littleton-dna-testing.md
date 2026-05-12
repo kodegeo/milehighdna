@@ -1,6 +1,6 @@
 # DNA Testing in Littleton, Colorado
 
-Mile High DNA Testing specializes in providing precise, confidential, and AABB-accredited DNA testing services to residents, attorneys, and immigration professionals in **Littleton, Colorado**. From court-required paternity documentation to personal relationship verification and USCIS immigration cases, we deliver accurate, fast, and professional results you can trust.
+Mile High DNA Testing specializes in providing precise, confidential, DNA testing services to residents, attorneys, and immigration professionals in **Littleton, Colorado**. From court-required paternity documentation to personal relationship verification and USCIS immigration cases, we deliver accurate, fast, and professional results you can trust.
 
 ---
 
@@ -31,7 +31,7 @@ If you need a reliable DNA test "near me," our team provides convenient scheduli
 
 ## Why Choose Mile High DNA Testing in Littleton?
 
-- AABB-Accredited Laboratory  
+- Accredited partner laboratories (AABB where applicable for legal and immigration testing)  
 - Court-Admissible Results  
 - USCIS-Approved Immigration Testing  
 - Fast Turnaround Times  
@@ -66,7 +66,7 @@ Yes — when you choose a legal test with chain-of-custody documentation.
 Yes, mobile appointments are available in most areas.
 
 **Is immigration DNA testing approved for USCIS cases?**  
-Yes, all immigration tests follow USCIS, AABB, and embassy requirements.
+Yes. Immigration relationship testing is coordinated to meet USCIS and embassy requirements, including processing by AABB-accredited partner laboratories when required.
 
 ---
 

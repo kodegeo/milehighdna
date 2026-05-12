@@ -133,7 +133,7 @@ const PrenatalPaternityTestingDenver = () => {
           </p>
 
           <p className="text-base mb-6 text-justify">
-            Our partner AABB-accredited laboratory pioneered this testing method and is the
+            Our partner AABB-accredited partner laboratory pioneered this testing method and is the
             <strong> only AABB-accredited prenatal lab whose results are admissible in court</strong>.
             The test is also supported by the American Pregnancy Association, meeting the highest
             standards for safety and reliability.

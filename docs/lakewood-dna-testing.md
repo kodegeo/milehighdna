@@ -1,6 +1,6 @@
 # DNA Testing in Lakewood, Colorado
 
-Mile High DNA Testing delivers trusted, accurate, and AABB-accredited DNA analysis services to individuals, families, law firms, and immigration offices throughout **Lakewood, Colorado**. Whether seeking legally binding results for court proceedings, personal clarity, or USCIS immigration requirements, our experienced team provides swift, dependable, and confidential testing solutions.
+Mile High DNA Testing delivers trusted, accurate, DNA analysis services to individuals, families, law firms, and immigration offices throughout **Lakewood, Colorado**. Whether seeking legally binding results for court proceedings, personal clarity, or USCIS immigration requirements, our experienced team provides swift, dependable, and confidential testing solutions.
 
 ---
 
@@ -31,7 +31,7 @@ If you need a reliable DNA test "near me," our team provides convenient scheduli
 
 ## Why Choose Mile High DNA Testing in Lakewood?
 
-- AABB-Accredited Laboratory  
+- Accredited partner laboratories (AABB where applicable for legal and immigration testing)  
 - Court-Admissible Results  
 - USCIS-Approved Immigration Testing  
 - Fast Turnaround Times  
@@ -66,7 +66,7 @@ Yes — when you choose a legal test with chain-of-custody documentation.
 Yes, mobile appointments are available in most areas.
 
 **Is immigration DNA testing approved for USCIS cases?**  
-Yes, all immigration tests follow USCIS, AABB, and embassy requirements.
+Yes. Immigration relationship testing is coordinated to meet USCIS and embassy requirements, including processing by AABB-accredited partner laboratories when required.
 
 ---
 

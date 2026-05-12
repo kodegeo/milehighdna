@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 const ProcessCompliance = () => {
   const mustBeItems = [
-    'Initiated through an AABB-accredited laboratory',
+    'Initiated through an AABB-accredited partner laboratory',
     'Conducted under strict USCIS and U.S. Department of State compliance requirements',
   ];
 
@@ -36,7 +36,7 @@ const ProcessCompliance = () => {
                       rel="noopener noreferrer"
                       className="text-blue-600 hover:text-blue-800 underline font-semibold"
                     >
-                      AABB-accredited laboratory
+                      AABB-accredited partner laboratory
                     </a>
                   </>
                 ) : (

@@ -1,7 +1,7 @@
 const SiblingshipWhyChooseUs = () => {
     const benefits = [
       {
-        title: 'AABB-Accredited Laboratory',
+        title: 'AABB-accredited partner laboratory',
         description:
           'All DNA testing is performed by AABB-accredited labs to ensure the highest level of legal and scientific accuracy.',
       },

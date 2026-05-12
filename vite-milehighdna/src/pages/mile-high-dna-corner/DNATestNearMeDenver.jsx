@@ -128,7 +128,7 @@ const DNATestNearMeDenver = () => {
           <p className="text-base mb-6 text-justify">
             Choosing a DNA testing provider should feel reassuring — not overwhelming.
             At <span className="font-semibold text-[#2C6FA6]">Mile High DNA Testing</span>,
-            all DNA tests are processed by an AABB-accredited laboratory to ensure
+            all DNA tests are processed by an AABB-accredited partner laboratory to ensure
             accuracy, confidentiality, and reliability.
           </p>
 

@@ -18,14 +18,14 @@ const PRENATAL_PATERNITY_FAQS = [
   {
     question: "Is non-invasive prenatal paternity testing safe?",
     answerSchema:
-      "Non-invasive prenatal paternity testing requires only a maternal blood draw and a cheek swab from the alleged father. The pregnancy is not disturbed during testing. Our prenatal paternity test is endorsed by the American Pregnancy Association and processed by an AABB-accredited laboratory in the United States.",
+      "Non-invasive prenatal paternity testing requires only a maternal blood draw and a cheek swab from the alleged father. The pregnancy is not disturbed during testing. Our prenatal paternity test is endorsed by the American Pregnancy Association and processed by an AABB-accredited partner laboratory in the United States.",
     answer: (
       <>
         <p>
           Non-invasive prenatal paternity testing requires only a maternal blood draw and a cheek swab from the alleged father. The pregnancy is not disturbed during testing.
         </p>
         <p>
-          Our prenatal paternity test is endorsed by the American Pregnancy Association and processed by an AABB-accredited laboratory in the United States.
+          Our prenatal paternity test is endorsed by the American Pregnancy Association and processed by an AABB-accredited partner laboratory in the United States.
         </p>
       </>
     ),
@@ -33,12 +33,12 @@ const PRENATAL_PATERNITY_FAQS = [
   {
     question: "How accurate is your prenatal paternity test?",
     answerSchema:
-      "Non-invasive prenatal paternity testing is 99.9% accurate. Testing is conducted by the only AABB-accredited laboratory performing non-invasive prenatal paternity analysis in the United States. This accreditation confirms adherence to strict scientific validation standards. When collected under legal chain-of-custody procedures, prenatal results meet court admissibility requirements.",
+      "Non-invasive prenatal paternity testing is 99.9% accurate. Testing is conducted by the only AABB-accredited partner laboratory performing non-invasive prenatal paternity analysis in the United States. This accreditation confirms adherence to strict scientific validation standards. When collected under legal chain-of-custody procedures, prenatal results meet court admissibility requirements.",
     answer: (
       <>
         <p>Non-invasive prenatal paternity testing is 99.9% accurate.</p>
         <p>
-          Testing is conducted by the only AABB-accredited laboratory performing non-invasive prenatal paternity analysis in the United States. This accreditation confirms adherence to strict scientific validation standards.
+          Testing is conducted by the only AABB-accredited partner laboratory performing non-invasive prenatal paternity analysis in the United States. This accreditation confirms adherence to strict scientific validation standards.
         </p>
         <p>When collected under legal chain-of-custody procedures, prenatal results meet court admissibility requirements.</p>
       </>
@@ -128,7 +128,7 @@ const PRENATAL_PATERNITY_FAQS = [
   {
     question: "Can prenatal paternity testing be performed in a twin pregnancy?",
     answerSchema:
-      "Yes. Prenatal paternity testing can be performed in twin pregnancies. Testing methodology varies depending on whether the twins are identical or fraternal. Case details are reviewed prior to scheduling to determine the appropriate approach. All prenatal testing is performed by an AABB-accredited laboratory in accordance with established DNA testing standards.",
+      "Yes. Prenatal paternity testing can be performed in twin pregnancies. Testing methodology varies depending on whether the twins are identical or fraternal. Case details are reviewed prior to scheduling to determine the appropriate approach. All prenatal testing is performed by an AABB-accredited partner laboratory in accordance with established DNA testing standards.",
     answer: (
       <>
         <p>Yes. Prenatal paternity testing can be performed in twin pregnancies.</p>
@@ -136,7 +136,7 @@ const PRENATAL_PATERNITY_FAQS = [
           Testing methodology varies depending on whether the twins are identical or fraternal. Case details are reviewed prior to scheduling to determine the appropriate approach.
         </p>
         <p>
-          All prenatal testing is performed by an AABB-accredited laboratory in accordance with established DNA testing standards.
+          All prenatal testing is performed by an AABB-accredited partner laboratory in accordance with established DNA testing standards.
         </p>
       </>
     ),
@@ -156,7 +156,7 @@ const PrenatalPaternityTesting = () => {
 
         <meta
           name="description"
-          content="Call (720) 900-9342 for same-day prenatal DNA testing. Safe, non-invasive paternity test from 7 weeks. AABB-accredited lab results accepted for legal or peace-of-mind cases."
+          content="Call (720) 900-9342 for same-day prenatal DNA testing. Safe, non-invasive paternity test from 7 weeks. AABB-accredited partner lab results accepted for legal or peace-of-mind cases."
         />
 
         <link
@@ -315,7 +315,7 @@ const PrenatalPaternityTesting = () => {
           </h2>
           <p className="text-gray-700 mb-6">
             Pricing depends on the number of participants and legal documentation needs.
-            Our non-invasive prenatal DNA testing includes professional collection and AABB-accredited lab analysis.
+            Our non-invasive prenatal DNA testing includes professional collection and AABB-accredited partner lab analysis.
           </p>
           <p className="font-semibold text-lg">
             Call 720-900-9342 for an exact quote and same-day availability.

@@ -138,7 +138,7 @@ const WhenDNATellsTheTruth = () => {
           <p className="text-base mb-6 text-justify">
             Michael was welcomed with compassion and professionalism.
             After collecting cheek swab samples from both father and child,
-            we assured him that our partner AABB-accredited laboratory would
+            we assured him that our partner AABB-accredited partner laboratory would
             handle the analysis with the highest standards of accuracy and care.
           </p>
 

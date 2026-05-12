@@ -17,19 +17,20 @@ import FAQSection from "../../components/FAQSection";
 
 // Assets
 import legalHero from "../../assets/images/legal_hero.png";
+import { MH_LEGAL_IMMIGRATION_SHORT } from "../../constants/aabbComplianceCopy";
 
 const LEGAL_PATERNITY_FAQS = [
   {
     question: "Will this DNA test hold up in court?",
     answerSchema:
-      "A court-admissible DNA test requires verified identification, documented chain-of-custody, certified collection, and analysis by an AABB-accredited laboratory. Our legal paternity tests meet all of these requirements. Participant identities are verified at collection, documentation is completed under evidentiary standards, and samples are processed by an AABB-accredited laboratory. Selecting legal testing at the outset ensures admissibility and eliminates procedural risk.",
+      "A court-admissible DNA test requires verified identification, documented chain-of-custody, certified collection, and analysis by an AABB-accredited partner laboratory. Our legal paternity tests meet all of these requirements. Participant identities are verified at collection, documentation is completed under evidentiary standards, and samples are processed by an AABB-accredited partner laboratory. Selecting legal testing at the outset ensures admissibility and eliminates procedural risk.",
     answer: (
       <>
         <p>
-          A court-admissible DNA test requires verified identification, documented chain-of-custody, certified collection, and analysis by an AABB-accredited laboratory.
+          A court-admissible DNA test requires verified identification, documented chain-of-custody, certified collection, and analysis by an AABB-accredited partner laboratory.
         </p>
         <p>
-          Our legal paternity tests meet all of these requirements. Participant identities are verified at collection, documentation is completed under evidentiary standards, and samples are processed by an AABB-accredited laboratory.
+          Our legal paternity tests meet all of these requirements. Participant identities are verified at collection, documentation is completed under evidentiary standards, and samples are processed by an AABB-accredited partner laboratory.
         </p>
         <p>Selecting legal testing at the outset ensures admissibility and eliminates procedural risk.</p>
       </>
@@ -38,14 +39,14 @@ const LEGAL_PATERNITY_FAQS = [
   {
     question: "How accurate is legal paternity testing?",
     answerSchema:
-      "Legal paternity testing provides a 99.999% probability of paternity when the alleged father is included. All testing is performed by an AABB-accredited laboratory under strict chain-of-custody procedures to ensure scientific reliability and court admissibility.",
+      "Legal paternity testing provides a 99.999% probability of paternity when the alleged father is included. All testing is performed by an AABB-accredited partner laboratory under strict chain-of-custody procedures to ensure scientific reliability and court admissibility.",
     answer: (
       <>
         <p>
           Legal paternity testing provides a 99.999% probability of paternity when the alleged father is included.
         </p>
         <p>
-          All testing is performed by an AABB-accredited laboratory under strict chain-of-custody procedures to ensure scientific reliability and court admissibility.
+          All testing is performed by an AABB-accredited partner laboratory under strict chain-of-custody procedures to ensure scientific reliability and court admissibility.
         </p>
       </>
     ),
@@ -69,7 +70,7 @@ const LEGAL_PATERNITY_FAQS = [
   {
     question: "What makes a DNA test legally valid?",
     answerSchema:
-      "A legally admissible DNA test requires: Government-issued photo identification; Certified DNA collection; Documented chain-of-custody; AABB-accredited laboratory analysis. Without these elements, results may not be accepted in court.",
+      "A legally admissible DNA test requires: Government-issued photo identification; Certified DNA collection; Documented chain-of-custody; AABB-accredited partner laboratory analysis. Without these elements, results may not be accepted in court.",
     answer: (
       <>
         <p>A legally admissible DNA test requires:</p>
@@ -77,7 +78,7 @@ const LEGAL_PATERNITY_FAQS = [
           <li>Government-issued photo identification</li>
           <li>Certified DNA collection</li>
           <li>Documented chain-of-custody</li>
-          <li>AABB-accredited laboratory analysis</li>
+          <li>AABB-accredited partner laboratory analysis</li>
         </ul>
         <p>Without these elements, results may not be accepted in court.</p>
       </>
@@ -114,14 +115,14 @@ const LEGAL_PATERNITY_FAQS = [
   {
     question: "Is this process confidential?",
     answerSchema:
-      "Yes. Results are released only to authorized individuals listed on the case. Case records are handled under strict confidentiality protocols. All legal testing is performed by an AABB-accredited laboratory in accordance with established DNA testing standards.",
+      "Yes. Results are released only to authorized individuals listed on the case. Case records are handled under strict confidentiality protocols. All legal testing is performed by an AABB-accredited partner laboratory in accordance with established DNA testing standards.",
     answer: (
       <>
         <p>
           Yes. Results are released only to authorized individuals listed on the case. Case records are handled under strict confidentiality protocols.
         </p>
         <p>
-          All legal testing is performed by an AABB-accredited laboratory in accordance with established DNA testing standards.
+          All legal testing is performed by an AABB-accredited partner laboratory in accordance with established DNA testing standards.
         </p>
       </>
     ),
@@ -141,7 +142,7 @@ const LegalPaternityTesting = () => {
 
         <meta
           name="description"
-          content="Court-admissible legal paternity DNA testing in Denver. AABB-accredited, chain of custody, results in 3–5 days. Call (720) 900-9342 for same-day availability."
+          content="Court-admissible legal paternity DNA testing in Denver. Chain of custody; analysis by AABB-accredited partner laboratories where applicable. Results in 3–5 days. Call (720) 900-9342 for same-day availability."
         />
 
         <link
@@ -156,7 +157,7 @@ const LegalPaternityTesting = () => {
         />
         <meta
           property="og:description"
-          content="Court-admissible legal paternity DNA testing with strict chain of custody. Serving Denver and Colorado with fast, AABB-accredited results."
+          content="Court-admissible legal paternity DNA testing with strict chain of custody. Serving Denver and Colorado with fast results through AABB-accredited partner laboratories where applicable."
         />
         <meta
           property="og:image"
@@ -176,7 +177,7 @@ const LegalPaternityTesting = () => {
         />
         <meta
           name="twitter:description"
-          content="Fast, confidential, AABB-accredited legal paternity DNA testing accepted by courts and agencies."
+          content="Fast, confidential legal paternity DNA testing accepted by courts and agencies. Coordinated with AABB-accredited partner laboratories where applicable."
         />
         <meta
           name="twitter:image"
@@ -272,7 +273,7 @@ const LegalPaternityTesting = () => {
       {/* HERO */}
       <HeroSection
         title="Legal Paternity Test in Denver – Court-Admissible & Same-Day Available"
-        subtitle="AABB-accredited DNA testing with strict chain of custody. Accepted by Colorado courts, attorneys, and government agencies. Results in 3–5 business days."
+        subtitle={`${MH_LEGAL_IMMIGRATION_SHORT} Strict chain of custody. Accepted by Colorado courts, attorneys, and government agencies. Results in 3–5 business days.`}
         imageUrl={legalHero}
         buttonText="Book Your Legal Test"
         buttonLink="https://calendly.com/milehighdnatesting/legal-paternity-test"
@@ -280,9 +281,12 @@ const LegalPaternityTesting = () => {
         secondaryButtonLink="tel:+17209009342"
       />
       <section className="bg-white py-2 px-6 text-center">
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-4xl mx-auto space-y-3">
+          <p className="text-sm text-gray-600 leading-relaxed">
+            Mile High DNA Testing is an independent specimen collection company and is not AABB accredited. {MH_LEGAL_IMMIGRATION_SHORT}
+          </p>
           <p className="text-gray-700">
-            Our testing meets <Link to="/aabb-accredited-dna-testing-denver" className="text-blue-600 hover:underline">AABB-accredited DNA testing standards</Link>.
+            Our testing meets <Link to="/aabb-accredited-dna-testing-denver" className="text-blue-600 hover:underline">AABB laboratory standards for partner facilities</Link>.
           </p>
         </div>
       </section>
@@ -316,7 +320,7 @@ const LegalPaternityTesting = () => {
           </h2>
           <p className="text-gray-700 mb-6">
             Trusted by <a href="https://milehighdnatesting.com/dna-testing-colorado" className="text-blue-600 hover:text-blue-700 transition duration-300">Colorado</a> families, attorneys, and agencies. Our legal DNA
-            testing meets <Link to="/aabb-accredited-dna-testing-denver" className="text-blue-600 hover:underline">AABB-accredited DNA testing standards</Link> and is simple, fast, and fully court-admissible.
+            testing meets <Link to="/aabb-accredited-dna-testing-denver" className="text-blue-600 hover:underline">AABB standards for partner laboratories</Link> and is simple, fast, and fully court-admissible.
           </p>
           <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
             <div className="bg-white rounded-lg shadow p-4">
@@ -326,7 +330,7 @@ const LegalPaternityTesting = () => {
               ✅ Fast Turnaround (3–5 Business Days)
             </div>
             <div className="bg-white rounded-lg shadow p-4">
-              ✅ AABB-Accredited Labs with Chain of Custody
+              ✅ Partner laboratories (AABB where applicable) with chain of custody
             </div>
             <div className="bg-white rounded-lg shadow p-4">
               ✅ Confidential & Professional Service
@@ -343,7 +347,7 @@ const LegalPaternityTesting = () => {
           </h2>
           <p className="text-gray-700 mb-6">
             Legal paternity testing costs vary depending on the number of participants and documentation required.
-            Our pricing includes professional collection, chain of custody, and AABB-accredited lab analysis.
+            Our pricing includes professional collection, chain of custody, and AABB-accredited partner lab analysis.
           </p>
           <p className="font-semibold text-lg">
             Call 720-900-9342 for an exact quote and same-day availability.
@@ -359,7 +363,7 @@ const LegalPaternityTesting = () => {
         title="What Is Legal DNA Paternity Testing?"
         paragraphs={[
           "Legal paternity testing is required when biological parentage must meet court or government standards. Colorado courts require strict chain-of-custody documentation to ensure results are legally valid.",
-          "At Mile High DNA Testing, all samples are collected by trained professionals and processed by AABB-accredited laboratories. Our results are accepted for child custody, child support, birth certificate changes, inheritance cases, and immigration matters.",
+          "At Mile High DNA Testing, all samples are collected by trained professionals and processed by AABB-accredited partner laboratories. Our results are accepted for child custody, child support, birth certificate changes, inheritance cases, and immigration matters.",
           "If you need a court-admissible DNA test in Denver, we offer same-day appointments and fast results in 3–5 business days."
         ]}
       />
@@ -376,7 +380,7 @@ const LegalPaternityTesting = () => {
           {
             title: "Child Support Enforcement",
             description:
-              "Provide AABB-accredited proof of paternity for court-ordered child support cases."
+              "Provide court-ready proof of paternity for court-ordered child support cases through partner laboratory analysis."
           },
           {
             title: "Birth Certificate Updates",

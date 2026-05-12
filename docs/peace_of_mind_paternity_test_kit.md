@@ -62,7 +62,7 @@ Typically 2–3 business days after lab receives your samples. Rushed options ma
 
 ## Trust & Credentials
 
-- Processed in **AABB or CLIA-certified** laboratories  
+- Processed in **CLIA-certified** partner laboratories (AABB accreditation applies to legal/immigration relationship testing at the laboratory level, not to home kit products)  
 - **Your data remains confidential** — not shared with third parties  
 - **No surprise fees** — transparent pricing and delivery  
 

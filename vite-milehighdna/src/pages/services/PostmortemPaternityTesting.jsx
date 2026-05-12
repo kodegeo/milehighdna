@@ -22,7 +22,7 @@ const PostmortemPaternityTesting = () => {
     },
     {
       question: "Can postmortem DNA testing be used in court?",
-      answer: "Yes, if strict chain-of-custody procedures are followed and the test is performed through an AABB-accredited laboratory."
+      answer: "Yes, if strict chain-of-custody procedures are followed and the test is performed through an AABB-accredited partner laboratory."
     },
     {
       question: "Can personal items be used for DNA testing?",
@@ -38,7 +38,7 @@ const PostmortemPaternityTesting = () => {
     { step: 1, title: "Case Review by Phone", description: "We evaluate your intended use of results, available biological relatives, and legal requirements specific to Colorado." },
     { step: 2, title: "Relationship and Legal Goal Confirmation", description: "We determine whether legal or personal effects testing is appropriate." },
     { step: 3, title: "Collection and Case Activation", description: "The test is officially started once DNA samples are collected or a submitted article is accepted for laboratory processing." },
-    { step: 4, title: "Laboratory Analysis", description: "All testing is performed through our AABB-accredited laboratory partner. Legal cases undergo multi-level technical review before release." },
+    { step: 4, title: "Laboratory Analysis", description: "Testing is performed through an AABB-accredited partner laboratory. Legal cases undergo multi-level technical review before release." },
     { step: 5, title: "Secure Delivery", description: "Results are delivered securely via PDF. Certified copies are available if required." }
   ];
 
@@ -136,7 +136,7 @@ const PostmortemPaternityTesting = () => {
       <section className="py-6 bg-gray-50 border-b border-gray-200">
         <div className="max-w-6xl mx-auto px-6">
           <div className="flex flex-wrap justify-center gap-x-8 gap-y-2 text-gray-700 text-sm md:text-base">
-            <span>✓ AABB Accredited Laboratory</span>
+            <span>✓ AABB-accredited partner laboratory</span>
             <span>✓ Court-Admissible Options Available</span>
             <span>✓ 3–5 Business Day Results</span>
             <span>✓ Confidential & Secure Process</span>
@@ -304,7 +304,7 @@ const PostmortemPaternityTesting = () => {
                 <li>Government-issued identification for living participants</li>
                 <li>Certified third-party DNA collection</li>
                 <li>Strict chain-of-custody documentation</li>
-                <li>AABB-accredited laboratory analysis</li>
+                <li>AABB-accredited partner laboratory analysis</li>
                 <li>Court-admissible reporting</li>
               </ul>
               <p className="mt-4"><Link to="/services/legal-paternity-testing" className="text-blue-600 font-semibold hover:underline">Legal paternity testing</Link> follows the same chain-of-custody standards.</p>
@@ -360,7 +360,7 @@ const PostmortemPaternityTesting = () => {
           <p className="text-gray-700 mb-4">Families choose Mile High DNA Testing because we provide:</p>
           <ul className="list-disc list-outside ml-6 space-y-2 text-gray-700 mb-6">
             <li>Structured legal DNA coordination</li>
-            <li>AABB-accredited laboratory partnerships</li>
+            <li>AABB-accredited partner laboratorieships</li>
             <li>Strict chain-of-custody compliance</li>
             <li>Experience with probate and inheritance cases</li>
             <li>A local Denver office with nationwide coordination</li>
@@ -428,7 +428,7 @@ const PostmortemPaternityTesting = () => {
             <li>government-issued identification</li>
             <li>certified DNA collectors</li>
             <li>strict chain-of-custody documentation</li>
-            <li>AABB-accredited laboratory analysis</li>
+            <li>AABB-accredited partner laboratory analysis</li>
             <li>court-admissible reporting</li>
           </ul>
           <p className="text-gray-700">If these procedures are not followed from the beginning, results may not be accepted by courts.</p>

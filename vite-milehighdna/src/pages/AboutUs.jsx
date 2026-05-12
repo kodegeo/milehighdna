@@ -162,7 +162,7 @@ const AboutUsPage = () => {
           Clients choose Mile High DNA Testing for:
         </p>
         <ul className="space-y-3 text-gray-700 mb-4">
-          <li>• AABB-accredited laboratory partnerships</li>
+          <li>• AABB-accredited partner laboratorieships</li>
           <li>• Certified DNA collection procedures</li>
           <li>• Clear communication throughout the testing process</li>
           <li>• Support for <Link to="/services/legal-paternity-testing" className="text-blue-600 hover:text-blue-800 underline">legal</Link>, <Link to="/services/immigration-dna-testing" className="text-blue-600 hover:text-blue-800 underline">immigration</Link>, <Link to="/services/prenatal-paternity-testing" className="text-blue-600 hover:text-blue-800 underline">prenatal</Link>, and personal DNA testing cases</li>

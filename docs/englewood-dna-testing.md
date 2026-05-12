@@ -1,6 +1,6 @@
 # DNA Testing in Englewood, Colorado
 
-Mile High DNA Testing provides expert, confidential, and AABB-accredited DNA testing solutions for individuals, families, law offices, and immigration services in **Englewood, Colorado**. From court-admissible paternity testing to personal peace-of-mind screenings and USCIS immigration verification, we deliver precise, fast, and trustworthy results for every situation.
+Mile High DNA Testing provides expert, confidential, DNA testing solutions for individuals, families, law offices, and immigration services in **Englewood, Colorado**. From court-admissible paternity testing to personal peace-of-mind screenings and USCIS immigration verification, we deliver precise, fast, and trustworthy results for every situation.
 
 ---
 
@@ -31,7 +31,7 @@ If you need a reliable DNA test "near me," our team provides convenient scheduli
 
 ## Why Choose Mile High DNA Testing in Englewood?
 
-- AABB-Accredited Laboratory  
+- Accredited partner laboratories (AABB where applicable for legal and immigration testing)  
 - Court-Admissible Results  
 - USCIS-Approved Immigration Testing  
 - Fast Turnaround Times  
@@ -66,7 +66,7 @@ Yes — when you choose a legal test with chain-of-custody documentation.
 Yes, mobile appointments are available in most areas.
 
 **Is immigration DNA testing approved for USCIS cases?**  
-Yes, all immigration tests follow USCIS, AABB, and embassy requirements.
+Yes. Immigration relationship testing is coordinated to meet USCIS and embassy requirements, including processing by AABB-accredited partner laboratories when required.
 
 ---
 

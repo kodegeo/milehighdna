@@ -64,7 +64,7 @@ const WhatToExpectNIPP = () => {
       "name": "How accurate is a Non-Invasive Prenatal Paternity Test?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Non-invasive prenatal DNA testing is over 99.9% accurate when conducted through an AABB-accredited laboratory. The analysis compares fetal DNA fragments found in the mother’s blood with the potential father’s DNA to confirm paternity with extremely high precision."
+        "text": "Non-invasive prenatal DNA testing is over 99.9% accurate when conducted through an AABB-accredited partner laboratory. The analysis compares fetal DNA fragments found in the mother’s blood with the potential father’s DNA to confirm paternity with extremely high precision."
       }
     },
     {
@@ -212,7 +212,7 @@ const WhatToExpectNIPP = () => {
               <strong>Cheek swab from the potential father:</strong> Collected using a sterile cotton swab for DNA comparison.
             </li>
             <li>
-              <strong>Secure transport:</strong> All samples are sealed, labeled, and sent to the AABB-accredited laboratory
+              <strong>Secure transport:</strong> All samples are sealed, labeled, and sent to the AABB-accredited partner laboratory
               under strict handling protocols.
             </li>
             <li>
@@ -256,7 +256,7 @@ const WhatToExpectNIPP = () => {
               </h4>
               <p className="text-base text-justify">
                 Non-invasive prenatal DNA testing is over 99.9% accurate when conducted through an
-                AABB-accredited laboratory. The analysis compares fetal DNA fragments found in the
+                AABB-accredited partner laboratory. The analysis compares fetal DNA fragments found in the
                 mother's blood with the potential father's DNA to confirm paternity with extremely high precision.
               </p>
             </div>
@@ -291,7 +291,7 @@ const WhatToExpectNIPP = () => {
           </p>
 
           <p className="text-base mb-6 text-justify">
-            Our AABB-accredited laboratory partners ensure every test meets the same standards used in
+            Our AABB-accredited partner laboratories ensure every test meets the same standards used in
             legal DNA testing, even for private, peace-of-mind cases. From first contact to results delivery, we're here
             to provide clarity and confidence during one of life's most important moments.
           </p>

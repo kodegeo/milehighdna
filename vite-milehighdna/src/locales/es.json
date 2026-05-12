@@ -2,14 +2,14 @@
     "nav": {
       "home": "Inicio",
       "services": "Servicios",
-      "aabb": "Acreditación AABB",
+      "aabb": "AABB y laboratorios asociados",
       "book": "Reservar Cita",
       "results": "Obtener Resultados",
       "language": "English"
     },
     "hero": {
       "title": "Bienvenido a Mile High DNA Testing",
-      "subtitle": "Preciso. Asequible. Acreditado por AABB."
+      "subtitle": "Preciso. Asequible. Calidad de laboratorio asociado."
     },
     "book": {
       "title": "Agenda tu Cita",

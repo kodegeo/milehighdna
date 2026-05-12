@@ -12,7 +12,7 @@ const AABBAccreditation = () => {
         <title>Acreditación AABB | Pruebas de ADN Legales y de Inmigración en Colorado</title>
         <meta 
           name="description" 
-          content="Descubre por qué la acreditación AABB es esencial para pruebas de ADN legales e inmigratorias. Resultados aceptados por USCIS y tribunales. Atendemos en Denver, Aurora y Lakewood." 
+          content="Cómo funciona la acreditación AABB en laboratorios asociados para pruebas legales e inmigratorias. Mile High DNA Testing no está acreditada por la AABB; coordinamos con laboratorios asociados. Denver, Aurora y Lakewood." 
         />
 
         <link rel="canonical" href="https://milehighdnatesting.com/es/aabb-accreditation" />
@@ -21,7 +21,7 @@ const AABBAccreditation = () => {
         <link rel="alternate" hreflang="x-default" href="https://milehighdnatesting.com" />
 
         <meta property="og:title" content="¿Qué es la acreditación AABB en pruebas de ADN?" />
-        <meta property="og:description" content="Laboratorios acreditados por la AABB garantizan pruebas de ADN confiables, válidas legalmente y aceptadas por USCIS. Servicios disponibles en español en Colorado." />
+        <meta property="og:description" content="Mile High DNA Testing no está acreditada por la AABB. La acreditación AABB aplica a laboratorios asociados para pruebas legales e inmigratorias cuando corresponde." />
         <meta property="og:image" content="https://milehighdnatesting.com/images/banner-1200.png" />
         <meta property="og:url" content="https://milehighdnatesting.com/es/aabb-accreditation" />
         <meta property="og:type" content="article" />
@@ -31,8 +31,12 @@ const AABBAccreditation = () => {
 
         <h1 className="text-3xl font-bold mb-6">Acreditación AABB</h1>
 
+        <p className="mb-4 p-4 bg-amber-50 border border-amber-200 rounded-lg text-gray-800">
+          Mile High DNA Testing es una empresa independiente de recolección de muestras. No estamos acreditados por la AABB. Las pruebas de ADN legales y de inmigración las realizan laboratorios asociados que mantienen la acreditación AABB cuando corresponde.
+        </p>
+
         <p className="mb-4">
-        En Mile High DNA Testing, nos enorgullece trabajar con múltiples laboratorios de reconocido prestigio nacional, acreditados por la AABB, para ofrecer pruebas de ADN precisas, admisibles en tribunales y compatibles con los requisitos de USCIS.
+        Colaboramos con laboratorios acreditados por la AABB para pruebas de ADN legales y de inmigración que lo requieran, con resultados precisos y compatibles con los requisitos de USCIS cuando aplica el análisis en laboratorio acreditado.
         </p>
 
         <p className="mb-4">

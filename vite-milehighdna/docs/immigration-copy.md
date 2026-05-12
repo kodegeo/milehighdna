@@ -1,13 +1,13 @@
 # Immigration DNA Testing for USCIS and U.S. Embassies
 
-**USCIS compliant DNA testing with an AABB-accredited lab partner.**  
-Local DNA collections in Denver with worldwide coordination for family members living abroad.
+**USCIS-compliant DNA testing coordinated with an AABB-accredited partner laboratory.**  
+Mile High DNA Testing is not AABB accredited. Local DNA collections in Denver with worldwide coordination for family members living abroad.
 
 ---
 
 ## Overview
 
-Mile High DNA Testing, in partnership with an **AABB-accredited and CAP-certified laboratory**, provides specialized immigration DNA testing for visa, passport, and citizenship cases.
+Mile High DNA Testing coordinates immigration DNA testing with **AABB-accredited and CAP-certified partner laboratories** (for example, laboratories in the UFC network) for visa, passport, and citizenship cases when laboratory analysis is required.
 
 All immigration DNA testing services are **fully compliant with USCIS protocols**. We manage the entire testing process — coordinating U.S. sample collection and international logistics — to ensure timely delivery of official results to **U.S. Embassies and Consulates**.
 
@@ -90,7 +90,7 @@ This ensures your case is routed correctly through our office.
 
 ### 2. UFC Will Contact You With Next Steps
 
-After submission, **UFC (our AABB-accredited lab partner)** will provide:
+After submission, **UFC (an AABB-accredited partner laboratory)** will provide:
 
 - Custom pricing based on your case
 - Required forms and invoice  

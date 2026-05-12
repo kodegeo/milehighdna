@@ -53,7 +53,7 @@ const InfidelityDNATesting = () => {
       <section className="py-6 bg-gray-50 border-b border-gray-200">
         <div className="max-w-6xl mx-auto px-6">
           <div className="flex flex-wrap justify-center gap-x-8 gap-y-2 text-gray-700 text-sm md:text-base">
-            <span>✓ AABB Accredited Laboratory</span>
+            <span>✓ AABB-accredited partner laboratory</span>
             <span>✓ Court-Admissible Options Available</span>
             <span>✓ 7–10 Business Day Results</span>
             <span>✓ Confidential & Secure Process</span>
@@ -101,7 +101,7 @@ const InfidelityDNATesting = () => {
           </p>
 
           <p className="text-gray-700 mb-6 text-lg">
-            We use AABB-accredited laboratory partners where applicable and serve Denver and Colorado with strict confidentiality.
+            We use AABB-accredited partner laboratories where applicable and serve Denver and Colorado with strict confidentiality.
           </p>
         </div>
       </section>
@@ -148,7 +148,7 @@ const InfidelityDNATesting = () => {
       <section className="py-12 md:py-16 px-6 bg-white">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-bold text-gray-800 mb-6">Why Choose Mile High DNA Testing?</h2>
-          <p className="text-gray-700 mb-4">Mile High DNA Testing uses AABB-accredited laboratory partners where applicable and serves Denver and Colorado with strict confidentiality.</p>
+          <p className="text-gray-700 mb-4">Mile High DNA Testing uses AABB-accredited partner laboratories where applicable and serves Denver and Colorado with strict confidentiality.</p>
         </div>
       </section>
 

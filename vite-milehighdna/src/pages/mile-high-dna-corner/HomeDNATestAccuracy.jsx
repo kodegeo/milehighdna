@@ -18,7 +18,7 @@ const HomeDNATestAccuracy = () => {
 
         <meta
           name="description"
-          content="Learn how accurate home DNA tests really are and how they compare to AABB-accredited laboratory testing. Understand costs, reliability, and legal validity for Denver families."
+          content="Learn how accurate home DNA tests really are and how they compare to AABB-accredited partner laboratory testing. Understand costs, reliability, and legal validity for Denver families."
         />
 
         {/* Canonical */}
@@ -72,7 +72,7 @@ const HomeDNATestAccuracy = () => {
           "@context": "https://schema.org",
           "@type": "Article",
           "headline": "How Reliable and Accurate Are Home DNA Tests?",
-          "description": "A detailed look at the accuracy of at-home DNA tests compared to AABB-accredited laboratory testing.",
+          "description": "A detailed look at the accuracy of at-home DNA tests compared to AABB-accredited partner laboratory testing.",
           "image": "https://milehighdnatesting.com/images/at-home-test-kit.png",
           "author": {
             "@type": "Organization",
@@ -131,7 +131,7 @@ const HomeDNATestAccuracy = () => {
               "@id": "https://milehighdnatesting.com/mile-high-dna-corner/how-reliable-and-accurate-are-home-dna-tests#webpage",
               "url": "https://milehighdnatesting.com/mile-high-dna-corner/how-reliable-and-accurate-are-home-dna-tests",
               "name": "How Reliable and Accurate Are Home DNA Tests? | Mile High DNA Testing Denver",
-              "description": "Learn how accurate home DNA tests really are and how they compare to AABB-accredited laboratory testing. Understand costs, reliability, and legal validity for Denver families.",
+              "description": "Learn how accurate home DNA tests really are and how they compare to AABB-accredited partner laboratory testing. Understand costs, reliability, and legal validity for Denver families.",
               "isPartOf": {
                 "@type": "WebSite",
                 "name": "Mile High DNA Testing",
@@ -236,7 +236,7 @@ const HomeDNATestAccuracy = () => {
           </p>
 
           <p className="text-base mb-6 text-justify">
-          By contrast, paternity and family relationship tests must be performed in AABB-accredited laboratories when results are used for court or immigration purposes.
+          By contrast, paternity and family relationship tests must be performed in AABB-accredited partner laboratories when results are used for court or immigration purposes.
           This distinction matters — CLIA certification ensures lab quality, but AABB accreditation ensures legal reliability.
           </p>
 
@@ -316,7 +316,7 @@ const HomeDNATestAccuracy = () => {
           <h3 className="text-2xl font-bold mt-10 mb-4 text-gray-800">The Good News</h3>
           <p className="text-base mb-6 text-justify">
           Some at-home DNA kits — including those provided through Mile High DNA Testing — are processed in
-          AABB-accredited laboratories, even when used for informational purposes. This means you can collect your sample at home while
+          AABB-accredited partner laboratories, even when used for informational purposes. This means you can collect your sample at home while
           receiving professional-grade accuracy and transparency.
           </p>
 
@@ -333,7 +333,7 @@ const HomeDNATestAccuracy = () => {
 
           <p className="text-base mb-6 text-justify">
           When your results could affect your family, your future, or your legal standing, choose a provider that uses
-          AABB-accredited laboratories and provides clear, all-inclusive pricing.
+          AABB-accredited partner laboratories and provides clear, all-inclusive pricing.
           </p>
 
           <p className="text-base mb-6 text-justify">

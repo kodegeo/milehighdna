@@ -1,6 +1,6 @@
 # DNA Testing in Fort Collins, Colorado
 
-Mile High DNA Testing specializes in providing trusted, confidential, and AABB-accredited DNA testing services to families, legal professionals, and immigration services throughout **Fort Collins, Colorado**. From court-admissible paternity testing to personal relationship confirmation and USCIS immigration documentation, we ensure precise, fast, and professional results for every situation.
+Mile High DNA Testing specializes in providing trusted, confidential, DNA testing services to families, legal professionals, and immigration services throughout **Fort Collins, Colorado**. From court-admissible paternity testing to personal relationship confirmation and USCIS immigration documentation, we ensure precise, fast, and professional results for every situation.
 
 ---
 
@@ -31,7 +31,7 @@ If you need a reliable DNA test "near me," our team provides convenient scheduli
 
 ## Why Choose Mile High DNA Testing in Fort Collins?
 
-- AABB-Accredited Laboratory  
+- Accredited partner laboratories (AABB where applicable for legal and immigration testing)  
 - Court-Admissible Results  
 - USCIS-Approved Immigration Testing  
 - Fast Turnaround Times  
@@ -66,7 +66,7 @@ Yes — when you choose a legal test with chain-of-custody documentation.
 Yes, mobile appointments are available in most areas.
 
 **Is immigration DNA testing approved for USCIS cases?**  
-Yes, all immigration tests follow USCIS, AABB, and embassy requirements.
+Yes. Immigration relationship testing is coordinated to meet USCIS and embassy requirements, including processing by AABB-accredited partner laboratories when required.
 
 ---
 

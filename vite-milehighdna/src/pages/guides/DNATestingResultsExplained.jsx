@@ -13,7 +13,7 @@ const faqs = [
   },
   {
     question: "Can I use my DNA test results in court?",
-    answer: "Only if the test was performed as a legal test with chain-of-custody, identity verification, and analysis by an AABB-accredited laboratory. Peace-of-mind or at-home test results are not admissible in court."
+    answer: "Only if the test was performed as a legal test with chain-of-custody, identity verification, and analysis by an AABB-accredited partner laboratory. Peace-of-mind or at-home test results are not admissible in court."
   },
   {
     question: "Who receives the DNA test results?",
@@ -65,7 +65,7 @@ export default function DNATestingResultsExplained() {
       legal={
         <>
           <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-            Legal DNA test results are accompanied by chain-of-custody documentation and are issued by an AABB-accredited laboratory. They can be sent directly to courts, attorneys, or government agencies when authorized. Non-legal test results are for personal use only and are not admissible.
+            Legal DNA test results are accompanied by chain-of-custody documentation and are issued by an AABB-accredited partner laboratory. They can be sent directly to courts, attorneys, or government agencies when authorized. Non-legal test results are for personal use only and are not admissible.
           </p>
           <p className="text-lg text-gray-600 mb-6">
             If you ordered a peace-of-mind test and later need court-admissible results, you generally must complete a new legal test. For more, read <Link to="/guides/chain-of-custody-dna-testing" className="text-blue-600 underline">chain of custody DNA testing</Link>.

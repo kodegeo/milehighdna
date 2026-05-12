@@ -2,14 +2,14 @@
     "nav": {
       "home": "Home",
       "services": "Services",
-      "aabb": "AABB Accreditation",
+      "aabb": "AABB & partner laboratories",
       "book": "Book Appointment",
       "results": "Get Results",
       "language": "Español"
     },
     "hero": {
       "title": "Welcome to Mile High DNA Testing",
-      "subtitle": "Accurate. Affordable. AABB-Accredited."
+      "subtitle": "Accurate. Affordable. Partner-lab quality."
     },
     "book": {
       "title": "Schedule Your Appointment",

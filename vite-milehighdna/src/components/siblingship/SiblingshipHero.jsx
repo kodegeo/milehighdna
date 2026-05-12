@@ -10,7 +10,7 @@ const SiblingshipHero = () => {
             DNA Testing Between Siblings in Denver, Aurora & Lakewood
             </h1>
             <p className="text-lg text-gray-600 mb-6">
-            Get a court-admissible DNA test between siblings in Denver, Aurora, and Lakewood. Confirm full or half-sibling relationships with AABB-accredited lab results — legal and immigration-compliant.
+            Get a court-admissible DNA test between siblings in Denver, Aurora, and Lakewood. Confirm full or half-sibling relationships with AABB-accredited partner lab results — legal and immigration-compliant.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a href="https://calendly.com/milehighdnatesting/full-siblingship-dna-test" className="bg-blue-600 text-white px-6 py-3 rounded-xl shadow hover:bg-blue-700 transition">

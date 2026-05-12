@@ -3,7 +3,7 @@ const GrandparentageWhyChooseUs = () => {
       {
         title: 'AABB-Accredited Labs',
         description:
-          'All tests are processed through AABB-accredited laboratories, ensuring legal compliance and industry-leading accuracy.',
+          'All tests are processed through AABB-accredited partner laboratories, ensuring legal compliance and industry-leading accuracy.',
       },
       {
         title: 'Legal & Peace-of-Mind Options',

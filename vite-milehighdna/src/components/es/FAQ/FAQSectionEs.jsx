@@ -5,7 +5,7 @@ const faqs = [
   {
     id: 'results',
     question: '¿Cuánto tardan los resultados de una prueba de ADN?',
-    answer: 'La mayoría de los resultados están listos entre 2 y 5 días hábiles después de que el laboratorio acreditado por la AABB recibe las muestras. Las pruebas para inmigración pueden tardar más por motivos de envío o embajadas.',
+    answer: 'La mayoría de los resultados están listos entre 2 y 5 días hábiles después de que el laboratorio asociado recibe las muestras. Para pruebas legales o de inmigración, el análisis lo realizan laboratorios asociados que mantienen acreditación AABB cuando aplica. Las pruebas para inmigración pueden tardar más por motivos de envío o embajadas.',
   },
   {
     id: 'legal',
@@ -20,7 +20,7 @@ const faqs = [
   {
     id: 'immigration',
     question: '¿La prueba de ADN se puede usar para trámites migratorios?',
-    answer: 'Claro que sí. Nuestras pruebas para inmigración están acreditadas por la AABB y aprobadas por USCIS, consulados y embajadas estadounidenses en todo el mundo.',
+    answer: 'Sí, cuando se realiza como prueba legal o de inmigración con cadena de custodia y laboratorio asociado acreditado por la AABB según corresponde. Mile High DNA Testing no está acreditada por la AABB; coordinamos la recolección y el caso con laboratorios asociados aprobados por USCIS, consulados y embajadas de EE. UU.',
   },
   {
     id: 'cost',

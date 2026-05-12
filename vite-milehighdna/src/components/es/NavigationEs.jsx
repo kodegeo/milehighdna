@@ -37,7 +37,7 @@ const NavigationEs = () => {
           {/* Desktop Navigation */}
           <div className="hidden md:flex md:items-center md:space-x-8">
             <Link to="/es/sobre-nosotros" className="text-gray-700 hover:text-blue-600 transition duration-300">Sobre Nosotros</Link>
-            <Link to="/es/aabb-accreditation" className="text-gray-700 hover:text-blue-600 transition duration-300">Acreditación AABB</Link>
+            <Link to="/es/aabb-accreditation" className="text-gray-700 hover:text-blue-600 transition duration-300">AABB y laboratorios asociados</Link>
             
             {/* Services Dropdown */}
             <div
@@ -119,7 +119,7 @@ const NavigationEs = () => {
         {isMenuOpen && (
           <div className="md:hidden px-4 pb-4 max-h-[80vh] overflow-y-auto">
             <Link to="/es/sobre-nosotros" className="text-gray-700 hover:text-blue-600 transition duration-300 block py-2" onClick={() => setIsMenuOpen(false)}>Sobre Nosotros</Link>
-            <Link to="/es/aabb-accreditation" className="text-gray-700 hover:text-blue-600 transition duration-300 block py-2" onClick={() => setIsMenuOpen(false)}>Acreditación AABB</Link>
+            <Link to="/es/aabb-accreditation" className="text-gray-700 hover:text-blue-600 transition duration-300 block py-2" onClick={() => setIsMenuOpen(false)}>AABB y laboratorios asociados</Link>
 
             <details className="py-2">
               <summary className="text-gray-700 hover:text-blue-600 transition duration-300 cursor-pointer">Servicios</summary>

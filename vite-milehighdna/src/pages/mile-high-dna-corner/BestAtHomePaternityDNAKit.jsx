@@ -4,6 +4,7 @@ import CornerLayout from "../../components/corner/CornerLayout";
 import ServingColorado from "../../components/common/ServingColorado";
 import CallToAction from "../../components/corner/CallToAction";
 import cornerKit from "../../assets/images/corner-kit-1.png";
+import { AABB_HOME_KIT_DISCLAIMER } from "../../constants/aabbComplianceCopy";
 
 export default function BestAtHomePaternityDNAKit() {
   return (
@@ -25,7 +26,7 @@ export default function BestAtHomePaternityDNAKit() {
         />
         <meta
           name="keywords"
-          content="best at home paternity DNA kit Denver, at home DNA test Denver, nationwide DNA testing, professional DNA testing Colorado, AABB accredited lab, express DNA shipping, bilingual DNA testing"
+          content="best at home paternity DNA kit Denver, at home DNA test Denver, nationwide DNA testing, professional DNA testing Colorado, CLIA lab processing, express DNA shipping, bilingual DNA testing"
         />
 
         {/* Open Graph */}
@@ -74,7 +75,7 @@ export default function BestAtHomePaternityDNAKit() {
                     "name": "How accurate are at-home paternity DNA test kits?",
                     "acceptedAnswer": {
                       "@type": "Answer",
-                      "text": "Professional-grade at-home DNA test kits provide over 99.9% accuracy when processed by AABB-accredited laboratories, ensuring court-level precision for personal use."
+                      "text": "Professional-grade at-home DNA test kits can provide over 99.9% accuracy when samples are collected correctly and processed by validated partner laboratories. At-home kits are for personal use only—not court or immigration. AABB does not accredit home DNA test kits."
                     }
                   },
                   {
@@ -106,7 +107,7 @@ export default function BestAtHomePaternityDNAKit() {
                     "name": "Is my DNA information kept private?",
                     "acceptedAnswer": {
                       "@type": "Answer",
-                      "text": "Yes. All testing is performed by AABB-accredited labs with strict confidentiality protections."
+                      "text": "Yes. Mile High DNA Testing follows strict confidentiality protocols, and samples are processed by partner laboratories under professional standards. AABB does not accredit home DNA test kits."
                     }
                   }
                 ]
@@ -177,6 +178,9 @@ export default function BestAtHomePaternityDNAKit() {
 
         {/* Article Content */}
         <div className="w-full px-4 md:px-0 py-8 bg-white/90 rounded-xl shadow-lg">
+          <p className="text-sm text-gray-700 bg-amber-50 border border-amber-200 rounded-lg p-4 mb-8 leading-relaxed">
+            {AABB_HOME_KIT_DISCLAIMER} Mile High DNA Testing is not AABB accredited; we coordinate specimen collection and case management, and partner laboratories perform analysis.
+          </p>
           <h2 className="text-2xl font-bold mt-10 mb-4 text-gray-800">
             When Accuracy, Privacy, and Support Matter Most
           </h2>
@@ -190,9 +194,8 @@ export default function BestAtHomePaternityDNAKit() {
           <p className="text-base mb-6 text-justify">
             At <span className="font-semibold text-[#2C6FA6]">Mile High DNA Testing</span>, our Peace of Mind
             At-Home DNA Kit offers fast, reliable, and private results from the
-            comfort of your home. All testing is performed by{" "}
-            AABB accredited laboratories, ensuring
-            professional-level accuracy and trusted results.
+            comfort of your home. Samples are analyzed by partner laboratories using
+            validated scientific methods for high accuracy for personal use.
           </p>
 
           <h2 className="text-2xl font-bold mt-10 mb-4 text-gray-800">
@@ -221,7 +224,7 @@ export default function BestAtHomePaternityDNAKit() {
             Aurora, Lakewood, Westminster, Thornton, and Littleton.
           </p>
           <ul className="list-disc list-outside ml-6 mb-6 space-y-3">
-            <li>Testing by an AABB accredited lab</li>
+            <li>Analysis by partner laboratories with validated methods (home kits are not AABB-accredited products)</li>
             <li>Local bilingual support in English and Spanish</li>
             <li>Clear, step-by-step collection instructions</li>
             <li>
@@ -261,11 +264,10 @@ export default function BestAtHomePaternityDNAKit() {
             <li>No phone number, address, or refund policy</li>
           </ul>
           <p className="text-base mb-6 text-justify">
-            Before purchasing any DNA kit online, always ask: Is the laboratory{" "}
-            AABB accredited? Can you speak to a real person? Will
+            Before purchasing any DNA kit online, always ask: Is the provider transparent about the laboratory and privacy practices? Can you speak to a real person? Will
             your DNA data remain private? Choosing{" "}
             <span className="font-semibold text-[#2C6FA6]">Mile High DNA Testing</span> ensures secure handling and
-            accredited processing.
+            professional processing. {AABB_HOME_KIT_DISCLAIMER}
           </p>
 
           <h2 className="text-2xl font-bold mt-10 mb-4 text-gray-800">
@@ -279,9 +281,7 @@ export default function BestAtHomePaternityDNAKit() {
             <li>Number of participants</li>
             <li>Type of relationship test (paternity, maternity, siblingship, etc.)</li>
             <li>Express shipping, expedited testing, and video call support</li>
-            <li>
-              Optional video call assistance with an AABB accredited DNA collector
-            </li>
+            <li>Optional video call assistance with a certified DNA collector</li>
           </ul>
 
           <h2 className="text-2xl font-bold mt-10 mb-4 text-gray-800">
@@ -291,17 +291,16 @@ export default function BestAtHomePaternityDNAKit() {
             At-home DNA kits are for personal use only and cannot be upgraded to
             legal tests because they don't meet chain-of-custody standards. For
             court, child support, or immigration purposes, schedule a legal DNA
-            test in Denver with our AABB certified collector.
+            test in Denver with our certified collector.
           </p>
 
           <h2 className="text-2xl font-bold mt-10 mb-4 text-gray-800">
-            Why Accreditation and Upgrades Matter
+            Why Laboratory Quality and Upgrades Matter
           </h2>
           <p className="text-base mb-6 text-justify">
-            AABB accreditation ensures the highest scientific standards for DNA
-            testing. Upgrades such as express shipping and expedited testing help
+            {AABB_HOME_KIT_DISCLAIMER} For legal and immigration cases, we partner with AABB-accredited laboratories where applicable. Upgrades such as express shipping and expedited testing help
             you receive your results faster, while video call support provides
-            supervised guidance from an accredited DNA collector.
+            supervised guidance from a certified DNA collector.
           </p>
 
           <h2 className="text-2xl font-bold mt-10 mb-4 text-gray-800">
@@ -320,9 +319,11 @@ export default function BestAtHomePaternityDNAKit() {
               </thead>
               <tbody>
                 <tr>
-                  <td className="p-3">Laboratory Accreditation</td>
+                  <td className="p-3">Laboratory quality</td>
                   <td className="p-3">Consumer-grade</td>
-                  <td className="p-3 font-semibold">AABB accredited</td>
+                  <td className="p-3 font-semibold">
+                    {AABB_HOME_KIT_DISCLAIMER} Partner laboratories use validated methods for peace-of-mind kits.
+                  </td>
                 </tr>
                 <tr>
                   <td className="p-3">Customization</td>
@@ -360,7 +361,7 @@ export default function BestAtHomePaternityDNAKit() {
             <li>Customizable at-home DNA testing kits</li>
             <li>Nationwide and multi-city shipping</li>
             <li>Express shipping upgrades for faster turnaround</li>
-            <li>Video call support with AABB accredited collectors</li>
+            <li>Video call support with certified collectors</li>
             <li>Local bilingual assistance from real professionals</li>
           </ul>
 
@@ -443,9 +444,7 @@ export default function BestAtHomePaternityDNAKit() {
          <p className="text-base text-gray-700">
            Professional-grade at-home DNA test kits, like those from <span className="font-semibold text-[#2C6FA6]">Mile High DNA Testing</span>, 
            provide over 99.9% accuracy when samples are collected correctly. 
-           All testing is processed in AABB-accredited laboratories for 
-           verified, court-level precision, even though these kits are designed for 
-           peace-of-mind use.
+           Samples are processed by partner laboratories using validated methods for high accuracy for personal use. These kits are not for court or immigration. {AABB_HOME_KIT_DISCLAIMER}
          </p>
       </div>
 
@@ -481,7 +480,7 @@ export default function BestAtHomePaternityDNAKit() {
           Is my DNA information kept private and confidential?
         </h3>
          <p className="text-base text-gray-700">
-           Absolutely. <span className="font-semibold text-[#2C6FA6]">Mile High DNA Testing</span> uses only AABB-accredited labs and follows strict privacy protocols. Your DNA test results are never shared or sold. Every kit is handled with confidential and professional DNA testing standards.
+           Absolutely. <span className="font-semibold text-[#2C6FA6]">Mile High DNA Testing</span> follows strict privacy protocols, and samples are sent to partner laboratories for analysis. Your DNA test results are never shared or sold. Every kit is handled with confidential and professional standards. {AABB_HOME_KIT_DISCLAIMER}
          </p>
       </div>
     </div>

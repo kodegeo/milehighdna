@@ -2,6 +2,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import clsx from 'clsx';
+import { MH_FOOTER_DISCLOSURE } from '../constants/aabbComplianceCopy';
 
 
 const Footer = () => {
@@ -20,7 +21,7 @@ const Footer = () => {
           <ul className="space-y-2">
             <li><Link to="/about" className="text-gray-700 hover:text-blue-600 transition duration-300">About Us</Link></li>
             <li><Link to="/services" className="text-gray-700 hover:text-blue-600 transition duration-300">Services</Link></li>
-            <li><Link to="/aabb-accredited-dna-testing-denver" className="text-gray-700 hover:text-blue-600 transition duration-300">AABB-accredited DNA testing</Link></li>
+            <li><Link to="/aabb-accredited-dna-testing-denver" className="text-gray-700 hover:text-blue-600 transition duration-300">AABB standards & partner laboratories</Link></li>
             <li><Link to="/faq" className="text-gray-700 hover:text-blue-600 transition duration-300">FAQ</Link></li>
           </ul>
         </div>
@@ -42,7 +43,11 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="mt-12 border-t pt-6 text-center text-xs text-gray-500">
+      <div className="mt-12 border-t pt-8 px-4 max-w-4xl mx-auto">
+        <p className="text-xs text-gray-600 text-center leading-relaxed mb-6">{MH_FOOTER_DISCLOSURE}</p>
+      </div>
+
+      <div className="border-t pt-6 text-center text-xs text-gray-500">
         &copy; {new Date().getFullYear()} Mile High DNA Testing. All rights reserved.
       </div>
     </footer>

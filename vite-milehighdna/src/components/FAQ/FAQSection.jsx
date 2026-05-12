@@ -33,23 +33,23 @@ const faqData = [
     id: "dna-basics",
     questions: [
       {
-        q: "What accreditations does your DNA laboratory hold?",
+        q: "What accreditations does Mile High DNA Testing hold?",
         a: [
           {
             type: "p",
-            text: "All DNA testing is performed by a laboratory accredited by:",
+            text: "Mile High DNA Testing is an independent specimen collection company. We are not AABB accredited. DNA analysis is performed by partner laboratories, which may hold accreditations and certifications such as:",
           },
           {
             type: "ul",
             items: [
-              "AABB (American Association of Blood Banks)",
+              "AABB (American Association of Blood Banks) — maintained by partner laboratories for applicable legal and immigration relationship testing where applicable",
               "CLIA (Clinical Laboratory Improvement Amendments)",
               "CAP (College of American Pathologists)",
             ],
           },
           {
             type: "p",
-            text: "AABB accreditation is the required standard for court-admissible relationship DNA testing in the United States. This accreditation confirms that the laboratory meets strict standards for validation, documentation, and scientific reliability.",
+            text: "AABB accreditation is the required standard for court-admissible relationship DNA testing performed by an accredited laboratory in the United States. It confirms that the laboratory meets strict standards for validation, documentation, and scientific reliability—not the collection site.",
           },
         ],
       },
@@ -167,11 +167,11 @@ const faqData = [
           },
           {
             type: "p",
-            text: "In immigration cases, U.S. Citizenship and Immigration Services (USCIS) and U.S. Embassies require DNA testing to be performed by an AABB-accredited laboratory.",
+            text: "In immigration cases, U.S. Citizenship and Immigration Services (USCIS) and U.S. Embassies require DNA testing to be performed by an AABB-accredited partner laboratory.",
           },
           {
             type: "p",
-            text: "Selecting an AABB-accredited laboratory ensures that results meet recognized legal and federal standards.",
+            text: "Selecting an AABB-accredited partner laboratory ensures that results meet recognized legal and federal standards.",
           },
         ],
       },
@@ -328,7 +328,7 @@ const faqData = [
               "Twin zygosity",
               "Single profile",
               "Postmortem (DNA testing with a deceased person)",
-              "Immigration (AABB-accredited DNA tests)",
+              "Immigration (partner AABB-accredited partner laboratories where required)",
               "mtDNA and Y-STR",
               "Discreet/private testing (alternative DNA samples)",
               "Infidelity",
@@ -378,11 +378,11 @@ const faqData = [
           },
           {
             type: "p",
-            text: "At Mile High DNA Testing, every case is structured, monitored, and processed through an AABB-accredited laboratory to ensure reliable, defensible results. Whether you test in our Denver office or order one of our at-home kits, your case is managed with precision from start to finish.",
+            text: "At Mile High DNA Testing, every case is structured and monitored. Legal and immigration testing is coordinated with AABB-accredited partner laboratories where applicable. Whether you test in our Denver office or order an at-home kit, your case is managed with precision from start to finish. AABB does not accredit home DNA test kits.",
           },
           {
             type: "p",
-            text: "AABB-accredited laboratory processing with 99.9% accuracy: All of our DNA tests, including at-home kits, are processed by an AABB-accredited laboratory. Results typically show a 99.9% or greater probability of paternity when included and 0% when excluded. The scientific standard remains consistent across all test types.",
+            text: "Laboratory processing with high accuracy: Postnatal and legal-path tests are analyzed by partner laboratories using validated methods. Results typically show a 99.9% or greater probability of paternity when the alleged father is included and 0% when excluded, depending on the test type. AABB does not accredit home DNA test kits.",
           },
           {
             type: "p",

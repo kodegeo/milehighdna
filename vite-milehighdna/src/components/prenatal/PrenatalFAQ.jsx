@@ -14,7 +14,7 @@ const faqs = [
   {
     question: "What if the mother and alleged father live in different states?",
     answer:
-      "We arrange separate-location testing, so both parties can collect samples locally. All samples are securely tracked and analyzed by our AABB-accredited lab.",
+      "We arrange separate-location testing, so both parties can collect samples locally. All samples are securely tracked and analyzed by our AABB-accredited partner lab.",
   },
   {
     question: "Do you offer mobile testing?",

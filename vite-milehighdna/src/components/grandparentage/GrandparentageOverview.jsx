@@ -25,7 +25,7 @@ const GrandparentageOverview = () => {
             <div className="p-6 border rounded-xl shadow-sm hover:shadow-md transition">
               <h3 className="text-xl font-semibold text-blue-700 mb-2">AABB Accredited</h3>
               <p className="text-gray-600">
-                All testing is performed by AABB-accredited laboratories to ensure accuracy, confidentiality, and full legal compliance.
+                Testing is performed by partner laboratories that maintain AABB accreditation where applicable, to support accuracy, confidentiality, and legal compliance for qualifying tests.
               </p>
             </div>
           </div>

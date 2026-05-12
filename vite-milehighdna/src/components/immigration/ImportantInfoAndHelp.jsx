@@ -22,7 +22,7 @@ const ImportantInfoAndHelp = () => {
           </div>
           <div className="p-6 bg-[#F5F7FA] border border-gray-200 rounded-xl shadow-sm text-base text-gray-700 leading-relaxed">
             <strong>Accreditation:</strong> All immigration DNA testing is performed by{' '}
-            <strong>UFC, an AABB-accredited laboratory approved for USCIS cases</strong>.
+            <strong>UFC, an AABB-accredited partner laboratory approved for USCIS cases</strong>.
           </div>
         </div>
         <p className="text-base text-gray-600 mb-10 leading-relaxed">

@@ -42,8 +42,8 @@ const services = [
     link: 'https://calendly.com/milehighdnatesting/30-minute-dna-test-appointment',
   },
   {
-    name: 'Prueba de ADN para Inmigración (Laboratorio Acreditado por AABB)',
-    description: 'Esta cita inicia una prueba de ADN para inmigración compatible con USCIS a través de un laboratorio acreditado por AABB. Incluye coordinación de requisitos del caso, orientación sobre documentación y procedimientos adecuados de recolección de muestras requeridos para casos de inmigración.',
+    name: 'Prueba de ADN para Inmigración (coordinación con laboratorio asociado)',
+    description: 'Esta cita inicia una prueba de ADN para inmigración compatible con USCIS a través de laboratorios asociados acreditados por la AABB cuando corresponde. Incluye coordinación de requisitos del caso, orientación sobre documentación y procedimientos adecuados de recolección de muestras requeridos para casos de inmigración.',
     link: 'https://calendly.com/milehighdnatesting/immigration',
   },
   {
@@ -88,7 +88,7 @@ const services = [
   },
   {
     name: 'Kits de ADN para el Hogar (Postnatal)',
-    description: 'Los kits de ADN para el hogar ofrecen una opción conveniente de pruebas postnatales no legales con la misma precisión de laboratorio. Todas las muestras se procesan en un laboratorio acreditado por AABB y se envían de forma segura. Agenda una cita para ordenar tu kit de ADN en casa.',
+    description: 'Los kits de ADN para el hogar ofrecen una opción conveniente de pruebas postnatales no legales. Las muestras se procesan en laboratorios asociados con métodos validados. La AABB no acredita kits de ADN para el hogar. Agenda una cita para ordenar tu kit de ADN en casa.',
     link: 'https://calendly.com/milehighdnatesting/30-minute-dna-test-appointment',
   },
 ];

@@ -10,7 +10,7 @@ const Aurora = () => {
   const cityImage = `/images/aurora-acton-crawford.jpg`;
   const photographer = "Acton Crawford"; // Set photographer name if applicable
   const [imageError, setImageError] = useState(false);
-  const metaDescription = "Professional, AABB-certified DNA testing in Aurora, Colorado. Court-admissible paternity tests, immigration DNA, and peace-of-mind screenings with fast turnaround times.";
+  const metaDescription = "Professional DNA testing in Aurora, Colorado. Court-admissible paternity tests, immigration DNA, and peace-of-mind screenings with fast turnaround times.";
   const canonical = canonicalUrl(citySlug);
 
   return (
@@ -101,7 +101,7 @@ const Aurora = () => {
             DNA Testing in {cityName}, Colorado
           </h1>
           <p className="text-lg md:text-xl text-white drop-shadow-md max-w-3xl">
-            Professional, confidential, and AABB-certified DNA testing solutions for families, legal professionals, and immigration services
+            Professional, confidential DNA testing solutions for families, legal professionals, and immigration services
           </p>
         </div>
       </section>
@@ -110,7 +110,7 @@ const Aurora = () => {
         {/* Introduction Section */}
         <div className="text-center mb-12">
           <p className="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
-            Mile High DNA Testing offers professional, confidential, and AABB-certified DNA testing solutions for families, legal professionals, and immigration services across <strong className="text-blue-600">{cityName}, Colorado</strong>. From court-admissible paternity tests to personal peace-of-mind screenings and USCIS immigration verification, we ensure precise, timely, and reliable outcomes for every client.
+            Mile High DNA Testing offers professional, confidential DNA testing solutions for families, legal professionals, and immigration services across <strong className="text-blue-600">{cityName}, Colorado</strong>. From court-admissible paternity tests to personal peace-of-mind screenings and USCIS immigration verification, we ensure precise, timely, and reliable outcomes for every client.
           </p>
         </div>
 
@@ -266,7 +266,7 @@ const Aurora = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <div className="bg-gradient-to-br from-blue-50 to-white border border-blue-100 rounded-lg p-6 shadow-sm">
               <div className="text-3xl mb-3">✅</div>
-              <h3 className="font-semibold text-lg mb-2 text-gray-800">AABB-Accredited Laboratory</h3>
+              <h3 className="font-semibold text-lg mb-2 text-gray-800">Accredited partner laboratories</h3>
               <p className="text-gray-600 text-sm">Certified and trusted</p>
             </div>
             <div className="bg-gradient-to-br from-blue-50 to-white border border-blue-100 rounded-lg p-6 shadow-sm">
@@ -356,7 +356,7 @@ const Aurora = () => {
             
             <div className="bg-white border border-gray-200 rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
               <h3 className="font-semibold text-lg mb-2 text-gray-800">Is immigration DNA testing approved for USCIS cases?</h3>
-              <p className="text-gray-600">Yes, all immigration tests follow USCIS, AABB, and embassy requirements.</p>
+              <p className="text-gray-600">Yes. Immigration relationship testing is coordinated to meet USCIS and embassy requirements, including processing by AABB-accredited partner laboratories when required for your case.</p>
             </div>
           </div>
         </section>
