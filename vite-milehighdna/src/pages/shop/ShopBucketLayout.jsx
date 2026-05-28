@@ -22,7 +22,7 @@ const MISSION_COPY = {
 };
 
 const TRUST_SECTION_COPY =
-  "All tests are processed by AABB-accredited partner laboratories using industry-standard DNA analysis.";
+  "All tests are processed by AABB-accredited partner laboratory using industry-standard DNA analysis.";
 
 /**
  * Shared layout for shop bucket (category) pages.

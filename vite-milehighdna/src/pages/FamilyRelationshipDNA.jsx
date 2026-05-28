@@ -14,7 +14,7 @@ const FamilyRelationshipDNA = () => {
   <title>Family Relationship DNA Testing in Denver, CO | Grandparent & Sibling DNA Tests – Mile High DNA</title>
   <meta 
     name="description" 
-    content="Confirm family connections with our accurate, confidential DNA testing in Denver, Aurora, Thornton, & Lakewood Colorado. We offer grandparent and sibling DNA tests with same-day appointments and AABB-accredited results you can trust."
+    content="Confirm family connections with accurate, confidential DNA testing in Denver, Aurora, Thornton, and Lakewood, Colorado. Grandparent and sibling DNA tests with same-day appointments. Court-admissible legal and immigration testing through our AABB-accredited partner laboratory."
   />
   <meta
     name="keywords"

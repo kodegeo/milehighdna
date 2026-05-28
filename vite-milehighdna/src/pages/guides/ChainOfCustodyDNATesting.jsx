@@ -58,7 +58,7 @@ export default function ChainOfCustodyDNATesting() {
             At collection, each participant shows government-issued ID. The collector records identities, collects samples (e.g., cheek swabs), seals them in tamper-evident packaging, and completes chain-of-custody paperwork. Samples are shipped to the laboratory with that documentation; the lab logs receipt and maintains custody through analysis and reporting.
           </p>
           <p className="text-lg text-gray-600 mb-6">
-            Any break in the chain or failure to verify identity can compromise admissibility. For accreditation standards that support this process, read <Link to="/guides/aabb-labs-for-immigration" className="text-blue-600 underline">AABB accredited labs for immigration DNA tests</Link>.
+            Any break in the chain or failure to verify identity can compromise admissibility. For accreditation standards that support this process, read <Link to="/guides/aabb-labs-for-immigration" className="text-blue-600 underline">AABB partner-laboratory requirements for immigration DNA tests</Link>.
           </p>
         </>
       }

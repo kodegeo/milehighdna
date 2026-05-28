@@ -197,7 +197,7 @@ const WhenTheAnswersMatterMost = () => {
           <p className="text-base mb-6 text-justify">
             Our mission at <span className="font-semibold text-[#2C6FA6]">Mile High DNA Testing</span> is to ensure every client feels respected, supported,
             and safe. We follow the same professional standards used in{" "}
-            AABB-accredited partner laboratories, whether a test is for legal documentation or personal knowledge.
+            AABB-accredited partner laboratory, whether a test is for legal documentation or personal knowledge.
           </p>
 
           <p className="text-base mb-6 text-justify">

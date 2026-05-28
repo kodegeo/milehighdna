@@ -5,7 +5,7 @@ import GuideLayout from "./GuideLayout";
 const faqs = [
   {
     question: "How long does a paternity test take to get results?",
-    answer: "Standard paternity tests typically return results within 2–3 business days after the laboratory receives the samples. Legal tests with chain-of-custody may take the same or slightly longer depending on documentation and shipping."
+    answer: "Standard paternity tests typically return results within 3–5 business days after the laboratory receives the samples. Legal tests with chain-of-custody may take the same or slightly longer depending on documentation and shipping."
   },
   {
     question: "How long does prenatal DNA testing take?",
@@ -13,7 +13,7 @@ const faqs = [
   },
   {
     question: "Can I get faster DNA test results?",
-    answer: "Some laboratories offer expedited or rush processing for an additional fee. Availability and cost vary; ask when scheduling your appointment if you need results by a specific date."
+    answer: "Our partner laboratory offers expedited or rush processing for an additional fee. Availability and cost vary; ask when scheduling your appointment if you need results by a specific date."
   },
   {
     question: "When does the clock start for DNA test turnaround?",

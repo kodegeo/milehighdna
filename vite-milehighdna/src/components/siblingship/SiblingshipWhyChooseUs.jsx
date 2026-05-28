@@ -3,7 +3,7 @@ const SiblingshipWhyChooseUs = () => {
       {
         title: 'AABB-accredited partner laboratory',
         description:
-          'All DNA testing is performed by AABB-accredited labs to ensure the highest level of legal and scientific accuracy.',
+          'Legal and immigration testing is provided through our AABB-accredited partner laboratory, with chain-of-custody standards where required.',
       },
       {
         title: 'Legal & Non-Legal Options',

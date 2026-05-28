@@ -131,7 +131,7 @@ const NonLegalDNATestCostGuide = () => {
                   "name": "Are non-legal DNA tests accurate?",
                   "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Yes, non-legal DNA tests provide the same scientific accuracy as legal tests when processed by AABB-accredited partner laboratories. The difference is in collection method and documentation, not accuracy."
+                    "text": "Yes, non-legal DNA tests provide the same scientific accuracy as legal tests when processed by AABB-accredited partner laboratory. The difference is in collection method and documentation, not accuracy."
                   }
                 },
                 {
@@ -384,7 +384,7 @@ const NonLegalDNATestCostGuide = () => {
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-semibold text-gray-800 mb-3">Are non-legal DNA tests accurate?</h3>
               <p className="text-gray-600">
-                Yes, non-legal DNA tests provide the same scientific accuracy as legal tests when processed by AABB-accredited partner laboratories. The difference is in collection method and documentation, not accuracy.
+                Yes, non-legal DNA tests provide the same scientific accuracy as legal tests when processed by AABB-accredited partner laboratory. The difference is in collection method and documentation, not accuracy.
               </p>
             </div>
             

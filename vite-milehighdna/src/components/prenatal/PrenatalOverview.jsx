@@ -11,7 +11,7 @@ const PrenatalOverview = () => {
         <p className="text-lg text-gray-600 mb-8">
           Our non-invasive <Link to="/services/prenatal-paternity-testing" className="text-blue-600 underline">prenatal paternity test</Link> uses a simple blood sample from the expectant mother 
           and a cheek swab from the alleged father to safely determine paternity before birth. 
-          The test is risk-free and provides over 99.9% accurate results for peace of mind or legal planning. For court or immigration use, analysis is performed by AABB-accredited partner laboratories when applicable—trusted by families across <Link to="/locations/denver" className="text-blue-600 underline">Denver</Link>, Aurora, Lakewood, and throughout Colorado.
+          The test is risk-free and provides over 99.9% accurate results for peace of mind or legal planning. For court or immigration use, analysis is performed by AABB-accredited partner laboratory when applicable—trusted by families across <Link to="/locations/denver" className="text-blue-600 underline">Denver</Link>, Aurora, Lakewood, and throughout Colorado.
         </p>
 
         <div className="grid gap-8 md:grid-cols-3 text-left">
@@ -25,7 +25,7 @@ const PrenatalOverview = () => {
           </div>
           <div className="p-6 border rounded-xl shadow-sm hover:shadow-md transition">
             <h3 className="text-xl font-semibold text-blue-700 mb-2">Accurate</h3>
-            <p className="text-gray-600">Over 99.9% conclusive results; partner laboratories maintain AABB accreditation where applicable for legal testing.</p>
+            <p className="text-gray-600">Over 99.9% conclusive results; partner laboratory maintain AABB accreditation where applicable for legal testing.</p>
           </div>
           <div className="p-6 border rounded-xl shadow-sm hover:shadow-md transition">
             <h3 className="text-xl font-semibold text-blue-700 mb-2">Fast</h3>

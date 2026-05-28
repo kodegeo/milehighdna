@@ -240,7 +240,7 @@ export default function MileHighDNACorner() {
           <div className="md:flex">
             <div className="md:w-1/2 p-8">
               <h3 className="text-2xl font-bold mb-4 text-gray-800">When DNA Tells the Truth: A Father's Journey Through Paternity Testing</h3>
-              <p className="text-gray-600 mb-4">A Denver father sought peace of mind through paternity testing. Learn how accurate, AABB-accredited DNA testing provides clarity when appearances raise questions.</p>
+              <p className="text-gray-600 mb-4">A Denver father sought peace of mind through paternity testing. Learn how accurate, confidential DNA testing provides clarity when appearances raise questions.</p>
               <div className="text-sm text-gray-500 mb-4">
                 <span>By Mile High DNA Corner Team</span>
               </div>
@@ -381,7 +381,7 @@ export default function MileHighDNACorner() {
             <img src={dnaNearMeImg} alt="DNA Test Near Me" className="w-full h-48 object-cover" />
             <div className="p-6">
               <h3 className="text-xl font-bold mb-3 text-gray-800">DNA Test Near Me: Trusted DNA Testing Locations Across Denver</h3>
-              <p className="text-gray-600 mb-4">Find trusted, AABB-accredited DNA testing across Denver, Aurora, Lakewood, and throughout Colorado</p>
+              <p className="text-gray-600 mb-4">Find trusted DNA testing across Denver, Aurora, Lakewood, and throughout Colorado. Legal and immigration testing through our AABB-accredited partner laboratory.</p>
               <div className="text-sm text-gray-500 mb-4">
                 <span>By Mile High DNA Corner Team</span> • <span>October 2025</span>
               </div>

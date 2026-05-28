@@ -13,7 +13,7 @@ const faqs = [
   },
   {
     question: "Do all courts accept AABB-accredited DNA results?",
-    answer: "Most family courts in the United States accept DNA test results from AABB-accredited partner laboratories when chain-of-custody and identity verification are documented. Requirements can vary by jurisdiction; your attorney or the court can confirm."
+    answer: "Most family courts in the United States accept DNA test results from AABB-accredited partner laboratory when chain-of-custody and identity verification are documented. Requirements can vary by jurisdiction; your attorney or the court can confirm."
   },
   {
     question: "How do I get a court-admissible paternity test in Denver?",
@@ -58,7 +58,7 @@ export default function CourtAdmissibleDNATesting() {
             Participants present government-issued ID at collection. A trained collector takes samples (usually cheek swabs) and documents the chain-of-custody. Samples are sealed and sent to an AABB-accredited partner lab. The lab analyzes the DNA and issues a certified report that can be sent to the court, attorney, or agency.
           </p>
           <p className="text-lg text-gray-600 mb-6">
-            The entire process—from collection to reporting—must be documented. For more on chain-of-custody, read <Link to="/guides/chain-of-custody-dna-testing" className="text-blue-600 underline">what is chain of custody DNA testing</Link>. For accreditation, see <Link to="/guides/aabb-labs-for-immigration" className="text-blue-600 underline">AABB accredited labs for immigration DNA tests</Link>.
+            The entire process—from collection to reporting—must be documented. For more on chain-of-custody, read <Link to="/guides/chain-of-custody-dna-testing" className="text-blue-600 underline">what is chain of custody DNA testing</Link>. For accreditation, see <Link to="/guides/aabb-labs-for-immigration" className="text-blue-600 underline">AABB partner-laboratory requirements for immigration DNA tests</Link>.
           </p>
         </>
       }

@@ -267,7 +267,7 @@ const Longmont = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <div className="bg-gradient-to-br from-blue-50 to-white border border-blue-100 rounded-lg p-6 shadow-sm">
               <div className="text-3xl mb-3">✅</div>
-              <h3 className="font-semibold text-lg mb-2 text-gray-800">Accredited partner laboratories</h3>
+              <h3 className="font-semibold text-lg mb-2 text-gray-800">Accredited partner laboratory</h3>
               <p className="text-gray-600 text-sm">Certified and trusted</p>
             </div>
             <div className="bg-gradient-to-br from-blue-50 to-white border border-blue-100 rounded-lg p-6 shadow-sm">
@@ -357,7 +357,7 @@ const Longmont = () => {
             
             <div className="bg-white border border-gray-200 rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
               <h3 className="font-semibold text-lg mb-2 text-gray-800">Is immigration DNA testing approved for USCIS cases?</h3>
-              <p className="text-gray-600">Yes. Immigration relationship testing is coordinated to meet USCIS and embassy requirements, including processing by AABB-accredited partner laboratories when required for your case.</p>
+              <p className="text-gray-600">Yes. Immigration relationship testing is coordinated to meet USCIS and embassy requirements, including processing by AABB-accredited partner laboratory when required for your case.</p>
             </div>
           </div>
         </section>

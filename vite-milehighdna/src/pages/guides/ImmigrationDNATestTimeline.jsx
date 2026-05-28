@@ -48,7 +48,7 @@ export default function ImmigrationDNATestTimeline() {
             Timeline matters when USCIS or the embassy has given you a deadline to submit DNA results. Planning ahead for collection here and abroad, shipping, and lab processing helps you meet that deadline. Do not wait until the last minute to schedule.
           </p>
           <p className="text-lg text-gray-600 mb-6">
-            For embassy-specific procedures, read <Link to="/guides/embassy-dna-testing" className="text-blue-600 underline">embassy DNA testing explained</Link>. For lab requirements, see <Link to="/guides/aabb-labs-for-immigration" className="text-blue-600 underline">AABB accredited labs for immigration DNA tests</Link>.
+            For embassy-specific procedures, read <Link to="/guides/embassy-dna-testing" className="text-blue-600 underline">embassy DNA testing explained</Link>. For lab requirements, see <Link to="/guides/aabb-labs-for-immigration" className="text-blue-600 underline">AABB partner-laboratory requirements for immigration DNA tests</Link>.
           </p>
         </>
       }
@@ -65,7 +65,7 @@ export default function ImmigrationDNATestTimeline() {
       legal={
         <>
           <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-            Immigration DNA testing is always performed as legal testing with AABB-accredited labs and chain-of-custody. The same standards that ensure admissibility also affect how the process is coordinated—using approved collectors and labs keeps the timeline predictable and results acceptable.
+            Immigration DNA testing is always performed as legal testing with an AABB-accredited partner laboratory and chain-of-custody. The same standards that ensure admissibility also affect how the process is coordinated—using approved collectors and partner-laboratory processing keeps the timeline predictable and results acceptable.
           </p>
           <p className="text-lg text-gray-600 mb-6">
             For court-admissible testing in general, see <Link to="/guides/court-admissible-dna-testing" className="text-blue-600 underline">court admissible DNA testing</Link> and <Link to="/guides/chain-of-custody-dna-testing" className="text-blue-600 underline">chain of custody DNA testing</Link>.

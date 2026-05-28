@@ -14,7 +14,7 @@ const PrenatalHero = () => {
           <p className="text-lg text-gray-600 mb-6">
             Mile High DNA Testing offers non-invasive <Link to="/services/prenatal-paternity-testing" className="text-blue-600 underline">prenatal paternity testing</Link> (NIPP) in <Link to="/locations/denver" className="text-blue-600 underline">Denver</Link>, Aurora, and Lakewood, Colorado. 
             Our safe blood draw and cheek swab process poses no risk to pregnancy while delivering fast, accurate, and confidential results 
-            processed by AABB-accredited partner laboratories—with results typically available in just 7–10 business days.
+            processed by AABB-accredited partner laboratory—with results typically available in just 7–10 business days.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <a

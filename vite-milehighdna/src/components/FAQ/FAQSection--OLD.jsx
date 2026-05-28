@@ -240,7 +240,7 @@ const FAQ_CATEGORIES = [
       {
         id: 'how-accurate-dna-tests',
         question: 'How accurate are DNA tests?',
-        answer: 'Postnatal paternity tests routinely report 99.9% or higher probability of paternity when the alleged father is included, and exclusion when he is not. Non-invasive prenatal paternity tests offer 99.9% or higher accuracy. Results are produced by accredited laboratories using validated methods.',
+        answer: 'Postnatal paternity tests routinely report 99.9% or higher probability of paternity when the alleged father is included, and exclusion when he is not. Non-invasive prenatal paternity tests offer 99.9% or higher accuracy. Our results are produced by an accredited partner laboratory using validated methods.',
         guideLink: '/guides/how-accurate-is-dna-testing',
         guideLabel: 'Learn more →',
       },

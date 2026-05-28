@@ -27,7 +27,7 @@ export default function ImmigrationDNATestingProcess() {
       title="Immigration DNA Testing Process"
       slug="immigration-dna-testing-process"
       breadcrumbLabel="Immigration DNA Testing Process"
-      description="How the immigration DNA testing process works: USCIS and embassy requirements, chain-of-custody, and AABB-accredited testing. Denver immigration DNA testing."
+      description="How the immigration DNA testing process works: USCIS and embassy requirements, chain-of-custody, and AABB partner-laboratory testing. Denver immigration DNA testing."
       heroSubline="Step-by-step: how immigration DNA testing is requested, collected, and reported for USCIS and embassies."
       serviceLink="/services/immigration-dna-testing"
       serviceLabel="Immigration DNA Testing"
@@ -38,7 +38,7 @@ export default function ImmigrationDNATestingProcess() {
             Immigration DNA testing is used to verify biological relationships when required by U.S. Citizenship and Immigration Services (USCIS) or a U.S. embassy or consulate. The process involves identity verification, chain-of-custody collection, and analysis by an AABB-accredited partner laboratory so results meet agency and embassy standards.
           </p>
           <p className="text-lg text-gray-600 mb-6">
-            Mile High DNA Testing helps families in Denver and beyond complete immigration DNA testing. For agency requirements, see <Link to="/guides/uscis-dna-testing" className="text-blue-600 underline">USCIS DNA testing requirements</Link> and <Link to="/guides/aabb-labs-for-immigration" className="text-blue-600 underline">AABB accredited labs for immigration DNA tests</Link>. To <Link to="/appointments" className="text-blue-600 underline">schedule a test</Link>, visit our appointments page.
+            Mile High DNA Testing helps families in Denver and beyond complete immigration DNA testing. For agency requirements, see <Link to="/guides/uscis-dna-testing" className="text-blue-600 underline">USCIS DNA testing requirements</Link> and <Link to="/guides/aabb-labs-for-immigration" className="text-blue-600 underline">AABB partner-laboratory requirements for immigration DNA tests</Link>. To <Link to="/appointments" className="text-blue-600 underline">schedule a test</Link>, visit our appointments page.
           </p>
         </>
       }
@@ -68,7 +68,7 @@ export default function ImmigrationDNATestingProcess() {
             Immigration DNA testing is always performed as legal testing: identity verification, chain-of-custody, and AABB-accredited partner laboratory analysis are required. Results are not accepted by USCIS or embassies if these standards are not met. There is no &quot;peace-of-mind&quot; immigration test—only tests that meet agency requirements are used.
           </p>
           <p className="text-lg text-gray-600 mb-6">
-            For court-admissible testing in general, see <Link to="/guides/court-admissible-dna-testing" className="text-blue-600 underline">court admissible DNA testing</Link>. For AABB accreditation details, read <Link to="/guides/aabb-labs-for-immigration" className="text-blue-600 underline">AABB accredited labs for immigration DNA tests</Link>.
+            For court-admissible testing in general, see <Link to="/guides/court-admissible-dna-testing" className="text-blue-600 underline">court admissible DNA testing</Link>. For AABB accreditation details, read <Link to="/guides/aabb-labs-for-immigration" className="text-blue-600 underline">AABB partner-laboratory requirements for immigration DNA tests</Link>.
           </p>
         </>
       }

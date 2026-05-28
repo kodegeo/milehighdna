@@ -14,7 +14,7 @@ const benefits = [
   },
   {
     value: 'AABB',
-    label: 'AABB partner laboratories',
+    label: 'AABB partner laboratory',
   },
   {
     value: '100%',

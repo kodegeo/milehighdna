@@ -27,7 +27,7 @@ export default function DNATestForCourt() {
       title="DNA Testing For Court Cases"
       slug="dna-test-for-court"
       breadcrumbLabel="DNA Testing For Court Cases"
-      description="How to get DNA testing for court cases: legal paternity tests, court orders, and AABB-accredited results in Denver."
+      description="How to get DNA testing for court cases: legal paternity tests, court orders, and partner-laboratory results in Denver."
       heroSubline="What you need for a court case: legal DNA testing with identity verification, chain-of-custody, and accredited results."
       serviceLink="/services/legal-paternity-testing"
       serviceLabel="Legal Paternity Testing"
@@ -68,7 +68,7 @@ export default function DNATestForCourt() {
             Only legal DNA tests produce court-admissible results. Peace-of-mind or at-home tests do not include identity verification or chain-of-custody and cannot be used in court. If you might need results for a case, choose a legal test from the beginning.
           </p>
           <p className="text-lg text-gray-600 mb-6">
-            Immigration cases also require legal, AABB-accredited testing; see <Link to="/guides/immigration-dna-testing-process" className="text-blue-600 underline">immigration DNA testing process</Link> and <Link to="/guides/embassy-dna-testing" className="text-blue-600 underline">embassy DNA testing</Link> for agency requirements.
+            Immigration cases also require legal testing through an AABB-accredited partner laboratory; see <Link to="/guides/immigration-dna-testing-process" className="text-blue-600 underline">immigration DNA testing process</Link> and <Link to="/guides/embassy-dna-testing" className="text-blue-600 underline">embassy DNA testing</Link> for agency requirements.
           </p>
         </>
       }

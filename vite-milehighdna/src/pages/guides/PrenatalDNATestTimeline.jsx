@@ -9,7 +9,7 @@ const faqs = [
   },
   {
     question: "When can I take a prenatal paternity test?",
-    answer: "NIPP can be performed as early as 7–8 weeks into pregnancy. Some providers recommend waiting until at least 8 weeks to ensure sufficient cell-free fetal DNA is present in the mother's blood for a reliable result."
+    answer: "NIPP can be performed as early as 7–8 weeks into pregnancy. We recommend waiting until at least 8 weeks to ensure sufficient cell-free fetal DNA is present in the mother's blood for a reliable result."
   },
   {
     question: "How soon after the blood draw do I get results?",
@@ -17,7 +17,7 @@ const faqs = [
   },
   {
     question: "Can I get faster prenatal DNA test results?",
-    answer: "Some laboratories offer expedited processing for an additional fee. Ask when scheduling whether rush options are available and what the cost and timeline would be."
+    answer: "Our laboratory offers expedited processing for an additional fee. Ask when scheduling whether rush options are available and what the cost and timeline would be."
   }
 ];
 

@@ -269,7 +269,7 @@ const PrenatalDNATestCostGuide = () => {
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-semibold text-gray-800 mb-4">Laboratory Accreditation</h3>
               <p className="text-gray-600 mb-4">
-                AABB-accredited partner laboratories charge more due to higher quality standards and legal admissibility requirements.
+                AABB-accredited partner laboratory charge more due to higher quality standards and legal admissibility requirements.
               </p>
               <ul className="text-gray-600 space-y-2">
                 <li>• AABB accreditation costs</li>

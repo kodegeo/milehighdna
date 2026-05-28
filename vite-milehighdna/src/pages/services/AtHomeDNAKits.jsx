@@ -270,7 +270,7 @@ const AtHomeDNAKits = () => {
             testing with chain-of-custody is required.
           </p>
           <p className="text-gray-700">
-            All testing is performed through AABB-accredited partner laboratories. Your privacy and the security of samples
+            All testing is performed through AABB-accredited partner laboratory. Your privacy and the security of samples
             are prioritized.
           </p>
         </div>

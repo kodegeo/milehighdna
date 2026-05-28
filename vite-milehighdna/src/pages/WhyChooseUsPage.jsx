@@ -35,11 +35,11 @@ const WhyChooseUsPage = () => {
         <title>Why Choose Us | Mile High DNA Testing | Denver, Colorado</title>
         <meta
           name="description"
-          content="Mile High DNA Testing provides court-admissible and immigration DNA testing with AABB-accredited partner laboratories, chain-of-custody procedures, and direct professional support in Denver and Colorado."
+          content="Mile High DNA Testing provides court-admissible and immigration DNA testing with AABB-accredited partner laboratory, chain-of-custody procedures, and direct professional support in Denver and Colorado."
         />
         <link rel="canonical" href="https://milehighdnatesting.com/why-choose-us" />
         <meta property="og:title" content="Why Choose Us | Mile High DNA Testing" />
-        <meta property="og:description" content="Court-admissible and immigration DNA testing with AABB-accredited labs and direct professional support in Denver, Colorado." />
+        <meta property="og:description" content="Court-admissible and immigration DNA testing through our AABB-accredited partner laboratory, with direct professional support in Denver, Colorado." />
         <meta property="og:url" content="https://milehighdnatesting.com/why-choose-us" />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
@@ -123,10 +123,10 @@ const WhyChooseUsPage = () => {
             className="w-full mb-6 rounded-lg object-cover max-h-[320px]"
           />
           <p className="text-gray-700 leading-relaxed mb-4">
-            All DNA testing is performed through AABB-accredited partner laboratories that meet established scientific and documentation standards.
+            All DNA testing is performed by an AABB-accredited partner laboratory that meets established scientific and documentation standards.
           </p>
           <p className="text-gray-700 leading-relaxed mb-4">
-            These laboratories follow strict validation procedures designed to ensure the reliability of relationship DNA testing results.
+            This laboratory follows strict validation procedures designed to ensure the reliability of relationship DNA testing results.
           </p>
           <p className="text-gray-700 leading-relaxed mb-2">
             Laboratory protocols include:

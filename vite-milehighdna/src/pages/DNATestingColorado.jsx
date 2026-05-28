@@ -147,7 +147,7 @@ const DNATestingColorado = () => {
     },
     {
       question: "Do Colorado courts accept DNA test results?",
-      answer: "Yes. Colorado family courts accept DNA test results from AABB-accredited partner laboratories when proper chain-of-custody procedures are followed. Legal DNA tests meet state requirements for child support, custody, and paternity cases."
+      answer: "Yes. Colorado family courts accept DNA test results from AABB-accredited partner laboratory when proper chain-of-custody procedures are followed. Legal DNA tests meet state requirements for child support, custody, and paternity cases."
     },
     {
       question: "Can prenatal DNA testing be done safely in Colorado?",

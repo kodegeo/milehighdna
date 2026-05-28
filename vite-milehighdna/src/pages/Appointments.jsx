@@ -15,7 +15,7 @@ const Appointments = () => {
         <title> Book a DNA Test in Denver, CO | Legal & Prenatal (NIPP) Appointments – Mile High DNA</title>
         <meta 
           name="description" 
-          content="Schedule your legal, peace of mind, or prenatal DNA test in Denver, Aurora, Thornton & Lakewood Colorado today. Mile High DNA Testing offers same-day appointments, AABB-accredited labs, and results accepted for court cases." 
+          content="Schedule your legal, peace of mind, or prenatal DNA test in Denver, Aurora, Thornton, and Lakewood, Colorado today. Same-day appointments available. Legal and immigration testing through our AABB-accredited partner laboratory. Court-admissible results when required." 
         />
         <meta name="keywords" 
         content="DNA testing appointment Denver, book paternity test, legal DNA testing Colorado, non invasive prenatal paternity appointment DNA testing Denver" />
@@ -115,7 +115,7 @@ const Appointments = () => {
                   "@type": "Offer",
                   "itemOffered": {
                     "@type": "Service",
-                    "name": "Immigration DNA Testing (AABB-Accredited Lab Contact Request)",
+                    "name": "Immigration DNA Testing (AABB Partner Laboratory Contact Request)",
                     "description": "This appointment initiates a USCIS-compliant immigration DNA test through an AABB-accredited partner laboratory. It includes coordination of case requirements, documentation guidance, and proper sample collection procedures required for immigration cases.",
                     "provider": {
                       "@type": "LocalBusiness",

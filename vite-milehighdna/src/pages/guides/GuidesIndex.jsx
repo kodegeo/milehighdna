@@ -27,7 +27,7 @@ const GuidesIndex = () => {
       guides: [
         { title: "Court Admissible DNA Testing Explained", description: "What makes DNA testing court admissible: chain-of-custody, AABB accreditation, and identity verification. Legal paternity testing in Denver.", link: "/guides/court-admissible-dna-testing" },
         { title: "What Is Chain of Custody DNA Testing?", description: "Chain of custody in DNA testing: what it is, why courts and USCIS require it, and how it keeps results legally admissible.", link: "/guides/chain-of-custody-dna-testing" },
-        { title: "DNA Testing For Court Cases", description: "How to get DNA testing for court cases: legal paternity tests, court orders, and AABB-accredited results in Denver.", link: "/guides/dna-test-for-court" },
+        { title: "DNA Testing For Court Cases", description: "How to get DNA testing for court cases: legal paternity tests, court orders, and partner-laboratory results in Denver.", link: "/guides/dna-test-for-court" },
         { title: "DNA Testing For Child Custody Cases", description: "DNA testing for child custody: when courts use paternity tests, legal requirements, and how to get court-admissible results in Denver.", link: "/guides/dna-test-for-child-custody" },
         { title: "Can You Do A DNA Test Without The Father?", description: "Options when the father is unavailable: grandparent testing, avuncular testing, and postmortem DNA testing. Legal options in Denver.", link: "/guides/dna-test-without-the-father" },
         { title: "Legal DNA Test Cost Guide", description: "Understand the costs of court-admissible DNA testing, what's included in legal DNA test pricing, and why chain-of-custody procedures affect cost.", link: "/guides/legal-dna-test-cost" },
@@ -48,9 +48,9 @@ const GuidesIndex = () => {
     {
       name: "Immigration DNA Testing",
       guides: [
-        { title: "Immigration DNA Testing Process", description: "How the immigration DNA testing process works: USCIS and embassy requirements, chain-of-custody, and AABB-accredited testing. Denver immigration DNA testing.", link: "/guides/immigration-dna-testing-process" },
+        { title: "Immigration DNA Testing Process", description: "How the immigration DNA testing process works: USCIS and embassy requirements, chain-of-custody, and AABB partner-laboratory testing. Denver immigration DNA testing.", link: "/guides/immigration-dna-testing-process" },
         { title: "USCIS DNA Testing Requirements", description: "USCIS DNA testing requirements: AABB accreditation, chain-of-custody, and how to complete immigration DNA testing for USCIS. Denver immigration DNA testing.", link: "/guides/uscis-dna-testing" },
-        { title: "AABB Accredited Labs For Immigration DNA Tests", description: "Why immigration DNA tests must use AABB-accredited partner laboratories. USCIS and embassy requirements. Denver immigration DNA testing.", link: "/guides/aabb-labs-for-immigration" },
+        { title: "AABB Accredited Labs For Immigration DNA Tests", description: "Why immigration DNA tests must use AABB-accredited partner laboratory. USCIS and embassy requirements. Denver immigration DNA testing.", link: "/guides/aabb-labs-for-immigration" },
         { title: "Embassy DNA Testing Explained", description: "Embassy DNA testing: what U.S. embassies and consulates require for relationship verification. AABB accreditation and chain-of-custody.", link: "/guides/embassy-dna-testing" },
         { title: "How Long Immigration DNA Testing Takes", description: "How long immigration DNA testing takes: lab turnaround, international collection, and what affects the timeline. Denver immigration DNA testing.", link: "/guides/immigration-dna-test-timeline" }
       ]

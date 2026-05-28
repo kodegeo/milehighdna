@@ -37,12 +37,12 @@ const faqData = [
         a: [
           {
             type: "p",
-            text: "Mile High DNA Testing is an independent specimen collection company. We are not AABB accredited. DNA analysis is performed by partner laboratories, which may hold accreditations and certifications such as:",
+            text: "Mile High DNA Testing is an independent specimen collection company. We are not AABB accredited. DNA analysis is performed by partner laboratory, which may hold accreditations and certifications such as:",
           },
           {
             type: "ul",
             items: [
-              "AABB (American Association of Blood Banks) — maintained by partner laboratories for applicable legal and immigration relationship testing where applicable",
+              "AABB (American Association of Blood Banks) — maintained by partner laboratory for applicable legal and immigration relationship testing where applicable",
               "CLIA (Clinical Laboratory Improvement Amendments)",
               "CAP (College of American Pathologists)",
             ],
@@ -328,7 +328,7 @@ const faqData = [
               "Twin zygosity",
               "Single profile",
               "Postmortem (DNA testing with a deceased person)",
-              "Immigration (partner AABB-accredited partner laboratories where required)",
+              "Immigration (partner AABB-accredited partner laboratory where required)",
               "mtDNA and Y-STR",
               "Discreet/private testing (alternative DNA samples)",
               "Infidelity",
@@ -378,11 +378,11 @@ const faqData = [
           },
           {
             type: "p",
-            text: "At Mile High DNA Testing, every case is structured and monitored. Legal and immigration testing is coordinated with AABB-accredited partner laboratories where applicable. Whether you test in our Denver office or order an at-home kit, your case is managed with precision from start to finish. AABB does not accredit home DNA test kits.",
+            text: "At Mile High DNA Testing, every case is structured and monitored. Legal and immigration testing is coordinated with AABB-accredited partner laboratory where applicable. Whether you test in our Denver office or order an at-home kit, your case is managed with precision from start to finish. AABB does not accredit home DNA test kits.",
           },
           {
             type: "p",
-            text: "Laboratory processing with high accuracy: Postnatal and legal-path tests are analyzed by partner laboratories using validated methods. Results typically show a 99.9% or greater probability of paternity when the alleged father is included and 0% when excluded, depending on the test type. AABB does not accredit home DNA test kits.",
+            text: "Laboratory processing with high accuracy: Postnatal and legal-path tests are analyzed by partner laboratory using validated methods. Results typically show a 99.9% or greater probability of paternity when the alleged father is included and 0% when excluded, depending on the test type. AABB does not accredit home DNA test kits.",
           },
           {
             type: "p",

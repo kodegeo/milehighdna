@@ -5,7 +5,7 @@ import GuideLayout from "./GuideLayout";
 const faqs = [
   {
     question: "Why does immigration DNA testing require AABB accreditation?",
-    answer: "USCIS and U.S. embassies require relationship DNA testing to be performed by AABB-accredited partner laboratories to ensure consistent scientific standards, validation, and documentation. Results from non-AABB labs are typically not accepted for immigration purposes."
+    answer: "USCIS and U.S. embassies require relationship DNA testing to be performed by AABB-accredited partner laboratory to ensure consistent scientific standards, validation, and documentation. Results from non-AABB labs are typically not accepted for immigration purposes."
   },
   {
     question: "What is AABB accreditation?",
@@ -17,7 +17,7 @@ const faqs = [
   },
   {
     question: "How do I find an AABB-accredited partner lab for immigration DNA testing?",
-    answer: "DNA testing facilities like Mile High DNA Testing in Denver work with AABB-accredited partner laboratories and coordinate the full process—collection, chain-of-custody, and reporting—so your results meet immigration requirements."
+    answer: "DNA testing facilities like Mile High DNA Testing in Denver work with an AABB-accredited partner laboratory and coordinate the full process—collection, chain-of-custody, and reporting—so your results meet immigration requirements."
   }
 ];
 
@@ -27,8 +27,8 @@ export default function AABBLabsForImmigration() {
       title="AABB Accredited Labs For Immigration DNA Tests"
       slug="aabb-labs-for-immigration"
       breadcrumbLabel="AABB Labs For Immigration"
-      description="Why immigration DNA tests must use AABB-accredited partner laboratories. USCIS and embassy requirements. Denver immigration DNA testing."
-      heroSubline="Why USCIS and embassies require AABB-accredited partner laboratories for immigration DNA testing—and how to get it right."
+      description="Why immigration DNA tests must use AABB-accredited partner laboratory. USCIS and embassy requirements. Denver immigration DNA testing."
+      heroSubline="Why USCIS and embassies require AABB-accredited partner laboratory for immigration DNA testing—and how to get it right."
       serviceLink="/services/immigration-dna-testing"
       serviceLabel="Immigration DNA Testing"
       faqs={faqs}
@@ -38,7 +38,7 @@ export default function AABBLabsForImmigration() {
             Immigration DNA testing for USCIS and U.S. embassies must be performed by laboratories accredited by the AABB (American Association of Blood Banks). This accreditation confirms that the lab meets strict standards for relationship DNA testing, so results are accepted as evidence of biological relationships.
           </p>
           <p className="text-lg text-gray-600 mb-6">
-            Mile High DNA Testing uses AABB-accredited partner laboratories for all immigration DNA testing. For the full process, see <Link to="/guides/immigration-dna-testing-process" className="text-blue-600 underline">immigration DNA testing process</Link> and <Link to="/guides/uscis-dna-testing" className="text-blue-600 underline">USCIS DNA testing requirements</Link>. To <Link to="/appointments" className="text-blue-600 underline">schedule a test</Link>, visit our appointments page.
+            Mile High DNA Testing uses an AABB-accredited partner laboratory for all immigration DNA testing. For the full process, see <Link to="/guides/immigration-dna-testing-process" className="text-blue-600 underline">immigration DNA testing process</Link> and <Link to="/guides/uscis-dna-testing" className="text-blue-600 underline">USCIS DNA testing requirements</Link>. To <Link to="/appointments" className="text-blue-600 underline">schedule a test</Link>, visit our appointments page.
           </p>
         </>
       }

@@ -20,7 +20,7 @@ const PrenatalSteps = () => {
     },
     {
       number: 3,
-      title: 'Lab Analysis by AABB-Accredited Experts',
+      title: 'Partner Laboratory Analysis',
       description:
         'Our AABB-accredited partner lab extracts and compares fetal DNA from the mother’s blood with the alleged father’s DNA profile to determine paternity with over 99.9% accuracy.',
     },

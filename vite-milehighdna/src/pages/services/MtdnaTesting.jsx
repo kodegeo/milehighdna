@@ -110,7 +110,7 @@ const MtdnaTesting = () => {
           </div>
 
           <p className="text-gray-600 text-sm mb-6">
-            Pricing may vary by testing panel and reporting. Testing may be performed through accredited laboratories depending on your needs.
+            Pricing may vary by testing panel and reporting. Testing is performed by an accredited laboratory.
           </p>
 
           <p className="text-gray-700 mb-6 text-lg">

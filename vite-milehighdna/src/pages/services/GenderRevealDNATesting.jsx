@@ -114,7 +114,7 @@ const GenderRevealDNATesting = () => {
           </p>
 
           <p className="text-gray-700 mb-6 text-lg">
-            Testing is performed in partnership with accredited laboratories. Availability may vary by location and timing.
+            Testing is performed in partnership with an accredited laboratory. Availability may vary by location and timing.
           </p>
         </div>
       </section>

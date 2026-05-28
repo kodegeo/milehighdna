@@ -281,7 +281,7 @@ const NonLegalPaternityTesting = () => {
             </p>
             <p className="text-gray-700 mb-8 text-lg leading-relaxed">
               Our Peace of Mind Paternity Test provides private, 
-              non-legal DNA results performed by AABB-accredited partner laboratories. 
+              non-legal DNA results performed by AABB-accredited partner laboratory. 
               This service is ideal for personal knowledge, family reassurance, or resolving 
               sensitive questions without the need for court involvement.
             </p>

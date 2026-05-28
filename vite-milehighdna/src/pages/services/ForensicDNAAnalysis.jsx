@@ -13,7 +13,7 @@ const ForensicDNAAnalysis = () => {
         <title>Forensic DNA Analysis in Denver | Expert DNA Testing for Legal Cases | Mile High DNA</title>
         <meta
           name="description"
-          content="Expert forensic DNA analysis in Denver for legal cases, missing persons, and complex relationship verification. AABB-accredited specialty DNA testing with court-admissible results."
+          content="Expert forensic DNA analysis in Denver for legal cases, missing persons, and complex relationship verification. Court-admissible testing through an AABB-accredited partner laboratory."
         />
         <meta
           name="keywords"
@@ -23,7 +23,7 @@ const ForensicDNAAnalysis = () => {
         
         {/* OG / Twitter */}
         <meta property="og:title" content="Forensic DNA Analysis in Denver | Expert Legal DNA Testing" />
-        <meta property="og:description" content="Expert forensic DNA analysis for legal cases, missing persons, and complex relationship verification. AABB-accredited specialty testing." />
+        <meta property="og:description" content="Expert forensic DNA analysis for legal cases, missing persons, and complex relationship verification. Court-admissible testing through an AABB-accredited partner laboratory." />
         <meta property="og:image" content="https://milehighdnatesting.com/images/banner-1200.png" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://milehighdnatesting.com/services/forensic-dna-analysis" />
@@ -132,7 +132,7 @@ const ForensicDNAAnalysis = () => {
                 "name": "Are forensic DNA test results court-admissible?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Yes. All forensic DNA analysis follows strict chain-of-custody procedures and is performed by AABB-accredited partner laboratories, ensuring results are court-admissible and suitable for legal proceedings."
+                  "text": "Yes. All forensic DNA analysis follows strict chain-of-custody procedures and is performed by AABB-accredited partner laboratory, ensuring results are court-admissible and suitable for legal proceedings."
                 }
               },
               {
@@ -169,7 +169,7 @@ const ForensicDNAAnalysis = () => {
             <p className="text-gray-700 mb-8 text-lg leading-relaxed">
               Our Forensic DNA Analysis service provides expert DNA testing for legal cases, 
               missing persons investigations, and complex relationship verification. Performed by 
-              AABB-accredited partner laboratories with strict chain-of-custody procedures, our forensic 
+              AABB-accredited partner laboratory with strict chain-of-custody procedures, our forensic 
               DNA testing meets the highest standards for court admissibility and legal documentation.
             </p>
             <p className="text-gray-700 mb-8 text-lg leading-relaxed">
@@ -212,7 +212,7 @@ const ForensicDNAAnalysis = () => {
             Why Choose Our Forensic DNA Analysis?
           </h2>
           <ul className="grid md:grid-cols-2 gap-6 text-gray-700 text-lg">
-            <li>✅ AABB-Accredited — Certified laboratories meeting highest industry standards</li>
+            <li>✅ AABB Partner Laboratory — Accredited processing for legal and immigration case requirements</li>
             <li>✅ Court-Admissible — Strict chain-of-custody procedures for legal cases</li>
             <li>✅ Expert Analysis — Complex relationship verification and DNA evidence interpretation</li>
             <li>✅ Missing Persons — Specialized testing for identification and family reunification</li>
@@ -325,7 +325,7 @@ const ForensicDNAAnalysis = () => {
             </div>
             <div className="bg-white p-6 rounded-lg shadow">
               <h3 className="text-xl font-semibold text-gray-800 mb-2">Are forensic DNA test results court-admissible?</h3>
-              <p className="text-gray-600">Yes. All forensic DNA analysis follows strict chain-of-custody procedures and is performed by AABB-accredited partner laboratories, ensuring results are court-admissible and suitable for legal proceedings.</p>
+              <p className="text-gray-600">Yes. All forensic DNA analysis follows strict chain-of-custody procedures and is performed by AABB-accredited partner laboratory, ensuring results are court-admissible and suitable for legal proceedings.</p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow">
               <h3 className="text-xl font-semibold text-gray-800 mb-2">Do you provide expert testimony?</h3>

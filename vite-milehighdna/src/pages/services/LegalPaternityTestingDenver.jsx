@@ -60,7 +60,7 @@ const LegalPaternityTestingDenver = () => {
         <meta property="og:title" content={`Legal Paternity Testing in ${cityName}, Colorado | DNA Testing`} />
         <meta
           property="og:description"
-          content={`Court-admissible legal paternity testing available in ${cityName}, Colorado with professional collection and AABB-accredited results.`}
+          content={`Court-admissible legal paternity testing available in ${cityName}, Colorado with professional collection and AABB-accredited partner laboratory analysis.`}
         />
         <meta
           property="og:image"

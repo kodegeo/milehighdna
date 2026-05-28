@@ -211,7 +211,7 @@ const PostmortemPaternityTesting = () => {
       <section className="py-12 md:py-16 px-6 bg-white">
         <div className="max-w-4xl mx-auto">
           <p className="text-lg text-gray-700 leading-relaxed mb-6">
-            We coordinate <Link to="/aabb-accredited-dna-testing-denver" className="text-blue-600 hover:underline">AABB-accredited DNA testing</Link> for postmortem cases and work with families who need <Link to="/services/legal-paternity-testing" className="text-blue-600 hover:underline">legal paternity DNA testing</Link> or <Link to="/services/immigration-dna-testing" className="text-blue-600 hover:underline">immigration DNA testing</Link> in other situations. Mile High DNA Testing provides structured postmortem DNA testing in Denver for:
+            We coordinate <Link to="/aabb-accredited-dna-testing-denver" className="text-blue-600 hover:underline">AABB partner-laboratory legal DNA testing standards</Link> for postmortem cases and work with families who need <Link to="/services/legal-paternity-testing" className="text-blue-600 hover:underline">legal paternity DNA testing</Link> or <Link to="/services/immigration-dna-testing" className="text-blue-600 hover:underline">immigration DNA testing</Link> in other situations. Mile High DNA Testing provides structured postmortem DNA testing in Denver for:
           </p>
           <ul className="list-disc list-outside ml-6 space-y-2 text-gray-700 mb-8">
             <li>Postmortem paternity testing</li>
@@ -360,7 +360,7 @@ const PostmortemPaternityTesting = () => {
           <p className="text-gray-700 mb-4">Families choose Mile High DNA Testing because we provide:</p>
           <ul className="list-disc list-outside ml-6 space-y-2 text-gray-700 mb-6">
             <li>Structured legal DNA coordination</li>
-            <li>AABB-accredited partner laboratorieships</li>
+            <li>AABB-accredited partner laboratory processing</li>
             <li>Strict chain-of-custody compliance</li>
             <li>Experience with probate and inheritance cases</li>
             <li>A local Denver office with nationwide coordination</li>

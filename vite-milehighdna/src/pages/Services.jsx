@@ -20,6 +20,10 @@ import infidelityHero from '../assets/images/infidelity.png';
 import healthyWeightHero from '../assets/images/healthy-weight.png';
 import atHomeKitsHero from '../assets/images/at-home-test-kit-1.png';
 import CallToAction from '../components/common/CallToAction';
+import {
+  AABB_HOME_KIT_DISCLAIMER,
+  MH_LEGAL_IMMIGRATION_PARTNER,
+} from '../constants/aabbComplianceCopy';
 
 const services = [
   {
@@ -38,7 +42,7 @@ const services = [
   },
   {
     title: 'Immigration DNA Testing',
-    description: 'Immigration DNA testing supports USCIS, embassy, and consular cases that require verified biological relationships. Testing is conducted through an AABB-accredited partner laboratory and follows strict protocols required for immigration and visa-related applications.',
+    description: `Immigration DNA testing supports USCIS, embassy, and consular cases that require verified biological relationships. ${MH_LEGAL_IMMIGRATION_PARTNER} Strict protocols apply for immigration and visa-related applications.`,
     image: immigrationHero,
     link: '/services/immigration-dna-testing',
     badge: 'USCIS Approved',
@@ -143,7 +147,7 @@ const services = [
   },
   {
     title: 'At-Home DNA Kits (Postnatal)',
-    description: 'At-home DNA test kits offer convenient, non-legal postnatal DNA testing with the same laboratory accuracy as in-office testing. Processed by an AABB-accredited partner lab and shipped securely nationwide.',
+    description: `At-home DNA test kits offer convenient, non-legal postnatal DNA testing with the same laboratory accuracy as in-office testing. Shipped securely nationwide. ${AABB_HOME_KIT_DISCLAIMER}`,
     image: atHomeKitsHero,
     link: '/services/at-home-dna-kits',
     badge: 'Convenient & Accurate',
@@ -173,7 +177,7 @@ const Services = () => {
           </title>
           <meta
             name="description"
-            content="Need a DNA test in Denver? Court-admissible legal paternity and non-invasive prenatal DNA testing available today. Same-day appointments. AABB-accredited partner lab. Call 720-900-9342."
+            content="Need a DNA test in Denver? Court-admissible legal paternity and prenatal testing with same-day appointments. Legal and immigration testing through our AABB-accredited partner laboratory. Call 720-900-9342."
           />
         <meta
           name="keywords"
@@ -184,7 +188,7 @@ const Services = () => {
         {/* OG / Twitter */}
         <meta property="og:type" content="website" />
         <meta property="og:title" content="All DNA Testing Services | Mile High DNA Testing" />
-        <meta property="og:description" content="Explore all DNA testing services offered by Mile High DNA Testing in Colorado. Legal paternity, peace of mind, discreet, immigration, prenatal, siblingship, grandparentage, avuncular, forensic, and more." />
+        <meta property="og:description" content="DNA testing services in Colorado: legal paternity, prenatal, immigration, and peace-of-mind testing. Legal and immigration testing through our AABB-accredited partner laboratory." />
         <meta property="og:image" content="https://milehighdnatesting.com/images/banner-1200.png" />
         <meta property="og:url" content="https://milehighdnatesting.com/services" />
         <meta name="twitter:card" content="summary_large_image" />
@@ -232,7 +236,7 @@ const Services = () => {
           <div className="max-w-2xl text-white">
             <h1 className="text-5xl text-white font-bold mb-4">Our DNA Testing Services</h1>
             <p className="text-xl mb-6">
-              Fast, confidential, and AABB-accredited DNA testing for families, legal cases, and prenatal testing needs.
+            Fast, confidential DNA testing for legal, prenatal, and peace-of-mind testing needs.
             </p>
             <p className="text-lg mb-8">
               Serving Denver, Aurora, Lakewood, Englewood, Thornton, Westminster, and surrounding Colorado communities. We serve clients statewide for both legal and non-legal DNA testing needs.
@@ -283,7 +287,7 @@ const Services = () => {
             Mile High DNA Testing provides court-admissible legal paternity testing, non-invasive prenatal DNA testing, immigration DNA testing, and private peace-of-mind DNA testing in Denver and throughout Colorado.
           </p>
           <p className="text-gray-700">
-            Our AABB-accredited partner laboratory ensures accurate, confidential results accepted by courts and USCIS. Same-day appointments are available.
+            {MH_LEGAL_IMMIGRATION_PARTNER} Same-day appointments are available for court-admissible and immigration cases.
           </p>
         </div>
       </section>
@@ -368,7 +372,7 @@ const Services = () => {
             <div className="bg-white rounded-xl shadow-md p-6">
               <h3 className="text-xl font-bold mb-3">Immigration DNA Testing</h3>
               <p className="text-gray-600 mb-4">
-                USCIS-compliant DNA testing processed through AABB-accredited partner laboratories.
+                USCIS-compliant immigration DNA testing. {MH_LEGAL_IMMIGRATION_PARTNER}
               </p>
               <Link to="/services/immigration-dna-testing" className="text-[#2C6FA6] font-semibold">
                 Learn More →
@@ -485,8 +489,8 @@ const Services = () => {
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="card p-6">
-              <h3 className="text-xl font-bold mb-2">AABB-Accredited</h3>
-              <p className="text-gray-600">Court-admissible testing trusted by immigration attorneys and legal professionals.</p>
+              <h3 className="text-xl font-bold mb-2">AABB Partner Laboratory</h3>
+              <p className="text-gray-600">{MH_LEGAL_IMMIGRATION_PARTNER} Court-admissible results are trusted by immigration attorneys and legal professionals.</p>
             </div>
             <div className="card p-6">
               <h3 className="text-xl font-bold mb-2">Fast Results</h3>

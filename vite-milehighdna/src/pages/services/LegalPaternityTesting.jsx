@@ -142,7 +142,7 @@ const LegalPaternityTesting = () => {
 
         <meta
           name="description"
-          content="Court-admissible legal paternity DNA testing in Denver. Chain of custody; analysis by AABB-accredited partner laboratories. Results in 3–5 days. Call (720) 900-9342 for same-day availability."
+          content="Court-admissible legal paternity DNA testing in Denver. Chain of custody; analysis by AABB-accredited partner laboratory. Results in 3–5 days. Call (720) 900-9342 for same-day availability."
         />
 
         <link
@@ -157,7 +157,7 @@ const LegalPaternityTesting = () => {
         />
         <meta
           property="og:description"
-          content="Court-admissible legal paternity DNA testing with strict chain of custody. Serving Denver and Colorado with fast results through AABB-accredited partner laboratories where applicable."
+          content="Court-admissible legal paternity DNA testing with strict chain of custody. Serving Denver and Colorado with fast results through AABB-accredited partner laboratory where applicable."
         />
         <meta
           property="og:image"
@@ -177,7 +177,7 @@ const LegalPaternityTesting = () => {
         />
         <meta
           name="twitter:description"
-          content="Fast, confidential legal paternity DNA testing accepted by courts and agencies. Coordinated with AABB-accredited partner laboratories."
+          content="Fast, confidential legal paternity DNA testing accepted by courts and agencies. Coordinated with AABB-accredited partner laboratory."
         />
         <meta
           name="twitter:image"
@@ -283,7 +283,7 @@ const LegalPaternityTesting = () => {
       <section className="bg-white py-2 px-6 text-center">
         <div className="max-w-4xl mx-auto space-y-3">
           <p className="text-sm text-gray-600 leading-relaxed">
-          Mile High DNA Testing provides professional DNA testing services, including sample collection, case management, and results coordination. Laboratory analysis is performed by AABB accredited laboratories. {MH_LEGAL_IMMIGRATION_SHORT}
+          Mile High DNA Testing provides professional DNA testing services, including sample collection, case management, and results coordination. Laboratory analysis is performed by an AABB accredited laboratory. {MH_LEGAL_IMMIGRATION_SHORT}
           </p>
           <p className="text-gray-700">
             Our testing meets <Link to="/aabb-accredited-dna-testing-denver" className="text-blue-600 hover:underline">AABB laboratory standards for partner facilities</Link>.
@@ -320,7 +320,7 @@ const LegalPaternityTesting = () => {
           </h2>
           <p className="text-gray-700 mb-6">
             Trusted by <a href="https://milehighdnatesting.com/dna-testing-colorado" className="text-blue-600 hover:text-blue-700 transition duration-300">Colorado</a> families, attorneys, and agencies. Our legal DNA
-            testing meets <Link to="/aabb-accredited-dna-testing-denver" className="text-blue-600 hover:underline">AABB standards for partner laboratories</Link> and is simple, fast, and fully court-admissible.
+            testing meets <Link to="/aabb-accredited-dna-testing-denver" className="text-blue-600 hover:underline">AABB standards for partner laboratory</Link> and is simple, fast, and fully court-admissible.
           </p>
           <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
             <div className="bg-white rounded-lg shadow p-4">
@@ -330,7 +330,7 @@ const LegalPaternityTesting = () => {
               ✅ Fast Turnaround (3–5 Business Days)
             </div>
             <div className="bg-white rounded-lg shadow p-4">
-              ✅ AABB Partner laboratories with chain of custody
+              ✅ AABB partner laboratory with chain of custody
             </div>
             <div className="bg-white rounded-lg shadow p-4">
               ✅ Confidential & Professional Service
@@ -363,7 +363,7 @@ const LegalPaternityTesting = () => {
         title="What Is Legal DNA Paternity Testing?"
         paragraphs={[
           "Legal paternity testing is required when biological parentage must meet court or government standards. Colorado courts require strict chain-of-custody documentation to ensure results are legally valid.",
-          "At Mile High DNA Testing, all samples are collected by trained professionals and processed by AABB-accredited partner laboratories. Our results are accepted for child custody, child support, birth certificate changes, inheritance cases, and immigration matters.",
+          "At Mile High DNA Testing, all samples are collected by trained professionals and processed by AABB-accredited partner laboratory. Our results are accepted for child custody, child support, birth certificate changes, inheritance cases, and immigration matters.",
           "If you need a court-admissible DNA test in Denver, we offer same-day appointments and fast results in 3–5 business days."
         ]}
       />

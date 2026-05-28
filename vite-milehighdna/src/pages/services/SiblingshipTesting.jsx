@@ -16,6 +16,7 @@ import SiblingshipLegalNote from '../../components/siblingship/SiblingshipLegalN
 // Common components
 import ServingColorado from '../../components/common/ServingColorado';
 import CallToAction from '../../components/siblingship/CallToAction';
+import { MH_LEGAL_IMMIGRATION_PARTNER } from '../../constants/aabbComplianceCopy';
 
 const SiblingshipTesting = () => {
   return (
@@ -25,7 +26,7 @@ const SiblingshipTesting = () => {
         <title>Sibling DNA Test in Denver, CO | Legal & Non-Legal Relationship Testing | Mile High DNA</title>
         <meta
           name="description"
-          content="Confirm sibling relationships with our AABB-accredited DNA testing in Denver, Aurora, Thornton, and Lakewood Colorado. Legal and non-legal sibling DNA tests with fast, confidential results."
+          content="Confirm sibling relationships with accurate DNA testing in Denver, Aurora, Thornton, and Lakewood, Colorado. Legal and non-legal sibling DNA tests with fast, confidential results. Legal and immigration testing through our AABB-accredited partner laboratory."
         />
         <meta
           name="keywords"
@@ -35,13 +36,13 @@ const SiblingshipTesting = () => {
         
         {/* OG / Twitter */}
         <meta property="og:title" content="Sibling DNA Test in Denver | Legal & Non-Legal Relationship Testing" />
-        <meta property="og:description" content="AABB-accredited sibling DNA testing in Denver. Legal and non-legal testing for full, half, or no biological relation. Fast, confidential results." />
+        <meta property="og:description" content="Sibling DNA testing in Denver. Legal and non-legal testing for full, half, or no biological relation. Legal and immigration testing through our AABB-accredited partner laboratory." />
         <meta property="og:image" content="https://milehighdnatesting.com/images/banner-1200.png" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://milehighdnatesting.com/services/siblingship-testing" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Sibling DNA Test in Denver, CO" />
-        <meta name="twitter:description" content="Confirm sibling relationships with accurate, AABB-accredited DNA testing." />
+        <meta name="twitter:description" content="Confirm sibling relationships with accurate, confidential DNA testing in Denver. Court-admissible legal and immigration options available." />
         <meta name="twitter:image" content="https://milehighdnatesting.com/images/banner-1200.png" />
 
         {/* Breadcrumb JSON-LD Schema */}
@@ -153,7 +154,7 @@ const SiblingshipTesting = () => {
       {/* Hero Section */}
       <SiblingshipHero 
         title="Sibling DNA Test | Relationship DNA Testing in Denver, Aurora & Lakewood"
-        subtitle="AABB-accredited sibling DNA testing in Denver, Aurora, and Lakewood. Legal and non-legal options to confirm biological relationships for family, court, or immigration needs."
+        subtitle={`Accurate sibling DNA testing in Denver, Aurora, and Lakewood. Legal and non-legal options for family, court, or immigration needs. ${MH_LEGAL_IMMIGRATION_PARTNER}`}
       />
 
       {/* Pricing */}

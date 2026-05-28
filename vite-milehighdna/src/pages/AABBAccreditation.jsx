@@ -9,15 +9,15 @@ const AABBAccreditation = () => {
     <div>
       <div className="max-w-4xl mx-auto px-4 py-10">
       <Helmet>
-          <title>AABB Standards & Partner Laboratories | Legal & Immigration DNA Testing</title>
+          <title>AABB Standards & partner laboratory | Legal & Immigration DNA Testing</title>
           <meta 
             name="description" 
-            content="Mile High DNA Testing is not AABB accredited. Learn how AABB accreditation applies to partner laboratories for legal and immigration DNA testing Center." 
+            content="Mile High DNA Testing is not AABB accredited. Learn how AABB accreditation applies to partner laboratory for legal and immigration DNA testing Center." 
           />
 
           {/* Open Graph */}
           <meta property="og:title" content="What is AABB accreditation for DNA testing?" />
-          <meta property="og:description" content="AABB accreditation applies to relationship-testing laboratories used for court and USCIS cases—not to specimen collection companies. We partner with AABB-accredited laboratories where applicable." />
+          <meta property="og:description" content="AABB accreditation applies to relationship-testing laboratories used for court and USCIS cases—not to specimen collection companies. We partner with an AABB-accredited laboratory to perform analysis for testing." />
           <meta property="og:image" content="https://milehighdnatesting.com/images/banner-1200.png" />
           <meta property="og:url" content="https://milehighdnatesting.com/aabb-accreditation" />
           <meta property="og:type" content="article" />
@@ -40,7 +40,7 @@ const AABBAccreditation = () => {
         </p>
 
         <p className="mb-4">
-        Working with AABB-accredited partner laboratories for qualifying legal and immigration testing helps ensure:
+        Working with AABB-accredited partner laboratory for qualifying legal and immigration testing helps ensure:
         </p>
 
         <ul className="list-disc list-inside mb-6">

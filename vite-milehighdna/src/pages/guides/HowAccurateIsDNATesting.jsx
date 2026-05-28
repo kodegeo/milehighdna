@@ -38,7 +38,7 @@ export default function HowAccurateIsDNATesting() {
             DNA testing for paternity and other relationships is highly accurate when performed by accredited laboratories using validated methods. Results are expressed as probabilities—for example, 99.99% probability of paternity when the alleged father is included.
           </p>
           <p className="text-lg text-gray-600 mb-6">
-            At Mile High DNA Testing, we work with AABB-accredited partner laboratories so that legal and immigration results meet court and USCIS standards. For more on the process, see <Link to="/guides/how-dna-testing-works" className="text-blue-600 underline">how DNA testing works</Link>. To <Link to="/appointments" className="text-blue-600 underline">schedule a test</Link>, visit our appointments page.
+            At Mile High DNA Testing, we work with an AABB-accredited partner laboratory so that legal and immigration results meet court and USCIS standards. For more on the process, see <Link to="/guides/how-dna-testing-works" className="text-blue-600 underline">how DNA testing works</Link>. To <Link to="/appointments" className="text-blue-600 underline">schedule a test</Link>, visit our appointments page.
           </p>
         </>
       }

@@ -106,7 +106,7 @@ const services = [
   },
   {
     name: 'At-Home DNA Kits (Postnatal Only)',
-    description: 'At-home DNA test kits provide a convenient, non-legal postnatal DNA testing option. Samples are processed by partner laboratories using validated methods. AABB does not accredit home DNA test kits. Schedule an appointment to order your at-home DNA test kit.',
+    description: 'At-home DNA test kits provide a convenient, non-legal postnatal DNA testing option. Samples are processed by partner laboratory using validated methods. AABB does not accredit home DNA test kits. Schedule an appointment to order your at-home DNA test kit.',
     link: 'https://calendly.com/milehighdnatesting/30-minute-dna-test-appointment',
     detailPath: '/services/at-home-dna-kits',
   },

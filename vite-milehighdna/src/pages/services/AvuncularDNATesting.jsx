@@ -183,7 +183,7 @@ const AvuncularDNATesting = () => {
       <section className="py-12 md:py-16 px-6 bg-white">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-bold text-gray-800 mb-6">Why Choose Mile High DNA Testing?</h2>
-          <p className="text-gray-700 mb-4">Avuncular DNA testing provides statistically reliable results when performed by an accredited laboratory. At Mile High DNA Testing we use AABB-accredited partner laboratories, offer both legal and peace-of-mind options, and serve Denver and Colorado with clear guidance so you choose the right test for your situation.</p>
+          <p className="text-gray-700 mb-4">Avuncular DNA testing provides statistically reliable results when performed by an accredited laboratory. At Mile High DNA Testing we use AABB-accredited partner laboratory, offer both legal and peace-of-mind options, and serve Denver and Colorado with clear guidance so you choose the right test for your situation.</p>
           <p className="text-gray-700">Related services: <Link to="/services/siblingship-testing" className="text-blue-600 hover:underline">Siblingship Testing</Link>, <Link to="/services/grandparentage-testing" className="text-blue-600 hover:underline">Grandparentage Testing</Link>.</p>
         </div>
       </section>

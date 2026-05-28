@@ -19,7 +19,7 @@ const SiblingshipPricing = () => {
               </p>
               <p className="text-2xl font-bold text-blue-700 mb-4">$349 and up</p>
               <ul className="text-left text-gray-700 space-y-2 mb-4">
-                <li>✔ AABB-Accredited Lab</li>
+                <li>✔ Partner laboratory processing</li>
                 <li>✔ 2 Participants</li>
                 <li>✔ 2–5 Business Day Turnaround</li>
                 <li>✔ Peace-of-Mind Use</li>

@@ -7,7 +7,7 @@ Mile High DNA Testing is not AABB accredited. Local DNA collections in Denver wi
 
 ## Overview
 
-Mile High DNA Testing coordinates immigration DNA testing with **AABB-accredited and CAP-certified partner laboratories** (for example, laboratories in the UFC network) for visa, passport, and citizenship cases when laboratory analysis is required.
+Mile High DNA Testing coordinates immigration DNA testing with **AABB-accredited and CAP-certified partner laboratory** (for example, laboratories in the UFC network) for visa, passport, and citizenship cases when laboratory analysis is required.
 
 All immigration DNA testing services are **fully compliant with USCIS protocols**. We manage the entire testing process — coordinating U.S. sample collection and international logistics — to ensure timely delivery of official results to **U.S. Embassies and Consulates**.
 

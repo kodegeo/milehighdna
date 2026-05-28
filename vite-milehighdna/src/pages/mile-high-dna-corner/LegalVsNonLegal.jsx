@@ -167,7 +167,7 @@ const LegalVsNonLegal = () => {
           </p>
           
           <blockquote className="border-l-4 border-blue-500 pl-4 italic text-blue-700 text-base my-8 text-justify">
-          As the U.S. Citizenship and Immigration Services (USCIS) explains, only results from AABB-accredited labs are accepted as proof of biological relationship for immigration cases. <br /><br /> 
+          As the U.S. Citizenship and Immigration Services (USCIS) explains, immigration DNA cases require chain-of-custody and AABB-accredited partner-laboratory processing. <br /><br /> 
           - <a href="https://www.uscis.gov/policy-manual/volume-6-part-b-chapter-2" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline">
           USCIS Policy Manual, Vol. 6, Pt. B, Ch. 2
           </a>
@@ -210,7 +210,7 @@ const LegalVsNonLegal = () => {
 
           <h3 className="text-2xl font-bold mt-10 mb-4 text-gray-800">Legal and Non-Legal DNA Testing in Denver and the Front Range</h3>
           <p className="text-base mb-6 text-justify">
-          <span className="font-bold text-[#2C6FA6]">Mile High DNA Testing</span> provides both legal and non-legal DNA testing services for families across Denver, Aurora, Thornton, and Lakewood. All tests are confidential, accurate, and processed through AABB-accredited partner laboratories recognized by courts and government agencies throughout the U.S. <br /><br />
+          <span className="font-bold text-[#2C6FA6]">Mile High DNA Testing</span> provides both legal and non-legal DNA testing services for families across Denver, Aurora, Thornton, and Lakewood. Legal and immigration testing is provided through our AABB-accredited partner laboratory, and non-legal testing is processed with validated partner laboratory methods. <br /><br />
           Our team coordinates professional sample collection, identity verification, and secure result delivery to ensure your experience is private, simple, and legally valid. <br /><br />
           If you'd like to learn more about pricing or which test is best for your situation, read our in-depth guide here: <br /><br />
           

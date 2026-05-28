@@ -16,7 +16,7 @@ const TrustCredentials = () => {
               AABB or CLIA-Certified Labs
             </h3>
             <p className="text-gray-600">
-              Processed in accredited laboratories meeting strict quality standards.
+              Processed in an accredited laboratory that meets strict quality standards.
             </p>
           </div>
           <div className="text-center">

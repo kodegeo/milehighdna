@@ -13,7 +13,7 @@ const faqs = [
   },
   {
     question: "Is DNA testing accurate?",
-    answer: "Yes. Postnatal paternity tests routinely achieve 99.9% or higher probability of paternity when the alleged father is included. Non-invasive prenatal tests offer 99.9% accuracy. Results are produced by accredited laboratories using validated methods."
+    answer: "Yes. Postnatal paternity tests routinely achieve 99.9% or higher probability of paternity when the alleged father is included. Non-invasive prenatal tests offer 99.9% accuracy. Results are produced by an accredited laboratory using validated methods."
   },
   {
     question: "Do I need to go to a lab for DNA testing?",
@@ -48,7 +48,7 @@ export default function HowDNATestingWorks() {
             DNA testing is used when people need to confirm biological relationships. Common situations include establishing paternity for child support or custody, confirming family ties for immigration, peace-of-mind testing during or after pregnancy, and inheritance or probate cases.
           </p>
           <p className="text-lg text-gray-600 mb-6">
-            Courts and government agencies often require tests performed under strict chain-of-custody and by AABB-accredited partner laboratories. For personal knowledge only, non-legal (peace-of-mind) tests are also available. Understanding the difference helps you choose the right test; see <Link to="/guides/dna-testing-results-explained" className="text-blue-600 underline">understanding DNA test results</Link> for how to read reports.
+            Courts and government agencies often require tests performed under strict chain-of-custody and by AABB-accredited partner laboratory. For personal knowledge only, non-legal (peace-of-mind) tests are also available. Understanding the difference helps you choose the right test; see <Link to="/guides/dna-testing-results-explained" className="text-blue-600 underline">understanding DNA test results</Link> for how to read reports.
           </p>
         </>
       }

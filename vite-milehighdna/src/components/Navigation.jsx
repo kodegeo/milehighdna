@@ -128,9 +128,9 @@ const Navigation = () => {
               )}
             </div>
 
-            {/* AABB standards & partner laboratories */}
+            {/* AABB standards & partner laboratory */}
             <Link to="/aabb-accredited-dna-testing-denver" className="text-gray-700 hover:text-blue-600 transition duration-300">
-              AABB & partner labs
+              AABB & partner laboratory
             </Link>
 
           {/* Services Dropdown - Nested flyout */}
@@ -310,7 +310,7 @@ const Navigation = () => {
                 <Link to="/why-choose-us" className="block py-1 text-gray-700" onClick={() => setIsMenuOpen(false)}>Why Choose Us</Link>
               </div>
             </details>
-            <Link to="/aabb-accredited-dna-testing-denver" className="block py-2 text-gray-700" onClick={() => setIsMenuOpen(false)}>AABB & partner labs</Link>
+            <Link to="/aabb-accredited-dna-testing-denver" className="block py-2 text-gray-700" onClick={() => setIsMenuOpen(false)}>AABB & partner laboratory</Link>
 
             <details className="py-2">
               <summary className="cursor-pointer text-gray-700 font-semibold">Services</summary>

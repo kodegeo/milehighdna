@@ -27,7 +27,7 @@ const ImmigrationDNATestingDenver = () => {
         <meta property="og:title" content="Immigration DNA Testing in Denver, Colorado" />
         <meta
           property="og:description"
-          content="Learn where to get an AABB-accredited immigration DNA test in Denver with bilingual support and step-by-step guidance for USCIS and embassy cases."
+          content="Learn where to get immigration DNA testing in Denver with bilingual support and step-by-step guidance for USCIS and embassy cases through our AABB-accredited partner laboratory."
         />
         <meta
           property="og:image"
@@ -58,7 +58,7 @@ const ImmigrationDNATestingDenver = () => {
             "@context": "https://schema.org",
             "@type": "Article",
             "headline": "Where to Get an Immigration DNA Test in Denver, Colorado",
-            "description": "A detailed guide to immigration DNA testing in Denver, including USCIS requirements, AABB-accredited labs, bilingual support, and step-by-step case coordination.",
+            "description": "A detailed guide to immigration DNA testing in Denver, including USCIS requirements, partner-laboratory standards, bilingual support, and step-by-step case coordination.",
             "image": "https://milehighdnatesting.com/images/immigration-dna-denver.png",
             "author": {
               "@type": "Organization",
@@ -111,8 +111,8 @@ const ImmigrationDNATestingDenver = () => {
           <h3 className="text-2xl font-bold mt-10 mb-4">Trusted Immigration DNA Testing Center in Denver</h3>
 
           <p className="text-base mb-6 text-justify">
-            We are a Denver-based collection center specializing in AABB-accredited immigration DNA testing.
-            We work directly with laboratories recognized by the U.S. Department of State to ensure results
+            We are a Denver-based collection center specializing in immigration DNA testing.
+            We work directly with a laboratory recognized by the U.S. Department of State to ensure results
             are accepted by USCIS, NVC, and U.S. embassies worldwide.
           </p>
 
@@ -143,7 +143,7 @@ const ImmigrationDNATestingDenver = () => {
           </p>
 
           <p className="text-base mb-4"><strong>Are you approved by USCIS?</strong><br />
-            We coordinate exclusively with AABB-accredited partner laboratories recognized by the U.S. Department of State.
+            We coordinate exclusively with our AABB-accredited partner laboratory recognized by the U.S. Department of State.
           </p>
 
           <h3 className="text-2xl font-bold mt-10 mb-4">Book Your Immigration DNA Test</h3>

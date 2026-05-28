@@ -3,6 +3,10 @@ import CornerLayout from '../../components/corner/CornerLayout';
 import ServingColorado from "../../components/common/ServingColorado";
 import CallToAction from "../../components/corner/CallToAction";
 import { Helmet } from "react-helmet-async";
+import {
+  AABB_HOME_KIT_DISCLAIMER,
+  MH_LEGAL_IMMIGRATION_PARTNER,
+} from "../../constants/aabbComplianceCopy";
 
 
 import atHomeTestKitImg from '../../assets/images/at-home-test-kit.png';
@@ -29,7 +33,7 @@ const HomeDNATestAccuracy = () => {
 
         <meta
           name="keywords"
-          content="home DNA test accuracy, Denver DNA testing, at-home DNA kit reliable, AABB accredited DNA test, legal DNA testing Denver"
+          content="home DNA test accuracy, Denver DNA testing, at-home DNA kit reliable, legal DNA testing Denver, immigration DNA testing Denver"
         />
 
         {/* Open Graph */}
@@ -39,7 +43,7 @@ const HomeDNATestAccuracy = () => {
         />
         <meta
           property="og:description"
-          content="Explore the accuracy of at-home DNA tests and how they compare to professional AABB-accredited DNA testing."
+          content="Explore the accuracy of at-home DNA tests and how they compare with legal and immigration DNA testing through our AABB-accredited partner laboratory."
         />
         <meta
           property="og:image"
@@ -72,7 +76,7 @@ const HomeDNATestAccuracy = () => {
           "@context": "https://schema.org",
           "@type": "Article",
           "headline": "How Reliable and Accurate Are Home DNA Tests?",
-          "description": "A detailed look at the accuracy of at-home DNA tests compared to AABB-accredited partner laboratory testing.",
+          "description": "A detailed look at the accuracy of at-home DNA tests compared to legal and immigration DNA testing through our AABB-accredited partner laboratory.",
           "image": "https://milehighdnatesting.com/images/at-home-test-kit.png",
           "author": {
             "@type": "Organization",
@@ -160,7 +164,7 @@ const HomeDNATestAccuracy = () => {
               "name": "Can home DNA test results be used in court?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "No. Only AABB-accredited DNA tests with verified chain of custody are accepted for legal or immigration purposes."
+                "text": "No. Only legal DNA tests with verified chain of custody and partner-laboratory processing are accepted for legal or immigration purposes."
               }
             },
             {
@@ -236,8 +240,9 @@ const HomeDNATestAccuracy = () => {
           </p>
 
           <p className="text-base mb-6 text-justify">
-          By contrast, paternity and family relationship tests must be performed in AABB-accredited partner laboratories when results are used for court or immigration purposes.
-          This distinction matters — CLIA certification ensures lab quality, but AABB accreditation ensures legal reliability.
+          By contrast, paternity and family relationship tests for court or immigration must be processed through an AABB-accredited partner laboratory.
+          This distinction matters — CLIA certification ensures lab quality, while AABB partner-laboratory standards support legal and immigration admissibility.
+          {" "}{AABB_HOME_KIT_DISCLAIMER}
           </p>
 
           <h3 className="text-2xl font-bold mt-10 mb-4 text-gray-800">The Hidden Costs of "Cheap" DNA Kits</h3>
@@ -253,7 +258,7 @@ const HomeDNATestAccuracy = () => {
           </ul>
           <p className="text-base mb-6 text-justify">
           These added costs often bring the total to $300–$400, still without legal validity. By comparison, professional laboratory tests through
-          AABB-accredited facilities include all fees upfront — from collection to reporting — with clear, transparent pricing and court-admissible results.
+          legal testing coordinated through our AABB-accredited partner laboratory includes all fees upfront — from collection to reporting — with clear, transparent pricing and court-admissible results.
           </p>
 
           <h3 className="text-2xl font-bold mt-10 mb-4 text-gray-800">What AABB Accreditation Means</h3>
@@ -269,10 +274,10 @@ const HomeDNATestAccuracy = () => {
           </ul>
 
           <p className="text-base mb-6 text-justify">
-          This level of oversight ensures that AABB-accredited labs produce results that are legally defensible and accepted by
+          This level of oversight ensures that AABB-accredited partner-laboratory testing produces results that are legally defensible and accepted by
           U.S. courts and government agencies.
           The <a href="https://www.uscis.gov/policy-manual/volume-6-part-b-chapter-2" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline">
-          U.S. Citizenship and Immigration Services (USCIS)</a> confirms that only AABB-accredited DNA tests with proper chain of custody are accepted for immigration cases.
+          U.S. Citizenship and Immigration Services (USCIS)</a> confirms that immigration DNA cases require chain-of-custody and AABB-accredited partner-laboratory processing.
           </p>
 
           <h3 className="text-2xl font-bold mt-10 mb-4 text-gray-800">When Accuracy and Oversight Matter</h3>
@@ -316,7 +321,7 @@ const HomeDNATestAccuracy = () => {
           <h3 className="text-2xl font-bold mt-10 mb-4 text-gray-800">The Good News</h3>
           <p className="text-base mb-6 text-justify">
           Some at-home DNA kits — including those provided through Mile High DNA Testing — are processed in
-          AABB-accredited partner laboratories, even when used for informational purposes. This means you can collect your sample at home while
+          AABB-accredited partner laboratory, even when used for informational purposes. This means you can collect your sample at home while
           receiving professional-grade accuracy and transparency.
           </p>
 
@@ -333,7 +338,7 @@ const HomeDNATestAccuracy = () => {
 
           <p className="text-base mb-6 text-justify">
           When your results could affect your family, your future, or your legal standing, choose a provider that uses
-          AABB-accredited partner laboratories and provides clear, all-inclusive pricing.
+          partner-laboratory processing for legal and immigration testing and clear, all-inclusive pricing.
           </p>
 
           <p className="text-base mb-6 text-justify">

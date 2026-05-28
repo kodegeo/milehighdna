@@ -24,7 +24,7 @@ const GrandparentageTesting = () => {
         <title>Grandparent DNA Test in Denver, CO | Legal & Non-Legal Testing | Mile High DNA</title>
         <meta
           name="description"
-          content="Accurate, AABB-accredited grandparent DNA testing in Denver, Aurora, Thornton, & Lakewood Colorado. Court-admissible and peace-of-mind options available. Fast results and confidential support."
+          content="Accurate grandparent DNA testing in Denver, Aurora, Thornton, and Lakewood, Colorado. Court-admissible and peace-of-mind options available. Legal and immigration testing through our AABB-accredited partner laboratory."
         />
         <meta
           name="keywords"
@@ -34,13 +34,13 @@ const GrandparentageTesting = () => {
         
         {/* OG / Twitter */}
         <meta property="og:title" content="Grandparent DNA Test in Denver | Legal & Non-Legal Testing" />
-        <meta property="og:description" content="AABB-accredited grandparent DNA testing in Denver, CO. Legal and non-legal testing with fast, confidential results." />
+        <meta property="og:description" content="Grandparent DNA testing in Denver, CO. Legal and non-legal testing with fast, confidential results. Legal and immigration testing through our AABB-accredited partner laboratory." />
         <meta property="og:image" content="https://milehighdnatesting.com/images/banner-1200.png" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://milehighdnatesting.com/services/grandparentage-testing" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Grandparent DNA Test in Denver, CO" />
-        <meta name="twitter:description" content="Fast, confidential, and AABB-accredited grandparent DNA testing." />
+        <meta name="twitter:description" content="Fast, confidential grandparent DNA testing in Denver. Court-admissible legal and immigration options available." />
         <meta name="twitter:image" content="https://milehighdnatesting.com/images/banner-1200.png" />
 
         {/* Breadcrumb JSON-LD Schema */}

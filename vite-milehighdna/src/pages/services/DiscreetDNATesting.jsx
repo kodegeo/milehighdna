@@ -78,7 +78,7 @@ const DiscreetDNATesting = () => {
         <title>Discreet DNA Testing in Denver | 100% Confidential & Private | Mile High DNA</title>
         <meta
           name="description"
-          content="Completely private and discreet DNA testing in Denver with unbranded packaging and confidential handling. Perfect for sensitive situations requiring maximum privacy. AABB-accredited results."
+          content="Completely private and discreet DNA testing in Denver with unbranded packaging and confidential handling. Perfect for sensitive situations requiring maximum privacy. Accurate, confidential results for personal use."
         />
         <meta
           name="keywords"
@@ -197,8 +197,8 @@ const DiscreetDNATesting = () => {
             <p className="text-gray-700 mb-8 text-lg leading-relaxed">
               Our Discreet DNA Testing service provides completely private DNA testing with unbranded packaging 
               and confidential handling. Perfect for sensitive situations where maximum privacy is essential. 
-              All testing is performed by AABB-accredited partner laboratories with the same accuracy as standard tests, 
-              but with enhanced privacy protections.
+              Samples are processed by partner laboratory using validated methods for accurate, confidential results,
+              with enhanced privacy protections for sensitive situations.
             </p>
             <p className="text-gray-700 mb-8 text-lg leading-relaxed">
               Whether you need paternity testing, relationship verification, or any other DNA test, 
@@ -265,7 +265,7 @@ const DiscreetDNATesting = () => {
           </div>
           
           <p className="text-gray-700 mb-6 text-lg">
-            Both options provide the same AABB-accredited accuracy and complete privacy protection. 
+            Both options provide the same laboratory accuracy and complete privacy protection. 
             Choose the option that best fits your needs for maximum discretion.
           </p>
           <p className="text-gray-600 text-sm max-w-2xl mx-auto">
@@ -284,7 +284,7 @@ const DiscreetDNATesting = () => {
             <li>✅ Unbranded Packaging — No company logos or identifying information visible</li>
             <li>✅ Complete Confidentiality — All personal data protected and never shared</li>
             <li>✅ Private Communication — Secure, discreet handling of all correspondence</li>
-            <li>✅ Same Accuracy — AABB-accredited partner laboratory testing with 99%+ accuracy</li>
+            <li>✅ Same Accuracy — Partner laboratory testing with 99%+ accuracy for personal use</li>
             <li>✅ Flexible Options — At-home kit or private in-person appointment available</li>
             <li>✅ Fast Results — Results delivered securely within 2–3 business days</li>
           </ul>

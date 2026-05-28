@@ -1,6 +1,7 @@
 import React from "react";
 import { Helmet } from "react-helmet-async";
 import landingBanner from "../assets/images/landing-1.2.jpg";
+import { MH_LEGAL_IMMIGRATION_PARTNER } from "../constants/aabbComplianceCopy";
 
 const DNATestingDenverPage = () => {
   return (
@@ -9,7 +10,7 @@ const DNATestingDenverPage = () => {
         <title>DNA Testing Denver | Prenatal, Legal, & Peace of Mind</title>
         <meta
           name="description"
-          content="Fast, confidential, AABB-accredited DNA testing in Denver, Aurora, Thorton, and Englewood. Legal paternity, prenatal, immigration, and peace-of-mind testing with results in 3–5 business days."
+          content="Fast, confidential DNA testing in Denver, Aurora, Thornton, and Englewood. Legal paternity, prenatal, immigration, and peace-of-mind testing. Legal and immigration testing through our AABB-accredited partner laboratory. Results in 3–5 business days."
         />
         <link
           rel="canonical"
@@ -74,7 +75,7 @@ const DNATestingDenverPage = () => {
               "@id": "https://milehighdnatesting.com/dna-testing-denver#webpage",
               "url": "https://milehighdnatesting.com/dna-testing-denver",
               "name": "DNA Testing Denver | Prenatal, Legal, & Peace of Mind",
-              "description": "Fast, confidential, AABB-accredited DNA testing in Denver, Aurora, Thorton, and Englewood. Legal paternity, prenatal, immigration, and peace-of-mind testing with results in 3–5 business days.",
+              "description": "Fast, confidential DNA testing in Denver, Aurora, Thornton, and Englewood. Legal paternity, prenatal, immigration, and peace-of-mind testing. Legal and immigration testing through our AABB-accredited partner laboratory.",
               "isPartOf": {
                 "@type": "WebSite",
                 "name": "Mile High DNA Testing",
@@ -104,7 +105,7 @@ const DNATestingDenverPage = () => {
             {/* Quick Trust Points */}
             <div className="flex flex-col md:flex-row justify-center gap-4 mt-6">
               <div className="bg-white/90 shadow-md rounded-lg p-3 w-full md:w-56 text-blue-900 font-semibold text-base md:text-lg">
-                ✅ AABB-Accredited & Court-Admissible
+                ✅ AABB Partner Laboratory for Court-Admissible DNA Testing
               </div>
               <div className="bg-white/90 shadow-md rounded-lg p-3 w-full md:w-56 text-blue-900 font-semibold text-base md:text-lg">
                 ✅ Fast Results in 3–5 Business Days
@@ -142,7 +143,7 @@ const DNATestingDenverPage = () => {
       <section className="py-12 px-6 max-w-4xl mx-auto text-center">
         <h2 className="text-2xl font-bold mb-4">Why Families in Denver Trust Mile High DNA Testing</h2>
         <p className="text-gray-700">
-          We offer fast, confidential, and AABB-accredited testing for legal, immigration, and peace-of-mind needs. Our team is discreet, compassionate, and dedicated to accurate results you can rely on.
+          We offer fast, confidential DNA testing for legal, immigration, and peace-of-mind needs. {MH_LEGAL_IMMIGRATION_PARTNER} Our team is discreet, compassionate, and dedicated to accurate results you can rely on.
         </p>
         <ul className="mt-6 text-left mx-auto max-w-md space-y-3">
           <li>✅ Court-admissible results for custody, child support & legal cases</li>

@@ -3,6 +3,7 @@ import { Helmet } from "react-helmet-async";
 import CornerLayout from "../../components/corner/CornerLayout";
 import ServingColorado from "../../components/common/ServingColorado";
 import CallToAction from "../../components/corner/CallToAction";
+import { MH_LEGAL_IMMIGRATION_PARTNER } from "../../constants/aabbComplianceCopy";
 
 import cornerNIPP1 from "../../assets/images/corner-nipp-1.png";
 
@@ -196,8 +197,8 @@ const WhatToExpectNIPP = () => {
           </ul>
 
           <p className="text-base mb-6 text-justify">
-            Either option provides the same level of laboratory accuracy. We use AABB-accredited labs to
-            ensure precision, privacy, and legal reliability of every test.
+            Either option provides the same level of laboratory accuracy. We use validated partner laboratory methods to
+            ensure precision and privacy for every test.
           </p>
 
           <h3 className="text-2xl font-bold mt-10 mb-4 text-gray-800">
@@ -291,8 +292,7 @@ const WhatToExpectNIPP = () => {
           </p>
 
           <p className="text-base mb-6 text-justify">
-            Our AABB-accredited partner laboratories ensure every test meets the same standards used in
-            legal DNA testing, even for private, peace-of-mind cases. From first contact to results delivery, we're here
+            {MH_LEGAL_IMMIGRATION_PARTNER} Non-legal prenatal testing is processed with validated partner laboratory methods for private peace-of-mind cases. From first contact to results delivery, we're here
             to provide clarity and confidence during one of life's most important moments.
           </p>
 

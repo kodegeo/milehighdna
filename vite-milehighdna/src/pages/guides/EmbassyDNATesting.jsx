@@ -17,7 +17,7 @@ const faqs = [
   },
   {
     question: "Can I get embassy DNA testing in Denver?",
-    answer: "Yes. If you or a family member are in the Denver area, you can complete your part of the test at a facility like Mile High DNA Testing that coordinates with AABB-accredited labs and follows procedures acceptable to U.S. embassies and consulates."
+    answer: "Yes. If you or a family member are in the Denver area, you can complete your part of the test at a facility like Mile High DNA Testing that coordinates with an AABB-accredited partner laboratory and follows procedures acceptable to U.S. embassies and consulates."
   }
 ];
 
@@ -48,7 +48,7 @@ export default function EmbassyDNATesting() {
             Embassies and consulates request DNA testing when they need to verify a claimed family relationship for a visa or immigration case and documents alone are not sufficient. The request will specify who must be tested and often which laboratory or collection procedures to use.
           </p>
           <p className="text-lg text-gray-600 mb-6">
-            For the full immigration process, read <Link to="/guides/immigration-dna-testing-process" className="text-blue-600 underline">immigration DNA testing process</Link>. For lab requirements, see <Link to="/guides/aabb-labs-for-immigration" className="text-blue-600 underline">AABB accredited labs for immigration DNA tests</Link>.
+            For the full immigration process, read <Link to="/guides/immigration-dna-testing-process" className="text-blue-600 underline">immigration DNA testing process</Link>. For lab requirements, see <Link to="/guides/aabb-labs-for-immigration" className="text-blue-600 underline">AABB partner-laboratory requirements for immigration DNA tests</Link>.
           </p>
         </>
       }

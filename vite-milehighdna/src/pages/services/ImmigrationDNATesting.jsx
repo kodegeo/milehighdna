@@ -29,7 +29,7 @@ const ImmigrationDNATesting = () => {
         <title>Immigration DNA Testing in Denver | USCIS-Compliant DNA Test | Mile High DNA</title>
         <meta
           name="description"
-          content="Immigration DNA testing in Denver coordinated with AABB-accredited partner laboratories for USCIS, embassy, and consular cases. Schedule your immigration DNA test today."
+          content="Immigration DNA testing in Denver coordinated with AABB-accredited partner laboratory for USCIS, embassy, and consular cases. Schedule your immigration DNA test today."
         />
         <meta
           name="keywords"
@@ -39,13 +39,13 @@ const ImmigrationDNATesting = () => {
         
         {/* OG / Twitter */}
         <meta property="og:title" content="Immigration DNA Testing in Denver | USCIS-Compliant DNA Test" />
-        <meta property="og:description" content="We partner with AABB-accredited laboratories for immigration DNA testing coordinated from Denver. USCIS and embassy cases." />
+        <meta property="og:description" content="We partner with an AABB-accredited laboratory for immigration DNA testing coordinated from Denver. USCIS and embassy cases." />
         <meta property="og:image" content="https://milehighdnatesting.com/images/banner-1200.png" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://milehighdnatesting.com/services/immigration-dna-testing" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Immigration DNA Testing in Denver | USCIS-Compliant" />
-        <meta name="twitter:description" content="Immigration DNA testing with AABB-accredited partner laboratories for USCIS and embassy cases." />
+        <meta name="twitter:description" content="Immigration DNA testing with AABB-accredited partner laboratory for USCIS and embassy cases." />
         <meta name="twitter:image" content="https://milehighdnatesting.com/images/banner-1200.png" />
 
         {/* Breadcrumb JSON-LD Schema */}
@@ -157,7 +157,7 @@ const ImmigrationDNATesting = () => {
       {/* Hero Section */}
       <HeroSection
         title="Immigration DNA Testing for USCIS and U.S. Embassies"
-        subtitle="USCIS-compliant DNA testing coordinated with AABB-accredited partner laboratories. Local DNA collections in Denver with worldwide coordination for family members living abroad."
+        subtitle="USCIS-compliant DNA testing coordinated with AABB-accredited partner laboratory. Local DNA collections in Denver with worldwide coordination for family members living abroad."
         imageUrl={immigrationHero}
         buttonText="Get Started Today"
         buttonLink="https://ufclab.forms-db.com/view.php?id=10429"

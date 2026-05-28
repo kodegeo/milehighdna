@@ -4,6 +4,7 @@ import { Helmet } from "react-helmet-async";
 import HeroSection from "../components/common/HeroSection";
 import aboutHero from "../assets/images/about_hero.png";
 import aboutMid from "../assets/images/about_mid.png";
+import { MH_LEGAL_IMMIGRATION_PARTNER } from "../constants/aabbComplianceCopy";
 
 const AboutUsPage = () => {
   return (
@@ -12,11 +13,11 @@ const AboutUsPage = () => {
         <title>Paternity DNA Testing in Denver, Aurora, and Lakewood | About Us</title>
         <meta
           name="description"
-          content="Mile High DNA Testing provides AABB-accredited paternity and immigration DNA tests in Denver, Aurora, Lakewood, and throughout Colorado. Fast, legal, and confidential testing."
+          content="Mile High DNA Testing provides legal paternity and immigration DNA testing in Denver, Aurora, Lakewood, and throughout Colorado. Legal and immigration testing through our AABB-accredited partner laboratory. Fast, confidential service."
         />
         <link rel="canonical" href="https://milehighdnatesting.com/about" />
         <meta property="og:title" content="Trusted Paternity DNA Testing in Denver, Aurora, Lakewood" />
-        <meta property="og:description" content="Learn more about Mile High DNA Testing — your partner for AABB-accredited paternity and immigration DNA tests in Colorado. Fast, legal, and confidential." />
+        <meta property="og:description" content="Learn more about Mile High DNA Testing — professional DNA collection and case coordination in Colorado. Legal and immigration testing through our AABB-accredited partner laboratory." />
         <meta property="og:image" content="https://milehighdnatesting.com/images/banner-1200.png" />
         <meta property="og:url" content="https://milehighdnatesting.com/about" />
         <meta property="og:type" content="website" />
@@ -26,9 +27,9 @@ const AboutUsPage = () => {
 
       <HeroSection
         title="Court Admissible and High Precision DNA Testing With Direct Professional Support"
-        subtitle="Serving Denver and surrounding communities with AABB accredited laboratory standards and multi level PhD review prior to report release."
+        subtitle={`Serving Denver and surrounding communities with professional DNA testing standards and multi-level PhD review prior to report release. ${MH_LEGAL_IMMIGRATION_PARTNER}`}
         imageUrl={aboutHero}
-        imageAlt="AABB-accredited DNA testing consultation in Denver"
+        imageAlt="DNA testing consultation in Denver, Colorado"
         buttonText="Schedule Your DNA Test Appointment"
         buttonLink="/appointments"
         secondaryButtonText="Call or Text 720 900 9342"
@@ -162,7 +163,7 @@ const AboutUsPage = () => {
           Clients choose Mile High DNA Testing for:
         </p>
         <ul className="space-y-3 text-gray-700 mb-4">
-          <li>• AABB-accredited partner laboratorieships</li>
+          <li>• {MH_LEGAL_IMMIGRATION_PARTNER}</li>
           <li>• Certified DNA collection procedures</li>
           <li>• Clear communication throughout the testing process</li>
           <li>• Support for <Link to="/services/legal-paternity-testing" className="text-blue-600 hover:text-blue-800 underline">legal</Link>, <Link to="/services/immigration-dna-testing" className="text-blue-600 hover:text-blue-800 underline">immigration</Link>, <Link to="/services/prenatal-paternity-testing" className="text-blue-600 hover:text-blue-800 underline">prenatal</Link>, and personal DNA testing cases</li>

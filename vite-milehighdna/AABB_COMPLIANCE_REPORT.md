@@ -5,7 +5,7 @@
 
 ## Summary
 
-Language was corrected so **Mile High DNA Testing is not represented as AABB-accredited**. AABB is described as applying to **partner laboratories** where appropriate for legal and immigration relationship testing. **At-home / peace-of-mind kit** content now includes **“AABB does not accredit home DNA test kits.”** where those products are discussed.
+Language was corrected so **Mile High DNA Testing is not represented as AABB-accredited**. AABB is described as applying to **partner laboratory** where appropriate for legal and immigration relationship testing. **At-home / peace-of-mind kit** content now includes **“AABB does not accredit home DNA test kits.”** where those products are discussed.
 
 Central approved strings live in:
 

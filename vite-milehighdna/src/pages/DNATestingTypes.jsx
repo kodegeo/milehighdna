@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import ServingColorado from '../components/common/ServingColorado';
 import CallToAction from '../components/corner/CallToAction';
 import landingHero from '../assets/images/landing-1.1.png';
+import { MH_LEGAL_IMMIGRATION_PARTNER } from '../constants/aabbComplianceCopy';
 
 const DNATestingTypes = () => {
   return (
@@ -153,7 +154,7 @@ const DNATestingTypes = () => {
             </p>
           </div>
           <p className="bg-blue-50 border-l-4 border-blue-400 p-4 rounded-lg text-gray-800 text-lg font-medium mb-8">
-  There are two main types of DNA tests: legal DNA testing, which is court-admissible and follows strict collection rules, and non-legal (peace of mind) testing, which provides private results for personal knowledge. Both use the same AABB-accredited partner laboratories for accuracy.
+  There are two main types of DNA tests: legal DNA testing, which is court-admissible and follows strict collection rules, and non-legal (peace of mind) testing, which provides private results for personal knowledge. Legal and immigration testing is provided through our AABB-accredited partner laboratory.
 </p>
         </div>
 
@@ -193,7 +194,7 @@ const DNATestingTypes = () => {
                     <li>• Professional sample collection</li>
                     <li>• Photo ID verification</li>
                     <li>• Chain of custody documentation</li>
-                    <li>• AABB-accredited partner laboratory</li>
+                    <li>• AABB-accredited partner laboratory for legal and immigration testing</li>
                   </ul>
                 </div>
                 
@@ -247,7 +248,7 @@ const DNATestingTypes = () => {
                     <li>• At-home or simple collection</li>
                     <li>• No ID verification needed</li>
                     <li>• Self-collection instructions</li>
-                    <li>• AABB-accredited partner laboratory</li>
+                    <li>• Partner laboratory processing with validated methods</li>
                   </ul>
                 </div>
                 
@@ -355,7 +356,7 @@ const DNATestingTypes = () => {
             
             <div className="mt-6 p-4 bg-yellow-50 rounded-lg border-l-4 border-yellow-400">
               <p className="text-gray-700">
-                <strong>Note:</strong> All prices are for Denver area testing. Actual costs may vary based on location, number of participants, and additional services. Both testing types include AABB-accredited partner laboratory analysis and results in 3-5 business days.
+                <strong>Note:</strong> All prices are for Denver area testing. Actual costs may vary based on location, number of participants, and additional services. {MH_LEGAL_IMMIGRATION_PARTNER} Non-legal testing uses validated partner laboratory methods with results in 3-5 business days.
               </p>
             </div>
           </div>
@@ -439,7 +440,7 @@ const DNATestingTypes = () => {
                   <div className="w-8 h-8 bg-green-600 text-white rounded-full flex items-center justify-center mr-3 text-sm font-bold">4</div>
                   <div>
                     <h4 className="font-semibold text-gray-800">Lab Analysis</h4>
-                    <p className="text-gray-600 text-sm">Same AABB-accredited partner laboratory</p>
+                    <p className="text-gray-600 text-sm">Validated partner laboratory methods</p>
                   </div>
                 </div>
                 <div className="flex items-start">
@@ -470,7 +471,7 @@ const DNATestingTypes = () => {
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-semibold text-gray-800 mb-3">Are non-legal DNA tests as accurate as legal tests?</h3>
               <p className="text-gray-600">
-                Yes, both types use identical laboratory analysis methods and provide the same scientific accuracy when processed by AABB-accredited partner laboratories. The difference is in collection method and documentation, not accuracy.
+                Yes, both types use identical laboratory analysis methods and provide the same scientific accuracy when processed by a qualified partner laboratory. The difference is in collection method and documentation, not accuracy.
               </p>
             </div>
             

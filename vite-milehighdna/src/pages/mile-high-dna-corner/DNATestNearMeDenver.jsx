@@ -6,6 +6,7 @@ import CallToAction from "../../components/corner/CallToAction";
 import { Helmet } from "react-helmet-async";
 
 import dnaNearMeHeroImg from "../../assets/images/dna-test-near-me-denver.png";
+import { MH_LEGAL_IMMIGRATION_PARTNER } from "../../constants/aabbComplianceCopy";
 
 const DNATestNearMeDenver = () => {
   return (
@@ -17,7 +18,7 @@ const DNATestNearMeDenver = () => {
 
         <meta
           name="description"
-          content="Searching for a DNA test near you? Mile High DNA Testing offers trusted, AABB-accredited DNA testing across Denver, Aurora, Lakewood, Greeley, and throughout Colorado."
+          content="Searching for a DNA test near you? Mile High DNA Testing offers trusted DNA testing across Denver, Aurora, Lakewood, Greeley, and throughout Colorado. Legal and immigration testing through our AABB-accredited partner laboratory."
         />
 
         <link
@@ -52,7 +53,7 @@ const DNATestNearMeDenver = () => {
         />
         <meta
           name="twitter:description"
-          content="Local, trusted DNA testing with AABB-accredited labs across Denver and Colorado."
+          content="Local, trusted DNA testing across Denver and Colorado. Legal and immigration testing through our AABB-accredited partner laboratory."
         />
         <meta
           name="twitter:image"
@@ -128,8 +129,8 @@ const DNATestNearMeDenver = () => {
           <p className="text-base mb-6 text-justify">
             Choosing a DNA testing provider should feel reassuring — not overwhelming.
             At <span className="font-semibold text-[#2C6FA6]">Mile High DNA Testing</span>,
-            all DNA tests are processed by an AABB-accredited partner laboratory to ensure
-            accuracy, confidentiality, and reliability.
+            we provide accurate, confidential DNA testing with professional sample collection and case coordination.
+            {` ${MH_LEGAL_IMMIGRATION_PARTNER}`}
           </p>
 
           <p className="text-base mb-6 text-justify">
@@ -164,8 +165,8 @@ const DNATestNearMeDenver = () => {
           </h3>
 
           <p className="text-base mb-6 text-justify">
-            Our AABB-accredited immigration DNA tests are accepted by U.S. embassies,
-            consulates, USCIS, and the Department of State. Having a local, bilingual
+            {MH_LEGAL_IMMIGRATION_PARTNER} Immigration DNA results are accepted by U.S. embassies,
+            consulates, USCIS, and the Department of State when proper chain-of-custody and agency requirements are met. Having a local, bilingual
             team makes navigating immigration requirements easier and less stressful.
           </p>
 
