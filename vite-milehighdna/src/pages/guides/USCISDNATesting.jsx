@@ -74,7 +74,7 @@ export default function USCISDNATesting() {
       }
       relatedGuides={[
         { title: "Immigration DNA Testing Process", path: "/guides/immigration-dna-testing-process" },
-        { title: "AABB Accredited Labs For Immigration DNA Tests", path: "/guides/aabb-labs-for-immigration" }
+        { title: "Accredited Partner Laboratories For Immigration DNA Tests", path: "/guides/aabb-labs-for-immigration" }
       ]}
       ctaHeading="Complete Your USCIS DNA Test"
       ctaSubline="Schedule immigration DNA testing in Denver that meets USCIS requirements."

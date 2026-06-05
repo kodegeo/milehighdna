@@ -29,7 +29,7 @@ const AABBAccreditation = () => {
         <meta name="twitter:image" content="https://milehighdnatesting.com/images/banner-1200.png" />
       </Helmet>
 
-        <h1 className="text-3xl font-bold mb-6">Acreditación AABB</h1>
+        <h1 className="text-3xl font-bold mb-6">Acreditación del Laboratorio Asociado</h1>
 
         <p className="mb-4 p-4 bg-amber-50 border border-amber-200 rounded-lg text-gray-800">
           Mile High DNA Testing es una empresa independiente de recolección de muestras. No estamos acreditados por la AABB. Las pruebas de ADN legales y de inmigración las realizan laboratorios asociados que mantienen la acreditación AABB cuando corresponde.

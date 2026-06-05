@@ -117,10 +117,10 @@ const AABBAccreditedDNATestingDenver = () => {
         </div>
       </section>
 
-      {/* What Is AABB Accreditation? */}
+      {/* Partner laboratory accreditation */}
       <section className="bg-gray-50 py-10 md:py-12 px-4 md:px-8">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">What Is AABB Accreditation?</h2>
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">What Is Partner Laboratory Accreditation?</h2>
           <p className="text-gray-700 leading-relaxed mb-4">
             The American Association of Blood Banks (AABB) establishes internationally recognized standards for relationship DNA testing laboratories.
           </p>
@@ -143,10 +143,10 @@ const AABBAccreditedDNATestingDenver = () => {
         </div>
       </section>
 
-      {/* Why Courts Require AABB Partner-Laboratory Testing */}
+      {/* Court-admissible testing through accredited partner laboratory */}
       <section className="bg-white py-10 md:py-12 px-4 md:px-8">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">Court-Admissible Testing Through Our AABB-Accredited Partner</h2>
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">Court-Admissible Testing Through Our Accredited Partner Laboratory</h2>
           <p className="text-gray-700 leading-relaxed mb-4">
             Family courts accept DNA results used as legal evidence when testing follows strict documentation procedures.
           </p>
@@ -165,10 +165,10 @@ const AABBAccreditedDNATestingDenver = () => {
         </div>
       </section>
 
-      {/* Why USCIS Requires AABB Partner-Laboratory Testing */}
+      {/* USCIS-accepted testing through accredited partner laboratory */}
       <section className="bg-gray-50 py-10 md:py-12 px-4 md:px-8">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">USCIS-Accepted Testing Through Our AABB-Accredited Partner</h2>
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">USCIS-Accepted Testing Through Our Accredited Partner Laboratory</h2>
           <p className="text-gray-700 leading-relaxed mb-4">
             {MH_AABB_PARTNER_COURTS_USCIS}
           </p>
@@ -215,13 +215,13 @@ const AABBAccreditedDNATestingDenver = () => {
               <Link to="/services/legal-paternity-testing" className="text-blue-600 hover:underline">
                 Legal paternity testing
               </Link>{" "}
-              (partner laboratory analysis where AABB applies)
+              (partner laboratory analysis for qualifying legal tests)
             </li>
             <li>
               <Link to="/services/immigration-dna-testing" className="text-blue-600 hover:underline">
                 Immigration DNA testing
               </Link>{" "}
-              (AABB-accredited partner laboratory)
+              (accredited partner laboratory)
             </li>
             <li>
               <Link to="/services/postmortem-paternity-testing" className="text-blue-600 hover:underline">

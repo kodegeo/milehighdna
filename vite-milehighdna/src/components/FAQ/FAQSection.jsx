@@ -155,7 +155,7 @@ const faqData = [
         a: "Yes. With proper written authorization, certified results can be forwarded directly to attorneys, courts, or requesting agencies.",
       },
       {
-        q: "Why does AABB accreditation matter for DNA testing?",
+        q: "Why does partner laboratory accreditation matter for DNA testing?",
         a: [
           {
             type: "p",

@@ -261,7 +261,7 @@ const HomeDNATestAccuracy = () => {
           legal testing coordinated through our AABB-accredited partner laboratory includes all fees upfront — from collection to reporting — with clear, transparent pricing and court-admissible results.
           </p>
 
-          <h3 className="text-2xl font-bold mt-10 mb-4 text-gray-800">What AABB Accreditation Means</h3>
+          <h3 className="text-2xl font-bold mt-10 mb-4 text-gray-800">What Partner Laboratory Accreditation Means</h3>
           <p className="text-base mb-6 text-justify">
           In the world of relationship testing, the American Association of Blood Banks (AABB) is the recognized authority for quality and compliance.
           Laboratories accredited by the AABB must:

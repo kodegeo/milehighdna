@@ -12,7 +12,7 @@ const faqs = [
     answer: "No. At-home or peace-of-mind DNA tests do not include identity verification or chain-of-custody, so their results are not admissible in court. You need a legal DNA test performed with proper procedures from the start."
   },
   {
-    question: "Do all courts accept AABB-accredited DNA results?",
+    question: "Do all courts accept accredited partner laboratory DNA results?",
     answer: "Most family courts in the United States accept DNA test results from AABB-accredited partner laboratory when chain-of-custody and identity verification are documented. Requirements can vary by jurisdiction; your attorney or the court can confirm."
   },
   {

@@ -25,7 +25,7 @@ const AABBAccreditation = () => {
           <meta name="twitter:image" content="https://milehighdnatesting.com/images/banner-1200.png" />
         </Helmet>
 
-        <h1 className="text-3xl font-bold mb-6">AABB Accreditation</h1>
+        <h1 className="text-3xl font-bold mb-6">Partner Laboratory Accreditation</h1>
 
         <p className="mb-4 p-4 bg-amber-50 border border-amber-200 rounded-lg text-gray-800">
           {MH_NOT_AABB_LONG}
