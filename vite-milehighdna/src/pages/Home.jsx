@@ -636,7 +636,7 @@ const Home = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="card p-6">
               <h3 className="text-xl font-bold mb-2"><Link to="/aabb-accredited-dna-testing-denver" className="text-gray-900 hover:text-[#2C6FA6] transition duration-300">Legal & immigration standards</Link></h3>
-              <p className="text-gray-600">Court-admissible testing coordinated with AABB-accredited partner laboratory for cases that require it. <Link to="/aabb-accredited-dna-testing-denver" className="text-[#2C6FA6] hover:text-[#7DB9E8] font-medium transition duration-300">Learn how AABB applies to our partner laboratory</Link>.</p>
+              <p className="text-gray-600">Court-admissible testing coordinated with our AABB-accredited partner laboratory for cases that require it. <Link to="/aabb-accredited-dna-testing-denver" className="text-[#2C6FA6] hover:text-[#7DB9E8] font-medium transition duration-300">Learn about our accredited partner laboratory</Link>.</p>
             </div>
             <div className="card p-6">
               <h3 className="text-xl font-bold mb-2">Fast Results</h3>

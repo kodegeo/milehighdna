@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import GuideLayout from "./GuideLayout";
+import { MH_IMMIGRATION_INITIATION_SHORT } from "../../constants/aabbComplianceCopy";
 
 const faqs = [
   {
@@ -9,7 +10,7 @@ const faqs = [
   },
   {
     question: "Who orders immigration DNA testing?",
-    answer: "USCIS or a U.S. embassy/consulate may request DNA testing to verify a claimed biological relationship. The requesting agency provides instructions; the applicant then coordinates testing through an approved facility and AABB-accredited partner laboratory."
+    answer: "USCIS or a U.S. embassy/consulate may request DNA testing to verify a claimed biological relationship. The requesting agency provides instructions; testing must be initiated by an AABB-accredited partner laboratory. Mile High DNA Testing coordinates local sample collection when directed by the partner laboratory."
   },
   {
     question: "How long does immigration DNA testing take?",
@@ -17,7 +18,7 @@ const faqs = [
   },
   {
     question: "Where can I get immigration DNA testing in Denver?",
-    answer: "Mile High DNA Testing in Denver coordinates immigration DNA testing that meets USCIS and embassy requirements, including AABB-accredited partner laboratory analysis and proper chain-of-custody."
+    answer: "Mile High DNA Testing in Denver coordinates immigration DNA testing when directed by an AABB-accredited partner laboratory, including proper chain-of-custody and sample collection for approved cases. Mile High DNA Testing cannot initiate immigration cases independently."
   }
 ];
 
@@ -38,7 +39,7 @@ export default function ImmigrationDNATestingProcess() {
             Immigration DNA testing is used to verify biological relationships when required by U.S. Citizenship and Immigration Services (USCIS) or a U.S. embassy or consulate. The process involves identity verification, chain-of-custody collection, and analysis by an AABB-accredited partner laboratory so results meet agency and embassy standards.
           </p>
           <p className="text-lg text-gray-600 mb-6">
-            Mile High DNA Testing helps families in Denver and beyond complete immigration DNA testing. For agency requirements, see <Link to="/guides/uscis-dna-testing" className="text-blue-600 underline">USCIS DNA testing requirements</Link> and <Link to="/guides/aabb-labs-for-immigration" className="text-blue-600 underline">AABB partner-laboratory requirements for immigration DNA tests</Link>. To <Link to="/appointments" className="text-blue-600 underline">schedule a test</Link>, visit our appointments page.
+            Mile High DNA Testing coordinates immigration DNA testing when directed by our AABB-accredited partner laboratory. {MH_IMMIGRATION_INITIATION_SHORT} For agency requirements, see <Link to="/guides/uscis-dna-testing" className="text-blue-600 underline">USCIS DNA testing requirements</Link> and <Link to="/guides/aabb-labs-for-immigration" className="text-blue-600 underline">AABB partner-laboratory requirements for immigration DNA tests</Link>.
           </p>
         </>
       }
@@ -76,8 +77,8 @@ export default function ImmigrationDNATestingProcess() {
         { title: "USCIS DNA Testing Requirements", path: "/guides/uscis-dna-testing" },
         { title: "How Long Immigration DNA Testing Takes", path: "/guides/immigration-dna-test-timeline" }
       ]}
-      ctaHeading="Schedule Immigration DNA Testing"
-      ctaSubline="Book immigration DNA testing in Denver that meets USCIS and embassy requirements."
+      ctaHeading="Immigration DNA Testing Coordination"
+      ctaSubline="Immigration cases must be initiated by our AABB-accredited partner laboratory. We coordinate local sample collection when directed."
     />
   );
 }

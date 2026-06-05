@@ -17,6 +17,7 @@ import Compliance from '../../components/immigration/Compliance';
 import ImportantInfoAndHelp from '../../components/immigration/ImportantInfoAndHelp';
 import ServingColorado from '../../components/common/ServingColorado';
 import CallToAction from '../../components/immigration/CallToAction';
+import { MH_IMMIGRATION_INITIATION_SHORT } from '../../constants/aabbComplianceCopy';
 
 // Assets
 import immigrationHero from '../../assets/images/immigration-hero.png';
@@ -146,7 +147,7 @@ const ImmigrationDNATesting = () => {
                 "name": "Can I use a regular DNA test for immigration purposes?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "No. Immigration DNA testing must be initiated through an AABB-accredited partner laboratory and follow strict USCIS and U.S. Department of State compliance requirements. Regular DNA tests are not accepted for immigration purposes."
+                  "text": "No. Immigration DNA testing must be initiated by an AABB-accredited partner laboratory and follow strict USCIS and U.S. Department of State compliance requirements. Mile High DNA Testing coordinates collection when directed by the partner laboratory. Regular DNA tests are not accepted for immigration purposes."
                 }
               }
             ]
@@ -157,7 +158,7 @@ const ImmigrationDNATesting = () => {
       {/* Hero Section */}
       <HeroSection
         title="Immigration DNA Testing for USCIS and U.S. Embassies"
-        subtitle="USCIS-compliant DNA testing coordinated with AABB-accredited partner laboratory. Local DNA collections in Denver with worldwide coordination for family members living abroad."
+        subtitle={`USCIS-compliant DNA testing coordinated with our AABB-accredited partner laboratory. ${MH_IMMIGRATION_INITIATION_SHORT} Local DNA collections in Denver with worldwide coordination for family members living abroad.`}
         imageUrl={immigrationHero}
         buttonText="Get Started Today"
         buttonLink="https://ufclab.forms-db.com/view.php?id=10429"

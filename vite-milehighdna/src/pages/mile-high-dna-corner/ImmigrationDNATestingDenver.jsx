@@ -4,6 +4,7 @@ import CornerLayout from "../../components/corner/CornerLayout";
 import ServingColorado from "../../components/common/ServingColorado";
 import CallToAction from "../../components/corner/CallToAction";
 import { Helmet } from "react-helmet-async";
+import { MH_IMMIGRATION_INITIATION_SHORT } from "../../constants/aabbComplianceCopy";
 
 import immigrationHeroImg from "../../assets/images/immigration-hero.png";
 
@@ -105,15 +106,14 @@ const ImmigrationDNATestingDenver = () => {
 
           <p className="text-base mb-6 text-justify">
             At <span className="font-semibold text-[#2C6FA6]">Mile High DNA Testing</span>, we believe in full transparency.
-            Our Denver-based team guides you through every step — no surprises, just clarity and confidence.
+            Our Denver-based team coordinates local sample collection and case logistics when directed by our AABB-accredited partner laboratory — no surprises, just clarity and confidence. {MH_IMMIGRATION_INITIATION_SHORT}
           </p>
 
           <h3 className="text-2xl font-bold mt-10 mb-4">Trusted Immigration DNA Testing Center in Denver</h3>
 
           <p className="text-base mb-6 text-justify">
-            We are a Denver-based collection center specializing in immigration DNA testing.
-            We work directly with a laboratory recognized by the U.S. Department of State to ensure results
-            are accepted by USCIS, NVC, and U.S. embassies worldwide.
+            We are a Denver-based collection center that coordinates immigration DNA testing when directed by our AABB-accredited partner laboratory.
+            Our partner laboratory provides testing that is accepted by USCIS, NVC, and U.S. embassies worldwide.
           </p>
 
           <h3 className="text-2xl font-bold mt-10 mb-4">Step-by-Step Immigration DNA Testing Process</h3>

@@ -167,7 +167,7 @@ const faqData = [
           },
           {
             type: "p",
-            text: "In immigration cases, U.S. Citizenship and Immigration Services (USCIS) and U.S. Embassies require DNA testing to be performed by an AABB-accredited partner laboratory.",
+            text: "In immigration cases, our AABB-accredited partner provides testing that is accepted by U.S. Citizenship and Immigration Services (USCIS) and U.S. Embassies.",
           },
           {
             type: "p",

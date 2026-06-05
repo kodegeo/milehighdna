@@ -12,6 +12,15 @@ export const MH_LEGAL_IMMIGRATION_SHORT =
 export const MH_LEGAL_IMMIGRATION_PARTNER =
   "Legal and immigration testing is provided through our AABB-accredited partner laboratory.";
 
+export const MH_AABB_PARTNER_COURTS_USCIS =
+  "Our AABB-accredited partner provides testing that is accepted by courts and USCIS.";
+
+export const MH_IMMIGRATION_INITIATION =
+  "Immigration DNA cases must be initiated by our AABB-accredited partner laboratory. Mile High DNA Testing participates in immigration testing at the direction of the partner laboratory — we provide local sample collection and coordination but cannot initiate an immigration case for individuals who contact us directly.";
+
+export const MH_IMMIGRATION_INITIATION_SHORT =
+  "Immigration DNA cases must be initiated by our AABB-accredited partner laboratory. Mile High DNA Testing coordinates local sample collection when directed by the partner laboratory and cannot initiate immigration cases independently.";
+
 export const AABB_HOME_KIT_DISCLAIMER = "AABB does not accredit home DNA test kits.";
 
 export const MH_FOOTER_DISCLOSURE =

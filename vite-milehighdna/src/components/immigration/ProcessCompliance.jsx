@@ -1,13 +1,14 @@
 import { Link } from 'react-router-dom';
+import { MH_IMMIGRATION_INITIATION_SHORT } from '../../constants/aabbComplianceCopy';
 
 const ProcessCompliance = () => {
   const mustBeItems = [
-    'Initiated through an AABB-accredited partner laboratory',
+    'Initiated by our AABB-accredited partner laboratory',
     'Conducted under strict USCIS and U.S. Department of State compliance requirements',
   ];
 
   const advantages = [
-    { title: 'Petitioner-Initiated Testing', text: 'ensures accuracy, legitimacy, and USCIS acceptance' },
+    { title: 'Partner Laboratory Initiation', text: 'immigration cases are opened and directed by our AABB-accredited partner laboratory' },
     { title: 'Strict Compliance Procedures', text: 'every step aligns with federal immigration standards' },
   ];
 
@@ -17,8 +18,11 @@ const ProcessCompliance = () => {
         <h2 className="text-3xl font-bold text-[#1A3C59] mb-8 text-center">
           Make Your Immigration Process Easier
         </h2>
+        <p className="text-base text-gray-600 mb-4 text-center leading-relaxed">
+          Immigration DNA testing differs from standard <Link to="/services/legal-paternity-testing" className="text-blue-600 hover:text-blue-800 underline">legal DNA tests</Link>. {MH_IMMIGRATION_INITIATION_SHORT}
+        </p>
         <p className="text-base text-gray-600 mb-6 text-center leading-relaxed">
-          Immigration DNA testing differs from standard <Link to="/services/legal-paternity-testing" className="text-blue-600 hover:text-blue-800 underline">legal DNA tests</Link>. These cases must be:
+          These cases must be:
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
           {mustBeItems.map((item, index) => (
@@ -29,7 +33,7 @@ const ProcessCompliance = () => {
               <span className="text-base text-gray-700 leading-relaxed">
                 {index === 0 ? (
                   <>
-                    Initiated through an{' '}
+                    Initiated by our{' '}
                     <a
                       href="https://www.ufclab.com/lab-services/immigration"
                       target="_blank"

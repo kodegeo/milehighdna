@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import GuideLayout from "./GuideLayout";
+import { MH_IMMIGRATION_INITIATION_SHORT } from "../../constants/aabbComplianceCopy";
 
 const faqs = [
   {
@@ -38,7 +39,7 @@ export default function ImmigrationDNATestTimeline() {
             How long immigration DNA testing takes depends on scheduling collection (especially when participants are in different countries), shipping samples to the laboratory, lab processing time, and any embassy or USCIS processing. Laboratory results are often ready within several business days after the lab receives all samples.
           </p>
           <p className="text-lg text-gray-600 mb-6">
-            Mile High DNA Testing can give you a realistic timeline when you schedule. For the full process, see <Link to="/guides/immigration-dna-testing-process" className="text-blue-600 underline">immigration DNA testing process</Link> and <Link to="/guides/uscis-dna-testing" className="text-blue-600 underline">USCIS DNA testing requirements</Link>. To <Link to="/appointments" className="text-blue-600 underline">schedule a test</Link>, visit our appointments page.
+            Mile High DNA Testing can help explain timelines once your case is opened by the partner laboratory. {MH_IMMIGRATION_INITIATION_SHORT} For the full process, see <Link to="/guides/immigration-dna-testing-process" className="text-blue-600 underline">immigration DNA testing process</Link> and <Link to="/guides/uscis-dna-testing" className="text-blue-600 underline">USCIS DNA testing requirements</Link>.
           </p>
         </>
       }
@@ -76,8 +77,8 @@ export default function ImmigrationDNATestTimeline() {
         { title: "Immigration DNA Testing Process", path: "/guides/immigration-dna-testing-process" },
         { title: "How Long Do DNA Test Results Take?", path: "/guides/how-long-does-dna-testing-take" }
       ]}
-      ctaHeading="Start Your Immigration DNA Test"
-      ctaSubline="Schedule immigration DNA testing in Denver and get a clear timeline for your case."
+      ctaHeading="Immigration DNA Testing Coordination"
+      ctaSubline="Immigration cases must be initiated by our AABB-accredited partner laboratory. We coordinate local sample collection when directed."
     />
   );
 }

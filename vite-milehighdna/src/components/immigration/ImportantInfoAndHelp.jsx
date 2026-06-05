@@ -17,8 +17,8 @@ const ImportantInfoAndHelp = () => {
             <strong>Pricing:</strong> All immigration DNA testing fees are case-specific and not posted online.
           </div>
           <div className="p-6 bg-[#F5F7FA] border border-gray-200 rounded-xl shadow-sm text-base text-gray-700 leading-relaxed">
-            <strong>How to Purchase:</strong> Immigration DNA tests must be initiated through the referral form and{' '}
-            <strong>cannot be purchased directly through the website</strong>.
+            <strong>How to Begin:</strong> Immigration DNA cases must be initiated by our AABB-accredited partner laboratory through the referral form and{' '}
+            <strong>cannot be started or purchased directly through our website</strong>. Mile High DNA Testing participates at the partner laboratory&apos;s direction once your case is opened.
           </div>
           <div className="p-6 bg-[#F5F7FA] border border-gray-200 rounded-xl shadow-sm text-base text-gray-700 leading-relaxed">
             <strong>Accreditation:</strong> All immigration DNA testing is performed by{' '}

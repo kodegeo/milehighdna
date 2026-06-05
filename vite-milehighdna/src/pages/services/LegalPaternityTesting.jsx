@@ -320,7 +320,7 @@ const LegalPaternityTesting = () => {
           </h2>
           <p className="text-gray-700 mb-6">
             Trusted by <a href="https://milehighdnatesting.com/dna-testing-colorado" className="text-blue-600 hover:text-blue-700 transition duration-300">Colorado</a> families, attorneys, and agencies. Our legal DNA
-            testing meets <Link to="/aabb-accredited-dna-testing-denver" className="text-blue-600 hover:underline">AABB standards for partner laboratory</Link> and is simple, fast, and fully court-admissible.
+            testing meets <Link to="/aabb-accredited-dna-testing-denver" className="text-blue-600 hover:underline">accredited partner laboratory standards for legal DNA testing</Link> and is simple, fast, and fully court-admissible.
           </p>
           <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
             <div className="bg-white rounded-lg shadow p-4">

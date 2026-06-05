@@ -14,7 +14,7 @@ const WhoNeedsTest = () => {
             Who Needs Immigration DNA Testing?
           </h2>
           <p className="text-lg text-gray-600 mb-8">
-            Mile High DNA Testing provides all USCIS-recognized relationship tests for visa, passport, and citizenship cases. Immigration DNA testing is typically requested when documentation is insufficient to establish a biological relationship — USCIS, embassies, or consulates will specify if a DNA test is required for your case.
+            Mile High DNA Testing coordinates USCIS-recognized relationship testing when directed by our AABB-accredited partner laboratory. Immigration DNA testing is typically requested when documentation is insufficient to establish a biological relationship — USCIS, embassies, or consulates will specify if a DNA test is required for your case. Mile High DNA Testing cannot initiate immigration cases independently.
           </p>
   
           <div className="grid gap-4 md:grid-cols-2 text-left max-w-xl mx-auto">

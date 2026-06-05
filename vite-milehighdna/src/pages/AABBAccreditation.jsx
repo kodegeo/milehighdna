@@ -9,7 +9,7 @@ const AABBAccreditation = () => {
     <div>
       <div className="max-w-4xl mx-auto px-4 py-10">
       <Helmet>
-          <title>AABB Standards & partner laboratory | Legal & Immigration DNA Testing</title>
+          <title>Accredited Partner Laboratory | Legal & Immigration DNA Testing</title>
           <meta 
             name="description" 
             content="Mile High DNA Testing is not AABB accredited. Learn how AABB accreditation applies to partner laboratory for legal and immigration DNA testing Center." 
