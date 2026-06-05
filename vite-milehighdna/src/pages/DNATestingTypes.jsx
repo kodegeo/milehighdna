@@ -194,7 +194,7 @@ const DNATestingTypes = () => {
                     <li>• Professional sample collection</li>
                     <li>• Photo ID verification</li>
                     <li>• Chain of custody documentation</li>
-                    <li>• AABB-accredited partner laboratory for legal and immigration testing</li>
+                    <li>• Accredited partner laboratory for legal and immigration testing</li>
                   </ul>
                 </div>
                 

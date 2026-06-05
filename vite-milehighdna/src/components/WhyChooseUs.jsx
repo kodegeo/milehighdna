@@ -13,8 +13,8 @@ const benefits = [
     label: 'Fast Turnaround',
   },
   {
-    value: 'AABB',
-    label: 'AABB partner laboratory',
+    value: 'Partner',
+    label: 'Accredited laboratory',
   },
   {
     value: '100%',

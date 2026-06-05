@@ -78,7 +78,7 @@ const ShopCollection = () => {
           </p>
 
           <div className="mt-6 space-y-2 text-sm md:text-base text-blue-50">
-            <p>✔ AABB-accredited partner laboratory</p>
+            <p>✔ Accredited partner laboratory</p>
             <p>✔ Court-Admissible Options Available</p>
             <p>✔ Secure & Confidential Results</p>
             <p>✔ English & Spanish Support</p>

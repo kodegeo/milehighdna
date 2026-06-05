@@ -11,7 +11,7 @@ return (
           Prueba de ADN de Paternidad Prenatal
           </h1>
           <p className="text-lg text-gray-600 mb-6">
-          Confirme la paternidad antes del nacimiento con nuestra prueba de ADN prenatal no invasiva. Segura para la madre y el bebé, nuestro laboratorio acreditado por la AABB ofrece resultados rápidos, confidenciales y admisibles en los tribunales para familias en Denver, Aurora, Lakewood y en todo Colorado.
+          Confirme la paternidad antes del nacimiento con nuestra prueba de ADN prenatal no invasiva. Segura para la madre y el bebé, nuestro laboratorio asociado acreditado ofrece resultados rápidos, confidenciales y admisibles en los tribunales para familias en Denver, Aurora, Lakewood y en todo Colorado.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <a href="https://calendly.com/milehighdnatesting/noninvasive-prenatal-paternity" className="bg-blue-600 text-white px-6 py-3 rounded-xl shadow hover:bg-blue-700 transition">

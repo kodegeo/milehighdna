@@ -12,7 +12,7 @@ const Pricing = () => {
           <div className="bg-white rounded-xl shadow-lg border-t-4 border-blue-600 p-8 max-w-xl mx-auto">
             <h3 className="text-xl font-semibold text-[#1A3C59] mb-4">What’s Included</h3>
             <ul className="text-left text-base text-gray-700 space-y-3 mb-6 leading-relaxed">
-              <li>✔ AABB-accredited partner laboratory testing (UFC, approved for USCIS cases)</li>
+              <li>✔ Accredited partner laboratory testing (UFC, approved for USCIS cases)</li>
               <li>✔ U.S. sample collection at our Denver office or approved partner facilities</li>
               <li>✔ International coordination with U.S. Embassies and Consulates</li>
               <li>✔ Case-specific pricing and forms provided after referral submission</li>

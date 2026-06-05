@@ -16,7 +16,7 @@ const PrenatalPricing = () => {
               <p className="text-gray-600 mb-4">Incluye una prueba de ADN no legal para un padre y una madre embarazada. Ideal para tranquilidad personal.</p>
               <p className="text-2xl font-bold text-blue-700 mb-4">$1,599.00</p>
               <ul className="text-left text-gray-700 space-y-2 mb-4">
-                <li>✔ Análisis de laboratorio acreditado por la AABB</li>
+                <li>✔ Análisis de laboratorio asociado acreditado</li>
                 <li>✔ Recolección de muestras</li>
                 <li>✔ Tranquilidad de espíritu</li>
                 <li>✔ 7–10 Entrega del día laborable</li>
@@ -35,7 +35,7 @@ const PrenatalPricing = () => {
               <p className="text-gray-600 mb-4">Incluye una prueba de ADN legal para un presunto padre y una madre embarazada. Recomendado para casos donde se requiere verificación judicial.</p>
               <p className="text-2xl font-bold text-blue-700 mb-4">$1,799.00</p>
               <ul className="text-left text-gray-700 space-y-2 mb-4">
-                <li>✔ Análisis de laboratorio acreditado por la AABB</li>
+                <li>✔ Análisis de laboratorio asociado acreditado</li>
                 <li>✔ Recolección de muestras</li>
                 <li>✔ Documentación Legal</li>
                 <li>✔ 7–10 Entrega del día laborable</li>

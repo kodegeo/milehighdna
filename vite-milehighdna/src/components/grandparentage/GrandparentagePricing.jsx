@@ -15,7 +15,7 @@ const GrandparentagePricing = () => {
               <p className="text-gray-600 mb-4">Peace of mind testing with one grandparent and one child.</p>
               <p className="text-2xl font-bold text-blue-700 mb-4">$349+</p>
               <ul className="text-left text-gray-700 space-y-2 mb-4">
-                <li>✔ AABB Lab Analysis</li>
+                <li>✔ Partner laboratory analysis</li>
                 <li>✔ Sample Collection</li>
                 <li>✔ Peace of Mind</li>
                 <li>✔ 7–10 Business Day Turnaround</li>
@@ -33,7 +33,7 @@ const GrandparentagePricing = () => {
               <p className="text-gray-600 mb-4">Peace of mind testing with both grandparents and one child.</p>
               <p className="text-2xl font-bold text-blue-700 mb-4">$449+</p>
               <ul className="text-left text-gray-700 space-y-2 mb-4">
-                <li>✔ AABB Lab Analysis</li>
+                <li>✔ Partner laboratory analysis</li>
                 <li>✔ Sample Collection</li>
                 <li>✔ Peace of Mind</li>
                 <li>✔ 7–10 Business Day Turnaround</li>
@@ -51,7 +51,7 @@ const GrandparentagePricing = () => {
               <p className="text-gray-600 mb-4">Court-admissible testing with one grandparent and one child.</p>
               <p className="text-2xl font-bold text-blue-700 mb-4">$479+</p>
               <ul className="text-left text-gray-700 space-y-2 mb-4">
-                <li>✔ AABB Lab Analysis</li>
+                <li>✔ Partner laboratory analysis</li>
                 <li>✔ Sample Collection for All Participants</li>
                 <li>✔ Legal Documentation</li>
                 <li>✔ 7–10 Business Day Turnaround</li>
@@ -69,7 +69,7 @@ const GrandparentagePricing = () => {
               <p className="text-gray-600 mb-4">Court-admissible testing with both grandparents and one child.</p>
               <p className="text-2xl font-bold text-blue-700 mb-4">$549+</p>
               <ul className="text-left text-gray-700 space-y-2 mb-4">
-                <li>✔ AABB Lab Analysis</li>
+                <li>✔ Partner laboratory analysis</li>
                 <li>✔ Sample Collection for All Participants</li>
                 <li>✔ Legal Documentation</li>
                 <li>✔ 7–10 Business Day Turnaround</li>

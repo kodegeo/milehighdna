@@ -11,8 +11,8 @@ const benefits = [
     label: 'Resultados Rápidos',
   },
   {
-    value: 'AABB',
-    label: 'Laboratorios asociados (AABB cuando aplique)',
+    value: 'Lab',
+    label: 'Laboratorio asociado acreditado',
   },
   {
     value: '100%',

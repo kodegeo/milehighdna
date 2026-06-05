@@ -13,7 +13,7 @@ const TrustCredentialsEs = () => {
               ✓
             </div>
             <h3 className="text-xl font-semibold mb-2 text-gray-800">
-              Laboratorios Acreditados AABB o CLIA
+              Laboratorios Asociados Acreditados o CLIA
             </h3>
             <p className="text-gray-600">
               Procesado en laboratorios acreditados que cumplen con estándares estrictos de calidad.

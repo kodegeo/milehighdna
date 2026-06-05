@@ -212,7 +212,7 @@ const ForensicDNAAnalysis = () => {
             Why Choose Our Forensic DNA Analysis?
           </h2>
           <ul className="grid md:grid-cols-2 gap-6 text-gray-700 text-lg">
-            <li>✅ AABB Partner Laboratory — Accredited processing for legal and immigration case requirements</li>
+            <li>✅ Accredited Partner Laboratory — Processing for legal and immigration case requirements</li>
             <li>✅ Court-Admissible — Strict chain-of-custody procedures for legal cases</li>
             <li>✅ Expert Analysis — Complex relationship verification and DNA evidence interpretation</li>
             <li>✅ Missing Persons — Specialized testing for identification and family reunification</li>

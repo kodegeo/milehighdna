@@ -307,7 +307,7 @@ const Home = () => {
             Trusted for Legal & Prenatal DNA Testing in Colorado
           </p>
           <div className="flex flex-wrap justify-center gap-6 text-sm text-gray-700">
-            <span>✔ AABB-accredited partner laboratory for legal & immigration testing</span>
+            <span>✔ Accredited partner laboratory for legal & immigration testing</span>
             <span>✔ Court-Admissible Results</span>
             <span>✔ Used by Attorneys & Immigration Cases</span>
             <span>✔ Confidential & Secure Process</span>
@@ -338,8 +338,8 @@ const Home = () => {
                   </svg>
                 </div>
               </div>
-              <h3 className="font-bold text-gray-900 mb-1">partner laboratory</h3>
-              <p className="text-sm text-gray-600">AABB-accredited partner laboratory for applicable legal & immigration testing</p>
+              <h3 className="font-bold text-gray-900 mb-1">Accredited Partner Laboratory</h3>
+              <p className="text-sm text-gray-600">Legal and immigration testing through our accredited partner laboratory</p>
             </div>
             
             <div className="text-center">

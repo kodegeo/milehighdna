@@ -489,7 +489,7 @@ const Services = () => {
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="card p-6">
-              <h3 className="text-xl font-bold mb-2">AABB Partner Laboratory</h3>
+              <h3 className="text-xl font-bold mb-2">Accredited Partner Laboratory</h3>
               <p className="text-gray-600">{MH_LEGAL_IMMIGRATION_PARTNER} Court-admissible results are trusted by immigration attorneys and legal professionals.</p>
             </div>
             <div className="card p-6">

@@ -12,7 +12,7 @@ const Pricing = () => {
         <div className="bg-white rounded-xl shadow-lg border-t-4 border-blue-600 p-8 max-w-xl mx-auto">
           <h3 className="text-2xl font-bold text-gray-800 mb-4">Solicita una cotización</h3>
           <ul className="text-left text-gray-700 space-y-4 mb-6">
-            <li>✔ Pruebas en Laboratorio Acreditado por AABB</li>
+            <li>✔ Pruebas en laboratorio asociado acreditado</li>
             <li>✔ Recolección de Muestras en Nuestra Oficina</li>
             <li>✔ Coordinación con Embajadas o Clínicas en el Extranjero</li>
             <li>✔ Envío Directo a USCIS o Embajada</li>

@@ -8,7 +8,7 @@ const PrenatalWhyChooseUs = () => {
         'Prenatal testing requires only a simple blood draw from the mother and a cheek swab from the alleged father—no risk to pregnancy.',
     },
     {
-      title: 'AABB Partner Laboratory',
+      title: 'Accredited Partner Laboratory',
       description:
         'All tests are processed by AABB-accredited partner laboratory, ensuring accuracy, reliability, and compliance.',
     },

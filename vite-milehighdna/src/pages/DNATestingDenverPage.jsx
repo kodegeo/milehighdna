@@ -105,7 +105,7 @@ const DNATestingDenverPage = () => {
             {/* Quick Trust Points */}
             <div className="flex flex-col md:flex-row justify-center gap-4 mt-6">
               <div className="bg-white/90 shadow-md rounded-lg p-3 w-full md:w-56 text-blue-900 font-semibold text-base md:text-lg">
-                ✅ AABB Partner Laboratory for Court-Admissible DNA Testing
+                ✅ Accredited Partner Laboratory for Court-Admissible DNA Testing
               </div>
               <div className="bg-white/90 shadow-md rounded-lg p-3 w-full md:w-56 text-blue-900 font-semibold text-base md:text-lg">
                 ✅ Fast Results in 3–5 Business Days

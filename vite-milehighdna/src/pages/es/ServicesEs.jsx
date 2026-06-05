@@ -9,7 +9,7 @@ const ServicesEs = () => {
       features: [
         '99.9% de precisión',
         'Resultados en 3-5 días hábiles',
-        'Laboratorio acreditado por AABB',
+        'Laboratorio asociado acreditado',
         'Resultados admisibles en tribunales',
         'Proceso confidencial y seguro'
       ],
@@ -21,7 +21,7 @@ const ServicesEs = () => {
       features: [
         'Métodos de prueba no invasivos',
         'Resultados precisos en 3-5 días hábiles',
-        'Laboratorio acreditado por AABB',
+        'Laboratorio asociado acreditado',
         'Documentación legal disponible',
         'Recolección profesional de muestras'
       ],
@@ -33,7 +33,7 @@ const ServicesEs = () => {
       features: [
         'Pruebas de hermanos completos y medios disponibles',
         'Resultados en 3-5 días hábiles',
-        'Laboratorio acreditado por AABB',
+        'Laboratorio asociado acreditado',
         'Documentación legal disponible',
         'Resultados confidenciales'
       ],
@@ -93,9 +93,9 @@ const ServicesEs = () => {
               </p>
             </div>
             <div>
-              <h3 className="text-xl font-semibold mb-4">Acreditado por AABB</h3>
+              <h3 className="text-xl font-semibold mb-4">Laboratorio Asociado Acreditado</h3>
               <p className="text-gray-600 mb-4">
-                Nuestro laboratorio está acreditado por AABB, garantizando los más altos estándares de calidad y precisión en las pruebas de ADN.
+                Las pruebas legales y de inmigración se realizan a través de nuestro laboratorio asociado acreditado, garantizando los más altos estándares de calidad y precisión.
               </p>
             </div>
             <div>

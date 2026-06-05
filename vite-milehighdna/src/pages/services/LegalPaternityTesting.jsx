@@ -330,7 +330,7 @@ const LegalPaternityTesting = () => {
               ✅ Fast Turnaround (3–5 Business Days)
             </div>
             <div className="bg-white rounded-lg shadow p-4">
-              ✅ AABB partner laboratory with chain of custody
+              ✅ Accredited partner laboratory with chain of custody
             </div>
             <div className="bg-white rounded-lg shadow p-4">
               ✅ Confidential & Professional Service

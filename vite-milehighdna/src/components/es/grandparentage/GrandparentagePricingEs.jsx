@@ -16,7 +16,7 @@ const GrandparentagePricingEs = () => {
               <p className="text-gray-600 mb-4">Recomendadas para confirmar vínculos familiares de manera privada. Los resultados no son válidos en la corte.</p>
               <p className="text-2xl font-bold text-blue-700 mb-4">$349</p>
               <ul className="text-left text-gray-700 space-y-2 mb-4">
-                <li>✔ Análisis en laboratorio acreditado por la AABB</li>
+                <li>✔ Análisis en laboratorio asociado acreditado</li>
                 <li>✔ Recolección de muestras</li>
                 <li>✔ Tranquilidad personal</li>
                 <li>✔ Resultados en 7 a 10 días hábiles</li>
@@ -36,7 +36,7 @@ const GrandparentagePricingEs = () => {
               <p className="text-gray-600 mb-4">Incluye cadena de custodia completa. Apta para casos judiciales, inmigración, beneficios gubernamentales, etc.</p>
               <p className="text-2xl font-bold text-blue-700 mb-4">$479</p>
               <ul className="text-left text-gray-700 space-y-2 mb-4">
-                <li>✔ Análisis en laboratorio acreditado por la AABB</li>
+                <li>✔ Análisis en laboratorio asociado acreditado</li>
                 <li>✔ Recolección de muestras para todos los participantes</li>
                 <li>✔ Documentación legal</li>
                 <li>✔ Resultados en 7 a 10 días hábiles</li>

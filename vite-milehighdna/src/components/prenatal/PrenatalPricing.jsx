@@ -24,7 +24,7 @@ const PrenatalPricing = () => {
             </p>
             <p className="text-2xl font-bold text-blue-700 mb-4">$1,599.00</p>
             <ul className="text-left text-gray-700 space-y-2 mb-4">
-              <li>✔ AABB Lab Analysis</li>
+              <li>✔ Partner laboratory analysis</li>
               <li>✔ Sample Collection</li>
               <li>✔ Peace of Mind</li>
               <li>✔ 7–10 Business Day Turnaround</li>
@@ -55,7 +55,7 @@ const PrenatalPricing = () => {
             </p>
             <p className="text-2xl font-bold text-blue-700 mb-4">$1,799.00</p>
             <ul className="text-left text-gray-700 space-y-2 mb-4">
-              <li>✔ AABB Lab Analysis</li>
+              <li>✔ Partner laboratory analysis</li>
               <li>✔ Full Sample Collection</li>
               <li>✔ Legal Documentation</li>
               <li>✔ 7–10 Business Day Turnaround</li>

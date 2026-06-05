@@ -1,7 +1,7 @@
 const GrandparentageWhyChooseUsEs = () => {
     const reasons = [
       {
-        title: 'Laboratorios acreditados por la AABB',
+        title: 'Laboratorio Asociado Acreditado',
         description:
           'Todas nuestras pruebas se procesan en laboratorios acreditados por la AABB, lo que garantiza cumplimiento legal y precisión al más alto nivel de la industria.',
       },

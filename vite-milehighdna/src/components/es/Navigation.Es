@@ -37,7 +37,7 @@ const Navigation = () => {
           {/* Desktop Navigation */}
           <div className="hidden md:flex md:items-center md:space-x-8">
             <Link to="/about" className="text-gray-700 hover:text-blue-600 transition duration-300">Quienes Somos</Link>
-            <Link to="/aabb-accreditation" className="text-gray-700 hover:text-blue-600 transition duration-300">Acreditación AABB</Link>
+            <Link to="/aabb-accreditation" className="text-gray-700 hover:text-blue-600 transition duration-300">Laboratorio Asociado Acreditado</Link>
             
             {/* Services Dropdown */}
             <div

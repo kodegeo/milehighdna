@@ -12,7 +12,7 @@ const Pricing = () => {
           <div className="bg-white rounded-xl shadow-lg border-t-4 border-blue-600 p-8 max-w-xl mx-auto">
             <h3 className="text-2xl font-bold text-gray-800 mb-4">Desde $349</h3>
             <ul className="text-left text-gray-700 space-y-4 mb-6">
-              <li>✔ Análisis en laboratorio acreditado por la AABB</li>
+              <li>✔ Análisis en laboratorio asociado acreditado</li>
               <li>✔ Recolección de muestra en nuestra oficina</li>
               <li>✔ Resultados en 2 a 5 días hábiles</li>
             </ul>

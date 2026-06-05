@@ -53,7 +53,7 @@ const InfidelityDNATesting = () => {
       <section className="py-6 bg-gray-50 border-b border-gray-200">
         <div className="max-w-6xl mx-auto px-6">
           <div className="flex flex-wrap justify-center gap-x-8 gap-y-2 text-gray-700 text-sm md:text-base">
-            <span>✓ AABB-accredited partner laboratory</span>
+            <span>✓ Partner laboratory processing</span>
             <span>✓ Court-Admissible Options Available</span>
             <span>✓ 7–10 Business Day Results</span>
             <span>✓ Confidential & Secure Process</span>
