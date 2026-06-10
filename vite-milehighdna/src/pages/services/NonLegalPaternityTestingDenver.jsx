@@ -285,7 +285,7 @@ const NonLegalPaternityTestingDenver = () => {
                     Laboratory Analysis
                   </h3>
                   <p className="text-gray-600">
-                    Samples are sent to an AABB-accredited partner laboratory for analysis. The same scientific methods used in legal testing ensure accurate results.
+                    Samples are sent to an accredited partner laboratory for analysis. The same scientific methods used in legal testing ensure accurate results.
                   </p>
                 </div>
               </div>

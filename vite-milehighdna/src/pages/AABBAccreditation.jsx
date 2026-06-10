@@ -17,7 +17,7 @@ const AABBAccreditation = () => {
 
           {/* Open Graph */}
           <meta property="og:title" content="What is AABB accreditation for DNA testing?" />
-          <meta property="og:description" content="AABB accreditation applies to relationship-testing laboratories used for court and USCIS cases—not to specimen collection companies. We partner with an AABB-accredited laboratory to perform analysis for testing." />
+          <meta property="og:description" content="AABB accreditation applies to relationship-testing laboratories used for court and USCIS cases—not to specimen collection companies. We partner with an accredited partner laboratory to perform analysis for testing." />
           <meta property="og:image" content="https://milehighdnatesting.com/images/banner-1200.png" />
           <meta property="og:url" content="https://milehighdnatesting.com/aabb-accreditation" />
           <meta property="og:type" content="article" />
@@ -40,7 +40,7 @@ const AABBAccreditation = () => {
         </p>
 
         <p className="mb-4">
-        Working with AABB-accredited partner laboratory for qualifying legal and immigration testing helps ensure:
+        Working with accredited partner laboratory for qualifying legal and immigration testing helps ensure:
         </p>
 
         <ul className="list-disc list-inside mb-6">

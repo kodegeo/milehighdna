@@ -67,7 +67,7 @@ const PaternityTestColorado = () => {
             <li>• Required for USCIS immigration visa applications</li>
             <li>• Chain of custody documentation from collection through analysis</li>
             <li>• Identity verification with government-issued photo ID</li>
-            <li>• AABB-accredited partner laboratory compliance required</li>
+            <li>• accredited partner laboratory compliance required</li>
             <li>• Results are legally binding and court-admissible</li>
           </ul>
           <Link to="/services/legal-paternity-testing" className="text-blue-600 font-medium hover:underline inline-block mt-2">
@@ -114,7 +114,7 @@ const PaternityTestColorado = () => {
     },
     {
       title: "Lab Accreditation",
-      description: "Samples must be processed at an AABB-accredited partner laboratory to meet Colorado court standards."
+      description: "Samples must be processed at an accredited partner laboratory to meet Colorado court standards."
     },
     {
       title: "Court and Agency Acceptance",
@@ -175,7 +175,7 @@ const PaternityTestColorado = () => {
   const faqs = [
     {
       question: "Are paternity tests legally valid in Colorado courts?",
-      answer: "Yes. Legal paternity tests conducted with proper chain of custody procedures are legally valid and admissible in Colorado family courts. The tests must be performed at an AABB-accredited partner laboratory with professional sample collection and identity verification."
+      answer: "Yes. Legal paternity tests conducted with proper chain of custody procedures are legally valid and admissible in Colorado family courts. The tests must be performed at an accredited partner laboratory with professional sample collection and identity verification."
     },
     {
       question: "Can non-legal tests be used in custody cases?",
@@ -195,7 +195,7 @@ const PaternityTestColorado = () => {
     },
     {
       question: "What agencies accept DNA test results in Colorado?",
-      answer: "Colorado family courts, child support enforcement agencies, and immigration authorities (USCIS) accept legal paternity test results from AABB-accredited partner laboratory when proper chain of custody procedures are followed. Non-legal test results are not accepted by any government agency."
+      answer: "Colorado family courts, child support enforcement agencies, and immigration authorities (USCIS) accept legal paternity test results from accredited partner laboratory when proper chain of custody procedures are followed. Non-legal test results are not accepted by any government agency."
     }
   ];
 
@@ -431,7 +431,7 @@ const PaternityTestColorado = () => {
               Immigration-Related Paternity Testing
             </h3>
             <p className="text-gray-600 mb-3">
-              Some immigration and visa applications require DNA testing to verify a biological parent-child relationship. These tests must follow strict chain-of-custody procedures and be performed at AABB-accredited partner laboratory to meet USCIS and embassy requirements.
+              Some immigration and visa applications require DNA testing to verify a biological parent-child relationship. These tests must follow strict chain-of-custody procedures and be performed at accredited partner laboratory to meet USCIS and embassy requirements.
             </p>
             <p className="text-gray-600 mb-4">
               Immigration-related paternity testing follows the same legal standards as court-admissible tests, with professional sample collection, identity verification, and complete documentation throughout the process.

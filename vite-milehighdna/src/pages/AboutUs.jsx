@@ -13,11 +13,11 @@ const AboutUsPage = () => {
         <title>Paternity DNA Testing in Denver, Aurora, and Lakewood | About Us</title>
         <meta
           name="description"
-          content="Mile High DNA Testing provides legal paternity and immigration DNA testing in Denver, Aurora, Lakewood, and throughout Colorado. Legal and immigration testing through our AABB-accredited partner laboratory. Fast, confidential service."
+          content="Mile High DNA Testing provides legal paternity and immigration DNA testing in Denver, Aurora, Lakewood, and throughout Colorado. Legal and immigration testing through our accredited partner laboratory. Fast, confidential service."
         />
         <link rel="canonical" href="https://milehighdnatesting.com/about" />
         <meta property="og:title" content="Trusted Paternity DNA Testing in Denver, Aurora, Lakewood" />
-        <meta property="og:description" content="Learn more about Mile High DNA Testing — professional DNA collection and case coordination in Colorado. Legal and immigration testing through our AABB-accredited partner laboratory." />
+        <meta property="og:description" content="Learn more about Mile High DNA Testing — professional DNA collection and case coordination in Colorado. Legal and immigration testing through our accredited partner laboratory." />
         <meta property="og:image" content="https://milehighdnatesting.com/images/banner-1200.png" />
         <meta property="og:url" content="https://milehighdnatesting.com/about" />
         <meta property="og:type" content="website" />

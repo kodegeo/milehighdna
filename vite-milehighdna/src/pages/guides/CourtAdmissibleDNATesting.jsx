@@ -5,7 +5,7 @@ import GuideLayout from "./GuideLayout";
 const faqs = [
   {
     question: "What makes a DNA test court admissible?",
-    answer: "Court-admissible DNA tests require verified identification of all participants, chain-of-custody documentation from collection through laboratory analysis, and testing by an AABB-accredited partner laboratory. Results must be reported in a certified format acceptable to the court."
+    answer: "Court-admissible DNA tests require verified identification of all participants, chain-of-custody documentation from collection through laboratory analysis, and testing by an accredited partner laboratory. Results must be reported in a certified format acceptable to the court."
   },
   {
     question: "Can I use an at-home DNA test in court?",
@@ -13,11 +13,11 @@ const faqs = [
   },
   {
     question: "Do all courts accept accredited partner laboratory DNA results?",
-    answer: "Most family courts in the United States accept DNA test results from AABB-accredited partner laboratory when chain-of-custody and identity verification are documented. Requirements can vary by jurisdiction; your attorney or the court can confirm."
+    answer: "Most family courts in the United States accept DNA test results from accredited partner laboratory when chain-of-custody and identity verification are documented. Requirements can vary by jurisdiction; your attorney or the court can confirm."
   },
   {
     question: "How do I get a court-admissible paternity test in Denver?",
-    answer: "Schedule a legal paternity test at a facility that verifies ID, follows chain-of-custody, and uses an AABB-accredited partner laboratory. Mile High DNA Testing in Denver coordinates legal paternity testing that meets these requirements."
+    answer: "Schedule a legal paternity test at a facility that verifies ID, follows chain-of-custody, and uses an accredited partner laboratory. Mile High DNA Testing in Denver coordinates legal paternity testing that meets these requirements."
   }
 ];
 
@@ -35,7 +35,7 @@ export default function CourtAdmissibleDNATesting() {
       overview={
         <>
           <p className="text-xl text-gray-600 mb-6 leading-relaxed">
-            Court-admissible DNA testing follows strict procedures so that results can be used as evidence in family court, custody cases, and other legal matters. Key requirements include verified identification, chain-of-custody, and analysis by an AABB-accredited partner laboratory.
+            Court-admissible DNA testing follows strict procedures so that results can be used as evidence in family court, custody cases, and other legal matters. Key requirements include verified identification, chain-of-custody, and analysis by an accredited partner laboratory.
           </p>
           <p className="text-lg text-gray-600 mb-6">
             Mile High DNA Testing coordinates court-admissible legal paternity testing in Denver. For the full procedure, see <Link to="/guides/chain-of-custody-dna-testing" className="text-blue-600 underline">chain of custody DNA testing</Link> and <Link to="/guides/dna-test-for-court" className="text-blue-600 underline">DNA testing for court cases</Link>. To <Link to="/appointments" className="text-blue-600 underline">schedule a legal test</Link>, visit our appointments page.
@@ -55,10 +55,10 @@ export default function CourtAdmissibleDNATesting() {
       process={
         <>
           <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-            Participants present government-issued ID at collection. A trained collector takes samples (usually cheek swabs) and documents the chain-of-custody. Samples are sealed and sent to an AABB-accredited partner lab. The lab analyzes the DNA and issues a certified report that can be sent to the court, attorney, or agency.
+            Participants present government-issued ID at collection. A trained collector takes samples (usually cheek swabs) and documents the chain-of-custody. Samples are sealed and sent to an accredited partner laboratory. The lab analyzes the DNA and issues a certified report that can be sent to the court, attorney, or agency.
           </p>
           <p className="text-lg text-gray-600 mb-6">
-            The entire process—from collection to reporting—must be documented. For more on chain-of-custody, read <Link to="/guides/chain-of-custody-dna-testing" className="text-blue-600 underline">what is chain of custody DNA testing</Link>. For accreditation, see <Link to="/guides/aabb-labs-for-immigration" className="text-blue-600 underline">AABB partner-laboratory requirements for immigration DNA tests</Link>.
+            The entire process—from collection to reporting—must be documented. For more on chain-of-custody, read <Link to="/guides/chain-of-custody-dna-testing" className="text-blue-600 underline">what is chain of custody DNA testing</Link>. For accreditation, see <Link to="/guides/aabb-labs-for-immigration" className="text-blue-600 underline">accredited partner laboratory requirements for immigration DNA tests</Link>.
           </p>
         </>
       }

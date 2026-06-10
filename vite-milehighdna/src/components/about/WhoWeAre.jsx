@@ -16,7 +16,7 @@ const WhoWeAre = ({ title, content, imageUrl }) => {
             <div className="p-6 border rounded-xl shadow-sm hover:shadow-md transition">
               <h3 className="text-xl font-semibold text-blue-700 mb-2">Trusted and Accredited Testing</h3>
               <p className="text-gray-600">
-              We partner with an AABB-accredited partner laboratory to ensure that all DNA tests meet the highest standards of accuracy and legal admissibility.
+              We partner with an accredited partner laboratory to ensure that all DNA tests meet the highest standards of accuracy and legal admissibility.
               </p>
             </div>
             <div className="p-6 border rounded-xl shadow-sm hover:shadow-md transition">

@@ -123,7 +123,7 @@ const LegalDNATestCostGuide = () => {
                   "name": "What's included in the cost of a legal DNA test?",
                   "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Legal DNA test costs include identity verification, professional sample collection, chain of custody documentation, AABB-accredited partner laboratory analysis, and court-admissible results report. All fees are included upfront with no hidden charges."
+                    "text": "Legal DNA test costs include identity verification, professional sample collection, chain of custody documentation, accredited partner laboratory analysis, and court-admissible results report. All fees are included upfront with no hidden charges."
                   }
                 },
                 {
@@ -232,7 +232,7 @@ const LegalDNATestCostGuide = () => {
           <div className="grid md:grid-cols-2 gap-8">
             <div className="prose prose-lg max-w-none">
               <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                Legal DNA testing is performed under strict chain-of-custody procedures to ensure results are admissible in court and government proceedings. Unlike at-home tests, legal DNA testing requires professional sample collection, identity verification, and AABB-accredited partner laboratory analysis.
+                Legal DNA testing is performed under strict chain-of-custody procedures to ensure results are admissible in court and government proceedings. Unlike at-home tests, legal DNA testing requires professional sample collection, identity verification, and accredited partner laboratory analysis.
               </p>
               <p className="text-lg text-gray-600 mb-6 leading-relaxed">
                 This process ensures that DNA samples are properly collected, documented, and analyzed according to legal standards.
@@ -322,7 +322,7 @@ const LegalDNATestCostGuide = () => {
                 <li>• Professional sample collection</li>
                 <li>• Identity verification</li>
                 <li>• Chain of custody documentation</li>
-                <li>• AABB-accredited partner laboratory</li>
+                <li>• accredited partner laboratory</li>
                 <li>• Results in 3-5 business days</li>
                 <li>• Court-admissible report</li>
               </ul>
@@ -375,7 +375,7 @@ const LegalDNATestCostGuide = () => {
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-semibold text-gray-800 mb-3">What's included in the cost of a legal DNA test?</h3>
               <p className="text-gray-600">
-                Legal DNA test costs include professional sample collection, identity verification, chain of custody documentation, AABB-accredited partner laboratory analysis, and court-admissible results report. All fees are included upfront.
+                Legal DNA test costs include professional sample collection, identity verification, chain of custody documentation, accredited partner laboratory analysis, and court-admissible results report. All fees are included upfront.
               </p>
             </div>
             

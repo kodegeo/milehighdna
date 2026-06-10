@@ -357,7 +357,7 @@ const Lakewood = () => {
             
             <div className="bg-white border border-gray-200 rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
               <h3 className="font-semibold text-lg mb-2 text-gray-800">Is immigration DNA testing approved for USCIS cases?</h3>
-              <p className="text-gray-600">Yes. Immigration relationship testing is coordinated to meet USCIS and embassy requirements, including processing by AABB-accredited partner laboratory when required for your case.</p>
+              <p className="text-gray-600">Yes. Immigration relationship testing is coordinated to meet USCIS and embassy requirements, including processing by accredited partner laboratory when required for your case.</p>
             </div>
           </div>
         </section>

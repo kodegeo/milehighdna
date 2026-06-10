@@ -13,7 +13,7 @@ const faqs = [
   },
   {
     question: "Can siblingship DNA test results be used in court or for immigration?",
-    answer: "Yes, if the test is performed as a legal test with identity verification, chain-of-custody, and an AABB-accredited partner laboratory. USCIS and some embassies accept sibling DNA results when the test meets their requirements. Courts may accept them when relevant to the case."
+    answer: "Yes, if the test is performed as a legal test with identity verification, chain-of-custody, and an accredited partner laboratory. USCIS and some embassies accept sibling DNA results when the test meets their requirements. Courts may accept them when relevant to the case."
   },
   {
     question: "How accurate is siblingship DNA testing?",
@@ -65,7 +65,7 @@ export default function SiblingshipDNATestingExplained() {
       legal={
         <>
           <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-            Siblingship tests can be legal (for court or immigration) or peace-of-mind (for personal use only). Legal tests require identity verification, chain-of-custody, and AABB-accredited partner laboratory analysis. If you might need results for USCIS, an embassy, or court, choose a legal test from the start.
+            Siblingship tests can be legal (for court or immigration) or peace-of-mind (for personal use only). Legal tests require identity verification, chain-of-custody, and accredited partner laboratory analysis. If you might need results for USCIS, an embassy, or court, choose a legal test from the start.
           </p>
           <p className="text-lg text-gray-600 mb-6">
             For court and immigration requirements, see <Link to="/guides/court-admissible-dna-testing" className="text-blue-600 underline">court admissible DNA testing</Link> and <Link to="/guides/uscis-dna-testing" className="text-blue-600 underline">USCIS DNA testing requirements</Link>.

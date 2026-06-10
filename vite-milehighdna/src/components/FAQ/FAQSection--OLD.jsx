@@ -64,21 +64,21 @@ const FAQ_CATEGORIES = [
       {
         id: 'what-is-legal-dna-test',
         question: 'What is a legal DNA test?',
-        answer: 'A legal DNA test is performed with identity verification, chain-of-custody procedures, and analysis by an AABB-accredited partner laboratory. The results are documented and certified so they can be submitted to courts, attorneys, or government agencies. Peace-of-mind tests do not include these steps and are not court-admissible.',
+        answer: 'A legal DNA test is performed with identity verification, chain-of-custody procedures, and analysis by an accredited partner laboratory. The results are documented and certified so they can be submitted to courts, attorneys, or government agencies. Peace-of-mind tests do not include these steps and are not court-admissible.',
         guideLink: '/guides/court-admissible-dna-testing',
         guideLabel: 'Learn more →',
       },
       {
         id: 'dna-test-used-in-court',
         question: 'Can a DNA test be used in court?',
-        answer: 'Yes, when the test is performed as a legal test with chain-of-custody and AABB-accredited partner laboratory analysis. Results can be submitted to family court for paternity, custody, support, or other cases. At-home or peace-of-mind test results are not admissible in court.',
+        answer: 'Yes, when the test is performed as a legal test with chain-of-custody and accredited partner laboratory analysis. Results can be submitted to family court for paternity, custody, support, or other cases. At-home or peace-of-mind test results are not admissible in court.',
         guideLink: '/guides/dna-test-for-court',
         guideLabel: 'Learn more →',
       },
       {
         id: 'court-admissible-dna',
         question: 'What makes a DNA test court admissible?',
-        answer: 'Court-admissible DNA tests require verified identification of all participants, documented chain-of-custody from collection through the laboratory, and analysis by an AABB-accredited partner laboratory. The report must be in a certified format that the court accepts.',
+        answer: 'Court-admissible DNA tests require verified identification of all participants, documented chain-of-custody from collection through the laboratory, and analysis by an accredited partner laboratory. The report must be in a certified format that the court accepts.',
         guideLink: '/guides/chain-of-custody-dna-testing',
         guideLabel: 'Learn more →',
       },
@@ -92,7 +92,7 @@ const FAQ_CATEGORIES = [
       {
         id: 'why-courts-require-aabb',
         question: 'Why do courts require AABB accredited DNA testing?',
-        answer: 'Courts require AABB-accredited partner laboratory results to ensure consistent scientific standards, validation, and documentation. AABB accreditation confirms that the laboratory meets strict requirements for relationship DNA testing. Results from non-AABB labs are typically not accepted as evidence.',
+        answer: 'Courts require accredited partner laboratory results to ensure consistent scientific standards, validation, and documentation. AABB accreditation confirms that the laboratory meets strict requirements for relationship DNA testing. Results from non-AABB labs are typically not accepted as evidence.',
         guideLink: '/guides/aabb-labs-for-immigration',
         guideLabel: 'Learn more →',
       },
@@ -111,7 +111,7 @@ const FAQ_CATEGORIES = [
       {
         id: 'dna-custody-cases',
         question: 'Can DNA tests be used for custody cases?',
-        answer: 'Yes. When parentage is relevant to custody or visitation, courts may accept legal DNA test results. The test must be performed with identity verification, chain-of-custody, and AABB-accredited partner laboratory analysis so the results meet court admissibility standards.',
+        answer: 'Yes. When parentage is relevant to custody or visitation, courts may accept legal DNA test results. The test must be performed with identity verification, chain-of-custody, and accredited partner laboratory analysis so the results meet court admissibility standards.',
         guideLink: '/guides/dna-test-for-child-custody',
         guideLabel: 'Learn more →',
       },
@@ -124,14 +124,14 @@ const FAQ_CATEGORIES = [
       {
         id: 'what-is-immigration-dna',
         question: 'What is immigration DNA testing?',
-        answer: 'Immigration DNA testing is relationship DNA testing requested by USCIS or a U.S. embassy/consulate to verify a claimed family relationship (e.g., parent-child, siblings) when other evidence is insufficient. It must be performed with identity verification, chain-of-custody, and an AABB-accredited partner laboratory.',
+        answer: 'Immigration DNA testing is relationship DNA testing requested by USCIS or a U.S. embassy/consulate to verify a claimed family relationship (e.g., parent-child, siblings) when other evidence is insufficient. It must be performed with identity verification, chain-of-custody, and an accredited partner laboratory.',
         guideLink: '/guides/immigration-dna-testing-process',
         guideLabel: 'Learn more →',
       },
       {
         id: 'uscis-accept-dna',
         question: 'Does USCIS accept DNA tests?',
-        answer: 'Yes. USCIS may request DNA testing to verify a biological relationship when additional evidence is needed. The test must be performed by an AABB-accredited partner laboratory with proper chain-of-custody and identity verification. Results are submitted in the format specified in your request letter.',
+        answer: 'Yes. USCIS may request DNA testing to verify a biological relationship when additional evidence is needed. The test must be performed by an accredited partner laboratory with proper chain-of-custody and identity verification. Results are submitted in the format specified in your request letter.',
         guideLink: '/guides/uscis-dna-testing',
         guideLabel: 'Learn more →',
       },
@@ -157,7 +157,7 @@ const FAQ_CATEGORIES = [
       {
         id: 'immigration-aabb-required',
         question: 'Do immigration DNA tests have to be AABB accredited?',
-        answer: 'Yes. USCIS and U.S. embassies require relationship DNA testing to be performed by an AABB-accredited partner laboratory. Results from non-accredited labs are typically not accepted. Always confirm that the laboratory is AABB-accredited for relationship testing before scheduling.',
+        answer: 'Yes. USCIS and U.S. embassies require relationship DNA testing to be performed by an accredited partner laboratory. Results from non-accredited labs are typically not accepted. Always confirm that the laboratory is AABB-accredited for relationship testing before scheduling.',
         guideLink: '/guides/aabb-labs-for-immigration',
         guideLabel: 'Learn more →',
       },
@@ -189,7 +189,7 @@ const FAQ_CATEGORIES = [
       {
         id: 'why-legal-more-expensive',
         question: 'Why are legal DNA tests more expensive than at-home tests?',
-        answer: 'Legal tests require in-person collection with government-issued ID verification, chain-of-custody paperwork, and analysis by an AABB-accredited partner laboratory. Certified reporting and documentation add to the cost. At-home tests skip these steps and are for personal use only, so they are not court-admissible.',
+        answer: 'Legal tests require in-person collection with government-issued ID verification, chain-of-custody paperwork, and analysis by an accredited partner laboratory. Certified reporting and documentation add to the cost. At-home tests skip these steps and are for personal use only, so they are not court-admissible.',
       },
       {
         id: 'insurance-cover-dna',

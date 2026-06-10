@@ -5,7 +5,7 @@ import GuideLayout from "./GuideLayout";
 const faqs = [
   {
     question: "What DNA test do I need for court?",
-    answer: "You need a legal (court-admissible) DNA test that includes identity verification, chain-of-custody procedures, and analysis by an AABB-accredited partner laboratory. Results are then certified and can be submitted to the court."
+    answer: "You need a legal (court-admissible) DNA test that includes identity verification, chain-of-custody procedures, and analysis by an accredited partner laboratory. Results are then certified and can be submitted to the court."
   },
   {
     question: "Can the court order a DNA test?",
@@ -35,7 +35,7 @@ export default function DNATestForCourt() {
       overview={
         <>
           <p className="text-xl text-gray-600 mb-6 leading-relaxed">
-            DNA testing for court cases must be performed as a legal test: identity verification at collection, chain-of-custody from collection through the lab, and analysis by an AABB-accredited partner laboratory. Results are then in a form that courts accept as evidence.
+            DNA testing for court cases must be performed as a legal test: identity verification at collection, chain-of-custody from collection through the lab, and analysis by an accredited partner laboratory. Results are then in a form that courts accept as evidence.
           </p>
           <p className="text-lg text-gray-600 mb-6">
             Mile High DNA Testing helps clients in Denver and surrounding areas arrange court-ready legal paternity tests. For the requirements in detail, see <Link to="/guides/court-admissible-dna-testing" className="text-blue-600 underline">court admissible DNA testing</Link> and <Link to="/guides/chain-of-custody-dna-testing" className="text-blue-600 underline">chain of custody DNA testing</Link>. To <Link to="/appointments" className="text-blue-600 underline">schedule a test</Link>, visit our appointments page.
@@ -68,7 +68,7 @@ export default function DNATestForCourt() {
             Only legal DNA tests produce court-admissible results. Peace-of-mind or at-home tests do not include identity verification or chain-of-custody and cannot be used in court. If you might need results for a case, choose a legal test from the beginning.
           </p>
           <p className="text-lg text-gray-600 mb-6">
-            Immigration cases also require legal testing through an AABB-accredited partner laboratory; see <Link to="/guides/immigration-dna-testing-process" className="text-blue-600 underline">immigration DNA testing process</Link> and <Link to="/guides/embassy-dna-testing" className="text-blue-600 underline">embassy DNA testing</Link> for agency requirements.
+            Immigration cases also require legal testing through an accredited partner laboratory; see <Link to="/guides/immigration-dna-testing-process" className="text-blue-600 underline">immigration DNA testing process</Link> and <Link to="/guides/embassy-dna-testing" className="text-blue-600 underline">embassy DNA testing</Link> for agency requirements.
           </p>
         </>
       }

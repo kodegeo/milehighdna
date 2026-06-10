@@ -152,7 +152,7 @@ export default function BilingualDNATestingDenver() {
               "name": "Can bilingual DNA tests be used for immigration?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Yes. We coordinate immigration DNA testing through our AABB-accredited partner laboratory."
+                "text": "Yes. We coordinate immigration DNA testing through our accredited partner laboratory."
               }
             },
             {
@@ -238,7 +238,7 @@ export default function BilingualDNATestingDenver() {
           <ul className="list-disc ml-6 mb-6 space-y-2 text-base">
             <li>Bilingual staff available from start to finish (English or Spanish)</li>
             <li>Translated forms and documents</li>
-            <li>Support for legal and immigration DNA tests through our AABB-accredited partner laboratory</li>
+            <li>Support for legal and immigration DNA tests through our accredited partner laboratory</li>
             <li>Cultural understanding and respect for Latino family values</li>
           </ul>
           <p className="text-base mb-6 text-justify">
@@ -250,7 +250,7 @@ export default function BilingualDNATestingDenver() {
           </h2>
           <ul className="list-disc ml-6 mb-6 space-y-2 text-base">
             <li>Denver’s only full-service bilingual DNA testing center</li>
-            <li>AABB-accredited partner laboratory for court and immigration standards</li>
+            <li>accredited partner laboratory for court and immigration standards</li>
             <li>Payment plans available</li>
             <li>In-office, mobile, and at-home collection options</li>
             <li>Respectful, confidential, and compassionate service</li>

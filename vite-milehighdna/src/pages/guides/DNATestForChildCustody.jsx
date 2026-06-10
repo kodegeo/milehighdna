@@ -13,11 +13,11 @@ const faqs = [
   },
   {
     question: "Do I need a legal DNA test for custody?",
-    answer: "Yes. Any DNA test used in a custody or family court case must be a legal test with chain-of-custody and AABB-accredited partner laboratory analysis. Peace-of-mind or at-home test results are not admissible."
+    answer: "Yes. Any DNA test used in a custody or family court case must be a legal test with chain-of-custody and accredited partner laboratory analysis. Peace-of-mind or at-home test results are not admissible."
   },
   {
     question: "How do I schedule a custody-related paternity test in Denver?",
-    answer: "Schedule a legal paternity test at a facility that verifies ID and uses chain-of-custody with an AABB-accredited partner lab. Mile High DNA Testing in Denver offers legal paternity testing that meets court requirements."
+    answer: "Schedule a legal paternity test at a facility that verifies ID and uses chain-of-custody with an accredited partner laboratory. Mile High DNA Testing in Denver offers legal paternity testing that meets court requirements."
   }
 ];
 
@@ -35,7 +35,7 @@ export default function DNATestForChildCustody() {
       overview={
         <>
           <p className="text-xl text-gray-600 mb-6 leading-relaxed">
-            In child custody and family law cases, courts may require or accept paternity DNA testing when biological parentage is in question. The test must be a legal test with identity verification, chain-of-custody, and AABB-accredited partner laboratory analysis so results are admissible.
+            In child custody and family law cases, courts may require or accept paternity DNA testing when biological parentage is in question. The test must be a legal test with identity verification, chain-of-custody, and accredited partner laboratory analysis so results are admissible.
           </p>
           <p className="text-lg text-gray-600 mb-6">
             Mile High DNA Testing coordinates legal paternity testing in Denver for custody and other family law matters. For general court requirements, see <Link to="/guides/court-admissible-dna-testing" className="text-blue-600 underline">court admissible DNA testing</Link> and <Link to="/guides/dna-test-for-court" className="text-blue-600 underline">DNA testing for court cases</Link>. To <Link to="/appointments" className="text-blue-600 underline">schedule a test</Link>, visit our appointments page.
@@ -65,7 +65,7 @@ export default function DNATestForChildCustody() {
       legal={
         <>
           <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-            Only legal DNA tests are admissible in custody proceedings. They require verified ID, chain-of-custody, and an AABB-accredited partner laboratory. Non-legal or at-home tests cannot be used in court.
+            Only legal DNA tests are admissible in custody proceedings. They require verified ID, chain-of-custody, and an accredited partner laboratory. Non-legal or at-home tests cannot be used in court.
           </p>
           <p className="text-lg text-gray-600 mb-6">
             If you are in a custody case and need paternity established, start with a legal test. For more on legal standards, see <Link to="/guides/court-admissible-dna-testing" className="text-blue-600 underline">court admissible DNA testing</Link> and <Link to="/guides/dna-test-for-court" className="text-blue-600 underline">DNA testing for court cases</Link>.

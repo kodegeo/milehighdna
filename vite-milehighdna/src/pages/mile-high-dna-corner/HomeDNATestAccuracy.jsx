@@ -22,7 +22,7 @@ const HomeDNATestAccuracy = () => {
 
         <meta
           name="description"
-          content="Learn how accurate home DNA tests really are and how they compare to AABB-accredited partner laboratory testing. Understand costs, reliability, and legal validity for Denver families."
+          content="Learn how accurate home DNA tests really are and how they compare to accredited partner laboratory testing. Understand costs, reliability, and legal validity for Denver families."
         />
 
         {/* Canonical */}
@@ -43,7 +43,7 @@ const HomeDNATestAccuracy = () => {
         />
         <meta
           property="og:description"
-          content="Explore the accuracy of at-home DNA tests and how they compare with legal and immigration DNA testing through our AABB-accredited partner laboratory."
+          content="Explore the accuracy of at-home DNA tests and how they compare with legal and immigration DNA testing through our accredited partner laboratory."
         />
         <meta
           property="og:image"
@@ -76,7 +76,7 @@ const HomeDNATestAccuracy = () => {
           "@context": "https://schema.org",
           "@type": "Article",
           "headline": "How Reliable and Accurate Are Home DNA Tests?",
-          "description": "A detailed look at the accuracy of at-home DNA tests compared to legal and immigration DNA testing through our AABB-accredited partner laboratory.",
+          "description": "A detailed look at the accuracy of at-home DNA tests compared to legal and immigration DNA testing through our accredited partner laboratory.",
           "image": "https://milehighdnatesting.com/images/at-home-test-kit.png",
           "author": {
             "@type": "Organization",
@@ -135,7 +135,7 @@ const HomeDNATestAccuracy = () => {
               "@id": "https://milehighdnatesting.com/mile-high-dna-corner/how-reliable-and-accurate-are-home-dna-tests#webpage",
               "url": "https://milehighdnatesting.com/mile-high-dna-corner/how-reliable-and-accurate-are-home-dna-tests",
               "name": "How Reliable and Accurate Are Home DNA Tests? | Mile High DNA Testing Denver",
-              "description": "Learn how accurate home DNA tests really are and how they compare to AABB-accredited partner laboratory testing. Understand costs, reliability, and legal validity for Denver families.",
+              "description": "Learn how accurate home DNA tests really are and how they compare to accredited partner laboratory testing. Understand costs, reliability, and legal validity for Denver families.",
               "isPartOf": {
                 "@type": "WebSite",
                 "name": "Mile High DNA Testing",
@@ -240,8 +240,8 @@ const HomeDNATestAccuracy = () => {
           </p>
 
           <p className="text-base mb-6 text-justify">
-          By contrast, paternity and family relationship tests for court or immigration must be processed through an AABB-accredited partner laboratory.
-          This distinction matters — CLIA certification ensures lab quality, while AABB partner-laboratory standards support legal and immigration admissibility.
+          By contrast, paternity and family relationship tests for court or immigration must be processed through an accredited partner laboratory.
+          This distinction matters — CLIA certification ensures lab quality, while accredited partner laboratory standards support legal and immigration admissibility.
           {" "}{AABB_HOME_KIT_DISCLAIMER}
           </p>
 
@@ -258,7 +258,7 @@ const HomeDNATestAccuracy = () => {
           </ul>
           <p className="text-base mb-6 text-justify">
           These added costs often bring the total to $300–$400, still without legal validity. By comparison, professional laboratory tests through
-          legal testing coordinated through our AABB-accredited partner laboratory includes all fees upfront — from collection to reporting — with clear, transparent pricing and court-admissible results.
+          legal testing coordinated through our accredited partner laboratory includes all fees upfront — from collection to reporting — with clear, transparent pricing and court-admissible results.
           </p>
 
           <h3 className="text-2xl font-bold mt-10 mb-4 text-gray-800">What Partner Laboratory Accreditation Means</h3>
@@ -274,10 +274,10 @@ const HomeDNATestAccuracy = () => {
           </ul>
 
           <p className="text-base mb-6 text-justify">
-          This level of oversight ensures that AABB-accredited partner-laboratory testing produces results that are legally defensible and accepted by
+          This level of oversight ensures that accredited partner laboratory testing produces results that are legally defensible and accepted by
           U.S. courts and government agencies.
           The <a href="https://www.uscis.gov/policy-manual/volume-6-part-b-chapter-2" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline">
-          U.S. Citizenship and Immigration Services (USCIS)</a> confirms that immigration DNA cases require chain-of-custody and AABB-accredited partner-laboratory processing.
+          U.S. Citizenship and Immigration Services (USCIS)</a> confirms that immigration DNA cases require chain-of-custody and accredited partner laboratory processing.
           </p>
 
           <h3 className="text-2xl font-bold mt-10 mb-4 text-gray-800">When Accuracy and Oversight Matter</h3>
@@ -321,7 +321,7 @@ const HomeDNATestAccuracy = () => {
           <h3 className="text-2xl font-bold mt-10 mb-4 text-gray-800">The Good News</h3>
           <p className="text-base mb-6 text-justify">
           Some at-home DNA kits — including those provided through Mile High DNA Testing — are processed in
-          AABB-accredited partner laboratory, even when used for informational purposes. This means you can collect your sample at home while
+          accredited partner laboratory, even when used for informational purposes. This means you can collect your sample at home while
           receiving professional-grade accuracy and transparency.
           </p>
 

@@ -21,7 +21,7 @@ const LegalPaternityTestingDenver = () => {
     },
     {
       question: `How long do legal paternity test results take in ${cityName}?`,
-      answer: `Legal paternity test results in ${cityName} are typically available within 3-5 business days after samples reach the AABB-accredited partner laboratory. Rush processing options may be available for faster turnaround.`
+      answer: `Legal paternity test results in ${cityName} are typically available within 3-5 business days after samples reach the accredited partner laboratory. Rush processing options may be available for faster turnaround.`
     },
     {
       question: `Where can I get a legal paternity test in ${cityName}?`,
@@ -29,7 +29,7 @@ const LegalPaternityTestingDenver = () => {
     },
     {
       question: `Are legal paternity test results from ${cityName} accepted by Colorado courts?`,
-      answer: `Yes. Legal paternity test results from ${cityName} are accepted by Colorado family courts when proper chain-of-custody procedures are followed and samples are processed at an AABB-accredited partner laboratory.`
+      answer: `Yes. Legal paternity test results from ${cityName} are accepted by Colorado family courts when proper chain-of-custody procedures are followed and samples are processed at an accredited partner laboratory.`
     },
     {
       question: `Do both parents need to be present for a legal paternity test in ${cityName}?`,
@@ -37,7 +37,7 @@ const LegalPaternityTestingDenver = () => {
     },
     {
       question: `Can I use a legal paternity test from ${cityName} for child support cases?`,
-      answer: `Yes. Legal paternity test results from ${cityName} can be used for child support cases in Colorado when the test follows proper chain-of-custody procedures and is performed at an AABB-accredited partner laboratory.`
+      answer: `Yes. Legal paternity test results from ${cityName} can be used for child support cases in Colorado when the test follows proper chain-of-custody procedures and is performed at an accredited partner laboratory.`
     }
   ];
 
@@ -48,7 +48,7 @@ const LegalPaternityTestingDenver = () => {
 
         <meta
           name="description"
-          content={`Court-admissible legal paternity testing available in ${cityName}, Colorado. Professional sample collection, AABB-accredited partner laboratory analysis, and results accepted by Colorado courts and agencies.`}
+          content={`Court-admissible legal paternity testing available in ${cityName}, Colorado. Professional sample collection, accredited partner laboratory analysis, and results accepted by Colorado courts and agencies.`}
         />
 
         <link
@@ -60,7 +60,7 @@ const LegalPaternityTestingDenver = () => {
         <meta property="og:title" content={`Legal Paternity Testing in ${cityName}, Colorado | DNA Testing`} />
         <meta
           property="og:description"
-          content={`Court-admissible legal paternity testing available in ${cityName}, Colorado with professional collection and AABB-accredited partner laboratory analysis.`}
+          content={`Court-admissible legal paternity testing available in ${cityName}, Colorado with professional collection and accredited partner laboratory analysis.`}
         />
         <meta
           property="og:image"
@@ -86,7 +86,7 @@ const LegalPaternityTestingDenver = () => {
               "@context": "https://schema.org",
               "@type": "Service",
               "name": `${serviceName} in ${cityName}, Colorado`,
-              "description": `Court-admissible legal paternity testing services available in ${cityName}, Colorado with professional sample collection and AABB-accredited partner laboratory analysis.`,
+              "description": `Court-admissible legal paternity testing services available in ${cityName}, Colorado with professional sample collection and accredited partner laboratory analysis.`,
               "provider": {
                 "@type": "Organization",
                 "name": "Mile High DNA Testing",
@@ -125,7 +125,7 @@ const LegalPaternityTestingDenver = () => {
                 {serviceName} in {cityName}
               </h1>
               <p className="text-xl text-blue-100 mb-8 leading-relaxed">
-                Court-admissible legal paternity testing is available in {cityName}, Colorado with professional sample collection, identity verification, and AABB-accredited partner laboratory analysis.
+                Court-admissible legal paternity testing is available in {cityName}, Colorado with professional sample collection, identity verification, and accredited partner laboratory analysis.
               </p>
               <div className="flex flex-wrap gap-4">
                 <Link
@@ -253,7 +253,7 @@ const LegalPaternityTestingDenver = () => {
                     Laboratory Analysis
                   </h3>
                   <p className="text-gray-600">
-                    Samples are sent to an AABB-accredited partner laboratory for analysis. Chain of custody is maintained throughout the process.
+                    Samples are sent to an accredited partner laboratory for analysis. Chain of custody is maintained throughout the process.
                   </p>
                 </div>
               </div>

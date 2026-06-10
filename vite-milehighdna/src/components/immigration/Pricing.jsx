@@ -6,7 +6,7 @@ const Pricing = () => {
             Pricing for Immigration DNA Testing
           </h2>
           <p className="text-base md:text-lg text-gray-600 mb-10 leading-relaxed">
-            All immigration DNA testing fees are case-specific and not posted online. Immigration DNA cases must be initiated by our AABB-accredited partner laboratory through the referral form and cannot be started directly through our website. Our team can guide you through next steps once your case is opened by the partner laboratory.
+            All immigration DNA testing fees are case-specific and not posted online. Immigration DNA cases must be initiated by our accredited partner laboratory through the referral form and cannot be started directly through our website. Our team can guide you through next steps once your case is opened by the partner laboratory.
           </p>
   
           <div className="bg-white rounded-xl shadow-lg border-t-4 border-blue-600 p-8 max-w-xl mx-auto">

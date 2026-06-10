@@ -161,13 +161,13 @@ const LegalVsNonLegal = () => {
           <ul className="list-disc list-outside ml-6 mb-4 space-y-3">
             <li>Each individual tested is positively identified with government-issued photo identification or verified guardianship paperwork.</li>
             <li>Samples are collected by a neutral, authorized professional rather than the individuals themselves.</li>
-            <li>The analysis is conducted in an AABB-accredited partner laboratory, which maintains verified testing procedures and quality assurance standards.</li>
+            <li>The analysis is conducted in an accredited partner laboratory, which maintains verified testing procedures and quality assurance standards.</li>
           </ul>
           <br />These steps ensure that the final DNA report can be used as legally admissible evidence in court and immigration proceedings.
           </p>
           
           <blockquote className="border-l-4 border-blue-500 pl-4 italic text-blue-700 text-base my-8 text-justify">
-          As the U.S. Citizenship and Immigration Services (USCIS) explains, immigration DNA cases require chain-of-custody and AABB-accredited partner-laboratory processing. <br /><br /> 
+          As the U.S. Citizenship and Immigration Services (USCIS) explains, immigration DNA cases require chain-of-custody and accredited partner laboratory processing. <br /><br /> 
           - <a href="https://www.uscis.gov/policy-manual/volume-6-part-b-chapter-2" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline">
           USCIS Policy Manual, Vol. 6, Pt. B, Ch. 2
           </a>
@@ -181,7 +181,7 @@ const LegalVsNonLegal = () => {
           Although the laboratory methods and accuracy are identical, the absence of a verified chain of custody means the results are not admissible in legal proceedings.<br /><br />
           </p>
           <blockquote className="border-l-4 border-blue-500 pl-4 italic text-blue-700 text-base my-8 text-justify">
-          According to the <strong>U.S. Citizenship and Immigration Services (USCIS)</strong>, DNA testing is legally valid for government use only when <em>"performed by an AABB-accredited partner laboratory under proper chain-of-custody documentation."</em>
+          According to the <strong>U.S. Citizenship and Immigration Services (USCIS)</strong>, DNA testing is legally valid for government use only when <em>"performed by an accredited partner laboratory under proper chain-of-custody documentation."</em>
           <br /><br /> 
           - <a href="https://www.uscis.gov/policy-manual/volume-6-part-b-chapter-2" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline">
           USCIS Policy Manual, Vol. 6, Pt. B, Ch. 2
@@ -210,7 +210,7 @@ const LegalVsNonLegal = () => {
 
           <h3 className="text-2xl font-bold mt-10 mb-4 text-gray-800">Legal and Non-Legal DNA Testing in Denver and the Front Range</h3>
           <p className="text-base mb-6 text-justify">
-          <span className="font-bold text-[#2C6FA6]">Mile High DNA Testing</span> provides both legal and non-legal DNA testing services for families across Denver, Aurora, Thornton, and Lakewood. Legal and immigration testing is provided through our AABB-accredited partner laboratory, and non-legal testing is processed with validated partner laboratory methods. <br /><br />
+          <span className="font-bold text-[#2C6FA6]">Mile High DNA Testing</span> provides both legal and non-legal DNA testing services for families across Denver, Aurora, Thornton, and Lakewood. Legal and immigration testing is provided through our accredited partner laboratory, and non-legal testing is processed with validated partner laboratory methods. <br /><br />
           Our team coordinates professional sample collection, identity verification, and secure result delivery to ensure your experience is private, simple, and legally valid. <br /><br />
           If you'd like to learn more about pricing or which test is best for your situation, read our in-depth guide here: <br /><br />
           

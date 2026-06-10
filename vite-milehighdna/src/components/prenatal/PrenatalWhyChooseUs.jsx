@@ -10,7 +10,7 @@ const PrenatalWhyChooseUs = () => {
     {
       title: 'Accredited Partner Laboratory',
       description:
-        'All tests are processed by AABB-accredited partner laboratory, ensuring accuracy, reliability, and compliance.',
+        'All tests are processed by accredited partner laboratory, ensuring accuracy, reliability, and compliance.',
     },
     {
       title: 'Legal & Peace-of-Mind Options',

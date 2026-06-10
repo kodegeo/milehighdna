@@ -5,7 +5,7 @@ import GuideLayout from "./GuideLayout";
 const faqs = [
   {
     question: "Why does immigration DNA testing require accredited partner laboratory processing?",
-    answer: "USCIS and U.S. embassies require relationship DNA testing to be performed by AABB-accredited partner laboratory to ensure consistent scientific standards, validation, and documentation. Results from non-AABB labs are typically not accepted for immigration purposes."
+    answer: "USCIS and U.S. embassies require relationship DNA testing to be performed by accredited partner laboratory to ensure consistent scientific standards, validation, and documentation. Results from non-AABB labs are typically not accepted for immigration purposes."
   },
   {
     question: "What is partner laboratory accreditation?",
@@ -13,11 +13,11 @@ const faqs = [
   },
   {
     question: "Can I use a non-accredited lab for immigration?",
-    answer: "No. USCIS and embassies require AABB-accredited partner laboratory results. Using a non-accredited lab can result in your results being rejected and delay your case. Always confirm that the laboratory is AABB-accredited for relationship testing."
+    answer: "No. USCIS and embassies require accredited partner laboratory results. Using a non-accredited lab can result in your results being rejected and delay your case. Always confirm that the laboratory is AABB-accredited for relationship testing."
   },
   {
     question: "How do I find an accredited partner laboratory for immigration DNA testing?",
-    answer: "DNA testing facilities like Mile High DNA Testing in Denver work with an AABB-accredited partner laboratory and coordinate the full process—collection, chain-of-custody, and reporting—so your results meet immigration requirements."
+    answer: "DNA testing facilities like Mile High DNA Testing in Denver work with an accredited partner laboratory and coordinate the full process—collection, chain-of-custody, and reporting—so your results meet immigration requirements."
   }
 ];
 
@@ -27,8 +27,8 @@ export default function AABBLabsForImmigration() {
       title="Accredited Partner Laboratories For Immigration DNA Tests"
       slug="aabb-labs-for-immigration"
       breadcrumbLabel="Accredited Labs For Immigration"
-      description="Why immigration DNA tests must use AABB-accredited partner laboratory. USCIS and embassy requirements. Denver immigration DNA testing."
-      heroSubline="Why USCIS and embassies require AABB-accredited partner laboratory for immigration DNA testing—and how to get it right."
+      description="Why immigration DNA tests must use accredited partner laboratory. USCIS and embassy requirements. Denver immigration DNA testing."
+      heroSubline="Why USCIS and embassies require accredited partner laboratory for immigration DNA testing—and how to get it right."
       serviceLink="/services/immigration-dna-testing"
       serviceLabel="Immigration DNA Testing"
       faqs={faqs}
@@ -38,7 +38,7 @@ export default function AABBLabsForImmigration() {
             Immigration DNA testing for USCIS and U.S. embassies must be performed by laboratories accredited by the AABB (American Association of Blood Banks). This accreditation confirms that the lab meets strict standards for relationship DNA testing, so results are accepted as evidence of biological relationships.
           </p>
           <p className="text-lg text-gray-600 mb-6">
-            Mile High DNA Testing uses an AABB-accredited partner laboratory for all immigration DNA testing. For the full process, see <Link to="/guides/immigration-dna-testing-process" className="text-blue-600 underline">immigration DNA testing process</Link> and <Link to="/guides/uscis-dna-testing" className="text-blue-600 underline">USCIS DNA testing requirements</Link>. To <Link to="/appointments" className="text-blue-600 underline">schedule a test</Link>, visit our appointments page.
+            Mile High DNA Testing uses an accredited partner laboratory for all immigration DNA testing. For the full process, see <Link to="/guides/immigration-dna-testing-process" className="text-blue-600 underline">immigration DNA testing process</Link> and <Link to="/guides/uscis-dna-testing" className="text-blue-600 underline">USCIS DNA testing requirements</Link>. To <Link to="/appointments" className="text-blue-600 underline">schedule a test</Link>, visit our appointments page.
           </p>
         </>
       }
@@ -55,7 +55,7 @@ export default function AABBLabsForImmigration() {
       process={
         <>
           <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-            Your collection facility coordinates with an AABB-accredited partner laboratory. Samples are collected with identity verification and chain-of-custody, then sent to that lab. The lab performs the analysis and issues a report in the format required by USCIS or the embassy. The entire chain—collection through reporting—must meet accreditation and agency standards.
+            Your collection facility coordinates with an accredited partner laboratory. Samples are collected with identity verification and chain-of-custody, then sent to that lab. The lab performs the analysis and issues a report in the format required by USCIS or the embassy. The entire chain—collection through reporting—must meet accreditation and agency standards.
           </p>
           <p className="text-lg text-gray-600 mb-6">
             For chain-of-custody details, see <Link to="/guides/chain-of-custody-dna-testing" className="text-blue-600 underline">chain of custody DNA testing</Link>. For court use of AABB results, read <Link to="/guides/court-admissible-dna-testing" className="text-blue-600 underline">court admissible DNA testing</Link>.
@@ -77,7 +77,7 @@ export default function AABBLabsForImmigration() {
         { title: "Immigration DNA Testing Process", path: "/guides/immigration-dna-testing-process" }
       ]}
       ctaHeading="Schedule Immigration DNA Testing"
-      ctaSubline="Book AABB-accredited immigration DNA testing in Denver."
+      ctaSubline="Book immigration DNA testing in Denver with an accredited partner laboratory."
     />
   );
 }

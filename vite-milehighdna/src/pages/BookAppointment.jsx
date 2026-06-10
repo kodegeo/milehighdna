@@ -97,7 +97,7 @@ const BookAppointment = () => {
         <title>Book Paternity DNA Test Appointment in Denver | Court-Admissible Results</title>
         <meta 
           name="description" 
-          content="Book your legal paternity or prenatal DNA test in Denver, Aurora, or Lakewood. Schedule online and prepay securely. Legal and immigration testing is provided through our AABB-accredited partner laboratory, with court-admissible results when required." 
+          content="Book your legal paternity or prenatal DNA test in Denver, Aurora, or Lakewood. Schedule online and prepay securely. Legal and immigration testing is provided through our accredited partner laboratory, with court-admissible results when required." 
         />
         <link rel="canonical" href="https://milehighdnatesting.com/book-appointment" />
         <link rel="alternate" hreflang="es" href="https://milehighdnatesting.com/es/reservar-cita" />
@@ -122,7 +122,7 @@ const BookAppointment = () => {
                 "name": "Do you offer prenatal DNA testing?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Yes. We provide both legal and non-legal prenatal DNA testing. Legal and immigration testing is provided through our AABB-accredited partner laboratory."
+                  "text": "Yes. We provide both legal and non-legal prenatal DNA testing. Legal and immigration testing is provided through our accredited partner laboratory."
                 }
               },
               {

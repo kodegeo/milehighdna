@@ -38,7 +38,7 @@ export default function PrenatalPaternityTestAccuracy() {
             Prenatal DNA tests—especially non-invasive prenatal paternity (NIPP) tests—are highly accurate when performed by an accredited laboratory. Results typically show 99.9% or higher probability of paternity when the tested man is the biological father, and exclusion when he is not.
           </p>
           <p className="text-lg text-gray-600 mb-6">
-            Mile High DNA Testing works with an AABB-accredited laboratory that meets accreditation standards. For more on prenatal testing in general, see <Link to="/guides/dna-test-while-pregnant" className="text-blue-600 underline">DNA testing while pregnant</Link> and <Link to="/guides/prenatal-paternity-test-safety" className="text-blue-600 underline">is prenatal DNA testing safe</Link>. To <Link to="/appointments" className="text-blue-600 underline">schedule a test</Link>, visit our appointments page.
+            Mile High DNA Testing works with an accredited partner laboratory that meets accreditation standards. For more on prenatal testing in general, see <Link to="/guides/dna-test-while-pregnant" className="text-blue-600 underline">DNA testing while pregnant</Link> and <Link to="/guides/prenatal-paternity-test-safety" className="text-blue-600 underline">is prenatal DNA testing safe</Link>. To <Link to="/appointments" className="text-blue-600 underline">schedule a test</Link>, visit our appointments page.
           </p>
         </>
       }

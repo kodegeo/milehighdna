@@ -10,7 +10,7 @@ const faqs = [
   },
   {
     question: "Who orders immigration DNA testing?",
-    answer: "USCIS or a U.S. embassy/consulate may request DNA testing to verify a claimed biological relationship. The requesting agency provides instructions; testing must be initiated by an AABB-accredited partner laboratory. Mile High DNA Testing coordinates local sample collection when directed by the partner laboratory."
+    answer: "USCIS or a U.S. embassy/consulate may request DNA testing to verify a claimed biological relationship. The requesting agency provides instructions; testing must be initiated by an accredited partner laboratory. Mile High DNA Testing coordinates local sample collection when directed by the partner laboratory."
   },
   {
     question: "How long does immigration DNA testing take?",
@@ -18,7 +18,7 @@ const faqs = [
   },
   {
     question: "Where can I get immigration DNA testing in Denver?",
-    answer: "Mile High DNA Testing in Denver coordinates immigration DNA testing when directed by an AABB-accredited partner laboratory, including proper chain-of-custody and sample collection for approved cases. Mile High DNA Testing cannot initiate immigration cases independently."
+    answer: "Mile High DNA Testing in Denver coordinates immigration DNA testing when directed by an accredited partner laboratory, including proper chain-of-custody and sample collection for approved cases. Mile High DNA Testing cannot initiate immigration cases independently."
   }
 ];
 
@@ -28,7 +28,7 @@ export default function ImmigrationDNATestingProcess() {
       title="Immigration DNA Testing Process"
       slug="immigration-dna-testing-process"
       breadcrumbLabel="Immigration DNA Testing Process"
-      description="How the immigration DNA testing process works: USCIS and embassy requirements, chain-of-custody, and AABB partner-laboratory testing. Denver immigration DNA testing."
+      description="How the immigration DNA testing process works: USCIS and embassy requirements, chain-of-custody, and accredited partner laboratory testing. Denver immigration DNA testing."
       heroSubline="Step-by-step: how immigration DNA testing is requested, collected, and reported for USCIS and embassies."
       serviceLink="/services/immigration-dna-testing"
       serviceLabel="Immigration DNA Testing"
@@ -36,10 +36,10 @@ export default function ImmigrationDNATestingProcess() {
       overview={
         <>
           <p className="text-xl text-gray-600 mb-6 leading-relaxed">
-            Immigration DNA testing is used to verify biological relationships when required by U.S. Citizenship and Immigration Services (USCIS) or a U.S. embassy or consulate. The process involves identity verification, chain-of-custody collection, and analysis by an AABB-accredited partner laboratory so results meet agency and embassy standards.
+            Immigration DNA testing is used to verify biological relationships when required by U.S. Citizenship and Immigration Services (USCIS) or a U.S. embassy or consulate. The process involves identity verification, chain-of-custody collection, and analysis by an accredited partner laboratory so results meet agency and embassy standards.
           </p>
           <p className="text-lg text-gray-600 mb-6">
-            Mile High DNA Testing coordinates immigration DNA testing when directed by our AABB-accredited partner laboratory. {MH_IMMIGRATION_INITIATION_SHORT} For agency requirements, see <Link to="/guides/uscis-dna-testing" className="text-blue-600 underline">USCIS DNA testing requirements</Link> and <Link to="/guides/aabb-labs-for-immigration" className="text-blue-600 underline">AABB partner-laboratory requirements for immigration DNA tests</Link>.
+            Mile High DNA Testing coordinates immigration DNA testing when directed by our accredited partner laboratory. {MH_IMMIGRATION_INITIATION_SHORT} For agency requirements, see <Link to="/guides/uscis-dna-testing" className="text-blue-600 underline">USCIS DNA testing requirements</Link> and <Link to="/guides/aabb-labs-for-immigration" className="text-blue-600 underline">accredited partner laboratory requirements for immigration DNA tests</Link>.
           </p>
         </>
       }
@@ -66,10 +66,10 @@ export default function ImmigrationDNATestingProcess() {
       legal={
         <>
           <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-            Immigration DNA testing is always performed as legal testing: identity verification, chain-of-custody, and AABB-accredited partner laboratory analysis are required. Results are not accepted by USCIS or embassies if these standards are not met. There is no &quot;peace-of-mind&quot; immigration test—only tests that meet agency requirements are used.
+            Immigration DNA testing is always performed as legal testing: identity verification, chain-of-custody, and accredited partner laboratory analysis are required. Results are not accepted by USCIS or embassies if these standards are not met. There is no &quot;peace-of-mind&quot; immigration test—only tests that meet agency requirements are used.
           </p>
           <p className="text-lg text-gray-600 mb-6">
-            For court-admissible testing in general, see <Link to="/guides/court-admissible-dna-testing" className="text-blue-600 underline">court admissible DNA testing</Link>. For AABB accreditation details, read <Link to="/guides/aabb-labs-for-immigration" className="text-blue-600 underline">AABB partner-laboratory requirements for immigration DNA tests</Link>.
+            For court-admissible testing in general, see <Link to="/guides/court-admissible-dna-testing" className="text-blue-600 underline">court admissible DNA testing</Link>. For AABB accreditation details, read <Link to="/guides/aabb-labs-for-immigration" className="text-blue-600 underline">accredited partner laboratory requirements for immigration DNA tests</Link>.
           </p>
         </>
       }
@@ -78,7 +78,7 @@ export default function ImmigrationDNATestingProcess() {
         { title: "How Long Immigration DNA Testing Takes", path: "/guides/immigration-dna-test-timeline" }
       ]}
       ctaHeading="Immigration DNA Testing Coordination"
-      ctaSubline="Immigration cases must be initiated by our AABB-accredited partner laboratory. We coordinate local sample collection when directed."
+      ctaSubline="Immigration cases must be initiated by our accredited partner laboratory. We coordinate local sample collection when directed."
     />
   );
 }

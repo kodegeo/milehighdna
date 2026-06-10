@@ -153,8 +153,7 @@ const PeaceOfMindFathersStory = () => {
           </p>
 
           <p className="text-base mb-6 text-justify">
-            Our partner laboratory is{" "}
-            <strong>AABB accredited</strong>, meaning every DNA sample is processed under the
+            Our accredited partner laboratory processes every DNA sample under the
             highest industry standards for accuracy, reliability, and quality control.
           </p>
 

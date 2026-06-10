@@ -10,7 +10,7 @@ const DNATestingDenverPage = () => {
         <title>DNA Testing Denver | Prenatal, Legal, & Peace of Mind</title>
         <meta
           name="description"
-          content="Fast, confidential DNA testing in Denver, Aurora, Thornton, and Englewood. Legal paternity, prenatal, immigration, and peace-of-mind testing. Legal and immigration testing through our AABB-accredited partner laboratory. Results in 3–5 business days."
+          content="Fast, confidential DNA testing in Denver, Aurora, Thornton, and Englewood. Legal paternity, prenatal, immigration, and peace-of-mind testing. Legal and immigration testing through our accredited partner laboratory. Results in 3–5 business days."
         />
         <link
           rel="canonical"
@@ -75,7 +75,7 @@ const DNATestingDenverPage = () => {
               "@id": "https://milehighdnatesting.com/dna-testing-denver#webpage",
               "url": "https://milehighdnatesting.com/dna-testing-denver",
               "name": "DNA Testing Denver | Prenatal, Legal, & Peace of Mind",
-              "description": "Fast, confidential DNA testing in Denver, Aurora, Thornton, and Englewood. Legal paternity, prenatal, immigration, and peace-of-mind testing. Legal and immigration testing through our AABB-accredited partner laboratory.",
+              "description": "Fast, confidential DNA testing in Denver, Aurora, Thornton, and Englewood. Legal paternity, prenatal, immigration, and peace-of-mind testing. Legal and immigration testing through our accredited partner laboratory.",
               "isPartOf": {
                 "@type": "WebSite",
                 "name": "Mile High DNA Testing",

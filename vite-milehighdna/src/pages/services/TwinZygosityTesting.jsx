@@ -66,7 +66,7 @@ const TwinZygosityTesting = () => {
               <h4 className="text-2xl font-bold text-gray-800 mb-2">Legal (Court-Admissible)</h4>
               <p className="text-3xl font-bold text-green-600 mb-2">$374+</p>
               <p className="text-sm text-gray-500 mb-4">Chain of custody when results may be used officially.</p>
-              <p className="text-gray-600 mb-4">AABB-accredited partner laboratory processing when required.</p>
+              <p className="text-gray-600 mb-4">accredited partner laboratory processing when required.</p>
               <Link
                 to="/appointments"
                 className="bg-green-600 text-white px-6 py-3 rounded-xl shadow-lg hover:bg-green-700 transition font-semibold text-lg inline-block w-full"

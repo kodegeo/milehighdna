@@ -65,7 +65,7 @@ export default function HowLongDoesDNATestingTake() {
       legal={
         <>
           <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-            Legal DNA tests follow the same laboratory timeline; the extra time is usually for identity verification, chain-of-custody documentation, and certified reporting. Courts and agencies accept results when the test is performed by an AABB-accredited partner lab with proper procedures.
+            Legal DNA tests follow the same laboratory timeline; the extra time is usually for identity verification, chain-of-custody documentation, and certified reporting. Courts and agencies accept results when the test is performed by an accredited partner laboratory with proper procedures.
           </p>
           <p className="text-lg text-gray-600 mb-6">
             Immigration DNA testing often has additional steps (e.g., embassy or consulate requirements) that can extend the overall timeline. Plan ahead if you have a deadline. See <Link to="/guides/court-admissible-dna-testing" className="text-blue-600 underline">court admissible DNA testing</Link> for legal requirements.
