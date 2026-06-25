@@ -3,12 +3,12 @@ import { MH_IMMIGRATION_INITIATION_SHORT } from '../../constants/aabbComplianceC
 
 const ProcessCompliance = () => {
   const mustBeItems = [
-    'Initiated by our accredited partner laboratory',
+    'Initiated by an AABB accredited laboratory we partner with',
     'Conducted under strict USCIS and U.S. Department of State compliance requirements',
   ];
 
   const advantages = [
-    { title: 'Partner Laboratory Initiation', text: 'immigration cases are opened and directed by our accredited partner laboratory' },
+    { title: 'Partner Laboratory Initiation', text: 'immigration cases are opened and directed by an AABB accredited laboratory we partner with' },
     { title: 'Strict Compliance Procedures', text: 'every step aligns with federal immigration standards' },
   ];
 
@@ -40,7 +40,7 @@ const ProcessCompliance = () => {
                       rel="noopener noreferrer"
                       className="text-blue-600 hover:text-blue-800 underline font-semibold"
                     >
-                      accredited partner laboratory
+                      AABB accredited laboratory
                     </a>
                   </>
                 ) : (

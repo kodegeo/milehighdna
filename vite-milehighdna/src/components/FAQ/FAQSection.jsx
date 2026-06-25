@@ -167,11 +167,11 @@ const faqData = [
           },
           {
             type: "p",
-            text: `In immigration cases, our accredited partner laboratory provides testing that is accepted by U.S. Citizenship and Immigration Services (USCIS) and U.S. Embassies.`,
+            text: `In immigration cases, an AABB accredited laboratory we partner with provides testing that is accepted by U.S. Citizenship and Immigration Services (USCIS) and U.S. Embassies.`,
           },
           {
             type: "p",
-            text: "Selecting an accredited partner laboratory ensures that results meet recognized legal and federal standards.",
+            text: "Selecting an AABB accredited laboratory ensures that results meet recognized legal and federal standards.",
           },
         ],
       },
@@ -328,7 +328,7 @@ const faqData = [
               "Twin zygosity",
               "Single profile",
               "Postmortem (DNA testing with a deceased person)",
-              "Immigration (accredited partner laboratory where required)",
+              "Immigration (AABB accredited laboratory where required)",
               "mtDNA and Y-STR",
               "Discreet/private testing (alternative DNA samples)",
               "Infidelity",
@@ -378,7 +378,7 @@ const faqData = [
           },
           {
             type: "p",
-            text: "At Mile High DNA Testing, every case is structured and monitored. Legal and immigration testing is coordinated with accredited partner laboratory where applicable. Whether you test in our Denver office or order an at-home kit, your case is managed with precision from start to finish. AABB does not accredit home DNA test kits.",
+            text: "At Mile High DNA Testing, every case is structured and monitored. Legal and immigration testing is coordinated with an AABB accredited laboratory where applicable. Whether you test in our Denver office or order an at-home kit, your case is managed with precision from start to finish. AABB does not accredit home DNA test kits.",
           },
           {
             type: "p",

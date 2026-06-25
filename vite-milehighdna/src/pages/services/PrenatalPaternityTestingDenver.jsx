@@ -263,7 +263,7 @@ const PrenatalPaternityTestingDenver = () => {
                     Laboratory Analysis
                   </h3>
                   <p className="text-gray-600">
-                    Samples are sent to an accredited partner laboratory for analysis. The lab analyzes the cell-free DNA from the mother's blood sample to determine paternity.
+                    Samples are sent to an AABB accredited laboratory for analysis. The lab analyzes the cell-free DNA from the mother's blood sample to determine paternity.
                   </p>
                 </div>
               </div>
@@ -314,7 +314,7 @@ const PrenatalPaternityTestingDenver = () => {
                 Accuracy
               </h3>
               <p className="text-gray-600">
-                Prenatal paternity testing provides highly accurate results. The test analyzes cell-free DNA from the mother's blood sample, which contains genetic material from both parents. Results are processed at accredited partner laboratory using advanced DNA analysis methods.
+                Prenatal paternity testing provides highly accurate results. The test analyzes cell-free DNA from the mother's blood sample, which contains genetic material from both parents. Results are processed at AABB accredited laboratory using advanced DNA analysis methods.
               </p>
             </div>
           </div>

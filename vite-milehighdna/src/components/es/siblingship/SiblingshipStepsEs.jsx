@@ -16,7 +16,7 @@ const SiblingshipSteps = () => {
         number: 3,
         title: 'Análisis en laboratorio',
         description:
-          'Nuestro laboratorio acreditado por la AABB compara los perfiles de ADN para determinar si los participantes son hermanos completos o medios hermanos.',
+          'Un laboratorio acreditado por la AABB con el que colaboramos compara los perfiles de ADN para determinar si los participantes son hermanos completos o medios hermanos.',
       },
       {
         number: 4,

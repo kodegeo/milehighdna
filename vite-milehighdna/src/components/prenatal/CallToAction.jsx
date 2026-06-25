@@ -10,7 +10,7 @@ const CallToAction = () => {
         <p className="text-lg mb-8">
           Whether for personal knowledge <span className="font-semibold">($1,599) </span> 
           or legal needs <span className="font-semibold">($1,799)</span>, 
-          our AABB-accredited prenatal testing provides the answers you deserve. 
+          legal prenatal testing is analyzed by an AABB accredited laboratory we partner with. 
           Schedule your test today and get results you can trust.
         </p>
         <div className="flex flex-col sm:flex-row justify-center gap-4">

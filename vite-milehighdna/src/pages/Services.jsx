@@ -177,7 +177,7 @@ const Services = () => {
           </title>
           <meta
             name="description"
-            content="Need a DNA test in Denver? Court-admissible legal paternity and prenatal testing with same-day appointments. Legal and immigration testing through our accredited partner laboratory. Call 720-900-9342."
+            content="Need a DNA test in Denver? Court-admissible legal paternity and prenatal testing with same-day appointments. Legal and immigration testing through an AABB accredited laboratory we partner with. Call 720-900-9342."
           />
         <meta
           name="keywords"
@@ -188,7 +188,7 @@ const Services = () => {
         {/* OG / Twitter */}
         <meta property="og:type" content="website" />
         <meta property="og:title" content="All DNA Testing Services | Mile High DNA Testing" />
-        <meta property="og:description" content="DNA testing services in Colorado: legal paternity, prenatal, immigration, and peace-of-mind testing. Legal and immigration testing through our accredited partner laboratory." />
+        <meta property="og:description" content="DNA testing services in Colorado: legal paternity, prenatal, immigration, and peace-of-mind testing. Legal and immigration testing through an AABB accredited laboratory we partner with." />
         <meta property="og:image" content="https://milehighdnatesting.com/images/banner-1200.png" />
         <meta property="og:url" content="https://milehighdnatesting.com/services" />
         <meta name="twitter:card" content="summary_large_image" />
@@ -489,7 +489,7 @@ const Services = () => {
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="card p-6">
-              <h3 className="text-xl font-bold mb-2">Accredited Partner Laboratory</h3>
+              <h3 className="text-xl font-bold mb-2">Partner with an AABB Accredited Laboratory</h3>
               <p className="text-gray-600">{MH_LEGAL_IMMIGRATION_PARTNER} Court-admissible results are trusted by immigration attorneys and legal professionals.</p>
             </div>
             <div className="card p-6">
@@ -515,7 +515,7 @@ const Services = () => {
                 role: 'Mother in Denver, CO',
                 text: [
                   "Mile High DNA Testing definitely went above and beyond for me. They were incredibly communicative, keeping me updated every step of the way. You can tell the owner genuinely cares about her clients. She makes sure you not only get the answers you need but also feel prioritized and supported throughout the process.",
-                  "If she didn't have the answer right away, she never pretended she did. She would go directly to the accredited partner laboratory to provide me the most accurate, credible information.",
+                  "If she didn't have the answer right away, she never pretended she did. She would go directly to the AABB accredited laboratory to provide me the most accurate, credible information.",
                   "If you go with Mile High DNA Testing, you are truly in great hands"
                 ],
                 source: 'Google Review',

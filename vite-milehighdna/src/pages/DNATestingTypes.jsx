@@ -154,7 +154,7 @@ const DNATestingTypes = () => {
             </p>
           </div>
           <p className="bg-blue-50 border-l-4 border-blue-400 p-4 rounded-lg text-gray-800 text-lg font-medium mb-8">
-  There are two main types of DNA tests: legal DNA testing, which is court-admissible and follows strict collection rules, and non-legal (peace of mind) testing, which provides private results for personal knowledge. Legal and immigration testing is provided through our accredited partner laboratory.
+  There are two main types of DNA tests: legal DNA testing, which is court-admissible and follows strict collection rules, and non-legal (peace of mind) testing, which provides private results for personal knowledge. Legal and immigration testing is provided through an AABB accredited laboratory we partner with.
 </p>
         </div>
 

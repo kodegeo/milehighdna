@@ -22,7 +22,7 @@ const MISSION_COPY = {
 };
 
 const TRUST_SECTION_COPY =
-  "All tests are processed by accredited partner laboratory using industry-standard DNA analysis.";
+  "At-home kits are processed by an accredited laboratory using industry-standard DNA analysis. AABB does not accredit home DNA test kits. For legal and immigration testing, we partner with an AABB accredited laboratory.";
 
 /**
  * Shared layout for shop bucket (category) pages.

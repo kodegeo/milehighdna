@@ -33,7 +33,7 @@ const GrandparentageTestsEs = () => {
 
   {/* OG & Twitter */}
   <meta property="og:title" content="Prueba de Parentesco por ADN con Abuelos en Colorado" />
-  <meta property="og:description" content="Confirme relaciones familiares con pruebas de ADN de abuelidad. Resultados válidos para inmigración, corte y uso personal. Laboratorio acreditado por AABB." />
+  <meta property="og:description" content="Confirme relaciones familiares con pruebas de ADN de abuelidad. Resultados válidos para inmigración, corte y uso personal. Colaboramos con laboratorios acreditados por la AABB." />
   <meta property="og:image" content="https://milehighdnatesting.com/images/banner-1200.png" />
   <meta property="og:url" content="https://milehighdnatesting.com/es/prueba-de-abuelidad" />
   <meta property="og:type" content="article" />
@@ -43,7 +43,7 @@ const GrandparentageTestsEs = () => {
 
       <GrandparentageHero
       title="Prueba de ADN de Abuelos en Denver, Aurora y Colorado | Mile High DNA"
-      subtitle="Prueba legal y confidencial para establecer relaciones familiares entre abuelos y nietos. Resultados aceptados por tribunales e inmigración. Laboratorio acreditado por la AABB."
+      subtitle="Prueba legal y confidencial para establecer relaciones familiares entre abuelos y nietos. Resultados aceptados por tribunales e inmigración. Colaboramos con un laboratorio acreditado por la AABB."
       />
       <GrandparentagePricing />
       <GrandparentageOverview />

@@ -48,9 +48,9 @@ const GuidesIndex = () => {
     {
       name: "Immigration DNA Testing",
       guides: [
-        { title: "Immigration DNA Testing Process", description: "How the immigration DNA testing process works: USCIS and embassy requirements, chain-of-custody, and accredited partner laboratory testing. Denver immigration DNA testing.", link: "/guides/immigration-dna-testing-process" },
+        { title: "Immigration DNA Testing Process", description: "How the immigration DNA testing process works: USCIS and embassy requirements, chain-of-custody, and AABB accredited laboratory testing. Denver immigration DNA testing.", link: "/guides/immigration-dna-testing-process" },
         { title: "USCIS DNA Testing Requirements", description: "USCIS DNA testing requirements: AABB accreditation, chain-of-custody, and how to complete immigration DNA testing for USCIS. Denver immigration DNA testing.", link: "/guides/uscis-dna-testing" },
-        { title: "Accredited Partner Laboratories For Immigration DNA Tests", description: "Why immigration DNA tests must use accredited partner laboratory. USCIS and embassy requirements. Denver immigration DNA testing.", link: "/guides/aabb-labs-for-immigration" },
+        { title: "Partner With an AABB Accredited Laboratory for Immigration DNA Tests", description: "Why immigration DNA tests must use an AABB accredited laboratory. USCIS and embassy requirements. Denver immigration DNA testing.", link: "/guides/aabb-labs-for-immigration" },
         { title: "Embassy DNA Testing Explained", description: "Embassy DNA testing: what U.S. embassies and consulates require for relationship verification. AABB accreditation and chain-of-custody.", link: "/guides/embassy-dna-testing" },
         { title: "How Long Immigration DNA Testing Takes", description: "How long immigration DNA testing takes: lab turnaround, international collection, and what affects the timeline. Denver immigration DNA testing.", link: "/guides/immigration-dna-test-timeline" }
       ]

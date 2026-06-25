@@ -18,7 +18,7 @@ const PrenatalEs = () => {
         <title>Prueba de Paternidad Prenatal | Pruebas No Invasivas en Denver, Aurora y Lakewood</title>
         <meta 
           name="description" 
-          content="Pruebas de paternidad prenatal no invasivas en Denver, Aurora y Lakewood. Pruebas seguras, precisas y confidenciales para madres embarazadas. Resultados de laboratorio acreditado por AABB." 
+          content="Pruebas de paternidad prenatal no invasivas en Denver, Aurora y Lakewood. Pruebas seguras, precisas y confidenciales. Para uso legal, el análisis se realiza en un laboratorio acreditado por la AABB."
         />
 
         <link rel="canonical" href="https://milehighdnatesting.com/es/prueba-de-paternidad-prenatal" />
@@ -28,7 +28,7 @@ const PrenatalEs = () => {
 
         {/* Open Graph for Social Sharing */}
         <meta property="og:title" content="Pruebas de Paternidad Prenatal en Colorado" />
-        <meta property="og:description" content="Obtenga pruebas de paternidad prenatal seguras y no invasivas en Colorado. Resultados rápidos, confidenciales y acreditados por AABB para madres embarazadas y familias." />
+        <meta property="og:description" content="Obtenga pruebas de paternidad prenatal seguras y no invasivas en Colorado. Para uso legal, colaboramos con un laboratorio acreditado por la AABB." />
         <meta property="og:image" content="https://milehighdnatesting.com/images/banner-1200.png" />
         <meta property="og:url" content="https://milehighdnatesting.com/es/prueba-de-paternidad-prenatal" />
         <meta property="og:type" content="article" />

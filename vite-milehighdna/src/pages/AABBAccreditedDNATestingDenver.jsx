@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
-import { MH_AABB_PARTNER_COURTS_USCIS, MH_LEGAL_IMMIGRATION_SHORT, MH_NOT_AABB_LONG } from "../constants/aabbComplianceCopy";
+import { MH_AABB_PARTNER_COURTS_USCIS, MH_FACILITIES_ACCREDITED_BY_AABB, MH_LEGAL_IMMIGRATION_SHORT, MH_NOT_AABB_LONG, PARTNER_LAB_PAGE_PATH } from "../constants/aabbComplianceCopy";
 
 const FAQ_SCHEMA = {
   "@context": "https://schema.org",
@@ -28,7 +28,7 @@ const FAQ_SCHEMA = {
       "name": "Is immigration DNA testing accepted by USCIS?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": `${MH_AABB_PARTNER_COURTS_USCIS} We partner with an accredited partner laboratory for legal and immigration DNA testing.`
+        "text": `${MH_AABB_PARTNER_COURTS_USCIS} We partner with an AABB accredited laboratory for legal and immigration DNA testing.`
       }
     },
     {
@@ -36,7 +36,7 @@ const FAQ_SCHEMA = {
       "name": "Will my results be accepted for court or immigration?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "When your DNA test follows verified identity procedures and documented chain-of-custody standards and is performed by an accredited partner laboratory, the results can meet the requirements used by courts, USCIS, and federal agencies. Mile High DNA Testing coordinates collection and case management; analysis is performed by accredited partner laboratory."
+        "text": "When your DNA test follows verified identity procedures and documented chain-of-custody standards and is performed by an AABB accredited laboratory, the results can meet the requirements used by courts, USCIS, and federal agencies. Mile High DNA Testing coordinates collection and case management; analysis is performed by an AABB accredited laboratory."
       }
     }
   ]
@@ -47,7 +47,7 @@ const BREADCRUMB_SCHEMA = {
   "@type": "BreadcrumbList",
   "itemListElement": [
     { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://milehighdnatesting.com/" },
-    { "@type": "ListItem", "position": 2, "name": "Accredited Partner Laboratory (Denver)", "item": "https://milehighdnatesting.com/aabb-accredited-dna-testing-denver" }
+    { "@type": "ListItem", "position": 2, "name": "Partner with an AABB Accredited Laboratory (Denver)", "item": `https://milehighdnatesting.com${PARTNER_LAB_PAGE_PATH}` }
   ]
 };
 
@@ -68,12 +68,12 @@ const AABBAccreditedDNATestingDenver = () => {
     {
       question: "Is immigration DNA testing accepted by USCIS?",
       answer:
-        `${MH_AABB_PARTNER_COURTS_USCIS} We partner with an accredited partner laboratory for legal and immigration DNA testing.`
+        `${MH_AABB_PARTNER_COURTS_USCIS} We partner with an AABB accredited laboratory for legal and immigration DNA testing.`
     },
     {
       question: "Will my results be accepted for court or immigration?",
       answer:
-        "When your DNA test follows verified identity procedures and documented chain-of-custody standards and is performed by an accredited partner laboratory, the results can meet the requirements used by courts, USCIS, and federal agencies."
+        "When your DNA test follows verified identity procedures and documented chain-of-custody standards and is performed by an AABB accredited laboratory, the results can meet the requirements used by courts, USCIS, and federal agencies."
     }
   ];
 
@@ -81,24 +81,24 @@ const AABBAccreditedDNATestingDenver = () => {
     <main>
       <Helmet>
         <html lang="en" />
-        <title>Legal & Immigration DNA Testing in Denver | Accredited Partner Laboratory | Mile High DNA</title>
+        <title>Legal & Immigration DNA Testing in Denver | Partner with an AABB Accredited Laboratory | Mile High DNA</title>
         <meta
           name="description"
-          content="Mile High DNA Testing is not AABB accredited. We coordinate legal and immigration DNA testing in Denver with accredited partner laboratory chain-of-custody, and court-ready documentation."
+          content="Mile High DNA Testing is not AABB accredited. We coordinate legal and immigration DNA testing in Denver using chain-of-custody procedures through facilities accredited by AABB."
         />
-        <link rel="canonical" href="https://milehighdnatesting.com/aabb-accredited-dna-testing-denver" />
-        <meta property="og:title" content="Legal & Immigration DNA Testing in Denver | partner laboratory | Mile High DNA" />
+        <link rel="canonical" href={`https://milehighdnatesting.com${PARTNER_LAB_PAGE_PATH}`} />
+        <meta property="og:title" content="Legal & Immigration DNA Testing in Denver | Partner with an AABB Accredited Laboratory | Mile High DNA" />
         <meta
           property="og:description"
-          content="Independent DNA testing company in Denver. Legal and immigration testing is performed by accredited partner laboratory."
+          content="Independent DNA testing company in Denver. Legal and immigration testing uses facilities that we partner with that are accredited by AABB."
         />
-        <meta property="og:url" content="https://milehighdnatesting.com/aabb-accredited-dna-testing-denver" />
+        <meta property="og:url" content={`https://milehighdnatesting.com${PARTNER_LAB_PAGE_PATH}`} />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Legal & Immigration DNA Testing in Denver | Mile High DNA" />
         <meta
           name="twitter:description"
-          content="We partner with an accredited partner laboratory for legal and immigration DNA testing."
+          content="We partner with an AABB accredited laboratory for legal and immigration DNA testing."
         />
         <script type="application/ld+json">{JSON.stringify(FAQ_SCHEMA)}</script>
         <script type="application/ld+json">{JSON.stringify(BREADCRUMB_SCHEMA)}</script>
@@ -111,7 +111,7 @@ const AABBAccreditedDNATestingDenver = () => {
             Legal & Immigration DNA Testing in Denver
           </h1>
           <p className="text-lg text-blue-100 font-medium mb-4">
-            Court-admissible DNA testing requires strict identity verification, documented chain-of-custody procedures, and analysis by an accredited partner laboratory.
+            Court-admissible DNA testing requires strict identity verification, documented chain-of-custody procedures, and analysis by an AABB accredited laboratory.
           </p>
           <p className="text-white leading-relaxed mb-4">{MH_NOT_AABB_LONG}</p>
         </div>
@@ -120,7 +120,8 @@ const AABBAccreditedDNATestingDenver = () => {
       {/* Partner laboratory accreditation */}
       <section className="bg-gray-50 py-10 md:py-12 px-4 md:px-8">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">What Is Partner Laboratory Accreditation?</h2>
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">Partner with an AABB Accredited Laboratory</h2>
+          <p className="text-gray-700 leading-relaxed mb-4">{MH_FACILITIES_ACCREDITED_BY_AABB}</p>
           <p className="text-gray-700 leading-relaxed mb-4">
             The American Association of Blood Banks (AABB) establishes internationally recognized standards for relationship DNA testing laboratories.
           </p>
@@ -143,10 +144,10 @@ const AABBAccreditedDNATestingDenver = () => {
         </div>
       </section>
 
-      {/* Court-admissible testing through accredited partner laboratory */}
+      {/* Court-admissible testing through AABB accredited laboratory */}
       <section className="bg-white py-10 md:py-12 px-4 md:px-8">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">Court-Admissible Testing Through Our Accredited Partner Laboratory</h2>
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">Court-Admissible Testing With an AABB Accredited Laboratory</h2>
           <p className="text-gray-700 leading-relaxed mb-4">
             Family courts accept DNA results used as legal evidence when testing follows strict documentation procedures.
           </p>
@@ -160,15 +161,15 @@ const AABBAccreditedDNATestingDenver = () => {
             <li>certified reporting procedures</li>
           </ul>
           <p className="text-gray-700 leading-relaxed">
-            These safeguards allow DNA testing results to meet court-admissibility standards when testing is performed by an accredited partner laboratory.
+            These safeguards allow DNA testing results to meet court-admissibility standards when testing is performed by an AABB accredited laboratory.
           </p>
         </div>
       </section>
 
-      {/* USCIS-accepted testing through accredited partner laboratory */}
+      {/* USCIS-accepted testing through AABB accredited laboratory */}
       <section className="bg-gray-50 py-10 md:py-12 px-4 md:px-8">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">USCIS-Accepted Testing Through Our Accredited Partner Laboratory</h2>
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">USCIS-Accepted Testing With an AABB Accredited Laboratory</h2>
           <p className="text-gray-700 leading-relaxed mb-4">
             {MH_AABB_PARTNER_COURTS_USCIS}
           </p>
@@ -176,7 +177,7 @@ const AABBAccreditedDNATestingDenver = () => {
             These standards help ensure that immigration DNA testing results meet consistent scientific and documentation requirements.
           </p>
           <p className="text-gray-700 leading-relaxed mb-4">
-            In many cases, U.S. embassies and consulates also accept accredited partner laboratory testing for family relationship DNA testing.
+            In many cases, U.S. embassies and consulates also accept testing performed by an AABB accredited laboratory for family relationship DNA testing.
           </p>
           <p className="text-gray-700 leading-relaxed font-medium">{MH_LEGAL_IMMIGRATION_SHORT}</p>
         </div>
@@ -201,7 +202,7 @@ const AABBAccreditedDNATestingDenver = () => {
             <li>controlled laboratory processing</li>
           </ul>
           <p className="text-gray-700 leading-relaxed">
-            These procedures protect the integrity of the testing process and help ensure results can be used for official purposes when processed by an accredited partner laboratory.
+            These procedures protect the integrity of the testing process and help ensure results can be used for official purposes when processed by an AABB accredited laboratory.
           </p>
         </div>
       </section>
@@ -221,7 +222,7 @@ const AABBAccreditedDNATestingDenver = () => {
               <Link to="/services/immigration-dna-testing" className="text-blue-600 hover:underline">
                 Immigration DNA testing
               </Link>{" "}
-              (accredited partner laboratory)
+              (AABB accredited laboratory)
             </li>
             <li>
               <Link to="/services/postmortem-paternity-testing" className="text-blue-600 hover:underline">

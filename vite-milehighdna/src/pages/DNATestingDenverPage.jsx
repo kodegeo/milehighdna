@@ -10,7 +10,7 @@ const DNATestingDenverPage = () => {
         <title>DNA Testing Denver | Prenatal, Legal, & Peace of Mind</title>
         <meta
           name="description"
-          content="Fast, confidential DNA testing in Denver, Aurora, Thornton, and Englewood. Legal paternity, prenatal, immigration, and peace-of-mind testing. Legal and immigration testing through our accredited partner laboratory. Results in 3–5 business days."
+          content="Fast, confidential DNA testing in Denver, Aurora, Thornton, and Englewood. Legal paternity, prenatal, immigration, and peace-of-mind testing. Legal and immigration testing through an AABB accredited laboratory we partner with. Results in 3–5 business days."
         />
         <link
           rel="canonical"
@@ -75,7 +75,7 @@ const DNATestingDenverPage = () => {
               "@id": "https://milehighdnatesting.com/dna-testing-denver#webpage",
               "url": "https://milehighdnatesting.com/dna-testing-denver",
               "name": "DNA Testing Denver | Prenatal, Legal, & Peace of Mind",
-              "description": "Fast, confidential DNA testing in Denver, Aurora, Thornton, and Englewood. Legal paternity, prenatal, immigration, and peace-of-mind testing. Legal and immigration testing through our accredited partner laboratory.",
+              "description": "Fast, confidential DNA testing in Denver, Aurora, Thornton, and Englewood. Legal paternity, prenatal, immigration, and peace-of-mind testing. Legal and immigration testing through an AABB accredited laboratory we partner with.",
               "isPartOf": {
                 "@type": "WebSite",
                 "name": "Mile High DNA Testing",
@@ -105,7 +105,7 @@ const DNATestingDenverPage = () => {
             {/* Quick Trust Points */}
             <div className="flex flex-col md:flex-row justify-center gap-4 mt-6">
               <div className="bg-white/90 shadow-md rounded-lg p-3 w-full md:w-56 text-blue-900 font-semibold text-base md:text-lg">
-                ✅ Accredited Partner Laboratory for Court-Admissible DNA Testing
+                ✅ Partner with an AABB Accredited Laboratory for Court-Admissible DNA Testing
               </div>
               <div className="bg-white/90 shadow-md rounded-lg p-3 w-full md:w-56 text-blue-900 font-semibold text-base md:text-lg">
                 ✅ Fast Results in 3–5 Business Days

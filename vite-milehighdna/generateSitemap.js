@@ -123,12 +123,12 @@ const routeConfig = {
       'es-us': '/es/preguntas-frecuentes'
     }
   },
-  '/aabb-accreditation': {
+  '/partner-with-aabb-accredited-laboratory-denver': {
     priority: '0.5',
     changefreq: 'yearly',
     hreflang: {
-      'en-us': '/aabb-accreditation',
-      'es-us': '/es/aabb-accreditation'
+      'en-us': '/partner-with-aabb-accredited-laboratory-denver',
+      'es-us': '/es/asociacion-con-laboratorio-acreditado-por-aabb-denver'
     }
   },
 
@@ -247,7 +247,7 @@ const routeConfig = {
     priority: '0.8',
     changefreq: 'weekly'
   },
-  '/es/aabb-accreditation': {
+  '/es/asociacion-con-laboratorio-acreditado-por-aabb-denver': {
     priority: '0.5',
     changefreq: 'yearly'
   },

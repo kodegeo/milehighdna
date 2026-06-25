@@ -24,7 +24,7 @@ const GrandparentageTesting = () => {
         <title>Grandparent DNA Test in Denver, CO | Legal & Non-Legal Testing | Mile High DNA</title>
         <meta
           name="description"
-          content="Accurate grandparent DNA testing in Denver, Aurora, Thornton, and Lakewood, Colorado. Court-admissible and peace-of-mind options available. Legal and immigration testing through our accredited partner laboratory."
+          content="Accurate grandparent DNA testing in Denver, Aurora, Thornton, and Lakewood, Colorado. Court-admissible and peace-of-mind options available. Legal and immigration testing through an AABB accredited laboratory we partner with."
         />
         <meta
           name="keywords"
@@ -34,7 +34,7 @@ const GrandparentageTesting = () => {
         
         {/* OG / Twitter */}
         <meta property="og:title" content="Grandparent DNA Test in Denver | Legal & Non-Legal Testing" />
-        <meta property="og:description" content="Grandparent DNA testing in Denver, CO. Legal and non-legal testing with fast, confidential results. Legal and immigration testing through our accredited partner laboratory." />
+        <meta property="og:description" content="Grandparent DNA testing in Denver, CO. Legal and non-legal testing with fast, confidential results. Legal and immigration testing through an AABB accredited laboratory we partner with." />
         <meta property="og:image" content="https://milehighdnatesting.com/images/banner-1200.png" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://milehighdnatesting.com/services/grandparentage-testing" />

@@ -203,8 +203,9 @@ function AppLayout() {
             <Route path="/my-results" element={<MyResults />} />
             <Route path="/my-results-page" element={<MyResultsPage />} />
             <Route path="/book-appointment" element={<Navigate to="/appointments" replace />} />
-            <Route path="/aabb-accreditation" element={<Navigate to="/aabb-accredited-dna-testing-denver" replace />} />
-            <Route path="/aabb-accredited-dna-testing-denver" element={<AABBAccreditedDNATestingDenver />} />
+            <Route path="/aabb-accreditation" element={<Navigate to="/partner-with-aabb-accredited-laboratory-denver" replace />} />
+            <Route path="/aabb-accredited-dna-testing-denver" element={<Navigate to="/partner-with-aabb-accredited-laboratory-denver" replace />} />
+            <Route path="/partner-with-aabb-accredited-laboratory-denver" element={<AABBAccreditedDNATestingDenver />} />
             <Route path="/cancel" element={<Cancel />} />
             <Route path="/success" element={<Success />} />
             <Route path="/appointment-form" element={<AppointmentFormPage />} />
@@ -346,7 +347,9 @@ function AppLayout() {
             <Route path="/es/mis-resultados" element={<MyResultsEs />} />
             <Route path="/es/pagina-de-resultados" element={<MyResultsPageEs />} />
             <Route path="/es/reservar-cita" element={<BookAppointmentEs />} />
-            <Route path="/es/aabb-accreditation" element={<AABBAccreditationEs />} />
+            <Route path="/es/aabb-accreditation" element={<Navigate to="/es/asociacion-con-laboratorio-acreditado-por-aabb-denver" replace />} />
+            <Route path="/es/partner-with-aabb-accredited-laboratory-denver" element={<Navigate to="/es/asociacion-con-laboratorio-acreditado-por-aabb-denver" replace />} />
+            <Route path="/es/asociacion-con-laboratorio-acreditado-por-aabb-denver" element={<AABBAccreditationEs />} />
             <Route path="/es/prueba-de-paternidad-prenatal" element={<PrenatalEs />} />
           </Routes>
 

@@ -5,7 +5,7 @@ import GuideLayout from "./GuideLayout";
 const faqs = [
   {
     question: "What is embassy DNA testing?",
-    answer: "Embassy DNA testing is relationship DNA testing requested by a U.S. embassy or consulate to verify a claimed family relationship for visa or immigration purposes. It must be performed with identity verification, chain-of-custody, and an accredited partner laboratory—similar to USCIS requirements."
+    answer: "Embassy DNA testing is relationship DNA testing requested by a U.S. embassy or consulate to verify a claimed family relationship for visa or immigration purposes. It must be performed with identity verification, chain-of-custody, and an AABB accredited laboratory—similar to USCIS requirements."
   },
   {
     question: "Who needs to be tested for embassy DNA testing?",
@@ -17,7 +17,7 @@ const faqs = [
   },
   {
     question: "Can I get embassy DNA testing in Denver?",
-    answer: "Yes. If you or a family member are in the Denver area, you can complete your part of the test at a facility like Mile High DNA Testing that coordinates with an accredited partner laboratory and follows procedures acceptable to U.S. embassies and consulates."
+    answer: "Yes. If you or a family member are in the Denver area, you can complete your part of the test at a facility like Mile High DNA Testing that coordinates with an AABB accredited laboratory and follows procedures acceptable to U.S. embassies and consulates."
   }
 ];
 
@@ -35,7 +35,7 @@ export default function EmbassyDNATesting() {
       overview={
         <>
           <p className="text-xl text-gray-600 mb-6 leading-relaxed">
-            Embassy DNA testing is relationship DNA testing requested by a U.S. embassy or consulate to verify a biological relationship (e.g., parent-child) when other evidence is insufficient. The test must be performed with identity verification, chain-of-custody, and an accredited partner laboratory so results are accepted by the embassy.
+            Embassy DNA testing is relationship DNA testing requested by a U.S. embassy or consulate to verify a biological relationship (e.g., parent-child) when other evidence is insufficient. The test must be performed with identity verification, chain-of-custody, and an AABB accredited laboratory so results are accepted by the embassy.
           </p>
           <p className="text-lg text-gray-600 mb-6">
             Mile High DNA Testing helps families complete embassy DNA testing when the U.S. side is in Denver or the region. For USCIS requirements (which are similar), see <Link to="/guides/uscis-dna-testing" className="text-blue-600 underline">USCIS DNA testing requirements</Link> and <Link to="/guides/immigration-dna-testing-process" className="text-blue-600 underline">immigration DNA testing process</Link>. To <Link to="/appointments" className="text-blue-600 underline">schedule a test</Link>, visit our appointments page.
@@ -48,14 +48,14 @@ export default function EmbassyDNATesting() {
             Embassies and consulates request DNA testing when they need to verify a claimed family relationship for a visa or immigration case and documents alone are not sufficient. The request will specify who must be tested and often which laboratory or collection procedures to use.
           </p>
           <p className="text-lg text-gray-600 mb-6">
-            For the full immigration process, read <Link to="/guides/immigration-dna-testing-process" className="text-blue-600 underline">immigration DNA testing process</Link>. For lab requirements, see <Link to="/guides/aabb-labs-for-immigration" className="text-blue-600 underline">accredited partner laboratory requirements for immigration DNA tests</Link>.
+            For the full immigration process, read <Link to="/guides/immigration-dna-testing-process" className="text-blue-600 underline">immigration DNA testing process</Link>. For lab requirements, see <Link to="/guides/aabb-labs-for-immigration" className="text-blue-600 underline">AABB accredited laboratory requirements for immigration DNA tests</Link>.
           </p>
         </>
       }
       process={
         <>
           <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-            Follow the instructions in your embassy or consulate letter. Each participant goes to an approved collection site with ID. The collector verifies identity, takes samples (usually cheek swabs), and maintains chain-of-custody. When participants are in different countries, each is collected at an approved site; samples are sent to the same accredited partner laboratory. The lab issues a report in the format the embassy requires.
+            Follow the instructions in your embassy or consulate letter. Each participant goes to an approved collection site with ID. The collector verifies identity, takes samples (usually cheek swabs), and maintains chain-of-custody. When participants are in different countries, each is collected at an approved site; samples are sent to the same AABB accredited laboratory. The lab issues a report in the format the embassy requires.
           </p>
           <p className="text-lg text-gray-600 mb-6">
             For timelines, see <Link to="/guides/immigration-dna-test-timeline" className="text-blue-600 underline">how long immigration DNA testing takes</Link>. For chain-of-custody, read <Link to="/guides/chain-of-custody-dna-testing" className="text-blue-600 underline">chain of custody DNA testing</Link>.
@@ -65,7 +65,7 @@ export default function EmbassyDNATesting() {
       legal={
         <>
           <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-            All embassy DNA testing is legal testing: identity verification, chain-of-custody, and accredited partner laboratory analysis are required. Results from at-home kits or non-accredited labs are not accepted. Use only a facility and laboratory that meet embassy and AABB standards.
+            All embassy DNA testing is legal testing: identity verification, chain-of-custody, and AABB accredited laboratory analysis are required. Results from at-home kits or non-accredited labs are not accepted. Use only a facility and laboratory that meet embassy and AABB standards.
           </p>
           <p className="text-lg text-gray-600 mb-6">
             For court-admissible testing in the U.S., see <Link to="/guides/court-admissible-dna-testing" className="text-blue-600 underline">court admissible DNA testing</Link>. For USCIS-specific steps, read <Link to="/guides/uscis-dna-testing" className="text-blue-600 underline">USCIS DNA testing requirements</Link>.

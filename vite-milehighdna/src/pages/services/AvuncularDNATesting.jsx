@@ -17,7 +17,7 @@ const AvuncularDNATesting = () => {
     { step: 1, title: "Schedule Your Appointment", description: "Book online or call our Denver office. We'll confirm whether avuncular testing is the right option for your situation." },
     { step: 2, title: "Sample Collection", description: "DNA samples are collected from the child and aunt or uncle via quick cheek swab. Legal tests require ID verification." },
     { step: 3, title: "Chain of Custody (If Legal)", description: "Identity verification and documentation for court-admissible results when required." },
-    { step: 4, title: "Laboratory Analysis", description: "Genetic markers are analyzed and compared at an accredited partner laboratory. Statistical analysis determines the probability of an avuncular relationship." },
+    { step: 4, title: "Laboratory Analysis", description: "Genetic markers are analyzed and compared at an AABB accredited laboratory. Statistical analysis determines the probability of an avuncular relationship." },
     { step: 5, title: "Results Delivery", description: "Results are delivered securely, typically within 3–5 business days. Legal tests include documentation suitable for court use." }
   ];
 
@@ -153,7 +153,7 @@ const AvuncularDNATesting = () => {
       <section className="py-12 md:py-16 px-6 bg-white">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-bold text-gray-800 mb-8">How Avuncular DNA Testing Works</h2>
-          <p className="text-gray-700 mb-8">Avuncular DNA testing follows an indirect genetic analysis process: DNA samples are collected from the child and aunt or uncle; genetic markers are analyzed and compared; statistical analysis determines the probability of an avuncular relationship. Laboratory analysis is performed by an accredited partner laboratory. Testing both aunt and uncle typically yields more conclusive results than testing a single relative.</p>
+          <p className="text-gray-700 mb-8">Avuncular DNA testing follows an indirect genetic analysis process: DNA samples are collected from the child and aunt or uncle; genetic markers are analyzed and compared; statistical analysis determines the probability of an avuncular relationship. Laboratory analysis is performed by an AABB accredited laboratory. Testing both aunt and uncle typically yields more conclusive results than testing a single relative.</p>
           <div className="relative">
             <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-blue-200 hidden md:block" />
             <div className="space-y-8">
@@ -183,7 +183,7 @@ const AvuncularDNATesting = () => {
       <section className="py-12 md:py-16 px-6 bg-white">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-bold text-gray-800 mb-6">Why Choose Mile High DNA Testing?</h2>
-          <p className="text-gray-700 mb-4">Avuncular DNA testing provides statistically reliable results when performed by an accredited laboratory. At Mile High DNA Testing we use accredited partner laboratory, offer both legal and peace-of-mind options, and serve Denver and Colorado with clear guidance so you choose the right test for your situation.</p>
+          <p className="text-gray-700 mb-4">Avuncular DNA testing provides statistically reliable results when performed by an accredited laboratory. At Mile High DNA Testing we partner with an AABB accredited laboratory for legal and immigration testing, offer both legal and peace-of-mind options, and serve Denver and Colorado with clear guidance so you choose the right test for your situation.</p>
           <p className="text-gray-700">Related services: <Link to="/services/siblingship-testing" className="text-blue-600 hover:underline">Siblingship Testing</Link>, <Link to="/services/grandparentage-testing" className="text-blue-600 hover:underline">Grandparentage Testing</Link>.</p>
         </div>
       </section>

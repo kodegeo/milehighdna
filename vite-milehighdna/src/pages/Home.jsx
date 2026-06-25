@@ -32,7 +32,7 @@ const Home = () => {
       </title>
       <meta
           name="description"
-          content="Need a legal or prenatal paternity test in Denver? Court-admissible DNA testing coordinated with accredited partner laboratory. Same-day appointments available. Call 720-900-9342 or book online today."
+          content="Need a legal or prenatal paternity test in Denver? Court-admissible DNA testing coordinated with an AABB accredited laboratory. Same-day appointments available. Call 720-900-9342 or book online today."
         />
         <meta name="msvalidate.01" content="5905CEB57CBF0561C0CECACC8EB705D6" />
 
@@ -149,7 +149,7 @@ const Home = () => {
               "@id": "https://milehighdnatesting.com/#webpage",
               "url": "https://milehighdnatesting.com",
               "name": "Fast & Confidential DNA Testing in Denver, CO | Legal Paternity & Relationship Tests – Mile High DNA",
-              "description": "Fast, confidential DNA testing in Denver, Aurora, Thornton & Lakewood Colorado. We provide legal paternity, prenatal, immigration, and family relationship testing with same-day appointments. We partner with an accredited partner laboratory for DNA testing.",
+              "description": "Fast, confidential DNA testing in Denver, Aurora, Thornton & Lakewood Colorado. We provide legal paternity, prenatal, immigration, and family relationship testing with same-day appointments. We partner with an AABB accredited laboratory for DNA testing.",
               "isPartOf": {
                 "@type": "WebSite",
                 "name": "Mile High DNA Testing",
@@ -174,7 +174,7 @@ const Home = () => {
                   "name": "Is your DNA testing court admissible?",
                   "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Yes. We partner with an accredited partner laboratory for legal and immigration DNA testing, and follow strict chain-of-custody procedures required for court and immigration cases."
+                    "text": "Yes. We partner with an AABB accredited laboratory for legal and immigration DNA testing, and follow strict chain-of-custody procedures required for court and immigration cases."
                   }
                 },
                 {
@@ -276,7 +276,7 @@ const Home = () => {
             </div>
 
             <p className="text-base md:text-xl mb-6">
-              Court-Admissible • <Link to="/aabb-accredited-dna-testing-denver" className="text-blue-100 hover:text-white underline">Legal & immigration Accredited Partner Laboratory</Link> • Same-Day Appointments • Results in 3–5 Days
+              Court-Admissible • <Link to="/partner-with-aabb-accredited-laboratory-denver" className="text-blue-100 hover:text-white underline">Partner with an AABB accredited laboratory for legal & immigration</Link> • Same-Day Appointments • Results in 3–5 Days
             </p>
             <p className="text-base md:text-lg mb-8">
               Get accurate, court-admissible results with full privacy. Serving Denver, Aurora, Lakewood, and beyond.
@@ -338,8 +338,8 @@ const Home = () => {
                   </svg>
                 </div>
               </div>
-              <h3 className="font-bold text-gray-900 mb-1">Accredited Partner Laboratory</h3>
-              <p className="text-sm text-gray-600">Legal and immigration testing through our accredited partner laboratory</p>
+              <h3 className="font-bold text-gray-900 mb-1">Partner with an AABB Accredited Laboratory</h3>
+              <p className="text-sm text-gray-600">Legal and immigration testing through an AABB accredited laboratory we partner with</p>
             </div>
             
             <div className="text-center">
@@ -635,8 +635,8 @@ const Home = () => {
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="card p-6">
-              <h3 className="text-xl font-bold mb-2"><Link to="/aabb-accredited-dna-testing-denver" className="text-gray-900 hover:text-[#2C6FA6] transition duration-300">Legal & immigration standards</Link></h3>
-              <p className="text-gray-600">Court-admissible testing coordinated with our accredited partner laboratory for cases that require it. <Link to="/aabb-accredited-dna-testing-denver" className="text-[#2C6FA6] hover:text-[#7DB9E8] font-medium transition duration-300">Learn about our accredited partner laboratory</Link>.</p>
+              <h3 className="text-xl font-bold mb-2"><Link to="/partner-with-aabb-accredited-laboratory-denver" className="text-gray-900 hover:text-[#2C6FA6] transition duration-300">Legal & immigration standards</Link></h3>
+              <p className="text-gray-600">Court-admissible testing coordinated with an AABB accredited laboratory we partner with for cases that require it. <Link to="/partner-with-aabb-accredited-laboratory-denver" className="text-[#2C6FA6] hover:text-[#7DB9E8] font-medium transition duration-300">Learn about an AABB accredited laboratory we partner with</Link>.</p>
             </div>
             <div className="card p-6">
               <h3 className="text-xl font-bold mb-2">Fast Results</h3>
@@ -657,7 +657,7 @@ const Home = () => {
           
           <div className="max-w-4xl mx-auto space-y-6 text-gray-700">
             <p className="text-lg leading-relaxed">
-              When you need reliable DNA testing in Denver, Mile High DNA Testing provides comprehensive paternity test Denver services for legal, personal, and medical purposes. We are an independent DNA company and coordinate testing with accredited partner laboratory where applicable. Our Denver office serves families throughout the greater Denver metro area, offering same-day appointments and court-admissible results when you choose a legal test path. Whether you require legal paternity testing Denver for child support, custody, or immigration cases, our certified professionals ensure accurate, confidential testing with proper chain-of-custody documentation.
+              When you need reliable DNA testing in Denver, Mile High DNA Testing provides comprehensive paternity test Denver services for legal, personal, and medical purposes. We are an independent DNA company and coordinate testing with an AABB accredited laboratory where applicable. Our Denver office serves families throughout the greater Denver metro area, offering same-day appointments and court-admissible results when you choose a legal test path. Whether you require legal paternity testing Denver for child support, custody, or immigration cases, our certified professionals ensure accurate, confidential testing with proper chain-of-custody documentation.
             </p>
             
             <p className="text-lg leading-relaxed">
@@ -665,7 +665,7 @@ const Home = () => {
             </p>
             
             <p className="text-lg leading-relaxed">
-              Samples for applicable tests are analyzed by accredited partner laboratory, supporting high accuracy for legal and immigration cases when required. We understand that DNA testing often occurs during sensitive family situations, which is why we provide compassionate, bilingual support throughout the entire process. From initial consultation to final results delivery, our team guides you every step of the way, ensuring you understand your options and receive reliable answers when you need them most.
+              Samples for applicable tests are analyzed by an AABB accredited laboratory, supporting high accuracy for legal and immigration cases when required. We understand that DNA testing often occurs during sensitive family situations, which is why we provide compassionate, bilingual support throughout the entire process. From initial consultation to final results delivery, our team guides you every step of the way, ensuring you understand your options and receive reliable answers when you need them most.
             </p>
           </div>
 

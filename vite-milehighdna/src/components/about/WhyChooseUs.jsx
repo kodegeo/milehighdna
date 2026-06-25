@@ -14,7 +14,7 @@ const WhyChooseUs = ({ title, content, imageUrl }) => {
             DNA testing is often required during important and sometimes stressful moments. Whether the purpose is legal compliance, immigration, medical clarity, relationship confirmation, or personal peace of mind, accuracy and proper handling matter.
 <br />
 <br />
-Mile High DNA Testing provides professional DNA testing services supported by accredited partner laboratory and real human guidance. We are not AABB accredited; legal and immigration testing uses an accredited partner laboratory where applicable. Our approach combines scientific precision with accessible support to ensure every client understands the process and receives reliable results.
+Mile High DNA Testing provides professional DNA testing services supported by an AABB accredited laboratory and real human guidance. We are not AABB accredited; legal and immigration testing uses an AABB accredited laboratory where applicable. Our approach combines scientific precision with accessible support to ensure every client understands the process and receives reliable results.
             </p>
         </div>
 

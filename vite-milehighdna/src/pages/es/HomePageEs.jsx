@@ -17,7 +17,7 @@ function HomePageEs() {
       <title>Pruebas de ADN en Denver | Legal, Inmigración y Familiares</title>
       <meta
         name="description"
-        content="Servicios de pruebas de ADN en español en Denver, Aurora y Lakewood. Pruebas legales, de inmigración y familiares con laboratorios acreditados por la AABB."
+        content="Servicios de pruebas de ADN en español en Denver, Aurora y Lakewood. Pruebas legales, de inmigración y familiares. Colaboramos con laboratorios acreditados por la AABB."
       />
 
       {/* ✅ CANONICAL */}
@@ -28,7 +28,7 @@ function HomePageEs() {
 
       {/* Open Graph */}
       <meta property="og:title" content="Pruebas de ADN en Colorado | Paternidad, Inmigración, Legal" />
-      <meta property="og:description" content="Realiza tu prueba de ADN con un laboratorio acreditado por AABB. Pruebas legales y privadas en Denver, Aurora y comunidades cercanas." />
+      <meta property="og:description" content="Colaboramos con un laboratorio acreditado por la AABB para pruebas legales y de inmigración. Pruebas privadas en Denver, Aurora y comunidades cercanas." />
       <meta property="og:image" content="https://milehighdnatesting.com/images/banner-1200.png" />
       <meta property="og:url" content="https://milehighdnatesting.com/es" />
       <meta property="og:type" content="website" />
@@ -74,7 +74,7 @@ function HomePageEs() {
           <div className="max-w-2xl text-white">
             <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">Servicios Profesionales de Pruebas de ADN en Colorado</h1>
             <p className="text-lg md:text-xl mb-8">
-            Pruebas de ADN claras, seguras y confidenciales. Resultados rápidos y válidos para uso legal o personal. Encuentra las respuestas que necesitas con nuestro laboratorio acreditado por la AABB. Servicios disponibles en español.
+            Pruebas de ADN claras, seguras y confidenciales. Resultados rápidos y válidos para uso legal o personal. Colaboramos con un laboratorio acreditado por la AABB para pruebas legales y de inmigración. Servicios disponibles en español.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link

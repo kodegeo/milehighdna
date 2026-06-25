@@ -16,7 +16,7 @@ const GrandparentageStepsEs = () => {
         number: 3,
         title: 'Análisis en laboratorio',
         description:
-          'Nuestro laboratorio acreditado por la AABB compara los perfiles genéticos para determinar la probabilidad de una relación biológica.',
+          'Un laboratorio acreditado por la AABB con el que colaboramos compara los perfiles genéticos para determinar la probabilidad de una relación biológica.',
       },
       {
         number: 4,

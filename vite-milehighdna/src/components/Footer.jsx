@@ -2,7 +2,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import clsx from 'clsx';
-import { MH_FOOTER_DISCLOSURE } from '../constants/aabbComplianceCopy';
+import { MH_FOOTER_DISCLOSURE, PARTNER_LAB_NAV_LABEL, PARTNER_LAB_PAGE_PATH } from '../constants/aabbComplianceCopy';
 
 
 const Footer = () => {
@@ -21,7 +21,7 @@ const Footer = () => {
           <ul className="space-y-2">
             <li><Link to="/about" className="text-gray-700 hover:text-blue-600 transition duration-300">About Us</Link></li>
             <li><Link to="/services" className="text-gray-700 hover:text-blue-600 transition duration-300">Services</Link></li>
-            <li><Link to="/aabb-accredited-dna-testing-denver" className="text-gray-700 hover:text-blue-600 transition duration-300">Accredited Partner Laboratory</Link></li>
+            <li><Link to={PARTNER_LAB_PAGE_PATH} className="text-gray-700 hover:text-blue-600 transition duration-300">{PARTNER_LAB_NAV_LABEL}</Link></li>
             <li><Link to="/faq" className="text-gray-700 hover:text-blue-600 transition duration-300">FAQ</Link></li>
           </ul>
         </div>

@@ -1,9 +1,9 @@
 const SiblingshipWhyChooseUs = () => {
     const benefits = [
       {
-      title: 'Accredited Partner Laboratory',
+      title: 'Partner with an AABB Accredited Laboratory',
       description:
-        'Legal and immigration testing is provided through our accredited partner laboratory, with chain-of-custody standards where required.',
+        'Legal and immigration testing is provided through an AABB accredited laboratory we partner with, with chain-of-custody standards where required.',
       },
       {
         title: 'Legal & Non-Legal Options',

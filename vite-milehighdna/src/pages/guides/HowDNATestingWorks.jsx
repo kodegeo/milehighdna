@@ -48,7 +48,7 @@ export default function HowDNATestingWorks() {
             DNA testing is used when people need to confirm biological relationships. Common situations include establishing paternity for child support or custody, confirming family ties for immigration, peace-of-mind testing during or after pregnancy, and inheritance or probate cases.
           </p>
           <p className="text-lg text-gray-600 mb-6">
-            Courts and government agencies often require tests performed under strict chain-of-custody and by accredited partner laboratory. For personal knowledge only, non-legal (peace-of-mind) tests are also available. Understanding the difference helps you choose the right test; see <Link to="/guides/dna-testing-results-explained" className="text-blue-600 underline">understanding DNA test results</Link> for how to read reports.
+            Courts and government agencies often require tests performed under strict chain-of-custody and by an AABB accredited laboratory. For personal knowledge only, non-legal (peace-of-mind) tests are also available. Understanding the difference helps you choose the right test; see <Link to="/guides/dna-testing-results-explained" className="text-blue-600 underline">understanding DNA test results</Link> for how to read reports.
           </p>
         </>
       }
@@ -65,7 +65,7 @@ export default function HowDNATestingWorks() {
       legal={
         <>
           <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-            Legal DNA testing follows documented chain-of-custody: verified ID, certified collection, and analysis by an accredited partner laboratory. Results are admissible in court and for USCIS. Non-legal (peace-of-mind) testing does not include these steps and is for personal information only.
+            Legal DNA testing follows documented chain-of-custody: verified ID, certified collection, and analysis by an AABB accredited laboratory. Results are admissible in court and for USCIS. Non-legal (peace-of-mind) testing does not include these steps and is for personal information only.
           </p>
           <p className="text-lg text-gray-600 mb-6">
             If you might need results for court or immigration, start with legal testing from the beginning. Converting a non-legal test to legal usually is not possible. For more, read our guides on <Link to="/guides/court-admissible-dna-testing" className="text-blue-600 underline">court admissible DNA testing</Link> and <Link to="/guides/chain-of-custody-dna-testing" className="text-blue-600 underline">chain of custody DNA testing</Link>.

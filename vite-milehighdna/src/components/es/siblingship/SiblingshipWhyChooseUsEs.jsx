@@ -1,9 +1,9 @@
 const SiblingshipWhyChooseUs = () => {
     const benefits = [
       {
-        title: 'Laboratorio Asociado Acreditado',
+        title: 'Asociación con laboratorio acreditado por AABB',
         description:
-          'Todas nuestras pruebas de ADN se procesan en laboratorios acreditados por la AABB, lo que garantiza el más alto nivel de precisión científica y validez legal.',
+          'Colaboramos con laboratorios acreditados por la AABB para pruebas legales y de inmigración, lo que ayuda a garantizar precisión científica y validez legal cuando corresponde.',
       },
       {
         title: 'Opciones Legales y No Legales',

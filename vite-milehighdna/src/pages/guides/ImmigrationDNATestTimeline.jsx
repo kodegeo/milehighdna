@@ -49,14 +49,14 @@ export default function ImmigrationDNATestTimeline() {
             Timeline matters when USCIS or the embassy has given you a deadline to submit DNA results. Planning ahead for collection here and abroad, shipping, and lab processing helps you meet that deadline. Do not wait until the last minute to schedule.
           </p>
           <p className="text-lg text-gray-600 mb-6">
-            For embassy-specific procedures, read <Link to="/guides/embassy-dna-testing" className="text-blue-600 underline">embassy DNA testing explained</Link>. For lab requirements, see <Link to="/guides/aabb-labs-for-immigration" className="text-blue-600 underline">accredited partner laboratory requirements for immigration DNA tests</Link>.
+            For embassy-specific procedures, read <Link to="/guides/embassy-dna-testing" className="text-blue-600 underline">embassy DNA testing explained</Link>. For lab requirements, see <Link to="/guides/aabb-labs-for-immigration" className="text-blue-600 underline">AABB accredited laboratory requirements for immigration DNA tests</Link>.
           </p>
         </>
       }
       process={
         <>
           <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-            After you receive the request, schedule collection for all participants as soon as possible. Each person is collected at an approved site with ID and chain-of-custody. Samples are sent to the accredited partner laboratory (from the U.S. and from overseas if applicable). The lab processes and issues the report; you or your attorney submit it as directed. Lab processing is usually a matter of business days; the rest depends on logistics.
+            After you receive the request, schedule collection for all participants as soon as possible. Each person is collected at an approved site with ID and chain-of-custody. Samples are sent to the AABB accredited laboratory (from the U.S. and from overseas if applicable). The lab processes and issues the report; you or your attorney submit it as directed. Lab processing is usually a matter of business days; the rest depends on logistics.
           </p>
           <p className="text-lg text-gray-600 mb-6">
             For comparison with other test types, see <Link to="/guides/how-long-does-dna-testing-take" className="text-blue-600 underline">how long DNA test results take</Link>. For the full immigration process, read <Link to="/guides/immigration-dna-testing-process" className="text-blue-600 underline">immigration DNA testing process</Link>.
@@ -66,7 +66,7 @@ export default function ImmigrationDNATestTimeline() {
       legal={
         <>
           <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-            Immigration DNA testing is always performed as legal testing with an accredited partner laboratory and chain-of-custody. The same standards that ensure admissibility also affect how the process is coordinated—using approved collectors and partner-laboratory processing keeps the timeline predictable and results acceptable.
+            Immigration DNA testing is always performed as legal testing with an AABB accredited laboratory and chain-of-custody. The same standards that ensure admissibility also affect how the process is coordinated—using approved collectors and partner-laboratory processing keeps the timeline predictable and results acceptable.
           </p>
           <p className="text-lg text-gray-600 mb-6">
             For court-admissible testing in general, see <Link to="/guides/court-admissible-dna-testing" className="text-blue-600 underline">court admissible DNA testing</Link> and <Link to="/guides/chain-of-custody-dna-testing" className="text-blue-600 underline">chain of custody DNA testing</Link>.
@@ -78,7 +78,7 @@ export default function ImmigrationDNATestTimeline() {
         { title: "How Long Do DNA Test Results Take?", path: "/guides/how-long-does-dna-testing-take" }
       ]}
       ctaHeading="Immigration DNA Testing Coordination"
-      ctaSubline="Immigration cases must be initiated by our accredited partner laboratory. We coordinate local sample collection when directed."
+      ctaSubline="Immigration cases must be initiated by an AABB accredited laboratory we partner with. We coordinate local sample collection when directed."
     />
   );
 }

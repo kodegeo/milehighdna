@@ -93,9 +93,9 @@ const ServicesEs = () => {
               </p>
             </div>
             <div>
-              <h3 className="text-xl font-semibold mb-4">Laboratorio Asociado Acreditado</h3>
+              <h3 className="text-xl font-semibold mb-4">Asociación con laboratorio acreditado por AABB</h3>
               <p className="text-gray-600 mb-4">
-                Las pruebas legales y de inmigración se realizan a través de nuestro laboratorio asociado acreditado, garantizando los más altos estándares de calidad y precisión.
+                Colaboramos con laboratorios acreditados por la AABB para pruebas legales y de inmigración, garantizando los más altos estándares de calidad y precisión.
               </p>
             </div>
             <div>

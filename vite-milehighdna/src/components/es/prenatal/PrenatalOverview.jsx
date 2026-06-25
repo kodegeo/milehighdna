@@ -26,7 +26,7 @@ return (
         <div className="p-6 border rounded-xl shadow-sm hover:shadow-md transition">
           <h3 className="text-xl font-semibold text-blue-700 mb-2">Preciso</h3>
           <p className="text-gray-600">
-          Los resultados son más del 99.9% concluyentes y están acreditados por la AABB.
+          Los resultados son más del 99.9% concluyentes. Para uso legal o de inmigración, el análisis se realiza en un laboratorio acreditado por la AABB con el que colaboramos.
           </p>
         </div>
         <div className="p-6 border rounded-xl shadow-sm hover:shadow-md transition">

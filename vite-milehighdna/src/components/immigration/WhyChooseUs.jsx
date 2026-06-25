@@ -13,7 +13,7 @@ const WhyChooseUs = () => {
       {
         title: 'Rapid Laboratory Processing',
         description:
-          'Testing is performed by UFC, an accredited partner laboratory approved for USCIS cases. Quick and accurate results with full compliance.',
+          'Testing is performed by UFC, an AABB accredited laboratory approved for USCIS cases. Quick and accurate results with full compliance.',
       },
       {
         title: 'Direct Result Submission',

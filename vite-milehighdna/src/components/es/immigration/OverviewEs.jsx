@@ -12,7 +12,7 @@ const OverviewEs = () => {
           <div className="p-6 border rounded-xl shadow-sm hover:shadow-md transition">
             <h3 className="text-xl font-semibold text-blue-700 mb-2">Cumple con los requisitos del USCIS</h3>
             <p className="text-gray-600">
-            Todas las pruebas se realizan en laboratorios acreditados por la AABB, aprobados por el USCIS y embajadas de EE.UU. en todo el mundo.
+            Colaboramos con un laboratorio acreditado por la AABB para pruebas de inmigración iniciadas y dirigidas por el laboratorio asociado, aceptadas por USCIS y embajadas de EE.UU.
             </p>
           </div>
           <div className="p-6 border rounded-xl shadow-sm hover:shadow-md transition">

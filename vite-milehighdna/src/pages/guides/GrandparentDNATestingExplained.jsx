@@ -13,7 +13,7 @@ const faqs = [
   },
   {
     question: "Can grandparent DNA test results be used in court?",
-    answer: "Yes, if the test is performed as a legal test with identity verification, chain-of-custody, and an accredited partner laboratory. Results can then be submitted to the court. Peace-of-mind grandparent tests are not admissible."
+    answer: "Yes, if the test is performed as a legal test with identity verification, chain-of-custody, and an AABB accredited laboratory. Results can then be submitted to the court. Peace-of-mind grandparent tests are not admissible."
   },
   {
     question: "When is grandparent DNA testing used?",

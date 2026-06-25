@@ -2,7 +2,7 @@ const StreamlinedServices = () => {
   const services = [
     { title: 'U.S. DNA Collection', rest: 'appointments coordinated at our Denver office or approved partner facilities nationwide' },
     { title: 'International Coordination', rest: 'secure DNA kit delivery to U.S. Embassies and Consulates abroad' },
-    { title: 'Rapid Laboratory Processing', rest: 'testing performed by an accredited partner laboratory' },
+    { title: 'Rapid Laboratory Processing', rest: 'testing performed by an AABB accredited laboratory' },
     { title: 'Direct Result Submission', rest: 'official results sent directly to USCIS or the requesting agency' },
     { title: 'Nationwide Support', rest: 'assistance available throughout the United States' },
   ];

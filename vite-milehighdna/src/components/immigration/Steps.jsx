@@ -10,7 +10,7 @@ const Steps = () => {
         number: 2,
         title: 'UFC Will Contact You With Next Steps',
         description:
-          'After submission, UFC (our accredited partner laboratory) will provide custom pricing for your case, required forms and invoice, and payment options such as credit cards or money orders.',
+          'After submission, UFC (an AABB accredited laboratory we partner with) will provide custom pricing for your case, required forms and invoice, and payment options such as credit cards or money orders.',
       },
       {
         number: 3,
@@ -22,7 +22,7 @@ const Steps = () => {
         number: 4,
         title: 'Laboratory Testing and Analysis',
         description:
-          'Testing is performed by UFC, an accredited partner laboratory approved for USCIS cases. All testing follows strict chain-of-custody procedures for legal admissibility.',
+          'Testing is performed by UFC, an AABB accredited laboratory approved for USCIS cases. All testing follows strict chain-of-custody procedures for legal admissibility.',
       },
       {
         number: 5,

@@ -1,9 +1,9 @@
 const GrandparentageWhyChooseUs = () => {
     const reasons = [
       {
-        title: 'Accredited Partner Laboratory',
+        title: 'Partner with an AABB Accredited Laboratory',
         description:
-          'All tests are processed through accredited partner laboratory, ensuring legal compliance and industry-leading accuracy.',
+          'All tests are processed through AABB accredited laboratory, ensuring legal compliance and industry-leading accuracy.',
       },
       {
         title: 'Legal & Peace-of-Mind Options',

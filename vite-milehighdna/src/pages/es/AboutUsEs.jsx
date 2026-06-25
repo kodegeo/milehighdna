@@ -16,7 +16,7 @@ const AboutUsPage = () => {
         <title>Sobre Nosotros | Pruebas de ADN en Español en Colorado</title>
         <meta 
           name="description" 
-          content="Conoce a Mile High DNA Testing. Servicios confiables de pruebas de ADN en Denver, Aurora y Lakewood. Atención en español. Laboratorio acreditado por la AABB. Resultados válidos para inmigración y corte." 
+          content="Conoce a Mile High DNA Testing. Servicios confiables de pruebas de ADN en Denver, Aurora y Lakewood. Atención en español. Colaboramos con laboratorios acreditados por la AABB."
         />
 
         <link rel="canonical" href="https://milehighdnatesting.com/es/sobre-nosotros" />
@@ -25,7 +25,7 @@ const AboutUsPage = () => {
         <link rel="alternate" hreflang="x-default" href="https://milehighdnatesting.com" />
 
         <meta property="og:title" content="Quiénes Somos | Pruebas de ADN en Español en Denver" />
-        <meta property="og:description" content="Mile High DNA Testing ofrece servicios de pruebas de ADN legales, personales y migratorias con atención profesional en español. Acreditado por AABB." />
+        <meta property="og:description" content="Mile High DNA Testing ofrece servicios de pruebas de ADN legales, personales y migratorias con atención profesional en español. Colaboramos con laboratorios acreditados por la AABB." />
         <meta property="og:image" content="https://milehighdnatesting.com/images/banner-1200.png" />
         <meta property="og:url" content="https://milehighdnatesting.com/es/sobre-nosotros" />
         <meta property="og:type" content="website" />
@@ -50,7 +50,7 @@ Ofrecemos atención profesional en inglés y español, con empatía, precisión 
           <>
             En Mile High DNA Testing nos dedicamos a ofrecer pruebas de ADN confiables en Colorado para ayudarte a tomar decisiones importantes con información clara y precisa.
             <br /> <br />
-            Trabajamos con un laboratorio acreditado por la AABB y brindamos atención profesional en inglés y en español.
+            Colaboramos con laboratorios acreditados por la AABB para pruebas legales y de inmigración, y brindamos atención profesional en inglés y en español.
             <br /><br />
             Nos enorgullece servir a comunidades diversas, incluyendo a familias que requieren pruebas para propósitos legales, personales o migratorios en Colorado.
             <br /><br />

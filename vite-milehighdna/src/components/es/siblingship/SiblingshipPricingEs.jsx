@@ -15,7 +15,7 @@ const SiblingshipPricing = () => {
               Dos personas se analizan para determinar si son hermanos completos o medios hermanos.              </p>
               <p className="text-2xl font-bold text-blue-700 mb-4">$349</p>
               <ul className="text-left text-gray-700 space-y-2 mb-4">
-                <li>✔ Laboratorio Asociado Acreditado</li>
+                <li>✔ Colaboramos con laboratorio acreditado por AABB</li>
                 <li>✔ 2 Participantes</li>
                 <li>✔ Resultados en 2–5 Días Hábiles</li>
                 <li>✔ Válida para uso personal</li>

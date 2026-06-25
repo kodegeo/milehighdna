@@ -38,7 +38,7 @@ export default function HowAccurateIsDNATesting() {
             DNA testing for paternity and other relationships is highly accurate when performed by accredited laboratories using validated methods. Results are expressed as probabilities—for example, 99.99% probability of paternity when the alleged father is included.
           </p>
           <p className="text-lg text-gray-600 mb-6">
-            At Mile High DNA Testing, we work with an accredited partner laboratory so that legal and immigration results meet court and USCIS standards. For more on the process, see <Link to="/guides/how-dna-testing-works" className="text-blue-600 underline">how DNA testing works</Link>. To <Link to="/appointments" className="text-blue-600 underline">schedule a test</Link>, visit our appointments page.
+            At Mile High DNA Testing, we work with an AABB accredited laboratory so that legal and immigration results meet court and USCIS standards. For more on the process, see <Link to="/guides/how-dna-testing-works" className="text-blue-600 underline">how DNA testing works</Link>. To <Link to="/appointments" className="text-blue-600 underline">schedule a test</Link>, visit our appointments page.
           </p>
         </>
       }
@@ -65,7 +65,7 @@ export default function HowAccurateIsDNATesting() {
       legal={
         <>
           <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-            Legal DNA testing is designed for court and agency use. It requires verified identification, chain-of-custody procedures, and analysis by an accredited partner laboratory. The same high accuracy applies, with the added assurance that results will be accepted as evidence.
+            Legal DNA testing is designed for court and agency use. It requires verified identification, chain-of-custody procedures, and analysis by an AABB accredited laboratory. The same high accuracy applies, with the added assurance that results will be accepted as evidence.
           </p>
           <p className="text-lg text-gray-600 mb-6">
             Non-legal tests are for personal knowledge only and are not admissible in court. If you might need results for legal or immigration purposes, choose legal testing from the start. See <Link to="/guides/court-admissible-dna-testing" className="text-blue-600 underline">court admissible DNA testing</Link> for more.

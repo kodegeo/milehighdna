@@ -9,9 +9,9 @@ const PrenatalWhyChooseUs = () => {
         'La prueba prenatal solo requiere un simple dibujo de sangre de la madre y un hisopo bucal del presunto padre—sin riesgo para el embarazo.',
     },
     {
-      title: 'Laboratorio Asociado Acreditado',
+      title: 'Asociación con laboratorio acreditado por AABB',
       description:
-        'Todas las pruebas son procesadas por laboratorios acreditados por la AABB, garantizando precisión, confiabilidad y cumplimiento legal.',
+        'Colaboramos con un laboratorio acreditado por la AABB para pruebas legales y de inmigración, garantizando precisión, confiabilidad y cumplimiento cuando corresponde.',
     },
     {
       title: 'Opciones legales y de tranquilidad',

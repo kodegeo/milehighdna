@@ -381,7 +381,7 @@ export default function MileHighDNACorner() {
             <img src={dnaNearMeImg} alt="DNA Test Near Me" className="w-full h-48 object-cover" />
             <div className="p-6">
               <h3 className="text-xl font-bold mb-3 text-gray-800">DNA Test Near Me: Trusted DNA Testing Locations Across Denver</h3>
-              <p className="text-gray-600 mb-4">Find trusted DNA testing across Denver, Aurora, Lakewood, and throughout Colorado. Legal and immigration testing through our accredited partner laboratory.</p>
+              <p className="text-gray-600 mb-4">Find trusted DNA testing across Denver, Aurora, Lakewood, and throughout Colorado. Legal and immigration testing through an AABB accredited laboratory we partner with.</p>
               <div className="text-sm text-gray-500 mb-4">
                 <span>By Mile High DNA Corner Team</span> • <span>October 2025</span>
               </div>
@@ -398,7 +398,7 @@ export default function MileHighDNACorner() {
             <img src={immigrationImg} alt="Immigration DNA Testing" className="w-full h-48 object-cover" />
             <div className="p-6">
               <h3 className="text-xl font-bold mb-3 text-gray-800">Immigration DNA Testing in Denver: A Complete Guide</h3>
-              <p className="text-gray-600 mb-4">Learn where to get immigration DNA testing in Denver with an accredited partner laboratory and bilingual support</p>
+              <p className="text-gray-600 mb-4">Learn where to get immigration DNA testing in Denver with an AABB accredited laboratory and bilingual support</p>
               <div className="text-sm text-gray-500 mb-4">
                 <span>By Mile High DNA Corner Team</span> • <span>September 2025</span>
               </div>

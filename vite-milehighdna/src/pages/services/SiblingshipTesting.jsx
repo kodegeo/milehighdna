@@ -26,7 +26,7 @@ const SiblingshipTesting = () => {
         <title>Sibling DNA Test in Denver, CO | Legal & Non-Legal Relationship Testing | Mile High DNA</title>
         <meta
           name="description"
-          content="Confirm sibling relationships with accurate DNA testing in Denver, Aurora, Thornton, and Lakewood, Colorado. Legal and non-legal sibling DNA tests with fast, confidential results. Legal and immigration testing through our accredited partner laboratory."
+          content="Confirm sibling relationships with accurate DNA testing in Denver, Aurora, Thornton, and Lakewood, Colorado. Legal and non-legal sibling DNA tests with fast, confidential results. Legal and immigration testing through an AABB accredited laboratory we partner with."
         />
         <meta
           name="keywords"
@@ -36,7 +36,7 @@ const SiblingshipTesting = () => {
         
         {/* OG / Twitter */}
         <meta property="og:title" content="Sibling DNA Test in Denver | Legal & Non-Legal Relationship Testing" />
-        <meta property="og:description" content="Sibling DNA testing in Denver. Legal and non-legal testing for full, half, or no biological relation. Legal and immigration testing through our accredited partner laboratory." />
+        <meta property="og:description" content="Sibling DNA testing in Denver. Legal and non-legal testing for full, half, or no biological relation. Legal and immigration testing through an AABB accredited laboratory we partner with." />
         <meta property="og:image" content="https://milehighdnatesting.com/images/banner-1200.png" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://milehighdnatesting.com/services/siblingship-testing" />

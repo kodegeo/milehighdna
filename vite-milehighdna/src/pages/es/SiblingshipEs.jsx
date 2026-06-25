@@ -41,7 +41,7 @@ const SiblingshipPageEs = () => {
 
       <SiblingshipHero
       title="Prueba de ADN entre Hermanos en Denver, Aurora y Colorado | Mile High DNA"
-      subtitle="Confirme relaciones biológicas entre hermanos o medios hermanos con pruebas de ADN legales o personales. Resultados confidenciales y válidos en la corte. Laboratorio acreditado por AABB."
+      subtitle="Confirme relaciones biológicas entre hermanos o medios hermanos con pruebas de ADN legales o personales. Resultados confidenciales y válidos en la corte. Colaboramos con un laboratorio acreditado por la AABB."
       />
       <SiblingshipPricing />
       <SiblingshipOverview />

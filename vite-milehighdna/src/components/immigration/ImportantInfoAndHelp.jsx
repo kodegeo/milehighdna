@@ -17,12 +17,12 @@ const ImportantInfoAndHelp = () => {
             <strong>Pricing:</strong> All immigration DNA testing fees are case-specific and not posted online.
           </div>
           <div className="p-6 bg-[#F5F7FA] border border-gray-200 rounded-xl shadow-sm text-base text-gray-700 leading-relaxed">
-            <strong>How to Begin:</strong> Immigration DNA cases must be initiated by our accredited partner laboratory through the referral form and{' '}
+            <strong>How to Begin:</strong> Immigration DNA cases must be initiated by an AABB accredited laboratory we partner with through the referral form and{' '}
             <strong>cannot be started or purchased directly through our website</strong>. Mile High DNA Testing participates at the partner laboratory&apos;s direction once your case is opened.
           </div>
           <div className="p-6 bg-[#F5F7FA] border border-gray-200 rounded-xl shadow-sm text-base text-gray-700 leading-relaxed">
             <strong>Accreditation:</strong> All immigration DNA testing is performed by{' '}
-            <strong>UFC, an accredited partner laboratory approved for USCIS cases</strong>.
+            <strong>UFC, an AABB accredited laboratory approved for USCIS cases</strong>.
           </div>
         </div>
         <p className="text-base text-gray-600 mb-10 leading-relaxed">

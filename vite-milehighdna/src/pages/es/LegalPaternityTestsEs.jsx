@@ -21,7 +21,7 @@ const LegalPaternityTestsEs = () => {
         </title>
         <meta
           name="description"
-          content="Prueba de paternidad legal en Denver, Aurora, Lakewood, Westminster y Thornton. Resultados acreditados por AABB, válidos en la corte y en inmigración. Citas el mismo día y resultados rápidos."
+          content="Prueba de paternidad legal en Denver, Aurora, Lakewood, Westminster y Thornton. Análisis en laboratorio acreditado por la AABB. Resultados válidos en la corte y en inmigración."
         />
         <link
           rel="canonical"
@@ -49,7 +49,7 @@ const LegalPaternityTestsEs = () => {
         />
         <meta
           property="og:description"
-          content="Prueba de ADN legal para casos de custodia, manutención infantil y procesos migratorios. Acreditado por AABB. Resultados rápidos y admisibles."
+          content="Prueba de ADN legal para casos de custodia, manutención infantil y procesos migratorios. Colaboramos con laboratorios acreditados por la AABB. Resultados rápidos y admisibles."
         />
         <meta
           property="og:image"
@@ -85,7 +85,7 @@ const LegalPaternityTestsEs = () => {
                 "name": "¿Ofrecen pruebas de paternidad en Aurora, Colorado?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Sí. Atendemos familias en Aurora desde nuestra oficina en Denver, con resultados acreditados por AABB."
+                  "text": "Sí. Atendemos familias en Aurora desde nuestra oficina en Denver, con análisis en laboratorio acreditado por la AABB cuando corresponde."
                 }
               },
               {

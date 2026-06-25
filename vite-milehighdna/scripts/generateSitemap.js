@@ -149,7 +149,7 @@ function getPriorityAndFreq(route) {
   // Information pages
   if (route === '/about' || 
       route === '/faq' || 
-      route === '/aabb-accreditation') {
+      route === '/partner-with-aabb-accredited-laboratory-denver') {
     return { priority: '0.6', changefreq: 'monthly' };
   }
   
@@ -195,7 +195,7 @@ function getHreflang(route) {
     '/appointments': { 'en-us': '/appointments', 'es-us': '/es/programar-cita' },
     '/faq': { 'en-us': '/faq', 'es-us': '/es/preguntas-frecuentes' },
     '/get-results': { 'en-us': '/get-results', 'es-us': '/es/consultar-resultados' },
-    '/aabb-accreditation': { 'en-us': '/aabb-accreditation', 'es-us': '/es/aabb-accreditation' },
+    '/partner-with-aabb-accredited-laboratory-denver': { 'en-us': '/partner-with-aabb-accredited-laboratory-denver', 'es-us': '/es/asociacion-con-laboratorio-acreditado-por-aabb-denver' },
   };
   
   return hreflangMap[route] || null;

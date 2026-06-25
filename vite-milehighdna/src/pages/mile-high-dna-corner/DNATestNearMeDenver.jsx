@@ -18,7 +18,7 @@ const DNATestNearMeDenver = () => {
 
         <meta
           name="description"
-          content="Searching for a DNA test near you? Mile High DNA Testing offers trusted DNA testing across Denver, Aurora, Lakewood, Greeley, and throughout Colorado. Legal and immigration testing through our accredited partner laboratory."
+          content="Searching for a DNA test near you? Mile High DNA Testing offers trusted DNA testing across Denver, Aurora, Lakewood, Greeley, and throughout Colorado. Legal and immigration testing through an AABB accredited laboratory we partner with."
         />
 
         <link
@@ -53,7 +53,7 @@ const DNATestNearMeDenver = () => {
         />
         <meta
           name="twitter:description"
-          content="Local, trusted DNA testing across Denver and Colorado. Legal and immigration testing through our accredited partner laboratory."
+          content="Local, trusted DNA testing across Denver and Colorado. Legal and immigration testing through an AABB accredited laboratory we partner with."
         />
         <meta
           name="twitter:image"

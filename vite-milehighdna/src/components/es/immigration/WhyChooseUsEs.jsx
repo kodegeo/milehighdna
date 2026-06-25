@@ -1,9 +1,9 @@
 const WhyChooseUs = () => {
   const benefits = [
     {
-      title: 'Laboratorio Asociado Acreditado',
+      title: 'Asociación con laboratorio acreditado por AABB',
       description:
-        'Todas las pruebas son procesadas a través de un laboratorio acreditado por AABB, aprobado por USCIS y embajadas de EE.UU. en todo el mundo.',
+        'Colaboramos con un laboratorio acreditado por la AABB para pruebas de inmigración iniciadas y dirigidas por el laboratorio asociado, aceptadas por USCIS y embajadas de EE.UU.',
     },
     {
       title: 'Resultados Rápidos y Confiables',

@@ -13,11 +13,11 @@ const AT_HOME_FAQS = [
   {
     question: "1. Is at-home DNA testing accurate?",
     answerSchema:
-      "When processed by an accredited partner laboratory, at-home paternity testing provides a 99.999% probability of paternity when the alleged father is included. Accuracy is determined by laboratory analysis, not collection location.",
+      "When processed by an AABB accredited laboratory, at-home paternity testing provides a 99.999% probability of paternity when the alleged father is included. Accuracy is determined by laboratory analysis, not collection location.",
     answer: (
       <>
         <p>
-          When processed by an accredited partner laboratory, at-home paternity testing provides a{" "}
+          When processed by an AABB accredited laboratory, at-home paternity testing provides a{" "}
           <strong>99.999% probability of paternity</strong> when the alleged father is included.
         </p>
         <p>Accuracy is determined by laboratory analysis, not collection location.</p>
@@ -87,12 +87,12 @@ const AT_HOME_FAQS = [
   {
     question: "8. How should swabs be stored before mailing?",
     answerSchema:
-      "Swabs should be kept dry at room temperature and returned promptly. All testing is performed by an accredited partner laboratory in accordance with established DNA testing standards.",
+      "Swabs should be kept dry at room temperature and returned promptly. All testing is performed by an AABB accredited laboratory in accordance with established DNA testing standards.",
     answer: (
       <>
         <p>Swabs should be kept dry at room temperature and returned promptly.</p>
         <p>
-          All testing is performed by an accredited partner laboratory in accordance with established DNA testing
+          All testing is performed by an AABB accredited laboratory in accordance with established DNA testing
           standards.
         </p>
       </>
@@ -108,7 +108,7 @@ const AtHomeDNAKits = () => {
         <title>At-Home DNA Kits in Denver | Postnatal Peace of Mind Testing | Mile High DNA</title>
         <meta
           name="description"
-          content="At-home DNA test kits in Denver: convenient, non-legal postnatal testing with accredited partner laboratory accuracy. Order your kit, collect at home, ship securely. Discreet packaging; nationwide shipping (NY restrictions apply)."
+          content="At-home DNA test kits in Denver: convenient, non-legal postnatal testing with an AABB accredited laboratory accuracy. Order your kit, collect at home, ship securely. Discreet packaging; nationwide shipping (NY restrictions apply)."
         />
         <link rel="canonical" href="https://milehighdnatesting.com/services/at-home-dna-kits" />
 
@@ -149,7 +149,7 @@ const AtHomeDNAKits = () => {
             At-Home DNA Kits in Denver
           </h1>
           <p className="text-xl text-gray-200 mb-4 max-w-2xl">
-            Convenient, non-legal postnatal DNA testing with the same accredited partner laboratory accuracy as
+            Convenient, non-legal postnatal DNA testing with the same AABB accredited laboratory accuracy as
             in-office testing.
           </p>
           <p className="text-gray-200 mb-8 max-w-2xl">
@@ -270,7 +270,7 @@ const AtHomeDNAKits = () => {
             testing with chain-of-custody is required.
           </p>
           <p className="text-gray-700">
-            All testing is performed through accredited partner laboratory. Your privacy and the security of samples
+            All testing is performed through AABB accredited laboratory. Your privacy and the security of samples
             are prioritized.
           </p>
         </div>

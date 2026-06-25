@@ -184,7 +184,25 @@
 
     {
       "source": "/aabb-accreditation",
-      "destination": "https://milehighdnatesting.com/aabb-accredited-dna-testing-denver",
+      "destination": "https://milehighdnatesting.com/partner-with-aabb-accredited-laboratory-denver",
+      "permanent": true
+    },
+
+    {
+      "source": "/aabb-accredited-dna-testing-denver",
+      "destination": "https://milehighdnatesting.com/partner-with-aabb-accredited-laboratory-denver",
+      "permanent": true
+    },
+
+    {
+      "source": "/es/aabb-accreditation",
+      "destination": "https://milehighdnatesting.com/es/asociacion-con-laboratorio-acreditado-por-aabb-denver",
+      "permanent": true
+    },
+
+    {
+      "source": "/es/partner-with-aabb-accredited-laboratory-denver",
+      "destination": "https://milehighdnatesting.com/es/asociacion-con-laboratorio-acreditado-por-aabb-denver",
       "permanent": true
     },
 

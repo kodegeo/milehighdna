@@ -21,9 +21,9 @@ const GrandparentageOverviewEs = () => {
               Ya sea que necesites los resultados para un proceso legal, inmigración o simplemente para tener certeza personal, ofrecemos opciones adaptadas a tu situación.              </p>
             </div>
             <div className="p-6 border rounded-xl shadow-sm hover:shadow-md transition">
-              <h3 className="text-xl font-semibold text-blue-700 mb-2">Laboratorio Asociado Acreditado</h3>
+              <h3 className="text-xl font-semibold text-blue-700 mb-2">Asociación con laboratorio acreditado por AABB</h3>
               <p className="text-gray-600">
-              Todas nuestras pruebas se realizan en laboratorios acreditados por la AABB para garantizar precisión, confidencialidad y cumplimiento legal completo.              </p>
+              Colaboramos con laboratorios acreditados por la AABB para pruebas legales y de inmigración, con precisión, confidencialidad y cumplimiento cuando corresponde.              </p>
             </div>
           </div>
         </div>

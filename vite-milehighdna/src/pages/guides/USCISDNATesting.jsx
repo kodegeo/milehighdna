@@ -9,15 +9,15 @@ const faqs = [
   },
   {
     question: "What are USCIS DNA testing requirements?",
-    answer: "USCIS typically requires that relationship DNA testing be performed by an accredited partner laboratory with proper chain-of-custody and identity verification. Results must be in a format that USCIS accepts. Follow the exact instructions in your request letter."
+    answer: "USCIS typically requires that relationship DNA testing be performed by an AABB accredited laboratory with proper chain-of-custody and identity verification. Results must be in a format that USCIS accepts. Follow the exact instructions in your request letter."
   },
   {
     question: "Can I use any lab for USCIS DNA testing?",
-    answer: "No. USCIS requires testing by an accredited partner laboratory. The collection process must include identity verification and chain-of-custody. Using a non-accredited lab or skipping these steps can result in results not being accepted."
+    answer: "No. USCIS requires testing by an AABB accredited laboratory. The collection process must include identity verification and chain-of-custody. Using a non-accredited lab or skipping these steps can result in results not being accepted."
   },
   {
     question: "How do I schedule USCIS DNA testing in Denver?",
-    answer: "Contact a facility that coordinates immigration DNA testing with accredited partner laboratory, such as Mile High DNA Testing in Denver. They can help you complete the process according to your USCIS or embassy instructions."
+    answer: "Contact a facility that coordinates immigration DNA testing with an AABB accredited laboratory, such as Mile High DNA Testing in Denver. They can help you complete the process according to your USCIS or embassy instructions."
   }
 ];
 
@@ -35,10 +35,10 @@ export default function USCISDNATesting() {
       overview={
         <>
           <p className="text-xl text-gray-600 mb-6 leading-relaxed">
-            When U.S. Citizenship and Immigration Services (USCIS) requests DNA testing to verify a family relationship, the test must be performed by an accredited partner laboratory with identity verification and chain-of-custody procedures. Results are then submitted in the format specified in your request.
+            When U.S. Citizenship and Immigration Services (USCIS) requests DNA testing to verify a family relationship, the test must be performed by an AABB accredited laboratory with identity verification and chain-of-custody procedures. Results are then submitted in the format specified in your request.
           </p>
           <p className="text-lg text-gray-600 mb-6">
-            Mile High DNA Testing coordinates USCIS DNA testing in Denver. For the full process, see <Link to="/guides/immigration-dna-testing-process" className="text-blue-600 underline">immigration DNA testing process</Link> and <Link to="/guides/aabb-labs-for-immigration" className="text-blue-600 underline">accredited partner laboratory requirements for immigration DNA tests</Link>. To <Link to="/appointments" className="text-blue-600 underline">schedule a test</Link>, visit our appointments page.
+            Mile High DNA Testing coordinates USCIS DNA testing in Denver. For the full process, see <Link to="/guides/immigration-dna-testing-process" className="text-blue-600 underline">immigration DNA testing process</Link> and <Link to="/guides/aabb-labs-for-immigration" className="text-blue-600 underline">AABB accredited laboratory requirements for immigration DNA tests</Link>. To <Link to="/appointments" className="text-blue-600 underline">schedule a test</Link>, visit our appointments page.
           </p>
         </>
       }
@@ -65,16 +65,16 @@ export default function USCISDNATesting() {
       legal={
         <>
           <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-            All USCIS and embassy DNA testing is legal testing: it requires verified ID, chain-of-custody, and accredited partner laboratory analysis. There is no non-legal option for immigration—only tests that meet these requirements will be accepted.
+            All USCIS and embassy DNA testing is legal testing: it requires verified ID, chain-of-custody, and AABB accredited laboratory analysis. There is no non-legal option for immigration—only tests that meet these requirements will be accepted.
           </p>
           <p className="text-lg text-gray-600 mb-6">
-            For general court-admissible testing, see <Link to="/guides/court-admissible-dna-testing" className="text-blue-600 underline">court admissible DNA testing</Link>. For why AABB matters, read <Link to="/guides/aabb-labs-for-immigration" className="text-blue-600 underline">accredited partner laboratory requirements for immigration DNA tests</Link>.
+            For general court-admissible testing, see <Link to="/guides/court-admissible-dna-testing" className="text-blue-600 underline">court admissible DNA testing</Link>. For why AABB matters, read <Link to="/guides/aabb-labs-for-immigration" className="text-blue-600 underline">partner with an AABB accredited laboratory for immigration DNA tests</Link>.
           </p>
         </>
       }
       relatedGuides={[
         { title: "Immigration DNA Testing Process", path: "/guides/immigration-dna-testing-process" },
-        { title: "Accredited Partner Laboratories For Immigration DNA Tests", path: "/guides/aabb-labs-for-immigration" }
+        { title: "Partner With an AABB Accredited Laboratory for Immigration DNA Tests", path: "/guides/aabb-labs-for-immigration" }
       ]}
       ctaHeading="Complete Your USCIS DNA Test"
       ctaSubline="Schedule immigration DNA testing in Denver that meets USCIS requirements."

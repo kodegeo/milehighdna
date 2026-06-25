@@ -13,7 +13,7 @@ const faqs = [
   },
   {
     question: "Can avuncular DNA test results be used in court?",
-    answer: "Yes, if the test is performed as a legal test with identity verification, chain-of-custody, and an accredited partner laboratory. Results can then be submitted to the court or, when accepted, to immigration authorities. Peace-of-mind avuncular tests are not admissible."
+    answer: "Yes, if the test is performed as a legal test with identity verification, chain-of-custody, and an AABB accredited laboratory. Results can then be submitted to the court or, when accepted, to immigration authorities. Peace-of-mind avuncular tests are not admissible."
   },
   {
     question: "How accurate is avuncular DNA testing?",

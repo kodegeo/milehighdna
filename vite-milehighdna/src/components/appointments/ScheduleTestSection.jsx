@@ -52,7 +52,7 @@ const services = [
   },
   {
     name: 'Immigration DNA Testing (partner laboratory contact)',
-    description: 'This appointment connects you with our accredited partner laboratory for immigration DNA testing coordination. Mile High DNA Testing cannot initiate immigration cases independently — we participate at the partner laboratory\'s direction, including sample collection and documentation guidance for approved cases.',
+    description: 'This appointment connects you with an AABB accredited laboratory we partner with for immigration DNA testing coordination. Mile High DNA Testing cannot initiate immigration cases independently — we participate at the partner laboratory\'s direction, including sample collection and documentation guidance for approved cases.',
     link: 'https://calendly.com/milehighdnatesting/immigration',
     detailPath: '/services/immigration-dna-testing',
   },

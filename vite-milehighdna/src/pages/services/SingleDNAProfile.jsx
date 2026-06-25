@@ -23,7 +23,7 @@ const SingleDNAProfile = () => {
     { step: 1, title: "Schedule your appointment", description: "Book online or call our Denver office." },
     { step: 2, title: "Present government-issued ID", description: "Required for legal single profile tests." },
     { step: 3, title: "Quick cheek swab collection", description: "Certified in-office collection." },
-    { step: 4, title: "Samples shipped to accredited partner laboratory", description: "Professional laboratory analysis." },
+    { step: 4, title: "Samples shipped to AABB accredited laboratory", description: "Professional laboratory analysis." },
     { step: 5, title: "Results in 3–5 business days", description: "Secure PDF report delivered to you." }
   ];
 
@@ -91,7 +91,7 @@ const SingleDNAProfile = () => {
               <h4 className="text-2xl font-bold text-gray-800 mb-2">Non-Legal Single Profile</h4>
               <p className="text-3xl font-bold text-blue-600 mb-2">$250</p>
               <p className="text-sm text-gray-500 mb-4">Personal documentation only.</p>
-              <p className="text-gray-600 mb-4">Certified in-office collection and accredited partner laboratory analysis. Not court-admissible.</p>
+              <p className="text-gray-600 mb-4">Certified in-office collection and AABB accredited laboratory analysis. Not court-admissible.</p>
               <a
                 href={CALENDLY_EN}
                 target="_blank"
@@ -202,7 +202,7 @@ const SingleDNAProfile = () => {
             <li>Certified in-office collection</li>
             <li>Professional identity verification</li>
             <li>Secure documentation</li>
-            <li>accredited partner laboratory processing</li>
+            <li>AABB accredited laboratory processing</li>
             <li>Proper structure for future comparison testing</li>
           </ul>
           <p className="text-gray-700 font-medium">This ensures your DNA profile is preserved correctly the first time. We also coordinate <Link to="/services/legal-paternity-testing" className="text-blue-600 hover:underline">legal paternity DNA testing</Link> and <Link to="/services/immigration-dna-testing" className="text-blue-600 hover:underline">immigration DNA testing</Link> when comparison testing is needed.</p>
@@ -227,9 +227,9 @@ const SingleDNAProfile = () => {
                 <li>Government ID verification</li>
                 <li>Certified DNA collector</li>
                 <li>Documented chain-of-custody procedures</li>
-                <li>accredited partner laboratory analysis</li>
+                <li>AABB accredited laboratory analysis</li>
               </ul>
-              <p className="text-gray-700 mt-2">Legal testing ensures the profile is documented correctly if it may be used later in court. Learn more about <Link to="/aabb-accredited-dna-testing-denver" className="text-blue-600 hover:underline">accredited partner laboratory standards for legal DNA testing</Link>.</p>
+              <p className="text-gray-700 mt-2">Legal testing ensures the profile is documented correctly if it may be used later in court. Learn more about <Link to="/partner-with-aabb-accredited-laboratory-denver" className="text-blue-600 hover:underline">AABB accredited laboratory standards for legal DNA testing</Link>.</p>
             </div>
           </div>
         </div>
@@ -287,7 +287,7 @@ const SingleDNAProfile = () => {
       <section className="py-10 px-6 bg-white border-t border-gray-200">
         <div className="max-w-4xl mx-auto text-center text-gray-700">
           <p>
-            We also offer <Link to="/services/legal-paternity-testing" className="text-blue-600 hover:underline">legal paternity DNA testing</Link>, <Link to="/services/prenatal-paternity-testing" className="text-blue-600 hover:underline">prenatal paternity testing</Link>, and <Link to="/services/immigration-dna-testing" className="text-blue-600 hover:underline">immigration DNA testing</Link>. Learn about <Link to="/aabb-accredited-dna-testing-denver" className="text-blue-600 hover:underline">accredited partner laboratory standards for legal DNA testing</Link> and our <Link to="/locations/denver" className="text-blue-600 hover:underline">Denver location</Link>.
+            We also offer <Link to="/services/legal-paternity-testing" className="text-blue-600 hover:underline">legal paternity DNA testing</Link>, <Link to="/services/prenatal-paternity-testing" className="text-blue-600 hover:underline">prenatal paternity testing</Link>, and <Link to="/services/immigration-dna-testing" className="text-blue-600 hover:underline">immigration DNA testing</Link>. Learn about <Link to="/partner-with-aabb-accredited-laboratory-denver" className="text-blue-600 hover:underline">AABB accredited laboratory standards for legal DNA testing</Link> and our <Link to="/locations/denver" className="text-blue-600 hover:underline">Denver location</Link>.
           </p>
         </div>
       </section>

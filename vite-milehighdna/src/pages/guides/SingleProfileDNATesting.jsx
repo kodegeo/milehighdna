@@ -13,7 +13,7 @@ const faqs = [
   },
   {
     question: "Can a single profile DNA test be used in court later?",
-    answer: "Yes, if the single profile was created under legal chain-of-custody procedures (identity verification, certified collection, accredited partner laboratory). When the second party is tested later, the lab can perform a comparison using the stored profile and issue a legal report."
+    answer: "Yes, if the single profile was created under legal chain-of-custody procedures (identity verification, certified collection, AABB accredited laboratory). When the second party is tested later, the lab can perform a comparison using the stored profile and issue a legal report."
   },
   {
     question: "How long is a single profile DNA result valid?",
@@ -65,7 +65,7 @@ export default function SingleProfileDNATesting() {
       legal={
         <>
           <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-            Single profile tests can be legal (with identity verification, chain-of-custody, and accredited partner laboratory) or peace-of-mind (for personal use only). If you might need a future comparison for court or immigration, the single profile must be created as a legal test from the start—peace-of-mind profiles cannot be converted to legal later.
+            Single profile tests can be legal (with identity verification, chain-of-custody, and AABB accredited laboratory) or peace-of-mind (for personal use only). If you might need a future comparison for court or immigration, the single profile must be created as a legal test from the start—peace-of-mind profiles cannot be converted to legal later.
           </p>
           <p className="text-lg text-gray-600 mb-6">
             For court and immigration requirements, see <Link to="/guides/court-admissible-dna-testing" className="text-blue-600 underline">court admissible DNA testing</Link> and <Link to="/guides/uscis-dna-testing" className="text-blue-600 underline">USCIS DNA testing requirements</Link>.

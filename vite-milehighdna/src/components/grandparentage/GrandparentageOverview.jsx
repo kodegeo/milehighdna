@@ -23,7 +23,7 @@ const GrandparentageOverview = () => {
               </p>
             </div>
             <div className="p-6 border rounded-xl shadow-sm hover:shadow-md transition">
-              <h3 className="text-xl font-semibold text-blue-700 mb-2">Accredited Partner Laboratory</h3>
+              <h3 className="text-xl font-semibold text-blue-700 mb-2">Partner with an AABB Accredited Laboratory</h3>
               <p className="text-gray-600">
                 Testing is performed by partner laboratory that maintain AABB accreditation where applicable, to support accuracy, confidentiality, and legal compliance for qualifying tests.
               </p>

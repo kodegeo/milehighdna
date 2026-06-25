@@ -16,7 +16,7 @@ const PrenatalSteps = () => {
       number: 3,
       title: 'Análisis de laboratorio',
       description:
-        'Nuestro laboratorio acreditado por la AABB extrae y compara el ADN fetal de la sangre de la madre con el perfil de ADN del presunto padre para determinar la paternidad con más del 99.9% de precisión.',
+        'Un laboratorio acreditado por la AABB con el que colaboramos extrae y compara el ADN fetal de la sangre de la madre con el perfil de ADN del presunto padre para determinar la paternidad con más del 99.9% de precisión.',
     },
     {
       number: 4,

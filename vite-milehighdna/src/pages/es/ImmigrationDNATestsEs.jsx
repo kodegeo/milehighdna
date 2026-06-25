@@ -27,7 +27,7 @@ const ImmigrationDNATestsEs = () => {
           title="Prueba de ADN para Inmigración (USCIS)"
           subtitle={
             <>
-              Pruebas de ADN rápidas, precisas y legalmente válidas para casos de inmigración en EE.UU. Cumplen con los requisitos del USCIS y están respaldadas por un laboratorio acreditado por la AABB.
+              Pruebas de ADN rápidas, precisas y legalmente válidas para casos de inmigración en EE.UU. Cumplen con los requisitos del USCIS. Colaboramos con un laboratorio acreditado por la AABB cuando el caso es iniciado y dirigido por el laboratorio asociado.
               {"\n\n"}
               Coordinamos directamente con embajadas, consulados, tribunales migratorios y el USCIS para asegurar un proceso ágil y confiable.
             </>

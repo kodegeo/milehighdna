@@ -15,7 +15,7 @@ const Appointments = () => {
         <title> Book a DNA Test in Denver, CO | Legal & Prenatal (NIPP) Appointments – Mile High DNA</title>
         <meta 
           name="description" 
-          content="Schedule your legal, peace of mind, or prenatal DNA test in Denver, Aurora, Thornton, and Lakewood, Colorado today. Same-day appointments available. Legal and immigration testing through our accredited partner laboratory. Court-admissible results when required." 
+          content="Schedule your legal, peace of mind, or prenatal DNA test in Denver, Aurora, Thornton, and Lakewood, Colorado today. Same-day appointments available. Legal and immigration testing through an AABB accredited laboratory we partner with. Court-admissible results when required." 
         />
         <meta name="keywords" 
         content="DNA testing appointment Denver, book paternity test, legal DNA testing Colorado, non invasive prenatal paternity appointment DNA testing Denver" />
@@ -116,7 +116,7 @@ const Appointments = () => {
                   "itemOffered": {
                     "@type": "Service",
                     "name": "Immigration DNA Testing (Partner Laboratory Contact Request)",
-                    "description": "This appointment connects you with our accredited partner laboratory for immigration DNA testing coordination. Mile High DNA Testing cannot initiate immigration cases independently — we participate at the partner laboratory's direction, including sample collection and documentation guidance for approved cases.",
+                    "description": "This appointment connects you with an AABB accredited laboratory we partner with for immigration DNA testing coordination. Mile High DNA Testing cannot initiate immigration cases independently — we participate at the partner laboratory's direction, including sample collection and documentation guidance for approved cases.",
                     "provider": {
                       "@type": "LocalBusiness",
                       "name": "Mile High DNA Testing",

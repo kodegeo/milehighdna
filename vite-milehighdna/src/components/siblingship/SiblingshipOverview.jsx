@@ -26,7 +26,7 @@ const SiblingshipOverview = () => {
             <div className="p-6 border rounded-xl shadow-sm hover:shadow-md transition">
               <h3 className="text-xl font-semibold text-blue-700 mb-2">Legal or Personal Use</h3>
               <p className="text-gray-600">
-              We provide both legal and non-legal options. Legal and immigration testing is provided through our accredited partner laboratory, and non-legal testing is processed with validated partner laboratory methods. Whether you're in Denver, Aurora, Lakewood, or nearby communities, we make it easy to schedule, collect, and receive your results with complete confidentiality.
+              We provide both legal and non-legal options. Legal and immigration testing is provided through an AABB accredited laboratory we partner with, and non-legal testing is processed with validated partner laboratory methods. Whether you're in Denver, Aurora, Lakewood, or nearby communities, we make it easy to schedule, collect, and receive your results with complete confidentiality.
               </p>
             </div>
           </div>

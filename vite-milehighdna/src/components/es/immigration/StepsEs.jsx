@@ -22,7 +22,7 @@ const StepsEs = () => {
       number: 4,
       title: 'Análisis en laboratorio',
       description:
-        'Nuestro laboratorio acreditado por la AABB realiza el análisis con precisión.',
+        'Un laboratorio acreditado por la AABB con el que colaboramos realiza el análisis con precisión.',
     },
     {
       number: 5,

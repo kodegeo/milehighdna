@@ -9,7 +9,7 @@ const AABBAccreditation = () => {
     <div>
       <div className="max-w-4xl mx-auto px-4 py-10">
       <Helmet>
-          <title>Accredited Partner Laboratory | Legal & Immigration DNA Testing</title>
+          <title>Partner with an AABB Accredited Laboratory | Legal & Immigration DNA Testing</title>
           <meta 
             name="description" 
             content="Mile High DNA Testing is not AABB accredited. Learn how AABB accreditation applies to partner laboratory for legal and immigration DNA testing Center." 
@@ -17,15 +17,15 @@ const AABBAccreditation = () => {
 
           {/* Open Graph */}
           <meta property="og:title" content="What is AABB accreditation for DNA testing?" />
-          <meta property="og:description" content="AABB accreditation applies to relationship-testing laboratories used for court and USCIS cases—not to specimen collection companies. We partner with an accredited partner laboratory to perform analysis for testing." />
+          <meta property="og:description" content="AABB accreditation applies to relationship-testing laboratories used for court and USCIS cases—not to specimen collection companies. We partner with an AABB accredited laboratory to perform analysis for testing." />
           <meta property="og:image" content="https://milehighdnatesting.com/images/banner-1200.png" />
-          <meta property="og:url" content="https://milehighdnatesting.com/aabb-accreditation" />
+          <meta property="og:url" content="https://milehighdnatesting.com/partner-with-aabb-accredited-laboratory-denver" />
           <meta property="og:type" content="article" />
           <meta name="twitter:card" content="summary_large_image" />
           <meta name="twitter:image" content="https://milehighdnatesting.com/images/banner-1200.png" />
         </Helmet>
 
-        <h1 className="text-3xl font-bold mb-6">Partner Laboratory Accreditation</h1>
+        <h1 className="text-3xl font-bold mb-6">Partner with an AABB Accredited Laboratory</h1>
 
         <p className="mb-4 p-4 bg-amber-50 border border-amber-200 rounded-lg text-gray-800">
           {MH_NOT_AABB_LONG}
@@ -40,12 +40,12 @@ const AABBAccreditation = () => {
         </p>
 
         <p className="mb-4">
-        Working with accredited partner laboratory for qualifying legal and immigration testing helps ensure:
+        Working with an AABB accredited laboratory for qualifying legal and immigration testing helps ensure:
         </p>
 
         <ul className="list-disc list-inside mb-6">
           <li>Compliance with strict quality standards at the laboratory</li>
-          <li>Legally admissible results for paternity, siblingship, grandparentage, and immigration testing when processed by an accredited partner laboratory</li>
+          <li>Legally admissible results for paternity, siblingship, grandparentage, and immigration testing when processed by an AABB accredited laboratory</li>
           <li>Proper chain-of-custody procedures for sample collection and handling</li>
         </ul>
 
