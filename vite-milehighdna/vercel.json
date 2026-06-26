@@ -184,25 +184,43 @@
 
     {
       "source": "/aabb-accreditation",
-      "destination": "https://milehighdnatesting.com/partner-with-aabb-accredited-laboratory-denver",
+      "destination": "https://milehighdnatesting.com/partner-laboratories-denver",
       "permanent": true
     },
 
     {
       "source": "/aabb-accredited-dna-testing-denver",
-      "destination": "https://milehighdnatesting.com/partner-with-aabb-accredited-laboratory-denver",
+      "destination": "https://milehighdnatesting.com/partner-laboratories-denver",
+      "permanent": true
+    },
+
+    {
+      "source": "/partner-with-aabb-accredited-laboratory-denver",
+      "destination": "https://milehighdnatesting.com/partner-laboratories-denver",
+      "permanent": true
+    },
+
+    {
+      "source": "/guides/aabb-labs-for-immigration",
+      "destination": "https://milehighdnatesting.com/guides/accredited-laboratories-immigration-dna-testing",
       "permanent": true
     },
 
     {
       "source": "/es/aabb-accreditation",
-      "destination": "https://milehighdnatesting.com/es/asociacion-con-laboratorio-acreditado-por-aabb-denver",
+      "destination": "https://milehighdnatesting.com/es/laboratorios-asociados-denver",
       "permanent": true
     },
 
     {
       "source": "/es/partner-with-aabb-accredited-laboratory-denver",
-      "destination": "https://milehighdnatesting.com/es/asociacion-con-laboratorio-acreditado-por-aabb-denver",
+      "destination": "https://milehighdnatesting.com/es/laboratorios-asociados-denver",
+      "permanent": true
+    },
+
+    {
+      "source": "/es/asociacion-con-laboratorio-acreditado-por-aabb-denver",
+      "destination": "https://milehighdnatesting.com/es/laboratorios-asociados-denver",
       "permanent": true
     },
 

@@ -286,7 +286,7 @@ const LegalPaternityTesting = () => {
           Mile High DNA Testing provides professional DNA testing services, including sample collection, case management, and results coordination. Laboratory analysis is performed by an AABB accredited laboratory. {MH_LEGAL_IMMIGRATION_SHORT}
           </p>
           <p className="text-gray-700">
-            Our testing meets <Link to="/partner-with-aabb-accredited-laboratory-denver" className="text-blue-600 hover:underline">AABB accredited laboratory standards</Link>.
+            Our testing meets <Link to="/partner-laboratories-denver" className="text-blue-600 hover:underline">AABB accredited laboratory standards</Link>.
           </p>
         </div>
       </section>
@@ -320,7 +320,7 @@ const LegalPaternityTesting = () => {
           </h2>
           <p className="text-gray-700 mb-6">
             Trusted by <a href="https://milehighdnatesting.com/dna-testing-colorado" className="text-blue-600 hover:text-blue-700 transition duration-300">Colorado</a> families, attorneys, and agencies. Our legal DNA
-            testing meets <Link to="/partner-with-aabb-accredited-laboratory-denver" className="text-blue-600 hover:underline">AABB accredited laboratory standards for legal DNA testing</Link> and is simple, fast, and fully court-admissible.
+            testing meets <Link to="/partner-laboratories-denver" className="text-blue-600 hover:underline">AABB accredited laboratory standards for legal DNA testing</Link> and is simple, fast, and fully court-admissible.
           </p>
           <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
             <div className="bg-white rounded-lg shadow p-4">

@@ -39,7 +39,7 @@ export default function ImmigrationDNATestingProcess() {
             Immigration DNA testing is used to verify biological relationships when required by U.S. Citizenship and Immigration Services (USCIS) or a U.S. embassy or consulate. The process involves identity verification, chain-of-custody collection, and analysis by an AABB accredited laboratory so results meet agency and embassy standards.
           </p>
           <p className="text-lg text-gray-600 mb-6">
-            Mile High DNA Testing coordinates immigration DNA testing when directed by an AABB accredited laboratory we partner with. {MH_IMMIGRATION_INITIATION_SHORT} For agency requirements, see <Link to="/guides/uscis-dna-testing" className="text-blue-600 underline">USCIS DNA testing requirements</Link> and <Link to="/guides/aabb-labs-for-immigration" className="text-blue-600 underline">AABB accredited laboratory requirements for immigration DNA tests</Link>.
+            Mile High DNA Testing coordinates immigration DNA testing when directed by an AABB accredited laboratory we partner with. {MH_IMMIGRATION_INITIATION_SHORT} For agency requirements, see <Link to="/guides/uscis-dna-testing" className="text-blue-600 underline">USCIS DNA testing requirements</Link> and <Link to="/guides/accredited-laboratories-immigration-dna-testing" className="text-blue-600 underline">AABB accredited laboratory requirements for immigration DNA tests</Link>.
           </p>
         </>
       }
@@ -69,7 +69,7 @@ export default function ImmigrationDNATestingProcess() {
             Immigration DNA testing is always performed as legal testing: identity verification, chain-of-custody, and AABB accredited laboratory analysis are required. Results are not accepted by USCIS or embassies if these standards are not met. There is no &quot;peace-of-mind&quot; immigration test—only tests that meet agency requirements are used.
           </p>
           <p className="text-lg text-gray-600 mb-6">
-            For court-admissible testing in general, see <Link to="/guides/court-admissible-dna-testing" className="text-blue-600 underline">court admissible DNA testing</Link>. For AABB accreditation details, read <Link to="/guides/aabb-labs-for-immigration" className="text-blue-600 underline">AABB accredited laboratory requirements for immigration DNA tests</Link>.
+            For court-admissible testing in general, see <Link to="/guides/court-admissible-dna-testing" className="text-blue-600 underline">court admissible DNA testing</Link>. For AABB accreditation details, read <Link to="/guides/accredited-laboratories-immigration-dna-testing" className="text-blue-600 underline">AABB accredited laboratory requirements for immigration DNA tests</Link>.
           </p>
         </>
       }

@@ -25,8 +25,8 @@ export default function AABBLabsForImmigration() {
   return (
     <GuideLayout
       title="Partner With an AABB Accredited Laboratory for Immigration DNA Tests"
-      slug="aabb-labs-for-immigration"
-      breadcrumbLabel="AABB Lab Requirements for Immigration"
+      slug="accredited-laboratories-immigration-dna-testing"
+      breadcrumbLabel="Accredited Labs for Immigration"
       description="Why immigration DNA tests must use an AABB accredited laboratory. USCIS and embassy requirements. Denver immigration DNA testing."
       heroSubline="Why USCIS and embassies require an AABB accredited laboratory for immigration DNA testing—and how to get it right."
       serviceLink="/services/immigration-dna-testing"

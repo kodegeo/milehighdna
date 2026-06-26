@@ -229,7 +229,7 @@ const SingleDNAProfile = () => {
                 <li>Documented chain-of-custody procedures</li>
                 <li>AABB accredited laboratory analysis</li>
               </ul>
-              <p className="text-gray-700 mt-2">Legal testing ensures the profile is documented correctly if it may be used later in court. Learn more about <Link to="/partner-with-aabb-accredited-laboratory-denver" className="text-blue-600 hover:underline">AABB accredited laboratory standards for legal DNA testing</Link>.</p>
+              <p className="text-gray-700 mt-2">Legal testing ensures the profile is documented correctly if it may be used later in court. Learn more about <Link to="/partner-laboratories-denver" className="text-blue-600 hover:underline">AABB accredited laboratory standards for legal DNA testing</Link>.</p>
             </div>
           </div>
         </div>
@@ -287,7 +287,7 @@ const SingleDNAProfile = () => {
       <section className="py-10 px-6 bg-white border-t border-gray-200">
         <div className="max-w-4xl mx-auto text-center text-gray-700">
           <p>
-            We also offer <Link to="/services/legal-paternity-testing" className="text-blue-600 hover:underline">legal paternity DNA testing</Link>, <Link to="/services/prenatal-paternity-testing" className="text-blue-600 hover:underline">prenatal paternity testing</Link>, and <Link to="/services/immigration-dna-testing" className="text-blue-600 hover:underline">immigration DNA testing</Link>. Learn about <Link to="/partner-with-aabb-accredited-laboratory-denver" className="text-blue-600 hover:underline">AABB accredited laboratory standards for legal DNA testing</Link> and our <Link to="/locations/denver" className="text-blue-600 hover:underline">Denver location</Link>.
+            We also offer <Link to="/services/legal-paternity-testing" className="text-blue-600 hover:underline">legal paternity DNA testing</Link>, <Link to="/services/prenatal-paternity-testing" className="text-blue-600 hover:underline">prenatal paternity testing</Link>, and <Link to="/services/immigration-dna-testing" className="text-blue-600 hover:underline">immigration DNA testing</Link>. Learn about <Link to="/partner-laboratories-denver" className="text-blue-600 hover:underline">AABB accredited laboratory standards for legal DNA testing</Link> and our <Link to="/locations/denver" className="text-blue-600 hover:underline">Denver location</Link>.
           </p>
         </div>
       </section>

@@ -20,7 +20,7 @@ const Overview = () => {
               <p className="text-base text-gray-600 leading-relaxed">
                 All immigration DNA tests follow strict USCIS chain-of-custody procedures to ensure legal admissibility. Testing is conducted through our{' '}
                 <a href="https://www.ufclab.com/lab-services/immigration" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline">AABB-accredited</a>
-                {' '}lab partner when your case is initiated and directed by the partner laboratory. Learn more about <Link to="/partner-with-aabb-accredited-laboratory-denver" className="text-blue-600 hover:text-blue-800 underline">AABB accredited laboratory standards for legal and immigration testing</Link> and U.S. Department of State requirements.
+                {' '}lab partner when your case is initiated and directed by the partner laboratory. Learn more about <Link to="/partner-laboratories-denver" className="text-blue-600 hover:text-blue-800 underline">AABB accredited laboratory standards for legal and immigration testing</Link> and U.S. Department of State requirements.
               </p>
             </div>
             <div className="p-6 bg-white border border-gray-200 rounded-xl shadow-sm hover:shadow-md transition">

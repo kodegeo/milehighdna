@@ -211,7 +211,7 @@ const PostmortemPaternityTesting = () => {
       <section className="py-12 md:py-16 px-6 bg-white">
         <div className="max-w-4xl mx-auto">
           <p className="text-lg text-gray-700 leading-relaxed mb-6">
-            We coordinate <Link to="/partner-with-aabb-accredited-laboratory-denver" className="text-blue-600 hover:underline">AABB accredited laboratory legal DNA testing standards</Link> for postmortem cases and work with families who need <Link to="/services/legal-paternity-testing" className="text-blue-600 hover:underline">legal paternity DNA testing</Link> or <Link to="/services/immigration-dna-testing" className="text-blue-600 hover:underline">immigration DNA testing</Link> in other situations. Mile High DNA Testing provides structured postmortem DNA testing in Denver for:
+            We coordinate <Link to="/partner-laboratories-denver" className="text-blue-600 hover:underline">AABB accredited laboratory legal DNA testing standards</Link> for postmortem cases and work with families who need <Link to="/services/legal-paternity-testing" className="text-blue-600 hover:underline">legal paternity DNA testing</Link> or <Link to="/services/immigration-dna-testing" className="text-blue-600 hover:underline">immigration DNA testing</Link> in other situations. Mile High DNA Testing provides structured postmortem DNA testing in Denver for:
           </p>
           <ul className="list-disc list-outside ml-6 space-y-2 text-gray-700 mb-8">
             <li>Postmortem paternity testing</li>

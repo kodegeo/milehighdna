@@ -38,7 +38,7 @@ export default function USCISDNATesting() {
             When U.S. Citizenship and Immigration Services (USCIS) requests DNA testing to verify a family relationship, the test must be performed by an AABB accredited laboratory with identity verification and chain-of-custody procedures. Results are then submitted in the format specified in your request.
           </p>
           <p className="text-lg text-gray-600 mb-6">
-            Mile High DNA Testing coordinates USCIS DNA testing in Denver. For the full process, see <Link to="/guides/immigration-dna-testing-process" className="text-blue-600 underline">immigration DNA testing process</Link> and <Link to="/guides/aabb-labs-for-immigration" className="text-blue-600 underline">AABB accredited laboratory requirements for immigration DNA tests</Link>. To <Link to="/appointments" className="text-blue-600 underline">schedule a test</Link>, visit our appointments page.
+            Mile High DNA Testing coordinates USCIS DNA testing in Denver. For the full process, see <Link to="/guides/immigration-dna-testing-process" className="text-blue-600 underline">immigration DNA testing process</Link> and <Link to="/guides/accredited-laboratories-immigration-dna-testing" className="text-blue-600 underline">AABB accredited laboratory requirements for immigration DNA tests</Link>. To <Link to="/appointments" className="text-blue-600 underline">schedule a test</Link>, visit our appointments page.
           </p>
         </>
       }
@@ -68,13 +68,13 @@ export default function USCISDNATesting() {
             All USCIS and embassy DNA testing is legal testing: it requires verified ID, chain-of-custody, and AABB accredited laboratory analysis. There is no non-legal option for immigration—only tests that meet these requirements will be accepted.
           </p>
           <p className="text-lg text-gray-600 mb-6">
-            For general court-admissible testing, see <Link to="/guides/court-admissible-dna-testing" className="text-blue-600 underline">court admissible DNA testing</Link>. For why AABB matters, read <Link to="/guides/aabb-labs-for-immigration" className="text-blue-600 underline">partner with an AABB accredited laboratory for immigration DNA tests</Link>.
+            For general court-admissible testing, see <Link to="/guides/court-admissible-dna-testing" className="text-blue-600 underline">court admissible DNA testing</Link>. For why AABB matters, read <Link to="/guides/accredited-laboratories-immigration-dna-testing" className="text-blue-600 underline">partner with an AABB accredited laboratory for immigration DNA tests</Link>.
           </p>
         </>
       }
       relatedGuides={[
         { title: "Immigration DNA Testing Process", path: "/guides/immigration-dna-testing-process" },
-        { title: "Partner With an AABB Accredited Laboratory for Immigration DNA Tests", path: "/guides/aabb-labs-for-immigration" }
+        { title: "Partner With an AABB Accredited Laboratory for Immigration DNA Tests", path: "/guides/accredited-laboratories-immigration-dna-testing" }
       ]}
       ctaHeading="Complete Your USCIS DNA Test"
       ctaSubline="Schedule immigration DNA testing in Denver that meets USCIS requirements."

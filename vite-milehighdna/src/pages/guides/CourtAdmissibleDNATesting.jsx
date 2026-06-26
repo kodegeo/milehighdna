@@ -58,7 +58,7 @@ export default function CourtAdmissibleDNATesting() {
             Participants present government-issued ID at collection. A trained collector takes samples (usually cheek swabs) and documents the chain-of-custody. Samples are sealed and sent to an AABB accredited laboratory. The lab analyzes the DNA and issues a certified report that can be sent to the court, attorney, or agency.
           </p>
           <p className="text-lg text-gray-600 mb-6">
-            The entire process—from collection to reporting—must be documented. For more on chain-of-custody, read <Link to="/guides/chain-of-custody-dna-testing" className="text-blue-600 underline">what is chain of custody DNA testing</Link>. For accreditation, see <Link to="/guides/aabb-labs-for-immigration" className="text-blue-600 underline">AABB accredited laboratory requirements for immigration DNA tests</Link>.
+            The entire process—from collection to reporting—must be documented. For more on chain-of-custody, read <Link to="/guides/chain-of-custody-dna-testing" className="text-blue-600 underline">what is chain of custody DNA testing</Link>. For accreditation, see <Link to="/guides/accredited-laboratories-immigration-dna-testing" className="text-blue-600 underline">AABB accredited laboratory requirements for immigration DNA tests</Link>.
           </p>
         </>
       }

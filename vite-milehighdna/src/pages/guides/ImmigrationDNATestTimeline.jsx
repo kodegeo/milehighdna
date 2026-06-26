@@ -49,7 +49,7 @@ export default function ImmigrationDNATestTimeline() {
             Timeline matters when USCIS or the embassy has given you a deadline to submit DNA results. Planning ahead for collection here and abroad, shipping, and lab processing helps you meet that deadline. Do not wait until the last minute to schedule.
           </p>
           <p className="text-lg text-gray-600 mb-6">
-            For embassy-specific procedures, read <Link to="/guides/embassy-dna-testing" className="text-blue-600 underline">embassy DNA testing explained</Link>. For lab requirements, see <Link to="/guides/aabb-labs-for-immigration" className="text-blue-600 underline">AABB accredited laboratory requirements for immigration DNA tests</Link>.
+            For embassy-specific procedures, read <Link to="/guides/embassy-dna-testing" className="text-blue-600 underline">embassy DNA testing explained</Link>. For lab requirements, see <Link to="/guides/accredited-laboratories-immigration-dna-testing" className="text-blue-600 underline">AABB accredited laboratory requirements for immigration DNA tests</Link>.
           </p>
         </>
       }

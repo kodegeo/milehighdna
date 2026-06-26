@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import '../../styles/global.css';
 import logo from '../assets/images/milehigh-dna-logo.png';
 
+import { PARTNER_LAB_NAV_LABEL_ES, PARTNER_LAB_PAGE_PATH_ES } from '../../constants/aabbComplianceCopy';
+
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState(null);
@@ -37,7 +39,7 @@ const Navigation = () => {
           {/* Desktop Navigation */}
           <div className="hidden md:flex md:items-center md:space-x-8">
             <Link to="/about" className="text-gray-700 hover:text-blue-600 transition duration-300">Quienes Somos</Link>
-            <Link to="/es/asociacion-con-laboratorio-acreditado-por-aabb-denver" className="text-gray-700 hover:text-blue-600 transition duration-300">Asociación con laboratorio acreditado por AABB</Link>
+            <Link to={PARTNER_LAB_PAGE_PATH_ES} className="text-gray-700 hover:text-blue-600 transition duration-300">{PARTNER_LAB_NAV_LABEL_ES}</Link>
             
             {/* Services Dropdown */}
             <div
@@ -112,7 +114,7 @@ const Navigation = () => {
         {isMenuOpen && (
           <div className="md:hidden px-4 pb-4 max-h-[80vh] overflow-y-auto">
             <Link to="/about" className="text-gray-700 hover:text-blue-600 transition duration-300 block py-2" onClick={() => setIsMenuOpen(false)}>Sobre Nosotros</Link>
-            <Link to="/es/asociacion-con-laboratorio-acreditado-por-aabb-denver" className="text-gray-700 hover:text-blue-600 transition duration-300 block py-2" onClick={() => setIsMenuOpen(false)}>Asociación con laboratorio acreditado por AABB</Link>
+            <Link to={PARTNER_LAB_PAGE_PATH_ES} className="text-gray-700 hover:text-blue-600 transition duration-300 block py-2" onClick={() => setIsMenuOpen(false)}>{PARTNER_LAB_NAV_LABEL_ES}</Link>
 
             <details className="py-2">
               <summary className="text-gray-700 hover:text-blue-600 transition duration-300 cursor-pointer">Servicios</summary>
