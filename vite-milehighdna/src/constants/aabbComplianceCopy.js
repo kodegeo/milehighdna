@@ -6,8 +6,8 @@
 export const PARTNER_LAB_PAGE_PATH = "/partner-with-aabb-accredited-laboratory-denver";
 export const PARTNER_LAB_PAGE_PATH_ES = "/es/asociacion-con-laboratorio-acreditado-por-aabb-denver";
 
-export const PARTNER_LAB_NAV_LABEL = "Partner with an AABB Accredited Laboratory";
-export const PARTNER_LAB_NAV_LABEL_ES = "Asociación con laboratorio acreditado por AABB";
+export const PARTNER_LAB_NAV_LABEL = "Partner Laboratories";
+export const PARTNER_LAB_NAV_LABEL_ES = "Laboratorios Asociados";
 
 export const MH_NOT_AABB_LONG =
   "Mile High DNA Testing is an independent DNA collection company. We partner with an AABB accredited laboratory to perform analysis for legal and immigration testing.";
