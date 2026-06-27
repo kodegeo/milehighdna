@@ -123,12 +123,12 @@ const routeConfig = {
       'es-us': '/es/preguntas-frecuentes'
     }
   },
-  '/partner-laboratories-denver': {
+  '/partner-laboratory-denver': {
     priority: '0.5',
     changefreq: 'yearly',
     hreflang: {
-      'en-us': '/partner-laboratories-denver',
-      'es-us': '/es/laboratorios-asociados-denver'
+      'en-us': '/partner-laboratory-denver',
+      'es-us': '/es/laboratorio-asociado-denver'
     }
   },
 
@@ -247,7 +247,7 @@ const routeConfig = {
     priority: '0.8',
     changefreq: 'weekly'
   },
-  '/es/laboratorios-asociados-denver': {
+  '/es/laboratorio-asociado-denver': {
     priority: '0.5',
     changefreq: 'yearly'
   },

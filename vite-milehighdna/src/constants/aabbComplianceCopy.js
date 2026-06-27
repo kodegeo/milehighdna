@@ -3,12 +3,12 @@
  * Mile High DNA Testing is not AABB accredited; partner facilities hold accreditation.
  */
 
-export const PARTNER_LAB_PAGE_PATH = "/partner-laboratories-denver";
-export const PARTNER_LAB_PAGE_PATH_ES = "/es/laboratorios-asociados-denver";
+export const PARTNER_LAB_PAGE_PATH = "/partner-laboratory-denver";
+export const PARTNER_LAB_PAGE_PATH_ES = "/es/laboratorio-asociado-denver";
 export const IMMIGRATION_LABS_GUIDE_PATH = "/guides/accredited-laboratories-immigration-dna-testing";
 
-export const PARTNER_LAB_NAV_LABEL = "Partner Laboratories";
-export const PARTNER_LAB_NAV_LABEL_ES = "Laboratorios Asociados";
+export const PARTNER_LAB_NAV_LABEL = "Partner Laboratory";
+export const PARTNER_LAB_NAV_LABEL_ES = "Laboratorio Asociado";
 
 export const MH_NOT_AABB_LONG =
   "Mile High DNA Testing is an independent DNA collection company. We partner with an AABB accredited laboratory to perform analysis for legal and immigration testing.";

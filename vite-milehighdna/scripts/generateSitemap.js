@@ -149,7 +149,7 @@ function getPriorityAndFreq(route) {
   // Information pages
   if (route === '/about' || 
       route === '/faq' || 
-      route === '/partner-laboratories-denver') {
+      route === '/partner-laboratory-denver') {
     return { priority: '0.6', changefreq: 'monthly' };
   }
   
@@ -195,7 +195,7 @@ function getHreflang(route) {
     '/appointments': { 'en-us': '/appointments', 'es-us': '/es/programar-cita' },
     '/faq': { 'en-us': '/faq', 'es-us': '/es/preguntas-frecuentes' },
     '/get-results': { 'en-us': '/get-results', 'es-us': '/es/consultar-resultados' },
-    '/partner-laboratories-denver': { 'en-us': '/partner-laboratories-denver', 'es-us': '/es/laboratorios-asociados-denver' },
+    '/partner-laboratory-denver': { 'en-us': '/partner-laboratory-denver', 'es-us': '/es/laboratorio-asociado-denver' },
   };
   
   return hreflangMap[route] || null;

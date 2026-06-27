@@ -276,7 +276,7 @@ const Home = () => {
             </div>
 
             <p className="text-base md:text-xl mb-6">
-              Court-Admissible • <Link to="/partner-laboratories-denver" className="text-blue-100 hover:text-white underline">Partner with an AABB accredited laboratory for legal & immigration</Link> • Same-Day Appointments • Results in 3–5 Days
+              Court-Admissible • <Link to="/partner-laboratory-denver" className="text-blue-100 hover:text-white underline">Partner with an AABB accredited laboratory for legal & immigration</Link> • Same-Day Appointments • Results in 3–5 Days
             </p>
             <p className="text-base md:text-lg mb-8">
               Get accurate, court-admissible results with full privacy. Serving Denver, Aurora, Lakewood, and beyond.
@@ -635,8 +635,8 @@ const Home = () => {
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="card p-6">
-              <h3 className="text-xl font-bold mb-2"><Link to="/partner-laboratories-denver" className="text-gray-900 hover:text-[#2C6FA6] transition duration-300">Legal & immigration standards</Link></h3>
-              <p className="text-gray-600">Court-admissible testing coordinated with an AABB accredited laboratory we partner with for cases that require it. <Link to="/partner-laboratories-denver" className="text-[#2C6FA6] hover:text-[#7DB9E8] font-medium transition duration-300">Learn about an AABB accredited laboratory we partner with</Link>.</p>
+              <h3 className="text-xl font-bold mb-2"><Link to="/partner-laboratory-denver" className="text-gray-900 hover:text-[#2C6FA6] transition duration-300">Legal & immigration standards</Link></h3>
+              <p className="text-gray-600">Court-admissible testing coordinated with an AABB accredited laboratory we partner with for cases that require it. <Link to="/partner-laboratory-denver" className="text-[#2C6FA6] hover:text-[#7DB9E8] font-medium transition duration-300">Learn about an AABB accredited laboratory we partner with</Link>.</p>
             </div>
             <div className="card p-6">
               <h3 className="text-xl font-bold mb-2">Fast Results</h3>
