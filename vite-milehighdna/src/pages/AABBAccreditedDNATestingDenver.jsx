@@ -120,7 +120,7 @@ const AABBAccreditedDNATestingDenver = () => {
       {/* Partner laboratory accreditation */}
       <section className="bg-gray-50 py-10 md:py-12 px-4 md:px-8">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">Partner with an AABB Accredited Laboratory</h2>
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">We Partner with an AABB Accredited Laboratory</h2>
           <p className="text-gray-700 leading-relaxed mb-4">{MH_FACILITIES_ACCREDITED_BY_AABB}</p>
           <p className="text-gray-700 leading-relaxed mb-4">
             The American Association of Blood Banks (AABB) establishes internationally recognized standards for relationship DNA testing laboratories.
@@ -147,7 +147,7 @@ const AABBAccreditedDNATestingDenver = () => {
       {/* Court-admissible testing through AABB accredited laboratory */}
       <section className="bg-white py-10 md:py-12 px-4 md:px-8">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">Court-Admissible Testing With an AABB Accredited Laboratory</h2>
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">We Partner With an AABB Accredited Laboratory to Provide Court-Admissible Testing</h2>
           <p className="text-gray-700 leading-relaxed mb-4">
             Family courts accept DNA results used as legal evidence when testing follows strict documentation procedures.
           </p>
@@ -169,7 +169,7 @@ const AABBAccreditedDNATestingDenver = () => {
       {/* USCIS-accepted testing through AABB accredited laboratory */}
       <section className="bg-gray-50 py-10 md:py-12 px-4 md:px-8">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">USCIS-Accepted Testing With an AABB Accredited Laboratory</h2>
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">We Partner With an AABB Accredited Laboratory to Provide USCIS-Accepted Testing</h2>
           <p className="text-gray-700 leading-relaxed mb-4">
             {MH_AABB_PARTNER_COURTS_USCIS}
           </p>
