@@ -142,6 +142,13 @@ const AboutUsPage = () => {
           </p>
           <a
             href="tel:7209009342"
+            onClick={() => {
+              window.dataLayer = window.dataLayer || [];
+              window.dataLayer.push({
+                event: 'phone_click',
+                phone_location: 'AboutUs - professional standards CTA',
+              });
+            }}
             className="bg-blue-600 text-white px-6 py-3 rounded-lg inline-block font-semibold hover:bg-blue-700 transition"
           >
             Confirm My Test Type Before Scheduling
@@ -203,7 +210,13 @@ const AboutUsPage = () => {
             Mile High DNA Testing<br />
             975 N Lincoln Street, Suite 205C<br />
             Denver, CO 80203<br />
-            Phone: <a href="tel:7209009342" className="text-blue-600 underline">720 900 9342</a>
+            Phone: <a href="tel:7209009342" onClick={() => {
+              window.dataLayer = window.dataLayer || [];
+              window.dataLayer.push({
+                event: 'phone_click',
+                phone_location: 'AboutUs - office address section',
+              });
+            }} className="text-blue-600 underline">720 900 9342</a>
           </p>
           <iframe
             title="Denver DNA Testing Office Map"
@@ -222,7 +235,13 @@ const AboutUsPage = () => {
           Still unsure which DNA test applies to your situation?
         </h2>
         <p className="mb-6 text-gray-700">
-          Call or text <a href="tel:7209009342" className="text-blue-600 underline">720 900 9342</a>. We will review your case and confirm the appropriate test designation before you schedule.
+          Call or text <a href="tel:7209009342" onClick={() => {
+            window.dataLayer = window.dataLayer || [];
+            window.dataLayer.push({
+              event: 'phone_click',
+              phone_location: 'AboutUs - bottom CTA inline text',
+            });
+          }} className="text-blue-600 underline">720 900 9342</a>. We will review your case and confirm the appropriate test designation before you schedule.
         </p>
         <div className="flex flex-col md:flex-row justify-center gap-4">
           <Link
@@ -233,6 +252,13 @@ const AboutUsPage = () => {
           </Link>
           <a
             href="tel:7209009342"
+            onClick={() => {
+              window.dataLayer = window.dataLayer || [];
+              window.dataLayer.push({
+                event: 'phone_click',
+                phone_location: 'AboutUs - bottom CTA button',
+              });
+            }}
             className="border border-blue-600 text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-blue-50 transition inline-block"
           >
             Call or Text Now

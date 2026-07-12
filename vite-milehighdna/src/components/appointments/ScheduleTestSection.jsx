@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import CalendlyPopupButton from '../CalendlyBooking.jsx';
 
 const services = [
   {
@@ -136,14 +137,13 @@ const ScheduleTestSection = () => {
               </h3>
               <p className="text-gray-600 mb-4 whitespace-pre-line">{service.description}</p>
               <div className="flex flex-wrap gap-3">
-                <a
-                  href={service.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <CalendlyPopupButton
+                  url={service.link}
+                  serviceName={service.name}
                   className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition"
                 >
                   Book Appointment
-                </a>
+                </CalendlyPopupButton>
                 <a
                   href="tel:+17209009342"
                   onClick={() => {

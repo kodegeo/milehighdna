@@ -414,6 +414,13 @@ const NonLegalDNATestCostGuide = () => {
             </Link>
             <a
               href="tel:7209009342"
+              onClick={() => {
+                window.dataLayer = window.dataLayer || [];
+                window.dataLayer.push({
+                  event: 'phone_click',
+                  phone_location: 'NonLegalDNATestCostGuide - bottom CTA',
+                });
+              }}
               className="bg-green-800 text-white px-8 py-4 font-bold uppercase tracking-wide rounded-lg hover:bg-green-900 transition-all duration-300 shadow-lg border-2 border-green-300"
             >
               Call (720) 900-9342

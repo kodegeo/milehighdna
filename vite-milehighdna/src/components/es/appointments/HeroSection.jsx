@@ -1,5 +1,6 @@
 import React from 'react';
 import bannerBg from '../../../assets/images/banner_sch_1.png';
+import CalendlyPopupButton from '../../CalendlyBooking.jsx';
 
 
 const HeroSection = () => {
@@ -22,14 +23,13 @@ const HeroSection = () => {
             Ofrecemos horarios flexibles y citas el mismo día cuando están disponibles.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <a
-              href="https://calendly.com/milehighdnatesting/consulta-gratuita"
-              target="_blank"
-              rel="noopener noreferrer"
+            <CalendlyPopupButton
+              url="https://calendly.com/milehighdnatesting/consulta-gratuita"
+              serviceName="Consulta Gratuita (ES Hero)"
               className="bg-brand-primary text-white px-6 py-3 rounded-xl shadow hover:bg-brand-hover transition"
             >
               Programar Prueba
-            </a>
+            </CalendlyPopupButton>
             <a
               href="tel:7209009342"
               onClick={() => {

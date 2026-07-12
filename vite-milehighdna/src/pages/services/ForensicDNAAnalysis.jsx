@@ -189,6 +189,13 @@ const ForensicDNAAnalysis = () => {
               </a>
               <a
                 href="tel:+17209009342"
+                onClick={() => {
+                  window.dataLayer = window.dataLayer || [];
+                  window.dataLayer.push({
+                    event: 'phone_click',
+                    phone_location: 'ForensicDNAAnalysis - hero CTA',
+                  });
+                }}
                 className="bg-green-600 text-white px-8 py-4 rounded-xl shadow-lg hover:bg-green-700 transition font-semibold text-lg inline-block text-center"
               >
                 Call for Expert Consultation

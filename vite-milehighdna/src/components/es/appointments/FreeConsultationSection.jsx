@@ -1,4 +1,5 @@
 import React from 'react';
+import { CalendlyInline } from '../../CalendlyBooking.jsx';
 
 const FreeConsultationSection = () => {
   return (
@@ -14,11 +15,10 @@ const FreeConsultationSection = () => {
         Ya sea por motivos legales, migratorios o personales, nuestro equipo te guiará paso a paso sobre el proceso, los requisitos y los tiempos de entrega.        
         </p>
         <div className="bg-white rounded-lg shadow-lg overflow-hidden border">
-          <iframe
-            src="https://calendly.com/milehighdnatesting/cita-prueba-adn"
-            width="100%"
-            height="700"
-            frameBorder="0"
+          <CalendlyInline
+            url="https://calendly.com/milehighdnatesting/cita-prueba-adn"
+            serviceName="Consulta Gratuita (ES)"
+            height={700}
             title="Agenda tu consulta gratuita de 30 minutos"
             className="w-full"
           />

@@ -244,7 +244,13 @@ const Services = () => {
             <div className="bg-green-600 text-white px-6 py-4 rounded-xl shadow-lg mb-6">
               <p className="text-xl font-bold">
                 Call Now: 
-                <a href="tel:+17209009342" className="underline ml-2">
+                <a href="tel:+17209009342" onClick={() => {
+                  window.dataLayer = window.dataLayer || [];
+                  window.dataLayer.push({
+                    event: 'phone_click',
+                    phone_location: 'Services - hero call now banner',
+                  });
+                }} className="underline ml-2">
                   720-900-9342
                 </a>
               </p>

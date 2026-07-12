@@ -1,4 +1,5 @@
 import React from 'react';
+import CalendlyPopupButton from '../../CalendlyBooking.jsx';
 
 const services = [
   {
@@ -110,14 +111,13 @@ const ScheduleTestSection = () => {
                 {service.name}
               </h3>
               <p className="text-gray-600 mb-4">{service.description}</p>
-              <a
-                href={service.link}
-                target="_blank"
-                rel="noopener noreferrer"
+              <CalendlyPopupButton
+                url={service.link}
+                serviceName={`${service.name} (ES)`}
                 className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition"
               >
                 Reservar Cita
-              </a>
+              </CalendlyPopupButton>
             </div>
           ))}
         </div>

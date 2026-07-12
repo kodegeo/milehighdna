@@ -71,7 +71,9 @@ router.post("/create-checkout", async (req, res) => {
     }
 
     // Dynamic URLs
-    const successUrl = `${process.env.FRONTEND_URL}/success`;
+    // session_id + product let the Success page fire a purchase event for
+    // GA4/Google Ads attribution. {CHECKOUT_SESSION_ID} is replaced by Stripe.
+    const successUrl = `${process.env.FRONTEND_URL}/success?session_id={CHECKOUT_SESSION_ID}&product=${encodeURIComponent(trimmedProductKey)}`;
     const cancelUrl = `${process.env.FRONTEND_URL}/cancel`;
 
     // 🔥 Pass everything to checkoutUtils (FULL PAYLOAD)

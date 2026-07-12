@@ -64,7 +64,13 @@ const WhyChooseUsPage = () => {
             </Link>
             <p className="text-gray-700 flex items-center justify-center">
               Need confirmation first?{" "}
-              <a href="tel:7209009342" className="text-blue-600 hover:text-blue-800 underline font-medium">
+              <a href="tel:7209009342" onClick={() => {
+                window.dataLayer = window.dataLayer || [];
+                window.dataLayer.push({
+                  event: 'phone_click',
+                  phone_location: 'WhyChooseUsPage - hero inline text',
+                });
+              }} className="text-blue-600 hover:text-blue-800 underline font-medium">
                 Call or text 720-900-9342
               </a>
             </p>
@@ -103,7 +109,13 @@ const WhyChooseUsPage = () => {
           <div className="bg-blue-50 p-4 rounded-lg text-center">
             <p className="text-gray-700 mb-0">
               Avoid delays. Confirm your test type before scheduling.{" "}
-              <a href="tel:7209009342" className="text-blue-600 hover:text-blue-800 underline font-semibold">
+              <a href="tel:7209009342" onClick={() => {
+                window.dataLayer = window.dataLayer || [];
+                window.dataLayer.push({
+                  event: 'phone_click',
+                  phone_location: 'WhyChooseUsPage - avoid delays callout',
+                });
+              }} className="text-blue-600 hover:text-blue-800 underline font-semibold">
                 Call or text 720-900-9342
               </a>
             </p>
@@ -240,6 +252,13 @@ const WhyChooseUsPage = () => {
             </Link>
             <a
               href="tel:7209009342"
+              onClick={() => {
+                window.dataLayer = window.dataLayer || [];
+                window.dataLayer.push({
+                  event: 'phone_click',
+                  phone_location: 'WhyChooseUsPage - bottom CTA',
+                });
+              }}
               className="inline-block border-2 border-blue-600 text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-blue-50 transition text-center"
             >
               Call or Text 720-900-9342
