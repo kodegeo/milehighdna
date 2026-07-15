@@ -28,6 +28,42 @@ const IMPORTANT_NOTE =
   "This test is for private use only and not court-admissible. For legal or immigration testing, please use our in-person services.";
 
 /**
+ * Default English UI strings. Pass a full `strings` prop to localize.
+ */
+const DEFAULT_STRINGS = {
+  trustBullets: TRUST_BULLETS,
+  whatsIncluded: WHATS_INCLUDED,
+  howItWorks: HOW_IT_WORKS,
+  importantNote: IMPORTANT_NOTE,
+  breadcrumbHome: "Home",
+  breadcrumbShop: "Shop",
+  breadcrumbDefaultParent: "DNA Test Kits",
+  plusShipping: "+ shipping",
+  orderFormTitle: "Order your test",
+  firstNamePlaceholder: "First name *",
+  lastNamePlaceholder: "Last name *",
+  emailPlaceholder: "Email *",
+  phonePlaceholder: "Phone",
+  fillDetailsAlert: "Please fill in your details before continuing.",
+  loading: "Loading…",
+  buyNowUS: (price) => `Buy Now — U.S. ($${price} + shipping)`,
+  buyNowInternational: (price) => `Buy Now — International ($${price} + shipping)`,
+  usShippingLabel: (amount) => `U.S. shipping: $${amount}`,
+  intlShippingLabel: (amount) => `International shipping (from $${amount} — varies by country)`,
+  howItWorksTitle: "How it works",
+  whatsIncludedTitle: "What's included",
+  compareOptions: "← Compare test options",
+};
+
+/**
+ * Normalize the /api/shipping/rate response.
+ * US returns { shipping: { regular, overnight } }; international countries
+ * return { shipping: <number> } (a plain number).
+ */
+const parseShippingRate = (data) =>
+  typeof data.shipping === "number" ? data.shipping : Number(data.shipping?.regular ?? 0);
+
+/**
  * Reusable product detail page template for shop PDPs.
  * Image-left, copy-right hero; order form that routes into existing Stripe checkout.
  * @param {Object} product - { title, shortDescription, unitPrice, metaDescription, breadcrumbParentLabel, productKey }
@@ -35,8 +71,23 @@ const IMPORTANT_NOTE =
  * @param {string} canonicalUrl - Full canonical URL
  * @param {string} metaTitle - Page title for Helmet
  * @param {string} breadcrumbParentUrl - e.g. /shop/paternity-dna-test or /shop/grandparent-dna-test
+ * @param {Object} [strings] - Optional localized UI strings (merged over English defaults)
+ * @param {string} [lang="en"] - html lang attribute
+ * @param {string} [homeUrl="/"] - breadcrumb Home link
+ * @param {string} [shopUrl="/shop"] - breadcrumb Shop link
  */
-const ProductDetailTemplate = ({ product, image, canonicalUrl, metaTitle, breadcrumbParentUrl = "/shop/paternity-dna-test" }) => {
+const ProductDetailTemplate = ({
+  product,
+  image,
+  canonicalUrl,
+  metaTitle,
+  breadcrumbParentUrl = "/shop/paternity-dna-test",
+  strings = {},
+  lang = "en",
+  homeUrl = "/",
+  shopUrl = "/shop",
+}) => {
+  const t = { ...DEFAULT_STRINGS, ...strings };
   const navigate = useNavigate();
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
@@ -48,17 +99,17 @@ const ProductDetailTemplate = ({ product, image, canonicalUrl, metaTitle, breadc
   useEffect(() => {
     fetch(`${import.meta.env.VITE_API_URL}/api/shipping/rate?country=US`)
       .then((res) => res.json())
-      .then((data) => setDomesticShipping(data.shipping?.regular))
+      .then((data) => setDomesticShipping(parseShippingRate(data)))
       .catch(() => setDomesticShipping(0));
     fetch(`${import.meta.env.VITE_API_URL}/api/shipping/rate?country=CA`)
       .then((res) => res.json())
-      .then((data) => setInternationalShipping(Number(data.shipping?.regular ?? 0)))
+      .then((data) => setInternationalShipping(parseShippingRate(data)))
       .catch(() => setInternationalShipping(0));
   }, []);
 
   const goToDomestic = () => {
     if (!firstName?.trim() || !lastName?.trim() || !customerEmail?.trim()) {
-      alert("Please fill in your details before continuing.");
+      alert(t.fillDetailsAlert);
       return;
     }
     navigate("/checkout-domestic", {
@@ -79,7 +130,7 @@ const ProductDetailTemplate = ({ product, image, canonicalUrl, metaTitle, breadc
 
   const goToInternational = () => {
     if (!firstName?.trim() || !lastName?.trim() || !customerEmail?.trim()) {
-      alert("Please fill in your details before continuing.");
+      alert(t.fillDetailsAlert);
       return;
     }
     navigate("/checkout-international", {
@@ -102,7 +153,7 @@ const ProductDetailTemplate = ({ product, image, canonicalUrl, metaTitle, breadc
   return (
     <main className="min-h-screen bg-white">
       <Helmet>
-        <html lang="en" />
+        <html lang={lang} />
         <title>{metaTitle}</title>
         <meta name="description" content={product.metaDescription} />
         <link rel="canonical" href={canonicalUrl} />
@@ -111,12 +162,12 @@ const ProductDetailTemplate = ({ product, image, canonicalUrl, metaTitle, breadc
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
         {/* Breadcrumb */}
         <nav className="mb-8 text-sm text-gray-500" aria-label="Breadcrumb">
-          <Link to="/" className="hover:text-gray-700">Home</Link>
+          <Link to={homeUrl} className="hover:text-gray-700">{t.breadcrumbHome}</Link>
           <span className="mx-2">/</span>
-          <Link to="/shop" className="hover:text-gray-700">Shop</Link>
+          <Link to={shopUrl} className="hover:text-gray-700">{t.breadcrumbShop}</Link>
           <span className="mx-2">/</span>
           <Link to={breadcrumbParentUrl} className="hover:text-gray-700">
-            {product.breadcrumbParentLabel || "DNA Test Kits"}
+            {product.breadcrumbParentLabel || t.breadcrumbDefaultParent}
           </Link>
           <span className="mx-2">/</span>
           <span className="text-gray-900">{product.title}</span>
@@ -138,7 +189,7 @@ const ProductDetailTemplate = ({ product, image, canonicalUrl, metaTitle, breadc
                 {product.shortDescription}
               </p>
               <ul className="space-y-2 mb-4">
-                {TRUST_BULLETS.map((bullet) => (
+                {t.trustBullets.map((bullet) => (
                   <li key={bullet} className="flex items-center text-gray-700">
                     <span className="text-blue-600 mr-2">✓</span>
                     {bullet}
@@ -147,23 +198,23 @@ const ProductDetailTemplate = ({ product, image, canonicalUrl, metaTitle, breadc
               </ul>
               <p className="text-sm text-gray-700 mb-6">
                 <span className="font-medium">${price}</span>
-                <span className="text-gray-500"> + shipping</span>
+                <span className="text-gray-500"> {t.plusShipping}</span>
               </p>
 
               {/* Order form / CTA */}
               <div className="bg-[#F5F7FA] rounded-xl border border-gray-200 p-6">
-                <h2 className="text-lg font-semibold text-gray-900 mb-4">Order your test</h2>
+                <h2 className="text-lg font-semibold text-gray-900 mb-4">{t.orderFormTitle}</h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-3">
                   <input
                     type="text"
-                    placeholder="First name *"
+                    placeholder={t.firstNamePlaceholder}
                     value={firstName}
                     onChange={(e) => setFirstName(e.target.value)}
                     className="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                   />
                   <input
                     type="text"
-                    placeholder="Last name *"
+                    placeholder={t.lastNamePlaceholder}
                     value={lastName}
                     onChange={(e) => setLastName(e.target.value)}
                     className="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 focus:border-transparent"
@@ -171,14 +222,14 @@ const ProductDetailTemplate = ({ product, image, canonicalUrl, metaTitle, breadc
                 </div>
                 <input
                   type="email"
-                  placeholder="Email *"
+                  placeholder={t.emailPlaceholder}
                   value={customerEmail}
                   onChange={(e) => setCustomerEmail(e.target.value)}
                   className="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm mb-3 focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                 />
                 <input
                   type="tel"
-                  placeholder="Phone"
+                  placeholder={t.phonePlaceholder}
                   value={phoneNumber}
                   onChange={(e) => setPhoneNumber(e.target.value)}
                   className="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm mb-4 focus:ring-2 focus:ring-blue-500 focus:border-transparent"
@@ -189,20 +240,23 @@ const ProductDetailTemplate = ({ product, image, canonicalUrl, metaTitle, breadc
                     disabled={domesticShipping == null}
                     className="w-full bg-blue-600 hover:bg-blue-700 disabled:bg-gray-400 disabled:cursor-not-allowed text-white font-semibold py-3 px-4 rounded-xl transition-colors"
                   >
-                    {domesticShipping != null
-                      ? `Buy Now — U.S. ($${price} + shipping)`
-                      : "Loading…"}
+                    {domesticShipping != null ? t.buyNowUS(price) : t.loading}
                   </button>
                   <button
                     onClick={goToInternational}
                     disabled={internationalShipping == null}
                     className="w-full bg-gray-800 hover:bg-gray-900 disabled:bg-gray-400 disabled:cursor-not-allowed text-white font-semibold py-3 px-4 rounded-xl transition-colors"
                   >
-                    {internationalShipping != null
-                      ? `Buy Now — International ($${price} + shipping)`
-                      : "Loading…"}
+                    {internationalShipping != null ? t.buyNowInternational(price) : t.loading}
                   </button>
                 </div>
+                {(domesticShipping != null || internationalShipping != null) && (
+                  <p className="text-xs text-gray-500 mt-3">
+                    {domesticShipping != null && t.usShippingLabel(domesticShipping)}
+                    {domesticShipping != null && internationalShipping != null && " · "}
+                    {internationalShipping != null && t.intlShippingLabel(internationalShipping)}
+                  </p>
+                )}
               </div>
             </div>
           </div>
@@ -210,9 +264,9 @@ const ProductDetailTemplate = ({ product, image, canonicalUrl, metaTitle, breadc
 
         {/* How it works */}
         <section className="py-10 md:py-12 border-b border-gray-200 bg-[#F5F7FA]">
-          <h2 className="text-2xl font-bold text-[#1A3C59] mb-8">How it works</h2>
+          <h2 className="text-2xl font-bold text-[#1A3C59] mb-8">{t.howItWorksTitle}</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {HOW_IT_WORKS.map(({ step, title, text }) => (
+            {t.howItWorks.map(({ step, title, text }) => (
               <div key={step}>
                 <span className="inline-flex w-8 h-8 items-center justify-center rounded-full bg-blue-600 text-white text-sm font-bold mb-3">
                   {step}
@@ -226,9 +280,9 @@ const ProductDetailTemplate = ({ product, image, canonicalUrl, metaTitle, breadc
 
         {/* What's included */}
         <section className="py-10 md:py-12 border-b border-gray-200">
-          <h2 className="text-2xl font-bold text-[#1A3C59] mb-6">What&apos;s included</h2>
+          <h2 className="text-2xl font-bold text-[#1A3C59] mb-6">{t.whatsIncludedTitle}</h2>
           <ul className="space-y-2 text-gray-700">
-            {WHATS_INCLUDED.map((item) => (
+            {t.whatsIncluded.map((item) => (
               <li key={item} className="flex items-start">
                 <span className="text-blue-600 mr-2 mt-0.5">✓</span>
                 {item}
@@ -240,7 +294,7 @@ const ProductDetailTemplate = ({ product, image, canonicalUrl, metaTitle, breadc
         {/* Important note */}
         <section className="py-10 md:py-12 border-b border-gray-200 bg-[#F5F7FA]">
           <p className="text-gray-700 leading-relaxed max-w-3xl">
-            {IMPORTANT_NOTE}
+            {t.importantNote}
           </p>
         </section>
 
@@ -250,7 +304,7 @@ const ProductDetailTemplate = ({ product, image, canonicalUrl, metaTitle, breadc
             to={breadcrumbParentUrl}
             className="text-blue-600 hover:text-blue-800 font-medium"
           >
-            ← Compare test options
+            {t.compareOptions}
           </Link>
         </section>
       </div>

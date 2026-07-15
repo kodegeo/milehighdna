@@ -1,0 +1,91 @@
+# Keyword Strategy — derived from SemRush organic data (July 2026)
+# Used by the social content generator to pick topics, keywords, and target URLs.
+# Refresh quarterly: re-run SemRush domain_organic for milehighdnatesting.com.
+
+site: "https://milehighdnatesting.com"
+
+# Clusters are weighted: higher weight = chosen more often for posts.
+# striking_distance = keywords ranking 5-20 where fresh signals help most.
+clusters:
+  - name: local_denver
+    weight: 3
+    reason: "Ranking #9 'denver paternity test', #11-17 'dna testing colorado' — striking distance, GBP posts directly boost these"
+    target_url: "https://milehighdnatesting.com/"
+    secondary_urls:
+      - "https://milehighdnatesting.com/dna-testing-colorado"
+      - "https://milehighdnatesting.com/locations/denver"
+      - "https://milehighdnatesting.com/appointments"
+    keywords:
+      - "denver paternity test"
+      - "dna testing colorado"
+      - "dna testing in colorado"
+      - "genetic testing denver"
+      - "dna test near me denver"
+
+  - name: prenatal_cost
+    weight: 3
+    reason: "125 keywords on the prenatal cost guide, ranking 30-90 — biggest volume cluster (390-1900/mo searches)"
+    target_url: "https://milehighdnatesting.com/guides/prenatal-dna-test-cost"
+    secondary_urls:
+      - "https://milehighdnatesting.com/services/prenatal-paternity-testing"
+    keywords:
+      - "non invasive prenatal paternity test cost"
+      - "cost of prenatal paternity test"
+      - "dna paternity test while pregnant cost"
+      - "how much does a prenatal paternity test cost"
+      - "paternity test while pregnant"
+
+  - name: legal_paternity
+    weight: 2
+    reason: "'court approved dna paternity testing' at #57, high commercial intent"
+    target_url: "https://milehighdnatesting.com/services/legal-paternity-testing"
+    keywords:
+      - "court approved dna paternity testing"
+      - "legal paternity test denver"
+      - "court admissible dna test"
+      - "child support dna test colorado"
+
+  - name: immigration
+    weight: 1
+    reason: "AABB immigration guide ranks for 5 keywords; niche but high value"
+    target_url: "https://milehighdnatesting.com/guides/aabb-labs-for-immigration"
+    secondary_urls:
+      - "https://milehighdnatesting.com/services/immigration-dna-testing"
+    keywords:
+      - "immigration dna test"
+      - "aabb accredited lab immigration"
+      - "uscis dna testing"
+
+  - name: at_home_peace_of_mind
+    weight: 1
+    reason: "Shop page + at-home kit blog post ranking; drives e-commerce"
+    target_url: "https://milehighdnatesting.com/shop/at-home-paternity-test"
+    secondary_urls:
+      - "https://milehighdnatesting.com/mile-high-dna-corner/best-at-home-paternity-dna-kit-denver"
+    keywords:
+      - "at home paternity test denver"
+      - "peace of mind paternity test"
+      - "private dna testing"
+
+  - name: family_relationship
+    weight: 1
+    reason: "Siblingship/grandparentage/avuncular — low competition service pages"
+    target_url: "https://milehighdnatesting.com/"
+    keywords:
+      - "sibling dna test"
+      - "grandparent dna test"
+      - "avuncular dna test"
+
+# Cities to rotate through for local references (matches docs/ city pages)
+locations:
+  primary: ["Denver", "Aurora", "Lakewood"]
+  rotation:
+    - "Thornton"
+    - "Westminster"
+    - "Englewood"
+    - "Littleton"
+    - "Arvada"
+    - "Centennial"
+    - "Boulder"
+    - "Colorado Springs"
+    - "Fort Collins"

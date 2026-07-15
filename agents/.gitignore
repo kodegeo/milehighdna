@@ -1,6 +1,7 @@
 # Agent state files
 state/*.json
 !state/.gitkeep
+!state/social.generate_state.json
 
 # Log files
 logs/*.log

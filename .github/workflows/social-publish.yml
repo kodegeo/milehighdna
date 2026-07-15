@@ -1,0 +1,54 @@
+name: Social - Publish today's posts
+
+on:
+  schedule:
+    # Mon/Wed/Fri 9:00 AM Denver (15:00 UTC during MDT)
+    - cron: "0 15 * * 1,3,5"
+  workflow_dispatch:
+    inputs:
+      date:
+        description: "Override date (YYYY-MM-DD), leave empty for today"
+        required: false
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r agents/requirements.txt
+
+      - name: Publish
+        env:
+          META_PAGE_ID: ${{ secrets.META_PAGE_ID }}
+          META_PAGE_ACCESS_TOKEN: ${{ secrets.META_PAGE_ACCESS_TOKEN }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          THREADS_USER_ID: ${{ secrets.THREADS_USER_ID }}
+          THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
+          GOOGLE_CLIENT_ID: ${{ secrets.GOOGLE_CLIENT_ID }}
+          GOOGLE_CLIENT_SECRET: ${{ secrets.GOOGLE_CLIENT_SECRET }}
+          GBP_REFRESH_TOKEN: ${{ secrets.GBP_REFRESH_TOKEN }}
+          GBP_ACCOUNT_ID: ${{ secrets.GBP_ACCOUNT_ID }}
+          GBP_LOCATION_ID: ${{ secrets.GBP_LOCATION_ID }}
+        run: |
+          DATE_FLAG=""
+          if [ -n "${{ inputs.date }}" ]; then DATE_FLAG="--date ${{ inputs.date }}"; fi
+          python -m agents.run social.publish --live --yes $DATE_FLAG
+
+      - name: Commit updated queue statuses
+        if: always()
+        run: |
+          git config user.name "social-bot"
+          git config user.email "actions@github.com"
+          git add agents/state/social_queue/
+          git diff --cached --quiet || git commit -m "chore: publish results [skip ci]"
+          git push

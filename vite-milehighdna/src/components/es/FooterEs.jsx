@@ -21,6 +21,7 @@ const FooterEs = () => {
           <ul className="space-y-2">
             <li><Link to="/about" className="text-gray-700 hover:text-blue-600 transition duration-300">Sobre Nosotros</Link></li>
             <li><Link to="/services" className="text-gray-700 hover:text-blue-600 transition duration-300">Servicios</Link></li>
+            <li><Link to="/es/tienda" className="text-gray-700 hover:text-blue-600 transition duration-300">Tienda</Link></li>
             <li><Link to="/faq" className="text-gray-700 hover:text-blue-600 transition duration-300">Preguntas Frecuentes</Link></li>
             <li><Link to="/contact" className="text-gray-700 hover:text-blue-600 transition duration-300">Contacto</Link></li>
           </ul>

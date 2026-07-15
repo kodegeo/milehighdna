@@ -87,6 +87,10 @@ const NavigationEs = () => {
                     </div>
                 )}
                 </div>
+
+            {/* Tienda */}
+            <Link to="/es/tienda" className="text-gray-700 hover:text-blue-600 transition duration-300">Tienda</Link>
+
             <Link to="/es/programar-cita" className="text-gray-700 hover:text-blue-600 transition duration-300">Citas</Link>
 
             <Link to="/es/preguntas-frecuentes" className="text-gray-700 hover:text-blue-600 transition duration-300">Preguntas Frecuentes</Link>
@@ -144,6 +148,7 @@ const NavigationEs = () => {
               </div>
             </details>
 
+            <Link to="/es/tienda" className="text-gray-700 hover:text-blue-600 transition duration-300 block py-2" onClick={() => setIsMenuOpen(false)}>Tienda</Link>
             <Link to="/es/programar-cita" className="text-gray-700 hover:text-blue-600 transition duration-300 block py-2" onClick={() => setIsMenuOpen(false)}>Citas</Link>
             <Link to="/es/preguntas-frecuentes" className="text-gray-700 hover:text-blue-600 transition duration-300 block py-2" onClick={() => setIsMenuOpen(false)}>Preguntas Frecuentes</Link>
             <Link to="/es/consultar-resultados" className="text-gray-700 hover:text-blue-600 transition duration-300 block py-2" onClick={() => setIsMenuOpen(false)}>Obtener Resultados</Link>

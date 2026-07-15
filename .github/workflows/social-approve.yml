@@ -1,0 +1,42 @@
+name: Social - Approve pending posts
+
+on:
+  workflow_dispatch:
+    inputs:
+      week:
+        description: "ISO week id (e.g. 2026-W30). Empty = nearest week with pending posts"
+        required: false
+      platform:
+        description: "Limit to one platform (e.g. gbp). Empty = all pending"
+        required: false
+
+permissions:
+  contents: write
+
+jobs:
+  approve:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r agents/requirements.txt
+
+      - name: Approve
+        run: |
+          FLAGS=""
+          if [ -n "${{ inputs.week }}" ]; then FLAGS="$FLAGS --week ${{ inputs.week }}"; fi
+          if [ -n "${{ inputs.platform }}" ]; then FLAGS="$FLAGS --platform ${{ inputs.platform }}"; fi
+          python -m agents.run social.approve --live --yes $FLAGS
+
+      - name: Commit
+        run: |
+          git config user.name "social-bot"
+          git config user.email "actions@github.com"
+          git add agents/state/social_queue/
+          git diff --cached --quiet || git commit -m "chore: approve pending posts [skip ci]"
+          git push

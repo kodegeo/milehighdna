@@ -1,0 +1,58 @@
+name: Social - Generate weekly queue
+
+on:
+  schedule:
+    # Sunday 5:00 PM Denver (23:00 UTC during MDT)
+    - cron: "0 23 * * 0"
+  workflow_dispatch:
+    inputs:
+      force:
+        description: "Regenerate even if queue exists"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r agents/requirements.txt
+
+      - name: Generate weekly queue
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: |
+          FORCE_FLAG=""
+          if [ "${{ inputs.force }}" = "true" ]; then FORCE_FLAG="--force"; fi
+          python -m agents.run social.generate --live --yes $FORCE_FLAG
+
+      - name: Commit queue
+        run: |
+          git config user.name "social-bot"
+          git config user.email "actions@github.com"
+          git add agents/state/social_queue/ agents/state/social.generate_state.json
+          git diff --cached --quiet || git commit -m "chore: weekly social queue [skip ci]"
+          git push
+
+      - name: Open review issue for GBP posts
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python agents/scripts/pending_review_summary.py > /tmp/pending.md
+          WEEK=$(head -1 /tmp/pending.md | sed 's/^WEEK: //')
+          if [ "$(wc -l < /tmp/pending.md)" -gt 1 ]; then
+            tail -n +2 /tmp/pending.md > /tmp/pending_body.md
+            gh issue create \
+              --title "Review GBP posts for $WEEK" \
+              --body-file /tmp/pending_body.md
+          fi

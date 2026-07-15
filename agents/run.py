@@ -19,6 +19,8 @@ from agents.domains.gbp.qa_agent import GBPQAAgent
 from agents.domains.gbp.review_agent import GBPReviewAgent
 from agents.domains.seo.sitemap_agent import SEOSitemapAgent
 from agents.domains.analytics.gsc_monitor_agent import GSCMonitorAgent
+from agents.domains.social.generator_agent import SocialGenerateAgent
+from agents.domains.social.publish_agent import SocialPublishAgent, SocialApproveAgent
 
 
 # Agent registry
@@ -29,6 +31,9 @@ AGENTS = {
     "gbp.review": GBPReviewAgent,
     "seo.sitemap": SEOSitemapAgent,
     "analytics.gsc_monitor": GSCMonitorAgent,
+    "social.generate": SocialGenerateAgent,
+    "social.publish": SocialPublishAgent,
+    "social.approve": SocialApproveAgent,
 }
 
 
@@ -103,7 +108,37 @@ Examples:
         type=str,
         help="Specific location (for gbp.post agent)"
     )
-    
+
+    parser.add_argument(
+        "--yes",
+        action="store_true",
+        help="Skip the live-mode confirmation prompt (for CI)"
+    )
+
+    parser.add_argument(
+        "--week",
+        type=str,
+        help="ISO week id like 2026-W30 (for social.approve)"
+    )
+
+    parser.add_argument(
+        "--force",
+        action="store_true",
+        help="Regenerate queue even if it exists (for social.generate)"
+    )
+
+    parser.add_argument(
+        "--platform",
+        type=str,
+        help="Limit to one platform (for social.approve)"
+    )
+
+    parser.add_argument(
+        "--date",
+        type=str,
+        help="Override today's date YYYY-MM-DD (for social.publish testing)"
+    )
+
     return parser.parse_args()
 
 
@@ -114,7 +149,7 @@ def main():
     # Determine dry-run mode
     dry_run = not args.live if args.live else args.dry_run
     
-    if not dry_run:
+    if not dry_run and not args.yes:
         print("⚠️  WARNING: Running in LIVE mode. This will make actual API calls.")
         response = input("Are you sure? (yes/no): ")
         if response.lower() != "yes":
@@ -153,7 +188,19 @@ def main():
     
     if args.location and args.agent == "gbp.post":
         exec_kwargs["location"] = args.location
-    
+
+    if args.agent == "social.generate" and args.force:
+        exec_kwargs["force"] = True
+
+    if args.agent == "social.approve":
+        if args.week:
+            exec_kwargs["week"] = args.week
+        if args.platform:
+            exec_kwargs["platform"] = args.platform
+
+    if args.agent == "social.publish" and args.date:
+        exec_kwargs["on_date"] = args.date
+
     # Run agent
     print(f"\n🚀 Running {args.agent} (dry_run={dry_run})...\n")
     try:

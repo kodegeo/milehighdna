@@ -168,6 +168,8 @@ import Cancel from './pages/Cancel';
 import Success from './pages/Success';
 import TestAdmin from './pages/TestAdmin';
 import PrenatalEs from './pages/es/PrenatalEs';
+import TiendaCollection from './pages/es/tienda/TiendaCollection';
+import ProductPageEs from './pages/es/tienda/ProductPageEs';
 
 function AppLayout() {
   const location = useLocation();
@@ -356,6 +358,8 @@ function AppLayout() {
             <Route path="/es/laboratorios-asociados-denver" element={<Navigate to="/es/laboratorio-asociado-denver" replace />} />
             <Route path="/es/laboratorio-asociado-denver" element={<AABBAccreditationEs />} />
             <Route path="/es/prueba-de-paternidad-prenatal" element={<PrenatalEs />} />
+            <Route path="/es/tienda" element={<TiendaCollection />} />
+            <Route path="/es/tienda/producto/:productKey" element={<ProductPageEs />} />
           </Routes>
 
         </main>

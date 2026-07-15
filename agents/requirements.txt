@@ -14,3 +14,10 @@ PyYAML>=6.0
 # Future dependencies (not yet required):
 # google-api-python-client>=2.0.0  # For GBP API
 # openai>=1.0.0  # For LLM content generation
+
+# Environment variables
+python-dotenv>=1.0
+
+# Social automation (added July 2026)
+openai>=1.0.0
+requests>=2.31

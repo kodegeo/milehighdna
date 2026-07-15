@@ -69,7 +69,7 @@ const TopNavigationEs = () => {
             <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-pink-400">
               <FaInstagram className="w-5 h-5" />
             </a>
-            <a href="/cart" className="relative group">
+            <a href="/es/tienda" className="relative group" aria-label="Tienda">
               <FaShoppingCart className="w-6 h-6 hover:text-blue-500 transition" />
             </a>
           </div>
