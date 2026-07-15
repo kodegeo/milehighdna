@@ -82,8 +82,11 @@ platforms:
 # Add branded images to vite-milehighdna/public/social/ and deploy,
 # then list them here. Generator rotates through the pool.
 image_pool:
-  # - "https://milehighdnatesting.com/social/branded-01.jpg"
-  # - "https://milehighdnatesting.com/social/branded-02.jpg"
+  - "https://milehighdnatesting.com/social/paternity_1.png"
+  - "https://milehighdnatesting.com/social/paternity_2.png"
+  - "https://milehighdnatesting.com/social/prenatal_1.png"
+  - "https://milehighdnatesting.com/social/collector_1.png"
+  - "https://milehighdnatesting.com/social/test_1.png"
 
 # Behavior when image_pool is empty and platform requires_image:
 # "skip" = skip that platform with a warning, "fail" = error out
