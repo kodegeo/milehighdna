@@ -6,7 +6,7 @@
       "id": "2026-W30-mon-gbp",
       "platform": "gbp",
       "scheduled_date": "2026-07-20",
-      "status": "pending_review",
+      "status": "approved",
       "cluster": "prenatal_cost",
       "keyword": "paternity test while pregnant",
       "location": "Denver",
@@ -18,7 +18,8 @@
       "image_url": null,
       "image_urls": [],
       "published_at": null,
-      "result": null
+      "result": null,
+      "approved_at": "2026-07-15T03:22:46.892668"
     },
     {
       "id": "2026-W30-mon-instagram",
@@ -67,7 +68,7 @@
       "id": "2026-W30-wed-gbp",
       "platform": "gbp",
       "scheduled_date": "2026-07-22",
-      "status": "pending_review",
+      "status": "approved",
       "cluster": "at_home_peace_of_mind",
       "keyword": "peace of mind paternity test",
       "location": "Aurora",
@@ -79,7 +80,8 @@
       "image_url": null,
       "image_urls": [],
       "published_at": null,
-      "result": null
+      "result": null,
+      "approved_at": "2026-07-15T03:22:46.892677"
     },
     {
       "id": "2026-W30-wed-instagram",
@@ -128,7 +130,7 @@
       "id": "2026-W30-fri-gbp",
       "platform": "gbp",
       "scheduled_date": "2026-07-24",
-      "status": "pending_review",
+      "status": "approved",
       "cluster": "prenatal_cost",
       "keyword": "how much does a prenatal paternity test cost",
       "location": "Lakewood",
@@ -140,7 +142,8 @@
       "image_url": null,
       "image_urls": [],
       "published_at": null,
-      "result": null
+      "result": null,
+      "approved_at": "2026-07-15T03:22:46.892681"
     },
     {
       "id": "2026-W30-fri-instagram",
