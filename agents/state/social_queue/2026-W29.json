@@ -100,7 +100,7 @@
       "id": "2026-W29-wed-instagram",
       "platform": "instagram",
       "scheduled_date": "2026-07-15",
-      "status": "approved",
+      "status": "published",
       "cluster": "legal_paternity",
       "keyword": "court approved dna paternity testing",
       "location": "Westminster",
@@ -120,14 +120,17 @@
       ],
       "image_url": "https://milehighdnatesting.com/social/collector_1.png",
       "image_urls": [],
-      "published_at": null,
-      "result": null
+      "published_at": "2026-07-15T15:29:36.896005",
+      "result": {
+        "success": true,
+        "post_id": "17954191539192961"
+      }
     },
     {
       "id": "2026-W29-wed-facebook",
       "platform": "facebook",
       "scheduled_date": "2026-07-15",
-      "status": "approved",
+      "status": "published",
       "cluster": "legal_paternity",
       "keyword": "court approved dna paternity testing",
       "location": "Westminster",
@@ -138,14 +141,17 @@
       "hashtags": [],
       "image_url": null,
       "image_urls": [],
-      "published_at": null,
-      "result": null
+      "published_at": "2026-07-15T15:29:44.525068",
+      "result": {
+        "success": true,
+        "post_id": "664866596708872_122193288200866699"
+      }
     },
     {
       "id": "2026-W29-wed-threads",
       "platform": "threads",
       "scheduled_date": "2026-07-15",
-      "status": "approved",
+      "status": "published",
       "cluster": "legal_paternity",
       "keyword": "court approved dna paternity testing",
       "location": "Westminster",
@@ -156,8 +162,11 @@
       "hashtags": [],
       "image_url": null,
       "image_urls": [],
-      "published_at": null,
-      "result": null
+      "published_at": "2026-07-15T15:29:55.924477",
+      "result": {
+        "success": true,
+        "post_id": "18104554996952718"
+      }
     },
     {
       "id": "2026-W29-fri-gbp",
