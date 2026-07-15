@@ -128,6 +128,12 @@ Examples:
     )
 
     parser.add_argument(
+        "--current-week",
+        action="store_true",
+        help="Generate for the week containing today instead of next week (social.generate)"
+    )
+
+    parser.add_argument(
         "--platform",
         type=str,
         help="Limit to one platform (for social.approve)"
@@ -189,8 +195,11 @@ def main():
     if args.location and args.agent == "gbp.post":
         exec_kwargs["location"] = args.location
 
-    if args.agent == "social.generate" and args.force:
-        exec_kwargs["force"] = True
+    if args.agent == "social.generate":
+        if args.force:
+            exec_kwargs["force"] = True
+        if args.current_week:
+            exec_kwargs["current_week"] = True
 
     if args.agent == "social.approve":
         if args.week:

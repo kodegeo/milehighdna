@@ -7,6 +7,8 @@ social_platforms.yml. Writes the queue to agents/state/social_queue/.
 
 Run Sunday (or any day — it always targets the NEXT week):
     python -m agents.run social.generate --live --yes
+For the week containing today (mid-week backfill):
+    python -m agents.run social.generate --live --yes --current-week
 Dry-run prints posts without calling OpenAI unless a key is present.
 """
 
@@ -142,7 +144,10 @@ class SocialGenerateAgent(BaseAgent):
 
     def execute(self, **kwargs) -> Dict[str, Any]:
         sched = self.platform_config["schedule"]
-        dates = q.next_week_dates(days=sched["days"])
+        if kwargs.get("current_week"):
+            dates = q.current_week_dates(days=sched["days"])
+        else:
+            dates = q.next_week_dates(days=sched["days"])
         week_id = q.iso_week_id(dates[0])
 
         existing = q.load_queue(week_id)
