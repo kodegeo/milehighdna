@@ -190,7 +190,7 @@
       "id": "2026-W29-fri-instagram",
       "platform": "instagram",
       "scheduled_date": "2026-07-17",
-      "status": "approved",
+      "status": "published",
       "cluster": "immigration",
       "keyword": "immigration dna test",
       "location": "Englewood",
@@ -210,14 +210,17 @@
       ],
       "image_url": "https://milehighdnatesting.com/social/test_1.png",
       "image_urls": [],
-      "published_at": null,
-      "result": null
+      "published_at": "2026-07-17T15:26:10.730917",
+      "result": {
+        "success": true,
+        "post_id": "18106427771021081"
+      }
     },
     {
       "id": "2026-W29-fri-facebook",
       "platform": "facebook",
       "scheduled_date": "2026-07-17",
-      "status": "approved",
+      "status": "published",
       "cluster": "immigration",
       "keyword": "immigration dna test",
       "location": "Englewood",
@@ -228,14 +231,17 @@
       "hashtags": [],
       "image_url": null,
       "image_urls": [],
-      "published_at": null,
-      "result": null
+      "published_at": "2026-07-17T15:26:17.270552",
+      "result": {
+        "success": true,
+        "post_id": "664866596708872_122193599360866699"
+      }
     },
     {
       "id": "2026-W29-fri-threads",
       "platform": "threads",
       "scheduled_date": "2026-07-17",
-      "status": "approved",
+      "status": "published",
       "cluster": "immigration",
       "keyword": "immigration dna test",
       "location": "Englewood",
@@ -246,8 +252,11 @@
       "hashtags": [],
       "image_url": null,
       "image_urls": [],
-      "published_at": null,
-      "result": null
+      "published_at": "2026-07-17T15:26:28.087685",
+      "result": {
+        "success": true,
+        "post_id": "18116022397801169"
+      }
     }
   ]
 }
