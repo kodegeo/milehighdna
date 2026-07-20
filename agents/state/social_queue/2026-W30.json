@@ -24,7 +24,7 @@
       "id": "2026-W30-mon-instagram",
       "platform": "instagram",
       "scheduled_date": "2026-07-20",
-      "status": "approved",
+      "status": "published",
       "cluster": "local_denver",
       "keyword": "denver paternity test",
       "location": "Denver",
@@ -48,14 +48,17 @@
         "https://milehighdnatesting.com/social/paternity_2.png",
         "https://milehighdnatesting.com/social/prenatal_1.png"
       ],
-      "published_at": null,
-      "result": null
+      "published_at": "2026-07-20T15:35:24.212444",
+      "result": {
+        "success": true,
+        "post_id": "18015117446914525"
+      }
     },
     {
       "id": "2026-W30-mon-facebook",
       "platform": "facebook",
       "scheduled_date": "2026-07-20",
-      "status": "approved",
+      "status": "published",
       "cluster": "local_denver",
       "keyword": "denver paternity test",
       "location": "Denver",
@@ -66,14 +69,17 @@
       "hashtags": [],
       "image_url": null,
       "image_urls": [],
-      "published_at": null,
-      "result": null
+      "published_at": "2026-07-20T15:35:33.250404",
+      "result": {
+        "success": true,
+        "post_id": "664866596708872_122194130006866699"
+      }
     },
     {
       "id": "2026-W30-mon-threads",
       "platform": "threads",
       "scheduled_date": "2026-07-20",
-      "status": "approved",
+      "status": "published",
       "cluster": "local_denver",
       "keyword": "denver paternity test",
       "location": "Denver",
@@ -84,8 +90,11 @@
       "hashtags": [],
       "image_url": null,
       "image_urls": [],
-      "published_at": null,
-      "result": null
+      "published_at": "2026-07-20T15:35:44.113035",
+      "result": {
+        "success": true,
+        "post_id": "17887208058602760"
+      }
     },
     {
       "id": "2026-W30-wed-gbp",
