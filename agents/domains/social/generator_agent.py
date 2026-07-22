@@ -152,8 +152,12 @@ class SocialGenerateAgent(BaseAgent):
 
         existing = q.load_queue(week_id)
         if existing and not kwargs.get("force"):
-            return {"success": False,
-                    "error": f"Queue for {week_id} already exists. Use --force to regenerate."}
+            self.logger.info(
+                f"Queue for {week_id} already exists — leaving it untouched "
+                "(use --force to regenerate). Nothing to do.")
+            return {"success": True, "skipped": True, "week": week_id,
+                    "message": f"Queue for {week_id} already exists; "
+                               "kept as-is."}
 
         queue = q.new_queue(week_id)
         platforms = {k: v for k, v in self.platform_config["platforms"].items()
