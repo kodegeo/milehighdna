@@ -93,6 +93,7 @@ import NotFound from './pages/NotFound';
 
 // Guide pages
 import GuidesIndex from './pages/guides/GuidesIndex';
+import DNATestingDenverGuide from './pages/guides/DNATestingDenverGuide';
 import PrenatalDNATestCostGuide from './pages/guides/PrenatalDNATestCostGuide';
 import LegalDNATestCostGuide from './pages/guides/LegalDNATestCostGuide';
 import NonLegalDNATestCostGuide from './pages/guides/NonLegalDNATestCostGuide';
@@ -242,6 +243,7 @@ function AppLayout() {
 
             {/* Guide Pages */}
             <Route path="/guides" element={<GuidesIndex />} />
+            <Route path="/guides/dna-testing-denver" element={<DNATestingDenverGuide />} />
             <Route path="/guides/prenatal-dna-test-cost" element={<PrenatalDNATestCostGuide />} />
             <Route path="/guides/legal-dna-test-cost" element={<LegalDNATestCostGuide />} />
             <Route path="/guides/non-legal-dna-test-cost" element={<NonLegalDNATestCostGuide />} />

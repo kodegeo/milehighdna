@@ -14,6 +14,7 @@ const GuidesIndex = () => {
     {
       name: "General DNA Testing",
       guides: [
+        { title: "DNA Testing in Denver: Complete 2026 Guide", description: "Compare legal, prenatal, immigration, kinship, and at-home DNA testing options in Denver: costs, turnaround times, court admissibility, and how to choose a provider. English and Spanish service.", link: "/guides/dna-testing-denver" },
         { title: "How DNA Testing Works | Complete Guide", description: "A complete guide to how DNA testing works: sample collection, laboratory analysis, and how results are used for paternity, legal, and relationship testing.", link: "/guides/how-dna-testing-works" },
         { title: "How Accurate Is DNA Testing?", description: "Learn how accurate DNA testing is for paternity and relationship tests. Understand probability statistics, accreditation, and what affects reliability.", link: "/guides/how-accurate-is-dna-testing" },
         { title: "How Long Do DNA Test Results Take?", description: "Typical turnaround times for paternity, prenatal, legal, and immigration DNA tests—and what affects how long you wait for results.", link: "/guides/how-long-does-dna-testing-take" },
