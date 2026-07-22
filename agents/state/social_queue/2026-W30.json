@@ -118,7 +118,7 @@
       "id": "2026-W30-wed-instagram",
       "platform": "instagram",
       "scheduled_date": "2026-07-22",
-      "status": "approved",
+      "status": "published",
       "cluster": "at_home_peace_of_mind",
       "keyword": "peace of mind paternity test",
       "location": "Westminster",
@@ -138,14 +138,17 @@
       ],
       "image_url": "https://milehighdnatesting.com/social/collector.png",
       "image_urls": [],
-      "published_at": null,
-      "result": null
+      "published_at": "2026-07-22T15:30:44.817404",
+      "result": {
+        "success": true,
+        "post_id": "17888775027420867"
+      }
     },
     {
       "id": "2026-W30-wed-facebook",
       "platform": "facebook",
       "scheduled_date": "2026-07-22",
-      "status": "approved",
+      "status": "published",
       "cluster": "at_home_peace_of_mind",
       "keyword": "peace of mind paternity test",
       "location": "Westminster",
@@ -156,14 +159,17 @@
       "hashtags": [],
       "image_url": null,
       "image_urls": [],
-      "published_at": null,
-      "result": null
+      "published_at": "2026-07-22T15:30:53.792461",
+      "result": {
+        "success": true,
+        "post_id": "664866596708872_122194502546866699"
+      }
     },
     {
       "id": "2026-W30-wed-threads",
       "platform": "threads",
       "scheduled_date": "2026-07-22",
-      "status": "approved",
+      "status": "published",
       "cluster": "at_home_peace_of_mind",
       "keyword": "peace of mind paternity test",
       "location": "Westminster",
@@ -174,8 +180,11 @@
       "hashtags": [],
       "image_url": null,
       "image_urls": [],
-      "published_at": null,
-      "result": null
+      "published_at": "2026-07-22T15:31:03.442437",
+      "result": {
+        "success": true,
+        "post_id": "18143261971546012"
+      }
     },
     {
       "id": "2026-W30-fri-gbp",
