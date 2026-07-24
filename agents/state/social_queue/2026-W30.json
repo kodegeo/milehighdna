@@ -208,7 +208,7 @@
       "id": "2026-W30-fri-instagram",
       "platform": "instagram",
       "scheduled_date": "2026-07-24",
-      "status": "approved",
+      "status": "published",
       "cluster": "legal_paternity",
       "keyword": "child support dna test colorado",
       "location": "Englewood",
@@ -219,14 +219,17 @@
       "hashtags": [],
       "image_url": "https://milehighdnatesting.com/social/paternity-3.png",
       "image_urls": [],
-      "published_at": null,
-      "result": null
+      "published_at": "2026-07-24T15:29:11.110820",
+      "result": {
+        "success": true,
+        "post_id": "18107087291113276"
+      }
     },
     {
       "id": "2026-W30-fri-facebook",
       "platform": "facebook",
       "scheduled_date": "2026-07-24",
-      "status": "approved",
+      "status": "published",
       "cluster": "legal_paternity",
       "keyword": "child support dna test colorado",
       "location": "Englewood",
@@ -237,14 +240,17 @@
       "hashtags": [],
       "image_url": null,
       "image_urls": [],
-      "published_at": null,
-      "result": null
+      "published_at": "2026-07-24T15:29:17.457280",
+      "result": {
+        "success": true,
+        "post_id": "664866596708872_122194885670866699"
+      }
     },
     {
       "id": "2026-W30-fri-threads",
       "platform": "threads",
       "scheduled_date": "2026-07-24",
-      "status": "approved",
+      "status": "published",
       "cluster": "legal_paternity",
       "keyword": "child support dna test colorado",
       "location": "Englewood",
@@ -255,8 +261,11 @@
       "hashtags": [],
       "image_url": null,
       "image_urls": [],
-      "published_at": null,
-      "result": null
+      "published_at": "2026-07-24T15:29:28.833340",
+      "result": {
+        "success": true,
+        "post_id": "17861519940658461"
+      }
     }
   ]
 }
