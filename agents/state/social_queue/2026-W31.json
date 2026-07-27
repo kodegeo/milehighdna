@@ -24,7 +24,7 @@
       "id": "2026-W31-mon-instagram",
       "platform": "instagram",
       "scheduled_date": "2026-07-27",
-      "status": "approved",
+      "status": "failed",
       "cluster": "prenatal_cost",
       "keyword": "non invasive prenatal paternity test cost",
       "location": "Littleton",
@@ -45,13 +45,16 @@
       "image_url": "https://milehighdnatesting.com/social/paternity_1.png",
       "image_urls": [],
       "published_at": null,
-      "result": null
+      "result": {
+        "success": false,
+        "error": "container: {\"error\":{\"message\":\"The image format is not supported.\",\"type\":\"OAuthException\",\"code\":36001,\"error_subcode\":2207083,\"is_transient\":false,\"error_user_title\":\"Unknown Image Format\",\"error_user_msg\":\"The image could not be processed because its format could not be recognized. This usually means the file is corrupted, not a valid image, or the URL returned an error page instead of an image. Please verify that the image_url points to a valid image file in a supported format (JPEG, PNG, GIF, WebP, HEIC, or AVIF). For more information on supported formats and media specifications, see: https:\\/\\/developers.facebook.com\\/docs\\/instagram-platform\\/instagram-graph-api\\/reference\\/ig-user\\/media#creating\",\"fbtrace_id\":\"AD-qye04E6ktH4YuxgvRDLt\"}}"
+      }
     },
     {
       "id": "2026-W31-mon-facebook",
       "platform": "facebook",
       "scheduled_date": "2026-07-27",
-      "status": "approved",
+      "status": "published",
       "cluster": "prenatal_cost",
       "keyword": "non invasive prenatal paternity test cost",
       "location": "Littleton",
@@ -62,14 +65,17 @@
       "hashtags": [],
       "image_url": null,
       "image_urls": [],
-      "published_at": null,
-      "result": null
+      "published_at": "2026-07-27T15:51:41.028218",
+      "result": {
+        "success": true,
+        "post_id": "664866596708872_122195421674866699"
+      }
     },
     {
       "id": "2026-W31-mon-threads",
       "platform": "threads",
       "scheduled_date": "2026-07-27",
-      "status": "approved",
+      "status": "published",
       "cluster": "prenatal_cost",
       "keyword": "non invasive prenatal paternity test cost",
       "location": "Littleton",
@@ -80,8 +86,11 @@
       "hashtags": [],
       "image_url": null,
       "image_urls": [],
-      "published_at": null,
-      "result": null
+      "published_at": "2026-07-27T15:51:51.207639",
+      "result": {
+        "success": true,
+        "post_id": "17994982644005481"
+      }
     },
     {
       "id": "2026-W31-wed-gbp",
