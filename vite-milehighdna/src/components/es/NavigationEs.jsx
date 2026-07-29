@@ -17,6 +17,8 @@ const NavigationEs = () => {
     };
   }, [isMenuOpen]);
 
+  const closeDropdown = () => setOpenDropdown(null);
+
   return (
     <nav className="bg-white border-b border-gray-200 shadow-sm sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -38,9 +40,49 @@ const NavigationEs = () => {
           </div>
           {/* Desktop Navigation */}
           <div className="hidden md:flex md:items-center md:space-x-8">
-            <Link to="/es/sobre-nosotros" className="text-gray-700 hover:text-blue-600 transition duration-300">Sobre Nosotros</Link>
-            <Link to={PARTNER_LAB_PAGE_PATH_ES} className="text-gray-700 hover:text-blue-600 transition duration-300">{PARTNER_LAB_NAV_LABEL_ES}</Link>
-            
+            <div
+              className="relative"
+              onMouseEnter={() => setOpenDropdown('about')}
+              onMouseLeave={closeDropdown}
+            >
+              <button
+                type="button"
+                className="text-gray-700 hover:text-blue-600 transition duration-300 flex items-center"
+                onClick={() => setOpenDropdown(openDropdown === 'about' ? null : 'about')}
+              >
+                Sobre Nosotros
+                <svg className="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+              {openDropdown === 'about' && (
+                <div
+                  className="absolute top-full left-0 pt-2 z-50"
+                  style={{ minWidth: '200px' }}
+                >
+                  <div
+                    className="bg-white rounded-[10px] py-2 z-50"
+                    style={{ boxShadow: '0 12px 30px rgba(0,0,0,0.12)' }}
+                  >
+                    <Link
+                      to="/es/sobre-nosotros"
+                      className="block px-4 py-2.5 text-sm text-gray-700 whitespace-nowrap hover:bg-gray-50 hover:text-blue-600"
+                      onClick={closeDropdown}
+                    >
+                      Sobre Nosotros
+                    </Link>
+                    <Link
+                      to={PARTNER_LAB_PAGE_PATH_ES}
+                      className="block px-4 py-2.5 text-sm text-gray-700 whitespace-nowrap hover:bg-gray-50 hover:text-blue-600"
+                      onClick={closeDropdown}
+                    >
+                      {PARTNER_LAB_NAV_LABEL_ES}
+                    </Link>
+                  </div>
+                </div>
+              )}
+            </div>
+
             {/* Services Dropdown */}
             <div
                 className="relative"
@@ -124,8 +166,13 @@ const NavigationEs = () => {
         {/* Mobile Menu */}
         {isMenuOpen && (
           <div className="md:hidden px-4 pb-4 max-h-[80vh] overflow-y-auto">
-            <Link to="/es/sobre-nosotros" className="text-gray-700 hover:text-blue-600 transition duration-300 block py-2" onClick={() => setIsMenuOpen(false)}>Sobre Nosotros</Link>
-            <Link to={PARTNER_LAB_PAGE_PATH_ES} className="text-gray-700 hover:text-blue-600 transition duration-300 block py-2" onClick={() => setIsMenuOpen(false)}>{PARTNER_LAB_NAV_LABEL_ES}</Link>
+            <details className="py-2">
+              <summary className="cursor-pointer text-gray-700 font-semibold">Sobre Nosotros</summary>
+              <div className="ml-4 mt-2 space-y-1">
+                <Link to="/es/sobre-nosotros" className="block py-1 text-gray-700" onClick={() => setIsMenuOpen(false)}>Sobre Nosotros</Link>
+                <Link to={PARTNER_LAB_PAGE_PATH_ES} className="block py-1 text-gray-700" onClick={() => setIsMenuOpen(false)}>{PARTNER_LAB_NAV_LABEL_ES}</Link>
+              </div>
+            </details>
 
             <details className="py-2">
               <summary className="text-gray-700 hover:text-blue-600 transition duration-300 cursor-pointer">Servicios</summary>

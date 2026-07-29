@@ -15,7 +15,6 @@ const SERVICES_MENU = [
     ],
   },
   { label: 'Non-Invasive Prenatal', to: '/services/prenatal-paternity-testing' },
-  { label: 'Immigration & Government', to: '/services/immigration-dna-testing' },
   {
     label: 'Relationship Testing',
     children: [
@@ -28,6 +27,7 @@ const SERVICES_MENU = [
   {
     label: 'Private & Specialty Testing',
     children: [
+      { label: 'Immigration & Government', to: '/services/immigration-dna-testing' },
       { label: 'Infidelity DNA Testing', to: '/services/infidelity-dna-testing' },
       { label: 'Discreet & Private DNA Testing', to: '/services/discreet-dna-testing' },
       { label: 'Single DNA Profile', to: '/services/single-dna-profile' },
@@ -124,15 +124,17 @@ const Navigation = () => {
                     >
                       Why Choose Us
                     </Link>
+                    <Link
+                      to={PARTNER_LAB_PAGE_PATH}
+                      className="block px-4 py-2.5 text-sm text-gray-700 whitespace-nowrap hover:bg-gray-50 hover:text-blue-600"
+                      onClick={closeDropdown}
+                    >
+                      {PARTNER_LAB_NAV_LABEL}
+                    </Link>
                   </div>
                 </div>
               )}
             </div>
-
-            {/* Accredited partner laboratory */}
-            <Link to={PARTNER_LAB_PAGE_PATH} className="text-gray-700 hover:text-blue-600 transition duration-300">
-              {PARTNER_LAB_NAV_LABEL}
-            </Link>
 
           {/* Services Dropdown - Nested flyout */}
           <div
@@ -309,9 +311,9 @@ const Navigation = () => {
               <div className="ml-4 mt-2 space-y-1">
                 <Link to="/about" className="block py-1 text-gray-700" onClick={() => setIsMenuOpen(false)}>About Us</Link>
                 <Link to="/why-choose-us" className="block py-1 text-gray-700" onClick={() => setIsMenuOpen(false)}>Why Choose Us</Link>
+                <Link to={PARTNER_LAB_PAGE_PATH} className="block py-1 text-gray-700" onClick={() => setIsMenuOpen(false)}>{PARTNER_LAB_NAV_LABEL}</Link>
               </div>
             </details>
-            <Link to={PARTNER_LAB_PAGE_PATH} className="block py-2 text-gray-700" onClick={() => setIsMenuOpen(false)}>{PARTNER_LAB_NAV_LABEL}</Link>
 
             <details className="py-2">
               <summary className="cursor-pointer text-gray-700 font-semibold">Services</summary>
@@ -331,11 +333,6 @@ const Navigation = () => {
                 </div>
 
                 <div>
-                  <p className="text-xs uppercase text-gray-500 mb-1">Immigration</p>
-                  <Link to="/services/immigration-dna-testing" className="block py-1" onClick={() => setIsMenuOpen(false)}>Immigration DNA Testing</Link>
-                </div>
-
-                <div>
                   <p className="text-xs uppercase text-gray-500 mb-1">Relationship Testing</p>
                   <Link to="/services/siblingship-testing" className="block py-1" onClick={() => setIsMenuOpen(false)}>Siblingship</Link>
                   <Link to="/services/grandparentage-testing" className="block py-1" onClick={() => setIsMenuOpen(false)}>Grandparent</Link>
@@ -344,7 +341,8 @@ const Navigation = () => {
                 </div>
 
                 <div>
-                  <p className="text-xs uppercase text-gray-500 mb-1">Specialty</p>
+                  <p className="text-xs uppercase text-gray-500 mb-1">Private & Specialty Testing</p>
+                  <Link to="/services/immigration-dna-testing" className="block py-1" onClick={() => setIsMenuOpen(false)}>Immigration & Government</Link>
                   <Link to="/services/infidelity-dna-testing" className="block py-1" onClick={() => setIsMenuOpen(false)}>Infidelity</Link>
                   <Link to="/services/discreet-dna-testing" className="block py-1" onClick={() => setIsMenuOpen(false)}>Discreet & Private</Link>
                   <Link to="/services/single-dna-profile" className="block py-1" onClick={() => setIsMenuOpen(false)}>Single DNA Profile</Link>
