@@ -114,10 +114,81 @@ export function CalendlyPopupButton({ url, serviceName, className, children }) {
       rel="noopener noreferrer"
       onClick={handleClick}
       className={className}
+      data-calendly-tracked="true"
     >
       {children}
     </a>
   );
+}
+
+/**
+ * CalendlyGlobalTracking — site-wide safety net for booking analytics.
+ *
+ * Many pages link straight to calendly.com with plain <a> tags, which GTM
+ * can't see (booking completes on calendly.com, outside our page). This
+ * component installs one document-level click listener that catches ANY
+ * calendly.com link, fires `calendly_open`, and upgrades the click to the
+ * embedded popup widget so `calendly.event_scheduled` → `book_appointment`
+ * is trackable. If the widget script hasn't loaded, the link falls through
+ * to normal navigation (booking still works, calendly_open still recorded).
+ *
+ * Mount once in App.jsx: <CalendlyGlobalTracking />
+ */
+const SLUG_SERVICE_NAMES = {
+  'legal-paternity-test': 'Legal Paternity Testing',
+  'non-legal-paternity-test': 'Non-Legal Paternity Testing',
+  'noninvasive-prenatal-paternity': 'Prenatal Paternity Testing',
+  'full-siblingship-dna-test': 'Siblingship Testing',
+  'grandparentage-dna-test': 'Grandparentage Testing',
+  'immigration': 'Immigration DNA Testing',
+  '30-minute-dna-test-appointment': 'General DNA Test Appointment',
+};
+
+function serviceNameFromUrl(href) {
+  try {
+    const path = new URL(href).pathname.replace(/\/+$/, '');
+    const slug = path.split('/').pop() || '';
+    if (SLUG_SERVICE_NAMES[slug]) return SLUG_SERVICE_NAMES[slug];
+    if (!slug) return 'Unknown service';
+    return slug
+      .split('-')
+      .map((w) => w.charAt(0).toUpperCase() + w.slice(1))
+      .join(' ');
+  } catch {
+    return 'Unknown service';
+  }
+}
+
+export function CalendlyGlobalTracking() {
+  useEffect(() => {
+    loadAssets();
+    attachListener();
+
+    const onClick = (e) => {
+      const anchor = e.target.closest && e.target.closest('a[href*="calendly.com"]');
+      if (!anchor) return;
+      // Skip anchors already handled by CalendlyPopupButton (avoid double-firing).
+      if (anchor.getAttribute('data-calendly-tracked') === 'true') return;
+      const href = anchor.getAttribute('href') || '';
+      if (href.indexOf('calendly.com') === -1) return;
+
+      const serviceName = serviceNameFromUrl(href);
+      pushDataLayer({ event: 'calendly_open', service_name: serviceName });
+      activeService = serviceName;
+
+      if (window.Calendly && typeof window.Calendly.initPopupWidget === 'function') {
+        e.preventDefault();
+        window.Calendly.initPopupWidget({ url: href });
+      }
+      // Otherwise: fall through to plain navigation (untracked booking,
+      // but the click itself was recorded).
+    };
+
+    document.addEventListener('click', onClick, true);
+    return () => document.removeEventListener('click', onClick, true);
+  }, []);
+
+  return null;
 }
 
 /**

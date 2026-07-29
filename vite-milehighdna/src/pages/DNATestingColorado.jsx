@@ -170,7 +170,7 @@ const DNATestingColorado = () => {
   return (
     <main>
       <Helmet>
-        <title>DNA Testing in Colorado | Paternity, Legal & Prenatal Testing Guide</title>
+        <title>DNA Testing Across Colorado | Statewide Locations | Mile High DNA</title>
 
         <meta
           name="description"
@@ -183,7 +183,7 @@ const DNATestingColorado = () => {
         />
 
         {/* Open Graph */}
-        <meta property="og:title" content="DNA Testing in Colorado | Paternity, Legal & Prenatal Testing Guide" />
+        <meta property="og:title" content="DNA Testing Across Colorado | Statewide Locations | Mile High DNA" />
         <meta
           property="og:description"
           content="An educational guide to DNA testing in Colorado, including paternity, prenatal, and legal testing options available statewide."
@@ -213,7 +213,7 @@ const DNATestingColorado = () => {
               "@type": "WebPage",
               "@id": "https://milehighdnatesting.com/dna-testing-colorado#webpage",
               "url": "https://milehighdnatesting.com/dna-testing-colorado",
-              "name": "DNA Testing in Colorado | Paternity, Legal & Prenatal Testing Guide",
+              "name": "DNA Testing Across Colorado | Statewide Locations | Mile High DNA",
               "description": "An educational guide to DNA testing in Colorado, covering legal, non-legal, and prenatal testing options.",
               "isPartOf": {
                 "@type": "WebSite",
@@ -255,10 +255,17 @@ const DNATestingColorado = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight text-white">
-                DNA Testing in Colorado
+                DNA Testing Across Colorado
               </h1>
-              <p className="text-xl text-blue-100 mb-8 leading-relaxed">
-                Your complete guide to understanding DNA testing options, legal requirements, and the testing process across Colorado.
+              <p className="text-xl text-blue-100 mb-4 leading-relaxed">
+                Your complete guide to understanding DNA testing options, legal requirements, and the testing process statewide — from Colorado Springs and Fort Collins to Thornton, Aurora, and beyond.
+              </p>
+              <p className="text-base text-blue-100 mb-8 leading-relaxed">
+                In the Denver metro? Start with our{" "}
+                <Link to="/" className="underline text-white hover:text-blue-200">
+                  paternity and DNA testing in Denver
+                </Link>{" "}
+                page.
               </p>
               <div className="flex flex-wrap gap-4">
                 <button 

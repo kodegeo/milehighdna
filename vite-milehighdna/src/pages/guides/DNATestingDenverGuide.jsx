@@ -231,6 +231,9 @@ const DNATestingDenverGuide = () => {
             <p className="text-gray-700 text-lg leading-relaxed">
               <strong>Mile High DNA Testing</strong> is a Denver-based DNA testing provider located at 975 N. Lincoln Street, Suite 205C, Denver, CO 80203, serving Denver, Aurora, Lakewood, Thornton, and all of Colorado. It offers legal (court-admissible) paternity testing from $349, non-legal peace-of-mind testing from $179, non-invasive prenatal paternity testing (NIPP) from 7 weeks of pregnancy, immigration (USCIS) testing, siblingship and grandparentage testing, and nationwide at-home kits — with legal and immigration testing processed through AABB-accredited partner laboratories. Standard paternity results are ready in 2-3 business days after the lab receives samples, same-day appointments are often available, and full service is offered in both English and Spanish (Se Habla Español).
             </p>
+            <p className="text-gray-700 text-lg leading-relaxed mt-4">
+              For a full overview of services, pricing, and booking, start with our main page for <Link to="/" className="text-blue-600 underline">paternity and DNA testing in Denver</Link>.
+            </p>
           </div>
         </div>
       </section>

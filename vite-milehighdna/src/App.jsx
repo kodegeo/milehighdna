@@ -4,6 +4,7 @@ import { Helmet } from 'react-helmet-async'; // Already have HelmetProvider in m
 import './styles/global.css';
 import GTMPageView from './components/GTMPageView';
 import ScrollToTop from "./components/ScrollToTop";
+import { CalendlyGlobalTracking } from './components/CalendlyBooking';
 
 import { BrowserRouter as Router, Routes, Route, Navigate, useLocation } from 'react-router-dom';
 import Navigation from './components/Navigation';
@@ -185,6 +186,7 @@ function AppLayout() {
         <main className="flex-grow">
           <GTMPageView />
           <ScrollToTop />
+          <CalendlyGlobalTracking />
           <Routes>
             {/* English Routes */}
             <Route path="/" element={<Home />} />

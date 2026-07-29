@@ -28,11 +28,11 @@ const Home = () => {
     <div className="min-h-screen pb-16 md:pb-0">
       <Helmet>
       <title>
-      DNA Testing in Denver – Call 720-900-9342 | Legal & Prenatal Paternity
+      Paternity & DNA Testing in Denver, CO | Mile High DNA Testing
       </title>
       <meta
           name="description"
-          content="Need a legal or prenatal paternity test in Denver? Court-admissible DNA testing coordinated with an AABB accredited laboratory. Same-day appointments available. Call 720-900-9342 or book online today."
+          content="Paternity testing in Denver — legal & prenatal DNA tests with same-day appointments. English & Spanish service for Denver, Aurora & Lakewood families."
         />
         <meta name="msvalidate.01" content="5905CEB57CBF0561C0CECACC8EB705D6" />
 
@@ -63,7 +63,8 @@ const Home = () => {
               "image": "https://milehighdnatesting.com/logo.png",
               "url": "https://milehighdnatesting.com",
               "telephone": "+1-720-900-9342",
-              "priceRange": "$$",
+              "priceRange": "$179 - $1,599",
+              "availableLanguage": ["English", "Spanish"],
               "areaServed": [
                 { "@type": "City", "name": "Denver" },
                 { "@type": "City", "name": "Aurora" },
@@ -72,7 +73,8 @@ const Home = () => {
                 { "@type": "City", "name": "Westminster" },
                 { "@type": "City", "name": "Littleton" },
                 { "@type": "City", "name": "Colorado Springs" },
-                { "@type": "City", "name": "Boulder" }
+                { "@type": "City", "name": "Boulder" },
+                { "@type": "State", "name": "Colorado" }
               ],
               "hasOfferCatalog": {
                 "@type": "OfferCatalog",
@@ -134,6 +136,12 @@ const Home = () => {
                   "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
                   "opens": "09:00",
                   "closes": "18:00"
+                },
+                {
+                  "@type": "OpeningHoursSpecification",
+                  "dayOfWeek": ["Saturday", "Sunday"],
+                  "opens": "09:00",
+                  "closes": "17:00"
                 }
               ],
               "sameAs": [
@@ -209,7 +217,7 @@ const Home = () => {
 
       {/* Hero Section */}
       <h1 className="sr-only">
-      Court-Ordered DNA Testing in Denver – Same Day Appointments Available & Prenatal Paternity Specialists
+      Paternity & DNA Testing in Denver – Same Day Appointments Available & Prenatal Paternity Specialists
         </h1>
 
       <div className="relative min-h-[560px] md:min-h-[600px]">

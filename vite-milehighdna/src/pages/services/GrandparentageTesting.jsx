@@ -106,6 +106,40 @@ const GrandparentageTesting = () => {
           })}
         </script>
 
+        {/* Service + Offer Schema */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "name": "Grandparentage DNA Testing",
+            "serviceType": "Grandparent Relationship DNA Testing",
+            "url": "https://milehighdnatesting.com/services/grandparentage-testing",
+            "provider": {
+              "@type": "LocalBusiness",
+              "name": "Mile High DNA Testing",
+              "telephone": "+1-720-900-9342"
+            },
+            "areaServed": [
+              { "@type": "City", "name": "Denver" },
+              { "@type": "City", "name": "Aurora" },
+              { "@type": "City", "name": "Lakewood" },
+              { "@type": "City", "name": "Thornton" }
+            ],
+            "offers": {
+              "@type": "Offer",
+              "name": "At-Home Grandparent DNA Test",
+              "priceCurrency": "USD",
+              "price": "299",
+              "priceSpecification": {
+                "@type": "PriceSpecification",
+                "minPrice": 299,
+                "priceCurrency": "USD"
+              },
+              "url": "https://milehighdnatesting.com/shop/grandparent-dna-test"
+            }
+          })}
+        </script>
+
         {/* FAQ JSON-LD Schema */}
         <script type="application/ld+json">
           {JSON.stringify({

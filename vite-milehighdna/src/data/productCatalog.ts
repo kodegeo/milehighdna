@@ -144,7 +144,7 @@ export const PRODUCT_CATALOG = {
     name: "Multi-Location Sibling DNA Test",
     category: "sibling",
     stripePriceId: "price_1SxiYZK2515KuCq20NMyHjrt",
-    price: 329,
+    price: 349,
     shortDescription:
       "When siblings are in different locations. Two kits shipped to two addresses. Same lab, same accuracy, confidential results.",
     participantSummary: "2 Siblings · 2 Locations",

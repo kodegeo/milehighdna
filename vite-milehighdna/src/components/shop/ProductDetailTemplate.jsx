@@ -157,6 +157,22 @@ const ProductDetailTemplate = ({
         <title>{metaTitle}</title>
         <meta name="description" content={product.metaDescription} />
         <link rel="canonical" href={canonicalUrl} />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Product",
+            "name": product.title,
+            "description": product.shortDescription || product.metaDescription,
+            "image": image,
+            "offers": {
+              "@type": "Offer",
+              "price": product.unitPrice,
+              "priceCurrency": "USD",
+              "availability": "https://schema.org/InStock",
+              "url": canonicalUrl
+            }
+          })}
+        </script>
       </Helmet>
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-6">

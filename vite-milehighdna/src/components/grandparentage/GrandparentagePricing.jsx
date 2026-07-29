@@ -13,7 +13,7 @@ const GrandparentagePricing = () => {
             <div className="bg-white rounded-xl shadow-md border-l-4 border-blue-600 p-6">
               <h3 className="text-xl font-bold text-gray-800 mb-2">Non-Legal (1 Grandparent + Child)</h3>
               <p className="text-gray-600 mb-4">Peace of mind testing with one grandparent and one child.</p>
-              <p className="text-2xl font-bold text-blue-700 mb-4">$349+</p>
+              <p className="text-2xl font-bold text-blue-700 mb-4">$379+</p>
               <ul className="text-left text-gray-700 space-y-2 mb-4">
                 <li>✔ Partner laboratory analysis</li>
                 <li>✔ Sample Collection</li>
@@ -31,7 +31,7 @@ const GrandparentagePricing = () => {
             <div className="bg-white rounded-xl shadow-md border-l-4 border-blue-600 p-6">
               <h3 className="text-xl font-bold text-gray-800 mb-2">Non-Legal (2 Grandparents + Child)</h3>
               <p className="text-gray-600 mb-4">Peace of mind testing with both grandparents and one child.</p>
-              <p className="text-2xl font-bold text-blue-700 mb-4">$449+</p>
+              <p className="text-2xl font-bold text-blue-700 mb-4">$479+</p>
               <ul className="text-left text-gray-700 space-y-2 mb-4">
                 <li>✔ Partner laboratory analysis</li>
                 <li>✔ Sample Collection</li>
@@ -49,7 +49,7 @@ const GrandparentagePricing = () => {
             <div className="bg-white rounded-xl shadow-md border-l-4 border-blue-600 p-6">
               <h3 className="text-xl font-bold text-gray-800 mb-2">Legal (1 Grandparent + Child)</h3>
               <p className="text-gray-600 mb-4">Court-admissible testing with one grandparent and one child.</p>
-              <p className="text-2xl font-bold text-blue-700 mb-4">$479+</p>
+              <p className="text-2xl font-bold text-blue-700 mb-4">$499+</p>
               <ul className="text-left text-gray-700 space-y-2 mb-4">
                 <li>✔ Partner laboratory analysis</li>
                 <li>✔ Sample Collection for All Participants</li>
@@ -67,7 +67,7 @@ const GrandparentagePricing = () => {
             <div className="bg-white rounded-xl shadow-md border-l-4 border-blue-600 p-6">
               <h3 className="text-xl font-bold text-gray-800 mb-2">Legal (2 Grandparents + Child)</h3>
               <p className="text-gray-600 mb-4">Court-admissible testing with both grandparents and one child.</p>
-              <p className="text-2xl font-bold text-blue-700 mb-4">$549+</p>
+              <p className="text-2xl font-bold text-blue-700 mb-4">$599+</p>
               <ul className="text-left text-gray-700 space-y-2 mb-4">
                 <li>✔ Partner laboratory analysis</li>
                 <li>✔ Sample Collection for All Participants</li>

@@ -249,6 +249,44 @@ const NonLegalPaternityTesting = () => {
           })}
         </script>
 
+        {/* Service + Offer Schema */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "name": "Non-Legal Paternity Testing",
+            "serviceType": "Non-Legal (Peace of Mind) Paternity DNA Testing",
+            "url": "https://milehighdnatesting.com/services/non-legal-paternity-testing",
+            "provider": {
+              "@type": "LocalBusiness",
+              "name": "Mile High DNA Testing",
+              "telephone": "+1-720-900-9342"
+            },
+            "areaServed": [
+              { "@type": "City", "name": "Denver" },
+              { "@type": "City", "name": "Aurora" },
+              { "@type": "City", "name": "Lakewood" },
+              { "@type": "City", "name": "Thornton" }
+            ],
+            "offers": [
+              {
+                "@type": "Offer",
+                "name": "In-Office Non-Legal Paternity Test",
+                "price": "249",
+                "priceCurrency": "USD",
+                "url": "https://milehighdnatesting.com/services/non-legal-paternity-testing"
+              },
+              {
+                "@type": "Offer",
+                "name": "At-Home Paternity Test Kit",
+                "price": "179",
+                "priceCurrency": "USD",
+                "url": "https://milehighdnatesting.com/shop/at-home-paternity-test"
+              }
+            ]
+          })}
+        </script>
+
         {/* FAQ Schema */}
         <script type="application/ld+json">
           {JSON.stringify({

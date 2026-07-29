@@ -267,6 +267,39 @@ const PrenatalPaternityTesting = () => {
           })}
         </script>
 
+        {/* Service + Offer Schema */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "name": "Prenatal Paternity Testing",
+            "serviceType": "Non-Invasive Prenatal Paternity DNA Testing",
+            "url": "https://milehighdnatesting.com/services/prenatal-paternity-testing",
+            "provider": {
+              "@type": "LocalBusiness",
+              "name": "Mile High DNA Testing",
+              "telephone": "+1-720-900-9342"
+            },
+            "areaServed": [
+              { "@type": "City", "name": "Denver" },
+              { "@type": "City", "name": "Aurora" },
+              { "@type": "City", "name": "Lakewood" },
+              { "@type": "City", "name": "Thornton" }
+            ],
+            "offers": {
+              "@type": "Offer",
+              "priceCurrency": "USD",
+              "price": "1599",
+              "priceSpecification": {
+                "@type": "PriceSpecification",
+                "minPrice": 1599,
+                "priceCurrency": "USD"
+              },
+              "url": "https://milehighdnatesting.com/services/prenatal-paternity-testing"
+            }
+          })}
+        </script>
+
         {/* FAQ Schema */}
         <script type="application/ld+json">
           {JSON.stringify({

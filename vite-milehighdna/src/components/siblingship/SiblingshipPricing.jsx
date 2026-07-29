@@ -17,11 +17,11 @@ const SiblingshipPricing = () => {
               <p className="text-gray-600 mb-4">
               For private understanding, emotional closure, or family confirmation. Results are for personal use only and not court-admissible.
               </p>
-              <p className="text-2xl font-bold text-blue-700 mb-4">$349 and up</p>
+              <p className="text-2xl font-bold text-blue-700 mb-4">$379 and up</p>
               <ul className="text-left text-gray-700 space-y-2 mb-4">
                 <li>✔ Partner laboratory processing</li>
                 <li>✔ 2 Participants</li>
-                <li>✔ 2–5 Business Day Turnaround</li>
+                <li>✔ 7–10 Business Day Turnaround</li>
                 <li>✔ Peace-of-Mind Use</li>
               </ul>
               <a
@@ -38,7 +38,7 @@ const SiblingshipPricing = () => {
               <p className="text-gray-600 mb-4">
               Follows strict chain-of-custody procedures. Required for court use, immigration, inheritance, or other legal matters. <br/>
               </p>
-              <p className="text-2xl font-bold text-blue-700 mb-4">$479 and up</p>
+              <p className="text-2xl font-bold text-blue-700 mb-4">$499 and up</p>
               <ul className="text-left text-gray-700 space-y-2 mb-4">
                 <li>✔ Adds Biological Parent to Analysis</li>
                 <li>✔ 2 Participants</li>

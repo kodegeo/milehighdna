@@ -216,7 +216,7 @@ const PrenatalDNATestCostGuide = () => {
               If you're expecting and want answers early, understanding prenatal DNA test cost is an important first step. The good news? Modern non-invasive prenatal paternity testing (NIPP) offers a safe, accurate way to get answers without any risk to your baby.
             </p>
             <p className="text-lg text-gray-600 mb-6">
-              Whether you're looking for peace of mind or need <Link to="/services/legal-paternity-testing" className="text-blue-600 underline">legal documentation</Link>, knowing what to expect with prenatal DNA test cost helps you make the best decision for your growing family. To <Link to="/appointments" className="text-blue-600 underline">schedule a DNA test</Link>, visit our appointments page.
+              Whether you're looking for peace of mind or need <Link to="/services/legal-paternity-testing" className="text-blue-600 underline">legal documentation</Link>, knowing what to expect with prenatal DNA test cost helps you make the best decision for your growing family. When you're ready, we offer <Link to="/services/prenatal-paternity-testing" className="text-blue-600 underline">prenatal paternity testing in Denver</Link> starting as early as 7 weeks of pregnancy. To <Link to="/appointments" className="text-blue-600 underline">schedule a DNA test</Link>, visit our appointments page.
             </p>
           </div>
         </div>

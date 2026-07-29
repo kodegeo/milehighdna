@@ -80,7 +80,7 @@ const AvuncularDNATesting = () => {
           <div className="grid md:grid-cols-2 gap-8 mb-8">
             <div className="bg-white p-6 rounded-xl shadow-lg">
               <h4 className="text-2xl font-bold text-gray-800 mb-2">Non-Legal (Peace of Mind)</h4>
-              <p className="text-3xl font-bold text-blue-600 mb-2">$349+</p>
+              <p className="text-3xl font-bold text-blue-600 mb-2">$379+</p>
               <p className="text-sm text-gray-500 mb-4">Aunt/uncle and child; personal use only.</p>
               <p className="text-gray-600 mb-4">Not court-admissible. Quick cheek swab collection in our Denver office.</p>
               <Link
@@ -93,7 +93,7 @@ const AvuncularDNATesting = () => {
 
             <div className="bg-white p-6 rounded-xl shadow-lg">
               <h4 className="text-2xl font-bold text-gray-800 mb-2">Legal (Court-Admissible)</h4>
-              <p className="text-3xl font-bold text-green-600 mb-2">$475+</p>
+              <p className="text-3xl font-bold text-green-600 mb-2">$499+</p>
               <p className="text-sm text-gray-500 mb-4">Chain of custody and ID verification.</p>
               <p className="text-gray-600 mb-4">Documentation suitable for court, immigration, or official use.</p>
               <Link

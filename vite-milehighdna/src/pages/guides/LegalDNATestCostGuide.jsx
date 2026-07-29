@@ -216,7 +216,7 @@ const LegalDNATestCostGuide = () => {
               When you need DNA test results that can be used in court, for child support, <Link to="/services/immigration-dna-testing" className="text-blue-600 underline">immigration</Link>, or legal documentation, understanding <Link to="/services/legal-paternity-testing" className="text-blue-600 underline">court-admissible DNA test</Link> cost is crucial. Legal DNA testing follows strict chain-of-custody procedures and AABB accreditation standards to ensure court admissibility.
             </p>
             <p className="text-lg text-gray-600 mb-6">
-              Whether you're dealing with paternity disputes, immigration cases, or inheritance matters, knowing what to expect with legal DNA test cost helps you make informed decisions. To <Link to="/appointments" className="text-blue-600 underline">book a DNA test appointment</Link>, visit our appointments page.
+              Whether you're dealing with paternity disputes, immigration cases, or inheritance matters, knowing what to expect with legal DNA test cost helps you make informed decisions. If you're ready to move forward, we provide <Link to="/services/legal-paternity-testing" className="text-blue-600 underline">legal paternity testing in Denver</Link> with same-day availability. To <Link to="/appointments" className="text-blue-600 underline">book a DNA test appointment</Link>, visit our appointments page.
             </p>
           </div>
           <p className="bg-blue-50 border-l-4 border-blue-400 p-4 rounded text-gray-800 text-lg font-medium mb-8">

@@ -253,6 +253,39 @@ const LegalPaternityTesting = () => {
           })}
         </script>
 
+        {/* Service + Offer Schema */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "name": "Legal Paternity Testing",
+            "serviceType": "Legal Paternity DNA Testing",
+            "url": "https://milehighdnatesting.com/services/legal-paternity-testing",
+            "provider": {
+              "@type": "LocalBusiness",
+              "name": "Mile High DNA Testing",
+              "telephone": "+1-720-900-9342"
+            },
+            "areaServed": [
+              { "@type": "City", "name": "Denver" },
+              { "@type": "City", "name": "Aurora" },
+              { "@type": "City", "name": "Lakewood" },
+              { "@type": "City", "name": "Thornton" }
+            ],
+            "offers": {
+              "@type": "Offer",
+              "priceCurrency": "USD",
+              "price": "349",
+              "priceSpecification": {
+                "@type": "PriceSpecification",
+                "minPrice": 349,
+                "priceCurrency": "USD"
+              },
+              "url": "https://milehighdnatesting.com/services/legal-paternity-testing"
+            }
+          })}
+        </script>
+
         {/* FAQ Schema */}
         <script type="application/ld+json">
           {JSON.stringify({
