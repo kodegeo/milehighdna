@@ -114,7 +114,7 @@
       "id": "2026-W31-wed-instagram",
       "platform": "instagram",
       "scheduled_date": "2026-07-29",
-      "status": "approved",
+      "status": "failed",
       "cluster": "legal_paternity",
       "keyword": "court admissible dna test",
       "location": "Arvada",
@@ -135,13 +135,16 @@
       "image_url": "https://milehighdnatesting.com/social/paternity_2.png",
       "image_urls": [],
       "published_at": null,
-      "result": null
+      "result": {
+        "success": false,
+        "error": "container: {\"error\":{\"message\":\"The image format is not supported.\",\"type\":\"OAuthException\",\"code\":36001,\"error_subcode\":2207083,\"is_transient\":false,\"error_user_title\":\"Unknown Image Format\",\"error_user_msg\":\"The image could not be processed because its format could not be recognized. This usually means the file is corrupted, not a valid image, or the URL returned an error page instead of an image. Please verify that the image_url points to a valid image file in a supported format (JPEG, PNG, GIF, WebP, HEIC, or AVIF). For more information on supported formats and media specifications, see: https:\\/\\/developers.facebook.com\\/docs\\/instagram-platform\\/instagram-graph-api\\/reference\\/ig-user\\/media#creating\",\"fbtrace_id\":\"AMQtqyf6PAKb3phl0D-g7Xq\"}}"
+      }
     },
     {
       "id": "2026-W31-wed-facebook",
       "platform": "facebook",
       "scheduled_date": "2026-07-29",
-      "status": "approved",
+      "status": "published",
       "cluster": "legal_paternity",
       "keyword": "court admissible dna test",
       "location": "Arvada",
@@ -152,14 +155,17 @@
       "hashtags": [],
       "image_url": null,
       "image_urls": [],
-      "published_at": null,
-      "result": null
+      "published_at": "2026-07-29T15:36:23.779237",
+      "result": {
+        "success": true,
+        "post_id": "664866596708872_122195766836866699"
+      }
     },
     {
       "id": "2026-W31-wed-threads",
       "platform": "threads",
       "scheduled_date": "2026-07-29",
-      "status": "approved",
+      "status": "published",
       "cluster": "legal_paternity",
       "keyword": "court admissible dna test",
       "location": "Arvada",
@@ -170,8 +176,11 @@
       "hashtags": [],
       "image_url": null,
       "image_urls": [],
-      "published_at": null,
-      "result": null
+      "published_at": "2026-07-29T15:36:35.455805",
+      "result": {
+        "success": true,
+        "post_id": "18079574366320392"
+      }
     },
     {
       "id": "2026-W31-fri-gbp",
