@@ -115,7 +115,7 @@ const NonLegalDNATestCostGuide = () => {
                   "name": "How much does a non-legal DNA test cost?",
                   "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Non-legal DNA test costs typically range from $199 to $299 depending on the test type and collection method. At-home peace of mind tests start at $199, while in-office collection costs $249-$299."
+                    "text": "Non-legal DNA test costs typically range from $199 to $299 depending on the test type and collection method. At-home peace of mind tests start at $199 plus $35 shipping, while in-office collection costs $249-$299."
                   }
                 },
                 {
@@ -318,7 +318,8 @@ const NonLegalDNATestCostGuide = () => {
                 MOST AFFORDABLE
               </div>
               <h3 className="text-xl font-bold text-green-800 mb-4 mt-2">At-Home Peace of Mind Test</h3>
-              <div className="text-3xl font-bold text-green-600 mb-2">$199 - $249</div>
+              <div className="text-3xl font-bold text-green-600 mb-1">$199</div>
+              <p className="text-sm font-medium text-green-700 mb-2">+ $35 shipping</p>
               <p className="text-gray-600 mb-4">Self-collection kit</p>
               <ul className="text-sm text-gray-600 space-y-1">
                 <li>• At-home collection kit</li>
@@ -370,7 +371,7 @@ const NonLegalDNATestCostGuide = () => {
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-semibold text-gray-800 mb-3">How much does a non-legal DNA test cost?</h3>
               <p className="text-gray-600">
-                Non-legal DNA test costs typically range from $199 to $399 depending on the test type and collection method. At-home peace of mind tests start at $199, in-office collection costs $249-$299, and relationship tests range from $299-$399.
+                Non-legal DNA test costs typically range from $199 to $399 depending on the test type and collection method. At-home peace of mind tests start at $199 plus $35 shipping, in-office collection costs $249-$299, and relationship tests range from $299-$399.
               </p>
             </div>
             

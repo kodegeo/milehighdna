@@ -1,6 +1,7 @@
 import React from "react";
 import { useParams, Navigate } from "react-router-dom";
 import ProductDetailTemplate from "../../../components/shop/ProductDetailTemplate";
+import { DOMESTIC_SHIPPING_SUFFIX_ES } from "../../../constants/shipping";
 import { getProductEsByKey } from "../../../data/productCatalogEs";
 import paternityBox from "../../../assets/images/shop/paternity-box.png";
 import grandparentBox from "../../../assets/images/shop/grandparent-box.png";
@@ -40,7 +41,7 @@ const STRINGS_ES = {
   breadcrumbHome: "Inicio",
   breadcrumbShop: "Tienda",
   breadcrumbDefaultParent: "Kits de Prueba de ADN",
-  plusShipping: "+ envío",
+  plusShipping: DOMESTIC_SHIPPING_SUFFIX_ES,
   orderFormTitle: "Ordene su prueba",
   firstNamePlaceholder: "Nombre *",
   lastNamePlaceholder: "Apellido *",

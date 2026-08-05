@@ -1,6 +1,7 @@
 import React from "react";
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
+import { DOMESTIC_SHIPPING_SUFFIX } from "../../constants/shipping";
 import Footer from "../../components/Footer";
 
 const TRUST_BULLETS = [
@@ -124,7 +125,7 @@ const ShopBucketLayout = ({
                 {typeof product.price === "number" && (
                   <p className="text-sm text-gray-700 mb-4">
                     ${product.price.toFixed(0)}
-                    <span className="text-gray-500"> + shipping</span>
+                    <span className="text-gray-500"> {DOMESTIC_SHIPPING_SUFFIX}</span>
                   </p>
                 )}
                 <Link

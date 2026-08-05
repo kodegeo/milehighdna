@@ -340,7 +340,7 @@ const DNATestingTypes = () => {
                 <ul className="space-y-3">
                   <li className="flex justify-between">
                     <span className="text-gray-600">At-Home Peace of Mind</span>
-                    <span className="font-semibold text-green-600">$199 - $249</span>
+                    <span className="font-semibold text-green-600">$199 + $35 shipping</span>
                   </li>
                   <li className="flex justify-between">
                     <span className="text-gray-600">In-Office Collection</span>

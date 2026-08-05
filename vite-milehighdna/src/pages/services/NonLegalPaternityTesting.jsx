@@ -1,4 +1,5 @@
 import React from "react";
+import { DOMESTIC_SHIPPING_SUFFIX } from "../../constants/shipping";
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 
@@ -279,7 +280,7 @@ const NonLegalPaternityTesting = () => {
               {
                 "@type": "Offer",
                 "name": "At-Home Paternity Test Kit",
-                "price": "179",
+                "price": "199",
                 "priceCurrency": "USD",
                 "url": "https://milehighdnatesting.com/shop/at-home-paternity-test"
               }
@@ -446,7 +447,8 @@ const NonLegalPaternityTesting = () => {
           <div className="grid md:grid-cols-2 gap-8 mb-8">
             <div className="bg-white p-6 rounded-xl shadow-lg">
               <h4 className="text-2xl font-bold text-gray-800 mb-2">Online Kit</h4>
-              <p className="text-3xl font-bold text-blue-600 mb-2">$179</p>
+              <p className="text-3xl font-bold text-blue-600 mb-1">$199</p>
+              <p className="text-sm font-medium text-gray-600 mb-1">{DOMESTIC_SHIPPING_SUFFIX}</p>
               <p className="text-sm text-gray-500 mb-4">Best for private confirmation only.</p>
               <p className="text-gray-600 mb-4">Order online and complete the test <br/> from the comfort of your home</p>
               <a

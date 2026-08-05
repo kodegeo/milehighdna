@@ -168,7 +168,8 @@ const DNATestingDenverPage = () => {
             <div className="bg-white shadow-md rounded-lg p-6 text-center">
               <h3 className="text-xl font-semibold">Peace of Mind Testing</h3>
               <p className="text-gray-700 mt-2">For personal reassurance, not for legal purposes.</p>
-              <p className="text-blue-700 font-bold mt-4">Starting at $199</p>
+              <p className="text-blue-700 font-bold mt-4">From $199 + $35 shipping</p>
+              <p className="text-gray-500 text-sm mt-1">At-home kit · in-office from $249</p>
             </div>
             <div className="bg-white shadow-md rounded-lg p-6 text-center">
               <h3 className="text-xl font-semibold">Prenatal DNA Testing</h3>

@@ -30,7 +30,7 @@ const peaceOfMindFaqsEs = [
   {
     id: 'cost',
     question: '¿Cuánto cuesta la prueba?',
-    answer: 'El Kit de Prueba de Paternidad para Tranquilidad cuesta $99–$129. El precio puede variar por promoción o volumen.',
+    answer: 'El Kit de Prueba de Paternidad para Tranquilidad cuesta $199 más $35 de envío. El precio puede variar por promoción o volumen.',
   },
 ];
 

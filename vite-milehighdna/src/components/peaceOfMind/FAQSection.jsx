@@ -30,7 +30,7 @@ const peaceOfMindFaqs = [
   {
     id: 'cost',
     question: 'What does the test cost?',
-    answer: 'Peace of Mind Paternity Test Kit costs $99–$129. Price may vary by promotion or volume.',
+    answer: 'Peace of Mind Paternity Test Kit costs $199 plus $35 shipping. Price may vary by promotion or volume.',
   },
 ];
 

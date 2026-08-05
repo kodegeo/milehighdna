@@ -7,7 +7,7 @@ export const getShippingRate = (countryCode, method = "regular") => {
   // Domestic (US) logic
   if (countryCode === "US") {
     const domesticRate =
-      shippingRates?.DOMESTIC?.US?.[method] || (method === "regular" ? 20 : 50);
+      shippingRates?.DOMESTIC?.US?.[method] || (method === "regular" ? 35 : 50);
     return Number(domesticRate);
   }
 

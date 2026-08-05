@@ -10,7 +10,7 @@ export const PRODUCT_CATALOG = {
   // PATERNITY
   // ─────────────────────────
   PATERNITY_AT_HOME_SINGLE: {
-    stripePriceId: "price_1SzXYSK2515KuCq2snadta8S",
+    stripePriceId: "price_1U0xeuK2515KuCq24826hNr2",
     testType: "paternity",
     legal: false, // Peace of mind / non-legal
   },

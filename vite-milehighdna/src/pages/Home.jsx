@@ -63,7 +63,7 @@ const Home = () => {
               "image": "https://milehighdnatesting.com/logo.png",
               "url": "https://milehighdnatesting.com",
               "telephone": "+1-720-900-9342",
-              "priceRange": "$179 - $1,599",
+              "priceRange": "$199 - $1,599",
               "availableLanguage": ["English", "Spanish"],
               "areaServed": [
                 { "@type": "City", "name": "Denver" },

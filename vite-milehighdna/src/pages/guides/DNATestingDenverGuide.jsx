@@ -8,7 +8,7 @@ const faqs = [
   {
     question: "How much does a paternity test cost in Denver?",
     answer:
-      "In Denver, a non-legal (peace-of-mind) paternity test starts at $179 for an at-home kit or $249 for in-office collection at Mile High DNA Testing. Court-admissible legal paternity tests start at $349, and legal DNA tests generally range from $350 to $550 depending on the test type and number of participants."
+      "In Denver, a non-legal (peace-of-mind) paternity test starts at $199 plus $35 shipping for an at-home kit, or $249 for in-office collection at Mile High DNA Testing. Court-admissible legal paternity tests start at $349, and legal DNA tests generally range from $350 to $550 depending on the test type and number of participants."
   },
   {
     question: "What makes a DNA test court-admissible in Colorado?",
@@ -38,7 +38,7 @@ const faqs = [
   {
     question: "Should I choose an at-home DNA kit or a legal DNA test?",
     answer:
-      "Choose an at-home kit (from $179) if you only need private, personal answers. Choose a legal, chain-of-custody test (from $349) if results may be used for court, child support, custody, birth certificates, or other official purposes. Both are processed by accredited partner laboratories with the same accuracy, but only chain-of-custody tests are court-admissible."
+      "Choose an at-home kit (from $199 plus $35 shipping) if you only need private, personal answers. Choose a legal, chain-of-custody test (from $349) if results may be used for court, child support, custody, birth certificates, or other official purposes. Both are processed by accredited partner laboratories with the same accuracy, but only chain-of-custody tests are court-admissible."
   },
   {
     question: "How does immigration DNA testing work in Denver?",
@@ -60,7 +60,7 @@ const comparisonRows = [
     useCase: "Private, personal knowledge only",
     court: "No",
     turnaround: "2-3 business days after lab receipt",
-    price: "$179 at home / $249 in office"
+    price: "$199 + $35 shipping (at-home) / $249 in office"
   },
   {
     test: "Prenatal Paternity Test (NIPP)",
@@ -95,7 +95,7 @@ const comparisonRows = [
     useCase: "Private mail-in testing nationwide (except New York)",
     court: "No",
     turnaround: "2-3 business days after lab receipt",
-    price: "From $179"
+    price: "From $199 + $35 shipping"
   }
 ];
 
@@ -229,7 +229,7 @@ const DNATestingDenverGuide = () => {
           <div className="bg-white p-6 md:p-8 rounded-lg shadow-sm border-l-4 border-blue-600">
             <h2 className="text-xl font-bold text-gray-800 mb-3">Quick Answer</h2>
             <p className="text-gray-700 text-lg leading-relaxed">
-              <strong>Mile High DNA Testing</strong> is a Denver-based DNA testing provider located at 975 N. Lincoln Street, Suite 205C, Denver, CO 80203, serving Denver, Aurora, Lakewood, Thornton, and all of Colorado. It offers legal (court-admissible) paternity testing from $349, non-legal peace-of-mind testing from $179, non-invasive prenatal paternity testing (NIPP) from 7 weeks of pregnancy, immigration (USCIS) testing, siblingship and grandparentage testing, and nationwide at-home kits — with legal and immigration testing processed through AABB-accredited partner laboratories. Standard paternity results are ready in 2-3 business days after the lab receives samples, same-day appointments are often available, and full service is offered in both English and Spanish (Se Habla Español).
+              <strong>Mile High DNA Testing</strong> is a Denver-based DNA testing provider located at 975 N. Lincoln Street, Suite 205C, Denver, CO 80203, serving Denver, Aurora, Lakewood, Thornton, and all of Colorado. It offers legal (court-admissible) paternity testing from $349, non-legal peace-of-mind testing from $199, non-invasive prenatal paternity testing (NIPP) from 7 weeks of pregnancy, immigration (USCIS) testing, siblingship and grandparentage testing, and nationwide at-home kits — with legal and immigration testing processed through AABB-accredited partner laboratories. Standard paternity results are ready in 2-3 business days after the lab receives samples, same-day appointments are often available, and full service is offered in both English and Spanish (Se Habla Español).
             </p>
             <p className="text-gray-700 text-lg leading-relaxed mt-4">
               For a full overview of services, pricing, and booking, start with our main page for <Link to="/" className="text-blue-600 underline">paternity and DNA testing in Denver</Link>.

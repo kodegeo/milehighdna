@@ -56,7 +56,7 @@ const CheckoutDomestic = () => {
       } catch (err) {
         console.error("Shipping fetch error:", err);
         // fallback defaults
-        setShippingRate(shippingMethod === "regular" ? 20 : 50);
+        setShippingRate(shippingMethod === "regular" ? 35 : 50);
       }
     };
     fetchShipping();
@@ -199,7 +199,7 @@ const CheckoutDomestic = () => {
                   onChange={(e) => setShippingMethod(e.target.value)}
                   className="mr-2"
                 />
-                Regular Mail ($20)
+                Regular Mail ($35)
               </label>
               <label className="flex items-center">
                 <input

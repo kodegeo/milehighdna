@@ -1,4 +1,5 @@
 import React from "react";
+import { DOMESTIC_SHIPPING_SUFFIX } from "../../constants/shipping";
 
 const PricingEs = () => {
   return (
@@ -12,8 +13,8 @@ const PricingEs = () => {
         </p>
 
         <div className="bg-white rounded-xl shadow-lg border-t-4 border-blue-600 p-8 max-w-xl mx-auto">
-          <h3 className="text-2xl font-bold text-gray-800 mb-4">$99–$129</h3>
-          <p className="text-gray-600 mb-6">*(El precio puede variar por promoción o volumen.)</p>
+          <h3 className="text-2xl font-bold text-gray-800 mb-2">$199</h3>
+          <p className="text-sm font-medium text-gray-600 mb-4">{DOMESTIC_SHIPPING_SUFFIX}</p>
           <ul className="text-left text-gray-700 space-y-4 mb-6">
             <li>✔ Garantía de Precisión 99%+</li>
             <li>✔ Kit de Recolección Simple en Casa</li>

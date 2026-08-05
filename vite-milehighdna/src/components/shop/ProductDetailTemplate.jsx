@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Helmet } from "react-helmet-async";
 import { Link, useNavigate } from "react-router-dom";
+import { DOMESTIC_SHIPPING_SUFFIX } from "../../constants/shipping";
 import Footer from "../Footer";
 
 const TRUST_BULLETS = [
@@ -38,7 +39,7 @@ const DEFAULT_STRINGS = {
   breadcrumbHome: "Home",
   breadcrumbShop: "Shop",
   breadcrumbDefaultParent: "DNA Test Kits",
-  plusShipping: "+ shipping",
+  plusShipping: DOMESTIC_SHIPPING_SUFFIX,
   orderFormTitle: "Order your test",
   firstNamePlaceholder: "First name *",
   lastNamePlaceholder: "Last name *",

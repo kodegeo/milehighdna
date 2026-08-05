@@ -11,8 +11,8 @@ export const PRODUCT_CATALOG = {
   PATERNITY_AT_HOME_SINGLE: {
     name: "2 Party At-Home Paternity DNA Test",
     category: "paternity",
-    stripePriceId: "price_1SzXYSK2515KuCq2snadta8S",
-    price: 179,
+    stripePriceId: "price_1U0xeuK2515KuCq24826hNr2",
+    price: 199,
     shortDescription:
       "Private DNA testing to confirm biological fatherhood. One child, one alleged father, one location. Mail-in kit with confidential results.",
     participantSummary: "1 Child / 1 Alleged Father · 1 Location",
@@ -26,7 +26,7 @@ export const PRODUCT_CATALOG = {
     name: "3 Party At-Home Paternity DNA Test",
     category: "paternity",
     stripePriceId: "price_1SzXeMK2515KuCq2fp7dSAsO",
-    price: 229,
+    price: 249,
     shortDescription:
       "Peace-of-mind paternity testing for families with two or more children. One location. Same accuracy and confidentiality as our single-child test.",
     participantSummary: "2+ Children · 1 Location",
@@ -40,7 +40,7 @@ export const PRODUCT_CATALOG = {
     name: "Multi-Location At-Home Paternity DNA Test",
     category: "paternity",
     stripePriceId: "price_1Sxfo3K2515KuCq2KUuSgBWK",
-    price: 239,
+    price: 259,
     shortDescription:
       "When the child and alleged father are in different locations. Two kits shipped to two addresses. Same lab, same accuracy, confidential results.",
     participantSummary: "1 Child / 1 Alleged Father · 2 Locations",
@@ -54,7 +54,7 @@ export const PRODUCT_CATALOG = {
     name: "Paternity Peace of Mind DNA Test",
     category: "paternity",
     stripePriceId: "price_1SzXifK2515KuCq2KxTB4HAK",
-    price: 179,
+    price: 199,
     shortDescription:
       "Private, non-legal confirmation of biological fatherhood. One location. For personal knowledge only—not for court or immigration.",
     participantSummary: "Private confirmation · 1 Location",
