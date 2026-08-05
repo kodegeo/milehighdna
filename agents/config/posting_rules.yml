@@ -47,7 +47,8 @@ rules:
   # Location references (for local SEO)
   location_keywords:
     primary: ["Denver", "Colorado"]
-    secondary: ["Aurora", "Lakewood", "Englewood", "Thornton", "Westminster"]
+    secondary: ["Aurora", "Commerce City", "Thornton"]
+    tertiary: ["Lakewood", "Littleton", "Arvada", "Centennial", "Boulder", "Westminster", "Englewood"]
     state: ["Colorado", "CO"]
   
   # Trust signals

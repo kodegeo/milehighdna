@@ -78,14 +78,14 @@ clusters:
 
 # Cities to rotate through for local references (matches docs/ city pages)
 locations:
-  primary: ["Denver", "Aurora", "Lakewood"]
+  primary: ["Denver", "Aurora", "Commerce City", "Thornton"]
   rotation:
-    - "Thornton"
-    - "Westminster"
-    - "Englewood"
+    - "Lakewood"
     - "Littleton"
     - "Arvada"
     - "Centennial"
     - "Boulder"
     - "Colorado Springs"
     - "Fort Collins"
+    - "Westminster"
+    - "Englewood"

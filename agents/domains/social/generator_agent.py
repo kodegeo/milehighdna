@@ -166,8 +166,9 @@ class SocialGenerateAgent(BaseAgent):
         errors: List[str] = []
 
         clusters_for_week = self._pick_clusters(len(dates))
-        locations = (self.strategy["locations"]["primary"]
-                     + self.strategy["locations"]["rotation"])
+        primary_locations = self.strategy["locations"]["primary"]
+        rotation_locations = self.strategy["locations"].get("rotation", [])
+        all_locations = primary_locations + rotation_locations
 
         # Pick which day's Instagram post becomes a carousel (if configured)
         ig_cfg = self.platform_config["platforms"].get("instagram", {})
@@ -180,10 +181,17 @@ class SocialGenerateAgent(BaseAgent):
         for day_idx, post_date in enumerate(dates):
             cluster = clusters_for_week[day_idx]
             keyword = random.choice(cluster["keywords"])
-            location = locations[(self.state.get("location_index", 0) + day_idx)
-                                 % len(locations)]
+            # Favor primary service areas (~85%); rotation cities appear occasionally
+            location_pool = (
+                primary_locations
+                if random.random() < 0.85 or not rotation_locations
+                else rotation_locations
+            )
+            location = location_pool[
+                (self.state.get("location_index", 0) + day_idx) % len(location_pool)
+            ]
             # If the keyword names a city, the post must use that city
-            for loc in locations:
+            for loc in all_locations:
                 if loc.lower() in keyword.lower():
                     location = loc
                     break

@@ -12,7 +12,8 @@ services:
     locations:
       - "Denver, Colorado"
       - "Aurora, Colorado"
-      - "Lakewood, Colorado"
+      - "Commerce City, Colorado"
+      - "Thornton, Colorado"
     
   - name: "Peace of Mind Paternity Testing"
     description: "Non-legal paternity testing for personal knowledge"
@@ -23,7 +24,8 @@ services:
     locations:
       - "Denver, Colorado"
       - "Aurora, Colorado"
-      - "Lakewood, Colorado"
+      - "Commerce City, Colorado"
+      - "Thornton, Colorado"
     
   - name: "Prenatal Paternity Testing"
     description: "Non-invasive prenatal paternity testing as early as 6 weeks"
@@ -34,7 +36,8 @@ services:
     locations:
       - "Denver, Colorado"
       - "Aurora, Colorado"
-      - "Lakewood, Colorado"
+      - "Commerce City, Colorado"
+      - "Thornton, Colorado"
     
   - name: "Immigration DNA Testing"
     description: "AABB-accredited immigration DNA testing for USCIS cases"
@@ -45,7 +48,8 @@ services:
     locations:
       - "Denver, Colorado"
       - "Aurora, Colorado"
-      - "Lakewood, Colorado"
+      - "Commerce City, Colorado"
+      - "Thornton, Colorado"
     
   - name: "Siblingship DNA Testing"
     description: "DNA testing to determine full or half sibling relationships"
@@ -56,7 +60,8 @@ services:
     locations:
       - "Denver, Colorado"
       - "Aurora, Colorado"
-      - "Lakewood, Colorado"
+      - "Commerce City, Colorado"
+      - "Thornton, Colorado"
     
   - name: "Grandparentage DNA Testing"
     description: "DNA testing between grandparents and grandchildren"
@@ -67,7 +72,8 @@ services:
     locations:
       - "Denver, Colorado"
       - "Aurora, Colorado"
-      - "Lakewood, Colorado"
+      - "Commerce City, Colorado"
+      - "Thornton, Colorado"
     
   - name: "Avuncular DNA Testing"
     description: "DNA testing between a child and aunt or uncle"
@@ -78,7 +84,8 @@ services:
     locations:
       - "Denver, Colorado"
       - "Aurora, Colorado"
-      - "Lakewood, Colorado"
+      - "Commerce City, Colorado"
+      - "Thornton, Colorado"
     
   - name: "Forensic DNA Analysis"
     description: "Specialized forensic DNA testing for complex cases"
@@ -89,7 +96,8 @@ services:
     locations:
       - "Denver, Colorado"
       - "Aurora, Colorado"
-      - "Lakewood, Colorado"
+      - "Commerce City, Colorado"
+      - "Thornton, Colorado"
     
   - name: "Discreet DNA Testing"
     description: "Confidential DNA testing using personal items or samples"
@@ -100,7 +108,8 @@ services:
     locations:
       - "Denver, Colorado"
       - "Aurora, Colorado"
-      - "Lakewood, Colorado"
+      - "Commerce City, Colorado"
+      - "Thornton, Colorado"
 
 # Service categories for post generation
 categories:

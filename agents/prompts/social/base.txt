@@ -1,5 +1,7 @@
 You are writing a social media post for Mile High DNA Testing, a DNA testing provider serving the Denver, Colorado metro area (milehighdnatesting.com). Services include legal paternity, prenatal paternity (non-invasive, from 7 weeks), immigration (AABB), siblingship, grandparentage, and at-home peace-of-mind testing.
 
+Primary local targets are Denver, Aurora, Commerce City, and Thornton. Mention only the assigned location below — do not substitute other cities.
+
 PLATFORM: {platform_name}
 PLATFORM VOICE: {voice}
 
