@@ -111,7 +111,7 @@
       "id": "2026-W32-wed-instagram",
       "platform": "instagram",
       "scheduled_date": "2026-08-05",
-      "status": "approved",
+      "status": "failed",
       "cluster": "legal_paternity",
       "keyword": "child support dna test colorado",
       "location": "Colorado Springs",
@@ -132,13 +132,16 @@
       "image_url": "https://milehighdnatesting.com/social/collector_1.png",
       "image_urls": [],
       "published_at": null,
-      "result": null
+      "result": {
+        "success": false,
+        "error": "container: {\"error\":{\"message\":\"The image format is not supported.\",\"type\":\"OAuthException\",\"code\":36001,\"error_subcode\":2207083,\"is_transient\":false,\"error_user_title\":\"Unknown Image Format\",\"error_user_msg\":\"The image could not be processed because its format could not be recognized. This usually means the file is corrupted, not a valid image, or the URL returned an error page instead of an image. Please verify that the image_url points to a valid image file in a supported format (JPEG, PNG, GIF, WebP, HEIC, or AVIF). For more information on supported formats and media specifications, see: https:\\/\\/developers.facebook.com\\/docs\\/instagram-platform\\/instagram-graph-api\\/reference\\/ig-user\\/media#creating\",\"fbtrace_id\":\"AcFOo0c4TNPlnZHS9X5K6WC\"}}"
+      }
     },
     {
       "id": "2026-W32-wed-facebook",
       "platform": "facebook",
       "scheduled_date": "2026-08-05",
-      "status": "approved",
+      "status": "published",
       "cluster": "legal_paternity",
       "keyword": "child support dna test colorado",
       "location": "Colorado Springs",
@@ -149,14 +152,17 @@
       "hashtags": [],
       "image_url": null,
       "image_urls": [],
-      "published_at": null,
-      "result": null
+      "published_at": "2026-08-05T15:42:19.743091",
+      "result": {
+        "success": true,
+        "post_id": "664866596708872_122196900494866699"
+      }
     },
     {
       "id": "2026-W32-wed-threads",
       "platform": "threads",
       "scheduled_date": "2026-08-05",
-      "status": "approved",
+      "status": "published",
       "cluster": "legal_paternity",
       "keyword": "child support dna test colorado",
       "location": "Colorado Springs",
@@ -167,8 +173,11 @@
       "hashtags": [],
       "image_url": null,
       "image_urls": [],
-      "published_at": null,
-      "result": null
+      "published_at": "2026-08-05T15:42:31.370355",
+      "result": {
+        "success": true,
+        "post_id": "17975826674908567"
+      }
     },
     {
       "id": "2026-W32-fri-gbp",
