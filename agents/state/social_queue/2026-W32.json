@@ -201,7 +201,7 @@
       "id": "2026-W32-fri-instagram",
       "platform": "instagram",
       "scheduled_date": "2026-08-07",
-      "status": "approved",
+      "status": "failed",
       "cluster": "prenatal_cost",
       "keyword": "non invasive prenatal paternity test cost",
       "location": "Fort Collins",
@@ -222,13 +222,16 @@
       "image_url": "https://milehighdnatesting.com/social/test_1.png",
       "image_urls": [],
       "published_at": null,
-      "result": null
+      "result": {
+        "success": false,
+        "error": "container: {\"error\":{\"message\":\"The image format is not supported.\",\"type\":\"OAuthException\",\"code\":36001,\"error_subcode\":2207083,\"is_transient\":false,\"error_user_title\":\"Unknown Image Format\",\"error_user_msg\":\"The image could not be processed because its format could not be recognized. This usually means the file is corrupted, not a valid image, or the URL returned an error page instead of an image. Please verify that the image_url points to a valid image file in a supported format (JPEG, PNG, GIF, WebP, HEIC, or AVIF). For more information on supported formats and media specifications, see: https:\\/\\/developers.facebook.com\\/docs\\/instagram-platform\\/instagram-graph-api\\/reference\\/ig-user\\/media#creating\",\"fbtrace_id\":\"A6aPWHtoXfMNgIiIe9OEMH1\"}}"
+      }
     },
     {
       "id": "2026-W32-fri-facebook",
       "platform": "facebook",
       "scheduled_date": "2026-08-07",
-      "status": "approved",
+      "status": "published",
       "cluster": "prenatal_cost",
       "keyword": "non invasive prenatal paternity test cost",
       "location": "Fort Collins",
@@ -239,14 +242,17 @@
       "hashtags": [],
       "image_url": null,
       "image_urls": [],
-      "published_at": null,
-      "result": null
+      "published_at": "2026-08-07T15:43:04.099784",
+      "result": {
+        "success": true,
+        "post_id": "664866596708872_122197187984866699"
+      }
     },
     {
       "id": "2026-W32-fri-threads",
       "platform": "threads",
       "scheduled_date": "2026-08-07",
-      "status": "approved",
+      "status": "published",
       "cluster": "prenatal_cost",
       "keyword": "non invasive prenatal paternity test cost",
       "location": "Fort Collins",
@@ -257,8 +263,11 @@
       "hashtags": [],
       "image_url": null,
       "image_urls": [],
-      "published_at": null,
-      "result": null
+      "published_at": "2026-08-07T15:43:16.773512",
+      "result": {
+        "success": true,
+        "post_id": "17986944906032460"
+      }
     }
   ]
 }
