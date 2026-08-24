@@ -55,20 +55,33 @@ class SocialGenerateAgent(BaseAgent):
     # ---------- OpenAI (plain HTTPS, no SDK dependency) ----------
 
     def _generate_post_text(self, prompt: str) -> Dict[str, Any]:
+        import time
         import requests
-        resp = requests.post(
-            "https://api.openai.com/v1/chat/completions",
-            headers={"Authorization": f"Bearer {os.environ['OPENAI_API_KEY']}"},
-            json={
-                "model": os.getenv("OPENAI_MODEL", "gpt-4o-mini"),
-                "messages": [{"role": "user", "content": prompt}],
-                "temperature": 0.9,
-                "response_format": {"type": "json_object"},
-            },
-            timeout=60,
-        )
-        resp.raise_for_status()
-        return json.loads(resp.json()["choices"][0]["message"]["content"])
+        last_error = None
+        for attempt in range(5):
+            resp = requests.post(
+                "https://api.openai.com/v1/chat/completions",
+                headers={"Authorization": f"Bearer {os.environ['OPENAI_API_KEY']}"},
+                json={
+                    "model": os.getenv("OPENAI_MODEL", "gpt-4o-mini"),
+                    "messages": [{"role": "user", "content": prompt}],
+                    "temperature": 0.9,
+                    "response_format": {"type": "json_object"},
+                },
+                timeout=60,
+            )
+            if resp.status_code == 429:
+                wait = min(2 ** attempt, 30)
+                last_error = requests.HTTPError(
+                    f"429 Too Many Requests", response=resp)
+                self.logger.warning(
+                    f"OpenAI rate-limited; retrying in {wait}s "
+                    f"(attempt {attempt + 1}/5)")
+                time.sleep(wait)
+                continue
+            resp.raise_for_status()
+            return json.loads(resp.json()["choices"][0]["message"]["content"])
+        raise last_error or RuntimeError("OpenAI request failed")
 
     # ---------- content planning ----------
 
