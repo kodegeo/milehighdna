@@ -25,6 +25,33 @@ import { useCallback, useEffect, useRef } from 'react';
 const WIDGET_JS = 'https://assets.calendly.com/assets/external/widget.js';
 const WIDGET_CSS = 'https://assets.calendly.com/assets/external/widget.css';
 
+/**
+ * Google Ads conversion for a completed booking.
+ *
+ * Why this is here and not in GTM: the GTM container (GTM-PHRBWK96) contains
+ * no reference to AW-992655834 at all — Ads is loaded straight from gtag.js in
+ * index.html. GTM does forward `book_appointment` to GA4, so GA4 sees bookings;
+ * Google Ads never has, which is why it reported ~1 conversion while Calendly
+ * recorded 31. Smart Bidding has been optimising against an empty signal.
+ *
+ * TO ACTIVATE: Google Ads → Goals → Conversions → New conversion action →
+ * Website. Name it "Calendly booking completed", category "Submit lead form",
+ * count "One". Paste the send_to value it gives you (looks like
+ * AW-992655834/AbC-D_efG12345) below. Until then this no-ops safely and GA4
+ * tracking is unaffected.
+ */
+const ADS_CONVERSION_SEND_TO = '';
+
+function fireAdsConversion() {
+  if (!ADS_CONVERSION_SEND_TO) return;
+  if (typeof window.gtag !== 'function') return;
+  window.gtag('event', 'conversion', {
+    send_to: ADS_CONVERSION_SEND_TO,
+    value: 1.0,
+    currency: 'USD',
+  });
+}
+
 // Module-level state: which service the currently-open widget belongs to.
 let activeService = null;
 let listenerAttached = false;
@@ -63,6 +90,9 @@ function attachListener() {
         calendly_invitee_uri:
           (e.data.payload && e.data.payload.invitee && e.data.payload.invitee.uri) || '',
       });
+      // GA4 is handled by GTM off the dataLayer push above; Ads is not in the
+      // container, so fire it directly here.
+      fireAdsConversion();
     }
   });
 }
