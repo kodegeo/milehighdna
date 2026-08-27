@@ -1,5 +1,5 @@
 import React from "react";
-import { DOMESTIC_SHIPPING_SUFFIX } from "../../constants/shipping";
+import { DOMESTIC_SHIPPING_SUFFIX } from "../../../constants/shipping";
 
 const PricingEs = () => {
   return (

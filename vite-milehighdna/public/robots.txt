@@ -1,15 +1,35 @@
 User-agent: *
 
-# ❌ Block admin and private tools
-Disallow: /get-results
+# Private tooling and authenticated areas
 Disallow: /admin-dashboard
 Disallow: /admin-uploader
+Disallow: /test-admin
 Disallow: /reset-password
 Disallow: /my-results
 Disallow: /my-results-page
+Disallow: /get-results
+Disallow: /es/admin-uploader
+Disallow: /es/restablecer-contrasena
+Disallow: /es/mis-resultados
+Disallow: /es/pagina-de-resultados
+Disallow: /es/consultar-resultados
 
-# ✅ Allow everything else to be crawled
+# Transactional endpoints — no search value, and these can leak order state
+Disallow: /checkout-domestic
+Disallow: /checkout-international
+Disallow: /confirmation
+Disallow: /cancel
+Disallow: /success
+
+# Thin duplicates of /appointments
+Disallow: /appointment-form
+Disallow: /appointment-wizard
+
+# Never index tracking-parameter variants as separate URLs
+Disallow: /*?gclid=
+Disallow: /*?utm_
+Disallow: /*?fbclid=
+
 Allow: /
 
-# 🗺️ Provide link to the sitemap
 Sitemap: https://milehighdnatesting.com/sitemap.xml

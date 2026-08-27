@@ -243,6 +243,17 @@
     },    
     
     {
+      "source": "/legal-paternity-tests",
+      "destination": "https://milehighdnatesting.com/services/legal-paternity-testing",
+      "permanent": true
+    },
+    {
+      "source": "/peace-of-mind-paternity-tests",
+      "destination": "https://milehighdnatesting.com/services/non-legal-paternity-testing",
+      "permanent": true
+    },
+
+    {
       "source": "/(.*)",
       "has": [
         { "type": "host", "value": "www.milehighdnatesting.com" }
