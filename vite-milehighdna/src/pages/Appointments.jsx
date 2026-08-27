@@ -155,6 +155,7 @@ const Appointments = () => {
 
 
       <ScheduleTestSection />
+      <FreeConsultationSection />
       <ServingColorado />
       <CallToAction />
     </main>

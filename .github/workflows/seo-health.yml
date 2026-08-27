@@ -1,0 +1,133 @@
+name: SEO - Weekly health and marketing report
+
+on:
+  schedule:
+    # Monday 7:00 AM Denver (13:00 UTC during MDT) — matches the cadence the
+    # marketing report was previously sent on.
+    - cron: "0 13 * * 1"
+  workflow_dispatch:
+    inputs:
+      limit:
+        description: "Crawl only the first N sitemap URLs (leave blank for all)"
+        type: string
+        required: false
+      skip_email:
+        description: "Run the crawl but do not send the email"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  health:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: |
+          pip install -r agents/requirements.txt
+          python -m playwright install --with-deps chromium
+
+      - name: Technical SEO crawl
+        run: |
+          LIMIT_FLAG=""
+          if [ -n "${{ inputs.limit }}" ]; then LIMIT_FLAG="--limit ${{ inputs.limit }}"; fi
+          python -m agents.run seo.health --live --yes $LIMIT_FLAG
+
+      # Every data source here is optional — unconfigured ones render as
+      # "not configured" rather than failing the run, so this step is safe to
+      # enable before all the credentials exist.
+      - name: Marketing performance report
+        env:
+          GOOGLE_CLIENT_ID: ${{ secrets.GOOGLE_CLIENT_ID }}
+          GOOGLE_CLIENT_SECRET: ${{ secrets.GOOGLE_CLIENT_SECRET }}
+          GSC_REFRESH_TOKEN: ${{ secrets.GSC_REFRESH_TOKEN }}
+          GSC_SITE_URL: ${{ secrets.GSC_SITE_URL }}
+          GA4_REFRESH_TOKEN: ${{ secrets.GA4_REFRESH_TOKEN }}
+          GA4_PROPERTY_ID: ${{ secrets.GA4_PROPERTY_ID }}
+          ADS_REFRESH_TOKEN: ${{ secrets.ADS_REFRESH_TOKEN }}
+          ADS_CUSTOMER_ID: ${{ secrets.ADS_CUSTOMER_ID }}
+          ADS_DEVELOPER_TOKEN: ${{ secrets.ADS_DEVELOPER_TOKEN }}
+          ADS_LOGIN_CUSTOMER_ID: ${{ secrets.ADS_LOGIN_CUSTOMER_ID }}
+        run: python -m agents.run analytics.marketing --live --yes
+
+      - name: Summarise regressions
+        id: summary
+        run: |
+          python - <<'PY' >> "$GITHUB_OUTPUT"
+          import json, pathlib
+          regressions = []
+          for name, label in (
+              ("analytics.marketing_state.json", "Performance"),
+              ("seo.health_state.json", "Technical SEO"),
+          ):
+              p = pathlib.Path("agents/state") / name
+              if p.exists():
+                  for r in json.loads(p.read_text()).get("last_regressions", []):
+                      regressions.append(f"{label}: {r}")
+          print(f"count={len(regressions)}")
+          # Multi-line output for the issue body.
+          print("body<<EOF")
+          if regressions:
+              print("The weekly run detected regressions:\n")
+              for r in regressions:
+                  print(f"- {r}")
+              print("\nSee this week's files in `reports/` for full detail.")
+          print("EOF")
+          PY
+
+      - name: Commit snapshot and report
+        if: always()
+        run: |
+          git config user.name "seo-bot"
+          git config user.email "actions@github.com"
+          git add agents/state/seo_health/ agents/state/marketing/ \
+                  agents/state/seo.health_state.json \
+                  agents/state/analytics.marketing_state.json reports/
+          git diff --cached --quiet || git commit -m "chore: weekly SEO health snapshot [skip ci]"
+          git push
+
+      - name: Email the report
+        if: ${{ inputs.skip_email != true }}
+        env:
+          SENDGRID_API_KEY: ${{ secrets.SENDGRID_API_KEY }}
+          SEO_REPORT_TO: ${{ secrets.SEO_REPORT_TO }}
+          SEO_REPORT_FROM: ${{ secrets.SEO_REPORT_FROM }}
+        run: python agents/scripts/send_seo_report.py
+
+      - name: Open an issue when the site regressed
+        if: steps.summary.outputs.count != '0'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh issue create \
+            --title "Marketing/SEO regression — $(date -u +%F)" \
+            --body "${{ steps.summary.outputs.body }}" \
+            --label "seo" || true
+
+      # A monitor that dies quietly is worse than no monitor: the weekly silence
+      # reads as "all clear". The social workflow failed unnoticed for two weeks
+      # in August 2026 for exactly this reason, so failures are made loud here.
+      - name: Report a failed run
+        if: failure()
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh issue create \
+            --title "Weekly marketing/SEO run FAILED — $(date -u +%F)" \
+            --body "The weekly run did not complete, so **no email was sent**. Treat the
+          silence as unknown, not as an all-clear.
+
+          Common cause: the email secrets are not set yet. The mailer needs
+          \`SENDGRID_API_KEY\`, \`SEO_REPORT_TO\` and \`SEO_REPORT_FROM\`. In that case the
+          reports were still generated and committed to \`reports/\` — only delivery failed.
+
+          Run log: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}" \
+            --label "seo" || true

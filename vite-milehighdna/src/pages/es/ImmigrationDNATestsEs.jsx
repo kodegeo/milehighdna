@@ -16,6 +16,11 @@ const ImmigrationDNATestsEs = () => {
     return (
       <main>
         <Helmet>
+        <title>Prueba de ADN para Inmigración en Denver | USCIS | Mile High DNA</title>
+        <meta
+          name="description"
+          content="Pruebas de ADN para inmigración en Denver que cumplen con los requisitos del USCIS. Coordinamos con embajadas, consulados y tribunales migratorios, en español."
+        />
         <link rel="canonical" href="https://milehighdnatesting.com/es/prueba-de-inmigracion" />
         <link rel="alternate" hreflang="en" href="https://milehighdnatesting.com/services/immigration-dna-testing" />
         <link rel="alternate" hreflang="es" href="https://milehighdnatesting.com/es/prueba-de-inmigracion" />

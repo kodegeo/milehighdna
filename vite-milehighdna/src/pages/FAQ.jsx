@@ -18,6 +18,8 @@ const FAQ = () => {
             content="General DNA testing FAQ: partner laboratory and AABB standards for legal testing, legal vs. non-legal testing, timelines, confidentiality, alternative samples, mobile collection, nationwide and international testing, and our Denver office." 
           />
 
+          <link rel="canonical" href="https://milehighdnatesting.com/faq" />
+
           {/* Open Graph */}
           <meta property="og:title" content="General DNA Testing FAQ | Mile High DNA Testing" />
           <meta property="og:description" content="Accredited, professional, confidential answers on laboratory standards, court-admissible testing, processing times, privacy, and what makes Mile High DNA Testing different." />

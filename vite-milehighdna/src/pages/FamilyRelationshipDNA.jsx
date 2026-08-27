@@ -20,14 +20,14 @@ const FamilyRelationshipDNA = () => {
     name="keywords"
     content="family DNA testing Denver, grandparent DNA test Colorado, sibling DNA test Denver, brother and sister DNA test, DNA relationship testing Colorado"
   />
-  <link rel="canonical" href="https://milehighdnatesting.com/family-relationship-dna-testing" />
+  <link rel="canonical" href="https://milehighdnatesting.com/family-relationship-dna" />
   <link rel="alternate" hreflang="es" href="https://milehighdnatesting.com/es/pruebas-de-adn-de-relacion-familiar" />
 
   <meta property="og:title" content="Family Relationship DNA Testing in Denver, CO | Grandparent & Sibling DNA Tests" />
   <meta property="og:description" content="Accurate and confidential family DNA testing in Denver, CO. Legal, grandparent, and sibling DNA tests with same-day appointments available." />
   <meta property="og:image" content="https://milehighdnatesting.com/images/family-dna-hero.png" />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://milehighdnatesting.com/family-relationship-dna-testing" />
+  <meta property="og:url" content="https://milehighdnatesting.com/family-relationship-dna" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Family Relationship DNA Testing in Denver, CO" />
   <meta name="twitter:description" content="Confirm family connections with our accurate and confidential DNA testing in Denver, CO." />

@@ -7,6 +7,8 @@ Allows running agents via command line:
     python -m agents.run gbp.post --service "Legal Paternity DNA Testing"
     python -m agents.run gbp.qa --dry-run
     python -m agents.run seo.sitemap
+    python -m agents.run seo.health --live
+    python -m agents.run analytics.marketing --live
     python -m agents.run analytics.gsc_monitor
 """
 
@@ -18,7 +20,9 @@ from agents.domains.gbp.approval_agent import GBPApprovalAgent
 from agents.domains.gbp.qa_agent import GBPQAAgent
 from agents.domains.gbp.review_agent import GBPReviewAgent
 from agents.domains.seo.sitemap_agent import SEOSitemapAgent
+from agents.domains.seo.seo_health_agent import SEOHealthAgent
 from agents.domains.analytics.gsc_monitor_agent import GSCMonitorAgent
+from agents.domains.analytics.marketing_report_agent import MarketingReportAgent
 from agents.domains.social.generator_agent import SocialGenerateAgent
 from agents.domains.social.publish_agent import SocialPublishAgent, SocialApproveAgent
 
@@ -30,7 +34,9 @@ AGENTS = {
     "gbp.qa": GBPQAAgent,
     "gbp.review": GBPReviewAgent,
     "seo.sitemap": SEOSitemapAgent,
+    "seo.health": SEOHealthAgent,
     "analytics.gsc_monitor": GSCMonitorAgent,
+    "analytics.marketing": MarketingReportAgent,
     "social.generate": SocialGenerateAgent,
     "social.publish": SocialPublishAgent,
     "social.approve": SocialApproveAgent,
@@ -72,6 +78,13 @@ Examples:
         help="Run in live mode (WARNING: Makes actual API calls)"
     )
     
+    parser.add_argument(
+        "--limit",
+        type=int,
+        default=None,
+        help="seo.health: crawl only the first N sitemap URLs (quick check)"
+    )
+
     parser.add_argument(
         "--service",
         type=str,
@@ -171,7 +184,10 @@ def main():
     
     # Initialize agent
     try:
-        agent = agent_class(dry_run=dry_run)
+        if args.agent == "seo.health":
+            agent = agent_class(dry_run=dry_run, limit=args.limit)
+        else:
+            agent = agent_class(dry_run=dry_run)
     except Exception as e:
         print(f"❌ Failed to initialize agent: {e}")
         sys.exit(1)
