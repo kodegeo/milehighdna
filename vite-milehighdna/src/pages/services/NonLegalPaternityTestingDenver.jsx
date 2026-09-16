@@ -212,7 +212,7 @@ const NonLegalPaternityTestingDenver = () => {
             </div>
             <div className="bg-white p-6 rounded-xl shadow-lg">
               <h3 className="text-2xl font-bold text-gray-800 mb-2">In-Person Testing</h3>
-              <p className="text-3xl font-bold text-green-600 mb-2">$249</p>
+              <p className="text-3xl font-bold text-green-600 mb-2">$199</p>
               <p className="text-sm text-gray-500 mb-4">Non-legal (peace of mind), in-office collection in {cityName}.</p>
               <p className="text-gray-600 mb-4">Schedule an appointment at our testing location.</p>
               <a

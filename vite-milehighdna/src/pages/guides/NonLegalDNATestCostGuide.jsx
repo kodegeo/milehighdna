@@ -104,7 +104,7 @@ const NonLegalDNATestCostGuide = () => {
               "url": "https://milehighdnatesting.com/guides/non-legal-dna-test-cost",
               "mainEntityOfPage": "https://milehighdnatesting.com/guides/non-legal-dna-test-cost",
               "datePublished": "2025-01-01",
-              "dateModified": "2026-01-24"
+              "dateModified": "2026-09-16"
             },
             {
               "@context": "https://schema.org",
@@ -115,7 +115,7 @@ const NonLegalDNATestCostGuide = () => {
                   "name": "How much does a non-legal DNA test cost?",
                   "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Non-legal DNA test costs typically range from $199 to $299 depending on the test type and collection method. At-home peace of mind tests start at $199 plus $35 shipping, while in-office collection costs $249-$299."
+                    "text": "Non-legal DNA test costs typically range from $199 to $299 depending on the test type and collection method. At-home peace of mind tests start at $199 plus $35 shipping, while in-office collection costs $199."
                   }
                 },
                 {
@@ -332,7 +332,7 @@ const NonLegalDNATestCostGuide = () => {
             </div>
             <div className="bg-blue-50 p-6 rounded-lg border-2 border-blue-200">
               <h3 className="text-xl font-bold text-blue-800 mb-4">In-Office Collection</h3>
-              <div className="text-3xl font-bold text-blue-600 mb-2">$249 - $299</div>
+              <div className="text-3xl font-bold text-blue-600 mb-2">$199</div>
               <p className="text-gray-600 mb-4">Professional collection, personal use</p>
               <ul className="text-sm text-gray-600 space-y-1">
                 <li>• Professional sample collection</li>
@@ -371,7 +371,7 @@ const NonLegalDNATestCostGuide = () => {
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-semibold text-gray-800 mb-3">How much does a non-legal DNA test cost?</h3>
               <p className="text-gray-600">
-                Non-legal DNA test costs typically range from $199 to $399 depending on the test type and collection method. At-home peace of mind tests start at $199 plus $35 shipping, in-office collection costs $249-$299, and relationship tests range from $299-$399.
+                Non-legal DNA test costs typically range from $199 to $399 depending on the test type and collection method. At-home peace of mind tests start at $199 plus $35 shipping, in-office collection costs $199, and relationship tests range from $299-$399.
               </p>
             </div>
             

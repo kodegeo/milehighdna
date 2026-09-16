@@ -8,7 +8,7 @@ const faqs = [
   {
     question: "How much does a paternity test cost in Denver?",
     answer:
-      "In Denver, a non-legal (peace-of-mind) paternity test starts at $199 plus $35 shipping for an at-home kit, or $249 for in-office collection at Mile High DNA Testing. Court-admissible legal paternity tests start at $349, and legal DNA tests generally range from $350 to $550 depending on the test type and number of participants."
+      "In Denver, a non-legal (peace-of-mind) paternity test starts at $199 plus $35 shipping for an at-home kit, or $199 for in-office collection at Mile High DNA Testing. Court-admissible legal paternity tests start at $349, and legal DNA tests generally range from $350 to $550 depending on the test type and number of participants."
   },
   {
     question: "What makes a DNA test court-admissible in Colorado?",
@@ -60,7 +60,7 @@ const comparisonRows = [
     useCase: "Private, personal knowledge only",
     court: "No",
     turnaround: "2-3 business days after lab receipt",
-    price: "$199 + $35 shipping (at-home) / $249 in office"
+    price: "$199 + $35 shipping (at-home) / $199 in office"
   },
   {
     test: "Prenatal Paternity Test (NIPP)",

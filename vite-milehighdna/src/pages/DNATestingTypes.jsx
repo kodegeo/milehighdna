@@ -70,7 +70,7 @@ const DNATestingTypes = () => {
                 "offers": {
                   "@type": "Offer",
                   "priceCurrency": "USD",
-                  "price": "249.00",
+                  "price": "199.00",
                   "url": "https://milehighdnatesting.com/guides/paternity-test-guide",
                   "availability": "https://schema.org/InStock"
                 }
@@ -344,7 +344,7 @@ const DNATestingTypes = () => {
                   </li>
                   <li className="flex justify-between">
                     <span className="text-gray-600">In-Office Collection</span>
-                    <span className="font-semibold text-green-600">$249 - $299</span>
+                    <span className="font-semibold text-green-600">$199</span>
                   </li>
                   <li className="flex justify-between">
                     <span className="text-gray-600">Relationship Tests</span>

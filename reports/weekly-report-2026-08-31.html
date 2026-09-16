@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mile High DNA – Weekly Marketing Report – August 31, 2026</title>
+<style>
+  body { font-family: Georgia, 'Times New Roman', serif; color: #1a1a2e; max-width: 860px; margin: 0 auto; padding: 32px 24px; line-height: 1.55; background: #fff; }
+  h1 { font-size: 26px; margin-bottom: 2px; color: #14213d; }
+  .daterange { color: #555; font-size: 15px; margin-bottom: 24px; }
+  h2 { font-size: 19px; color: #14213d; border-bottom: 2px solid #fca311; padding-bottom: 4px; margin-top: 34px; }
+  h3 { font-size: 15px; color: #14213d; margin: 20px 0 6px; font-family: Arial, Helvetica, sans-serif; }
+  table { border-collapse: collapse; width: 100%; margin: 12px 0 18px; font-size: 14px; font-family: Arial, Helvetica, sans-serif; }
+  th, td { border: 1px solid #d5d5e0; padding: 7px 10px; text-align: left; }
+  th { background: #14213d; color: #fff; font-weight: 600; }
+  tr:nth-child(even) td { background: #f4f5f9; }
+  .topline { background: #f4f5f9; border: 1px solid #d5d5e0; border-left: 5px solid #fca311; padding: 16px 20px; margin: 18px 0; }
+  .topline-grid { display: flex; flex-wrap: wrap; gap: 18px 36px; font-family: Arial, sans-serif; }
+  .metric { min-width: 118px; }
+  .metric .num { font-size: 24px; font-weight: 700; color: #14213d; }
+  .metric .lbl { font-size: 12px; text-transform: uppercase; letter-spacing: .04em; color: #555; }
+  .callout { background: #eef7f0; border: 1px solid #bcd9c4; border-left: 5px solid #1d7a3e; padding: 12px 16px; margin: 14px 0; font-size: 14.5px; font-family: Arial, sans-serif; }
+  .warn { background: #fdf6ec; border: 1px solid #e8d5b0; border-left: 5px solid #c98a12; padding: 12px 16px; margin: 14px 0; font-size: 14.5px; font-family: Arial, sans-serif; }
+  .alert { background: #fdeeec; border: 1px solid #e8bdb7; border-left: 5px solid #c1443c; padding: 12px 16px; margin: 14px 0; font-size: 14.5px; font-family: Arial, sans-serif; }
+  .gap { background: #eef1f7; border: 1px solid #c3cbdd; border-left: 5px solid #5a6b96; padding: 12px 16px; margin: 14px 0; font-size: 14.5px; font-family: Arial, sans-serif; }
+  .note { color: #555; font-size: 13px; font-style: italic; }
+  .good { color: #1d7a3e; font-weight: 600; } .bad { color: #c1443c; font-weight: 600; } .flat { color: #555; font-weight: 600; }
+  .tag { display: inline-block; font-size: 11px; font-family: Arial, sans-serif; padding: 1px 6px; border-radius: 3px; font-weight: 600; }
+  .tag-ok { background: #e3f2e8; color: #1d7a3e; }
+  .tag-warn { background: #fdf2e0; color: #a5700c; }
+  .tag-bad { background: #fbe4e1; color: #b03a32; }
+  .tag-gap { background: #e4e8f2; color: #47548a; }
+  ol li, ul li { margin-bottom: 8px; }
+  footer { margin-top: 36px; padding-top: 12px; border-top: 1px solid #d5d5e0; font-size: 12.5px; color: #666; font-family: Arial, sans-serif; }
+  @media print { body { padding: 0; } .topline, table, .callout, .warn, .alert, .gap { break-inside: avoid; } }
+</style>
+</head>
+<body>
+
+<h1>Mile High DNA Testing — Weekly Marketing Report</h1>
+<div class="daterange">Reporting week: <strong>August 24 – 30, 2026</strong> (Google Ads &amp; GA4). Report generated August 31, 2026.</div>
+
+<div class="alert">
+<strong>Headline this week: the ad account got cheaper and the reported conversions went up — but almost nothing real was measured.</strong>
+Spend dropped sharply to <strong>$73.39</strong> (from $118.80) and the average cost per click fell from $1.65 to <strong>$1.05</strong>, while impressions and clicks held roughly steady. Google Ads reports <strong>11 conversions, up from 8</strong>. That headline is misleading: <strong>every one of those extra conversions came from the broken "Contact" tag that fires on page load</strong> (4 &rarr; 9). Stripping it out, the week produced <strong>0 booked appointments and 2 phone calls</strong> — 2 genuine leads, down from 4 last week. Separately, the Calendly booking tag <strong>degraded from "Needs attention" to "Misconfigured"</strong>, and the website's tap-to-call event (<code>phone_click</code>) <strong>recorded zero for the first time ever</strong>. In short: lead measurement is now effectively offline.
+</div>
+
+<div class="topline">
+  <div class="topline-grid">
+    <div class="metric"><div class="num">$73.39</div><div class="lbl">Ad spend</div></div>
+    <div class="metric"><div class="num">70</div><div class="lbl">Ad clicks</div></div>
+    <div class="metric"><div class="num">11.00</div><div class="lbl">Conversions (reported)</div></div>
+    <div class="metric"><div class="num">$6.67</div><div class="lbl">Cost / conversion</div></div>
+    <div class="metric"><div class="num">0</div><div class="lbl">Booked appointments</div></div>
+    <div class="metric"><div class="num">2</div><div class="lbl">Phone call leads (Ads)</div></div>
+  </div>
+</div>
+
+<div class="warn">
+<strong>Cost per booked appointment: not calculable this week.</strong> Google Ads recorded <strong>zero</strong> booked appointments against $73.39 of spend, because both booking conversion actions are now flagged <em>Misconfigured</em>. Last week the figure was $118.80 (1 booking). Counting the 2 phone call leads as the only trustworthy signal, cost per genuine high-intent lead was <strong>≈ $36.70</strong>, up from ≈ $29.70 last week. GA4 separately recorded <strong>3 <code>book_appointment</code> events</strong> site-wide, which suggests bookings did happen — Google Ads simply is not counting them.
+</div>
+
+<h2>1. Google Ads (account 611-976-4326)</h2>
+
+<table>
+<tr><th>Metric</th><th>This week (Aug 24–30)</th><th>Last week (Aug 17–23)</th><th>Change</th></tr>
+<tr><td>Impressions</td><td>828</td><td>831</td><td class="flat">−3 (−0.4%)</td></tr>
+<tr><td>Clicks</td><td>70</td><td>72</td><td class="flat">−2 (−2.8%)</td></tr>
+<tr><td>CTR</td><td>8.45%</td><td>8.66%</td><td class="flat">−0.21 pts</td></tr>
+<tr><td>Avg. CPC</td><td>$1.05</td><td>$1.65</td><td class="good">−$0.60 (−36.4%)</td></tr>
+<tr><td>Cost</td><td>$73.39</td><td>$118.80</td><td class="good">−$45.41 (−38.2%)</td></tr>
+<tr><td>Conversions (reported)</td><td>11.00</td><td>8.00</td><td>+3.00 (see note)</td></tr>
+<tr><td>Cost / conversion (reported)</td><td>$6.67</td><td>$14.85</td><td>−$8.18</td></tr>
+<tr><td>Conversion value</td><td>$11.00</td><td>$7.00</td><td>+$4.00</td></tr>
+<tr><td>Search lost top IS (budget)</td><td>8.15%</td><td>16.83%</td><td class="good">−8.68 pts</td></tr>
+<tr><td>Optimization score</td><td>66.3%</td><td>61.7%</td><td class="good">+4.6 pts</td></tr>
+</table>
+
+<h3>Campaign breakdown</h3>
+<table>
+<tr><th>Campaign</th><th>Budget</th><th>Status (Aug 31)</th><th>Impr.</th><th>Clicks</th><th>Cost</th></tr>
+<tr><td>Search – DNA Testing Denver</td><td>$15/day</td><td><span class="tag tag-ok">Eligible</span></td><td>828</td><td>70</td><td>$73.39</td></tr>
+<tr><td>Site Launch</td><td>$25/day</td><td>Paused</td><td>0</td><td>0</td><td>$0.00</td></tr>
+<tr><td>Mile High DNA Testing Denver (Google Build, PMax)</td><td>$20/day</td><td>Paused — all asset groups limited by policy</td><td>0</td><td>0</td><td>$0.00</td></tr>
+<tr><td>Search | Prenatal &amp; Legal DNA | Denver</td><td>$30/day</td><td>Paused — all ad groups paused</td><td>0</td><td>0</td><td>$0.00</td></tr>
+<tr><td><strong>Account total</strong></td><td>$15/day</td><td>—</td><td><strong>828</strong></td><td><strong>70</strong></td><td><strong>$73.39</strong></td></tr>
+</table>
+<p class="note">Only one campaign is serving, so campaign figures and account totals are identical. Bid strategy remains Maximize clicks with a $3.00 CPC cap; actual average CPC ($1.05) is now well under a third of the cap. One draft campaign remains in progress and is not serving.</p>
+
+<h3>Conversion breakdown (Aug 24–30)</h3>
+<table>
+<tr><th>Conversion action</th><th>Source</th><th>Tracking status</th><th>Counting</th><th>Conversions</th><th>Last week</th></tr>
+<tr><td>Calls from ads</td><td>Call from Ads</td><td><span class="tag tag-ok">Active</span></td><td>Every</td><td>2.00</td><td>3.00</td></tr>
+<tr><td>Contact (page load)</td><td>Website</td><td><span class="tag tag-warn">Needs attention</span></td><td>One</td><td>9.00</td><td>4.00</td></tr>
+<tr><td>Booked Appointment (Calendly)</td><td>Website</td><td><span class="tag tag-bad">Misconfigured</span></td><td>Every</td><td>0.00</td><td>1.00</td></tr>
+<tr><td>Book appointment</td><td>Website</td><td><span class="tag tag-bad">Misconfigured</span></td><td>One</td><td>0.00</td><td>0.00</td></tr>
+<tr><td><strong>Total</strong></td><td>—</td><td>—</td><td>—</td><td><strong>11.00</strong></td><td><strong>8.00</strong></td></tr>
+</table>
+
+<h3>Goals summary</h3>
+<table>
+<tr><th>Goal group</th><th>Results</th><th>Notes</th></tr>
+<tr><td>Book appointments</td><td>0</td><td><span class="tag tag-bad">Misconfigured</span> — both primary actions now failing</td></tr>
+<tr><td>Contacts</td><td>9</td><td><span class="tag tag-warn">Needs attention</span> — page-load trigger, not a real contact</td></tr>
+<tr><td>Phone call leads</td><td>2</td><td><span class="tag tag-ok">Active</span> and trustworthy</td></tr>
+<tr><td>Purchases / Sales</td><td>0</td><td>No sales goals configured — e-commerce is still not measured at all</td></tr>
+<tr><td><strong>Group 1 total</strong></td><td><strong>11</strong></td><td>Results value $11.00</td></tr>
+</table>
+
+<div class="alert">
+<strong>The one thing to take away from this section.</strong> Google's own insight panel is congratulating the account: <em>"Search – DNA Testing Denver saw conversions increase by 37.50% this week."</em> That number is entirely the broken Contact tag going from 4 to 9. The two conversion actions that measure actual bookings both read <strong>Misconfigured</strong> and both returned <strong>zero</strong>. The Calendly action specifically <strong>got worse this week</strong> — it was "Needs attention" last week. Any automated bidding or optimisation decision Google makes from here is being fed a page-load counter, not customers.
+</div>
+
+<p><strong>Serving notes:</strong> No disapprovals and no policy warnings on the active campaign; status remains plain <em>Eligible</em>. Budget pressure eased substantially — the campaign lost only 8.15% of top-of-page impression share to budget, down from 16.83%. Optimization score improved to 66.3%. Impressions and clicks were essentially flat while cost fell 38%, meaning the auction simply got cheaper this week rather than the campaign getting smaller. <strong>No account changes were made as part of this report.</strong></p>
+
+<h2>2. Google Analytics 4 (property: milehigh-dna)</h2>
+
+<table>
+<tr><th>Metric</th><th>This week (Aug 24–30)</th><th>Last week (Aug 17–23)</th><th>Change</th></tr>
+<tr><td>Total users</td><td>139</td><td>154</td><td class="bad">−9.7%</td></tr>
+<tr><td>New users</td><td>144</td><td>145</td><td class="flat">−0.7%</td></tr>
+<tr><td>Returning users</td><td>16</td><td>19</td><td class="flat">−3</td></tr>
+<tr><td>Sessions</td><td>173</td><td>188</td><td class="bad">−8.0%</td></tr>
+<tr><td>Engagement rate</td><td>98.27%</td><td>97.87%</td><td class="flat">+0.40 pts</td></tr>
+<tr><td>Event count</td><td>2,288</td><td>1,003</td><td>+128% (see anomaly)</td></tr>
+<tr><td>Total revenue</td><td>$0.00</td><td>$0.00</td><td class="flat">no change</td></tr>
+</table>
+
+<h3>Traffic by channel</h3>
+<table>
+<tr><th>Channel</th><th>Sessions</th><th>Share</th><th>Source / medium</th><th>Last week</th><th>Change</th></tr>
+<tr><td>Direct</td><td>81</td><td>46.8%</td><td>(direct) / (none)</td><td>89</td><td>−8</td></tr>
+<tr><td>Organic Search</td><td>43</td><td>24.9%</td><td>google 38 · bing 4 · yahoo 1</td><td>36</td><td class="good">+7</td></tr>
+<tr><td>Paid Search</td><td>42</td><td>24.3%</td><td>google / cpc</td><td>63</td><td class="bad">−21</td></tr>
+<tr><td>Cross-network</td><td>4</td><td>2.3%</td><td>(data not available)</td><td>0</td><td>+4</td></tr>
+<tr><td>AI Assistant</td><td>3</td><td>1.7%</td><td>chatgpt.com / ai-assistant</td><td>0</td><td class="good">+3</td></tr>
+<tr><td>Unassigned</td><td>1</td><td>0.6%</td><td>(not set)</td><td>0</td><td>+1</td></tr>
+<tr><td><strong>Total</strong></td><td><strong>173</strong></td><td>100%</td><td>—</td><td><strong>188</strong></td><td>−15</td></tr>
+</table>
+<p><strong>Two things worth noting.</strong> First, <strong>ChatGPT referrals came back</strong> — 3 sessions from <code>chatgpt.com / ai-assistant</code>, after zero last week. Small, but it is the second time the site has appeared in an AI assistant's answers. Second, <strong>Organic Search grew for the second week running</strong> (36 &rarr; 43), and Bing organic now shows up in GA4 for the first time in these reports. Paid Search sessions fell 21, consistent with the 38% lower ad spend.</p>
+
+<h3>Key lead events</h3>
+<table>
+<tr><th>Event</th><th>This week</th><th>Users</th><th>Last week</th><th>Change</th></tr>
+<tr><td><code>phone_click</code></td><td>0</td><td>0</td><td>5</td><td class="bad">−5 — stopped firing entirely</td></tr>
+<tr><td><code>book_appointment</code></td><td>3</td><td>3</td><td>1</td><td class="good">+2</td></tr>
+<tr><td><code>calendly_open</code></td><td>0</td><td>0</td><td>0</td><td>still not firing (5th report)</td></tr>
+<tr><td><code>purchase</code></td><td>0</td><td>0</td><td>0</td><td class="flat">no change</td></tr>
+</table>
+
+<div class="alert">
+<strong><code>phone_click</code> recorded zero this week.</strong> This event has fired every single week these reports have been running — 23 in the Aug 3–9 week, 4, then 5. Zero is not a slow week; it is the signature of a tag that has stopped working. It is worth checking that the tap-to-call links on the site still carry the tracking attribute, because at the moment there is no way to see phone enquiries from the website at all. (Google Ads' own "Calls from ads" counter still works and recorded 2 — that is a different mechanism and is unaffected.)
+</div>
+
+<div class="warn">
+<strong>Traffic-quality anomaly: the Direct channel looks automated.</strong> Direct produced <strong>1,600 of the week's 2,288 events</strong> (70%) across only 81 sessions — <strong>19.75 events per session</strong> against an average engagement time of <strong>6 seconds</strong>. Real visitors do not generate twenty events in six seconds. Bing organic shows the same pattern more extremely (34 events per session, 3 seconds). Homepage views jumped 168% to 563. Alongside this, GA4 recorded users from Singapore (14), Dubai (3), Afghanistan (3) and Albania (3) — a Denver-only walk-in business. The most likely explanation is bot or scraper traffic, which is also what inflated event count by 128% and key events by 78%. It costs nothing (these visitors do not click ads) but it makes the GA4 headline numbers unusable this week. Worth a look, not worth alarm.
+</div>
+
+<p class="note">Data-quality flag carried forward: GA4 counted 824 "key events" this week against 3 genuine lead events. Page-view-type events are still marked as key events. Ignore "key events" as a lead measure.</p>
+
+<h2>3. Bing Webmaster &amp; AI Performance (Beta)</h2>
+
+<div class="gap">
+<strong>Not available — second consecutive week.</strong> Bing Webmaster Tools is signed out in the browser, and this report does not sign in to accounts. No Search Performance figures and no AI Performance (Beta) citation data could be retrieved this week, including the citation count against the <strong>81-per-3-months July 2026 baseline</strong> and the cited-pages list. The last figure on record is <strong>109 citations in the 30 days to Aug 17</strong> (≈ 4× the baseline pace). Reconnecting takes one sign-in and would restore the metric that has been the brightest spot in recent reports.
+</div>
+
+<table>
+<tr><th>Metric</th><th>Value</th><th>Last recorded</th></tr>
+<tr><td>Bing search — last 7 days</td><td><span class="tag tag-gap">Not captured</span></td><td>0 clicks / 11 impressions (Aug 17–23)</td></tr>
+<tr><td>Bing search — last 30 days</td><td><span class="tag tag-gap">Not captured</span></td><td>1 click / 70 impressions (to Aug 10)</td></tr>
+<tr><td>Bing search — last 3 months</td><td><span class="tag tag-gap">Not captured</span></td><td>6 clicks / 180 impressions, CTR 3.33%</td></tr>
+<tr><td>AI citations — last 30 days</td><td><span class="tag tag-gap">Not captured</span></td><td>109 (to Aug 17); baseline 81 per 3 months</td></tr>
+<tr><td>Cited pages (30 days)</td><td><span class="tag tag-gap">Not captured</span></td><td>Homepage 107 · /aabb-accredited… 2</td></tr>
+</table>
+
+<div class="callout">
+<strong>Sitemap: fixed. This is the good news of the week.</strong> The sitemap flagged in the last four reports has been regenerated. Checking the project files directly (<code>vite-milehighdna/public/sitemap.xml</code>):
+<ul>
+<li>Last-modified date updated from <strong>June 27</strong> to <strong>August 27, 2026</strong></li>
+<li>URL count grown from <strong>45 to 112</strong></li>
+<li><strong>All 30 guide pages</strong> now included (previously 1 of 30)</li>
+<li><code>/guides/dna-testing-denver</code> — <strong>now present</strong></li>
+<li><code>/es/tienda</code> (Spanish shop) — <strong>now present</strong></li>
+</ul>
+This was the top structural SEO recommendation across four reports and it has been done. Search engines typically take two to six weeks to re-crawl and index newly submitted pages, so the effect should start showing in the Bing and Google organic figures through September — assuming the updated sitemap has also been resubmitted in Bing Webmaster Tools and Google Search Console.
+</div>
+
+<h2>4. Week-over-week summary</h2>
+<table>
+<tr><th>Metric</th><th>Aug 17–23</th><th>Aug 24–30</th><th>Change</th></tr>
+<tr><td>Ad spend</td><td>$118.80</td><td>$73.39</td><td class="good">−$45.41</td></tr>
+<tr><td>Ad impressions</td><td>831</td><td>828</td><td class="flat">−3</td></tr>
+<tr><td>Ad clicks</td><td>72</td><td>70</td><td class="flat">−2</td></tr>
+<tr><td>Avg. CPC</td><td>$1.65</td><td>$1.05</td><td class="good">−$0.60</td></tr>
+<tr><td>Conversions (as reported)</td><td>8.00</td><td>11.00</td><td>+3.00</td></tr>
+<tr><td>Cost / conversion (as reported)</td><td>$14.85</td><td>$6.67</td><td>−$8.18</td></tr>
+<tr><td><strong>Booked appointments (Ads)</strong></td><td>1</td><td><strong>0</strong></td><td class="bad">−1</td></tr>
+<tr><td>Cost per booked appointment</td><td>$118.80</td><td>n/a (0 recorded)</td><td class="bad">tracking broken</td></tr>
+<tr><td><strong>Phone call leads (Ads)</strong></td><td>3</td><td><strong>2</strong></td><td class="bad">−1</td></tr>
+<tr><td>Real high-intent leads</td><td>4</td><td>2</td><td class="bad">−2</td></tr>
+<tr><td>Cost per real lead</td><td>$29.70</td><td>$36.70</td><td class="bad">+$7.00</td></tr>
+<tr><td>Phone clicks (GA4 <code>phone_click</code>)</td><td>5</td><td>0</td><td class="bad">−5</td></tr>
+<tr><td>Bookings (GA4 <code>book_appointment</code>)</td><td>1</td><td>3</td><td class="good">+2</td></tr>
+<tr><td>Users (GA4)</td><td>154</td><td>139</td><td class="bad">−9.7%</td></tr>
+<tr><td>Sessions (GA4)</td><td>188</td><td>173</td><td class="bad">−8.0%</td></tr>
+<tr><td>Organic Search sessions</td><td>36</td><td>43</td><td class="good">+7</td></tr>
+<tr><td>ChatGPT / AI-assistant sessions</td><td>0</td><td>3</td><td class="good">+3</td></tr>
+<tr><td>AI citations (30-day window)</td><td>not captured</td><td>not captured</td><td>—</td></tr>
+<tr><td>Sitemap URLs</td><td>45 (dated Jun 27)</td><td>112 (dated Aug 27)</td><td class="good">fixed</td></tr>
+</table>
+<p class="note">Compared against <code>reports/weekly-report-2026-08-24.html</code>.</p>
+
+<h2>5. What changed &amp; recommended next step</h2>
+
+<p><strong>The advertising got noticeably cheaper.</strong> Spend fell from $118.80 to $73.39 — a 38% drop — while impressions and clicks were essentially unchanged (828 vs 831, and 70 vs 72). The whole difference is price: the average cost per click fell from $1.65 to $1.05. Budget pressure eased at the same time, with the share of top-of-page impressions lost to budget halving from 16.8% to 8.2%. Nothing was changed in the account, so this is the auction being less competitive, not a decision anyone made. It is a genuinely good week for ad efficiency.</p>
+
+<p><strong>The measurement, however, has gone from unreliable to broken.</strong> Google Ads reports 11 conversions and its own insight panel is celebrating a "37.5% increase". Ignore it. All three extra conversions — and more — came from the "Contact" tag that fires whenever a page loads, which went from 4 to 9. The actions that count real bookings both now read <em>Misconfigured</em>, and the Calendly one specifically got worse this week (it was "Needs attention" seven days ago). They recorded zero bookings against $73.39 of spend. Meanwhile the website's tap-to-call event, <code>phone_click</code>, recorded <strong>zero</strong> for the first time — it has never been zero before. The only working lead counter left is Google's own "Calls from ads", which logged 2.</p>
+
+<p><strong>So did the business have a bad week, or just a badly measured one?</strong> Probably the latter, at least partly. GA4 recorded <strong>3 <code>book_appointment</code> events</strong> — up from 1 — which means people did book. Google Ads simply is not seeing them. The honest summary is that the week produced <em>at least</em> 2 phone calls and 3 website bookings, but there is no longer any trustworthy way to connect bookings back to the ads. Cost per booked appointment — the number this account exists to prove out — cannot be calculated at all this week. That is now the single most important problem, and it has been the top recommendation for four consecutive reports.</p>
+
+<p><strong>Two clear positives.</strong> The sitemap has been regenerated: it went from 45 URLs dated June 27 to 112 URLs dated August 27, and now includes all 30 guide pages plus the Spanish shop and <code>/guides/dna-testing-denver</code>, both of which had been missing for four reports. Organic search visits grew for a second straight week (36 &rarr; 43), and ChatGPT referrals returned after a week away. Set against that, GA4's headline traffic numbers should be read with suspicion this week — a burst of what looks like bot traffic (70% of all events, twenty events per session, six seconds of engagement, visitors from Singapore, Dubai and Albania) has inflated event counts by 128%.</p>
+
+<h3>Recommended next steps — conservative, in priority order</h3>
+<ol>
+<li><strong>Fix the two booking conversion actions.</strong> Both "Booked Appointment (Calendly)" and "Book appointment" are now <em>Misconfigured</em> and returned zero, while GA4 recorded 3 real bookings. This is a developer task on the website tags, not an account-settings change. Until it is fixed, the cost-per-booked-appointment question that this whole ad test was meant to answer cannot be answered.</li>
+<li><strong>Check why <code>phone_click</code> stopped firing.</strong> A metric going from 5 to 0 in one week almost always means a tag broke, not that the phone stopped ringing. Likely a change to the tap-to-call links on the site. Quick to check, and until it is checked there is no visibility on website phone enquiries at all.</li>
+<li><strong>Stop the "Contact" tag firing on page load.</strong> Third distinct week this has been raised. It is now producing 9 of the account's 11 "conversions" and is actively misleading both the weekly report and Google's automated recommendations.</li>
+<li><strong>Hold the budget at $15/day.</strong> Costs came down on their own and lead volume is currently unmeasurable. There is no case for spending more until the tracking is trustworthy, and no case for spending less while clicks cost $1.05.</li>
+<li><strong>Resubmit the new sitemap</strong> in Bing Webmaster Tools and Google Search Console if that has not already been done — the file is fixed, but search engines need to be told.</li>
+<li><strong>Reconnect Bing Webmaster Tools.</strong> Two weeks with no AI-citation data. It only takes a sign-in, and AI citations have been the strongest-performing metric in recent reports.</li>
+<li><strong>Free win, still outstanding:</strong> add headline and description variants to the active campaign to address the long-standing "Ad strength: poor" flag.</li>
+</ol>
+
+<p class="note">As always, this report made no changes to any campaign, tag, budget, or site setting. Everything above is observation and recommendation only.</p>
+
+<footer>
+Sources: Google Ads (account 611-976-4326), Google Analytics 4 (property milehigh-dna), Bing Webmaster Tools (site milehighdnatesting.com — <strong>not available, signed out</strong>), and the project sitemap file in the milehighdna repository. Data collected August 31, 2026. Google Ads reporting timezone: Mountain Time (GMT−06:00); figures for the most recent day may still be settling. Compared against reports/weekly-report-2026-08-24.html.
+</footer>
+
+</body>
+</html>

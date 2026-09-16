@@ -273,7 +273,7 @@ const NonLegalPaternityTesting = () => {
               {
                 "@type": "Offer",
                 "name": "In-Office Non-Legal Paternity Test",
-                "price": "249",
+                "price": "199",
                 "priceCurrency": "USD",
                 "url": "https://milehighdnatesting.com/services/non-legal-paternity-testing"
               },
@@ -461,7 +461,7 @@ const NonLegalPaternityTesting = () => {
             
             <div className="bg-white p-6 rounded-xl shadow-lg">
               <h4 className="text-2xl font-bold text-gray-800 mb-2">In-Person Testing</h4>
-              <p className="text-3xl font-bold text-green-600 mb-2">$249</p>
+              <p className="text-3xl font-bold text-green-600 mb-2">$199</p>
               <p className="text-sm text-gray-500 mb-4">Most popular for faster turnaround.</p>
               <p className="text-gray-600 mb-4">Schedule an appointment <br />at our testing location</p>
               <a

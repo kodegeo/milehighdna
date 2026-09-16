@@ -220,7 +220,7 @@ const AtHomeDNAKits = () => {
 
             <div className="bg-white p-6 rounded-xl shadow-lg">
               <h3 className="text-2xl font-bold text-gray-800 mb-2">In-Person Peace of Mind</h3>
-              <p className="text-3xl font-bold text-green-600 mb-2">$249</p>
+              <p className="text-3xl font-bold text-green-600 mb-2">$199</p>
               <p className="text-sm text-gray-500 mb-4">Professionally collected at our Denver location.</p>
               <p className="text-gray-600 mb-4">Faster coordination when you prefer an on-site collection.</p>
               <a

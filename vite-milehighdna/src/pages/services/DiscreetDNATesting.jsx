@@ -255,7 +255,7 @@ const DiscreetDNATesting = () => {
             
             <div className="bg-gray-50 p-6 rounded-xl shadow-lg">
               <h4 className="text-2xl font-bold text-gray-800 mb-2">Private Appointment</h4>
-              <p className="text-3xl font-bold text-green-600 mb-4">$249</p>
+              <p className="text-3xl font-bold text-green-600 mb-4">$199</p>
               <p className="text-gray-600 mb-4">Private, confidential in-person testing at our location</p>
               <a
                 href="/appointments"

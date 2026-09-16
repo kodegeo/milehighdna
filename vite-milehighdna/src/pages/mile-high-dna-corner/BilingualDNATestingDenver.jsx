@@ -144,7 +144,7 @@ export default function BilingualDNATestingDenver() {
               "name": "How much does a bilingual DNA test cost?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Non-legal paternity tests start at $249, while legal DNA tests begin at $349."
+                "text": "Non-legal paternity tests start at $199, while legal DNA tests begin at $349."
               }
             },
             {
