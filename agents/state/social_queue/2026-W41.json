@@ -114,7 +114,7 @@
       "id": "2026-W41-wed-instagram",
       "platform": "instagram",
       "scheduled_date": "2026-10-07",
-      "status": "approved",
+      "status": "failed",
       "cluster": "family_relationship",
       "keyword": "grandparent dna test",
       "location": "Thornton",
@@ -126,13 +126,16 @@
       "image_url": "https://milehighdnatesting.com/social/paternity-2.png",
       "image_urls": [],
       "published_at": null,
-      "result": null
+      "result": {
+        "success": false,
+        "error": "container: {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 12-Sep-26 18:57:20 PDT. The current time is Wednesday, 07-Oct-26 13:16:50 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":0,\"fbtrace_id\":\"AA_8-skWjHHh_u_a0pxLYJF\"}}"
+      }
     },
     {
       "id": "2026-W41-wed-facebook",
       "platform": "facebook",
       "scheduled_date": "2026-10-07",
-      "status": "approved",
+      "status": "published",
       "cluster": "family_relationship",
       "keyword": "grandparent dna test",
       "location": "Thornton",
@@ -143,14 +146,17 @@
       "hashtags": [],
       "image_url": null,
       "image_urls": [],
-      "published_at": null,
-      "result": null
+      "published_at": "2026-10-07T20:16:57.178421",
+      "result": {
+        "success": true,
+        "post_id": "664866596708872_122207628338866699"
+      }
     },
     {
       "id": "2026-W41-wed-threads",
       "platform": "threads",
       "scheduled_date": "2026-10-07",
-      "status": "approved",
+      "status": "failed",
       "cluster": "family_relationship",
       "keyword": "grandparent dna test",
       "location": "Thornton",
@@ -162,7 +168,10 @@
       "image_url": null,
       "image_urls": [],
       "published_at": null,
-      "result": null
+      "result": {
+        "success": false,
+        "error": "container: {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 12-Sep-26 19:04:49 PDT. The current time is Wednesday, 07-Oct-26 13:16:57 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":0,\"fbtrace_id\":\"AHfU44F6cYMo5VRuwZE8yQM\"}}"
+      }
     },
     {
       "id": "2026-W41-fri-gbp",
