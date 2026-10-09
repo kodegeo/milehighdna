@@ -195,7 +195,7 @@
       "id": "2026-W41-fri-instagram",
       "platform": "instagram",
       "scheduled_date": "2026-10-09",
-      "status": "approved",
+      "status": "failed",
       "cluster": "prenatal_cost",
       "keyword": "non invasive prenatal paternity test cost",
       "location": "Denver",
@@ -211,13 +211,16 @@
         "https://milehighdnatesting.com/social/prenatal-2.png"
       ],
       "published_at": null,
-      "result": null
+      "result": {
+        "success": false,
+        "error": "carousel item: {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 12-Sep-26 18:57:20 PDT. The current time is Friday, 09-Oct-26 12:52:39 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":0,\"fbtrace_id\":\"Ao9qQzvwj73LRzwZj3nmxLA\"}}"
+      }
     },
     {
       "id": "2026-W41-fri-facebook",
       "platform": "facebook",
       "scheduled_date": "2026-10-09",
-      "status": "approved",
+      "status": "published",
       "cluster": "prenatal_cost",
       "keyword": "non invasive prenatal paternity test cost",
       "location": "Denver",
@@ -228,14 +231,17 @@
       "hashtags": [],
       "image_url": null,
       "image_urls": [],
-      "published_at": null,
-      "result": null
+      "published_at": "2026-10-09T19:52:44.718695",
+      "result": {
+        "success": true,
+        "post_id": "664866596708872_122207969726866699"
+      }
     },
     {
       "id": "2026-W41-fri-threads",
       "platform": "threads",
       "scheduled_date": "2026-10-09",
-      "status": "approved",
+      "status": "failed",
       "cluster": "prenatal_cost",
       "keyword": "non invasive prenatal paternity test cost",
       "location": "Denver",
@@ -247,7 +253,10 @@
       "image_url": null,
       "image_urls": [],
       "published_at": null,
-      "result": null
+      "result": {
+        "success": false,
+        "error": "container: {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 12-Sep-26 19:04:49 PDT. The current time is Friday, 09-Oct-26 12:52:44 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":0,\"fbtrace_id\":\"AsiX-t9RKzvqbiGdxnvZ8m2\"}}"
+      }
     }
   ]
 }
