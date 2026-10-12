@@ -24,7 +24,7 @@
       "id": "2026-W42-mon-instagram",
       "platform": "instagram",
       "scheduled_date": "2026-10-12",
-      "status": "approved",
+      "status": "failed",
       "cluster": "at_home_peace_of_mind",
       "keyword": "peace of mind paternity test",
       "location": "Aurora",
@@ -49,13 +49,16 @@
         "https://milehighdnatesting.com/social/prenatal-1.png"
       ],
       "published_at": null,
-      "result": null
+      "result": {
+        "success": false,
+        "error": "carousel item: {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 12-Sep-26 18:57:20 PDT. The current time is Monday, 12-Oct-26 15:17:58 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":0,\"fbtrace_id\":\"AfVWNEYFCMXyBcz-lvRRZOp\"}}"
+      }
     },
     {
       "id": "2026-W42-mon-facebook",
       "platform": "facebook",
       "scheduled_date": "2026-10-12",
-      "status": "approved",
+      "status": "published",
       "cluster": "at_home_peace_of_mind",
       "keyword": "peace of mind paternity test",
       "location": "Aurora",
@@ -66,14 +69,17 @@
       "hashtags": [],
       "image_url": null,
       "image_urls": [],
-      "published_at": null,
-      "result": null
+      "published_at": "2026-10-12T22:18:02.758594",
+      "result": {
+        "success": true,
+        "post_id": "664866596708872_122208557936866699"
+      }
     },
     {
       "id": "2026-W42-mon-threads",
       "platform": "threads",
       "scheduled_date": "2026-10-12",
-      "status": "approved",
+      "status": "failed",
       "cluster": "at_home_peace_of_mind",
       "keyword": "peace of mind paternity test",
       "location": "Aurora",
@@ -85,7 +91,10 @@
       "image_url": null,
       "image_urls": [],
       "published_at": null,
-      "result": null
+      "result": {
+        "success": false,
+        "error": "container: {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 12-Sep-26 19:04:49 PDT. The current time is Monday, 12-Oct-26 15:18:02 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":0,\"fbtrace_id\":\"Ah07kix9Ge9a7Wbz_UUQPtm\"}}"
+      }
     },
     {
       "id": "2026-W42-wed-gbp",
