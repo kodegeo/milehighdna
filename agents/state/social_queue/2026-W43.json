@@ -24,7 +24,7 @@
       "id": "2026-W43-mon-instagram",
       "platform": "instagram",
       "scheduled_date": "2026-10-19",
-      "status": "approved",
+      "status": "failed",
       "cluster": "local_denver",
       "keyword": "dna testing colorado",
       "location": "Denver",
@@ -45,13 +45,16 @@
       "image_url": "https://milehighdnatesting.com/social/paternity-1.png",
       "image_urls": [],
       "published_at": null,
-      "result": null
+      "result": {
+        "success": false,
+        "error": "container: {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 12-Sep-26 18:57:20 PDT. The current time is Monday, 19-Oct-26 13:16:53 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":0,\"fbtrace_id\":\"Abkr_zNC9CrcKXXFQh4Ydvw\"}}"
+      }
     },
     {
       "id": "2026-W43-mon-facebook",
       "platform": "facebook",
       "scheduled_date": "2026-10-19",
-      "status": "approved",
+      "status": "published",
       "cluster": "local_denver",
       "keyword": "dna testing colorado",
       "location": "Denver",
@@ -62,14 +65,17 @@
       "hashtags": [],
       "image_url": null,
       "image_urls": [],
-      "published_at": null,
-      "result": null
+      "published_at": "2026-10-19T20:16:56.587115",
+      "result": {
+        "success": true,
+        "post_id": "664866596708872_122209607780866699"
+      }
     },
     {
       "id": "2026-W43-mon-threads",
       "platform": "threads",
       "scheduled_date": "2026-10-19",
-      "status": "approved",
+      "status": "failed",
       "cluster": "local_denver",
       "keyword": "dna testing colorado",
       "location": "Denver",
@@ -81,7 +87,10 @@
       "image_url": null,
       "image_urls": [],
       "published_at": null,
-      "result": null
+      "result": {
+        "success": false,
+        "error": "container: {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 12-Sep-26 19:04:49 PDT. The current time is Monday, 19-Oct-26 13:16:56 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":0,\"fbtrace_id\":\"ADkMzTl62rUUpI-WvzJ6y06\"}}"
+      }
     },
     {
       "id": "2026-W43-wed-gbp",
