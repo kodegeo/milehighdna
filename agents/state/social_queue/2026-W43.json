@@ -195,7 +195,7 @@
       "id": "2026-W43-fri-instagram",
       "platform": "instagram",
       "scheduled_date": "2026-10-23",
-      "status": "approved",
+      "status": "failed",
       "cluster": "local_denver",
       "keyword": "genetic testing denver",
       "location": "Denver",
@@ -220,13 +220,16 @@
         "https://milehighdnatesting.com/social/prenatal-2.png"
       ],
       "published_at": null,
-      "result": null
+      "result": {
+        "success": false,
+        "error": "carousel item: {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 12-Sep-26 18:57:20 PDT. The current time is Friday, 23-Oct-26 11:47:06 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":0,\"fbtrace_id\":\"ARTytlZFR8zIHUqY5Js6FQ1\"}}"
+      }
     },
     {
       "id": "2026-W43-fri-facebook",
       "platform": "facebook",
       "scheduled_date": "2026-10-23",
-      "status": "approved",
+      "status": "published",
       "cluster": "local_denver",
       "keyword": "genetic testing denver",
       "location": "Denver",
@@ -237,14 +240,17 @@
       "hashtags": [],
       "image_url": null,
       "image_urls": [],
-      "published_at": null,
-      "result": null
+      "published_at": "2026-10-23T18:47:10.543243",
+      "result": {
+        "success": true,
+        "post_id": "664866596708872_122210334722866699"
+      }
     },
     {
       "id": "2026-W43-fri-threads",
       "platform": "threads",
       "scheduled_date": "2026-10-23",
-      "status": "approved",
+      "status": "failed",
       "cluster": "local_denver",
       "keyword": "genetic testing denver",
       "location": "Denver",
@@ -256,7 +262,10 @@
       "image_url": null,
       "image_urls": [],
       "published_at": null,
-      "result": null
+      "result": {
+        "success": false,
+        "error": "container: {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 12-Sep-26 19:04:49 PDT. The current time is Friday, 23-Oct-26 11:47:10 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":0,\"fbtrace_id\":\"AZKIHdPxBelkvQZdtJg8kug\"}}"
+      }
     }
   ]
 }
