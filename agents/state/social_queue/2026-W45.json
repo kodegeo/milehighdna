@@ -24,7 +24,7 @@
       "id": "2026-W45-mon-instagram",
       "platform": "instagram",
       "scheduled_date": "2026-11-02",
-      "status": "approved",
+      "status": "failed",
       "cluster": "legal_paternity",
       "keyword": "legal paternity test denver",
       "location": "Denver",
@@ -36,13 +36,16 @@
       "image_url": "https://milehighdnatesting.com/social/paternity-1.png",
       "image_urls": [],
       "published_at": null,
-      "result": null
+      "result": {
+        "success": false,
+        "error": "container: {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 12-Sep-26 18:57:20 PDT. The current time is Monday, 02-Nov-26 14:56:07 PST.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":0,\"fbtrace_id\":\"ArPoQKSXDl1ATdekNMHPV94\"}}"
+      }
     },
     {
       "id": "2026-W45-mon-facebook",
       "platform": "facebook",
       "scheduled_date": "2026-11-02",
-      "status": "approved",
+      "status": "published",
       "cluster": "legal_paternity",
       "keyword": "legal paternity test denver",
       "location": "Denver",
@@ -53,14 +56,17 @@
       "hashtags": [],
       "image_url": null,
       "image_urls": [],
-      "published_at": null,
-      "result": null
+      "published_at": "2026-11-02T22:56:12.629399",
+      "result": {
+        "success": true,
+        "post_id": "664866596708872_122212097066866699"
+      }
     },
     {
       "id": "2026-W45-mon-threads",
       "platform": "threads",
       "scheduled_date": "2026-11-02",
-      "status": "approved",
+      "status": "failed",
       "cluster": "legal_paternity",
       "keyword": "legal paternity test denver",
       "location": "Denver",
@@ -72,7 +78,10 @@
       "image_url": null,
       "image_urls": [],
       "published_at": null,
-      "result": null
+      "result": {
+        "success": false,
+        "error": "container: {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 12-Sep-26 19:04:49 PDT. The current time is Monday, 02-Nov-26 14:56:12 PST.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":0,\"fbtrace_id\":\"AGkI5MlfsInKvcYWTAQ0tZA\"}}"
+      }
     },
     {
       "id": "2026-W45-wed-gbp",
