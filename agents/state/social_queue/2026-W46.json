@@ -24,7 +24,7 @@
       "id": "2026-W46-mon-instagram",
       "platform": "instagram",
       "scheduled_date": "2026-11-09",
-      "status": "approved",
+      "status": "failed",
       "cluster": "legal_paternity",
       "keyword": "court approved dna paternity testing",
       "location": "Aurora",
@@ -49,13 +49,16 @@
         "https://milehighdnatesting.com/social/prenatal-1.png"
       ],
       "published_at": null,
-      "result": null
+      "result": {
+        "success": false,
+        "error": "carousel item: {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 12-Sep-26 18:57:20 PDT. The current time is Monday, 09-Nov-26 15:38:15 PST.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":0,\"fbtrace_id\":\"AOtlzdYse1WsHum0Fgy7-em\"}}"
+      }
     },
     {
       "id": "2026-W46-mon-facebook",
       "platform": "facebook",
       "scheduled_date": "2026-11-09",
-      "status": "approved",
+      "status": "published",
       "cluster": "legal_paternity",
       "keyword": "court approved dna paternity testing",
       "location": "Aurora",
@@ -66,14 +69,17 @@
       "hashtags": [],
       "image_url": null,
       "image_urls": [],
-      "published_at": null,
-      "result": null
+      "published_at": "2026-11-09T23:38:19.269903",
+      "result": {
+        "success": true,
+        "post_id": "664866596708872_122213496866866699"
+      }
     },
     {
       "id": "2026-W46-mon-threads",
       "platform": "threads",
       "scheduled_date": "2026-11-09",
-      "status": "approved",
+      "status": "failed",
       "cluster": "legal_paternity",
       "keyword": "court approved dna paternity testing",
       "location": "Aurora",
@@ -85,7 +91,10 @@
       "image_url": null,
       "image_urls": [],
       "published_at": null,
-      "result": null
+      "result": {
+        "success": false,
+        "error": "container: {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 12-Sep-26 19:04:49 PDT. The current time is Monday, 09-Nov-26 15:38:19 PST.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":0,\"fbtrace_id\":\"AUqCuBKZGk_LDFL2hIhjyiP\"}}"
+      }
     },
     {
       "id": "2026-W46-wed-gbp",
