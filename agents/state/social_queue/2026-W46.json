@@ -118,7 +118,7 @@
       "id": "2026-W46-wed-instagram",
       "platform": "instagram",
       "scheduled_date": "2026-11-11",
-      "status": "approved",
+      "status": "failed",
       "cluster": "local_denver",
       "keyword": "dna testing in colorado",
       "location": "Commerce City",
@@ -139,13 +139,16 @@
       "image_url": "https://milehighdnatesting.com/social/collector.png",
       "image_urls": [],
       "published_at": null,
-      "result": null
+      "result": {
+        "success": false,
+        "error": "container: {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 12-Sep-26 18:57:20 PDT. The current time is Wednesday, 11-Nov-26 13:38:20 PST.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":0,\"fbtrace_id\":\"Ax2VVKzKCea-RTedPMVRgRL\"}}"
+      }
     },
     {
       "id": "2026-W46-wed-facebook",
       "platform": "facebook",
       "scheduled_date": "2026-11-11",
-      "status": "approved",
+      "status": "published",
       "cluster": "local_denver",
       "keyword": "dna testing in colorado",
       "location": "Commerce City",
@@ -156,14 +159,17 @@
       "hashtags": [],
       "image_url": null,
       "image_urls": [],
-      "published_at": null,
-      "result": null
+      "published_at": "2026-11-11T21:38:24.697668",
+      "result": {
+        "success": true,
+        "post_id": "664866596708872_122213810846866699"
+      }
     },
     {
       "id": "2026-W46-wed-threads",
       "platform": "threads",
       "scheduled_date": "2026-11-11",
-      "status": "approved",
+      "status": "failed",
       "cluster": "local_denver",
       "keyword": "dna testing in colorado",
       "location": "Commerce City",
@@ -175,7 +181,10 @@
       "image_url": null,
       "image_urls": [],
       "published_at": null,
-      "result": null
+      "result": {
+        "success": false,
+        "error": "container: {\"error\":{\"message\":\"Error validating access token: Session has expired on Saturday, 12-Sep-26 19:04:49 PDT. The current time is Wednesday, 11-Nov-26 13:38:25 PST.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":0,\"fbtrace_id\":\"A0tLnmGU-Y8oygUvkQKNeB1\"}}"
+      }
     },
     {
       "id": "2026-W46-fri-gbp",
