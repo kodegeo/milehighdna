@@ -161,7 +161,7 @@ const ImmigrationDNATesting = () => {
         subtitle={`USCIS-compliant DNA testing coordinated with an AABB accredited laboratory we partner with. ${MH_IMMIGRATION_INITIATION_SHORT} Local DNA collections in Denver with worldwide coordination for family members living abroad.`}
         imageUrl={immigrationHero}
         buttonText="Get Started Today"
-        buttonLink="https://ufclab.forms-db.com/view.php?id=10429"
+        buttonLink="https://calendly.com/milehighdnatesting/immigration"
         secondaryButtonText="Call Now"
         secondaryButtonLink="tel:+17209009342"
       />
