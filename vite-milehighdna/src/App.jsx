@@ -91,6 +91,7 @@ import BilingualDNATestingDenver from './pages/mile-high-dna-corner/BilingualDNA
 import LegalDNACostGuide from './pages/mile-high-dna-corner/LegalDNACostGuide';
 import NonLegalDNACostGuide from './pages/mile-high-dna-corner/NonLegalDNACostGuide';
 import NotFound from './pages/NotFound';
+import PrivacyPolicy from './pages/PrivacyPolicy';
 
 // Guide pages
 import GuidesIndex from './pages/guides/GuidesIndex';
@@ -201,6 +202,7 @@ function AppLayout() {
   
             <Route path="/appointments" element={<Appointments />} />
             <Route path="/faq" element={<FAQ />} />
+            <Route path="/privacy" element={<PrivacyPolicy />} />
             <Route path="/get-results" element={<GetResults />} />
             <Route path="/reset-password" element={<ResetPassword />} />
             <Route path="/admin-dashboard" element={<AdminDashboard />} />
